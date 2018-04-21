@@ -1,0 +1,63 @@
+#jobs #principal {
+  background: linear-gradient(to bottom right,#2F99D8, #3EBBE5);
+}
+#jobs .flex-box div {
+  width: 27%;
+}
+
+/*how we work*/
+#how-we-work {
+  padding: 0 !important;
+  height: 420px;
+}
+#how-we-work img {
+  width: 100%;
+}
+#how-we-work .text-box {
+  height: 100%!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center!important;
+}
+
+/*current openings*/
+#jobs .card a {
+  font-family: 'SourceBlack';
+  font-size: 1.07em;
+  letter-spacing: 3px;
+  display: flex;
+}
+#jobs .card .card-action {
+  width: 100%;
+  border: white;
+  display: flex;
+  justify-content: flex-end;
+}
+#jobs .card h6 {/*card subtitle*/
+  font-family: 'SourceBlack'; 
+  font-size: 0.85em;
+  line-height: 2em;
+  color: #283850;
+  letter-spacing: 3px;
+}
+#jobs .card h3 {/*titulos card*/
+  font-family: 'GenLight'; 
+  font-size: 2.4em;
+  margin-top: -8px;
+  color: #283850;
+}
+#jobs .card h4 {/*card text*/
+  font-size: 1.4em;
+}
+#jobs .card h5 {/*card text*/
+  font-size: 1em;
+  line-height: 1.4em;
+  font-family: 'SourceRegular'; 
+  color: #7e8896;
+}
+#jobs .card-action a {
+  color: #283850 !important;
+}
+.role-title {
+  margin-top: 60px;
+}

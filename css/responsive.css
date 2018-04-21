@@ -1,0 +1,30 @@
+/*MEDIA SIZE*/
+
+@media (max-width: 800px) { 
+	#principal { height: auto; }
+}
+
+@media (max-width: 600px) { /*Para monitores small*/
+	body, #jobs, #about { font-size: 10.5px; }
+	.valign-wrapper { height: auto!important; }
+	section { padding: 30px 15px; }
+	footer { padding: 30px 15px!important; }
+	#principal { height: auto; }
+  nav a { padding-right: 0px; padding-left: 0px; margin: 0; }
+	.button-collapse { margin: 2px 0 !important; }
+	nav ul a { color: white; }
+	nav ul a:hover { line-height: 48px !important; }
+	nav { height: 69px; }
+	nav .button-collapse { margin: -6px !important; }
+	.nav-wrapper { display: flex; align-items: center; justify-content: space-between;}
+	.nav-wrapper .left a { padding: 0!important; display: flex; }
+	.hiring-box { display: none; }
+	
+	.mobile-column { flex-direction: column; }
+	#build .card { width: 100% }
+	#build { padding: 30px 0; }
+	#build .col { padding: 0 15px; }
+	.learn-more-box { padding-bottom: 30px; }
+	.learn-more-box p { width: 100%; }
+	#jobs .flex-box div { width: 100%;}
+}

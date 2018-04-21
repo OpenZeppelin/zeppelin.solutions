@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+  <head>
+    <title>Zeppelin</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ZeppelinOrg" />
+    <meta name="twitter:creator" content="@ZeppelinOrg" />
+    <meta name="twitter:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of complex applications. Networks worth over $4.5 billion have been built with our tool." />
+    <meta name="twitter:title" content="Zeppelin" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/ZeppelinSolutions/zeppelin.solutions/master/images/card.jpg" />
+
+    <!-- Opengraph card (WhatsApp & others) -->
+    <meta property="og:title" content="Zeppelin" />
+    <meta property="og:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of complex applications. Networks worth over $4.5 billion have been built with our tool." />
+    <meta property="og:url" content="https://zeppelin.solutions/" />
+    <meta property="og:site_name" content="Zeppelin" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/ZeppelinSolutions/zeppelin.solutions/master/images/card.jpg" />
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/ZeppelinSolutions/zeppelin.solutions/master/images/card.jpg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    
+    <meta name="description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of complex applications. Networks worth over $4.5 billion have been built with our tool.">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8"> <!--Encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Movile first -->
+
+    <!--JQuery -->
+    <script src="js/jquery.min.js"></script><!--JQuery 1.11.2 local -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/home.js"></script>
+  </head>
+  <body>
+    <section id="principal">
+      <nav>
+        <div class="nav-wrapper">
+          <ul class="left">
+            <li class="brand-box">
+              <a href="./">
+                <img src="./images/logoZeppelin.svg"/>
+              </a>
+            </li>
+            <li class="hiring-box">
+              <a href="./jobs">We are hiring!</a>
+            </li>
+          </ul>
+          <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class='dropdown-button' href='#' data-activates='project'>Projects<i class="material-icons">expand_more</i></a>
+
+              <!-- Dropdown Structure -->
+              <ul id='project' class='dropdown-content'>
+                <li><a href="https://openzeppelin.org/" target="_blank">Open Zeppelin</a></li>
+                <li><a href="https://zeppelinos.org/" target="_blank">Zeppelin OS</a></li>
+                <li><a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class='dropdown-button' href='#' data-activates='services'>Services<i class="material-icons">expand_more</i></a>
+
+              <!-- Dropdown Structure -->
+              <ul id='services' class='dropdown-content'>
+                <li><a href="./audits">Security Audits</a></li>
+                <li><a href="https://coralfundraiser.com/" target="_blank">Coral Foundraiser Setup</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class='dropdown-button' href='#' data-activates='learn'>Learn<i class="material-icons">expand_more</i></a>
+
+                <!-- Dropdown Structure -->
+              <ul id='learn' class='dropdown-content'>
+                <li><a href="https://openzeppelin.org/" target="_blank">Smart Contract Development 101</a></li>
+                <li><a href="https://ethernaut.zeppelin.solutions" target="_blank">Ethernaut Game</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class='dropdown-button' href='#' data-activates='about'>About<i class="material-icons">expand_more</i></a>
+
+                <!-- Dropdown Structure -->
+              <ul id='about' class='dropdown-content'>
+                <li><a href="./about">About us</a></li>
+                <li><a href="./jobs">Jobs</a></li>
+                <li><a href="https://blog.zeppelin.solutions/" target="_blank">Blog</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <li><a class="sidenav-close close-link" href="#!">X</a></li>
+            <li class="valign-wrapper"><a class="menu-text sidenav-close" href="#about">ABOUT</a></li>
+            <li class="valign-wrapper"><a class="menu-text sidenav-close" href="#sponsors">SPONSORS</a></li>
+            <li class="valign-wrapper"><a class="menu-text sidenav-close" href="#venue">VENUE</a></li>
+            <!-- <li class="valign-wrapper"><a class="menu-text sidenav-close" href="#faq">FAQ</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <section class="valign-wrapper" id="home">
+        <div class="row">
+          <div class="col s12 m8 offset-m2 offset-s0">
+            <h1 class="home-title">The standard in smart contracts security</h1>
+            <p class="home-slogan">Zeppelin builds key infrastructure to <span class="strong">develop</span> and <span class="strong">operate</span> smart contracts systems.</br>We also conduct <span class="strong">security audits</span> of complex applications.</br>Networks worth over $4.5 billion have been built with our tool.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row white-to-grey" id="blockchains">
+      <div class="col s12 m5 offset-m2 offset-s0">
+        <h1>Smart contract development is at a primitive stage</h1>
+        <p>We’re living the early days of the decentralized web. It’s difficult and error-prone to work in adversarial environments with real money at stake.</p>
+        <p>We need to educate developers in new programming paradigms and build new tools suitable for the era of blockchains, so people continue to innovate and the open economy thrives.</p>
+      </div>
+    </section>
+    <section class="row grey" id="build">
+      <div class="col s12 m8 offset-m2 offset-s0">
+        <h1>We build open source infrastructure</h1>
+        <p>Zeppelin makes it easier for developers to write complex applications on top of public blockchains, removing the cumbersome barriers to entry.</p>
+      </div>
+      <div class="flex-box col s12 m8 offset-m2 offset-s0 mobile-column">
+        <div class="card darken-1">
+          <div class="card-content">
+            <div class="flex-box">
+              <div>
+                <h6>/ FRAMEWORK</h6>
+                <h4>OpenZeppelin</h4>
+              </div>
+              <img src="./images/openZ.svg"/>
+            </div>
+            <h5>Learn how to make secure contracts from scratch in minutes, and contribute to the industry-standard library of Solidity contracts.</h5>
+          </div>
+          <div class="card-action flex-box">
+            <a href="https://openzeppelin.org/" target="_blank">
+              <img src="./images/github_blue.svg"/>
+            </a>
+            <a href="https://openzeppelin.org/" target="_blank" class="site-link">Go to site <i class="material-icons">keyboard_backspace</i></a>
+          </div>
+        </div>
+        <div class="card darken-1">
+          <div class="card-content">
+            <div class="flex-box">
+              <div>
+                <h6>/ PLATFORM</h6>
+                <h4>ZeppelinOS</h4>
+              </div>
+              <img src="./images/zeppelinOS.svg"/>
+            </div>
+            <h5>Build and run code over an upgradeable layer on top of the EVM, for increased safety and interoperability.</h5>
+            <br/>
+          </div>
+          <div class="card-action flex-box">
+            <a href="https://zeppelinos.org/" target="_blank">
+              <img src="./images/github_blue.svg"/>
+            </a>
+            <a href="https://zeppelinos.org/" target="_blank" class="site-link">Go to site <i class="material-icons">keyboard_backspace</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="triangle"></div>
+    </section>
+
+    <section class="row">
+      <div class="col s12 m8 offset-m2 offset-s0">
+        <h1>We conduct in-depth system security audits</h1>
+        <div class="flex-box learn-more-box mobile-column">
+          <p>Hire the leading firm in the industry to make sure your decentralized application will behave as expected. We specialize in auditing high-impact smart contract systems.</p>
+          <a class="gradient-btn" href="./audits">Learn more</a>
+        </div>
+        <h2 class="centered">THE WORLD’S LEADING PROJECTS TRUST ZEPPELIN</h2>
+      </div>
+      <div class="col s12 m8 offset-m2 offset-s0">
+        <!-- logos -->
+      </div>
+    </section>
+    <section class="row grey">
+      <div class="col s12 m8 offset-m2 offset-s0">
+        <h1>We set ever-higer standars for the industry</h1>
+      </div>
+      <div class="flex-box col s12 m8 offset-m2 offset-s0 mobile-column">
+        <div>
+          <p class="numbers">$600+ million</p>
+          <p>Raised through our audited systems</p>
+        </div>
+        <div>
+          <p class="numbers">$4.5+ billion</p>
+          <p>In digital assets powered by our contracts</p>
+        </div>
+      </div>
+    </section>
+    <footer class="row" id="footer">
+      <div class="footer-box col s12 m8 offset-m2 offset-s0 mobile-column">
+        <div>
+          <h2>/ Projects</h2>
+          <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
+          <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
+          <a href="https://tplprotocol.org/" target="_blank">TPL – Transaction Permission Layer</a>
+          </br>
+          <h2>/ Services</h2>
+          <a href="./audits">Security Audits</a>
+          <a href="https://coralfundraiser.com/" target="_blank">Coral Fundraiser Setup</a>
+        </div>
+        <div>
+          <h2>/ The company</h2>
+          <a href="./about">About Us</a>
+          <a href="./jobs">Jobs</a>
+          <a href="https://blog.zeppelin.solutions/" target="_blank">Blog</a>
+          </br>
+          <h2>/ Learning</h2>
+          <a href="https://openzeppelin.org/" target="_blank">Smart contract development</a>
+          <a href="https://ethernaut.zeppelin.solutions " target="_blank">Ethernaut game</a>
+        </div>
+        <div>
+          <h2>/ Follow us</h2>
+          <div class="social-media-box">
+            <a href="https://github.com/ZeppelinSolutions" target="_blank">
+              <img src="./images/github_white.svg"/>
+            </a>
+            <a href="https://www.instagram.com/zeppelinorg/" target="_blank">
+              <img src="./images/instagram.svg"/>
+            </a>
+            <a href="https://blog.zeppelin.solutions/" target="_blank">
+              <img src="./images/medium.svg"/>
+            </a>
+            <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+              <img src="./images/twitter.svg"/>
+            </a>
+          </div>
+          <p>© 2018 Zeppelin</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    (function() {
+     $('.triangle').css("border-right-width", $(window).width());
+    })();
+
+    window.onresize = function(event) {
+      $('.triangle').css("border-right-width", $(window).width());
+    };
+  </script>
+</html>
