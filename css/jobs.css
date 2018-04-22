@@ -61,3 +61,11 @@
 .role-title {
   margin-top: 60px;
 }
+
+.job-opening {
+  min-height: auto!important;
+  height: auto!important;
+}
+#job-openings li {
+  list-style-type: disc!important;
+}
