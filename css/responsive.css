@@ -2,6 +2,8 @@
 
 @media (max-width: 800px) { 
 	#principal { height: auto; }
+	#audits .card { width: 100% }
+	#leading-projects .mobile-column { flex-direction: column; }
 }
 
 @media (max-width: 600px) { /*Para monitores small*/
@@ -27,4 +29,5 @@
 	.learn-more-box { padding-bottom: 30px; }
 	.learn-more-box p { width: 100%; }
 	#jobs .flex-box div { width: 100%;}
+	.reports img { width: 85%; margin: 15px; }
 }

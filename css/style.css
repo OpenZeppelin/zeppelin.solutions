@@ -8,6 +8,7 @@
 }
 @font-face {
  font-family: 'SourceRegular';
+<<<<<<< HEAD
  src: url('../fonts/DINPro-Regular.otf') format('opentype');
 }
 @font-face {
@@ -17,6 +18,21 @@
 @font-face {
  font-family: 'SourceBlack';
  src: url('../fonts/DINPro-Bold.otf') format('opentype');
+=======
+ src: url('../fonts/SourceSansPro-Regular.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'SourceSemiBold';
+ src: url('../fonts/SourceSansPro-SemiBold.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'SourceBlack';
+ src: url('../fonts/SourceSansPro-Black.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'SourceLightItalic';
+ src: url('../fonts/SourceSansPro-LightItalic.ttf') format('opentype');
+>>>>>>> audit section
 }
 
 
@@ -95,13 +111,23 @@ p {
   font-family: 'SourceRegular'; 
   color: #7e8896;
 }
+<<<<<<< HEAD
+=======
+p a {
+  color: #7e8896;
+}
+>>>>>>> audit section
 h3 {/*h1 mas chiquito*/
   font-size: 2.1em;
   color: #283850;
   font-family: 'GenLight';
 }
 h4{/*p mas chiquito*/
+<<<<<<< HEAD
   font-size: 1.2em;
+=======
+  font-size: 1.3em;
+>>>>>>> audit section
   line-height: 1.8em;
   font-family: 'SourceRegular'; 
   color: #7e8896;
@@ -254,7 +280,7 @@ nav .dropdown-button {
   width: 100%;
   border: white;
 }
-#build i, #jobs .card i {
+#build i, #jobs .card i, .reports i {
   transform: rotate(180deg);
   padding-right: 5px;
 }
@@ -371,3 +397,51 @@ nav .dropdown-button {
   width: 85px !important;
 }
 
+/*------------AUDITS----------*/
+.audits-principal {
+  background-image: linear-gradient(307deg, #3a4e5b, #222e37)!important;
+  height: auto!important;
+}
+.audits-principal .hiring-box a {
+  background-color: rgba(0, 0, 0, 0.3)!important;
+}
+
+#audits h4 {
+  font-size: 1.4em;
+}
+.reports h2 {
+  color: white;
+}
+.reports i {
+  margin-top: -4px;
+}
+.reports a h2 {
+  display: flex;
+  align-items: start;
+}
+.reports img {
+  width: 95%;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.14), 0 0px 6px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+#leading-projects {
+  background: linear-gradient(to top, #f7f7f8 0%,#f7f7f8 50%, #ffffff 50%,#ffffff 100%)!important;
+}
+#leading-projects .card {
+  width: 45%;
+}
+
+#leading-projects .card h6 {
+  font-family: "SourceLightItalic";
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #283850;
+}
+#leading-projects .card h3 {
+  font-family: "GenRegular";
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #283850;
+}
+#leading-projects .card h3 .strong{
+  font-weight: 900;
+}
