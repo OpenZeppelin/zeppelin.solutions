@@ -373,8 +373,9 @@ nav .dropdown-button {
 }
 .leading-projects .truebit {
   width: 50%;
+  margin-top: 15px;
 }
-.leading-projects .bitgo, .leading-projects .cosmos {
+.leading-projects .bitgo, .leading-projects .cosmos,  .leading-projects .status {
   margin: 25px auto;
 }
 .leading-projects .dfinity, .leading-projects .shapeshift, .leading-projects .storj {
