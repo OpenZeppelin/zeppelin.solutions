@@ -418,9 +418,17 @@ p.home-slogan.bold {/*p en bold*/
 #about-contacts a {
   color: #283850;
 }
+.row.space {
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+.space {
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
 .core-team-box {
   height: 200px;
-  width: 22%;
+  width: 30%;
   min-width: 150px;
   display: inline-block;
   vertical-align: middle;

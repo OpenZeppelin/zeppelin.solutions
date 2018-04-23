@@ -5,6 +5,11 @@
   width: 27%;
 }
 
+.row.space {
+  padding: 15px 0 10px 0;
+  margin: 0 0 10px 0;
+}
+
 /*how we work*/
 #how-we-work {
   padding: 0 !important;
