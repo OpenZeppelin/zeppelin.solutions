@@ -132,7 +132,6 @@ h4 a {
   font-family: 'SourceRegular'; 
   color: #7e8896;
 }
-
 /*NAVBAR*/
 nav {
   height: 50px;
@@ -250,6 +249,12 @@ nav .dropdown-button {
 .home-slogan .strong{
   font-family: 'SourceSemiBold';
   text-decoration: underline;
+}
+p.home-slogan.bold {/*p en bold*/
+  font-size: 1.8em;
+  line-height: 1.5em;
+  font-family: 'DINPro-Bold';
+  color: #ffffff;
 }
 /*BUILD*/
 #build {
