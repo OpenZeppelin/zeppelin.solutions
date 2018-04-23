@@ -154,7 +154,7 @@ nav a {
   color: #283850;
 }
 #mobile-nav li {
-  height: 70px !important;
+  height: 50px !important;
 }
 .side-nav {
   width: 100%;
@@ -194,6 +194,10 @@ nav .dropdown-button {
   line-height: 31px;
   padding: 0;
   padding: 0 18px !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #283850!important;
 }
 
 /*BACKGROUNDS*/
