@@ -36,3 +36,10 @@
 	#jobs .flex-box div { width: 100%;}
 	.reports img { width: 85%; margin: 15px; }
 }
+
+@media (min-width: 600px) {
+	nav .nav-wrapper {
+    width: 90%;
+    margin: auto;
+	}
+}

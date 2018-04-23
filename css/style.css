@@ -47,7 +47,7 @@ body, #jobs, #about {
 section{
   position: relative;
   min-height: 300px;
-  padding: 50px 0;
+  padding: 30px 0;
   overflow: hidden;
   text-align: left;
   margin: 0 !important;
@@ -132,6 +132,12 @@ h4 a {
   font-family: 'SourceRegular'; 
   color: #7e8896;
 }
+p.text-bold {
+  font-size: 1.9em;
+  line-height: 1.5em;
+  font-family: 'DINPro-medium';
+  color: #293950;
+}
 /*NAVBAR*/
 nav {
   height: 50px;
@@ -181,6 +187,9 @@ nav .dropdown-button {
   font-family: 'SourceSemiBold';
   text-transform: none;
   font-size: 1.20em;
+}
+nav .button-collapse {
+  float: right !important;
 }
 .brand-box {
   width: 70px;
@@ -256,6 +265,13 @@ p.home-slogan.bold {/*p en bold*/
   font-family: 'DINPro-Bold';
   color: #ffffff;
 }
+
+/*BLOCKCHAINS*/
+#blockchains {
+  padding-bottom: 0px;
+  min-height: auto;
+}
+
 /*BUILD*/
 #build {
   position: relative;

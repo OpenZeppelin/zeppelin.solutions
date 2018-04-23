@@ -1,5 +1,5 @@
-#jobs #principal {
-  background: linear-gradient(to bottom right,#2F99D8, #3EBBE5);
+#jobs #principal, .job-opening {
+  background: linear-gradient(to bottom right,#2F99D8, #3EBBE5)!important;
 }
 #jobs .flex-box div {
   width: 27%;
@@ -13,10 +13,14 @@
 /*how we work*/
 #how-we-work {
   padding: 0 !important;
-  height: 420px;
+  height: 420px!important;
+}
+#how-we-work .img-box {
+  margin-right: 0;
+  padding: 0;
 }
 #how-we-work img {
-  width: 100%;
+  height: 420px;
 }
 #how-we-work .text-box {
   height: 100%!important;
@@ -46,7 +50,7 @@
   letter-spacing: 3px;
 }
 #jobs .card h3 {/*titulos card*/
-  font-family: 'GenLight'; 
+  font-family: 'DINPro-Light'; 
   font-size: 2.4em;
   margin-top: -8px;
   color: #283850;
