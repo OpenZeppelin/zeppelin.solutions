@@ -375,6 +375,10 @@ nav .dropdown-button {
   width: 50%;
   margin-top: 15px;
 }
+.leading-projects .eth-classic {
+  width: 70%;
+  margin-top: 28px;
+}
 .leading-projects .bitgo, .leading-projects .cosmos,  .leading-projects .status {
   margin: 25px auto;
 }
