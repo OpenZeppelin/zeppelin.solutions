@@ -109,7 +109,6 @@ h3 {/*h1 mas chiquito*/
 }
 h4{/*p mas chiquito*/
   font-size: 1.3em;
-  line-height: 1.8em;
   font-family: 'SourceRegular'; 
   color: #7e8896;
 }
@@ -242,17 +241,18 @@ nav .dropdown-button {
   background: linear-gradient(to top, #ffffff 0%,#ffffff 30%,#f7f7f8 30%,#f7f7f8 100%)!important;
 } 
 #build .card {
-  width: 45%;
+  width: 48%;
 }
 #build .card a {
-  font-family: 'SourceBlack';
+  font-family: 'DINPro-bold';
   font-size: 1.07em;
-  color: #83A5CB;
+  color: #4f7fb5;
   letter-spacing: 3px;
   display: flex;
 }
 #build .card .card-content {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  padding: 20px 26px 0 26px;
 }
 #build .card .card-action {
   bottom: 0;
@@ -276,14 +276,14 @@ nav .dropdown-button {
   z-index: -1;
 }
 #build h4 {/*titulos card*/
-  font-family: 'GenLight'; 
+  font-family: 'DINPro-medium';
   font-size: 2.4em;
   color: #4F7FB5;
 }
 #build h5 {/*card text*/
-  font-family: 'SourceRegular'; 
-  font-size: 1.14em;
-  line-height: 2em;
+  font-family: 'DINPro-regular';
+  font-size: 1.2em;
+  line-height: 1.7em;
   color: #4F7FB5;
 }
 #build h6 {/*card subtitle*/
