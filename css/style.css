@@ -82,9 +82,9 @@ a {
 
 /*TEXT*/
 h1 {
-  font-size: 2.71em;
-  color: #283850;
-  font-family: 'GenLight';
+    font-size: 2.8em;
+    color: #283850;
+    font-family: 'DINPro-Regular';
 }
 h2 {
   font-size: 1.28em;
@@ -94,10 +94,10 @@ h2 {
   font-family: 'SourceBlack';
 }
 p {
-  font-size: 1.7em;
-  line-height: 2em;
-  font-family: 'SourceRegular'; 
-  color: #7e8896;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    font-family: 'DINPro-Regular';
+    color: #7e8896;
 }
 p a {
   color: #7e8896;
@@ -221,16 +221,15 @@ nav .dropdown-button {
   margin-top: 50px;
 }
 .home-title {
-  color: white;
-  font-family: 'GenRegular';
-  font-size: 2.85em;
+    color: white;
+    font-family: 'DINPro-medium';
+    font-size: 2.9em;
 }
 .home-slogan {
-  font-family: 'SourceRegular';
-  text-transform: none;
-  font-size: 1.70em;
-  color: white;
-  line-height: 2.25em;
+    font-family: 'DINPro-regular';
+    text-transform: none;
+    font-size: 1.7em;
+    color: white;
 }
 .home-slogan .strong{
   font-family: 'SourceSemiBold';
