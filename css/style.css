@@ -109,7 +109,8 @@ h3 {/*h1 mas chiquito*/
 }
 h4{/*p mas chiquito*/
   font-size: 1.3em;
-  font-family: 'SourceRegular'; 
+  line-height: 1.5em;
+  font-family: 'DINPro-regular';
   color: #7e8896;
 }
 
@@ -205,7 +206,7 @@ nav .dropdown-button {
 
 /*HOME*/
 #principal {
-  background: linear-gradient(to bottom right, #3C7FC8 , #52B4BC);
+  background: linear-gradient(to bottom right, #1c57b3 , #3582C9);
   height: 70vh;
   color: white;
   padding: 0;
