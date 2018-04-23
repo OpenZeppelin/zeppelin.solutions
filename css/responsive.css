@@ -1,5 +1,10 @@
 /*MEDIA SIZE*/
 
+@media (max-width: 900px) { 
+	#process { flex-direction: column; }
+	#process div { height: auto; }
+}
+
 @media (max-width: 800px) { 
 	#principal { height: auto; }
 	#audits .card { width: 100% }

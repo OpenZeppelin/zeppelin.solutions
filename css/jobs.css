@@ -72,3 +72,21 @@
 #job-openings .flex i {
   padding-right: 5px;
 }
+#process {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#process p {
+  font-size: 1em;
+}
+#process div {
+  text-align: center;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 186px;
+  min-height: auto;
+}
