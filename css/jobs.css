@@ -69,3 +69,6 @@
 #job-openings li {
   list-style-type: disc!important;
 }
+#job-openings .flex i {
+  padding-right: 5px;
+}

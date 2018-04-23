@@ -1,10 +1,18 @@
 @font-face {
- font-family: 'GenRegular';
+ font-family: 'DINPro-Regular';
  src: url('../fonts/DINPro-Regular.otf') format('opentype');
 }
 @font-face {
- font-family: 'GenLight';
+ font-family: 'DINPro-Light';
  src: url('../fonts/DINPro-Light.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'DINPro-Medium';
+ src: url('../fonts/DINPro-Medium.otf') format('opentype');
+}
+@font-face {
+ font-family: 'DINPro-Bold';
+ src: url('../fonts/DINPro-Bold.otf') format('opentype');
 }
 @font-face {
  font-family: 'SourceRegular';
@@ -79,6 +87,10 @@ a {
 .no-margin {
   margin: 0!important;
 }
+.flex {
+  display: flex;
+  align-items: center;
+}
 
 /*TEXT*/
 h1 {
@@ -105,7 +117,7 @@ p a {
 h3 {/*h1 mas chiquito*/
   font-size: 2.1em;
   color: #283850;
-  font-family: 'GenLight';
+  font-family: 'DINPro-Light';
 }
 h4{/*p mas chiquito*/
   font-size: 1.3em;
@@ -226,11 +238,11 @@ nav .dropdown-button {
 }
 .home-title {
     color: white;
-    font-family: 'DINPro-medium';
+    font-family: 'DINPro-Medium';
     font-size: 2.9em;
 }
 .home-slogan {
-    font-family: 'DINPro-regular';
+    font-family: 'DINPro-Regular';
     text-transform: none;
     font-size: 1.7em;
     color: white;
@@ -249,7 +261,7 @@ nav .dropdown-button {
   width: 48%;
 }
 #build .card a {
-  font-family: 'DINPro-bold';
+  font-family: 'DINPro-Bold';
   font-size: 1.07em;
   color: #4f7fb5;
   letter-spacing: 3px;
@@ -281,12 +293,12 @@ nav .dropdown-button {
   z-index: -1;
 }
 #build h4 {/*titulos card*/
-  font-family: 'DINPro-medium';
+  font-family: 'DINPro-Medium';
   font-size: 2.4em;
   color: #4F7FB5;
 }
 #build h5 {/*card text*/
-  font-family: 'DINPro-regular';
+  font-family: 'DINPro-Regular';
   font-size: 1.2em;
   line-height: 1.7em;
   color: #4F7FB5;
