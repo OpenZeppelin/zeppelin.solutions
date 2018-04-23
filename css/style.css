@@ -354,6 +354,32 @@ nav .dropdown-button {
   justify-content: space-between;
 }
 
+.leading-projects {
+  height: 100px;
+  width: 160px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.leading-projects img {
+  max-width: 230px;
+  width: 60%;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.leading-projects .kik {
+  width: 32%;
+}
+.leading-projects .truebit {
+  width: 50%;
+}
+.leading-projects .bitgo, .leading-projects .cosmos {
+  margin: 25px auto;
+}
+.leading-projects .dfinity, .leading-projects .shapeshift, .leading-projects .storj {
+  margin: 13px auto;
+}
 
 /*------------ABOUT----------*/
 .about-principal {
