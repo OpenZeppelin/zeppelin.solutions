@@ -11,6 +11,13 @@
 	#leading-projects .mobile-column { flex-direction: column; }
 }
 
+@media (max-width: 1035px) { 
+	#build .card { width: 100% }
+	#build { padding: 30px 0; }
+	#build .col { padding: 0 15px; }
+	#build .mobile-column { flex-direction: column; }
+}
+
 @media (max-width: 600px) { /*Para monitores small*/
 	body, #jobs, #about { font-size: 10.5px; }
 	.valign-wrapper { height: auto!important; }
