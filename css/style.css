@@ -154,8 +154,8 @@ nav a {
   color: white;
   height: 100%;
   line-height: 50px;
-  padding-right: 30px!important;
-  padding-left: 30px!important;
+  padding-right: 15px!important;
+  padding-left: 15px!important;
 }
 .nav-wrapper {
   padding-left: 30px;
@@ -184,10 +184,15 @@ nav a {
 nav .dropdown-button {
   display: inline-flex;
   align-items: center;
-  font-family: 'SourceSemiBold';
+  font-family: 'DINPro-regular';
   text-transform: none;
-  font-size: 1.20em;
+  font-size: 1em;
 }
+
+nav i.material-icons {
+  font-size: 1em;
+}
+
 nav .button-collapse {
   float: right !important;
 }
