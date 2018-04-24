@@ -255,9 +255,10 @@ nav .button-collapse {
     font-size: 1.7em;
     color: white;
 }
-.home-slogan .strong{
+.home-slogan a {
   font-family: 'SourceSemiBold';
   text-decoration: underline;
+  color: white;
 }
 p.home-slogan.bold {/*p en bold*/
   font-size: 1.8em;
