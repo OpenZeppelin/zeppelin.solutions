@@ -35,38 +35,56 @@
   font-size: 1.07em;
   letter-spacing: 3px;
   display: flex;
+  border-radius: 6px;
 }
 #jobs .card .card-action {
   width: 100%;
   border: white;
   display: flex;
   justify-content: flex-end;
+  padding: 0 24px 24px 24px;
+}
+#jobs .card .card-content {
+  padding: 24px 24px 0 24px;
+} 
+#jobs .card.darken-1 {
+  margin: 1rem 0 1.5rem 0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0);
 }
 #jobs .card h6 {/*card subtitle*/
-  font-family: 'SourceBlack'; 
-  font-size: 0.85em;
+  font-family: 'DINPro-bold';
+  font-size: 0.8em;
   line-height: 2em;
   color: #283850;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 #jobs .card h3 {/*titulos card*/
-  font-family: 'DINPro-Light'; 
+  font-family: 'DINPro-regular'; 
   font-size: 2.4em;
-  margin-top: -8px;
+  margin: 2px 0;
   color: #283850;
 }
 #jobs .card h4 {/*card text*/
   font-size: 1.4em;
+  margin: 10px 0 0 0;
 }
 #jobs .card h5 {/*card text*/
-  font-size: 1em;
-  line-height: 1.4em;
-  font-family: 'SourceRegular'; 
+  font-size: 1.1em;
+  font-family: 'SourceRegular';
+  font-style: italic;
   color: #7e8896;
+  margin: 6px 0 0 0;
 }
 #jobs .card-action a {
+  font-family: 'DINPro-bold';
+  font-size: 1em;
+  letter-spacing: 0.15em;
   color: #283850 !important;
 }
+#jobs .card-action i {
+  font-size: 18px;
+}
+
 .role-title {
   margin-top: 60px;
 }
@@ -87,7 +105,8 @@
   justify-content: center;
 }
 #process p {
-  font-size: 1em;
+  font-size: 1.2em;
+  line-height: 1.3em
 }
 #process div {
   text-align: center;
