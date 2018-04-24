@@ -276,7 +276,7 @@ p.home-slogan.bold {/*p en bold*/
 /*BUILD*/
 #build {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   background: linear-gradient(to top, #ffffff 0%,#ffffff 30%,#f7f7f8 30%,#f7f7f8 100%)!important;
 } 
 #build .card {
