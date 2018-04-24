@@ -97,10 +97,11 @@ h1 {
     font-size: 2.8em;
     color: #283850;
     font-family: 'DINPro-Regular';
+    margin: 2rem 0 1rem 0;
 }
 h2 {
-  font-size: 1.28em;
-  letter-spacing: 3px;
+  font-size: 1em;
+  letter-spacing: 0.2em;
   color: #283850;
   text-transform: uppercase;
   font-family: 'SourceBlack';
@@ -121,7 +122,7 @@ h3 {/*h1 mas chiquito*/
 }
 h4{/*p mas chiquito*/
   font-size: 1.3em;
-  line-height: 1.5em;
+  line-height: 1.45em;
   font-family: 'DINPro-regular';
   color: #7e8896;
 }
@@ -251,13 +252,14 @@ nav .button-collapse {
 }
 .home-title {
     color: white;
-    font-family: 'DINPro-Medium';
-    font-size: 2.9em;
+    font-family: 'DINPro-Bold';
+    font-size: 2.8em;
+        margin: 4rem 0 4rem 0;
 }
 .home-slogan {
     font-family: 'DINPro-Regular';
     text-transform: none;
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: white;
 }
 .home-slogan a {
@@ -266,7 +268,7 @@ nav .button-collapse {
   color: white;
 }
 p.home-slogan.bold {/*p en bold*/
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 1.5em;
   font-family: 'DINPro-Bold';
   color: #ffffff;

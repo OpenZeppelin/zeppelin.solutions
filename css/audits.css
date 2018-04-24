@@ -45,3 +45,6 @@
 #leading-projects .card h3 .strong{
   font-weight: 900;
 }
+a.bold {/*h4 en bold*/
+  font-family: 'DINPro-bold';
+}
