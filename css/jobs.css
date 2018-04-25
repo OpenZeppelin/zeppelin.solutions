@@ -65,8 +65,9 @@
   color: #283850;
 }
 #jobs .card h4 {/*card text*/
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin: 10px 0 0 0;
+  color: #485568;
 }
 #jobs .card h5 {/*card text*/
   font-size: 1.1em;
