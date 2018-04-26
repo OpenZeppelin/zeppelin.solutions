@@ -1,5 +1,6 @@
 #jobs #principal, .job-opening {
   background: linear-gradient(to bottom right,#2F99D8, #3EBBE5)!important;
+  height: 50vh;
 }
 #jobs .flex-box div {
   width: 27%;
