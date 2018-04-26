@@ -208,6 +208,9 @@ nav .button-collapse {
   display: flex;
   align-items: center;
 }
+nav ul a:hover {
+  background-color: inherit !important;
+}
 .brand-box a:hover{
   background: transparent;
 }
@@ -435,6 +438,7 @@ p.home-slogan.bold {/*p en bold*/
 /*------------ABOUT----------*/
 .about-principal {
   background: linear-gradient(rgba(5, 46, 158, 0.4), rgba(5, 46, 158, 0.4)), linear-gradient(247deg, #2cace0, #0e64c5)!important;
+  height: 80vh!important;
 }
 #about-contacts {
   display: flex;
