@@ -132,15 +132,15 @@
           </ul>
         </div>
       </nav>
-      <section class="" id="home">
-        <div class="row">
+      <section class="triangle-section-padding" id="home">
+        <div class="row triangle-row-padding">
           <div class="col s12 m8 offset-m2 offset-s0">
             <h1 class="home-title">Security Audits</h1>
             <p class="home-slogan bold">Verify that your smart contract system works as intended</p>
             <p class="home-slogan">Zeppelin specializes in full system audits. Our engineers thoroughly review your system’s architecture and your smart contracts codebase, then write a complete report with actionable feedback for every issue found.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row triangle-row-padding">
           <div class="col s12 m8 offset-m2 offset-s0" id="audit-process">
             <div>
               <h2>1</h2>
@@ -173,7 +173,7 @@
             </div>
           </div>
         </div>
-        <div class="row reports">
+        <div class="row reports audit-triangle-div triangle-row-padding">
           <div class="flex-box mobile-column col s12 m8 offset-m2 offset-s0">
             <h2>OUR MOST POPULAR AUDIT REPORTS</h2>
             <a href="https://blog.zeppelin.solutions/tagged/security" target="_blank" class="hide-on-small-only"><h2>SEE ALL <i class="material-icons">keyboard_backspace</i></h2></a>
@@ -193,6 +193,7 @@
             <a href="https://blog.zeppelin.solutions/tagged/security" target="_blank" class="hide-on-med-and-up"><h2>SEE ALL <i class="material-icons">keyboard_backspace</i></h2></a>
           </div>
         </div>
+        <div class="audit-triangle"></div>
         </section>
     </section>
       <section class="row">
@@ -287,11 +288,11 @@
       </body>
   <script type="text/javascript">
     (function() {
-     $('.triangle').css("border-right-width", $(window).width());
+     $('.audit-triangle').css("border-right-width", $(window).width());
     })();
 
     window.onresize = function(event) {
-      $('.triangle').css("border-right-width", $(window).width());
+      $('.audit-triangle').css("border-right-width", $(window).width());
     };
   </script>
 </html>
