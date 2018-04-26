@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Ozepp</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25.0002227,50 C11.1929596,50 0,38.807386 0,25 C0,11.1930593 11.1929596,0 25.0002227,0 C38.8070404,0 50,11.1930593 50,25 C50,38.807386 38.8070404,50 25.0002227,50 Z" id="path-1"></path>
+        <filter x="-12.0%" y="-8.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="67.3781997%" y1="0%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#65D9EA" offset="0%"></stop>
+            <stop stop-color="#63C4E8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="30.7731853%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#62BDE8" offset="0%"></stop>
+            <stop stop-color="#5EA0E6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ozepp" transform="translate(4.000000, 2.000000)">
+            <g id="Fill-1">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M47.260274,36.4181062 C49.1472111,32.9675008 49.6670472,29.0282094 49.6670472,24.8417261 C49.6670472,17.738905 46.7055082,11.339967 41.7808219,6.84931507 L38.8708436,11.5157187 L23.9726027,36.4181062 L47.260274,36.4181062 Z" id="Fill-4" fill="url(#linearGradient-3)"></path>
+            <path d="M3.10643923,13.0136986 C1.1285854,16.5622558 0,20.6325419 0,24.9632481 C0,31.8417161 2.8361763,38.0700227 7.42295017,42.5824897 L25,13.0136986 L3.10643923,13.0136986 Z" id="Fill-6" fill="url(#linearGradient-4)"></path>
+        </g>
+    </g>
+</svg>

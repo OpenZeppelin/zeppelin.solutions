@@ -162,6 +162,22 @@ nav a {
   padding-right: 15px!important;
   padding-left: 15px!important;
 }
+
+.dropdown-box {
+  display: flex !important;
+  align-items: center;
+}
+.dropdown-box p {
+  margin: 0 15px;
+  font-size: 0.9em;
+}
+.dropdown-box p.title {
+  font-family: 'DINPro-Bold';
+  color: #283850;
+}
+.dropdown-box img {
+  height: 56px;
+}
 .nav-wrapper {
   padding-left: 30px;
   padding-right: 30px;
@@ -258,16 +274,16 @@ nav ul a:hover {
   margin-top: 50px;
 }
 .home-title {
-    color: white;
-    font-family: 'DINPro-Bold';
-    font-size: 2.8em;
-        margin: 4rem 0 4rem 0;
+  color: white;
+  font-family: 'DINPro-Bold';
+  font-size: 2.8em;
+  margin: 4rem 0 4rem 0;
 }
 .home-slogan {
-    font-family: 'DINPro-Regular';
-    text-transform: none;
-    font-size: 1.7em;
-    color: white;
+  font-family: 'DINPro-Regular';
+  text-transform: none;
+  font-size: 1.7em;
+  color: white;
 }
 .home-slogan a {
   font-family: 'DINPro-Bold';

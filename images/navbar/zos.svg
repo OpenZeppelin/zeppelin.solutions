@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>zOS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-12.0%" y="-8.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="-1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#66E0EB" offset="0%"></stop>
+            <stop stop-color="#5C8EE4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#63C4E9" offset="0%"></stop>
+            <stop stop-color="#5C8EE4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#5FA5E6" offset="0%"></stop>
+            <stop stop-color="#5C8EE4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#64CFEA" offset="0%"></stop>
+            <stop stop-color="#5E9FE5" offset="98.9771496%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="zOS" filter="url(#filter-1)" transform="translate(4.000000, 2.000000)">
+            <path d="M24.9741697,0.326374669 C11.3616158,0.326374669 0.326373463,11.361617 0.326373463,24.974353 C0.326373463,38.586907 11.3616158,49.6221493 24.9741697,49.6221493 C38.5869058,49.6221493 49.621966,38.586907 49.621966,24.974353 C49.621966,11.361617 38.5869058,0.326374669 24.9741697,0.326374669 Z" id="Fill-1" fill="url(#linearGradient-2)"></path>
+            <path d="M46.2155839,24.9194283 C46.2155839,13.1578915 36.6809704,3.62308283 24.9192384,3.62308283 C13.1577016,3.62308283 3.6230882,13.1578915 3.6230882,24.9194283 C3.6230882,36.6809651 13.1577016,46.2157738 24.9192384,46.2157738 C36.6809704,46.2157738 46.2155839,36.6809651 46.2155839,24.9194283" id="Fill-4" fill="#FCFFFF"></path>
+            <g id="Group-2" transform="translate(13.242878, 12.492765)">
+                <polygon id="Fill-9" fill="url(#linearGradient-3)" points="18.3615129 9.80330708 17.271471 11.6656245 21.8052237 11.6656245 22.8933172 9.80330708"></polygon>
+                <polygon id="Fill-12" fill="url(#linearGradient-4)" points="2.79662068 9.80330708 1.70657873 11.6656245 6.2403314 11.6656245 7.32860208 9.80330708"></polygon>
+                <polygon id="Fill-15" fill="url(#linearGradient-3)" points="16.7211362 12.6056395 15.636408 14.4589234 20.1731719 14.4589234 21.2561287 12.6056395"></polygon>
+                <polygon id="Fill-18" fill="url(#linearGradient-4)" points="1.15642105 12.6056395 0.0716929176 14.4589234 4.60827963 14.4589234 5.69123649 12.6056395"></polygon>
+                <polygon id="Fill-6" fill="url(#linearGradient-5)" points="1.9178917 0.484812224 1.9178917 5.29169533 12.2959626 5.29169533 1.46568548 23.7954852 7.85909861 23.7954852 21.4220971 23.7954852 21.4220971 18.9630958 10.6825092 18.9630958 18.6700689 5.29169533 21.4931252 0.484812224"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

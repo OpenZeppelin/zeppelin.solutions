@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Audits</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="88.7335423%" y1="83.4138523%" x2="13.8004787%" y2="16.0719487%" id="linearGradient-1">
+            <stop stop-color="#3A4E5B" offset="0%"></stop>
+            <stop stop-color="#222E37" offset="100%"></stop>
+        </linearGradient>
+        <path d="M25.0002227,50 C11.1929596,50 0,38.807386 0,25 C0,11.1930593 11.1929596,0 25.0002227,0 C38.8070404,0 50,11.1930593 50,25 C50,38.807386 38.8070404,50 25.0002227,50 Z" id="path-2"></path>
+        <filter x="-12.0%" y="-8.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="-1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Audits" transform="translate(2.000000, 2.000000)">
+            <g id="Fill-1" transform="translate(25.000000, 25.000000) rotate(-90.000000) translate(-25.000000, -25.000000) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Page-1" transform="translate(16.000000, 10.000000)" fill="#FFFFFF">
+                <polygon id="Fill-1" points="9.97412755 20.2490702 18.9728571 15.1484194 9.97412755 11.2209917"></polygon>
+                <polygon id="Fill-2" points="18.7987325 14.0509401 9.97410493 0.000867768595 9.97410493 10.1995041"></polygon>
+                <polygon id="Fill-3" points="9.97087041 22.9763771 9.97087041 29.9690733 18.8882361 17.9238874"></polygon>
+                <polygon id="Fill-4" points="0 15.1484411 9.00470748 20.2493089 9.00470748 11.2207965"></polygon>
+                <polygon id="Fill-5" points="9.00472041 -9.29752066e-06 0.173985714 14.0511787 9.00472041 10.1994329"></polygon>
+                <polygon id="Fill-6" points="9.00149235 29.9600052 9.00149235 22.9726395 0.0936590136 17.9240238"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
