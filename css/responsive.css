@@ -36,6 +36,8 @@
 	.hiring-box { display: none; }
 	.mobile-column { flex-direction: column; }
 	.learn-more-box a { margin-top: 30px; margin-bottom: 30px; }
+	.principal-quote .card-content { flex-direction: column; }
+	.principal-quote .card h3 .strong { display: block; line-height: 2em; }
 
 	#build .card { width: 100% }
 	#build { padding: 30px 0; }

@@ -457,6 +457,37 @@ p.home-slogan.bold {/*p en bold*/
   margin: 13px auto;
 }
 
+.principal-quote {
+  background: linear-gradient(to bottom, #f7f7f8 0%,#f7f7f8 50%, #283850 50%,#283850 100%)!important;
+  min-height: inherit;
+}
+.principal-quote .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.principal-quote img {
+  height: 100px;
+}
+.principal-quote .card {
+  max-width: 713px;
+  margin: auto;
+}
+.principal-quote .card h6 {
+  font-family: "SourceLightItalic";
+  font-size: 1.7em;
+  line-height: 1.5;
+  color: #283850;
+}
+.principal-quote .card h3 .strong {
+  font-weight: 900;
+  padding: 0 10px;
+  font-size: 1.5em;
+}
+.principal-quote .card h3 {
+  font-size: 1.2em;
+}
+
 /*------------ABOUT----------*/
 .about-principal {
   background: linear-gradient(rgba(5, 46, 158, 0.4), rgba(5, 46, 158, 0.4)), linear-gradient(247deg, #2cace0, #0e64c5)!important;
