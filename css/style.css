@@ -67,6 +67,9 @@ a {
 .centered {
   text-align: center;
 }
+h2.centered{
+  margin: 60px 0 0 0;
+}
 .valign-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -83,6 +86,7 @@ a {
 }
 .row {
   width: 100%;
+  padding: 60px 0;
 }
 .no-margin {
   margin: 0!important;
@@ -134,7 +138,7 @@ h4 a {
   color: #7e8896;
 }
 p.text-bold {
-  font-size: 1.9em;
+  font-size: 1.8em;
   line-height: 1.5em;
   font-family: 'DINPro-medium';
   color: #293950;
@@ -262,16 +266,16 @@ nav ul a:hover {
 .home-slogan {
     font-family: 'DINPro-Regular';
     text-transform: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: white;
 }
 .home-slogan a {
-  font-family: 'SourceSemiBold';
+  font-family: 'DINPro-Bold';
   text-decoration: underline;
   color: white;
 }
 p.home-slogan.bold {/*p en bold*/
-  font-size: 1.6em;
+  font-size: 1.7em;
   line-height: 1.5em;
   font-family: 'DINPro-Bold';
   color: #ffffff;
@@ -364,6 +368,9 @@ p.home-slogan.bold {/*p en bold*/
 .learn-more-box a:hover {
   background: linear-gradient(to right, #2561a2 , #37a0a9);
 }
+.row.valign {
+    padding: 60px 0 0 0;
+}
 
 /*NUMBERS*/
 .numbers {
@@ -447,7 +454,7 @@ p.home-slogan.bold {/*p en bold*/
   color: #283850;
 }
 .row.space {
-  padding: 10px 0 10px 0;
+  padding: 60px 0 10px 0;
   margin: 0;
 }
 .space {
