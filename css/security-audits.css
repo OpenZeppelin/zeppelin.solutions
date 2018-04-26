@@ -48,3 +48,68 @@
 a.bold {/*h4 en bold*/
   font-family: 'DINPro-bold';
 }
+
+
+#audit-process {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+}
+#audit-process p {
+  font-size: 1em;
+  line-height: 1.2em;
+  color:white;
+  overflow-wrap: break-word;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+#audit-process h2 {
+  border: solid 1px;
+  padding: 30px 33px;
+  border-radius: 50px;
+  color: white;
+  z-index: 1222;
+}
+#audit-process div {
+  text-align: center;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 186px;
+  min-height: auto;
+  position: relative;
+  width: 200px;
+}
+#audit-process .arrow {
+  position: absolute;
+  top: 62px;
+  right: calc(50% - 99px);
+  z-index: 0;
+  width: 61px;
+}
+@media (min-width: 1200px) and (max-width: 1385px){ /*Para monitores large*/
+  #audit-process .arrow {
+    right: calc(50% - 88px);
+    width: 50px!important;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px){ /*Para monitores large*/
+  #audit-process .arrow {
+    right: calc(50% - 78px);
+    width: 38px!important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1100px){ /*Para monitores large*/
+  #audit-process .arrow {
+    right: calc(50% - 69px);
+    width: 31px!important;
+  }
+}
