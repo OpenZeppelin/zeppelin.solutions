@@ -119,6 +119,10 @@ a.bold {/*h4 en bold*/
   z-index: 0;
   width: 61px;
 }
+.card-margin {
+  margin: 25px 0 0 0;
+}
+
 @media (min-width: 1200px) and (max-width: 1385px){ /*Para monitores large*/
   #audit-process .arrow {
     right: calc(50% - 99px);
