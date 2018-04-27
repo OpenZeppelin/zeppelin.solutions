@@ -178,6 +178,9 @@ nav a {
 .dropdown-box img {
   width: 56px;
 }
+.dropdown-content {
+  border-radius: 4px;
+}
 .nav-wrapper {
   padding-left: 30px;
   padding-right: 30px;
