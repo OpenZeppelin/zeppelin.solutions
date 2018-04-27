@@ -37,7 +37,7 @@
   z-index: 2;
 }
 .triangle-row-padding {
-  padding: 30px 15px;
+  padding: 20px 15px;
 }
 .triangle-section-padding {
   padding: 0 !important;
@@ -45,10 +45,12 @@
 #leading-projects {
   background: linear-gradient(to top, #f7f7f8 0%,#f7f7f8 50%, #ffffff 50%,#ffffff 100%)!important;
 }
+#leading-projects .centered {
+    padding: 0 0 30px 0;
+}
 #leading-projects .card {
   width: 45%;
 }
-
 #leading-projects .card h6 {
   font-family: "SourceLightItalic";
   font-size: 1.5em;
@@ -78,8 +80,6 @@ a.bold {/*h4 en bold*/
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px; 
-  margin-bottom: 30px; 
 }
 #audit-process p {
   font-size: 1em;

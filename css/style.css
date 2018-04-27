@@ -86,7 +86,7 @@ h2.centered{
 }
 .row {
   width: 100%;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 .no-margin {
   margin: 0!important;
@@ -180,6 +180,7 @@ nav a {
 }
 .dropdown-content {
   border-radius: 4px;
+  box-shadow: -2px 4px 12px 0 rgba(0, 0, 0, 0.2);
 }
 .nav-wrapper {
   padding-left: 30px;
