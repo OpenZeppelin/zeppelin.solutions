@@ -21,13 +21,13 @@
                 <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
                 <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
             </g>
-            <g id="Page-1" transform="translate(16.000000, 10.000000)" fill="#FFFFFF">
-                <polygon id="Fill-1" points="9.97412755 20.2490702 18.9728571 15.1484194 9.97412755 11.2209917"></polygon>
-                <polygon id="Fill-2" points="18.7987325 14.0509401 9.97410493 0.000867768595 9.97410493 10.1995041"></polygon>
-                <polygon id="Fill-3" points="9.97087041 22.9763771 9.97087041 29.9690733 18.8882361 17.9238874"></polygon>
-                <polygon id="Fill-4" points="0 15.1484411 9.00470748 20.2493089 9.00470748 11.2207965"></polygon>
-                <polygon id="Fill-5" points="9.00472041 -9.29752066e-06 0.173985714 14.0511787 9.00472041 10.1994329"></polygon>
-                <polygon id="Fill-6" points="9.00149235 29.9600052 9.00149235 22.9726395 0.0936590136 17.9240238"></polygon>
+            <g id="Page-1" transform="translate(17.000000, 11.000000)" fill="#FFFFFF">
+                <polygon id="Fill-1" points="8.92421939 18.8991322 16.9757143 14.1385248 8.92421939 10.4729256"></polygon>
+                <polygon id="Fill-2" points="16.8199185 13.1142107 8.92419915 0.000809917355 8.92419915 9.51953719"></polygon>
+                <polygon id="Fill-3" points="8.9213051 21.4446186 8.9213051 27.9711351 16.9000007 16.7289616"></polygon>
+                <polygon id="Fill-4" points="0 14.138545 8.05684354 18.899355 8.05684354 10.4727434"></polygon>
+                <polygon id="Fill-5" points="8.0568551 -8.67768595e-06 0.155671429 13.1144335 8.0568551 9.51947066"></polygon>
+                <polygon id="Fill-6" points="8.05396684 27.9626715 8.05396684 21.4411302 0.0838001701 16.7290888"></polygon>
             </g>
         </g>
     </g>
