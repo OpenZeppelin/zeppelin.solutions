@@ -114,10 +114,10 @@ p {
     font-size: 1.6em;
     line-height: 1.5em;
     font-family: 'DINPro-Regular';
-    color: #7e8896;
+    color: #6e7886;
 }
 p a {
-  color: #7e8896;
+  color: #6e7886;
 }
 h3 {/*h1 mas chiquito*/
   font-size: 2.1em;
@@ -128,14 +128,14 @@ h4{/*p mas chiquito*/
   font-size: 1.3em;
   line-height: 1.45em;
   font-family: 'DINPro-regular';
-  color: #7e8896;
+  color: #6e7886;
 }
 
 h4 a {
   font-size: 1em;
   line-height: 1.8em;
   font-family: 'SourceRegular'; 
-  color: #7e8896;
+  color: #6e7886;
 }
 p.text-bold {
   font-size: 1.8em;
@@ -284,7 +284,7 @@ nav ul a:hover {
   margin: 4rem 0 4rem 0;
 }
 .home-slogan {
-  font-family: 'DINPro-Regular';
+  font-family: 'DINPro-Medium';
   text-transform: none;
   font-size: 1.7em;
   color: white;
@@ -292,6 +292,7 @@ nav ul a:hover {
 .home-slogan a {
   font-family: 'DINPro-Bold';
   text-decoration: underline;
+  text-underline-position: under;
   color: white;
 }
 p.home-slogan.bold {/*p en bold*/
