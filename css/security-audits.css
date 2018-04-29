@@ -82,8 +82,9 @@ a.bold {/*h4 en bold*/
   justify-content: center;
 }
 #audit-process p {
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: 1.1em;
+  font-family: DINPro-medium;
+  line-height: 1.3em;
   color:white;
   overflow-wrap: break-word;
   -moz-hyphens: auto;
