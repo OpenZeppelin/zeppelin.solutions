@@ -69,6 +69,7 @@ a {
 }
 h2.centered{
   margin: 60px 0 0 0;
+  color: #6e7886;
 }
 .valign-wrapper {
   display: -webkit-flex;
@@ -421,6 +422,9 @@ div.card.darken-1 {
   color: white;
   line-height: 30px;
   font-size: 1.2em;
+}
+#footer h2 {
+  margin: 1.8rem 0 0.6rem 0;
 }
 #footer p {
   font-size: 1.2em;
