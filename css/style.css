@@ -234,6 +234,7 @@ nav .button-collapse {
 }
 nav ul a:hover {
   background-color: inherit !important;
+  opacity: 0.6;
 }
 .brand-box a:hover{
   background: transparent;
