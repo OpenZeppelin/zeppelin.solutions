@@ -111,7 +111,7 @@ h2 {
   font-family: 'SourceBlack';
 }
 p {
-    font-size: 1.6em;
+    font-size: 20px;
     line-height: 1.5em;
     font-family: 'DINPro-Regular';
     color: #6e7886;
@@ -282,12 +282,11 @@ nav ul a:hover {
   color: white;
   font-family: 'DINPro-Bold';
   font-size: 2.8em;
-  margin: 4rem 0 4rem 0;
+  margin: 2rem 0;
 }
 .home-slogan {
-  font-family: 'DINPro-Medium';
+  font-family: 'DINPro-Regular';
   text-transform: none;
-  font-size: 1.7em;
   color: white;
 }
 .home-slogan a {
