@@ -515,6 +515,7 @@ div.card.darken-1 {
 } 
 #about-contacts a {
   color: #283850;
+  font-weight: bold;
 }
 .row.space {
   padding: 60px 0 10px 0;
@@ -534,4 +535,7 @@ div.card.darken-1 {
 .core-team-img {
   height: 85px !important;
   width: 85px !important;
+}
+.role-title {
+  margin-top: 60px;
 }
