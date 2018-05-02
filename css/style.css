@@ -665,3 +665,9 @@ p.home-slogan.bold {/*p en bold*/
   padding: 0;
   margin-bottom: 0;
 }
+
+::placeholder, input {
+  line-height: 1.5em;
+  font-family: 'DINPro-regular';
+  color: #7e8896!important;
+}

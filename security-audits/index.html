@@ -30,7 +30,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
     <link rel="manifest" href="../images/favicon/manifest.json">
-    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg"color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
     <meta charset="UTF-8"> <!--Encoding -->
@@ -50,6 +50,7 @@
     <link rel="stylesheet" type="text/css" href="../css/animate.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
     <script type="text/javascript" src="../js/home.js"></script>
+    <script type="text/javascript" src="../js/form.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67327037-1"></script>
@@ -302,6 +303,90 @@
         <h1>Request a security audit</h1>
         <h4>Our quotes and turnaround times vary according to the codebase’s length and complexity.</br>We prioritize projects that base their code and architecture on <u><a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a></u>, the community-driven, industry-standard library.</h4>
         <h4>Send an email to <a class="bold" href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a> including your project's website, links to your source code, and system documentation.</h4>
+        <form class="col s12" id="audit-form">
+          <div class="row" id="step1">
+            <div class="col s6">
+              <input placeholder="Your name" id="name" type="text" class="validate" required>
+            </div>
+            <div class="col s6">
+              <input type="email" id="email" placeholder="Work email" class="validate" required>
+            </div>
+            <div class="col s6">
+              <input type="text" id="projectName" placeholder="Project name" class="validate" required>
+            </div>
+            <div class="col s6">
+              <input type="text" id="website" placeholder="Website" class="validate" required>
+            </div>
+            <div class="col s6">
+              <select id="projectStatus" required>
+                <option value="" disabled selected>Project status</option>
+                <option value="We're still polishing the idea">We're still polishing the idea</option>
+                <option value="The whitepaper is ready, no code yet">The whitepaper is ready, no code yet</option>
+                <option value="The code is being developed">The code is being developed</option>
+                <option value="The code is ready for an audit">The code is ready for an audit</option>
+              </select>
+            </div>
+            <div class="col s6">
+              <select id="howDidYouKnowUs" required>
+                <option value="" disabled selected>How did you get to know about us?</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Search engines">Search engines</option>
+                <option value="Open Zeppelin community">Open Zeppelin community</option>
+                <option value="At a conference">At a conference</option>
+                <option value="Personal reference">Personal reference</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="col s6 offset-s6">
+              <select id="auditService" required>
+                <option value="" disabled selected>Type of audit service needed</option>
+                <option value="Smart contract application">Smart contract application</option>
+                <option value="Token sale">Token sale</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="col s6 offset-s6">
+              <button id="audit-form-next" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending message">Next</button>
+            </div>
+          </div>
+          <div class="row hidden" id="step2">
+            <div>
+              <div class="col s12">
+                <textarea class="materialize-textarea" rows="4" placeholder="Describe your project in 280 characters or less" id="describeProject" maxlength="300" required></textarea>
+              </div>
+              <div class="col s12">
+                <input type="text" class="validate" id="howLong" placeholder="How long have you been working on your project?">
+              </div>
+            </div>
+            <div class="hidden" id="audit-step">
+              <div class="col s12">
+                <input type="text" class="validate" id="sourceCodeLink" placeholder="Link to your source code (if public)">
+              </div>
+              <div class="col s12">
+                <input type="text" class="validate" id="systemDocumentation" placeholder="Link to your system documentation">
+              </div>
+            </div>
+            <div class="hidden" id="token-step">
+              <div class="col s12">
+                <input type="text" class="validate" id="tokenPartners" placeholder="Are you working with any partners towards the token sale?">
+              </div>
+              <div class="col s12">
+                <input type="text" class="validate" id="tokenIssue" placeholder="On wich network are you issuing your token?">
+              </div>
+            </div>
+            <div>
+              <div class="col s12">
+                <input type="text" class="validate" id="specialNeeds" placeholder="Does your project have any special needs or caveats?">
+              </div>
+            </div>
+            <div class="col s6">
+              <button class="back-btn" id="backToStep1"><i class="material-icons">keyboard_backspace</i> Back</button>
+            </div>
+            <div class="col s6">
+              <button id="sendForm" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending message">Send message</button>
+            </div> 
+          </div>
+        </form>
       </div>
       <div class="row"></div>
     </section>

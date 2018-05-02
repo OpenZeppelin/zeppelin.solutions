@@ -78,3 +78,29 @@ a.bold {/*h4 en bold*/
 #process div {
   width: 178px;
 }
+
+#audit-form .row .col {
+  position: relative;
+}
+#audit-form .row .col input, #audit-form .row .col select, #audit-form .row .col textarea {
+  margin-top: 1rem;
+}
+
+#audit-form button {
+  background: transparent;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: solid 2px #283850;
+  border-radius: 3px;
+  color: #283850;
+  font-family: 'DINPro-bold';
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+#audit-form .back-btn {
+  display: flex;
+  width: auto!important;
+  border: solid 0px transparent !important;
+}
