@@ -10,6 +10,10 @@
   padding: 15px 0 10px 0;
   margin: 0 0 10px 0;
 }
+h2.row.values {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
 
 /*how we work*/
 #how-we-work {
