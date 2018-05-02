@@ -3,7 +3,7 @@ $(document).ready(function(){
 
   $('#audit-form-next').click(function(e) {
     e.preventDefault();
-    if(validateStep1()) {
+    if(validateIfEmpty(['#name', '#email', '#projectName', '#website', '#projectStatus', '#howDidYouKnowUs', '#auditService'])) {
       $('#step1').addClass('hidden');
       $('#step2').removeClass('hidden');
       if($('#auditService').val() && $('#auditService').val() == 'Token sale') {
@@ -13,6 +13,7 @@ $(document).ready(function(){
       }
     }
   });
+
   $('#backToStep1').click(function(e) {
     e.preventDefault();
     $('#step2').addClass('hidden');
@@ -21,17 +22,32 @@ $(document).ready(function(){
     $('#step1').removeClass('hidden');
   });
 
-  function validateStep1() {
-    // This function deals with validation of the first step
+  function validateIfEmpty(validations) {
     var valid = true;
+    for (var key in validations) {
+      if (!$(validations[key]).val() || $(validations[key]).val() == '' || $(validations[key]).val() == null) {
+        $(validations[key]).addClass('invalid');
+        valid = false;
+      }
+    }
 
-    //to do: validation
-    return valid; // return the valid status
+    if (valid == false) {
+      Materialize.toast('Please complete all fields', 4000);
+    }
+    return valid;
   }
 
   $("#audit-form").submit(e => {
     e.preventDefault();
-    $('#sendForm').button('loading');
+    var validation = '';
+
+    if ($('#auditService').val() && $('#auditService').val() == 'Token sale') {
+      validation = validateIfEmpty(['#describeProject', '#howLong', '#tokenPartners', '#tokenIssue', '#specialNeeds']);
+    } else {
+      validation = validateIfEmpty(['#describeProject', '#howLong', '#sourceCodeLink', '#systemDocumentation', '#specialNeeds']);
+    }
+    if (validation) {
+      $('#sendForm').button('loading');
     // $.ajax({
     //   type: "POST",
     //   dataType: "json",
@@ -58,36 +74,18 @@ $(document).ready(function(){
 
     //   complete(returnval) {
     //     if(returnval.status > 300) {
-    //       $('#contactErrorAlert').removeClass('hidden')
+    //       $('#audit-form-error').removeClass('hidden')
+    //       $('#audit-form-success').addClass('hidden')
     //       $('#sendForm').button('reset');
     //     }
     //     else if(returnval.status >= 200 && returnval.status < 300) {
     //       $('#audit-form').addClass('hidden')
-    //       $('#form-title').addClass('hidden')
-    //       $('#contactErrorAlert').addClass('hidden')
-    //       $('#success-message').removeClass('hidden')
+    //       $('#audit-form-error').addClass('hidden')
+    //       $('#audit-form-success').removeClass('hidden')
     //       $('#sendForm').button('reset');
     //     }
     //   },
     // })
+    }
   })
-
-  function requireField(id) {
-    $(`#${id}`).removeClass('hidden')
-    $(`#${id}`).parent().removeClass('hidden')
-    $(`#${id}`).prop('required', true)
-  }
-
-  function dismissField(id) {
-    $(`#${id}`).addClass('hidden')
-    $(`#${id}`).parent().addClass('hidden')
-    $(`#${id}`).prop('required', false)
-  }
-
-  function getURLParam(name) {
-    const queryParams = window.location.search.substring(1)
-    const params = queryParams.split('&')
-    const param = params.find(param => param.split('=')[0] === name)
-    return param ? param.split('=')[1] : null
-  }
 })
