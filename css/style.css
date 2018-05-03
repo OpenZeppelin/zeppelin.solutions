@@ -224,9 +224,9 @@ nav ul a:hover {
   background: transparent;
 }
 .hiring-box a {
-  font-family: 'SourceSemiBold';
+  font-family: 'SourceBold';
   color: white;
-  font-size: 1em;
+  font-size: 0.9em;
   background: #1b7ac2;
   border-radius: 50px;
   height: 31px;
