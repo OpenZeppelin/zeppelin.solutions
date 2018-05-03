@@ -344,11 +344,13 @@ nav ul a:hover {
 .home-title {
   color: white;
   font-family: 'DINPro-Bold';
-  font-size: 2.8em;
-  margin: 2rem 0;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  margin: 3rem 0;
 }
 .home-slogan {
   font-family: 'DINPro-Regular';
+  font-size: 22px;
   text-transform: none;
   color: white;
 }
