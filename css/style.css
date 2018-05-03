@@ -166,6 +166,7 @@ nav a {
 .dropdown-box {
   display: flex !important;
   align-items: center;
+  padding: 15px;
 }
 .dropdown-box p {
   margin: 0 15px;
@@ -184,7 +185,7 @@ nav a {
 }
 .nav-wrapper {
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 15px;
 }
 .fa-bars {
   font-size: 26px !important;
@@ -211,7 +212,13 @@ nav .dropdown-button {
   align-items: center;
   font-family: 'DINPro-regular';
   text-transform: none;
+<<<<<<< HEAD
   font-size: 1.05em;
+=======
+  font-size: 18px;
+  padding: 0 15px;
+  cursor: pointer;
+>>>>>>> custom dropdown
 }
 
 nav i.material-icons {
@@ -222,7 +229,10 @@ nav .button-collapse {
   float: right !important;
 }
 .brand-box {
-  width: 70px;
+  width: 193px;
+}
+.brand-box img {
+  height: 35px;
 }
 .brand-box, .hiring-box {
   height: 65px;
@@ -413,17 +423,20 @@ div.card.darken-1 {
 #footer {
   background: #283850;
   color: white;
-  padding: 60px 0;
+  padding: 25px 0 60px;
   margin-bottom: 0;
 }
 #footer a, #footer h2 {
   display: block;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 30px;
   font-size: 1.2em;
 }
+#footer a:hover, #footer h2:hover {
+  color: rgba(255, 255, 255, 1);
+}
 #footer h2 {
-  margin: 1.8rem 0 0.6rem 0;
+  margin: 1.8rem 0 10px 0;
 }
 #footer p {
   font-size: 1.2em;
@@ -537,4 +550,63 @@ div.card.darken-1 {
 }
 .role-title {
   margin-top: 60px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav-dropdown-container {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  left: 50%;
+  background: white;
+  white-space: nowrap;
+  padding: 0;
+  border-radius: 4px;
+}
+.nav-dropdown-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: white;
+  border-top: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.dropdown:hover .nav-dropdown-container {
+  display: block;
+}
+.nav-dropdown-container li {
+  width: 100%;
+  border-radius: 4px;
+}
+.nav-dropdown-container li a {
+  border-radius: 4px;
+}
+.nav-dropdown-container {
+  padding: 10px;
+}
+
+.projects-dropdown {
+  margin-left: -244px;
+}
+.services-dropdown {
+  margin-left: -251px;
+}
+.learn-dropdown {
+  margin-left: -232px;
+}
+.company-dropdown {
+  margin-left: -80px;
+  margin-left: -104.5px;
 }
