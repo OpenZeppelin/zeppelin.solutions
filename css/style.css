@@ -234,6 +234,10 @@ nav ul a:hover {
   padding: 0;
   padding: 0 18px !important;
 }
+.hiring-box a:hover {
+  color: #1b7ac2 !important;
+  background: white !important;
+}
 
 /*DROPDOWN*/
 .dropdown-box {
