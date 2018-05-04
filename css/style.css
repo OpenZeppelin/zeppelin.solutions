@@ -396,7 +396,7 @@ p.home-slogan.bold {/*p en bold*/
 #build .card {
   width: 48%;
 }
-#build .card a {
+#build .card-action a {
   font-family: 'DINPro-Bold';
   font-size: 1.07em;
   color: #4f7fb5;
@@ -419,7 +419,9 @@ p.home-slogan.bold {/*p en bold*/
 }
 #build .site-link {
   line-height: 24px;
+  margin-right: 0px;
 }
+
 .triangle {
   border-right-style: solid;
   border-right-color: transparent;
