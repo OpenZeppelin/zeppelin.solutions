@@ -266,6 +266,15 @@ nav ul a:hover {
 .dropdown-box img {
   width: 56px;
 }
+.dropdown-box img.little {
+  width: 30px;
+}
+.projects-dropdown img.little {
+  margin: 0 13px;
+}  
+.projects-dropdown .tpl {
+  padding: 7px 15px;
+} 
 .dropdown-content {
   border-radius: 4px;
   box-shadow: -2px 4px 12px 0 rgba(0, 0, 0, 0.2);
@@ -314,10 +323,6 @@ nav ul a:hover {
 .nav-dropdown-container li a {
   border-radius: 4px;
 }
-.nav-dropdown-container {
-  padding: 10px;
-}
-
 .projects-dropdown {
   margin-left: -244px;
 }

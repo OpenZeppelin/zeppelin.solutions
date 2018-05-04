@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Jobs</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Jobs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4-Copy" transform="translate(4.000000, 6.000000)">
+            <g id="Group" transform="translate(10.000000, 0.000000)">
+                <rect id="Rectangle" fill="#273B5A" x="0" y="0" width="12" height="5"></rect>
+                <rect id="Rectangle-Copy" fill="#FFFFFF" x="2" y="2" width="8" height="3"></rect>
+            </g>
+            <path d="M3.2,4.6 C1.44,4.6 0,6.13 0,8 L0,11.3 C0,13.187 1.424,14.7 3.2,14.7 L12,14.7 L12,13 L20,13 L20,14.7 L28.8,14.7 C30.56,14.7 32,13.17 32,11.3 L32,8 C32,6.13 30.56,4.6 28.8,4.6 L3.2,4.6 Z M12,17 L12,16 L0.0177777778,16 L0,22.8 C0,24.687 1.58222222,26.2 3.55555556,26.2 L28.4444444,26.2 C30.4177778,26.2 32,24.687 32,22.8 L32,16 L20,16 L20,17 L12,17 Z" id="Fill-1" fill="#273B5A"></path>
+        </g>
+    </g>
+</svg>

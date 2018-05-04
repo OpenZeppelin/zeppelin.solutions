@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="47px" height="54px" viewBox="0 0 47 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>Audits</title>
+    <title>Group 5</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="88.7335423%" y1="83.4138523%" x2="13.8004787%" y2="16.0719487%" id="linearGradient-1">
+        <linearGradient x1="100%" y1="17.7487663%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stop-color="#3A4E5B" offset="0%"></stop>
             <stop stop-color="#222E37" offset="100%"></stop>
         </linearGradient>
-        <path d="M25.0002227,50 C11.1929596,50 0,38.807386 0,25 C0,11.1930593 11.1929596,0 25.0002227,0 C38.8070404,0 50,11.1930593 50,25 C50,38.807386 38.8070404,50 25.0002227,50 Z" id="path-2"></path>
-        <filter x="-12.0%" y="-8.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+        <path d="M20.5,0 L0,8.72727273 L0,21.8181818 C0,33.9272727 8.74666667,45.2509091 20.5,48 C32.2533333,45.2509091 41,33.9272727 41,21.8181818 L41,8.72727273 L20.5,0 Z" id="path-2"></path>
+        <filter x="-14.6%" y="-8.3%" width="124.4%" height="120.8%" filterUnits="objectBoundingBox" id="filter-3">
             <feOffset dx="-1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-42.9%" y="-37.5%" width="185.7%" height="175.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.52 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Audits" transform="translate(2.000000, 2.000000)">
-            <g id="Fill-1" transform="translate(25.000000, 25.000000) rotate(-90.000000) translate(-25.000000, -25.000000) ">
-                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
-            </g>
-            <g id="Page-1" transform="translate(17.000000, 11.000000)" fill="#FFFFFF">
-                <polygon id="Fill-1" points="8.92421939 18.8991322 16.9757143 14.1385248 8.92421939 10.4729256"></polygon>
-                <polygon id="Fill-2" points="16.8199185 13.1142107 8.92419915 0.000809917355 8.92419915 9.51953719"></polygon>
-                <polygon id="Fill-3" points="8.9213051 21.4446186 8.9213051 27.9711351 16.9000007 16.7289616"></polygon>
-                <polygon id="Fill-4" points="0 14.138545 8.05684354 18.899355 8.05684354 10.4727434"></polygon>
-                <polygon id="Fill-5" points="8.0568551 -8.67768595e-06 0.155671429 13.1144335 8.0568551 9.51947066"></polygon>
-                <polygon id="Fill-6" points="8.05396684 27.9626715 8.05396684 21.4411302 0.0838001701 16.7290888"></polygon>
+        <g id="Artboard" transform="translate(-603.000000, -56.000000)">
+            <g id="Group-5" transform="translate(607.000000, 58.000000)">
+                <g id="Page-1">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Z" filter="url(#filter-4)" transform="translate(14.000000, 16.000000)" fill="#FFFFFF">
+                    <polygon id="Fill-14" points="0.310480498 0.142759799 13.7456603 0.142759799 11.8081329 3.34335858 0.310480498 3.34335858"></polygon>
+                    <polygon id="Fill-15" points="6.0635502 5.61351851 8.28003195e-05 15.6635352 4.38808573 15.6635352 11.3242685 4.14676149"></polygon>
+                    <polygon id="Fill-16" points="9.47804907 12.4462487 5.17822848 15.6635152 13.6969323 15.6635152 13.6969323 12.4462487"></polygon>
+                </g>
             </g>
         </g>
     </g>
