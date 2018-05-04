@@ -68,6 +68,7 @@ h2.row.values {
   font-size: 2.4em;
   margin: 2px 0;
   color: #283850;
+  letter-spacing: 0 !important;
 }
 #jobs .card h4 {/*card text*/
   font-size: 1.5em;
