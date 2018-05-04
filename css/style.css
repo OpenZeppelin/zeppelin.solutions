@@ -481,12 +481,6 @@ p.home-slogan.bold {/*p en bold*/
   line-height: 1em;
 }
 
-/*QUOTE*/
-div.card.darken-1 {
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0);
-  margin: 2rem 0 1rem 0;
-}
-
 /*FOOTER*/
 #footer {
   background: #283850;
@@ -561,14 +555,19 @@ div.card.darken-1 {
 .principal-quote .card-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .principal-quote img {
   height: 100px;
 }
+.principal-quote .left-padding {
+  padding-left: 10px;
+}
 .principal-quote .card {
-  max-width: 713px;
+  max-width: 623px;
   margin: auto;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0);
+  margin: 2rem auto 1rem auto;!important;
 }
 .principal-quote .card h6 {
   font-family: "SourceLightItalic";
