@@ -89,7 +89,7 @@ h2.centered{
   width: 100%;
 }
 .no-margin {
-  margin: 0!important;
+  margin: 0.2rem!important;
 }
 .flex {
   display: flex;
@@ -627,8 +627,9 @@ p.home-slogan.bold {/*p en bold*/
   vertical-align: middle;
 }
 .core-team-img {
-  height: 85px !important;
-  width: 85px !important;
+  height: 120px !important;
+  width: 120px !important;
+  margin-bottom: 1.5rem;
 }
 .role-title {
   margin-top: 60px;
