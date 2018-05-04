@@ -485,6 +485,9 @@ p.home-slogan.bold {/*p en bold*/
   margin-bottom: 0px;
   line-height: 1em;
 }
+.numbers-quote {
+  margin-top: 10px;
+}
 
 /*FOOTER*/
 #footer {
