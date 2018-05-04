@@ -49,13 +49,18 @@
 	span.openings { display: block; }
 	span.openings h5{ padding-left: 0px; }
 	#jobs .card .card-action { justify-content: center; padding: 24px; }
+	.container {
+		width: 100%;
+	}
+
 }
 
 @media (min-width: 600px) {
 	nav .nav-wrapper {
-    width: 81%;
+    width: 75%;
     margin: auto;
     margin-top: 30px;
+    padding: 0;
 	}
 }
 

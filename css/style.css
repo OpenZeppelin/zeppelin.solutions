@@ -106,6 +106,12 @@ h2.centered{
   padding: 0;
 }
 
+.container {
+  width: 75%;
+  margin: auto;
+  padding: 0 15px;
+}
+
 /*TEXT*/
 h1 {
   font-size: 2.8em;
