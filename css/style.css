@@ -635,3 +635,13 @@ p.home-slogan.bold {/*p en bold*/
 .role-title {
   margin-top: 60px;
 }
+
+#clients .platforms {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+#clients .partners {
+  padding: 0;
+  margin-bottom: 0;
+}
