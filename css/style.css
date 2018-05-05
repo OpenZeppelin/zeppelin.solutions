@@ -253,6 +253,7 @@ nav ul a:hover {
 .hiring-box a:hover {
   color: #1b7ac2 !important;
   background: white !important;
+  opacity: 1;
 }
 
 /*DROPDOWN*/
@@ -596,6 +597,19 @@ p.home-slogan.bold {/*p en bold*/
 }
 .principal-quote .card h3 {
   font-size: 1.2em;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.principal-quote .brave {
+  height: 22px;
+  margin-top: -1px;
+  padding-left: 5px;
+}
+.principal-quote .mozilla {
+  height: 20px;
+  margin-top: -1px;
+  padding: 0px 5px;
 }
 
 /*------------ABOUT----------*/
