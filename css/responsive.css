@@ -3,6 +3,7 @@
 @media (max-width: 900px) { 
 	#process, #audit-process { flex-direction: column; }
 	#process div, #audit-process div { height: auto; }
+	#audit-process p { margin-top: -8px; }
 	.audit-triangle { height: auto !important; }
 }
 
