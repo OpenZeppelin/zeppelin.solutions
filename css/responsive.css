@@ -5,6 +5,8 @@
 	#process div, #audit-process div { height: auto; }
 	#audit-process p { margin-top: -8px; }
 	.audit-triangle { height: auto !important; }
+	#jobs .flex-box div { margin: 0 !important; width: 100%!important }
+	#jobs .mobile-column { flex-direction: column; }
 }
 
 @media (max-width: 800px) { 
