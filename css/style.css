@@ -509,7 +509,7 @@ p.home-slogan.bold {/*p en bold*/
   line-height: 30px;
   font-size: 1.2em;
 }
-#footer a:hover, #footer h2:hover {
+#footer a:hover, #footer h2:hover, #footer h2 {
   color: rgba(255, 255, 255, 1);
 }
 #footer h2 {
