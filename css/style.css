@@ -109,7 +109,7 @@ h2.centered{
 .container {
   width: 75%;
   margin: auto;
-  padding: 0 15px;
+  padding: 0;
 }
 
 /*TEXT*/
@@ -354,11 +354,14 @@ nav ul a:hover {
 /*HOME*/
 #principal {
   background: linear-gradient(to bottom right, #0a2a5a , #3d9af1);
-  height: 70vh;
+  height: auto;
   color: white;
   padding: 0;
   margin: 0;
   min-height: 480px;
+}
+#principal section {
+  padding: 96px 0;
 }
 #home {
   height: calc(100% - 50px) !important;
@@ -372,7 +375,7 @@ nav ul a:hover {
   font-family: 'DINPro-Bold';
   font-size: 30px;
   letter-spacing: 0.02em;
-  margin: 3rem 0;
+  margin: 0 0 1.5rem;
 }
 .home-slogan {
   font-family: 'DINPro-Regular';

@@ -39,9 +39,6 @@
 .triangle-row-padding {
   padding: 20px 15px;
 }
-.triangle-section-padding {
-  padding: 0 !important;
-}
 #leading-projects {
   background: linear-gradient(to top, #f7f7f8 0%,#f7f7f8 50%, #ffffff 50%,#ffffff 100%)!important;
 }
