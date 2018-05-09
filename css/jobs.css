@@ -112,7 +112,18 @@ h2.row.values {
   margin-top: 42px !important;
 }
 #job-openings li {
-  list-style-type: disc!important;
+  position: relative;
+  padding: 0 22px 0;
+}
+#job-openings li:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #49586d;
+  border-radius: 50%;
+  left: 4px;
+  top: 10px;
 }
 #job-openings .flex i {
   padding-right: 5px;
