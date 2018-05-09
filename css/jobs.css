@@ -111,6 +111,21 @@ h2.row.values {
   padding: 0 !important;
   margin-top: 42px !important;
 }
+#job-openings .back-link {
+  font-family: 'DINPro-bold';
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  color: #283850 !important;
+  text-transform: uppercase;
+  display: flex;
+  padding: 30px 0 0;
+  position: relative;
+}
+#job-openings .back-link i {
+  padding-right: 9px;
+  top: -3px;
+  position: relative;
+}
 #job-openings li {
   position: relative;
   padding: 0 22px 0;

@@ -567,7 +567,7 @@ p.home-slogan.bold {/*p en bold*/
 
 /*LEADING QUOTE*/
 .principal-quote {
-  background: linear-gradient(to bottom, #f7f7f8 0%,#f7f7f8 50%, #283850 50%,#283850 100%)!important;
+  background: linear-gradient(to bottom, #f7f7f8 0%,#f7f7f8 50%, #283850 50%,#283850 102%)!important;
   min-height: inherit;
 }
 .principal-quote .card-content {
