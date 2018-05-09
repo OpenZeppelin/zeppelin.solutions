@@ -106,6 +106,11 @@ h2.row.values {
   min-height: auto!important;
   height: auto!important;
 }
+#job-openings {
+  background: white;
+  padding: 0 !important;
+  margin-top: 42px !important;
+}
 #job-openings li {
   list-style-type: disc!important;
 }
