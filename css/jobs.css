@@ -146,47 +146,8 @@ h2.row.values {
 
 .process-section {
   padding-bottom: 70px;
-}
-#process {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#process p {
-  font-size: 1.2em;
-  line-height: 1.3em
-  overflow-wrap: break-word;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-  word-wrap: break-word;
-}
-#process h2 {
-  border: solid 1px;
-  padding: 30px 33px;
-  border-radius: 50px;
-  background: #f7f7f8 !important;
-  z-index: 1222;
-}
-#process div {
-  text-align: center;
-  padding: 0 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 186px;
-  min-height: auto;
-  position: relative;
-  width: 200px;
-}
-#process .arrow {
-  position: absolute;
-  top: 60px;
-  right: calc(-100px + 76px);
-  z-index: 0;
+  background: #293950;
+  color: white;
 }
 
 span.openings {

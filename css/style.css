@@ -111,6 +111,9 @@ h2.centered{
   margin: auto;
   padding: 0;
 }
+.white-color {
+  color: white!important;
+}
 
 /*TEXT*/
 h1 {

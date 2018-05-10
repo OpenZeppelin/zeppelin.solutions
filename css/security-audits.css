@@ -71,79 +71,10 @@
 a.bold {/*h4 en bold*/
   font-family: 'DINPro-bold';
 }
-
-
-#audit-process {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#audit-process p {
-  font-size: 1.1em;
-  font-family: DINPro-medium;
-  line-height: 1.3em;
-  color:white;
-  overflow-wrap: break-word;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-  word-wrap: break-word;
-  margin-top: 0;
-}
-#audit-process h2 {
-  color: #2a3843;
-  z-index: 1222;
-  height: 40px;
-  line-height: 40px;
-  width: 95%;
-  letter-spacing: 0;
-  position: relative;
-  background: #FFFFFF;
-}
-#audit-process .first h2:before{ 
-  border-color: transparent white;
-}
-#audit-process h2:before {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 15px 0 15px 7px;
-  border-color: transparent #293640;
-  display: block;
-  width: 0;
-  z-index: 1;
-  left: 0;
-  top: 5px;
-}
-#audit-process .last h2:after{ 
-  border-color: transparent;
-}
-#audit-process h2:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 15px 0 15px 7px;
-  border-color: transparent #FFFFFF;
-  display: block;
-  width: 0;
-  z-index: 1;
-  right: -6px;
-  top: 5px;
-}
-#audit-process div {
-  text-align: center;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 186px;
-  min-height: auto;
-  position: relative;
-  width: 159px;
-}
 .card-margin {
   margin: 25px 0 0 0;
+}
+
+#process div {
+  width: 178px;
 }
