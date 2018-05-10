@@ -157,3 +157,20 @@ span.openings {
 span.openings h5{
   padding-left: 7px;
 }
+
+.pagefold-link {
+  letter-spacing: 0.1em;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'SourceBold';
+  display: flex;
+  margin: 50px 0 0;
+  font-size: 1.2em;
+}
+
+.pagefold-link i {
+  transform: rotate(180deg);
+  padding-right: 7px;
+  position: relative;
+  top: -2px;
+}
