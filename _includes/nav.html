@@ -1,0 +1,155 @@
+<style type="text/css">
+  nav {
+    height: 50px;
+    background: transparent;
+    color: white;
+    font-family: 'SourceRegular';
+    font-size: 16px;
+    border: 0px transparent;
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    box-shadow: 0 0 0 0 rgba(255,255,255,1);
+  }
+  nav a {
+    color: white;
+    height: 100%;
+    line-height: 50px;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+  }
+  .nav-wrapper {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .fa-bars {
+    font-size: 26px !important;
+  }
+  #mobile-nav {
+    background: white;
+  }
+  #mobile-nav a {
+    color: #283850;
+  }
+  #mobile-nav li {
+    height: 50px !important;
+  }
+  .side-nav {
+    width: 100%;
+  }
+  .close-link {
+    float: right;
+    padding: 0 10px;
+    color: #f6f6f6;
+  }
+  nav .dropdown-button {
+    display: inline-flex;
+    align-items: center;
+    text-transform: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+
+  nav i.material-icons {
+    font-size: 1em;
+  }
+
+  nav .button-collapse {
+    float: right !important;
+  }
+  .brand-box {
+    width: 168px;
+    height: 65px;
+  }
+  .brand-box img {
+    height: 30px;
+  }
+
+  .brand-box a {
+    display: flex;
+    align-items: center;
+  }
+  nav ul a:hover {
+    background-color: inherit !important;
+    opacity: 0.6;
+  }
+  .brand-box a:hover{
+    background: transparent;
+  }
+  .principal-links {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+</style>
+
+<nav>
+  <div class="nav-wrapper">
+    <ul class="left">
+      <li class="brand-box">
+        <a href="/">
+          <img src="/images/logoZeppelin-long.svg"/>
+        </a>
+      </li>
+    </ul>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button principal-links" id="project">Projects<i class="material-icons">  expand_more</i></span>
+          <!-- Dropdown Structure -->
+          <div class="nav-dropdown-container projects-dropdown">
+            <ul>
+              <li><a class="dropdown-box" href="https://openzeppelin.org/" target="_blank">
+                <img src="/images/navbar/openzeppelin.svg">
+                <div>
+                  <p class="title">OpenZeppelin</p>
+                  <p>A Solidity framework of reusable and secure smart contracts</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box" href="https://zeppelinos.org/" target="_blank">
+                <img src="/images/navbar/zos.svg">
+                <div>
+                  <p class="title">ZeppelinOS</p>
+                  <p>A secure platform to develop and manage smart contract apps</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box grey" href="https://tplprotocol.org/" target="_blank">
+                <p class="title">TPL</p>
+                <div>
+                  <p>A self-regulatory system that supports open economies</p>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/security/">Security</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/about/">About</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/joinus/">Join us</a></span>
+        </div>
+      </li>
+    </ul>
+    <ul class="side-nav" id="mobile-nav">
+      <li><a class="sidenav-close close-link" href="#!">X</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a></li>
+      <li><a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a></li>
+      <li><a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a></li>
+      <li><a href="/security/">Security</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/joinus/">Jobs</a></li>
+    </ul>
+  </div>
+</nav>

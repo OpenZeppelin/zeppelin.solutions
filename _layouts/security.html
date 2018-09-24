@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+<style type="text/css">
+	.audits-principal {
+	  background-image: linear-gradient(297deg, #1b374a, #052431)!important;
+	  height: auto!important;
+	}
+	.see-all-btn {
+	  opacity: 0.6;
+	  font-family: Helvetica;
+	  font-size: 14px;
+	  letter-spacing: 1.5px;
+	  text-align: center;
+	  color: #3c3c3c;
+	}
+	.security-home {
+		padding-bottom: 0 !important;
+	}
+	.blog-box {
+		margin-bottom: -1px;
+	  background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 40%,transparent 40%,transparent 100%)!important
+	}
+	.reports img {
+	  width: 95%;
+	  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.14), 0 0px 6px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	}
+	.faq p {
+		margin: auto;
+		padding-bottom: 7px;
+    border-bottom: solid 1.5px #d5d5d5;
+	}
+	.faq h3 {
+		font-family: Helvetica;
+	  font-size: 17px;
+	  line-height: 1.25;
+	  color: #4a4a4a;
+	  text-align: left;
+	  margin: 53px auto 10px auto;
+	}
+
+	.triangle-row-padding {
+	  padding: 20px 15px;
+	}
+	#leading-projects {
+	  background: linear-gradient(to top, #fff 0%,#fff 50%, #f7f7f8 50%, #f7f7f8 100%)!important;
+	}
+	#leading-projects .centered {
+	  padding: 0 0 30px 0;
+	}
+</style>
+
+<section class="audits-principal" id="principal">
+  {% include nav.html %}
+  <section class="security-home" id="home">
+    <div class="row triangle-row-padding">
+      <div class="container">
+        <h1 class="home-title">Security Audits</h1>
+        <p class="middle long">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
+      </div>
+    </div>
+    <div class="row triangle-row-padding">
+      <div class="container" id="process">
+        {% include timeline.html%}
+      </div>
+    </div>
+    <div class="row reports blog-box">
+    	<p class="middle centered">Our most popular audit reports</p>
+    	<br/>
+      <div class="flex-box mobile-column container">
+        <div class="centered">
+            <a target="_blank" href="https://blog.zeppelin.solutions/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
+        </div>
+        <div class="centered">
+            <a target="_blank" href="https://blog.zeppelin.solutions/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-2.png"/></a>
+        </div>
+        <div class="centered">
+            <a target="_blank" href="https://blog.zeppelin.solutions/golem-network-token-gnt-audit-edfa4a45bc32"><img src="../images/security-audits/audit-3.png"/></a>
+        </div>
+      </div>
+      <div class="centered">
+      	<br/><br/>
+	      <a class="see-all-btn" href="https://blog.zeppelin.solutions/tagged/security" target="_blank">SEE ALL ></a>
+	    </div>
+    </div>
+    </section>
+</section>
+<section class="row grey faq">
+  <div class="container centered">
+    <h2>FAQ</h2>
+  </div>
+  <div class="container">
+    <h3 class="short">What will I find in the audit report?</h3>
+    <p class="regular short">The report outlines potential problems in the code, additional recommendations to increase security, and general analysis of the contract dynamics reflecting state-of-the-art security patterns.</p>
+
+    <h3 class="short">Is the report private?</h3>
+    <p class="regular short">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
+
+    <h3 class="short">Which technologies do you work with?</h3>
+    <p class="regular short">We audit all kinds of decentralized applications. We have strong expertise in Solidity, Vyper, EVM assembly, JavaScript, Python, and Bitcoin Scripting code. We’re open to working with additional tools if necessary.</p>
+  </div>
+</section>
+<section class="row" id="leading-projects">
+  <div class="container centered">
+    <h4>The world’s leading projects work with Zeppelin</h4>
+  </div>
+  {% include augur-quote.html %}
+</section>
+<section class="no-padding">
+	{% include partners.html %}
+</section>
+<section class="line-top line-bottom">
+  <div class="container">
+    <h2>Request an Audit</h2>
+    <p class="small short">Our quotes and turnaround times vary according to the codebase’s length and complexity.We prioritize projects that base their code and architecture on OpenZeppelin or ZeppelinOS, the community-driven, industry-standard library.</p>
+    <p class="small short blue">Send an email to <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a> including your project's website, links to your source code, and system documentation.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>Make your code more secure from day 1</h2>
+    <p class="small short">Accelerate your development process by leveraging best practices and using community-vetted code. Make use of the OpenZeppelin framework and ZeppelinOS’ set of on-chain smart contract libraries for standard functions in your applications. </p>
+  </div>
+</section>

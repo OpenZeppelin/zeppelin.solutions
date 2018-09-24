@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+  <title>Zeppelin - Infrastructure for smart contract systems</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Twitter card  -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ZeppelinOrg" />
+  <meta name="twitter:creator" content="@ZeppelinOrg" />
+  <meta name="twitter:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta name="twitter:title" content="Zeppelin" />
+  <meta name="twitter:image" content="https://zeppelin.solutions/images/card.jpg" />
+  
+  <!-- Opengraph card (WhatsApp & others)  -->
+  <meta property="og:title" content="Zeppelin" />
+  <meta property="og:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta property="og:url" content="https://zeppelin.solutions/" />
+  <meta property="og:site_name" content="Zeppelin" />
+  <meta property="og:image" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:secure_url" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  
+  <meta name="description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications.">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/images/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/images/favicon/favicon-16x16.png"/>
+
+
+
+  <meta charset="UTF-8"> <!--Encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Movile first -->
+
+  <!--JQuery -->
+  <script src="http://localhost:4000/js/jquery.min.js"></script><!--JQuery 1.11.2 local -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/js/home.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/materialize.min.js"></script>
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/responsive.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/animate.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/materialize.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/font-awesome/css/font-awesome.min">
+  <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67327037-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-67327037-1');
+  </script>
+</head>
+	<style type="text/css">
+		.line-top {
+	    border-top: solid 1.5px #d8d8d8;
+	  }
+	  .line-bottom {
+	    border-bottom: solid 1.5px #d8d8d8;
+	  }
+	</style>
+	<body>
+		<style type="text/css">
+  .jobs-section {
+    background-image: linear-gradient(290deg, #1e7dd7, #2b2dbf) !important;
+    height: 50vh;
+  }
+  .jobs-section #home a {
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(203, 203, 203, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: #003ccb;
+    padding: 7px 25px;
+  }
+  .how-we-work h4, #values h4{
+    opacity: 0.6;
+  }
+
+  #values h3 {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #4a4a4a;
+    text-align: left;
+  }
+  #values h5 {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    text-align: left;
+  }
+  .value-box {
+    padding: 30px;
+    width: 33%;
+  }
+  #values .flex-box {
+    margin: 0 -30px!important;
+  }
+  @media (max-width: 900px) { 
+    #jobs .flex-box div { 
+      margin: 0 !important; 
+      width: 100%!important 
+    }
+    #jobs .mobile-column { 
+      flex-direction: column; 
+    }
+    .value-box {
+      width: 100%;
+    }
+  }
+  .how-we-work-title {
+    opacity: 0.9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #4a4a4a;
+  }
+  .role {
+    min-height: auto;
+  }
+  .role h2 {
+    margin-top: 0;
+  }
+
+  .remote-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px 0 rgba(224, 224, 224, 0.5);
+    text-align: center;
+    padding: 30px 20px;
+    margin: 30px;
+    width: 300px;
+    text-align: left;
+  }
+  .remote-box h3 {
+    text-align: left;
+  }
+  .jobs-photos {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .jobs-photos img {
+    padding: 2px;
+  }
+</style>
+
+<section class="jobs-section" id="principal">
+  <style type="text/css">
+  nav {
+    height: 50px;
+    background: transparent;
+    color: white;
+    font-family: 'SourceRegular';
+    font-size: 16px;
+    border: 0px transparent;
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    box-shadow: 0 0 0 0 rgba(255,255,255,1);
+  }
+  nav a {
+    color: white;
+    height: 100%;
+    line-height: 50px;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+  }
+  .nav-wrapper {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .fa-bars {
+    font-size: 26px !important;
+  }
+  #mobile-nav {
+    background: white;
+  }
+  #mobile-nav a {
+    color: #283850;
+  }
+  #mobile-nav li {
+    height: 50px !important;
+  }
+  .side-nav {
+    width: 100%;
+  }
+  .close-link {
+    float: right;
+    padding: 0 10px;
+    color: #f6f6f6;
+  }
+  nav .dropdown-button {
+    display: inline-flex;
+    align-items: center;
+    text-transform: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+
+  nav i.material-icons {
+    font-size: 1em;
+  }
+
+  nav .button-collapse {
+    float: right !important;
+  }
+  .brand-box {
+    width: 168px;
+    height: 65px;
+  }
+  .brand-box img {
+    height: 30px;
+  }
+
+  .brand-box a {
+    display: flex;
+    align-items: center;
+  }
+  nav ul a:hover {
+    background-color: inherit !important;
+    opacity: 0.6;
+  }
+  .brand-box a:hover{
+    background: transparent;
+  }
+  .principal-links {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+</style>
+
+<nav>
+  <div class="nav-wrapper">
+    <ul class="left">
+      <li class="brand-box">
+        <a href="/">
+          <img src="/images/logoZeppelin-long.svg"/>
+        </a>
+      </li>
+    </ul>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button principal-links" id="project">Projects<i class="material-icons">  expand_more</i></span>
+          <!-- Dropdown Structure -->
+          <div class="nav-dropdown-container projects-dropdown">
+            <ul>
+              <li><a class="dropdown-box" href="https://openzeppelin.org/" target="_blank">
+                <img src="/images/navbar/openzeppelin.svg">
+                <div>
+                  <p class="title">OpenZeppelin</p>
+                  <p>A Solidity framework of reusable and secure smart contracts</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box" href="https://zeppelinos.org/" target="_blank">
+                <img src="/images/navbar/zos.svg">
+                <div>
+                  <p class="title">ZeppelinOS</p>
+                  <p>A secure platform to develop and manage smart contract apps</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box grey" href="https://tplprotocol.org/" target="_blank">
+                <p class="title">TPL</p>
+                <div>
+                  <p>A self-regulatory system that supports open economies</p>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/security/">Security</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/about/">About</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/joinus/">Join us</a></span>
+        </div>
+      </li>
+    </ul>
+    <ul class="side-nav" id="mobile-nav">
+      <li><a class="sidenav-close close-link" href="#!">X</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a></li>
+      <li><a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a></li>
+      <li><a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a></li>
+      <li><a href="/security/">Security</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/joinus/">Jobs</a></li>
+    </ul>
+  </div>
+</nav>
+  <section id="home">
+    <div class="row">
+      <div class="container">
+        <h1 class="home-title">Build the foundations of an open economy</h1>
+        <p class="middle long">Zeppelin is looking for skillful developers and professionals who are committed to facilitating the creation of shared infrastructure to close the gap between our vision and the reality of how decentralized networks work today.</p>
+        <br/><br/>
+        <a href="#current-openings">SEE CURRENT OPENINGS</a>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="line-top how-we-work">
+  <div class="container">
+    <h4 class="left-align">How we work</h4>
+    <br/>
+    <div class="row">
+      <div class="col l6 m6 s12">
+        <p class="how-we-work-title shorter">We’re focused on creating a collaborative work environment where people are happy and productive.</p>
+        <p class="small shorter">We don’t let geography or borders define us — we are a distributed team with members spread all over the world. We apply remote and organizational practices so you’ll always be in sync with the team.</p>
+      </div>
+      <div class="col l6 m6 s12 display-flex">
+        <img src="../images/map.svg"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="values">
+  <div class="container">
+    <h4 class="left-align">OUR CORE VALUES</h4>
+    <div class="flex-box mobile-column">
+      <div class="value-box">
+        <h3>Ability to ship</h3>
+        <h5>We give teammates the autonomy they require to boldly take ownership over their creations.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Intellectual curiosity</h3>
+        <h5>We are driven by a fiery, constant desire to learn. We encourage teammates to experiment with the latest technologies and cryptanalysis techniques.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Commitment to excellence</h3>
+        <h5>We care a great deal about our work, pay attention to details, and never do less than our best.</h5>
+      </div>
+    </div>
+    <div class="flex-box mobile-column">
+      <div class="value-box">
+        <h3>Strong sense of purpose</h3>
+        <h5>We care about the mission and work to positively impact the community. We think big and build with the long-term in mind.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Thought leadership</h3>
+        <h5>We think critically and discuss our ideas with the broader blockchain community to push the frontiers of innovation.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Healthy workstyle</h3>
+        <h5>We have lives outside work, are kind to each other and are always eager to help teammates.</h5>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="jobs-photos">
+  <img src="../images/photo_01.png">
+  <img src="../images/photo_02.png">
+  <img src="../images/photo_04.png">
+  <img src="../images/photo_04.png">
+</section>
+<section class="row" id="remote-by-default">
+  <div class="container">
+    <div class="flex-box mobile-column">
+      <div class="remote-box">
+        <h3>Flexible schedules</h3>
+        <p class="small">We focus on achievements, not working hours. Find the rhythm that works best for you.</p>
+      </div>
+      <div class="remote-box">
+        <h3>Flexible paid time off</h3>
+        <p class="small">We believe in the importance of breaks to lead a balanced life. You decide when to take your vacations.</p>
+      </div>
+      <div class="remote-box">
+        <h3>Buenos Aires Office</h3>
+        <p class="small">You’re welcome to work from our  office whenever you want. We’re pet friendly, have green spaces, healthy food, and yoga classes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container centered">
+    <h2>Current openings</h2>
+    <p class="small">Find the best place for you in Zeppelin</p>
+  </div>
+  <div class="container">
+    
+  </div>
+</section>
+<section class="role grey">
+  <div class="container centered">
+    <h2 class="small">Don’t see your role here?</h2>
+    <p class="small">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
+  </div>
+</section>
+<section>
+  <div class="container centered">
+    <h2>Hiring process</h2>
+    <style type="text/css">
+  #hiring-process {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+  }
+  #hiring-process:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 85%;
+    max-width: 795px;
+    height: 1px;
+    background: #00298c;
+  }
+  #hiring-process p {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    color: #4a4a4a;
+    overflow-wrap: break-word;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    margin-top: 0;
+    padding: 0 15px;
+  }
+  #hiring-process h2 {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: center;
+    color: #00298c;
+    margin: 7px 0px;
+  }
+  #hiring-process div {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 186px;
+    min-height: auto;
+    position: relative;
+    width: 159px;
+  }
+  #hiring-process div:before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    width: 5px;
+    height: 5px;
+    background-color: #00298c;
+    border-radius: 5px;
+  }
+</style>
+<div class="container" id="hiring-process">
+  <div class="first">
+    <h2>APPLICATION</h2>
+    <p>You send us an application</p>
+  </div>
+  <div>
+    <h2>CHAT</h2>
+    <p>We schedule an initial chat</p>
+  </div>
+  <div>
+    <h2>TEAM INTERVIEW</h2>
+    <p>You have in-depth interviews with the team</p>
+  </div>
+  <div>
+    <h2>REFERENCES</h2>
+    <p>We ask you for references</p>
+  </div>
+  <div>
+    <h2>FINAL INTERVIEW</h2>
+    <p>We have a final interview</p>
+  </div>
+  <div>
+    <h2>WORK TEST</h2>
+    <p>You’re invited for a paid work tes</p>
+  </div>
+  <div class="last">
+    <h2>OFFER</h2>
+    <p>We extend you an offer</p>
+  </div>
+</div>
+  </div>
+  <div class="container">
+    <ul class="collapsible">
+      <li>
+        <h3 class="collapsible-header">How long does the hiring process take?</h3>
+        <p class="collapsible-body small">It usually takes 4-6 weeks from the time you submit your application to an offer. The exact timing depends on matching your availability to schedule the work test. We try our best to ensure a swift process while also committing plenty of time to getting to know each other.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">Who will I be talking to during the hiring process?</h3>
+        <p class="collapsible-body small">You’ll talk to our hiring manager, your prospective teammates, your assigned work test coach and one (or both) of the founders. Each candidate usually interacts with at least four Zeppelin members.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">What’s the work test like?</h3>
+        <p class="collapsible-body small">The work test is a custom challenge guided by a coach from Zeppelin. You can think about it as an audition. Work tests should require an effort of roughly 10 hours per week, spanning no more than three weeks. Your time is paid regardless of the output.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">How can I contact Zeppelin if I have questions about my application?</h3>
+        <p class="collapsible-body small">Please send us an email at jobs@zeppelin.solutions.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">I’ve applied in the past. Can I reapply?</h3>
+        <p class="collapsible-body small">Yes! Our needs are constantly evolving. If you’d like to reapply for the same or a different position, feel free to do so.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">Does Zeppelin offer internship programs?</h3>
+        <p class="collapsible-body small">At our current stage, we’re not ready to offer internship programs that would add value to both ends. If we ever offer internship programs, they’ll be up on our Jobs page.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">Do you follow up with candidates you’ve decided not to move forward with?</h3>
+        <p class="collapsible-body small">We try to make sure everyone is kept up-to-date with their application status. Whether we see a match or not, we will reach out to you within two weeks.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+		<style>
+  #footer {
+    background: black;
+    color: white;
+    padding: 25px 0 60px;
+    margin-bottom: 0;
+  }
+  #footer a {
+    display: block;
+    font-family: Helvetica;
+    font-size: 1.2em;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 2.4;
+    color: #ffffff;
+  }
+
+  #footer h3 {
+    display: block;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.88;
+    color: #ffffff;
+    text-transform: none;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  #footer a:hover {
+    opacity: 1;
+  }
+  .footer-box, .flex-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-box {
+    max-width: 520px;
+  }
+</style>
+
+<footer class="row" id="footer">
+  <div class="footer-box container mobile-column">
+    <div>
+      <h3>Projects</h3>
+      <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
+      <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
+      <a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <a href="/security-audits/">Security Audits</a>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <a href="/about/">About Us</a>
+      <a href="/jobs/">Jobs</a>
+    </div>
+    <div>
+      <h3>Social</h3>
+      <a href="https://www.instagram.com/zeppelinorg/" target="_blank">
+        Instagram
+      </a>
+      <a href="https://blog.zeppelin.solutions/" target="_blank">
+        Blog
+      </a>
+      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+        Twitter
+      </a>
+    </div>
+  </div>
+</footer>
+	</body>
+</html>
+

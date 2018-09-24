@@ -1,0 +1,233 @@
+---
+layout: default
+---
+
+<style type="text/css">
+  .jobs-section {
+    background-image: linear-gradient(290deg, #1e7dd7, #2b2dbf) !important;
+    height: 50vh;
+  }
+  .jobs-section #home a {
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(203, 203, 203, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: #003ccb;
+    padding: 7px 25px;
+  }
+  .how-we-work h4, #values h4{
+    opacity: 0.6;
+  }
+
+  #values h3 {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #4a4a4a;
+    text-align: left;
+  }
+  #values h5 {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    text-align: left;
+  }
+  .value-box {
+    padding: 30px;
+    width: 33%;
+  }
+  #values .flex-box {
+    margin: 0 -30px!important;
+  }
+  @media (max-width: 900px) { 
+    #jobs .flex-box div { 
+      margin: 0 !important; 
+      width: 100%!important 
+    }
+    #jobs .mobile-column { 
+      flex-direction: column; 
+    }
+    .value-box {
+      width: 100%;
+    }
+  }
+  .how-we-work-title {
+    opacity: 0.9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #4a4a4a;
+  }
+  .role {
+    min-height: auto;
+  }
+  .role h2 {
+    margin-top: 0;
+  }
+
+  .remote-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px 0 rgba(224, 224, 224, 0.5);
+    text-align: center;
+    padding: 30px 20px;
+    margin: 30px;
+    width: 300px;
+    text-align: left;
+  }
+  .remote-box h3 {
+    text-align: left;
+  }
+  .jobs-photos {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .jobs-photos img {
+    padding: 2px;
+  }
+</style>
+
+<section class="jobs-section" id="principal">
+  {% include nav.html%}
+  <section id="home">
+    <div class="row">
+      <div class="container">
+        <h1 class="home-title">Build the foundations of an open economy</h1>
+        <p class="middle long">Zeppelin is looking for skillful developers and professionals who are committed to facilitating the creation of shared infrastructure to close the gap between our vision and the reality of how decentralized networks work today.</p>
+        <br/><br/>
+        <a href="#current-openings">SEE CURRENT OPENINGS</a>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="line-top how-we-work">
+  <div class="container">
+    <h4 class="left-align">How we work</h4>
+    <br/>
+    <div class="row">
+      <div class="col l6 m6 s12">
+        <p class="how-we-work-title shorter">We’re focused on creating a collaborative work environment where people are happy and productive.</p>
+        <p class="small shorter">We don’t let geography or borders define us — we are a distributed team with members spread all over the world. We apply remote and organizational practices so you’ll always be in sync with the team.</p>
+      </div>
+      <div class="col l6 m6 s12 display-flex">
+        <img src="../images/map.svg"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="values">
+  <div class="container">
+    <h4 class="left-align">OUR CORE VALUES</h4>
+    <div class="flex-box mobile-column">
+      <div class="value-box">
+        <h3>Ability to ship</h3>
+        <h5>We give teammates the autonomy they require to boldly take ownership over their creations.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Intellectual curiosity</h3>
+        <h5>We are driven by a fiery, constant desire to learn. We encourage teammates to experiment with the latest technologies and cryptanalysis techniques.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Commitment to excellence</h3>
+        <h5>We care a great deal about our work, pay attention to details, and never do less than our best.</h5>
+      </div>
+    </div>
+    <div class="flex-box mobile-column">
+      <div class="value-box">
+        <h3>Strong sense of purpose</h3>
+        <h5>We care about the mission and work to positively impact the community. We think big and build with the long-term in mind.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Thought leadership</h3>
+        <h5>We think critically and discuss our ideas with the broader blockchain community to push the frontiers of innovation.</h5>
+      </div>
+      <div class="value-box">
+        <h3>Healthy workstyle</h3>
+        <h5>We have lives outside work, are kind to each other and are always eager to help teammates.</h5>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="jobs-photos">
+  <img src="../images/photo_01.png">
+  <img src="../images/photo_02.png">
+  <img src="../images/photo_04.png">
+  <img src="../images/photo_04.png">
+</section>
+<section class="row" id="remote-by-default">
+  <div class="container">
+    <div class="flex-box mobile-column">
+      <div class="remote-box">
+        <h3>Flexible schedules</h3>
+        <p class="small">We focus on achievements, not working hours. Find the rhythm that works best for you.</p>
+      </div>
+      <div class="remote-box">
+        <h3>Flexible paid time off</h3>
+        <p class="small">We believe in the importance of breaks to lead a balanced life. You decide when to take your vacations.</p>
+      </div>
+      <div class="remote-box">
+        <h3>Buenos Aires Office</h3>
+        <p class="small">You’re welcome to work from our  office whenever you want. We’re pet friendly, have green spaces, healthy food, and yoga classes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container centered">
+    <h2>Current openings</h2>
+    <p class="small">Find the best place for you in Zeppelin</p>
+  </div>
+  <div class="container">
+    
+  </div>
+</section>
+<section class="role grey">
+  <div class="container centered">
+    <h2 class="small">Don’t see your role here?</h2>
+    <p class="small">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
+  </div>
+</section>
+<section>
+  <div class="container centered">
+    <h2>Hiring process</h2>
+    {% include hiring-process.html %}
+  </div>
+  <div class="container">
+    <ul class="collapsible">
+      <li>
+        <h3 class="collapsible-header">How long does the hiring process take?</h3>
+        <p class="collapsible-body small">It usually takes 4-6 weeks from the time you submit your application to an offer. The exact timing depends on matching your availability to schedule the work test. We try our best to ensure a swift process while also committing plenty of time to getting to know each other.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">Who will I be talking to during the hiring process?</h3>
+        <p class="collapsible-body small">You’ll talk to our hiring manager, your prospective teammates, your assigned work test coach and one (or both) of the founders. Each candidate usually interacts with at least four Zeppelin members.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">What’s the work test like?</h3>
+        <p class="collapsible-body small">The work test is a custom challenge guided by a coach from Zeppelin. You can think about it as an audition. Work tests should require an effort of roughly 10 hours per week, spanning no more than three weeks. Your time is paid regardless of the output.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">How can I contact Zeppelin if I have questions about my application?</h3>
+        <p class="collapsible-body small">Please send us an email at jobs@zeppelin.solutions.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">I’ve applied in the past. Can I reapply?</h3>
+        <p class="collapsible-body small">Yes! Our needs are constantly evolving. If you’d like to reapply for the same or a different position, feel free to do so.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">Does Zeppelin offer internship programs?</h3>
+        <p class="collapsible-body small">At our current stage, we’re not ready to offer internship programs that would add value to both ends. If we ever offer internship programs, they’ll be up on our Jobs page.</p>
+      </li>
+      <li>
+        <h3 class="collapsible-header">Do you follow up with candidates you’ve decided not to move forward with?</h3>
+        <p class="collapsible-body small">We try to make sure everyone is kept up-to-date with their application status. Whether we see a match or not, we will reach out to you within two weeks.</p>
+      </li>
+    </ul>
+  </div>
+</section>

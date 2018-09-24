@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+  <title>Zeppelin - Infrastructure for smart contract systems</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Twitter card  -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ZeppelinOrg" />
+  <meta name="twitter:creator" content="@ZeppelinOrg" />
+  <meta name="twitter:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta name="twitter:title" content="Zeppelin" />
+  <meta name="twitter:image" content="https://zeppelin.solutions/images/card.jpg" />
+  
+  <!-- Opengraph card (WhatsApp & others)  -->
+  <meta property="og:title" content="Zeppelin" />
+  <meta property="og:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta property="og:url" content="https://zeppelin.solutions/" />
+  <meta property="og:site_name" content="Zeppelin" />
+  <meta property="og:image" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:secure_url" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  
+  <meta name="description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications.">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/images/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/images/favicon/favicon-16x16.png"/>
+
+
+
+  <meta charset="UTF-8"> <!--Encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Movile first -->
+
+  <!--JQuery -->
+  <script src="http://localhost:4000/js/jquery.min.js"></script><!--JQuery 1.11.2 local -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/js/home.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/materialize.min.js"></script>
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/responsive.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/animate.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/materialize.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/font-awesome/css/font-awesome.min">
+  <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67327037-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-67327037-1');
+  </script>
+</head>
+	<style type="text/css">
+		.line-top {
+	    border-top: solid 1.5px #d8d8d8;
+	  }
+	  .line-bottom {
+	    border-bottom: solid 1.5px #d8d8d8;
+	  }
+	</style>
+	<body>
+		<style type="text/css">
+	.audits-principal {
+	  background-image: linear-gradient(297deg, #1b374a, #052431)!important;
+	  height: auto!important;
+	}
+	.see-all-btn {
+	  opacity: 0.6;
+	  font-family: Helvetica;
+	  font-size: 14px;
+	  letter-spacing: 1.5px;
+	  text-align: center;
+	  color: #3c3c3c;
+	}
+	.security-home {
+		padding-bottom: 0 !important;
+	}
+	.blog-box {
+		margin-bottom: -1px;
+	  background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 40%,transparent 40%,transparent 100%)!important
+	}
+	.reports img {
+	  width: 95%;
+	  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.14), 0 0px 6px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	}
+	.faq p {
+		margin: auto;
+		padding-bottom: 7px;
+    border-bottom: solid 1.5px #d5d5d5;
+	}
+	.faq h3 {
+		font-family: Helvetica;
+	  font-size: 17px;
+	  line-height: 1.25;
+	  color: #4a4a4a;
+	  text-align: left;
+	  margin: 53px auto 10px auto;
+	}
+
+	.triangle-row-padding {
+	  padding: 20px 15px;
+	}
+	#leading-projects {
+	  background: linear-gradient(to top, #fff 0%,#fff 50%, #f7f7f8 50%, #f7f7f8 100%)!important;
+	}
+	#leading-projects .centered {
+	  padding: 0 0 30px 0;
+	}
+</style>
+
+<section class="audits-principal" id="principal">
+  <style type="text/css">
+  nav {
+    height: 50px;
+    background: transparent;
+    color: white;
+    font-family: 'SourceRegular';
+    font-size: 16px;
+    border: 0px transparent;
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    box-shadow: 0 0 0 0 rgba(255,255,255,1);
+  }
+  nav a {
+    color: white;
+    height: 100%;
+    line-height: 50px;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+  }
+  .nav-wrapper {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .fa-bars {
+    font-size: 26px !important;
+  }
+  #mobile-nav {
+    background: white;
+  }
+  #mobile-nav a {
+    color: #283850;
+  }
+  #mobile-nav li {
+    height: 50px !important;
+  }
+  .side-nav {
+    width: 100%;
+  }
+  .close-link {
+    float: right;
+    padding: 0 10px;
+    color: #f6f6f6;
+  }
+  nav .dropdown-button {
+    display: inline-flex;
+    align-items: center;
+    text-transform: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+
+  nav i.material-icons {
+    font-size: 1em;
+  }
+
+  nav .button-collapse {
+    float: right !important;
+  }
+  .brand-box {
+    width: 168px;
+    height: 65px;
+  }
+  .brand-box img {
+    height: 30px;
+  }
+
+  .brand-box a {
+    display: flex;
+    align-items: center;
+  }
+  nav ul a:hover {
+    background-color: inherit !important;
+    opacity: 0.6;
+  }
+  .brand-box a:hover{
+    background: transparent;
+  }
+  .principal-links {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+</style>
+
+<nav>
+  <div class="nav-wrapper">
+    <ul class="left">
+      <li class="brand-box">
+        <a href="/">
+          <img src="/images/logoZeppelin-long.svg"/>
+        </a>
+      </li>
+    </ul>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button principal-links" id="project">Projects<i class="material-icons">  expand_more</i></span>
+          <!-- Dropdown Structure -->
+          <div class="nav-dropdown-container projects-dropdown">
+            <ul>
+              <li><a class="dropdown-box" href="https://openzeppelin.org/" target="_blank">
+                <img src="/images/navbar/openzeppelin.svg">
+                <div>
+                  <p class="title">OpenZeppelin</p>
+                  <p>A Solidity framework of reusable and secure smart contracts</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box" href="https://zeppelinos.org/" target="_blank">
+                <img src="/images/navbar/zos.svg">
+                <div>
+                  <p class="title">ZeppelinOS</p>
+                  <p>A secure platform to develop and manage smart contract apps</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box grey" href="https://tplprotocol.org/" target="_blank">
+                <p class="title">TPL</p>
+                <div>
+                  <p>A self-regulatory system that supports open economies</p>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/security/">Security</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/about/">About</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/joinus/">Join us</a></span>
+        </div>
+      </li>
+    </ul>
+    <ul class="side-nav" id="mobile-nav">
+      <li><a class="sidenav-close close-link" href="#!">X</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a></li>
+      <li><a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a></li>
+      <li><a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a></li>
+      <li><a href="/security/">Security</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/joinus/">Jobs</a></li>
+    </ul>
+  </div>
+</nav>
+  <section class="security-home" id="home">
+    <div class="row triangle-row-padding">
+      <div class="container">
+        <h1 class="home-title">Security Audits</h1>
+        <p class="middle long">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
+      </div>
+    </div>
+    <div class="row triangle-row-padding">
+      <div class="container" id="process">
+        <style type="text/css">
+  #process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #process:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 83%;
+    max-width: 795px;
+    height: 1px;
+    background: #ffffff;
+  }
+  #process p {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    color: #ffffff;
+    overflow-wrap: break-word;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    margin-top: 0;
+    padding: 0 15px;
+  }
+  #process h2 {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: center;
+    color: #ffffff;
+    margin: 7px 0px;
+  }
+  #process div {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 186px;
+    min-height: auto;
+    position: relative;
+    width: 159px;
+  }
+  #process div:before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+</style>
+
+<div class="first">
+  <h2>CONTACT</h2>
+  <p>You specify an audit-ready code commit through the form below</p>
+</div>
+<div>
+  <h2>QUOTE</h2>
+  <p>You get a quote and timeline</p>
+</div>
+<div>
+  <h2>AUDIT</h2>
+  <p>We start the audit</p>
+</div>
+<div>
+  <h2>REPORT</h2>
+  <p>We privately send the report to your team</p>
+</div>
+<div>
+  <h2>FIXES</h2>
+  <p>Your team  fixes the issues</p>
+</div>
+<div class="last">
+  <h2>PUBLISH</h2>
+  <p>We examine your fixes, update and publish the report (optional)</p>
+</div>
+      </div>
+    </div>
+    <div class="row reports blog-box">
+    	<p class="middle centered">Our most popular audit reports</p>
+    	<br/>
+      <div class="flex-box mobile-column container">
+        <div class="centered">
+            <a target="_blank" href="https://blog.zeppelin.solutions/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
+        </div>
+        <div class="centered">
+            <a target="_blank" href="https://blog.zeppelin.solutions/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-2.png"/></a>
+        </div>
+        <div class="centered">
+            <a target="_blank" href="https://blog.zeppelin.solutions/golem-network-token-gnt-audit-edfa4a45bc32"><img src="../images/security-audits/audit-3.png"/></a>
+        </div>
+      </div>
+      <div class="centered">
+      	<br/><br/>
+	      <a class="see-all-btn" href="https://blog.zeppelin.solutions/tagged/security" target="_blank">SEE ALL ></a>
+	    </div>
+    </div>
+    </section>
+</section>
+<section class="row grey faq">
+  <div class="container centered">
+    <h2>FAQ</h2>
+  </div>
+  <div class="container">
+    <h3 class="short">What will I find in the audit report?</h3>
+    <p class="regular short">The report outlines potential problems in the code, additional recommendations to increase security, and general analysis of the contract dynamics reflecting state-of-the-art security patterns.</p>
+
+    <h3 class="short">Is the report private?</h3>
+    <p class="regular short">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
+
+    <h3 class="short">Which technologies do you work with?</h3>
+    <p class="regular short">We audit all kinds of decentralized applications. We have strong expertise in Solidity, Vyper, EVM assembly, JavaScript, Python, and Bitcoin Scripting code. We’re open to working with additional tools if necessary.</p>
+  </div>
+</section>
+<section class="row" id="leading-projects">
+  <div class="container centered">
+    <h4>The world’s leading projects work with Zeppelin</h4>
+  </div>
+  <style type="text/css">
+  .augur-quote .card {
+    width: 45%;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+  }
+  .augur-quote .card h6 {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: oblique;
+    line-height: 1.67;
+    color: #3c3c3c;
+  }
+  .augur-quote .card h3 {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 12px;
+    line-height: 2.14;
+    color: #3c3c3c;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .augur-quote .card h3 .strong{
+    font-weight: 900;
+    padding: 0 10px;
+  }
+  .augur-quote .card h3 img{
+    height: 30px;
+  }
+  .augur-quote .card-margin {
+    margin: 25px 0 0 0;
+  }
+</style>
+
+
+<div class="flex-box mobile-column container augur-quote" style="justify-content: center;">
+  <div class="card darken-1">
+    <div class="card-content">
+      <div>
+        <h6>“Zeppelin's audit report was like Christmas morning for all the engineers. Our team is very pleased with the results.”</h6>
+        <h3 class="card-margin">
+          <span><img class="circle responsive-img" src="../images/tom.jpg" alt="Tom Kysar"></span>
+          <span class="strong">Tom Kysar </span> Product Manager at Augur
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="no-padding">
+	<style type="text/css">
+  .partners {
+    max-width: 1050px;
+  }
+  .leading-projects {
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .leading-projects img {
+    max-width: 230px;
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+  }
+  .leading-projects .bitgo, .leading-projects .cosmos,  .leading-projects .status {
+    margin: 25px auto;
+  }
+  .leading-projects .dfinity, .leading-projects .shapeshift, .leading-projects .storj {
+    margin: 13px auto;
+  }
+</style>
+
+<div class="container centered valign-wrapper">
+  <div class="row valign partners">
+    <span class="leading-projects">
+      <img src="../images/logos/ethereum.svg" />
+    </span>
+    <span class="leading-projects">
+      <img src="../images/logos/augur.png" />
+    </span>
+    <span class="leading-projects">
+      <img src="../images/logos/brave.png" />
+    </span>
+    <span class="leading-projects">
+      <img src="../images/logos/golem.svg" />
+    </span>
+    <span class="leading-projects">
+      <img src="../images/logos/omise.svg" />
+    </span>
+    <span class="leading-projects">
+      <img class="cosmos" src="../images/logos/cosmos.svg" />
+    </span>
+    <span class="leading-projects">
+      <img class="shapeshift" src="../images/logos/shapeshift.png" />
+    </span>
+    <span class="leading-projects">
+      <img class="dfinity" src="../images/logos/dfinity.png" />
+    </span>
+    <span class="leading-projects">
+      <img class="status" src="../images/logos/status.svg" />
+    </span>
+    <span class="leading-projects">
+      <img src="../images/logos/decentraland.svg" />
+    </span>
+    <span class="leading-projects">
+      <img class="bitgo" src="../images/logos/bitgo.png" />
+    </span>
+    <span class="leading-projects">
+      <img class="storj" src="../images/logos/storj.png" />
+    </span>
+  </div>
+</div>
+</section>
+<section class="line-top line-bottom">
+  <div class="container">
+    <h2>Request an Audit</h2>
+    <p class="small short">Our quotes and turnaround times vary according to the codebase’s length and complexity.We prioritize projects that base their code and architecture on OpenZeppelin or ZeppelinOS, the community-driven, industry-standard library.</p>
+    <p class="small short blue">Send an email to <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a> including your project's website, links to your source code, and system documentation.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>Make your code more secure from day 1</h2>
+    <p class="small short">Accelerate your development process by leveraging best practices and using community-vetted code. Make use of the OpenZeppelin framework and ZeppelinOS’ set of on-chain smart contract libraries for standard functions in your applications. </p>
+  </div>
+</section>
+		<style>
+  #footer {
+    background: black;
+    color: white;
+    padding: 25px 0 60px;
+    margin-bottom: 0;
+  }
+  #footer a {
+    display: block;
+    font-family: Helvetica;
+    font-size: 1.2em;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 2.4;
+    color: #ffffff;
+  }
+
+  #footer h3 {
+    display: block;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.88;
+    color: #ffffff;
+    text-transform: none;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  #footer a:hover {
+    opacity: 1;
+  }
+  .footer-box, .flex-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-box {
+    max-width: 520px;
+  }
+</style>
+
+<footer class="row" id="footer">
+  <div class="footer-box container mobile-column">
+    <div>
+      <h3>Projects</h3>
+      <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
+      <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
+      <a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <a href="/security-audits/">Security Audits</a>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <a href="/about/">About Us</a>
+      <a href="/jobs/">Jobs</a>
+    </div>
+    <div>
+      <h3>Social</h3>
+      <a href="https://www.instagram.com/zeppelinorg/" target="_blank">
+        Instagram
+      </a>
+      <a href="https://blog.zeppelin.solutions/" target="_blank">
+        Blog
+      </a>
+      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+        Twitter
+      </a>
+    </div>
+  </div>
+</footer>
+	</body>
+</html>
+

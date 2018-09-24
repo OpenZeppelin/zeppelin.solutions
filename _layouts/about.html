@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<style>
+  .about-principal {
+    background-image: linear-gradient(107deg, #141c55, #00298c);
+    height: 80vh!important;
+  }
+  .contact, .featured .role {
+    padding: 30px 0;
+    min-height: auto;
+  }
+</style>
+<section class="about-principal" id="principal">
+  {% include nav.html %}
+  <section id="home">
+    <div class="row">
+      <div class="container">
+        <h1 class="home-title">Fostering economic freedom</h1>
+        <p class="middle short">Zeppelin is a technology company focused on improving how value is exchanged in the world using blockchain technology and infrastructure.</p>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="row" id="clients">
+  <div class="container centered">
+    <h2>Clients, partners and platforms</h2>
+    <p class="regular">Over the years we’ve gained the trust of other leading technology companies, partners, and investors.</p> 
+  </div>
+  <br/>
+  <br/>
+  {% include partners.html %}
+  <br/>
+  <br/>
+  <div class="container centered">
+    <p class="small">We work with these platforms and the foundations that sponsor them.</p>
+  </div>
+  {% include sponsors.html %}
+</section>
+<section class="row space team-members line-top">
+  <div class="container">
+    <h2 class="small">A distributed team working with distributed technologies.</h2>
+    <p class="small short">Team members are spread across multiple locations including Berlin, Buenos Aires, London, New York, Montevideo, Costa Rica and Melbourne.</p>
+    {% include team.html %}
+  </div>
+</section>
+<section class="grey featured">
+  <div class="container">
+    <h4>our work was featured on:</h4>
+    {% include featured.html %}
+  </div>
+</section>
+<section class="contact grey line-top">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="small extra-short">For general queries, including partnership opportunities, please email <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a></p>
+  </div>
+</section>
