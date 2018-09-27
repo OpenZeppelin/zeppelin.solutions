@@ -116,6 +116,7 @@ h2 {
   font-size: 28px;
   font-weight: 300;
   color: #3c3c3c;
+  margin-top: 0;
 }
 
 h2.small {
@@ -147,6 +148,14 @@ p.middle {
   line-height: 1.83;
   text-transform: none;
   color: white;
+  font-size: 16px;
+}
+
+p.middle-grey {
+  font-family: Helvetica;
+  line-height: 1.83;
+  text-transform: none;
+  color: #4a4a4a;
   font-size: 16px;
 }
 
@@ -394,4 +403,28 @@ p a {
 }
 .row.valign {
   padding: 30px 0 0 0;
+}
+
+
+
+/*Compartidas*/
+.request-audit-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.request-audit-container .img-box {
+  width: 50%;
+  text-align: center;
+}
+.request-audit-container img {
+  margin: 34px 0;
+}
+@media (max-width: 900px) {
+  .request-audit-container {
+    justify-content: center;
+  }
+  .request-audit-container .img-box {
+    width: 100%;
+  }
 }
