@@ -6,7 +6,7 @@ layout: default
     background-color: #f6f6f7;
   }
   .standards {
-    background-image: linear-gradient(106deg, #141c55, #00298c);
+    background-image: linear-gradient(106deg, #0a0a0a, #282828);
     margin: 70px 0;
   }
   .standards h4 {
@@ -15,11 +15,15 @@ layout: default
   .standard-box {
     margin: 70px 49px 0 49px;
   }
+  @media (max-width: 900px) {
+    .standard-box { margin: 70px 0 0 0;}
+  }
+  
   .standards .standard-title {
     font-family: Helvetica;
     font-size: 50px;
     font-weight: 300;
-    line-height: 0.68;
+    line-height: 1;
     text-align: center;
     color: #ffffff;
     margin: 0;
@@ -27,6 +31,7 @@ layout: default
   .standards .middle {
     font-size: 16px;
     text-align: center;
+    line-height: 1;
   }
   .depth a {
     text-decoration: none;
@@ -59,7 +64,7 @@ layout: default
   </section>
 </section>
 {% include landing-challenges.html %}
-<section class="blueprint">
+<section class="blueprint grey">
   <div class="container">
     <h2>Your blueprint for decentralized systems</h2>
     <p class="small short">We are focused on setting standards and building open-source technology to close the gap between our vision and the reality of how decentralized networks work today.</p>
@@ -68,7 +73,7 @@ layout: default
 <section class="standards">
   <div class="container">
     <h4>We set ever-higher standards for the industry</h4>
-    <div class="flex">
+    <div class="flex xs-column">
       <div class="standard-box">
         <p class="standard-title">$4.5+ Billion</p>
         <p class="middle">in digital assets powered by our contracts</p>
@@ -88,7 +93,7 @@ layout: default
 </section>
 <section class="gray depth">
   <div class="container">
-    <div>
+    <div class="xs-centered">
       <h2 class="small">In-depth system security audits</h2>
       <p class="small short">In an economy where software code powers real money, security is a top priority. We specialize in auditing high-impact smart contract systems.</p>
       </br>
