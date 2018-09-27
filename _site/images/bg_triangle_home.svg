@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="580px" viewBox="0 0 1440 580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>bg_triangle_home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0A0A0A" offset="0%"></stop>
+            <stop stop-color="#1E1E28" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1440" height="580"></rect>
+        <linearGradient x1="100%" y1="0%" x2="100%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#0A0A0A" offset="0%"></stop>
+            <stop stop-color="#1E1E28" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Zeppelin-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg_triangle_home">
+            <g id="Rectangle-2">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <polygon fill-opacity="0.7" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)" points="1440 0 1440 580 930 580"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -73,6 +73,17 @@
 	  img {
 	  	max-width: 100%;
 	  }
+	  .hero-background:before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background: url(/images/bg_triangle_home.svg);
+	    background-position: right !important;
+    	background-size: cover!important;
+	  }
 	  @media (max-width: 900px) {
 		  .xs-column { flex-direction: column; }
 		  .container {width: 85%}
@@ -173,7 +184,7 @@
 <div class="hiring-nav">
   <p>Want to join the team? <a href="/jobs/">See current openings</a><p>
 </div>
-<section id="principal">
+<section class="hero-background" id="principal">
   <style type="text/css">
   nav {
     height: 50px;
@@ -419,7 +430,7 @@
     <p class="small short">We are focused on setting standards and building open-source technology to close the gap between our vision and the reality of how decentralized networks work today.</p>
   </div>
 </section>
-<section class="standards">
+<section class="standards hero-background">
   <div class="container">
     <h4>We set ever-higher standards for the industry</h4>
     <div class="flex xs-column">

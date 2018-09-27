@@ -8,7 +8,7 @@ title: Zeppelin
 email: contact@openzeppelin.org
 description: Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zeppelin.solutions/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

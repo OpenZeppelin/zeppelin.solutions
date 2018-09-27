@@ -73,6 +73,17 @@
 	  img {
 	  	max-width: 100%;
 	  }
+	  .hero-background:before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background: url(/images/bg_triangle_home.svg);
+	    background-position: right !important;
+    	background-size: cover!important;
+	  }
 	  @media (max-width: 900px) {
 		  .xs-column { flex-direction: column; }
 		  .container {width: 85%}
@@ -135,9 +146,12 @@
 	#leading-projects .centered {
 	  padding: 0 0 30px 0;
 	}
+  .hero-background:before {
+    background: url(/images/bg_triangle_security.svg);
+  }
 </style>
 
-<section class="audits-principal" id="principal">
+<section class="audits-principal hero-background" id="principal">
   <style type="text/css">
   nav {
     height: 50px;
