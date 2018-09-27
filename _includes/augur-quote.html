@@ -3,6 +3,11 @@
     width: 45%;
     box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
   }
+  @media (max-width: 900px) {
+    .augur-quote .card {
+      width: 100%;
+    }
+  }
   .augur-quote .card h6 {
     opacity: 0.8;
     font-family: Helvetica;
@@ -24,7 +29,12 @@
   }
   .augur-quote .card h3 .strong{
     font-weight: 900;
+  }
+  .augur-quote .card .name {
     padding: 0 10px;
+  }
+  .augur-quote .card .name p {
+    line-height: 1;
   }
   .augur-quote .card h3 img{
     height: 30px;
@@ -41,8 +51,11 @@
       <div>
         <h6>“Zeppelin's audit report was like Christmas morning for all the engineers. Our team is very pleased with the results.”</h6>
         <h3 class="card-margin">
-          <span><img class="circle responsive-img" src="../images/tom.jpg" alt="Tom Kysar"></span>
-          <span class="strong">Tom Kysar </span> Product Manager at Augur
+          <img class="circle responsive-img" src="../images/tom.jpg" alt="Tom Kysar">
+          <div class="name">
+            <span class="strong">Tom Kysar </span>
+            <p><span>Product Manager at Augur</span></p>
+          </div>
         </h3>
       </div>
     </div>

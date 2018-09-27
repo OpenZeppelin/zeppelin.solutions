@@ -5,6 +5,7 @@
     justify-content: center;
     position: relative;
   }
+  
   #process:before {
     content: '';
     position: absolute;
@@ -60,6 +61,35 @@
     height: 5px;
     background-color: #ffffff;
     border-radius: 5px;
+  }
+  @media (max-width: 900px) {
+    #process:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      height: 100%;
+      width: 1px;
+    }
+    #process div:before {
+      left: -5px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+    }
+    #process div {
+      width: 100%;
+      padding: 0 15px 30px 15px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: auto;
+      text-align: left;
+    }
+    #process div p {
+      padding: 0; 
+      text-align: left;
+    }
   }
 </style>
 
