@@ -45,18 +45,7 @@ layout: default
   #values .flex-box {
     margin: 0 -30px!important;
   }
-  @media (max-width: 900px) { 
-    #jobs .flex-box div { 
-      margin: 0 !important; 
-      width: 100%!important 
-    }
-    #jobs .mobile-column { 
-      flex-direction: column; 
-    }
-    .value-box {
-      width: 100%;
-    }
-  }
+  
   .how-we-work-title {
     opacity: 0.9;
     font-family: 'Roboto', sans-serif;
@@ -87,9 +76,38 @@ layout: default
   .jobs-photos {
     display: flex;
     flex-wrap: nowrap;
+    position: static !important;
+    margin-bottom: -157px!important;
+    padding-bottom: 0;
   }
   .jobs-photos img {
     padding: 2px;
+  }
+  @media (max-width: 900px) { 
+    #jobs .flex-box div { 
+      margin: 0 !important; 
+      width: 100%!important 
+    }
+    #jobs .mobile-column { 
+      flex-direction: column; 
+    }
+    .value-box {
+      width: 100%;
+    }
+    .jobs-photos {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .jobs-photos img {
+      width: 50%;
+      height: auto;
+    }
+    #remote-by-default .flex-box {
+      align-items: center !important;
+    }
+    .jobs-photos {
+      margin-bottom: -107px!important;
+    }
   }
 </style>
 
@@ -187,13 +205,13 @@ layout: default
     
   </div>
 </section>
-<section class="role grey">
+<section class="role">
   <div class="container centered">
     <h2 class="small">Don’t see your role here?</h2>
     <p class="small">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
   </div>
 </section>
-<section>
+<section class="grey">
   <div class="container centered">
     <h2>Hiring process</h2>
     {% include hiring-process.html %}

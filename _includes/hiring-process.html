@@ -5,21 +5,21 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 80%;
+    width: 90%;
   }
   #hiring-process:before {
     content: '';
     position: absolute;
     top: -7px;
-    width: 85%;
-    max-width: 795px;
+    width: 86%;
+    max-width: 950px;
     height: 1px;
-    background: #00298c;
+    background: black;
   }
   #hiring-process p {
     opacity: 0.8;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.25;
     text-align: center;
     color: #4a4a4a;
@@ -34,13 +34,13 @@
     padding: 0 15px;
   }
   #hiring-process h2 {
-    font-family: Helvetica;
-    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
     font-weight: bold;
     line-height: 1.3;
     text-align: center;
-    color: #00298c;
-    margin: 7px 0px;
+    color: black;
+    margin: 0 0 8px;
   }
   #hiring-process div {
     text-align: center;
@@ -60,37 +60,72 @@
     top: -9px;
     width: 5px;
     height: 5px;
-    background-color: #00298c;
+    background-color: black;
     border-radius: 5px;
+  }
+  @media (max-width: 900px) {
+    #hiring-process {
+      flex-direction: column; 
+    }
+    #hiring-process:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      height: 100%;
+      width: 1px;
+    }
+    #hiring-process div:before {
+      left: -5px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+    }
+    #hiring-process div {
+      width: 100%;
+      padding: 0 15px 30px 15px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: auto;
+      text-align: left;
+    }
+    #hiring-process div p {
+      padding: 0; 
+      text-align: left;
+    }
+    #hiring-process p {
+      font-size: 15px;
+    }
   }
 </style>
 <div class="container" id="hiring-process">
   <div class="first">
-    <h2>APPLICATION</h2>
+    <h2>Application</h2>
     <p>You send us an application</p>
   </div>
   <div>
-    <h2>CHAT</h2>
+    <h2>Chat</h2>
     <p>We schedule an initial chat</p>
   </div>
   <div>
-    <h2>TEAM INTERVIEW</h2>
+    <h2>Team Interview</h2>
     <p>You have in-depth interviews with the team</p>
   </div>
   <div>
-    <h2>REFERENCES</h2>
+    <h2>References</h2>
     <p>We ask you for references</p>
   </div>
   <div>
-    <h2>FINAL INTERVIEW</h2>
+    <h2>Final Interview</h2>
     <p>We have a final interview</p>
   </div>
   <div>
-    <h2>WORK TEST</h2>
+    <h2>Work Test</h2>
     <p>You’re invited for a paid work tes</p>
   </div>
   <div class="last">
-    <h2>OFFER</h2>
+    <h2>Offer</h2>
     <p>We extend you an offer</p>
   </div>
 </div>
