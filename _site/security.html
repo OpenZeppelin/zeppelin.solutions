@@ -46,7 +46,6 @@
   <link rel="stylesheet" href="http://localhost:4000/css/responsive.css">
   <link rel="stylesheet" href="http://localhost:4000/css/animate.css">
   <link rel="stylesheet" href="http://localhost:4000/css/materialize.min.css">
-  <link rel="stylesheet" href="http://localhost:4000/font-awesome/css/font-awesome.min">
   <link rel="stylesheet" href="http://localhost:4000/css/style.css">
   
 
@@ -148,6 +147,23 @@
 	}
   .hero-background:before {
     background: url(/images/bg_triangle_security.svg);
+  }
+  .request-audit-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .request-audit-container .img-box {
+    width: 50%;
+    text-align: center;
+  }
+  @media (max-width: 900px) {
+    .request-audit-container {
+      justify-content: center;
+    }
+    .request-audit-container .img-box {
+      width: 100%;
+    }
   }
 </style>
 
@@ -285,10 +301,11 @@
                   <p class="subtitle">A secure platform to develop and manage smart contract apps</p>
                 </div>
               </a></li>
-              <li><a class="dropdown-box grey" href="https://tplprotocol.org/" target="_blank">
-                <p class="title">TPL</p>
+              <li><a class="dropdown-box" href="https://tplprotocol.org/" target="_blank">
+                <img src="/images/navbar/tpl.svg">
                 <div>
-                  <p>A self-regulatory system that supports open economies</p>
+                  <p class="title">TPL</p>
+                  <p class="subtitle">A self-regulatory system that supports open economies</p>
                 </div>
               </a></li>
             </ul>
@@ -497,7 +514,12 @@
   .augur-quote .card {
     width: 45%;
     box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    background-image: url(/images/ic_augur.svg);
+    background-repeat: no-repeat;
+    background-position: 113% 72%;
+    background-size: 24% 45%;
   }
+
   @media (max-width: 900px) {
     .augur-quote .card {
       width: 100%;
@@ -624,17 +646,22 @@
   </div>
 </div>
 </section>
-<section class="line-top line-bottom">
-  <div class="container">
-    <h2>Request an Audit</h2>
-    <p class="small short">Our quotes and turnaround times vary according to the codebase’s length and complexity.We prioritize projects that base their code and architecture on OpenZeppelin or ZeppelinOS, the community-driven, industry-standard library.</p>
-    <p class="small short blue">Send an email to <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a> including your project's website, links to your source code, and system documentation.</p>
-  </div>
-</section>
-<section>
+<section class="grey">
   <div class="container">
     <h2>Make your code more secure from day 1</h2>
     <p class="small short">Accelerate your development process by leveraging best practices and using community-vetted code. Make use of the OpenZeppelin framework and ZeppelinOS’ set of on-chain smart contract libraries for standard functions in your applications. </p>
+  </div>
+</section>
+<section>
+  <div class="container request-audit-container xs-column">
+    <div>
+      <h2>Request an Audit</h2>
+      <p class="small short">Our quotes and turnaround times vary according to the codebase’s length and complexity.We prioritize projects that base their code and architecture on OpenZeppelin or ZeppelinOS, the community-driven, industry-standard library.</p>
+      <p class="small short">Send an email to <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a> including your project's website, links to your source code, and system documentation.</p>
+    </div>
+    <div class="img-box">
+      <img src="../images/badge_audit.svg"/>
+    </div>
   </div>
 </section>
 		<style>
