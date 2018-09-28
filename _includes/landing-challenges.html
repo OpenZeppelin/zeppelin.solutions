@@ -10,9 +10,19 @@
     margin: 30px 0;
     text-align: left;
   }
+  @media (min-width: 901px) { 
+    .challenge-box { max-width: 27%; }
+  }
+
   .challenge-box.middle {
     border-left: solid 1px #d8d8d8;
     border-right: solid 1px #d8d8d8;
+  }
+  @media (max-width: 900px) { 
+    .challenge-box.middle {
+      border-left: solid 0px transparent;
+      border-right: solid 0px transparent;
+    }
   }
   .eth-icon {
     margin: auto;

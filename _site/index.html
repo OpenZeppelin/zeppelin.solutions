@@ -83,6 +83,38 @@
 	    background-position: right !important;
     	background-size: cover!important;
 	  }
+	  .rounded-button {
+	  	text-decoration: none;
+	    text-transform: uppercase;
+	    border-radius: 40px;
+	    font-family: 'Roboto', sans-serif;
+	    font-size: 12px;
+	    font-weight: 500;
+	    letter-spacing: 1.5px;
+	    padding: 5px 28px;
+	    margin: 0 10px 0 0;
+	  }
+	  .empty-button {
+	    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
+	    border: solid 1px #000000;
+	    color: #3c3c3c;
+	  }
+	  .empty-button:hover {
+	    background-color: #000000;
+	    color: #f7f7f8;
+	    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+	  }
+	  .fill-button {
+	    border: solid 1px #000000;
+	    background-color: #000000;
+	    color: #f7f7f8;
+	    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+	  }
+	  .fill-button:hover {
+	    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
+	    color: #3c3c3c;
+	    background-color: transparent;
+	  }
 	  @media (max-width: 900px) {
 		  .xs-column { flex-direction: column; }
 		  .container {width: 85%}
@@ -102,6 +134,7 @@
   .standards {
     background-image: linear-gradient(106deg, #0a0a0a, #282828);
     margin: 70px 0;
+    padding-top: 100px;
   }
   .standards h4 {
     color: white;
@@ -127,23 +160,9 @@
     text-align: center;
     line-height: 1;
   }
-  .depth a {
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 40px;
-    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
-    border: solid 1px #000000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    color: #3c3c3c;
-    padding: 6px 15px;
-  }
-  .depth a:hover {
-    background-color: #000000;
-    color: #f7f7f8;
-    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+  .blueprint {
+    padding-bottom: 0;
+    margin-bottom: -100px !important;
   }
 </style>
 
@@ -379,9 +398,19 @@
     margin: 30px 0;
     text-align: left;
   }
+  @media (min-width: 901px) { 
+    .challenge-box { max-width: 27%; }
+  }
+
   .challenge-box.middle {
     border-left: solid 1px #d8d8d8;
     border-right: solid 1px #d8d8d8;
+  }
+  @media (max-width: 900px) { 
+    .challenge-box.middle {
+      border-left: solid 0px transparent;
+      border-right: solid 0px transparent;
+    }
   }
   .eth-icon {
     margin: auto;
@@ -430,6 +459,285 @@
   <div class="container">
     <h2>Your blueprint for decentralized systems</h2>
     <p class="small short">We are focused on setting standards and building open-source technology to close the gap between our vision and the reality of how decentralized networks work today.</p>
+    <style>
+	.product-card {
+	  box-shadow: 0 8px 14px 0 rgba(60, 60, 60, 0.09);
+	  background-color: #ffffff;
+	  border: solid 1px #ededed;
+	  width: 100%;
+    padding: 50px 70px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+	}
+	.product-card h1 {
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 20px;
+	  font-weight: 500;
+	  line-height: 1;
+	  color: #000000;
+	  margin-top: 0;
+	}
+	.product-card h2 {
+	  opacity: 0.8;
+	  font-family: Helvetica;
+	  font-size: 15px;
+	  line-height: 1.2;
+	  color: #3c3c3c;
+	}
+	.product-card p {
+	  opacity: 0.8;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 15px;
+	  line-height: 1;
+	  color: #3c3c3c;
+	}
+	.product-card div.image-box {
+		width: 50%;
+	}
+	.product-card div.text-box {
+		width: 70%
+	}
+	.show-on-small {
+		display: none !important;
+	}
+	.product-card .hide-on-small-only { 
+		display: block;
+		text-align: center;
+	}
+	.product-card.empty-button {
+    border: solid 1px #0e1129;
+    color: #3c3c3c;
+  }
+	.product-card .empty-button:hover {
+    background-color: #0e1129;
+  }
+  .product-card .fill-button {
+    border: solid 1px #0e1129;
+    background-color: #0e1129;
+  }
+  .product-card .fill-button:hover {
+    color: #3c3c3c;
+    background-color: transparent;
+  }
+	@media (max-width: 900px) {
+		.show-on-small { display: block !important; }
+		.hide-on-small-only { display: none !important; }
+		.product-card { padding: 30px 20px; }
+		.product-card div { width: 100% !important; }
+		.product-card .image-box { padding-bottom: 50px; text-align: center}
+		.product-card img { width: 70%; max-width: 291px; }
+		.product-card .buttons-box { text-align: center; }
+		.product-card .buttons-box .rounded-button { padding: 9px 15px; }
+	}
+</style>
+
+<div class="product-card xs-column">
+	<div class="show-on-small image-box">
+		<img src="../images/logo_OZ.svg"/>
+	</div>
+	<div class="text-box">
+		<h1>Smart Contract Libraries</h1>
+		<h2>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </h2>
+		<p>Ideal for learning</p>
+		<p>Easy for begginers</p>
+		</br>
+		<div class="buttons-box">
+			<a class="rounded-button fill-button" href="">Visit site</a>
+			<a class="rounded-button empty-button" href="">Go to docs</a>
+		</div>
+	</div>
+	<div class="hide-on-small-only image-box">
+		<img src="../images/logo_OZ.svg"/>
+	</div>
+</div>
+    <style>
+	.product-card {
+	  box-shadow: 0 8px 14px 0 rgba(60, 60, 60, 0.09);
+	  background-color: #ffffff;
+	  border: solid 1px #ededed;
+	  width: 100%;
+    padding: 50px 70px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+	}
+	.product-card h1 {
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 20px;
+	  font-weight: 500;
+	  line-height: 1;
+	  color: #000000;
+	  margin-top: 0;
+	}
+	.product-card h2 {
+	  opacity: 0.8;
+	  font-family: Helvetica;
+	  font-size: 15px;
+	  line-height: 1.2;
+	  color: #3c3c3c;
+	}
+	.product-card p {
+	  opacity: 0.8;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 15px;
+	  line-height: 1;
+	  color: #3c3c3c;
+	}
+	.product-card div.image-box {
+		width: 50%;
+	}
+	.product-card div.text-box {
+		width: 70%
+	}
+	.show-on-small {
+		display: none !important;
+	}
+	.product-card .hide-on-small-only { 
+		display: block;
+		text-align: center;
+	}
+	.product-card.empty-button {
+    border: solid 1px #0e1129;
+    color: #3c3c3c;
+  }
+	.product-card .empty-button:hover {
+    background-color: #0e1129;
+  }
+  .product-card .fill-button {
+    border: solid 1px #0e1129;
+    background-color: #0e1129;
+  }
+  .product-card .fill-button:hover {
+    color: #3c3c3c;
+    background-color: transparent;
+  }
+	@media (max-width: 900px) {
+		.show-on-small { display: block !important; }
+		.hide-on-small-only { display: none !important; }
+		.product-card { padding: 30px 20px; }
+		.product-card div { width: 100% !important; }
+		.product-card .image-box { padding-bottom: 50px; text-align: center}
+		.product-card img { width: 70%; max-width: 291px; }
+		.product-card .buttons-box { text-align: center; }
+		.product-card .buttons-box .rounded-button { padding: 9px 15px; }
+	}
+</style>
+
+<div class="product-card xs-column">
+	<div class="show-on-small image-box">
+		<img src="../images/logo_OZ.svg"/>
+	</div>
+	<div class="text-box">
+		<h1>Smart Contract Libraries</h1>
+		<h2>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </h2>
+		<p>Ideal for learning</p>
+		<p>Easy for begginers</p>
+		</br>
+		<div class="buttons-box">
+			<a class="rounded-button fill-button" href="">Visit site</a>
+			<a class="rounded-button empty-button" href="">Go to docs</a>
+		</div>
+	</div>
+	<div class="hide-on-small-only image-box">
+		<img src="../images/logo_OZ.svg"/>
+	</div>
+</div>
+    <style>
+	.product-card {
+	  box-shadow: 0 8px 14px 0 rgba(60, 60, 60, 0.09);
+	  background-color: #ffffff;
+	  border: solid 1px #ededed;
+	  width: 100%;
+    padding: 50px 70px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+	}
+	.product-card h1 {
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 20px;
+	  font-weight: 500;
+	  line-height: 1;
+	  color: #000000;
+	  margin-top: 0;
+	}
+	.product-card h2 {
+	  opacity: 0.8;
+	  font-family: Helvetica;
+	  font-size: 15px;
+	  line-height: 1.2;
+	  color: #3c3c3c;
+	}
+	.product-card p {
+	  opacity: 0.8;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 15px;
+	  line-height: 1;
+	  color: #3c3c3c;
+	}
+	.product-card div.image-box {
+		width: 50%;
+	}
+	.product-card div.text-box {
+		width: 70%
+	}
+	.show-on-small {
+		display: none !important;
+	}
+	.product-card .hide-on-small-only { 
+		display: block;
+		text-align: center;
+	}
+	.product-card.empty-button {
+    border: solid 1px #0e1129;
+    color: #3c3c3c;
+  }
+	.product-card .empty-button:hover {
+    background-color: #0e1129;
+  }
+  .product-card .fill-button {
+    border: solid 1px #0e1129;
+    background-color: #0e1129;
+  }
+  .product-card .fill-button:hover {
+    color: #3c3c3c;
+    background-color: transparent;
+  }
+	@media (max-width: 900px) {
+		.show-on-small { display: block !important; }
+		.hide-on-small-only { display: none !important; }
+		.product-card { padding: 30px 20px; }
+		.product-card div { width: 100% !important; }
+		.product-card .image-box { padding-bottom: 50px; text-align: center}
+		.product-card img { width: 70%; max-width: 291px; }
+		.product-card .buttons-box { text-align: center; }
+		.product-card .buttons-box .rounded-button { padding: 9px 15px; }
+	}
+</style>
+
+<div class="product-card xs-column">
+	<div class="show-on-small image-box">
+		<img src="../images/logo_OZ.svg"/>
+	</div>
+	<div class="text-box">
+		<h1>Smart Contract Libraries</h1>
+		<h2>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </h2>
+		<p>Ideal for learning</p>
+		<p>Easy for begginers</p>
+		</br>
+		<div class="buttons-box">
+			<a class="rounded-button fill-button" href="">Visit site</a>
+			<a class="rounded-button empty-button" href="">Go to docs</a>
+		</div>
+	</div>
+	<div class="hide-on-small-only image-box">
+		<img src="../images/logo_OZ.svg"/>
+	</div>
+</div>
   </div>
 </section>
 <section class="standards hero-background">
@@ -523,7 +831,7 @@
       <h2>In-depth system security audits</h2>
       <p class="middle-grey short">In an economy where software code powers real money, security is a top priority. We specialize in auditing high-impact smart contract systems.</br></p>
       </br>
-      <a href="/security/">learn more about audits</a>
+      <a class="rounded-button empty-button" href="/security/">learn more about audits</a>
     </div>
     <div class="img-box">
       <img src="../images/badge_audit.svg"/>

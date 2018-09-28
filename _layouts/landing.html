@@ -8,6 +8,7 @@ layout: default
   .standards {
     background-image: linear-gradient(106deg, #0a0a0a, #282828);
     margin: 70px 0;
+    padding-top: 100px;
   }
   .standards h4 {
     color: white;
@@ -33,23 +34,9 @@ layout: default
     text-align: center;
     line-height: 1;
   }
-  .depth a {
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 40px;
-    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
-    border: solid 1px #000000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    color: #3c3c3c;
-    padding: 6px 15px;
-  }
-  .depth a:hover {
-    background-color: #000000;
-    color: #f7f7f8;
-    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+  .blueprint {
+    padding-bottom: 0;
+    margin-bottom: -100px !important;
   }
 </style>
 
@@ -70,6 +57,9 @@ layout: default
   <div class="container">
     <h2>Your blueprint for decentralized systems</h2>
     <p class="small short">We are focused on setting standards and building open-source technology to close the gap between our vision and the reality of how decentralized networks work today.</p>
+    {% include product-card.html %}
+    {% include product-card.html %}
+    {% include product-card.html %}
   </div>
 </section>
 <section class="standards hero-background">
@@ -99,7 +89,7 @@ layout: default
       <h2>In-depth system security audits</h2>
       <p class="middle-grey short">In an economy where software code powers real money, security is a top priority. We specialize in auditing high-impact smart contract systems.</br></p>
       </br>
-      <a href="/security/">learn more about audits</a>
+      <a class="rounded-button empty-button" href="/security/">learn more about audits</a>
     </div>
     <div class="img-box">
       <img src="../images/badge_audit.svg"/>
