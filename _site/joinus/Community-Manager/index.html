@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+  <title>Zeppelin - Infrastructure for smart contract systems</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Twitter card  -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ZeppelinOrg" />
+  <meta name="twitter:creator" content="@ZeppelinOrg" />
+  <meta name="twitter:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta name="twitter:title" content="Zeppelin" />
+  <meta name="twitter:image" content="https://zeppelin.solutions/images/card.jpg" />
+  
+  <!-- Opengraph card (WhatsApp & others)  -->
+  <meta property="og:title" content="Zeppelin" />
+  <meta property="og:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta property="og:url" content="https://zeppelin.solutions/" />
+  <meta property="og:site_name" content="Zeppelin" />
+  <meta property="og:image" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:secure_url" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  
+  <meta name="description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications.">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/images/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/images/favicon/favicon-16x16.png"/>
+
+
+
+  <meta charset="UTF-8"> <!--Encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Movile first -->
+
+  <!--JQuery -->
+  <script src="http://localhost:4000/js/jquery.min.js"></script><!--JQuery 1.11.2 local -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/js/home.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/materialize.min.js"></script>
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/responsive.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/animate.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/materialize.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67327037-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-67327037-1');
+  </script>
+</head>
+	<style type="text/css">
+		.line-top {
+	    border-top: solid 1.5px #d8d8d8;
+	  }
+	  .line-bottom {
+	    border-bottom: solid 1.5px #d8d8d8;
+	  }
+	  img {
+	  	max-width: 100%;
+	  }
+	  .hero-background:before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background: url(/images/bg_triangle_home.svg);
+	    background-position: right !important;
+    	background-size: cover!important;
+	  }
+	  .rounded-button {
+	  	text-decoration: none;
+	    text-transform: uppercase;
+	    border-radius: 40px;
+	    font-family: 'Roboto', sans-serif;
+	    font-size: 12px;
+	    font-weight: 500;
+	    letter-spacing: 1.5px;
+	    padding: 5px 28px;
+	    margin: 0 10px 0 0;
+	  }
+	  .empty-button {
+	    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
+	    border: solid 1px #000000;
+	    color: #3c3c3c;
+	  }
+	  .empty-button:hover {
+	    background-color: #000000;
+	    color: #f7f7f8;
+	    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+	  }
+	  .fill-button {
+	    border: solid 1px #000000;
+	    background-color: #000000;
+	    color: #f7f7f8;
+	    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+	  }
+	  .fill-button:hover {
+	    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
+	    color: #3c3c3c;
+	    background-color: transparent;
+	  }
+	  @media (max-width: 900px) {
+		  .xs-column { flex-direction: column; }
+		  .container {width: 85%}
+		  .xs-centered { text-align: center; }
+		  section { padding: 20px 0; }
+		  h4 {
+		  	line-height: 1.5;
+    		font-size: 14px;
+    	}
+		}
+	</style>
+	<body>
+		<style type="text/css">
+  .job-opening {
+    background-image: linear-gradient(290deg, #1e7dd7, #2b2dbf) !important;
+    height: 50vh;
+    padding: 0;
+  }
+  .section-auto {
+    min-height: auto !important;
+  }
+  .requirements {
+    margin: 80px auto;
+  }
+  .requirements h3 {
+    text-align: left!important;
+  }
+</style>
+
+<section class="job-opening hero-background">
+  <style type="text/css">
+  nav {
+    height: 50px;
+    background: transparent;
+    color: white;
+    font-family: 'SourceRegular';
+    font-size: 16px;
+    border: 0px transparent;
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    box-shadow: 0 0 0 0 rgba(255,255,255,1);
+  }
+  nav a {
+    color: white;
+    height: 100%;
+    line-height: 50px;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+  }
+  .nav-wrapper {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .fa-bars {
+    font-size: 26px !important;
+  }
+  #mobile-nav {
+    background: white;
+  }
+  #mobile-nav a {
+    color: #283850;
+  }
+  #mobile-nav li {
+    height: 50px !important;
+  }
+  .side-nav {
+    width: 100%;
+  }
+  .close-link {
+    float: right;
+    padding: 0 10px;
+    color: #f6f6f6;
+  }
+  nav .dropdown-button {
+    display: inline-flex;
+    align-items: center;
+    text-transform: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+
+  nav i.material-icons {
+    font-size: 1em;
+  }
+
+  nav .button-collapse {
+    float: right !important;
+  }
+  .brand-box {
+    width: 168px;
+    height: 65px;
+  }
+  .brand-box img {
+    height: 30px;
+  }
+
+  .brand-box a {
+    display: flex;
+    align-items: center;
+  }
+  nav ul a:hover {
+    background-color: inherit !important;
+    opacity: 0.6;
+  }
+  .brand-box a:hover{
+    background: transparent;
+  }
+  .principal-links {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .dropdown-box p.subtitle {
+    opacity: 0.6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.83;
+    color: #4a4a4a;
+  }
+  .dropdown-box p.title {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+</style>
+
+<nav>
+  <div class="nav-wrapper">
+    <ul class="left">
+      <li class="brand-box">
+        <a href="/">
+          <img src="/images/logoZeppelin-long.svg"/>
+        </a>
+      </li>
+    </ul>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button principal-links" id="project">Projects<i class="material-icons">  expand_more</i></span>
+          <!-- Dropdown Structure -->
+          <div class="nav-dropdown-container projects-dropdown">
+            <ul>
+              <li><a class="dropdown-box" href="https://openzeppelin.org/" target="_blank">
+                <img src="/images/navbar/openzeppelin.svg">
+                <div>
+                  <p class="title">OpenZeppelin</p>
+                  <p class="subtitle">A Solidity framework of reusable and secure smart contracts</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box" href="https://zeppelinos.org/" target="_blank">
+                <img src="/images/navbar/zos.svg">
+                <div>
+                  <p class="title">ZeppelinOS</p>
+                  <p class="subtitle">A secure platform to develop and manage smart contract apps</p>
+                </div>
+              </a></li>
+              <li><a class="dropdown-box" href="https://tplprotocol.org/" target="_blank">
+                <img src="/images/navbar/tpl.svg">
+                <div>
+                  <p class="title">TPL</p>
+                  <p class="subtitle">A self-regulatory system that supports open economies</p>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/security/">Security</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/about/">About</a></span>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span class="dropdown-button" id="services"><a class="principal-links" href="/joinus/">Join us</a></span>
+        </div>
+      </li>
+    </ul>
+    <ul class="side-nav" id="mobile-nav">
+      <li><a class="sidenav-close close-link" href="#!">X</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a></li>
+      <li><a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a></li>
+      <li><a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a></li>
+      <li><a href="/security/">Security</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/joinus/">Jobs</a></li>
+    </ul>
+  </div>
+</nav>
+  <section id="home">
+    <div class="row">
+      <div class="container">
+        <h1 class="home-title">Community Manager</h1>
+        <p class="middle long">Lead the growth of our global developer community.</p>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="grey section-auto">
+  <div class="container centered">
+    <h4 class="left-align">Buenos Aires / Remote</h4>
+    <p class="left-align middle-grey">You are the type of person who loves to motivate and encourage others. You are passionate about technology, and love staying up-to-date on the latest developments. You are able to blend in and collaborate with diverse groups, whether it’s technical people or salespeople in suits. You are detail-oriented and love getting things done.</p>
+  </div>
+</section>
+<section>
+   <div class="requirements container">
+    <h3 class="left-aligned">What you'll do</h3>
+    <ul>
+      <li>
+        <p class="small left-aligned">Grow and energize the Asian community of OpenZeppelin & ZeppelinOS advocates.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Motivate leaders in the community to contribute code, content, evangelize and act as references.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Partner with the rest of the marketing organization to make community an extension of our marketing team through contributed content, references, and more.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Track metrics around the success of the OpenZeppelin & ZeppelinOS community, including overall community participation and downstream impact on our project.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Plan, coordinate, organize and cover meetups, hackathons and other events in Asia, with a focus in China and Hong Kong.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="requirements container">
+    <h3 class="left-aligned">Who we're looking for</h3>
+    <ul>
+      <li>
+        <p class="small left-aligned">An excellent communicator, with proficient written and spoken communication skills in English and Mandarin.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">An individual experienced in working remotely with international teams.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">An active member or contributor to different local events, meetups and/or community channels.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">A passionate relationship-builder with strong networking and organizational skills.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">An organized, data-driven professional with a love for self time management.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Extroverted personality - you should get energy from interacting with others.</p>
+      </li>
+    </ul>
+    </div>
+    <div class="requirements container">
+    <h3 class="left-aligned">Nice-to-haves</h3>
+    <ul>
+      <li>
+        <p class="small left-aligned">Previous experience contributing or managing crypto or open source projects.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Lives or lived in China for some time during the past 3 years.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Spent 2+ years living or studying in the US or other Western countries, or working with a project based in the US or other Western countries.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="grey">
+  <div class="container">
+    <h2>How to apply</h2>
+    <p class="middle-grey short">Complete the following <a href="https://airtable.com/shrqTXBRIBFCnXD3i">Application Form</a></p>
+    <p class="middle-grey short">If the <a href="https://airtable.com/shrqTXBRIBFCnXD3i">Application Form</a> is not working, send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the phrase "Community Manager: China/Hong Kong" on the subject line.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>You may also want to check</h2>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-china/">Expansion Manager: China / Hong Kong</a></p>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/community-manager-south-korea/">Community Manager: South Korea</a></p>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-south-korea/">Expansion Manager: South Korea</a></p>
+  </div>
+</section>
+		<style>
+  #footer {
+    background: black;
+    color: white;
+    padding: 25px 0 60px;
+    margin-bottom: 0;
+  }
+  #footer a {
+    display: block;
+    font-family: Helvetica;
+    font-size: 1.2em;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 2.4;
+    color: #ffffff;
+  }
+
+  #footer h3 {
+    display: block;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.88;
+    color: #ffffff;
+    text-transform: none;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  #footer a:hover {
+    opacity: 1;
+  }
+  .footer-box, .flex-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-box {
+    max-width: 520px;
+  }
+</style>
+
+<footer class="row" id="footer">
+  <div class="footer-box container mobile-column">
+    <div>
+      <h3>Projects</h3>
+      <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
+      <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
+      <a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <a href="/security-audits/">Security Audits</a>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <a href="/about/">About Us</a>
+      <a href="/jobs/">Jobs</a>
+    </div>
+    <div>
+      <h3>Social</h3>
+      <a href="https://www.instagram.com/zeppelinorg/" target="_blank">
+        Instagram
+      </a>
+      <a href="https://blog.zeppelin.solutions/" target="_blank">
+        Blog
+      </a>
+      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+        Twitter
+      </a>
+    </div>
+  </div>
+</footer>
+	</body>
+</html>
+

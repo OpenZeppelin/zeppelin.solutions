@@ -1,4 +1,140 @@
-/*!
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+  <title>Zeppelin - Infrastructure for smart contract systems</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Twitter card  -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ZeppelinOrg" />
+  <meta name="twitter:creator" content="@ZeppelinOrg" />
+  <meta name="twitter:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta name="twitter:title" content="Zeppelin" />
+  <meta name="twitter:image" content="https://zeppelin.solutions/images/card.jpg" />
+  
+  <!-- Opengraph card (WhatsApp & others)  -->
+  <meta property="og:title" content="Zeppelin" />
+  <meta property="og:description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications." />
+  <meta property="og:url" content="https://zeppelin.solutions/" />
+  <meta property="og:site_name" content="Zeppelin" />
+  <meta property="og:image" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:secure_url" content="https://zeppelin.solutions/images/card.jpg" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  
+  <meta name="description" content="Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications.">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/images/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/images/favicon/favicon-16x16.png"/>
+
+
+
+  <meta charset="UTF-8"> <!--Encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Movile first -->
+
+  <!--JQuery -->
+  <script src="http://localhost:4000/js/jquery.min.js"></script><!--JQuery 1.11.2 local -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/js/home.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/materialize.min.js"></script>
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/responsive.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/animate.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/materialize.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67327037-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-67327037-1');
+  </script>
+</head>
+	<style type="text/css">
+		.line-top {
+	    border-top: solid 1.5px #d8d8d8;
+	  }
+	  .line-bottom {
+	    border-bottom: solid 1.5px #d8d8d8;
+	  }
+	  img {
+	  	max-width: 100%;
+	  }
+	  .hero-background:before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background: url(/images/bg_triangle_home.svg);
+	    background-position: right !important;
+    	background-size: cover!important;
+	  }
+	  .rounded-button {
+	  	text-decoration: none;
+	    text-transform: uppercase;
+	    border-radius: 40px;
+	    font-family: 'Roboto', sans-serif;
+	    font-size: 12px;
+	    font-weight: 500;
+	    letter-spacing: 1.5px;
+	    padding: 5px 28px;
+	    margin: 0 10px 0 0;
+	  }
+	  .empty-button {
+	    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
+	    border: solid 1px #000000;
+	    color: #3c3c3c;
+	  }
+	  .empty-button:hover {
+	    background-color: #000000;
+	    color: #f7f7f8;
+	    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+	  }
+	  .fill-button {
+	    border: solid 1px #000000;
+	    background-color: #000000;
+	    color: #f7f7f8;
+	    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
+	  }
+	  .fill-button:hover {
+	    box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.3);
+	    color: #3c3c3c;
+	    background-color: transparent;
+	  }
+	  @media (max-width: 900px) {
+		  .xs-column { flex-direction: column; }
+		  .container {width: 85%}
+		  .xs-centered { text-align: center; }
+		  section { padding: 20px 0; }
+		  h4 {
+		  	line-height: 1.5;
+    		font-size: 14px;
+    	}
+		}
+	</style>
+	<body>
+		<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    /*!
  * fullPage 2.9.4
  * https://github.com/alvarotrigo/fullPage.js
  * MIT licensed
@@ -227,3 +363,81 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
 }
+  </div>
+
+</article>
+
+		<style>
+  #footer {
+    background: black;
+    color: white;
+    padding: 25px 0 60px;
+    margin-bottom: 0;
+  }
+  #footer a {
+    display: block;
+    font-family: Helvetica;
+    font-size: 1.2em;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 2.4;
+    color: #ffffff;
+  }
+
+  #footer h3 {
+    display: block;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.88;
+    color: #ffffff;
+    text-transform: none;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  #footer a:hover {
+    opacity: 1;
+  }
+  .footer-box, .flex-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-box {
+    max-width: 520px;
+  }
+</style>
+
+<footer class="row" id="footer">
+  <div class="footer-box container mobile-column">
+    <div>
+      <h3>Projects</h3>
+      <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
+      <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
+      <a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <a href="/security-audits/">Security Audits</a>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <a href="/about/">About Us</a>
+      <a href="/jobs/">Jobs</a>
+    </div>
+    <div>
+      <h3>Social</h3>
+      <a href="https://www.instagram.com/zeppelinorg/" target="_blank">
+        Instagram
+      </a>
+      <a href="https://blog.zeppelin.solutions/" target="_blank">
+        Blog
+      </a>
+      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+        Twitter
+      </a>
+    </div>
+  </div>
+</footer>
+	</body>
+</html>
+

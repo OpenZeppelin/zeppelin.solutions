@@ -127,23 +127,24 @@
 		}
 	</style>
 	<body>
-		<style>
-  .about-principal {
-    background-image: linear-gradient(107deg, #141c55, #00298c);
-    height: 80vh!important;
+		<style type="text/css">
+  .job-opening {
+    background-image: linear-gradient(290deg, #1e7dd7, #2b2dbf) !important;
+    height: 50vh;
+    padding: 0;
   }
-
-  @media (max-width: 900px) {
-    .about-principal {
-      height: auto!important;
-    }
+  .section-auto {
+    min-height: auto !important;
   }
-  .contact, .featured .role {
-    padding: 30px 0;
-    min-height: auto;
+  .requirements {
+    margin: 80px auto;
+  }
+  .requirements h3 {
+    text-align: left!important;
   }
 </style>
-<section class="about-principal hero-background" id="principal">
+
+<section class="job-opening hero-background">
   <style type="text/css">
   nav {
     height: 50px;
@@ -319,241 +320,90 @@
   <section id="home">
     <div class="row">
       <div class="container">
-        <h1 class="home-title">Fostering economic freedom</h1>
-        <p class="middle short">Zeppelin is a technology company focused on improving how value is exchanged in the world using blockchain technology and infrastructure.</p>
+        <h1 class="home-title">Frontend Engineer</h1>
+        <p class="middle long">Build the interface that connects smart contracts with users.</p>
       </div>
     </div>
   </section>
 </section>
-<section class="row" id="clients">
+<section class="grey section-auto">
   <div class="container centered">
-    <h2>Clients, partners and platforms</h2>
-    <p class="regular">Over the years we’ve gained the trust of other leading technology companies, partners, and investors.</p> 
-  </div>
-  <br/>
-  <br/>
-  <style type="text/css">
-  .partners {
-    max-width: 1050px;
-  }
-  .leading-projects {
-    height: 100px;
-    width: 150px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .leading-projects img {
-    max-width: 230px;
-    width: 60%;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
-  }
-  .leading-projects .bitgo, .leading-projects .cosmos,  .leading-projects .status {
-    margin: 25px auto;
-  }
-  .leading-projects .dfinity, .leading-projects .shapeshift, .leading-projects .storj {
-    margin: 13px auto;
-  }
-</style>
-
-<div class="container centered valign-wrapper">
-  <div class="row valign partners">
-    <span class="leading-projects">
-      <img src="../images/logos/ethereum.svg" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/augur.png" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/brave.png" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/golem.svg" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/omise.svg" />
-    </span>
-    <span class="leading-projects">
-      <img class="cosmos" src="../images/logos/cosmos.svg" />
-    </span>
-    <span class="leading-projects">
-      <img class="shapeshift" src="../images/logos/shapeshift.png" />
-    </span>
-    <span class="leading-projects">
-      <img class="dfinity" src="../images/logos/dfinity.png" />
-    </span>
-    <span class="leading-projects">
-      <img class="status" src="../images/logos/status.svg" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/decentraland.svg" />
-    </span>
-    <span class="leading-projects">
-      <img class="bitgo" src="../images/logos/bitgo.png" />
-    </span>
-    <span class="leading-projects">
-      <img class="storj" src="../images/logos/storj.png" />
-    </span>
-  </div>
-</div>
-  <br/>
-  <br/>
-  <div class="container centered">
-    <p class="small">We work with these platforms and the foundations that sponsor them.</p>
-  </div>
-  <style type="text/css">
-  .sponsors-img {
-    width: 33% !important;
-  }
-  .sponsors-img.rsk {
-    width: 38% !important;
-  }
-
-  @media (max-width: 900px) {
-    .sponsors-section .leading-projects {
-      width: 103px;
-    }
-  }
-  
-</style>
-
-<br/>
-<br/>
-<div class="container centered valign-wrapper sponsors-section">
-  <div class="row valign platforms">
-    <span class="leading-projects">
-      <img class="sponsors-img" src="../images/about-logos/eth.svg" />
-    </span>
-    <span class="leading-projects">
-      <img class="sponsors-img" src="../images/about-logos/eth-classic.png" />
-    </span>
-    <span class="leading-projects">
-      <img class="sponsors-img rsk" src="../images/about-logos/rsk.png" />
-    </span>
-  </div>
-</div>
-</section>
-<section class="row space team-members grey">
-  <div class="container">
-    <h2 class="small">A distributed team working with distributed technologies.</h2>
-    <p class="small short">Team members are spread across multiple locations including Berlin, Buenos Aires, London, New York, Montevideo, Costa Rica and Melbourne.</p>
-    <style type="text/css">
-  .team-box {
-    height: 255px;
-    width: 19%;
-    min-width: 150px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-  }
-  .team-img {
-    height: 120px !important;
-    width: 120px !important;
-    margin: auto;
-    margin-bottom: 1.5rem;
-    box-shadow: -2px 4px 10px 0 #f5f5f5, 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-  }
-  .team-box p {
-    margin: 1px auto;
-  }
-  .team-box p.title {
-    opacity: 0.9;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.31;
-    text-align: center;
-    color: #4a4a4a;
-  }
-  .team-box p.small {
-    opacity: 0.9;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5;
-    text-align: center;
-    color: #4a4a4a;
-  }
-
-  @media (max-width: 900px) {
-    .team-box {
-      height: 187px;
-      width: 19%;
-      min-width: 100px;
-    }
-    .team-img {
-      height: 80px !important;
-      width: 80px !important;
-    }
-  }
-</style>
-
-<div class="valign">
-  <div class="centered">
-    <div class="team-box">
-      <img src="../images/team/demi.png" class="circle responsive-img team-img">
-      <p class="title">Demian <span class="hide-on-small-only">Brener</span></p>
-      <p class="small">Founder & CEO</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/manu.png" class="circle responsive-img team-img">
-      <p class="title">Manuel <span class="hide-on-small-only">Araoz</span></p>
-      <p class="small">Founder & CTO</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/albert.png" class="circle responsive-img team-img">
-      <p class="title">Albert <span class="hide-on-small-only">Gozzi</span></p>
-      <p class="small">COO</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/facu.png" class="circle responsive-img team-img">
-      <p class="title">Facundo <span class="hide-on-small-only">Spagnuolo</span></p>
-      <p class="small">Core dev</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/palla.png" class="circle responsive-img team-img">
-      <p class="title">Santiago <span class="hide-on-small-only">Palladino</span></p>
-      <p class="small">Core dev</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/marta.png" class="circle responsive-img team-img">
-      <p class="title">Martín <span class="hide-on-small-only">Tellechea</span></p>
-      <p class="small">Biz dev</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/ale.png" class="circle responsive-img team-img">
-      <p class="title">Alejandro <span class="hide-on-small-only">Santander</span></p>
-      <p class="small">Core dev</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/alejo.png" class="circle responsive-img team-img">
-      <p class="title">Alejo <span class="hide-on-small-only">Salles</span></p>
-      <p class="small">Core dev</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/fran.png" class="circle responsive-img team-img">
-      <p class="title">Francisco <span class="hide-on-small-only">Giordano</span></p>
-      <p class="small">Core dev</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/marto.png" class="circle responsive-img team-img">
-      <p class="title">Martín <span class="hide-on-small-only">Triay</span></p>
-      <p class="small">Core dev</p>
-    </div>
-    <div class="team-box">
-      <img src="../images/team/nico.png" class="circle responsive-img team-img">
-      <p class="title">Nicolás <span class="hide-on-small-only">Venturo</span></p>
-      <p class="small">Core dev</p>
-    </div>
-  </div>
-</div>
+    <h4 class="left-align">Buenos Aires / Remote</h4>
+    <p class="left-align middle-grey">You are the type of person who loves to motivate and encourage others. You are passionate about technology, and love staying up-to-date on the latest developments. You are able to blend in and collaborate with diverse groups, whether it’s technical people or salespeople in suits. You are detail-oriented and love getting things done.</p>
   </div>
 </section>
-<section class="contact">
+<section>
+   <div class="requirements container">
+    <h3 class="left-aligned">What you'll do</h3>
+    <ul>
+      <li>
+        <p class="small left-aligned">Grow and energize the Asian community of OpenZeppelin & ZeppelinOS advocates.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Motivate leaders in the community to contribute code, content, evangelize and act as references.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Partner with the rest of the marketing organization to make community an extension of our marketing team through contributed content, references, and more.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Track metrics around the success of the OpenZeppelin & ZeppelinOS community, including overall community participation and downstream impact on our project.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Plan, coordinate, organize and cover meetups, hackathons and other events in Asia, with a focus in China and Hong Kong.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="requirements container">
+    <h3 class="left-aligned">Who we're looking for</h3>
+    <ul>
+      <li>
+        <p class="small left-aligned">An excellent communicator, with proficient written and spoken communication skills in English and Mandarin.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">An individual experienced in working remotely with international teams.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">An active member or contributor to different local events, meetups and/or community channels.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">A passionate relationship-builder with strong networking and organizational skills.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">An organized, data-driven professional with a love for self time management.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Extroverted personality - you should get energy from interacting with others.</p>
+      </li>
+    </ul>
+    </div>
+    <div class="requirements container">
+    <h3 class="left-aligned">Nice-to-haves</h3>
+    <ul>
+      <li>
+        <p class="small left-aligned">Previous experience contributing or managing crypto or open source projects.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Lives or lived in China for some time during the past 3 years.</p>
+      </li>
+      <li>
+        <p class="small left-aligned">Spent 2+ years living or studying in the US or other Western countries, or working with a project based in the US or other Western countries.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="grey">
   <div class="container">
-    <h2>Contact</h2>
-    <p class="small extra-short">For general queries, including partnership opportunities, please email <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a></p>
+    <h2>How to apply</h2>
+    <p class="middle-grey short">Complete the following <a href="https://airtable.com/shrqTXBRIBFCnXD3i">Application Form</a></p>
+    <p class="middle-grey short">If the <a href="https://airtable.com/shrqTXBRIBFCnXD3i">Application Form</a> is not working, send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the phrase "Community Manager: China/Hong Kong" on the subject line.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>You may also want to check</h2>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-china/">Expansion Manager: China / Hong Kong</a></p>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/community-manager-south-korea/">Community Manager: South Korea</a></p>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-south-korea/">Expansion Manager: South Korea</a></p>
   </div>
 </section>
 		<style>

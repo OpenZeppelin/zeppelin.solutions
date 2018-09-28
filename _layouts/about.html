@@ -7,6 +7,9 @@ layout: default
     background-image: linear-gradient(107deg, #141c55, #00298c);
     height: 80vh!important;
   }
+  .about-principal .rounded-button {
+    margin: auto;
+  }
 
   @media (max-width: 900px) {
     .about-principal {
@@ -40,7 +43,7 @@ layout: default
   <br/>
   <br/>
   <div class="container centered">
-    <p class="small">We work with these platforms and the foundations that sponsor them.</p>
+    <p class="regular">We work with these platforms and the foundations that sponsor them.</p>
   </div>
   {% include sponsors.html %}
 </section>
@@ -49,6 +52,9 @@ layout: default
     <h2 class="small">A distributed team working with distributed technologies.</h2>
     <p class="small short">Team members are spread across multiple locations including Berlin, Buenos Aires, London, New York, Montevideo, Costa Rica and Melbourne.</p>
     {% include team.html %}
+    <div class="centered">
+      <a class="rounded-button empty-button" href="/joinus/">want to join us?</a>
+    </div>
   </div>
 </section>
 <section class="contact">
