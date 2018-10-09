@@ -166,6 +166,12 @@
     line-height: 2.4;
     color: #ffffff;
   }
+  
+  #footer img {
+    height: 23px;
+    margin-top: 21px;
+    padding-right: 40px;
+  }
 
   #footer h3 {
     display: block;
@@ -181,43 +187,55 @@
   #footer a:hover {
     opacity: 1;
   }
-  .footer-box, .flex-box {
+  .footer-box, .flex-box, .link-box {
     display: flex;
     justify-content: space-between;
   }
-  .footer-box {
-    max-width: 520px;
+  .link-box, .footer-box {
+    flex-wrap: wrap;
   }
+  .link-box div{
+    width: 130px;
+  }
+
 </style>
 
 <footer class="row" id="footer">
   <div class="footer-box container mobile-column">
     <div>
-      <h3>Projects</h3>
-      <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
-      <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
-      <a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+      <img src="/images/zeppelin_logo_footer.svg"/>
+    </div>
+    <div class="link-box">
+      <div>
+        <h3>Projects</h3>
+        <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
+        <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
+        <a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <a href="/security-audits/">Security Audits</a>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <a href="/about/">About Us</a>
+        <a href="/jobs/">Jobs</a>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <a href="https://www.instagram.com/zeppelinorg/" target="_blank">
+          Instagram
+        </a>
+        <a href="https://blog.zeppelin.solutions/" target="_blank">
+          Blog
+        </a>
+        <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+          Twitter
+        </a>
+      </div>
     </div>
     <div>
-      <h3>Services</h3>
-      <a href="/security-audits/">Security Audits</a>
-    </div>
-    <div>
-      <h3>Company</h3>
-      <a href="/about/">About Us</a>
-      <a href="/jobs/">Jobs</a>
-    </div>
-    <div>
-      <h3>Social</h3>
-      <a href="https://www.instagram.com/zeppelinorg/" target="_blank">
-        Instagram
-      </a>
-      <a href="https://blog.zeppelin.solutions/" target="_blank">
-        Blog
-      </a>
-      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
-        Twitter
-      </a>
+      
     </div>
   </div>
 </footer>
