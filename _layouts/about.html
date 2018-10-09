@@ -25,6 +25,16 @@ layout: default
     padding: 50px 0;
     min-height: auto;
   }
+  .team-title {
+    max-width: 468px;
+    line-height: 1.3;
+    margin-bottom: 10px
+  }
+  .team-subtitle {
+    margin-top: 0px;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
 </style>
 <section class="about-principal hero-background" id="principal">
   {% include nav.html %}
@@ -50,8 +60,8 @@ layout: default
 </section>
 <section class="row space team-members grey">
   <div class="container">
-    <h2 class="small">A distributed team working with distributed technologies.</h2>
-    <p class="small short">Team members are spread across multiple locations including Berlin, Buenos Aires, London, New York, Montevideo, Costa Rica and Melbourne.</p>
+    <h2 class="small team-title">A distributed team working with distributed technologies.</h2>
+    <p class="small team-subtitle">Team members are spread across multiple locations including Berlin, Buenos Aires, London, New York, Montevideo, Costa Rica and Melbourne.</p>
     {% include team.html %}
     <div class="centered">
       <a class="rounded-button empty-button" href="/joinus/">want to join us?</a>

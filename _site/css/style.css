@@ -458,6 +458,11 @@ p a {
   font-size: 30px;
   letter-spacing: 0.02em;
   margin: 0 0 1.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.security-home .home-title {
+  max-width: 420px;
 }
 
 /*BLOCKCHAINS*/
