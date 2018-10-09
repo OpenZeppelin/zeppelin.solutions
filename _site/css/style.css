@@ -356,7 +356,7 @@ p a {
   color: #283850;
 }
 .dropdown-box img {
-  width: 56px;
+  width: 36px;
 }
 .dropdown-box img.little {
   width: 20px;
@@ -382,7 +382,7 @@ p a {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 410px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 3;
@@ -416,7 +416,7 @@ p a {
   border-radius: 4px;
 }
 .projects-dropdown {
-  margin-left: -244px;
+  margin-left: -205px;
 }
 .services-dropdown {
   margin-left: -251px;
