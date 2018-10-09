@@ -80,7 +80,7 @@
 	    bottom: 0;
 	    left: 0;
 	    background: url(/images/bg_triangle_home.svg);
-	    background-position: right !important;
+	    background-position: top right !important;
     	background-size: cover!important;
 	  }
 	  .rounded-button {
@@ -91,7 +91,7 @@
 	    font-size: 12px;
 	    font-weight: 500;
 	    letter-spacing: 1.5px;
-	    padding: 5px 28px;
+	    padding: .5rem 1.75rem;
 	    margin: 0 10px 0 0;
 	  }
 	  .empty-button {
@@ -130,7 +130,8 @@
 		<style>
   .about-principal {
     background-image: linear-gradient(107deg, #141c55, #00298c);
-    height: 80vh!important;
+    height: auto !important;
+    min-height: 350px !important;
   }
   .about-principal .rounded-button {
     margin: auto;
@@ -141,8 +142,12 @@
       height: auto!important;
     }
   }
-  .contact, .featured .role {
+  .featured .role {
     padding: 30px 0;
+    min-height: auto;
+  }
+  .contact {
+    padding: 50px 0;
     min-height: auto;
   }
 </style>
@@ -197,6 +202,10 @@
     padding: 0 15px;
     cursor: pointer;
   }
+  
+  nav .nav-wrapper {
+    width: 67%;
+  }
 
   nav i.material-icons {
     font-size: 1em;
@@ -208,14 +217,17 @@
   .brand-box {
     width: 168px;
     height: 65px;
+    display: flex;
   }
+  
   .brand-box img {
-    height: 30px;
+    height: 26px;
   }
 
   .brand-box a {
     display: flex;
     align-items: center;
+    padding-left: 0 !important;
   }
   nav ul a:hover {
     background-color: inherit !important;
@@ -330,17 +342,15 @@
 </section>
 <section class="row" id="clients">
   <div class="container centered">
-    <h2>Clients, partners and platforms</h2>
+    <h2 style="margin-bottom: 0;">Clients, partners and platforms</h2>
     <p class="regular">Over the years we’ve gained the trust of other leading technology companies, partners, and investors.</p> 
   </div>
-  <br/>
-  <br/>
   <style type="text/css">
   .partners {
     max-width: 1050px;
   }
   .leading-projects {
-    height: 100px;
+    height: 80px;
     width: 150px;
     display: inline-block;
     vertical-align: middle;
@@ -361,7 +371,7 @@
 </style>
 
 <div class="container centered valign-wrapper">
-  <div class="row valign partners">
+  <div class="valign partners">
     <span class="leading-projects">
       <img src="../images/logos/ethereum.svg" />
     </span>
@@ -400,8 +410,6 @@
     </span>
   </div>
 </div>
-  <br/>
-  <br/>
   <div class="container centered">
     <p class="regular">We work with these platforms and the foundations that sponsor them.</p>
   </div>
@@ -420,13 +428,14 @@
       width: 103px;
     }
   }
+  .sponsors-section .leading-projects {
+    height: auto !important;
+  }
   
 </style>
 
-<br/>
-<br/>
 <div class="container centered valign-wrapper sponsors-section">
-  <div class="row valign platforms">
+  <div class="valign platforms">
     <span class="leading-projects">
       <img class="sponsors-img" src="../images/about-logos/eth.svg" />
       <p class="x-small">ETH Classic</p>

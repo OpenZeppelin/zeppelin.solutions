@@ -80,7 +80,7 @@
 	    bottom: 0;
 	    left: 0;
 	    background: url(/images/bg_triangle_home.svg);
-	    background-position: right !important;
+	    background-position: top right !important;
     	background-size: cover!important;
 	  }
 	  .rounded-button {
@@ -91,7 +91,7 @@
 	    font-size: 12px;
 	    font-weight: 500;
 	    letter-spacing: 1.5px;
-	    padding: 5px 28px;
+	    padding: .5rem 1.75rem;
 	    margin: 0 10px 0 0;
 	  }
 	  .empty-button {
@@ -140,7 +140,7 @@
     color: white;
   }
   .standard-box {
-    margin: 70px 49px 0 49px;
+    margin: 40px 49px 0 49px;
   }
   @media (max-width: 900px) {
     .standard-box { margin: 70px 0 0 0;}
@@ -255,6 +255,10 @@
     padding: 0 15px;
     cursor: pointer;
   }
+  
+  nav .nav-wrapper {
+    width: 67%;
+  }
 
   nav i.material-icons {
     font-size: 1em;
@@ -266,14 +270,17 @@
   .brand-box {
     width: 168px;
     height: 65px;
+    display: flex;
   }
+  
   .brand-box img {
-    height: 30px;
+    height: 26px;
   }
 
   .brand-box a {
     display: flex;
     align-items: center;
+    padding-left: 0 !important;
   }
   nav ul a:hover {
     background-color: inherit !important;
@@ -389,7 +396,7 @@
 <style>
   .challenges {
     margin: 50px 0;
-    padding: 0 10px;
+    padding: 0 10px 30px 10px;
     margin-top: -25px!important;
   }
   .challenge-box {
@@ -399,7 +406,7 @@
     text-align: left;
   }
   @media (min-width: 901px) { 
-    .challenge-box { max-width: 27%; }
+    .challenge-box { max-width: calc(22.3333% + 35px); }
   }
 
   .challenge-box.middle {
@@ -489,9 +496,10 @@
 	.product-card p {
 	  opacity: 0.8;
 	  font-family: 'Roboto', sans-serif;
-	  font-size: 15px;
-	  line-height: 1;
-	  color: #3c3c3c;
+		font-size: 15px;
+		line-height: 1.7;
+		color: #3c3c3c;
+		margin: 6px 0;
 	}
 	.product-card div.image-box {
 		width: 50%;
@@ -539,7 +547,7 @@
 	</div>
 	<div class="text-box">
 		<h1>Smart Contract Libraries</h1>
-		<h2>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </h2>
+		<p>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </p>
 		<p>Ideal for learning</p>
 		<p>Easy for begginers</p>
 		</br>
@@ -582,9 +590,10 @@
 	.product-card p {
 	  opacity: 0.8;
 	  font-family: 'Roboto', sans-serif;
-	  font-size: 15px;
-	  line-height: 1;
-	  color: #3c3c3c;
+		font-size: 15px;
+		line-height: 1.7;
+		color: #3c3c3c;
+		margin: 6px 0;
 	}
 	.product-card div.image-box {
 		width: 50%;
@@ -632,7 +641,7 @@
 	</div>
 	<div class="text-box">
 		<h1>Smart Contract Libraries</h1>
-		<h2>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </h2>
+		<p>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </p>
 		<p>Ideal for learning</p>
 		<p>Easy for begginers</p>
 		</br>
@@ -675,9 +684,10 @@
 	.product-card p {
 	  opacity: 0.8;
 	  font-family: 'Roboto', sans-serif;
-	  font-size: 15px;
-	  line-height: 1;
-	  color: #3c3c3c;
+		font-size: 15px;
+		line-height: 1.7;
+		color: #3c3c3c;
+		margin: 6px 0;
 	}
 	.product-card div.image-box {
 		width: 50%;
@@ -725,7 +735,7 @@
 	</div>
 	<div class="text-box">
 		<h1>Smart Contract Libraries</h1>
-		<h2>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </h2>
+		<p>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity. </p>
 		<p>Ideal for learning</p>
 		<p>Easy for begginers</p>
 		</br>
@@ -755,7 +765,7 @@
     </div>
   </div>
 </section>
-<section>
+<section style="padding-bottom: 35px;">
   <div class="container">
     <h4>THE WORLD’S LEADING PROJECTS TRUST ZEPPELIN</h4>
   </div>
@@ -764,7 +774,7 @@
     max-width: 1050px;
   }
   .leading-projects {
-    height: 100px;
+    height: 80px;
     width: 150px;
     display: inline-block;
     vertical-align: middle;
@@ -785,7 +795,7 @@
 </style>
 
 <div class="container centered valign-wrapper">
-  <div class="row valign partners">
+  <div class="valign partners">
     <span class="leading-projects">
       <img src="../images/logos/ethereum.svg" />
     </span>

@@ -80,7 +80,7 @@
 	    bottom: 0;
 	    left: 0;
 	    background: url(/images/bg_triangle_home.svg);
-	    background-position: right !important;
+	    background-position: top right !important;
     	background-size: cover!important;
 	  }
 	  .rounded-button {
@@ -91,7 +91,7 @@
 	    font-size: 12px;
 	    font-weight: 500;
 	    letter-spacing: 1.5px;
-	    padding: 5px 28px;
+	    padding: .5rem 1.75rem;
 	    margin: 0 10px 0 0;
 	  }
 	  .empty-button {
@@ -135,7 +135,7 @@
 	.see-all-btn {
 	  opacity: 0.6;
 	  font-family: Helvetica;
-	  font-size: 14px;
+	  font-size: 12px;
 	  letter-spacing: 1.5px;
 	  text-align: center;
 	  color: #3c3c3c;
@@ -152,12 +152,19 @@
   }
 	.reports img {
 	  width: 95%;
+		border-radius: 6px;
 	  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.14), 0 0px 6px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	}
+	.faq {
+		padding-bottom: 0;
 	}
 	.faq p {
 		margin: auto;
-		padding-bottom: 7px;
+		padding-bottom: 35px;
     border-bottom: solid 1.5px #d5d5d5;
+	}
+	.faq p.last-p {
+    border-bottom: solid 0px transparent;
 	}
 	.faq h3 {
 		font-family: Helvetica;
@@ -165,7 +172,7 @@
 	  line-height: 1.25;
 	  color: #4a4a4a;
 	  text-align: left;
-	  margin: 53px auto 10px auto;
+	  margin: 35px auto 5px auto;
 	}
 
 	.triangle-row-padding {
@@ -173,9 +180,6 @@
 	}
 	#leading-projects {
 	  background: linear-gradient(to top, #fff 0%,#fff 50%, #f7f7f8 50%, #f7f7f8 100%)!important;
-	}
-	#leading-projects .centered {
-	  padding: 0 0 30px 0;
 	}
   .hero-background:before {
     background: url(/images/bg_triangle_security.svg);
@@ -233,6 +237,10 @@
     padding: 0 15px;
     cursor: pointer;
   }
+  
+  nav .nav-wrapper {
+    width: 67%;
+  }
 
   nav i.material-icons {
     font-size: 1em;
@@ -244,14 +252,17 @@
   .brand-box {
     width: 168px;
     height: 65px;
+    display: flex;
   }
+  
   .brand-box img {
-    height: 30px;
+    height: 26px;
   }
 
   .brand-box a {
     display: flex;
     align-items: center;
+    padding-left: 0 !important;
   }
   nav ul a:hover {
     background-color: inherit !important;
@@ -414,7 +425,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 186px;
+    height: 135px;
     min-height: auto;
     position: relative;
     width: 159px;
@@ -455,6 +466,9 @@
     #process div p {
       padding: 0; 
       text-align: left;
+    }
+    #process {
+      flex-direction: column;
     }
   }
 </style>
@@ -512,16 +526,16 @@
   </div>
   <div class="container">
     <h3 class="short">What will I find in the audit report?</h3>
-    <p class="regular short">The report outlines potential problems in the code, additional recommendations to increase security, and general analysis of the contract dynamics reflecting state-of-the-art security patterns.</p>
+    <p class="small short">The report outlines potential problems in the code, additional recommendations to increase security, and general analysis of the contract dynamics reflecting state-of-the-art security patterns.</p>
 
     <h3 class="short">Is the report private?</h3>
-    <p class="regular short">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
+    <p class="small short">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
 
     <h3 class="short">Which technologies do you work with?</h3>
-    <p class="regular short">We audit all kinds of decentralized applications. We have strong expertise in Solidity, Vyper, EVM assembly, JavaScript, Python, and Bitcoin Scripting code. We’re open to working with additional tools if necessary.</p>
+    <p class="small short last-p">We audit all kinds of decentralized applications. We have strong expertise in Solidity, Vyper, EVM assembly, JavaScript, Python, and Bitcoin Scripting code. We’re open to working with additional tools if necessary.</p>
   </div>
 </section>
-<section class="row" id="leading-projects">
+<section class="row" id="leading-projects" style="padding-top: 30px">
   <div class="container centered">
     <h4>The world’s leading projects work with Zeppelin</h4>
   </div>
@@ -564,6 +578,7 @@
   }
   .augur-quote .card .name {
     padding: 0 10px;
+    line-height: 1.5;
   }
   .augur-quote .card .name p {
     line-height: 1;
@@ -600,7 +615,7 @@
     max-width: 1050px;
   }
   .leading-projects {
-    height: 100px;
+    height: 80px;
     width: 150px;
     display: inline-block;
     vertical-align: middle;
@@ -621,7 +636,7 @@
 </style>
 
 <div class="container centered valign-wrapper">
-  <div class="row valign partners">
+  <div class="valign partners">
     <span class="leading-projects">
       <img src="../images/logos/ethereum.svg" />
     </span>

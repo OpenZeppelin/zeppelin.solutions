@@ -5,7 +5,8 @@ layout: default
 <style>
   .about-principal {
     background-image: linear-gradient(107deg, #141c55, #00298c);
-    height: 80vh!important;
+    height: auto !important;
+    min-height: 350px !important;
   }
   .about-principal .rounded-button {
     margin: auto;
@@ -16,8 +17,12 @@ layout: default
       height: auto!important;
     }
   }
-  .contact, .featured .role {
+  .featured .role {
     padding: 30px 0;
+    min-height: auto;
+  }
+  .contact {
+    padding: 50px 0;
     min-height: auto;
   }
 </style>
@@ -34,14 +39,10 @@ layout: default
 </section>
 <section class="row" id="clients">
   <div class="container centered">
-    <h2>Clients, partners and platforms</h2>
+    <h2 style="margin-bottom: 0;">Clients, partners and platforms</h2>
     <p class="regular">Over the years we’ve gained the trust of other leading technology companies, partners, and investors.</p> 
   </div>
-  <br/>
-  <br/>
   {% include partners.html %}
-  <br/>
-  <br/>
   <div class="container centered">
     <p class="regular">We work with these platforms and the foundations that sponsor them.</p>
   </div>

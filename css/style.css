@@ -30,7 +30,7 @@ a {
   cursor: pointer;
 }
 .container {
-  width: 100%;
+  width: 67%;
   z-index: 2;
   position: relative;
 }
@@ -99,7 +99,7 @@ h2.centered{
   text-align: left;
 }
 .container {
-  width: 75%;
+  width: 67%;
   margin: auto;
   padding: 0;
 }
@@ -149,7 +149,7 @@ h4 {
 
 p.middle {
   font-family: Helvetica;
-  line-height: 1.83;
+  line-height: 1.6;
   text-transform: none;
   color: white;
   font-size: 16px;
@@ -157,7 +157,7 @@ p.middle {
 
 p.middle-grey {
   font-family: Helvetica;
-  line-height: 1.83;
+  line-height: 1.6;
   text-transform: none;
   color: #4a4a4a;
   font-size: 16px;
@@ -174,8 +174,8 @@ p.regular {
 p.small {
   opacity: 0.8;
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.7;
   color: #4a4a4a;
 }
 p.x-small {
