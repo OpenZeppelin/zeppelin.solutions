@@ -3,22 +3,22 @@
 
 /*MEDIA SIZE*/
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
 	#process, #audit-process { flex-direction: column; }
 	#process div, #audit-process div { height: auto; }
 	#audit-process p { margin-top: -8px; }
 	.audit-triangle { height: auto !important; }
 	#jobs .flex-box div { margin: 0 !important; width: 100%!important }
-	#jobs .mobile-column { flex-direction: column; }
+	.mobile-column { flex-direction: column; }
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 800px) {
 	#principal { height: auto; }
 	#audits .card { width: 100% }
 	#leading-projects .mobile-column { flex-direction: column; }
 }
 
-@media (max-width: 1035px) { 
+@media (max-width: 1035px) {
 	#build .card { width: 100% }
 	#build { padding: 30px 0; }
 	#build .col { padding: 0 15px; }
@@ -71,7 +71,6 @@
 	}
 }
 
-@media (max-width: 1411px) { 
+@media (max-width: 1411px) {
 	.leading-projects { width: 185px; }
 }
-

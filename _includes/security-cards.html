@@ -54,10 +54,20 @@
     color: #3c3c3c;
     background-color: transparent;
   }
+  @media (max-width: 900px) {
+  	.mobile-column { flex-direction: column; }
+  }
+  .buttons-box {
+    flex-wrap: wrap;
+    display: flex;
+   }
+  @media screen and (max-width: 1080px) and (min-width: 900px){
+  	.buttons-box a { margin-top: 7px; }
+  }
 </style>
 
 
-<div class="security-cards-container">
+<div class="security-cards-container mobile-column">
   <div class="security-card">
     <div class="oz-img-container">
       <img src="../images/oz-white.svg"/>
