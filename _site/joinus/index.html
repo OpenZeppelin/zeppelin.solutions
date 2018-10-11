@@ -272,6 +272,13 @@
   .how-we-work .flex div {
     width: 100%;
   }
+  .last-li {
+    border-bottom: solid 0px transparent!important;
+  }
+  .hiring .collapsible-body {
+    margin-top: -16px;
+    margin-bottom: 23px;
+  }
 </style>
 
 <section class="hero-background jobs-section" id="principal">
@@ -595,7 +602,7 @@
     <p class="small">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
   </div>
 </section>
-<section class="grey">
+<section class="grey hiring">
   <div class="container centered">
     <h2>Hiring process</h2>
     <style type="text/css">
@@ -666,7 +673,7 @@
   }
   @media (max-width: 900px) {
     #hiring-process {
-      flex-direction: column; 
+      flex-direction: column;
     }
     #hiring-process:before {
       content: '';
@@ -692,7 +699,7 @@
       text-align: left;
     }
     #hiring-process div p {
-      padding: 0; 
+      padding: 0;
       text-align: left;
     }
     #hiring-process p {
@@ -730,6 +737,7 @@
     <p>We extend you an offer</p>
   </div>
 </div>
+
   </div>
   <div class="container">
     <ul class="collapsible">
@@ -757,7 +765,7 @@
         <h3 class="collapsible-header">Does Zeppelin offer internship programs?</h3>
         <p class="collapsible-body small">At our current stage, we’re not ready to offer internship programs that would add value to both ends. If we ever offer internship programs, they’ll be up on our Jobs page.</p>
       </li>
-      <li>
+      <li class="last-li">
         <h3 class="collapsible-header">Do you follow up with candidates you’ve decided not to move forward with?</h3>
         <p class="collapsible-body small">We try to make sure everyone is kept up-to-date with their application status. Whether we see a match or not, we will reach out to you within two weeks.</p>
       </li>
