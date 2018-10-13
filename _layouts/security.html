@@ -24,6 +24,10 @@ layout: default
 	}
   @media (max-width: 900px) {
     .blog-box img { margin: 10px 0; }
+		.blog-box {background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 74%,transparent 74%,transparent 100%)!important;}
+		#process div.last { padding-bottom: 0; }
+		#process div p { font-size: 14px; }
+		.request-audit-container img { margin: 0 0 34px 0; }
   }
 	.reports img {
 	  width: 95%;
@@ -132,12 +136,15 @@ layout: default
 </section>
 <section>
   <div class="container request-audit-container xs-column">
+		<div class="img-box show-on-small">
+      <img src="../images/badge_audit.svg"/>
+    </div>
     <div>
       <h2>Request an Audit</h2>
       <p class="middle-grey short">Our quotes and turnaround times vary according to the codebase’s length and complexity.We prioritize projects that base their code and architecture on OpenZeppelin or ZeppelinOS, the community-driven, industry-standard library.</p>
       <p class="middle-grey short">Send an email to <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a> including your project's website, links to your source code, and system documentation.</p>
     </div>
-    <div class="img-box">
+    <div class="img-box hide-on-small-only">
       <img src="../images/badge_audit.svg"/>
     </div>
   </div>

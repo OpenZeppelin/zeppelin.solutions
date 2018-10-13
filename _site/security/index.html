@@ -119,11 +119,18 @@
 		  .xs-column { flex-direction: column; }
 		  .container {width: 85%}
 		  .xs-centered { text-align: center; }
-		  section { padding: 20px 0; }
+		  section { padding: 40px 0; }
 		  h4 {
 		  	line-height: 1.5;
     		font-size: 14px;
     	}
+			#principal { background-image: linear-gradient(142deg, #0a0a0a, #1e1e28); min-height: auto;}
+			.standards { background-image: linear-gradient(142deg, #0a0a0a, #1e1e28)!important; padding-top: 120px; padding-bottom: 40px; }
+			#principal section { padding: 50px 0; }
+			nav .nav-wrapper { width: 100%!important; }
+			.challenge-box { width: 85%; padding: 0 !important; }
+			.challenge-box.middle p { min-height: auto!important;}
+			.blueprint { padding-top: 40px; }
 		}
 	</style>
 	<body>
@@ -149,6 +156,10 @@
 	}
   @media (max-width: 900px) {
     .blog-box img { margin: 10px 0; }
+		.blog-box {background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 74%,transparent 74%,transparent 100%)!important;}
+		#process div.last { padding-bottom: 0; }
+		#process div p { font-size: 14px; }
+		.request-audit-container img { margin: 0 0 34px 0; }
   }
 	.reports img {
 	  width: 95%;
@@ -788,12 +799,15 @@
 </section>
 <section>
   <div class="container request-audit-container xs-column">
+		<div class="img-box show-on-small">
+      <img src="../images/badge_audit.svg"/>
+    </div>
     <div>
       <h2>Request an Audit</h2>
       <p class="middle-grey short">Our quotes and turnaround times vary according to the codebase’s length and complexity.We prioritize projects that base their code and architecture on OpenZeppelin or ZeppelinOS, the community-driven, industry-standard library.</p>
       <p class="middle-grey short">Send an email to <a href="mailto:contact@zeppelin.solutions">contact@zeppelin.solutions</a> including your project's website, links to your source code, and system documentation.</p>
     </div>
-    <div class="img-box">
+    <div class="img-box hide-on-small-only">
       <img src="../images/badge_audit.svg"/>
     </div>
   </div>
@@ -890,4 +904,3 @@
 </footer>
 	</body>
 </html>
-
