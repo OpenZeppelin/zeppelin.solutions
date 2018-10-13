@@ -74,7 +74,7 @@ h2.centered{
   justify-content: center;
 }
 .collapsible {
-  border: solid 0 transparent !important; 
+  border: solid 0 transparent !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0)!important;
   max-width: 720px;
   margin: auto;
@@ -84,7 +84,7 @@ h2.centered{
 }
 .collapsible-header, .collapsible-body {
   background-color: transparent !important;
-  border: solid 0 transparent !important; 
+  border: solid 0 transparent !important;
   padding: 0;
 }
 .collapsible-body {
@@ -200,7 +200,7 @@ p.shorter {
 p.extra-short {
   max-width: 357px;
 }
-p.long {
+p.long, h1.long, .long {
   max-width: 750px;
 }
 p.blue {
@@ -235,10 +235,10 @@ p a {
 }
 .projects-dropdown img.little {
   margin: 0 13px;
-}  
+}
 .projects-dropdown .tpl {
   padding: 7px 15px;
-} 
+}
 .dropdown-content {
   border-radius: 4px;
   box-shadow: -2px 4px 12px 0 rgba(0, 0, 0, 0.2);
@@ -348,7 +348,7 @@ p a {
   position: relative;
   z-index: 0;
   background: linear-gradient(to top, #ffffff 0%,#ffffff 30%,#f7f7f8 30%,#f7f7f8 100%)!important;
-} 
+}
 #build .card {
   width: 48%;
 }
