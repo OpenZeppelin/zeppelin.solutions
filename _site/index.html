@@ -127,10 +127,11 @@
 			#principal { background-image: linear-gradient(142deg, #0a0a0a, #1e1e28); min-height: auto;}
 			.standards { background-image: linear-gradient(142deg, #0a0a0a, #1e1e28)!important; padding-top: 120px; padding-bottom: 40px; }
 			#principal section { padding: 50px 0; }
-			nav .nav-wrapper { width: 100%!important; }
+			nav .nav-wrapper {  width: 85%!important; padding: 0; margin: auto; }
 			.challenge-box { width: 85%; padding: 0 !important; }
 			.challenge-box.middle p { min-height: auto!important;}
 			.blueprint { padding-top: 40px; }
+			#footer div a { font-size: 14px; }
 		}
 	</style>
 	<body>
@@ -151,8 +152,9 @@
   }
   @media (max-width: 900px) {
     .standard-box { margin: 70px 0 0 0;}
+    .request-audit-container img { margin: 0 0 34px 0; }
   }
-  
+
   .standards .standard-title {
     font-family: Helvetica;
     font-size: 50px;
@@ -706,17 +708,21 @@
 </section>
 <section class="depth grey">
   <div class="container request-audit-container xs-column">
+    <div class="img-box hide-on-med-and-up">
+      <img src="../images/badge_audit.svg"/>
+    </div>
     <div class="xs-centered">
       <h2>In-depth system security audits</h2>
       <p class="middle-grey short">In an economy where software code powers real money, security is a top priority. We specialize in auditing high-impact smart contract systems.</br></p>
       </br>
       <a class="rounded-button empty-button" href="/security/">learn more about audits</a>
     </div>
-    <div class="img-box">
+    <div class="img-box hide-on-small-only">
       <img src="../images/badge_audit.svg"/>
     </div>
   </div>
 </section>
+
 		<style>
   #footer {
     background: black;
