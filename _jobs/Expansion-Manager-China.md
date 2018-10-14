@@ -1,15 +1,15 @@
 ---
 layout: job
-title: 'Software Engineer'
+title: 'Expansion Manager: China / Hong Kong'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
 - engineer
 date: 2018-02-25 19:07:50 +0000
-sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
-description: 'You have vision, innovation, passion, technical ability, a drive to deliver, as well as collaboration and execution. You are not risk averse and want to build products that will change the world.
+sub_heading: 'Connect and grow our community of developers and partners in China.'
+description: 'As Zeppelin’s community grows, we want to increase our commitment in China with a local Expansion Manager. You’ll help us connect to the communities that love the decentralized web as much as we do.
 
-Get a first hand view of what it takes to build and deliver software in the blockchain technical security space and help us build and protect the infrastructure of a new economy.'
+You are a dynamic and encouraging individual with a passion to bring people together to develop decentralized technologies. You are energetic, organized and detail-oriented, with the ability to adapt to fast-paced environments. You’ll work remotely with our international team, with the direct support of our CEO.'
 slug: ''
 ---
 

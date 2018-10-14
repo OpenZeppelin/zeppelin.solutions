@@ -1,17 +1,16 @@
 ---
 layout: job
-title: 'Software Engineer'
+title: 'Developer Relations'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
 - engineer
 date: 2018-02-25 19:07:50 +0000
-sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
-description: 'You have vision, innovation, passion, technical ability, a drive to deliver, as well as collaboration and execution. You are not risk averse and want to build products that will change the world.
-
-Get a first hand view of what it takes to build and deliver software in the blockchain technical security space and help us build and protect the infrastructure of a new economy.'
+sub_heading: "Represent the developers' needs and be an advocate for OpenZeppelin and ZeppelinOS."
+description: "In an open source, fast-paced yet early space, Developer Relations play a big role bridging the gap between Zeppelin’s product and the ecosystem’s needs. We’re looking for a Developer Relations to help us evangelise and advocate OpenZeppelin and ZeppelinOS. Our Developer Relations will be the technical reference for third-party developers building with Zeppelin’s infrastructure. You’ll talk to respected engineers, engage the community, build relationships and support dapps developers. You’ll work with an amazing product, marketing and engineering team fighting for a more accessible and secure public blockchain infrastructure from the frontline."
 slug: ''
 ---
+
 
 <div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">What you'll do</h3>

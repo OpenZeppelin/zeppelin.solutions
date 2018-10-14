@@ -1,15 +1,13 @@
 ---
 layout: job
-title: 'Software Engineer'
+title: 'Human Resources Manager'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
 - engineer
 date: 2018-02-25 19:07:50 +0000
-sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
-description: 'You have vision, innovation, passion, technical ability, a drive to deliver, as well as collaboration and execution. You are not risk averse and want to build products that will change the world.
-
-Get a first hand view of what it takes to build and deliver software in the blockchain technical security space and help us build and protect the infrastructure of a new economy.'
+sub_heading: "Source, screen and develop the foundations of Zeppelin's international team."
+description: "Zeppelin's team is composed of people who are truly passionate about the decentralized web. Our HR Manager will spread our values and create the foundations of a healthy work environment and culture. You'll be our team's reference for attracting, retaining and developing talent and the link between the management and team members' perspectives."
 slug: ''
 ---
 

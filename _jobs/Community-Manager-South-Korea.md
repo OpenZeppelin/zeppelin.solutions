@@ -1,15 +1,15 @@
 ---
 layout: job
-title: 'Software Engineer'
+title: 'Community Manager: South Korea'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
 - engineer
 date: 2018-02-25 19:07:50 +0000
-sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
-description: 'You have vision, innovation, passion, technical ability, a drive to deliver, as well as collaboration and execution. You are not risk averse and want to build products that will change the world.
+sub_heading: 'Lead the growth of our community in South Korea.'
+description: 'You are the type of person who loves to motivate and encourage others. You are passionate about technology, and love staying up-to-date on the latest developments. You are able to blend in and collaborate with diverse groups, whether it’s technical people or salespeople in suits. You are detail-oriented and love getting things done.
 
-Get a first hand view of what it takes to build and deliver software in the blockchain technical security space and help us build and protect the infrastructure of a new economy.'
+As the OpenZeppelin & ZeppelinOS Community Manager, you will be the organizing brains and the welcoming heart of our Asian community.'
 slug: ''
 ---
 

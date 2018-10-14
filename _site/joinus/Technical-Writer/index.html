@@ -136,84 +136,71 @@
 	</style>
 	<body>
 		<style type="text/css">
-  .gray {
-    background-color: #f6f6f7;
+  .job-opening {
+    background-image: linear-gradient(290deg, #1e7dd7, #2b2dbf) !important;
+    height: 50vh;
+    padding: 0;
   }
-  .standards {
-    background-image: linear-gradient(106deg, #0a0a0a, #282828);
-    margin: 70px 0;
-    padding-top: 100px;
+  .section-auto {
+    min-height: auto !important;
   }
-  .standards h4 {
-    color: white;
+  .requirements {
+    margin: 80px auto;
   }
-  .standard-box {
-    margin: 40px 49px 0 49px;
+  .requirements h3 {
+    text-align: left!important;
   }
-  @media (max-width: 900px) {
-    .standard-box { margin: 40px 0 0 0;}
-    .request-audit-container img { margin: 0 0 34px 0; }
+  .margin-auto {
+    margin: auto;
   }
-
-  .standards .standard-title {
+  .job-title {
+    opacity: 0.8;
     font-family: Helvetica;
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 1;
-    text-align: center;
-    color: #ffffff;
-    margin: 0;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #4a4a4a;
+    margin-top: 50px;
   }
-  .standards .middle {
-    font-size: 16px;
-    text-align: center;
-    line-height: 1;
+  .job-description ul li::before {
+    color: #6e6e6e;
+    content: "\2022";
+    font-size: 1.5em;
+    height: auto;
+    padding-right: 9px;
+    position: relative;
+    top: 0em;
+    display: inline;
   }
-  .blueprint {
-    padding-bottom: 0;
-    margin-bottom: -100px !important;
-  }
-</style>
-
-<style type="text/css">
-  .hiring-nav {
-    width: 100%;
-    height: 60px;
-    background-color: #000000;
-    text-align: center;
-    color: white !important;
+  .job-description ul li {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
   }
-  .hiring-nav p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: #ffffff;
+  .job-description ul p {
+    margin-top: 0;
   }
-  .hiring-nav a {
-    margin: 0 10px;
-    border: solid 1px white;
-    text-transform: uppercase;
-    border-radius: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    padding: 0.5rem 1.75rem;
-    color: white;
+  .apply-container {
+    padding: 30px;
   }
-  .hiring-nav a:hover {
-    border: solid 1px white;
-    color: black !important;
-    background: white;
+  .apply-title {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #4a4a4a;
+    margin-top: 0;
+    text-align: left;
+  }
+  .job-description h4 {
+    opacity: 0.6;
+    font-family: Helvetica;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #3c3c3c;
   }
 </style>
 
-<div class="hiring-nav">
-  <p>Want to join the team? <a href="/jobs/">See current openings</a><p>
-</div>
-<section class="hero-background" id="principal">
+<section class="job-opening hero-background">
   <style type="text/css">
   nav {
     height: 50px;
@@ -400,331 +387,89 @@
 
   <section id="home">
     <div class="row">
-      <div class="container">
-        <h1 class="home-title">Open infrastructure for an open economy</h1>
-        <p class="middle short">Zeppelin creates systems, tools and protocols to promote global economic freedom. We also provide security services to aid the community in growing on solid foundations.</p>
+      <div class="container margin-auto">
+        <h1 class="home-title" style="margin-bottom: 0;">Technical Writer</h1>
+        <p class="middle" style="margin-top: 5px;">Buenos Aires / Remote</p>
       </div>
     </div>
   </section>
 </section>
-<style>
-  .challenges {
-    margin: 50px 0;
-    padding: 0 10px 30px 10px;
-    margin-top: -25px!important;
-  }
-  .challenge-box {
-    max-width: 350px;
-    padding: 0 45px;
-    margin: 30px 0;
-    text-align: left;
-  }
-
-  .challenge-box.middle {
-    border-left: solid 1px #d8d8d8;
-    border-right: solid 1px #d8d8d8;
-  }
-  @media (max-width: 900px) {
-    .challenge-box.middle {
-      border-left: solid 0px transparent;
-      border-right: solid 0px transparent;
-    }
-  }
-  .eth-icon {
-    margin: auto;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: #ffffff;
-    box-shadow: 0 6px 10px 0 rgba(224, 224, 224, 0.8);
-    display: flex;
-    justify-content: center;
-  }
-  .challenges h3 {
-    margin-top: 38px;
-  }
-  .challenges h5 {
-    opacity: 0.8;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #4a4a4a;
-  }
-</style>
-
-<section class="challenges centered">
-  <div class="eth-icon">
-    <img src="/images/landing/eth.svg">
+<section class="job-description">
+  <div class="requirements container margin-auto">
+    <p class="left-align small">Zeppelin builds the industry security standard for architecting and deploying smart contract systems in public blockchains. We build open source infrastructure and conduct in-depth system security audits to high-impact smart contract systems. Learn more about us!</p>
+    </br>
+    <p class="left-align small">In an open source, fast-paced yet young ecosystem, Technical Writers play a big role enabling knowledge scalability. We’re looking for a Technical Writer to help us build the foundations of OpenZeppelin and ZeppelinOS: the documentation.
+As a Technical Writer, you will communicate OpenZeppelin and ZeppelinOS in a clear, concise and accurate manner. You’ll be working closely with our product and engineering team and third-party developers. Zeppelin is an engineering company. We look for talented people but above that, we seek for passionate, proactive and autonomous individuals to join our team!</p>
   </div>
-  <h3>The challenges of building decentralized networks</h3>
-  <div class="flex xs-column">
-    <div class="challenge-box">
-      <h5>Security</h5>
-      <p class="small">The challenge for security professionals is to rethink the 'castle & moat' approach to perimeter-based security and reconsider security holistically across the dynamic, distributed fleet.</p>
-    </div>
-    <div class="challenge-box middle">
-      <h5>Developer experience</h5>
-      <p class="small" style="min-height: 110px;">The challenge for architects and developers is to accommodate the necessary diversity of application platforms across a distributed fleet.</p>
-    </div>
-    <div class="challenge-box">
-      <h5>Operations</h5>
-      <p class="small">The challenge for op. teams moving to cloud is to enable the automation through infrastructure as code while embracing the inevitable heterogeneity of different cloud providers.</p>
-    </div>
-  </div>
-</section>
-
-<section class="blueprint grey">
-  <div class="container">
-    <h2>Your blueprint for decentralized systems</h2>
-    <p class="small short">We are focused on setting standards and building open-source technology to close the gap between our vision and the reality of how decentralized networks work today.</p>
-    <style>
-	.product-card {
-	  box-shadow: 0 8px 14px 0 rgba(60, 60, 60, 0.09);
-	  background-color: #ffffff;
-	  border: solid 1px #ededed;
-	  width: 100%;
-    padding: 50px 70px;
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-	}
-	.product-card h1 {
-	  font-family: 'Roboto', sans-serif;
-	  font-size: 20px;
-	  font-weight: 500;
-	  line-height: 1;
-	  color: #000000;
-	  margin-top: 0;
-	}
-	.product-card h2 {
-	  opacity: 0.8;
-	  font-family: Helvetica;
-	  font-size: 15px;
-	  line-height: 1.2;
-	  color: #3c3c3c;
-	}
-	.product-card p {
-	  opacity: 0.8;
-	  font-family: 'Roboto', sans-serif;
-		font-size: 15px;
-		line-height: 1.7;
-		color: #3c3c3c;
-		margin: 6px 0;
-	}
-	.product-card div.image-box {
-		width: 50%;
-	}
-	.product-card div.text-box {
-		width: 70%
-	}
-	.show-on-small {
-		display: none !important;
-	}
-	.product-card .hide-on-small-only {
-		display: block;
-		text-align: center;
-	}
-	.product-card.empty-button {
-    border: solid 1px #0e1129;
-    color: #3c3c3c;
-  }
-	.product-card .empty-button:hover {
-    background-color: #0e1129;
-  }
-  .product-card .fill-button {
-    border: solid 1px #0e1129;
-    background-color: #0e1129;
-  }
-  .product-card .fill-button:hover {
-    color: #3c3c3c;
-    background-color: transparent;
-  }
-	@media (max-width: 900px) {
-		.show-on-small { display: block !important; }
-		.hide-on-small-only { display: none !important; }
-		.product-card { padding: 30px 20px; }
-		.product-card div { width: 100% !important; }
-		.product-card .image-box { padding-bottom: 30px; text-align: center}
-		.product-card .title-img { width: 70%; max-width: 291px; }
-		.product-card .buttons-box { text-align: center; }
-		.product-card .buttons-box .rounded-button { padding: 9px 20px; }
-	}
-	.list-box p{
-		line-height: 1.1;
-	}
-	.list-box {
-		margin-top: 15px;
-		margin-bottom: 30px;
-	}
-	.list-box p img {
-		padding: 0 7px 0 0;
-	}
-</style>
-
-<div class="product-card xs-column">
-	<div class="show-on-small image-box">
-		<img class="title-img" src="../images/logo_OZ.svg"/>
-	</div>
-	<div class="text-box">
-		<h1>Smart Contract Libraries</h1>
-		<p>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity.</p>
-		<div class="list-box">
-			<p><img src="../images/ic_check.svg">Ideal for learning</p>
-			<p><img src="../images/ic_check.svg">Easy for begginers</p>
-		</div>
-		<div class="buttons-box">
-			<a class="rounded-button fill-button" href="">Visit site</a>
-			<a class="rounded-button empty-button" href="">Go to docs</a>
-		</div>
-	</div>
-	<div class="hide-on-small-only image-box">
-		<img src="../images/logo_OZ.svg"/>
-	</div>
+  <div class="requirements container margin-auto">
+  <h3 class="left-aligned job-title">What you'll do</h3>
+  <ul>
+    <li>
+      <p class="small left-aligned">Grow and energize the Asian community of OpenZeppelin &amp; ZeppelinOS advocates.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Motivate leaders in the community to contribute code, content, evangelize and act as references.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Partner with the rest of the marketing organization to make community an extension of our marketing team through contributed content, references, and more.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Track metrics around the success of the OpenZeppelin &amp; ZeppelinOS community, including overall community participation and downstream impact on our project.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Plan, coordinate, organize and cover meetups, hackathons and other events in Asia, with a focus in China and Hong Kong.</p>
+    </li>
+  </ul>
 </div>
-<div class="product-card xs-column">
-	<div class="show-on-small image-box">
-		<img class="title-img" src="../images/logo_zOS.svg"/>
-	</div>
-	<div class="text-box">
-		<h1>Development Platform</h1>
-		<p>A platform the development and secure management of decentralized applications.</p>
-		<div class="list-box">
-			<p><img src="../images/ic_check.svg">Ideal for learning</p>
-			<p><img src="../images/ic_check.svg">Easy for begginers</p>
-		</div>
-		<div class="buttons-box">
-			<a class="rounded-button fill-button" href="">Visit site</a>
-			<a class="rounded-button empty-button" href="">Go to docs</a>
-		</div>
-	</div>
-	<div class="hide-on-small-only image-box">
-		<img src="../images/logo_zOS.svg"/>
-	</div>
+<div class="requirements container margin-auto">
+  <h3 class="left-aligned job-title">Who we're looking for</h3>
+  <ul>
+    <li>
+      <p class="small left-aligned">An excellent communicator, with proficient written and spoken communication skills in English and Mandarin.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">An individual experienced in working remotely with international teams.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">An active member or contributor to different local events, meetups and/or community channels.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">A passionate relationship-builder with strong networking and organizational skills.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">An organized, data-driven professional with a love for self time management.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Extroverted personality - you should get energy from interacting with others.</p>
+    </li>
+  </ul>
 </div>
-<div class="product-card xs-column">
-	<div class="show-on-small image-box">
-		<img class="title-img" src="../images/logo_tpl.svg"/>
-	</div>
-	<div class="text-box">
-		<h1>Accsess Control Platform</h1>
-		<p>A protocol that allows blockchain projects to control the ways in which their native digital assets are transferred.</p>
-		<div class="list-box">
-			<p><img src="../images/ic_check.svg">Ideal for learning</p>
-			<p><img src="../images/ic_check.svg">Easy for begginers</p>
-		</div>
-		<div class="buttons-box">
-			<a class="rounded-button fill-button" href="">Visit site</a>
-			<a class="rounded-button empty-button" href="">Go to docs</a>
-		</div>
-	</div>
-	<div class="hide-on-small-only image-box">
-		<img src="../images/logo_tpl.svg"/>
-	</div>
+<div class="requirements container margin-auto">
+  <h3 class="left-aligned job-title">Nice-to-haves</h3>
+  <ul>
+    <li>
+      <p class="small left-aligned">Previous experience contributing or managing crypto or open source projects.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Lives or lived in China for some time during the past 3 years.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Spent 2+ years living or studying in the US or other Western countries, or working with a project based in the US or other Western countries.</p>
+    </li>
+  </ul>
 </div>
 
-  </div>
-</section>
-<section class="standards hero-background">
-  <div class="container">
-    <h4>We set ever-higher standards for the industry</h4>
-    <div class="flex xs-column">
-      <div class="standard-box">
-        <p class="standard-title">$4.5+ Billion</p>
-        <p class="middle">in digital assets powered by our contracts</p>
-      </div>
-      <div class="standard-box">
-        <p class="standard-title">$600+ Million</p>
-        <p class="middle">raised through our audited systems</p>
-      </div>
+  <div class="container margin-auto">
+    <div class="grey apply-container">
+      <h3 class="left-aligned apply-title">Apply</h3>
+      <p class="small short">Complete the following <a href="https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application form</a> or send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the phrase "Technical Writer: Buenos Aires / Remote" on the subject line.</p>
     </div>
   </div>
-</section>
-<section style="padding-bottom: 35px;">
-  <div class="container">
-    <h4>THE WORLD’S LEADING PROJECTS TRUST ZEPPELIN</h4>
-  </div>
-  <style type="text/css">
-  .partners {
-    max-width: 1050px;
-  }
-  .leading-projects {
-    height: 80px;
-    width: 150px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .leading-projects img {
-    max-width: 230px;
-    width: 60%;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
-  }
-  .leading-projects .bitgo, .leading-projects .cosmos,  .leading-projects .status {
-    margin: 25px auto;
-  }
-  .leading-projects .dfinity, .leading-projects .shapeshift, .leading-projects .storj {
-    margin: 13px auto;
-  }
-</style>
-
-<div class="container centered valign-wrapper">
-  <div class="valign partners">
-    <span class="leading-projects">
-      <img src="../images/logos/ethereum.svg" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/augur.png" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/brave.png" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/golem.svg" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/omise.svg" />
-    </span>
-    <span class="leading-projects">
-      <img class="cosmos" src="../images/logos/cosmos.svg" />
-    </span>
-    <span class="leading-projects">
-      <img class="shapeshift" src="../images/logos/shapeshift.png" />
-    </span>
-    <span class="leading-projects">
-      <img class="dfinity" src="../images/logos/dfinity.png" />
-    </span>
-    <span class="leading-projects">
-      <img class="status" src="../images/logos/status.svg" />
-    </span>
-    <span class="leading-projects">
-      <img src="../images/logos/decentraland.svg" />
-    </span>
-    <span class="leading-projects">
-      <img class="bitgo" src="../images/logos/bitgo.png" />
-    </span>
-    <span class="leading-projects">
-      <img class="storj" src="../images/logos/storj.png" />
-    </span>
-  </div>
-</div>
-</section>
-<section class="depth grey">
-  <div class="container request-audit-container xs-column">
-    <div class="img-box hide-on-med-and-up">
-      <img src="../images/badge_audit.svg"/>
-    </div>
-    <div class="xs-centered">
-      <h2>In-depth system security audits</h2>
-      <p class="middle-grey short">In an economy where software code powers real money, security is a top priority. We specialize in auditing high-impact smart contract systems.</br></p>
-      </br>
-      <a class="rounded-button empty-button" href="/security/">learn more about audits</a>
-    </div>
-    <div class="img-box hide-on-small-only">
-      <img src="../images/badge_audit.svg"/>
-    </div>
+  <div class="container margin-auto">
+    <h4 class="left-aligned job-title">You may also want to check</h4>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-china/">Expansion Manager: China / Hong Kong</a></p>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/community-manager-south-korea/">Community Manager: South Korea</a></p>
+    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-south-korea/">Expansion Manager: South Korea</a></p>
   </div>
 </section>
 

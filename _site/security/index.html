@@ -161,6 +161,8 @@
 		#process div.last { padding-bottom: 0; }
 		#process div p { font-size: 14px; }
 		.request-audit-container img { margin: 0 0 34px 0; }
+		.faq .last-p { padding-bottom: 0; }
+		.icon-partners.no-padding { padding-bottom: 40px !important}
   }
 	.reports img {
 	  width: 95%;
@@ -199,6 +201,7 @@
 	.security-cards-section {
 		background: linear-gradient(to top, white 0%,white 20%,#f7f7f8 10%,#f7f7f8 100%)!important;
 	}
+
 </style>
 
 <section class="audits-principal hero-background" id="principal">
@@ -233,6 +236,7 @@
   }
   #mobile-nav a {
     color: #283850;
+    font-family: 'Roboto', sans-serif;
   }
   #mobile-nav li {
     height: 50px !important;
@@ -252,7 +256,7 @@
     padding: 0 15px;
     cursor: pointer;
   }
-  
+
   nav .nav-wrapper {
     width: 67%;
   }
@@ -269,7 +273,7 @@
     height: 65px;
     display: flex;
   }
-  
+
   .brand-box img {
     height: 26px;
   }
@@ -309,6 +313,9 @@
     text-transform: uppercase;
     line-height: 1;
   }
+  nav i.material-icons {
+    font-size: 2em;
+  }
 </style>
 
 <nav>
@@ -320,7 +327,7 @@
         </a>
       </li>
     </ul>
-    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li>
         <div class="dropdown">
@@ -381,12 +388,11 @@
     </ul>
   </div>
 </nav>
+
   <section class="security-home" id="home">
-    <div class="row triangle-row-padding">
-      <div class="container">
-        <h1 class="home-title">Verify that your smart contract system works as intended</h1>
-        <p class="middle long">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
-      </div>
+    <div class="container">
+      <h1 class="home-title">Verify that your smart contract system works as intended</h1>
+      <p class="middle long">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
     </div>
     <div class="row triangle-row-padding">
       <div class="container" id="process">
@@ -625,7 +631,7 @@
   </div>
 </div>
 </section>
-<section class="no-padding">
+<section class="no-padding icon-partners">
 	<style type="text/css">
   .partners {
     max-width: 1050px;

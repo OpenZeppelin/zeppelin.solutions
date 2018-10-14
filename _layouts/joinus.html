@@ -119,12 +119,59 @@ layout: default
   .hero-background:before {
     background: url(/images/bg_triangle_jobs.svg);
   }
+  .jobs-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .job-menu {
+    width: 223px;
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+  .job-menu button {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 15px;
+    line-height: 1.67;
+    color: #3c3c3c;
+    display: block;
+    padding: 5px 10px;
+    background: transparent;
+    border: unset;
+  }
+  .job-menu button:hover {
+    opacity: 1;
+    font-weight: bold;
+    color: #000000;
+  }
+  .job-menu button.location-btn {
+    opacity: 1;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: solid 2px blacK;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .job-menu button.active {
+    opacity: 1;
+    font-weight: bold;
+    color: #000000;
+  }
+
   .job-card {
     background-color: #ffffff;
     border: solid 1px #d5d5d5;
     padding: 30px 15px;
     text-align: left;
     margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .job-card h1 {
     margin: 0;
@@ -137,12 +184,12 @@ layout: default
   }
   .job-card h4 {
     text-align: left;
-    opacity: 0.8;
-    font-family: Helvetica;
-    font-size: 9px;
-    letter-spacing: 1.1px;
     color: #3c3c3c;
     margin: 0;
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 12px;
+    letter-spacing: 1.1px;
   }
   .how-we-work .flex div {
     width: 100%;
@@ -272,15 +319,30 @@ layout: default
     <h2>Current openings</h2>
     <p class="small">Find the best place for you in Zeppelin</p>
   </div>
-  <div class="container">
-    {% for job in site.jobs %}
-      <div class="job-card">
-        <div>
-          <h4>{{ job.location | slice: 0, 80 }}</h4>
-          <h1><a href="{{ job.url | absolute_url }}">{{ job.title }}</a></h1>
+  <div class="container jobs-container">
+    <div class="job-menu hide-on-small-only">
+      <button class="location-btn">All locations</button>
+      <button class="active">All positions</button>
+      <button>Communications</button>
+      <button>Design</button>
+      <button>Engineering</button>
+      <button>Marketing</button>
+    </div>
+    <div style="width: 100%;">
+      {% for job in site.jobs %}
+        <div class="job-card">
+          <div>
+            <h4>{{ job.location | slice: 0, 80 }}</h4>
+            <h1><a href="{{ job.url | absolute_url }}">{{ job.title }}</a></h1>
+          </div>
+          <div>
+            <a href="{{ job.url | absolute_url }}">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 <section class="role">

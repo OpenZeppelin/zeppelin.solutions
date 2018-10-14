@@ -252,12 +252,59 @@
   .hero-background:before {
     background: url(/images/bg_triangle_jobs.svg);
   }
+  .jobs-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .job-menu {
+    width: 223px;
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+  .job-menu button {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 15px;
+    line-height: 1.67;
+    color: #3c3c3c;
+    display: block;
+    padding: 5px 10px;
+    background: transparent;
+    border: unset;
+  }
+  .job-menu button:hover {
+    opacity: 1;
+    font-weight: bold;
+    color: #000000;
+  }
+  .job-menu button.location-btn {
+    opacity: 1;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: solid 2px blacK;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .job-menu button.active {
+    opacity: 1;
+    font-weight: bold;
+    color: #000000;
+  }
+
   .job-card {
     background-color: #ffffff;
     border: solid 1px #d5d5d5;
     padding: 30px 15px;
     text-align: left;
     margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .job-card h1 {
     margin: 0;
@@ -270,12 +317,12 @@
   }
   .job-card h4 {
     text-align: left;
-    opacity: 0.8;
-    font-family: Helvetica;
-    font-size: 9px;
-    letter-spacing: 1.1px;
     color: #3c3c3c;
     margin: 0;
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 12px;
+    letter-spacing: 1.1px;
   }
   .how-we-work .flex div {
     width: 100%;
@@ -325,6 +372,7 @@
   }
   #mobile-nav a {
     color: #283850;
+    font-family: 'Roboto', sans-serif;
   }
   #mobile-nav li {
     height: 50px !important;
@@ -344,7 +392,7 @@
     padding: 0 15px;
     cursor: pointer;
   }
-  
+
   nav .nav-wrapper {
     width: 67%;
   }
@@ -361,7 +409,7 @@
     height: 65px;
     display: flex;
   }
-  
+
   .brand-box img {
     height: 26px;
   }
@@ -401,6 +449,9 @@
     text-transform: uppercase;
     line-height: 1;
   }
+  nav i.material-icons {
+    font-size: 2em;
+  }
 </style>
 
 <nav>
@@ -412,7 +463,7 @@
         </a>
       </li>
     </ul>
-    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li>
         <div class="dropdown">
@@ -473,6 +524,7 @@
     </ul>
   </div>
 </nav>
+
   <section id="home">
     <div class="row">
       <div class="container">
@@ -583,29 +635,150 @@
     <h2>Current openings</h2>
     <p class="small">Find the best place for you in Zeppelin</p>
   </div>
-  <div class="container">
-    
-      <div class="job-card">
-        <div>
-          <h4>Buenos Aires / Remote</h4>
-          <h1><a href="http://localhost:4000/joinus/Community-Manager/">Community Manager</a></h1>
+  <div class="container jobs-container">
+    <div class="job-menu hide-on-small-only">
+      <button class="location-btn">All locations</button>
+      <button class="active">All positions</button>
+      <button>Communications</button>
+      <button>Design</button>
+      <button>Engineering</button>
+      <button>Marketing</button>
+    </div>
+    <div style="width: 100%;">
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Community-Manager-China-Hk/">Community Manager: China / Hong Kong</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Community-Manager-China-Hk/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
         </div>
-      </div>
-    
-      <div class="job-card">
-        <div>
-          <h4>Buenos Aires / Remote</h4>
-          <h1><a href="http://localhost:4000/joinus/Frontend-Engineer/">Frontend Engineer</a></h1>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Community-Manager/">Community Manager</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Community-Manager/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
         </div>
-      </div>
-    
-      <div class="job-card">
-        <div>
-          <h4>Buenos Aires / Remote</h4>
-          <h1><a href="http://localhost:4000/joinus/Software-Engineer/">Software Engineer</a></h1>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Frontend-Engineer/">Frontend Engineer</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Frontend-Engineer/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
         </div>
-      </div>
-    
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Community-Manager-South-Korea/">Community Manager: South Korea</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Community-Manager-South-Korea/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Developer-Relations/">Developer Relations</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Developer-Relations/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Expansion-Manager-China/">Expansion Manager: China / Hong Kong</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Expansion-Manager-China/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Expansion-Manager-South-Korea/">Expansion Manager: South Korea</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Expansion-Manager-South-Korea/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Head-Of-Marketing/">Head of Marketing & Communications</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Head-Of-Marketing/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Human-Resources-Manager/">Human Resources Manager</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Human-Resources-Manager/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Software-Engineer/">Software Engineer</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Software-Engineer/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+        <div class="job-card">
+          <div>
+            <h4>Buenos Aires / Remote</h4>
+            <h1><a href="http://localhost:4000/joinus/Technical-Writer/">Technical Writer</a></h1>
+          </div>
+          <div>
+            <a href="http://localhost:4000/joinus/Technical-Writer/">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+      
+    </div>
   </div>
 </section>
 <section class="role">
@@ -717,6 +890,12 @@
     #hiring-process p {
       font-size: 15px;
     }
+
+    @media (max-width: 900px) {
+      #hiring-process .last { padding-bottom: 0; }
+      #hiring-process { margin-bottom: 50px; margin-top: 30px;}
+    }
+
   }
 </style>
 <div class="container" id="hiring-process">

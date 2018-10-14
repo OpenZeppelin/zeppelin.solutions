@@ -28,6 +28,8 @@ layout: default
 		#process div.last { padding-bottom: 0; }
 		#process div p { font-size: 14px; }
 		.request-audit-container img { margin: 0 0 34px 0; }
+		.faq .last-p { padding-bottom: 0; }
+		.icon-partners.no-padding { padding-bottom: 40px !important}
   }
 	.reports img {
 	  width: 95%;
@@ -66,16 +68,15 @@ layout: default
 	.security-cards-section {
 		background: linear-gradient(to top, white 0%,white 20%,#f7f7f8 10%,#f7f7f8 100%)!important;
 	}
+
 </style>
 
 <section class="audits-principal hero-background" id="principal">
   {% include nav.html %}
   <section class="security-home" id="home">
-    <div class="row triangle-row-padding">
-      <div class="container">
-        <h1 class="home-title">Verify that your smart contract system works as intended</h1>
-        <p class="middle long">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
-      </div>
+    <div class="container">
+      <h1 class="home-title">Verify that your smart contract system works as intended</h1>
+      <p class="middle long">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
     </div>
     <div class="row triangle-row-padding">
       <div class="container" id="process">
@@ -124,7 +125,7 @@ layout: default
   </div>
   {% include augur-quote.html %}
 </section>
-<section class="no-padding">
+<section class="no-padding icon-partners">
 	{% include partners.html %}
 </section>
 <section class="security-cards-section">

@@ -13,7 +13,7 @@ tags:
 slug: ''
 ---
 
-<div class="requirements container long margin-auto">
+<div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">What you'll do</h3>
   <ul>
     <li>
@@ -33,7 +33,7 @@ slug: ''
     </li>
   </ul>
 </div>
-<div class="requirements container long margin-auto">
+<div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">Who we're looking for</h3>
   <ul>
     <li>
@@ -56,7 +56,7 @@ slug: ''
     </li>
   </ul>
 </div>
-<div class="requirements container long margin-auto">
+<div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">Nice-to-haves</h3>
   <ul>
     <li>

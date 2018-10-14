@@ -1,15 +1,15 @@
 ---
 layout: job
-title: 'Software Engineer'
+title: 'Technical Writer'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
 - engineer
 date: 2018-02-25 19:07:50 +0000
-sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
-description: 'You have vision, innovation, passion, technical ability, a drive to deliver, as well as collaboration and execution. You are not risk averse and want to build products that will change the world.
+sub_heading: 'Help us communicate and document OpenZeppelin and ZeppelinOS.'
+description: 'In an open source, fast-paced yet young ecosystem, Technical Writers play a big role enabling knowledge scalability. We’re looking for a Technical Writer to help us build the foundations of OpenZeppelin and ZeppelinOS: the documentation.
 
-Get a first hand view of what it takes to build and deliver software in the blockchain technical security space and help us build and protect the infrastructure of a new economy.'
+As a Technical Writer, you will communicate OpenZeppelin and ZeppelinOS in a clear, concise and accurate manner. You’ll be working closely with our product and engineering team and third-party developers. Zeppelin is an engineering company. We look for talented people but above that, we seek for passionate, proactive and autonomous individuals to join our team!'
 slug: ''
 ---
 

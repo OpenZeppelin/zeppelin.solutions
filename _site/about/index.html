@@ -201,6 +201,7 @@
   }
   #mobile-nav a {
     color: #283850;
+    font-family: 'Roboto', sans-serif;
   }
   #mobile-nav li {
     height: 50px !important;
@@ -220,7 +221,7 @@
     padding: 0 15px;
     cursor: pointer;
   }
-  
+
   nav .nav-wrapper {
     width: 67%;
   }
@@ -237,7 +238,7 @@
     height: 65px;
     display: flex;
   }
-  
+
   .brand-box img {
     height: 26px;
   }
@@ -277,6 +278,9 @@
     text-transform: uppercase;
     line-height: 1;
   }
+  nav i.material-icons {
+    font-size: 2em;
+  }
 </style>
 
 <nav>
@@ -288,7 +292,7 @@
         </a>
       </li>
     </ul>
-    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="right fa fa-bars" aria-hidden="true"></i></a>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li>
         <div class="dropdown">
@@ -349,6 +353,7 @@
     </ul>
   </div>
 </nav>
+
   <section id="home">
     <div class="row">
       <div class="container">

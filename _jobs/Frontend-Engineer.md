@@ -6,14 +6,16 @@ navigation_weight: 2
 date: 2016-04-20 00:00:00 +0000
 categories: []
 sub_heading: 'Build the interface that connects smart contracts with users.'
-description: 'You are the type of person who loves to motivate and encourage others. You are passionate about technology, and love staying up-to-date on the latest developments. You are able to blend in and collaborate with diverse groups, whether it’s technical people or salespeople in suits. You are detail-oriented and love getting things done.'
+description: 'The key to adoption is creating the best UI/UX experience. We’re looking for a Frontend Engineer to help us connect smart contracts with our users.
+
+Our Frontend Engineer will build the interfaces of our mid-layer blockchain architecture as well as the frontend for the sample and experimental apps we built using Open Zeppelin and Zeppelin OS.'
 tags:
 - engineering
 - design
 slug: ''
 ---
 
-<div class="requirements container long margin-auto">
+<div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">What you'll do</h3>
   <ul>
     <li>
@@ -33,7 +35,7 @@ slug: ''
     </li>
   </ul>
 </div>
-<div class="requirements container long margin-auto">
+<div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">Who we're looking for</h3>
   <ul>
     <li>
@@ -56,7 +58,7 @@ slug: ''
     </li>
   </ul>
 </div>
-<div class="requirements container long margin-auto">
+<div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">Nice-to-haves</h3>
   <ul>
     <li>
