@@ -197,14 +197,43 @@
     font-size: 26px !important;
   }
   #mobile-nav {
-    background: white;
+    background: black;
   }
   #mobile-nav a {
-    color: #283850;
+    color: white;
     font-family: 'Roboto', sans-serif;
   }
+  #mobile-nav li .title {
+    font-family: Helvetica;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #ffffff;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+  }
+  #mobile-nav li .subtitle {
+    opacity: 0.6;
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 2.5;
+    color: #ffffff;
+  }
   #mobile-nav li {
-    height: 50px !important;
+    min-height: 50px !important;
+    border-bottom: solid 2px #ffffff4d;
+    padding: 15px 0;
+    margin: 0 30px;
+  }
+  #mobile-nav li.first {
+    border-bottom: solid 0px transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  #mobile-nav li.first a.logo-link, #mobile-nav li.first img {
+    height: 30px;
   }
   .side-nav {
     width: 100%;
@@ -342,14 +371,16 @@
       </li>
     </ul>
     <ul class="side-nav" id="mobile-nav">
-      <li><a class="sidenav-close close-link" href="#!">X</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a></li>
-      <li><a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a></li>
-      <li><a href="https://tplprotocol.org/" target="_blank">TPL Protocol</a></li>
-      <li><a href="/security/">Security</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/joinus/">Jobs</a></li>
+      <li class="first"><a href="/" class="logo-link"><img src="/images/logoZeppelin-long.svg"/></a><a class="sidenav-close close-link" href="#!">X</a></li>
+      <li>
+        <p class="title">Projects</p>
+        <a class="subtitle"href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
+        <a class="subtitle"href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
+        <a class="subtitle"href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+      </li>
+      <li><a class="title" href="/security/">Security</a></li>
+      <li><a class="title" href="/about/">About</a></li>
+      <li><a class="title" href="/joinus/">Jobs</a></li>
     </ul>
   </div>
 </nav>
