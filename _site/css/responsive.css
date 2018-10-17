@@ -120,6 +120,7 @@
 		  .container {width: 85%}
 		  .xs-centered { text-align: center; }
 		  section { padding: 40px 0; }
+			p.small {font-size: 1.3em;}
 		  h4 {
 		  	line-height: 1.5;
     		font-size: 14px;
@@ -127,7 +128,7 @@
 			#principal { background-image: linear-gradient(142deg, #0a0a0a, #1e1e28); min-height: auto;}
 			.standards { background-image: linear-gradient(142deg, #0a0a0a, #1e1e28)!important; padding-top: 120px; padding-bottom: 40px; }
 			#principal section { padding: 50px 0; }
-			nav .nav-wrapper {  width: 85%!important; padding: 0; margin: auto; }
+			nav .nav-wrapper {  width: 85%!important; padding: 0; margin: auto; margin-top: 20px;}
 			.challenge-box { width: 85%; padding: 0 !important; }
 			.challenge-box.middle p { min-height: auto!important;}
 			.blueprint { padding-top: 40px; }
@@ -237,7 +238,7 @@
     line-height: 2.4;
     color: #ffffff;
   }
-  
+
   #footer img {
     height: 23px;
     margin-top: 21px;
@@ -267,6 +268,9 @@
   }
   .link-box div{
     width: 130px;
+  }
+  @media (max-width: 900px) {
+    footer img { margin-bottom: 30px; }
   }
 
 </style>
@@ -306,9 +310,10 @@
       </div>
     </div>
     <div>
-      
+
     </div>
   </div>
 </footer>
+
 	</body>
 </html>

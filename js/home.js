@@ -15,7 +15,7 @@ $( document ).ready(function(){
     stopPropagation: false // Stops event propagation
     }
   );
-  
+
   $('.sidenav-close').on( "click", function() {
 	  $('.button-collapse').sideNav('hide');
 	});
