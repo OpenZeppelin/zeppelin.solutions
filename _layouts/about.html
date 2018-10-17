@@ -35,25 +35,49 @@ layout: default
     max-width: 450px;
     margin-bottom: 20px;
   }
+  .how-we-work-title {
+    opacity: 0.9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-top: 5px;
+  }
+  .joinus-subsection p, .joinus-subsection blockquote {
+    max-width: 490px;
+  }
+  .joinus-subsection blockquote {
+     border-image-source: linear-gradient(176deg, #141c55, #00298c);
+  }
 </style>
 <section class="about-principal hero-background" id="principal">
   {% include nav.html %}
   <section id="home">
     <div class="row">
       <div class="container">
-        <h1 class="home-title">Fostering economic freedom</h1>
-        <p class="middle short">Zeppelin is a technology company focused on improving how value is exchanged in the world using blockchain technology and infrastructure.</p>
+        <h1 class="home-title centered">We build technology to bring freedom to the world</h1>
       </div>
     </div>
   </section>
 </section>
+<section class="how-we-work grey joinus-subsection">
+  <div class="container">
+    <div class="mobile-column">
+      <div>
+        <p class="how-we-work-title">Zeppelin builds core infrastructure and performs security audits for decentralized systems that power multimillion dollar economies.</p>
+        <blockquote class="small">Founded in 2015, we have developed the industry security standards for architecting and deploying smart contract systems in public blockchains.</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="row" id="clients">
   <div class="container centered">
     <h2 style="margin-bottom: 0;">Clients, partners and platforms</h2>
-    <p class="regular">Over the years we’ve gained the trust of other leading technology companies, partners, and investors.</p> 
+    <p class="regular">Over the years we’ve gained the trust of other leading technology companies, partners, and investors.</p>
   </div>
   {% include partners.html %}
-  <div class="container centered">
+  <div class="container centered" style="margin: 20px auto;">
     <p class="regular">We work with these platforms and the foundations that sponsor them.</p>
   </div>
   {% include sponsors.html %}

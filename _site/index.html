@@ -143,7 +143,7 @@
   .standards {
     background-image: linear-gradient(106deg, #0a0a0a, #282828);
     margin: 70px 0;
-    padding-top: 100px;
+    padding-top: 115px;
   }
   .standards h4 {
     color: white;
@@ -174,6 +174,9 @@
   .blueprint {
     padding-bottom: 0;
     margin-bottom: -100px !important;
+  }
+  @media (max-width: 900px) {
+    .standards { padding-top: 100px; }
   }
 </style>
 
@@ -354,7 +357,10 @@
     line-height: 1;
   }
   nav i.material-icons {
-    font-size: 2em;
+    font-size: 22px;
+  }
+  nav i.material-icons.menu {
+    font-size: 34px;
   }
 </style>
 
@@ -367,7 +373,7 @@
         </a>
       </li>
     </ul>
-    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons menu">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li>
         <div class="dropdown">
@@ -451,6 +457,7 @@
     padding: 0 45px;
     margin: 30px 0;
     text-align: left;
+    min-height: 145px;
   }
 
   .challenge-box.middle {
@@ -488,21 +495,21 @@
 
 <section class="challenges centered">
   <div class="eth-icon">
-    <img src="/images/landing/eth.svg">
+    <img style="width: 21px;" src="/images/landing/eth.svg">
   </div>
   <h3>The challenges of building decentralized networks</h3>
   <div class="flex xs-column">
     <div class="challenge-box">
       <h5>Security</h5>
-      <p class="small">The challenge for security professionals is to rethink the 'castle & moat' approach to perimeter-based security and reconsider security holistically across the dynamic, distributed fleet.</p>
+      <p class="small">High security risks due to software code powering real money.</p>
     </div>
     <div class="challenge-box middle">
       <h5>Developer experience</h5>
-      <p class="small" style="min-height: 110px;">The challenge for architects and developers is to accommodate the necessary diversity of application platforms across a distributed fleet.</p>
+      <p class="small">Lack of proper development and testing tooling increases margin of errors exponentially.</p>
     </div>
     <div class="challenge-box">
       <h5>Operations</h5>
-      <p class="small">The challenge for op. teams moving to cloud is to enable the automation through infrastructure as code while embracing the inevitable heterogeneity of different cloud providers.</p>
+      <p class="small">It’s costly and difficult to fix problems in smart contract systems after they are live.</p>
     </div>
   </div>
 </section>
@@ -585,11 +592,11 @@
 		.product-card .buttons-box .rounded-button { padding: 9px 20px; }
 	}
 	.list-box p{
-		line-height: 1.1;
+		line-height: 1.25;
 	}
 	.list-box {
 		margin-top: 15px;
-		margin-bottom: 30px;
+		margin-bottom: 39px;
 	}
 	.list-box p img {
 		padding: 0 7px 0 0;
@@ -605,11 +612,12 @@
 		<p>A framework of modular, reusable, secure smart contracts for the Ethereum network, written in Solidity.</p>
 		<div class="list-box">
 			<p><img src="../images/ic_check.svg">Ideal for learning</p>
-			<p><img src="../images/ic_check.svg">Easy for begginers</p>
+			<p><img src="../images/ic_check.svg">Reduced risks of vulnerabilities</p>
+			<p><img src="../images/ic_check.svg">Standard, tested, community-reviewed code</p>
 		</div>
 		<div class="buttons-box">
-			<a class="rounded-button fill-button" href="">Visit site</a>
-			<a class="rounded-button empty-button" href="">Go to docs</a>
+			<a class="rounded-button fill-button" target="_blank" href="https://openzeppelin.org/">Visit site</a>
+			<a class="rounded-button empty-button" target="_blank" href="https://openzeppelin.org/api/docs/get-started.html">Go to docs</a>
 		</div>
 	</div>
 	<div class="hide-on-small-only image-box">
@@ -622,14 +630,14 @@
 	</div>
 	<div class="text-box">
 		<h1>Development Platform</h1>
-		<p>A platform the development and secure management of decentralized applications.</p>
+		<p>A development platform for secure smart contract applications.</p>
 		<div class="list-box">
-			<p><img src="../images/ic_check.svg">Ideal for learning</p>
-			<p><img src="../images/ic_check.svg">Easy for begginers</p>
+			<p><img src="../images/ic_check.svg">Bug fixing and upgradability management</p>
+			<p><img src="../images/ic_check.svg">Seamless developer experience</p>
 		</div>
 		<div class="buttons-box">
-			<a class="rounded-button fill-button" href="">Visit site</a>
-			<a class="rounded-button empty-button" href="">Go to docs</a>
+			<a class="rounded-button fill-button" target="_blank" href="https://zeppelinos.org/">Visit site</a>
+			<a class="rounded-button empty-button" target="_blank" href="https://docs.zeppelinos.org/docs/start.html">Go to docs</a>
 		</div>
 	</div>
 	<div class="hide-on-small-only image-box">
@@ -644,12 +652,12 @@
 		<h1>Accsess Control Platform</h1>
 		<p>A protocol that allows blockchain projects to control the ways in which their native digital assets are transferred.</p>
 		<div class="list-box">
-			<p><img src="../images/ic_check.svg">Ideal for learning</p>
-			<p><img src="../images/ic_check.svg">Easy for begginers</p>
+			<p><img src="../images/ic_check.svg">Guarantee compliance in every trade</p>
+			<p><img src="../images/ic_check.svg">Transfer restrictions based on trade requirements</p>
 		</div>
 		<div class="buttons-box">
-			<a class="rounded-button fill-button" href="">Visit site</a>
-			<a class="rounded-button empty-button" href="">Go to docs</a>
+			<a class="rounded-button fill-button" target="_blank" href="https://tplprotocol.org/">Visit site</a>
+			<a class="rounded-button empty-button" target="_blank" href="https://github.com/tpl-protocol/">Go to docs</a>
 		</div>
 	</div>
 	<div class="hide-on-small-only image-box">
@@ -664,7 +672,7 @@
     <h4>We set ever-higher standards for the industry</h4>
     <div class="flex xs-column">
       <div class="standard-box">
-        <p class="standard-title">$4.5+ Billion</p>
+        <p class="standard-title">$1.5+ Billion</p>
         <p class="middle">in digital assets powered by our contracts</p>
       </div>
       <div class="standard-box">
@@ -695,10 +703,16 @@
     display: block;
     text-align: center;
   }
-  .leading-projects .bitgo, .leading-projects .cosmos,  .leading-projects .status {
-    margin: 25px auto;
+  .leading-projects .cosmos {
+    margin: 24px auto;
   }
-  .leading-projects .dfinity, .leading-projects .shapeshift, .leading-projects .storj {
+  .leading-projects .bitgo {
+    margin: 22px auto;
+  }
+  .leading-projects .shapeshift, .leading-projects .status {
+    margin: 18px auto;
+  }
+  .leading-projects .dfinity, .leading-projects .storj {
     margin: 13px auto;
   }
 </style>
@@ -743,6 +757,7 @@
     </span>
   </div>
 </div>
+
 </section>
 <section class="depth grey">
   <div class="container request-audit-container xs-column">

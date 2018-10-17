@@ -156,6 +156,9 @@
 		margin-bottom: -1px;
 	  background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 40%,transparent 40%,transparent 100%)!important
 	}
+	section.icon-partners {
+		 min-height: 227px;
+	}
   @media (max-width: 900px) {
     .blog-box img { margin: 10px 0; }
 		.blog-box {background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 74%,transparent 74%,transparent 100%)!important;}
@@ -344,7 +347,10 @@
     line-height: 1;
   }
   nav i.material-icons {
-    font-size: 2em;
+    font-size: 22px;
+  }
+  nav i.material-icons.menu {
+    font-size: 34px;
   }
 </style>
 
@@ -357,7 +363,7 @@
         </a>
       </li>
     </ul>
-    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons menu">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li>
         <div class="dropdown">
@@ -424,7 +430,7 @@
   <section class="security-home" id="home">
     <div class="container">
       <h1 class="home-title">Verify that your smart contract system works as intended</h1>
-      <p class="middle long">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
+      <p class="middle long" style="margin-bottom: 25px;">Our engineers fully review your system’s architecture and your smart contracts codebase, then write a thorough report with actionable feedback for every issue found.</p>
     </div>
     <div class="row triangle-row-padding">
       <div class="container" id="process">
@@ -611,7 +617,7 @@
   .augur-quote .card h6 {
     opacity: 0.8;
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
     font-style: oblique;
     line-height: 1.67;
@@ -662,6 +668,7 @@
     </div>
   </div>
 </div>
+
 </section>
 <section class="no-padding icon-partners">
 	<style type="text/css">
@@ -681,10 +688,16 @@
     display: block;
     text-align: center;
   }
-  .leading-projects .bitgo, .leading-projects .cosmos,  .leading-projects .status {
-    margin: 25px auto;
+  .leading-projects .cosmos {
+    margin: 24px auto;
   }
-  .leading-projects .dfinity, .leading-projects .shapeshift, .leading-projects .storj {
+  .leading-projects .bitgo {
+    margin: 22px auto;
+  }
+  .leading-projects .shapeshift, .leading-projects .status {
+    margin: 18px auto;
+  }
+  .leading-projects .dfinity, .leading-projects .storj {
     margin: 13px auto;
   }
 </style>
@@ -729,6 +742,7 @@
     </span>
   </div>
 </div>
+
 </section>
 <section class="security-cards-section">
   <div class="container">
