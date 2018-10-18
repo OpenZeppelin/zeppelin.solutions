@@ -430,7 +430,13 @@ p a {
 .request-audit-container img {
   margin: 34px 0;
 }
+button.btn-long, a.btn-long {
+  padding: .75rem 2.25rem;
+}
 @media (max-width: 900px) {
+  button.btn-long, a.btn-long {
+    padding: 1rem 2.5rem
+  }
   .request-audit-container {
     justify-content: center;
   }
