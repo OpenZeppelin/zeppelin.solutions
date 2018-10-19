@@ -491,6 +491,11 @@
   nav i.material-icons.menu {
     font-size: 34px;
   }
+  ul.side-nav a.flex-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 </style>
 
 <nav>
@@ -555,13 +560,13 @@
       <li class="first"><a href="/" class="logo-link"><img src="/images/logoZeppelin-long.svg"/></a><a class="sidenav-close close-link" href="#!">X</a></li>
       <li>
         <p class="title">Projects</p>
-        <a class="subtitle"href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
-        <a class="subtitle"href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
-        <a class="subtitle"href="https://tplprotocol.org/" target="_blank">TPL Protocol</a>
+        <a class="subtitle flex-link"href="https://openzeppelin.org/" target="_blank">OpenZeppelin <img src="/images/ic_link_grey.svg"></a>
+        <a class="subtitle flex-link"href="https://zeppelinos.org/" target="_blank">ZeppelinOS <img src="/images/ic_link_grey.svg"></a>
+        <a class="subtitle flex-link"href="https://tplprotocol.org/" target="_blank">TPL Protocol <img src="/images/ic_link_grey.svg"></a>
       </li>
-      <li><a class="title" href="/security/">Security</a></li>
-      <li><a class="title" href="/about/">About</a></li>
-      <li><a class="title" href="/joinus/">Jobs</a></li>
+      <li><a class="title flex-link" href="/security/">Security <img src="/images/ic_arrow_right_white.svg"></a></li>
+      <li><a class="title flex-link" href="/about/">About <img src="/images/ic_arrow_right_white.svg"></a></li>
+      <li><a class="title flex-link" href="/joinus/">Jobs <img src="/images/ic_arrow_right_white.svg"></a></li>
     </ul>
   </div>
 </nav>
