@@ -180,44 +180,6 @@
   }
 </style>
 
-<style type="text/css">
-  .hiring-nav {
-    width: 100%;
-    height: 60px;
-    background-color: #000000;
-    text-align: center;
-    color: white !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hiring-nav p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: #ffffff;
-  }
-  .hiring-nav a {
-    margin: 0 10px;
-    border: solid 1px white;
-    text-transform: uppercase;
-    border-radius: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    padding: 0.5rem 1.75rem;
-    color: white;
-  }
-  .hiring-nav a:hover {
-    border: solid 1px white;
-    color: black !important;
-    background: white;
-  }
-</style>
-
-<div class="hiring-nav">
-  <p>Want to join the team? <a href="/jobs/">See current openings</a><p>
-</div>
 <section class="hero-background" id="principal">
   <style type="text/css">
   nav {
@@ -312,7 +274,7 @@
     float: right !important;
   }
   .brand-box {
-    width: 168px;
+    width: 134px;
     height: 65px;
     display: flex;
   }
@@ -367,6 +329,31 @@
     justify-content: space-between;
     align-items: center;
   }
+  a.we-are-hiring {
+    height: 24px;
+    align-items: center;
+    display: flex;
+    border-radius: 100px;
+    background: #ffffff47;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  li.we-are-hiring-box {
+    height: 65px;
+    display: flex;
+    align-items: center;
+  }
+  nav ul a.we-are-hiring:hover {
+    opacity: 1;
+    background-color: #ffffff73 !important;
+  }
 </style>
 
 <nav>
@@ -376,6 +363,9 @@
         <a href="/">
           <img src="/images/logoZeppelin-long.svg"/>
         </a>
+      </li>
+      <li class="we-are-hiring-box">
+        <a class="we-are-hiring" href="/joinus/">We are hiring</a>
       </li>
     </ul>
     <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons menu">menu</i></a>
