@@ -19,4 +19,39 @@ $( document ).ready(function(){
   $('.sidenav-close').on( "click", function() {
 	  $('.button-collapse').sideNav('hide');
 	});
+
+  $('#all-positions-btn').on( "click", function() {
+	  $('.opening-btn').removeClass('active');
+    $('#all-positions-btn').addClass('active');
+    $('.opening-box').addClass('hidden');
+    $('#all-positions-box').removeClass('hidden');
+	});
+
+  $('#engineering-btn').on( "click", function() {
+	  $('.opening-btn').removeClass('active');
+    $('#engineering-btn').addClass('active');
+    $('.opening-box').addClass('hidden');
+    $('#engineering-box').removeClass('hidden');
+	});
+
+  $('#operations-btn').on( "click", function() {
+	  $('.opening-btn').removeClass('active');
+    $('#operations-btn').addClass('active');
+    $('.opening-box').addClass('hidden');
+    $('#operations-box').removeClass('hidden');
+	});
+
+  $('#marketing-btn').on( "click", function() {
+	  $('.opening-btn').removeClass('active');
+    $('#marketing-btn').addClass('active');
+    $('.opening-box').addClass('hidden');
+    $('#marketing-box').removeClass('hidden');
+	});
+
+  $('#international-btn').on( "click", function() {
+	  $('.opening-btn').removeClass('active');
+    $('#international-btn').addClass('active');
+    $('.opening-box').addClass('hidden');
+    $('#international-box').removeClass('hidden');
+	});
 })

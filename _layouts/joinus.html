@@ -337,13 +337,13 @@ layout: default
   <div class="container jobs-container">
     <div class="job-menu hide-on-small-only">
       <button class="location-btn">All locations</button>
-      <button class="active">All positions</button>
-      <button>Communications</button>
-      <button>Design</button>
-      <button>Engineering</button>
-      <button>Marketing</button>
+      <button class="opening-btn active" id="all-positions-btn">All positions</button>
+      <button class="opening-btn" id="operations-btn">Operations</button>
+      <button class="opening-btn" id="international-btn">International</button>
+      <button class="opening-btn" id="engineering-btn">Engineering</button>
+      <button class="opening-btn" id="marketing-btn">Marketing</button>
     </div>
-    <div style="width: 100%;">
+    <div class="opening-box" style="width: 100%;" id="all-positions-box">
       {% for job in site.jobs %}
         <div class="job-card">
           <div>
@@ -356,6 +356,74 @@ layout: default
             </a>
           </div>
         </div>
+      {% endfor %}
+    </div>
+    <div class="hidden opening-box" style="width: 100%;" id="engineering-box">
+      {% for job in site.jobs %}
+       {% if job.tags contains 'engineering' %}
+        <div class="job-card">
+          <div>
+            <h4>{{ job.location | slice: 0, 80 }}</h4>
+            <h1><a href="{{ job.url | absolute_url }}">{{ job.title }}</a></h1>
+          </div>
+          <div>
+            <a href="{{ job.url | absolute_url }}">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="hidden opening-box" style="width: 100%;" id="international-box">
+      {% for job in site.jobs %}
+       {% if job.tags contains 'international' %}
+        <div class="job-card">
+          <div>
+            <h4>{{ job.location | slice: 0, 80 }}</h4>
+            <h1><a href="{{ job.url | absolute_url }}">{{ job.title }}</a></h1>
+          </div>
+          <div>
+            <a href="{{ job.url | absolute_url }}">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="hidden opening-box" style="width: 100%;" id="marketing-box">
+      {% for job in site.jobs %}
+       {% if job.tags contains 'marketing' %}
+        <div class="job-card">
+          <div>
+            <h4>{{ job.location | slice: 0, 80 }}</h4>
+            <h1><a href="{{ job.url | absolute_url }}">{{ job.title }}</a></h1>
+          </div>
+          <div>
+            <a href="{{ job.url | absolute_url }}">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="hidden opening-box" style="width: 100%;" id="operations-box">
+      {% for job in site.jobs %}
+       {% if job.tags contains 'operations' %}
+        <div class="job-card">
+          <div>
+            <h4>{{ job.location | slice: 0, 80 }}</h4>
+            <h1><a href="{{ job.url | absolute_url }}">{{ job.title }}</a></h1>
+          </div>
+          <div>
+            <a href="{{ job.url | absolute_url }}">
+              <img src="../images/ic_arrow_right_blue.svg"/>
+            </a>
+          </div>
+        </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

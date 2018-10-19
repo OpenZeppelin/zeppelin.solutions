@@ -4,7 +4,7 @@ title: 'Software Engineer'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
-- engineer
+- engineering
 date: 2018-02-25 19:07:50 +0000
 sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
 description: 'You have vision, innovation, passion, technical ability, a drive to deliver, as well as collaboration and execution. You are not risk averse and want to build products that will change the world.

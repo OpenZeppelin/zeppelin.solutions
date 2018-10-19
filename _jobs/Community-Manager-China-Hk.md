@@ -10,8 +10,7 @@ description: 'You are the type of person who loves to motivate and encourage oth
 
 As the OpenZeppelin & ZeppelinOS Community Manager, you will be the organizing brains and the welcoming heart of our Asian community.'
 tags:
-- communications
-- marketing
+- international
 slug: ''
 ---
 

@@ -4,7 +4,7 @@ title: 'Technical Writer'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
-- engineer
+- marketing
 date: 2018-02-25 19:07:50 +0000
 sub_heading: 'Help us communicate and document OpenZeppelin and ZeppelinOS.'
 description: 'In an open source, fast-paced yet young ecosystem, Technical Writers play a big role enabling knowledge scalability. We’re looking for a Technical Writer to help us build the foundations of OpenZeppelin and ZeppelinOS: the documentation.

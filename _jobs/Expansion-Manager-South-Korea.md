@@ -4,7 +4,7 @@ title: 'Expansion Manager: South Korea'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
-- engineer
+- international
 date: 2018-02-25 19:07:50 +0000
 sub_heading: 'Connect and grow our community of developers and partners in South Korea.'
 description: 'As Zeppelin’s community grows, we want to increase our commitment in South Korea with a local Expansion Manager. You’ll help us connect to the communities that love the decentralized web as much as we do.

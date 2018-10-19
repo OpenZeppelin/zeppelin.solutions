@@ -4,7 +4,7 @@ title: 'Head of Marketing & Communications'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
-- engineer
+- marketing
 date: 2018-02-25 19:07:50 +0000
 sub_heading: 'Define our global branding, communication, community and expansion strategies.'
 description: 'As a project working with cutting-edge technology, building a strong brand and marketing strategy is essential to effectively reach the right audience. We’re looking for a Marketing Director to help us build and implement Zeppelin’s global marketing strategy.

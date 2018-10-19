@@ -4,7 +4,7 @@ title: 'Human Resources Manager'
 location: 'Buenos Aires / Remote'
 navigation_weight: 1
 tags:
-- engineer
+- operations
 date: 2018-02-25 19:07:50 +0000
 sub_heading: "Source, screen and develop the foundations of Zeppelin's international team."
 description: "Zeppelin's team is composed of people who are truly passionate about the decentralized web. Our HR Manager will spread our values and create the foundations of a healthy work environment and culture. You'll be our team's reference for attracting, retaining and developing talent and the link between the management and team members' perspectives."

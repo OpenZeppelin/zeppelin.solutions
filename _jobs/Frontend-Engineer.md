@@ -11,7 +11,6 @@ description: 'The key to adoption is creating the best UI/UX experience. We’re
 Our Frontend Engineer will build the interfaces of our mid-layer blockchain architecture as well as the frontend for the sample and experimental apps we built using Open Zeppelin and Zeppelin OS.'
 tags:
 - engineering
-- design
 slug: ''
 ---
 
