@@ -92,12 +92,21 @@ layout: default
     border: solid 1px #3c3c3c;
   }
   @media (max-width: 900px) {
+    .how-we-work.true {
+      padding-bottom: 25px;
+    }
+    .how-we-work.first img {
+      margin-top: 20px;
+    }
     #jobs .flex-box div {
       margin: 0 !important;
       width: 100%!important
     }
     #jobs .mobile-column {
       flex-direction: column;
+    }
+    #values h4 {
+      margin-top: 0;
     }
     .value-box {
       width: 100%;
@@ -226,7 +235,7 @@ layout: default
     </div>
   </section>
 </section>
-<section class="how-we-work">
+<section class="how-we-work first">
   <div class="container">
     <div class="flex mobile-column">
       <div>
@@ -240,7 +249,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="how-we-work grey">
+<section class="how-we-work grey true">
   <div class="container">
     <div class="row">
       <div class="col l6 m6 s12">

@@ -428,7 +428,7 @@
       </li>
       <li><a class="title flex-link" href="/security/">Security <img src="/images/ic_arrow_right_white.svg"></a></li>
       <li><a class="title flex-link" href="/about/">About <img src="/images/ic_arrow_right_white.svg"></a></li>
-      <li><a class="title flex-link" href="/joinus/">Jobs <img src="/images/ic_arrow_right_white.svg"></a></li>
+      <li><a class="title flex-link" href="/joinus/">Join us <img src="/images/ic_arrow_right_white.svg"></a></li>
     </ul>
   </div>
 </nav>
@@ -510,7 +510,7 @@
       position: absolute;
       left: 0;
       top: 5px;
-      height: 100%;
+      height: 96.5%;
       width: 1px;
     }
     #process div:before {
@@ -531,9 +531,14 @@
     #process div p {
       padding: 0;
       text-align: left;
+      font-size: 15px;
     }
     #process {
       flex-direction: column;
+    }
+    #process h2 {
+      font-size: 14px;
+      margin: 0px 0px 7px 0;
     }
   }
 </style>
@@ -812,6 +817,9 @@
   }
   @media (max-width: 900px) {
   	.mobile-column { flex-direction: column; }
+    .oz-img-container, .zos-img-container { height: 118px; }
+    .oz-img-container img, .zos-img-container img{ max-width: 70%; }
+    .security-cards-container p.small { margin-bottom: 30px; }
   }
   .buttons-box {
     flex-wrap: wrap;
