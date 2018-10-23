@@ -336,7 +336,7 @@ span.openings h5{
     font-family: Helvetica;
     font-size: 1.2em;
     opacity: 0.6;
-    font-size: 15px;
+    font-size: 1em;
     line-height: 2.4;
     color: #ffffff;
   }
@@ -350,7 +350,7 @@ span.openings h5{
   #footer h3 {
     display: block;
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: bold;
     line-height: 1.88;
     color: #ffffff;

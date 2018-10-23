@@ -182,6 +182,9 @@ a {
 .centered {
   text-align: center;
 }
+.opacity80{
+  opacity: 0.8;
+}
 h2.centered{
   margin: 60px 0 0 0;
   letter-spacing: 0.15em;
@@ -317,6 +320,8 @@ blockquote {
   border-width: 4px;
   border-image-source: linear-gradient(to bottom, rgba(36, 92, 205, 0.68), rgba(42, 55, 194, 0.93));
   border-image-slice: 1;
+  border-width: 3px;
+  padding-left: 1rem;
 }
 p.small, blockquote.small {
   opacity: 0.8;
@@ -607,7 +612,7 @@ button.btn-long, a.btn-long {
     font-family: Helvetica;
     font-size: 1.2em;
     opacity: 0.6;
-    font-size: 15px;
+    font-size: 1em;
     line-height: 2.4;
     color: #ffffff;
   }
@@ -621,7 +626,7 @@ button.btn-long, a.btn-long {
   #footer h3 {
     display: block;
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: bold;
     line-height: 1.88;
     color: #ffffff;
