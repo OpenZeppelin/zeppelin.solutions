@@ -66,7 +66,7 @@ layout: default
     background-color: #ffffff;
     box-shadow: 0 4px 10px 0 rgba(224, 224, 224, 0.5);
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 20px 20px 20px;
     margin: 15px;
     width: 300px;
     text-align: left;
@@ -81,11 +81,13 @@ layout: default
     margin-bottom: -157px!important;
     padding-bottom: 0;
     justify-content: center;
+    padding-top: 0;
   }
   .jobs-photos img {
     padding: 2px;
   }
   #remote-by-default .line {
+    margin-top: 15px;
     width: 19px;
     height: 2px;
     opacity: 0.3;
@@ -225,7 +227,7 @@ layout: default
 
 <section class="hero-background jobs-section" id="principal">
   {% include nav.html %}
-  <section id="home">
+  <section id="home" style="padding-bottom: 66px;">
     <div class="row">
       <div class="container">
         <h1 class="home-title">Build the foundations of an open economy</h1>
@@ -332,8 +334,8 @@ layout: default
 </section>
 <section class="no-padding-bottom" id="openings">
   <div class="container centered">
-    <h2>Current openings</h2>
-    <p class="small">Find the best place for you in Zeppelin</p>
+    <h2 style="margin-bottom: 0;">Current openings</h2>
+    <p class="small" style="margin-top: 5px;">Find the best place for you in Zeppelin</p>
   </div>
   <div class="container jobs-container">
     <div class="job-menu hide-on-small-only">
@@ -429,10 +431,10 @@ layout: default
     </div>
   </div>
 </section>
-<section class="role">
+<section class="role" style="padding-top: 40px;">
   <div class="container centered">
-    <h2 class="small">Don’t see your role here?</h2>
-    <p class="small">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
+    <h2 class="small" style="margin-bottom: 0;">Don’t see your role here?</h2>
+    <p class="small" style="margin-top: 5px;">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
   </div>
 </section>
 <section class="grey hiring">
