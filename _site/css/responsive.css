@@ -181,7 +181,7 @@
 	nav { height: 69px; }
 	nav .button-collapse { margin: -6px !important; }
 	.nav-wrapper { display: flex; align-items: center; justify-content: space-between;}
-	.nav-wrapper .left a { padding: 0!important; display: flex; }
+	.nav-wrapper .left a { padding: 1!important; display: flex; }
 	.hiring-box { display: none; }
 	.mobile-column { flex-direction: column; }
 	.learn-more-box a { margin-top: 30px; margin-bottom: 30px; }
