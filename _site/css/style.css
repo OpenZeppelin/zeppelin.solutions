@@ -327,8 +327,8 @@ blockquote {
 p.small, blockquote.small {
   opacity: 0.8;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
-  line-height: 1.7;
+  font-size: 1.3em;
+  line-height: 1.5;
   color: #4a4a4a;
 }
 p.x-small {
