@@ -132,7 +132,8 @@
 			.challenge-box { width: 85%; padding: 0 !important; }
 			.challenge-box.middle p { min-height: auto!important;}
 			.blueprint { padding-top: 40px; }
-			#footer div a { font-size: 14px; }
+			#footer div a { font-size: 1.3em !important; }
+			#footer h3 { font-size: 1.3em !important; }
 		}
 	</style>
 	<body>
@@ -232,9 +233,8 @@
   #footer a {
     display: block;
     font-family: Helvetica;
-    font-size: 1.2em;
+    font-size: 1.1em;
     opacity: 0.6;
-    font-size: 1em;
     line-height: 2.4;
     color: #ffffff;
   }
@@ -248,7 +248,7 @@
   #footer h3 {
     display: block;
     font-family: Helvetica;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     line-height: 1.88;
     color: #ffffff;
