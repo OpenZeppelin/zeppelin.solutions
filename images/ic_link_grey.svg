@@ -1,24 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>ic_link_grey</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Zeppelin-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Data" transform="translate(-1046.000000, -230.000000)" fill-rule="nonzero" stroke="#979797">
-            <g id="Group-20" transform="translate(786.000000, 170.000000)">
-                <g id="Group-13" transform="translate(1.000000, 37.000000)">
-                    <g id="ic_link_grey" transform="translate(259.000000, 23.000000)">
-                        <g id="Group-14">
-                            <g id="Group-15">
-                                <path d="M9.5,5.20710678 L4.79289322,0.5 L0.5,0.5 L0.5,9.5 L9.5,9.5 L9.5,5.20710678 Z" id="Combined-Shape"></path>
-                            </g>
-                        </g>
-                        <path d="M7.20710678,0.5 L9.5,2.79289322 L9.5,0.5 L7.20710678,0.5 Z" id="Rectangle-8" fill="#D8D8D8"></path>
-                        <path d="M9,1 C9,1 7.66666667,2.33333333 5,5 C7.66666667,2.33333333 9,1 9,1 Z" id="Line" stroke-linecap="square"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 10 10" style="enable-background:new 0 0 10 10;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;}
+	.st1{fill:#D8D8D8;stroke:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-linecap:square;}
+</style>
+<title>ic_link_grey</title>
+<desc>Created with Sketch.</desc>
+<g id="Zeppelin-Desktop">
+	<g id="Data" transform="translate(-1046.000000, -230.000000)">
+		<g id="Group-20" transform="translate(786.000000, 170.000000)">
+			<g id="Group-13" transform="translate(1.000000, 37.000000)">
+				<g id="ic_link_grey" transform="translate(259.000000, 23.000000)">
+					<g id="Group-14">
+						<g id="Group-15">
+							<path id="Combined-Shape" class="st0" d="M9.5,5.2L4.8,0.5H0.5v9h9V5.2z"/>
+						</g>
+					</g>
+					<path id="Rectangle-8" class="st1" d="M7.2,0.5l2.3,2.3V0.5H7.2z"/>
+					<path id="Line" class="st2" d="M9,1c0,0-1.3,1.3-4,4C7.7,2.3,9,1,9,1z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
