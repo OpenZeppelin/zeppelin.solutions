@@ -140,7 +140,7 @@
 		<style type="text/css">
   .job-opening {
     background-image: linear-gradient(290deg, #1e7dd7, #2b2dbf) !important;
-    height: 50vh;
+    height: 20vh;
     padding: 0;
     border-bottom: solid 7px #2a38c2 !important;
   }
@@ -158,13 +158,15 @@
     min-height: auto !important;
   }
   .requirements {
-    margin: 80px auto;
+    margin: .5rem auto;
   }
   .requirements h3 {
     text-align: left!important;
+    font-weight: bold;
   }
   .margin-auto {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .job-title {
     opacity: 0.8;
@@ -218,15 +220,13 @@
   }
   .job-opening h1 {
     margin: auto;
-    max-width: 600px;
     margin-bottom: 0;
+    text-align: center;
   }
   .job-opening p {
     margin: auto;
-    max-width: 600px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
   .job-opening a.apply-btn {
     border-radius: 100px;
@@ -238,6 +238,11 @@
     text-align: center;
     color: #003ccb!important;
     padding: 7px 25px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  p.small.check {
+    line-height: 2;
   }
 </style>
 
@@ -496,8 +501,9 @@
   <section id="home">
     <div class="row">
       <div class="container margin-auto">
+        <p class="middle"><span>Buenos Aires / Remote</span></p>
         <h1 class="home-title" >Technical Writer</h1>
-        <p class="middle"><span>Buenos Aires / Remote</span> <a class="apply-btn" href="https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">APPLY</a></p>
+        <p class="middle"><a class="apply-btn" href="https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">APPLY</a></p>
       </div>
     </div>
   </section>
@@ -575,9 +581,9 @@ As a Technical Writer, you will communicate OpenZeppelin and ZeppelinOS in a cle
   </div>
   <div class="container margin-auto">
     <h4 class="left-aligned job-title">You may also want to check</h4>
-    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-china/">Expansion Manager: China / Hong Kong</a></p>
-    <p class="small"><a href="https://zeppelin.solutions/jobs/community-manager-south-korea/">Community Manager: South Korea</a></p>
-    <p class="small"><a href="https://zeppelin.solutions/jobs/expansion-manager-south-korea/">Expansion Manager: South Korea</a></p>
+    <p class="small check"><a href="https://zeppelin.solutions/jobs/expansion-manager-china/">Expansion Manager: China / Hong Kong</a></p>
+    <p class="small check"><a href="https://zeppelin.solutions/jobs/community-manager-south-korea/">Community Manager: South Korea</a></p>
+    <p class="small check"><a href="https://zeppelin.solutions/jobs/expansion-manager-south-korea/">Expansion Manager: South Korea</a></p>
   </div>
 </section>
 
