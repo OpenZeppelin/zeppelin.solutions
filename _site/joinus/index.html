@@ -381,8 +381,6 @@
     color: white;
     height: 100%;
     line-height: 50px;
-    padding-right: 15px!important;
-    padding-left: 15px!important;
   }
   .nav-wrapper {
     padding-left: 30px;
@@ -400,7 +398,7 @@
   }
   #mobile-nav li .title {
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.25;
     color: #ffffff;
     padding: 2px !important;
@@ -410,9 +408,13 @@
   #mobile-nav li .subtitle {
     opacity: 0.6;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2.5;
     color: #ffffff;
+    padding: 2px !important;
+  }
+  #mobile-nav li .subtitle img{
+    height: 14px;
   }
   #mobile-nav li {
     min-height: 50px !important;
@@ -428,15 +430,20 @@
     padding: 30px 0;
   }
   #mobile-nav li.first a.logo-link, #mobile-nav li.first img {
-    height: 30px;
+    height: 26px;
+    padding: 0 !important;
   }
   .side-nav {
     width: 100%;
   }
   .close-link {
-    float: right;
-    padding: 0 10px;
-    color: #f6f6f6;
+    float: right !important;
+    opacity: 0.8;
+    padding: 10px 0 !important;
+  }
+  .close-link img{
+    position: relative !important;
+    height: 20px !important
   }
   nav .dropdown-button {
     display: inline-flex;
@@ -602,7 +609,7 @@
       </li>
     </ul>
     <ul class="side-nav" id="mobile-nav">
-      <li class="first"><a href="/" class="logo-link"><img src="/images/logoZeppelin-long.svg"/></a><a class="sidenav-close close-link" href="#!">X</a></li>
+      <li class="first"><a href="/" class="logo-link"><img src="/images/logoZeppelin-long.svg"/></a><a class="sidenav-close close-link" href="#!"><img src="/images/ic_close.svg"></a></li>
       <li>
         <p class="title">Projects</p>
         <a class="subtitle flex-link"href="https://openzeppelin.org/" target="_blank">OpenZeppelin <img src="/images/ic_link_grey.svg"></a>

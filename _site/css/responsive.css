@@ -180,7 +180,6 @@
 	nav ul a { color: white; }
 	nav ul a:hover { line-height: 48px !important; }
 	nav { height: 69px; }
-	nav .button-collapse { margin: -6px !important; }
 	.nav-wrapper { display: flex; align-items: center; justify-content: space-between;}
 	.nav-wrapper .left a { padding: 1!important; display: flex; }
 	.hiring-box { display: none; }
