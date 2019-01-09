@@ -1,72 +1,57 @@
 ---
 layout: job
 title: 'Community Manager'
-location: 'Buenos Aires / Remote'
+location: 'Remote'
 navigation_weight: 3
-date: 2016-04-20 00:00:00 +0000
-categories: []
-sub_heading: 'Lead the growth of our global developer community.'
-description: 'You are the type of person who loves to motivate and encourage others. You are passionate about technology, and love staying up-to-date on the latest developments. You are able to blend in and collaborate with diverse groups, whether it’s technical people or salespeople in suits. You are detail-oriented and love getting things done.'
+date: 2019-01-08 22:00:00 +0000
 tags:
 - communications
 - marketing
+categories: []
+sub_heading: 'Lead the growth of our global developer community.'
+description: 'You are the type of person who loves to motivate and encourage others. You are passionate about technology, and love staying up-to-date on the latest developments.  You are detail-oriented and love getting things done.'
+
 slug: ''
 ---
 
 <div class="requirements container margin-auto">
   <h3 class="left-aligned job-title">What you'll do</h3>
+  As the Community Manager, you will be the organizing brain and the welcoming heart of our global community. Specifically, you will:
   <ul>
     <li>
-      <p class="small left-aligned">Grow and energize the Asian community of OpenZeppelin & ZeppelinOS advocates.</p>
+      <p class="small left-aligned">Grow and energize the worldwide community of OpenZeppelin & ZeppelinOS advocates.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Help us moderate and understand our community terms of health, quantity and quality.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Help community members find their role in the community and build community ambassadors.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Provide meaningful reports of discussion, sentiment and feedback on our products.</p>
     </li>
     <li>
       <p class="small left-aligned">Motivate leaders in the community to contribute code, content, evangelize and act as references.</p>
     </li>
-    <li>
-      <p class="small left-aligned">Partner with the rest of the marketing organization to make community an extension of our marketing team through contributed content, references, and more.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Track metrics around the success of the OpenZeppelin & ZeppelinOS community, including overall community participation and downstream impact on our project.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Plan, coordinate, organize and cover meetups, hackathons and other events in Asia, with a focus in China and Hong Kong.</p>
-    </li>
   </ul>
 </div>
 <div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">Who we're looking for</h3>
+  <h3 class="left-aligned job-title">Who you are</h3>
   <ul>
     <li>
-      <p class="small left-aligned">An excellent communicator, with proficient written and spoken communication skills in English and Mandarin.</p>
+      <p class="small left-aligned">You have a strong technical background that allows you to engage in high level technical discussion.</p>
     </li>
     <li>
-      <p class="small left-aligned">An individual experienced in working remotely with international teams.</p>
+      <p class="small left-aligned">You have prior community management experience.</p>
     </li>
     <li>
-      <p class="small left-aligned">An active member or contributor to different local events, meetups and/or community channels.</p>
+      <p class="small left-aligned">You possess strong organizational and relationship-building skills.</p>
     </li>
     <li>
-      <p class="small left-aligned">A passionate relationship-builder with strong networking and organizational skills.</p>
+      <p class="small left-aligned">You have excellent writing skills.</p>
     </li>
     <li>
-      <p class="small left-aligned">An organized, data-driven professional with a love for self time management.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Extroverted personality - you should get energy from interacting with others.</p>
-    </li>
-  </ul>
-</div>
-<div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">Nice-to-haves</h3>
-  <ul>
-    <li>
-      <p class="small left-aligned">Previous experience contributing or managing crypto or open source projects.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Lives or lived in China for some time during the past 3 years.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Spent 2+ years living or studying in the US or other Western countries, or working with a project based in the US or other Western countries.</p>
+      <p class="small left-aligned"You have an extroverted personality - you should get energy from interacting with others.></p>
     </li>
   </ul>
 </div>
