@@ -7,7 +7,6 @@
 title: Zeppelin
 email: contact@openzeppelin.org
 description: Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications.
-baseurl: "" # the subpath of your site, e.g. /blog
 permalink: "/:path/"
 defaults:
   - scope:
