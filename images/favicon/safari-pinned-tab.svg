@@ -1,20 +1,29 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="400.000000pt" height="400.000000pt" viewBox="0 0 400.000000 400.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.11, written by Peter Selinger 2001-2013
-</metadata>
-<g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M450 3500 l0 -390 1362 2 1362 3 114 195 c63 107 165 282 228 388
-l113 192 -1590 0 -1589 0 0 -390z"/>
-<path d="M2405 2716 l-600 -172 -612 -1039 c-337 -572 -660 -1120 -717 -1217
-l-105 -178 519 0 518 0 812 1383 c447 760 815 1385 817 1390 2 4 -4 6 -14 6
--10 -1 -288 -79 -618 -173z"/>
-<path d="M2125 509 c-275 -209 -504 -385 -510 -390 -5 -5 384 -9 1003 -9
-l1012 0 0 390 0 390 -502 0 -503 0 -500 -381z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#91EBFA;}
+	.st1{fill:#64D2FA;}
+	.st2{fill:url(#_Path__2_);}
+	.st3{fill:url(#_Path_2_2_);}
+	.st4{fill:#5AA5FF;}
+</style>
+<g id="zeppelin_Z_color_1_">
+	<polygon id="Shape_6_" class="st0" points="37.6,389 86.8,309.6 362.4,309.6 362.4,389 	"/>
+	<polygon id="Shape-3_1_" class="st1" points="37.6,389 213.4,88.9 314.7,88.9 141.2,389 	"/>
+	
+		<linearGradient id="_Path__2_" gradientUnits="userSpaceOnUse" x1="-383.6501" y1="67.2412" x2="-382.0172" y2="68.114" gradientTransform="matrix(41.36 0 0 20.73 16050.3506 -1054.5333)">
+		<stop  offset="0" style="stop-color:#28AAC8;stop-opacity:0.5"/>
+		<stop  offset="0.8" style="stop-color:#29ABE2;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="_Path__1_" class="st2" points="298.1,309.6 196,389 141.2,389 187.7,309.6 	"/>
+	
+		<linearGradient id="_Path_2_2_" gradientUnits="userSpaceOnUse" x1="-381.4898" y1="60.637" x2="-381.937" y2="57.7026" gradientTransform="matrix(39.23 0 0 20.34 15211.8896 -1090.7439)">
+		<stop  offset="0" style="stop-color:#5AB4FF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#5A96BE;stop-opacity:0.6"/>
+	</linearGradient>
+	<polygon id="_Path_2_1_" class="st3" points="168.4,166 290.9,130.1 314.7,88.9 213.4,88.9 	"/>
+	<polygon id="Shape-2_1_" class="st4" points="360.1,11 314,90.4 45.2,90.4 45.2,11 	"/>
 </g>
 </svg>
