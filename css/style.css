@@ -16,7 +16,7 @@ body, #jobs, #about {
 }
 section{
   position: relative;
-  min-height: 300px;
+  /*min-height: 300px;*/
   padding: 60px 0;
   overflow: hidden;
   text-align: left;
