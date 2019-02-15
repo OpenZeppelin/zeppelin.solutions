@@ -206,7 +206,7 @@ p.extra-short {
   max-width: 357px;
 }
 p.long, h1.long, .long {
-  max-width: 70%;
+  max-width: 67%;
 }
 p.blue {
   color: #00298c;
