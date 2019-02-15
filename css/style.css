@@ -184,7 +184,7 @@ blockquote {
 p.small, blockquote.small {
   opacity: 0.8;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.15em;
   line-height: 1.5;
   color: #4a4a4a;
 }
@@ -206,7 +206,7 @@ p.extra-short {
   max-width: 357px;
 }
 p.long, h1.long, .long {
-  max-width: 750px;
+  max-width: 70%;
 }
 p.blue {
   color: #00298c;
@@ -341,7 +341,7 @@ p a {
   margin-bottom: 1.5rem !important;
 }
 .security-home .home-title {
-  max-width: 420px;
+  max-width: 80%;
 }
 
 /*BLOCKCHAINS*/
