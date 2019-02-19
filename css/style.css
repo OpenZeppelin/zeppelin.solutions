@@ -223,7 +223,7 @@ p a {
 .dropdown-box {
   display: flex !important;
   align-items: center;
-  padding: 15px;
+  padding: 1.4rem;
 }
 .dropdown-box p {
   margin: 0 15px;
@@ -233,7 +233,9 @@ p a {
   color: #283850;
 }
 .dropdown-box img {
-  width: 36px;
+  width: 44px;
+  max-width: 44px;
+  height: auto;
 }
 .dropdown-box img.little {
   width: 20px;
@@ -293,7 +295,7 @@ p a {
   border-radius: 4px;
 }
 .projects-dropdown {
-  margin-left: -205px;
+  margin-left: -265px;
 }
 .services-dropdown {
   margin-left: -251px;
