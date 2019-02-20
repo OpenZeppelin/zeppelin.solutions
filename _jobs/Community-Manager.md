@@ -1,7 +1,7 @@
 ---
 layout: job
 title: 'Community Manager'
-location: 'Buenos Aires - Global'
+location: 'Global'
 navigation_weight: 1
 tags:
 - communications
