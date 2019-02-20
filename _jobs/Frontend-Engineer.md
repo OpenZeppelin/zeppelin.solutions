@@ -1,16 +1,16 @@
 ---
 layout: job
 title: 'Frontend Engineer'
-location: 'Buenos Aires / Remote'
-navigation_weight: 2
-date: 2016-04-20 00:00:00 +0000
-categories: []
-sub_heading: 'Build the interface that connects smart contracts with users.'
-description: 'The key to adoption is creating the best UI/UX experience. We’re looking for a Frontend Engineer to help us connect smart contracts with our users.
-
-Our Frontend Engineer will build the interfaces of our mid-layer blockchain architecture as well as the frontend for the sample and experimental apps we built using Open Zeppelin and Zeppelin OS.'
+location: 'Buenos Aires - Global'
+navigation_weight: 1
 tags:
 - engineering
+date: 2018-02-25 19:07:50 +0000
+sub_heading: 'Build the interface that connects smart contracts with users.'
+description: 'The key to adoption is creating the best UI/UX experience. We’re looking for a Frontend Engineer to help us connect smart contracts with our users.
+<br/>
+<br/>
+Our Frontend Engineer will create the interfaces of the applications we build as well as sample Dapps to showcase our tools.'
 slug: ''
 ---
 
@@ -18,19 +18,16 @@ slug: ''
   <h3 class="left-aligned job-title">What you'll do</h3>
   <ul>
     <li>
-      <p class="small left-aligned">Grow and energize the Asian community of OpenZeppelin & ZeppelinOS advocates.</p>
+      <p class="small left-aligned">Research, build and test user facing interfaces for <a href="https://openzeppelin.org" target="_blank">Open Zeppelin</a> and <a href="https://zeppelinos.org" target="_blank">Zeppelin OS</a>.</p>
     </li>
     <li>
-      <p class="small left-aligned">Motivate leaders in the community to contribute code, content, evangelize and act as references.</p>
+      <p class="small left-aligned">Experiment and develop user interfaces for sample and experimental apps built on top of Open Zeppelin and Zeppelin OS.</p>
     </li>
     <li>
-      <p class="small left-aligned">Partner with the rest of the marketing organization to make community an extension of our marketing team through contributed content, references, and more.</p>
+      <p class="small left-aligned">Work closely with the product and engineering teams to define and implement new product features.</p>
     </li>
     <li>
-      <p class="small left-aligned">Track metrics around the success of the OpenZeppelin & ZeppelinOS community, including overall community participation and downstream impact on our project.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Plan, coordinate, organize and cover meetups, hackathons and other events in Asia, with a focus in China and Hong Kong.</p>
+      <p class="small left-aligned">Collaborate with our designer to develop templates, usability improvements and functionality to our websites.</p>
     </li>
   </ul>
 </div>
@@ -38,36 +35,34 @@ slug: ''
   <h3 class="left-aligned job-title">Who we're looking for</h3>
   <ul>
     <li>
-      <p class="small left-aligned">An excellent communicator, with proficient written and spoken communication skills in English and Mandarin.</p>
+      <p class="small left-aligned">You have expert understanding of HTML and CSS.</p>
     </li>
     <li>
-      <p class="small left-aligned">An individual experienced in working remotely with international teams.</p>
+      <p class="small left-aligned">You have knowledge in Javascript and React.</p>
     </li>
     <li>
-      <p class="small left-aligned">An active member or contributor to different local events, meetups and/or community channels.</p>
+      <p class="small left-aligned">You have extensive experience with web design, web application and UI engineering.</p>
     </li>
     <li>
-      <p class="small left-aligned">A passionate relationship-builder with strong networking and organizational skills.</p>
+      <p class="small left-aligned">You have knowledge of Git.</p>
     </li>
     <li>
-      <p class="small left-aligned">An organized, data-driven professional with a love for self time management.</p>
+      <p class="small left-aligned">You have proven ability to ship high-quality, well-crafted code within tight deadlines.</p>
     </li>
     <li>
-      <p class="small left-aligned">Extroverted personality - you should get energy from interacting with others.</p>
-    </li>
-  </ul>
-</div>
-<div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">Nice-to-haves</h3>
-  <ul>
-    <li>
-      <p class="small left-aligned">Previous experience contributing or managing crypto or open source projects.</p>
+      <p class="small left-aligned">You put a focus on details and design.</p>
     </li>
     <li>
-      <p class="small left-aligned">Lives or lived in China for some time during the past 3 years.</p>
+      <p class="small left-aligned">You're an autonomous individual with a proactive attitude.</p>
     </li>
     <li>
-      <p class="small left-aligned">Spent 2+ years living or studying in the US or other Western countries, or working with a project based in the US or other Western countries.</p>
+      <p class="small left-aligned">You have advanced english communication skills- most of our internal and external communication is in English.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">You may have previous experience contributing in open source projects.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">You may have technical understanding of blockchain concepts.</p>
     </li>
   </ul>
 </div>
