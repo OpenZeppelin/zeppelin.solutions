@@ -6,7 +6,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Zeppelin
 email: contact@openzeppelin.org
-description: Zeppelin builds key infrastructure to develop and operate smart contracts systems. We also conduct security audits of decentralized applications.
+description: Zeppelin - Infrastructure for decentralized systems
 permalink: "/:path/"
 defaults:
   - scope:
@@ -26,7 +26,7 @@ collections:
     output: true
   jobs:
     output: true
-    permalink: "/joinus/:path/"
+    permalink: "/careers/:path/"
     
 # Build settings
 markdown: kramdown
