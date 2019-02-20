@@ -1,7 +1,6 @@
 ---
 ---
 
-
 #jobs #principal, .job-opening {
   background: linear-gradient(to bottom right,#2F99D8, #3EBBE5)!important;
   height: 50vh;
@@ -107,7 +106,7 @@ h2.row.values {
 }
 
 .job-opening {
-  min-height: auto!important;
+  min-height: 300px!important;
   height: auto!important;
 }
 #job-openings {

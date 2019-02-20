@@ -435,7 +435,6 @@ p a {
 }
 
 
-
 /*Compartidas*/
 .request-audit-container {
   display: flex;
@@ -465,5 +464,8 @@ button.btn-long, a.btn-long {
 }
 
 .job-opening.hero-background:before {
-  background: url(/images/bg_triangle_jobs.svg);;
+  background: url(/images/bg_triangle_jobs.svg);
+}
+.job-opening.hero-background {
+  min-height: 300px;
 }
