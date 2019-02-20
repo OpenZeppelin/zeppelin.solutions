@@ -181,12 +181,23 @@ blockquote {
   border-width: 3px;
   padding-left: 1rem;
 }
+blockquote .shorter {
+  max-width: 450px;
+}
 p.small, blockquote.small {
   opacity: 0.8;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.15em;
+  font-size: 1.3em;
   line-height: 1.5;
   color: #4a4a4a;
+}
+blockquote.small {
+  opacity: 0.8;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: #4a4a4a;
+  max-width: 450px;
 }
 p.x-small {
   opacity: 0.8;
