@@ -351,10 +351,6 @@ layout: default
       <button class="opening-btn active" id="all-positions-btn">All positions</button>
       <button class="opening-btn" id="engineering-btn">Engineering</button>
       <button class="opening-btn" id="communications-btn">Communications</button>
-      <!--
-      <button class="opening-btn" id="engineering-btn">Engineering</button>
-      <button class="opening-btn" id="marketing-btn">Marketing</button>
-      -->
     </div>
     <div class="opening-box" style="width: 100%;" id="all-positions-box">
       {% for job in site.jobs %}
@@ -405,25 +401,6 @@ layout: default
         {% endif %}
       {% endfor %}
     </div>
-    <!--
-    <div class="hidden opening-box" style="width: 100%;" id="operations-box">
-      {% for job in site.jobs %}
-       {% if job.tags contains 'operations' %}
-        <div class="job-card">
-          <div>
-            <h4>{{ job.location | slice: 0, 80 }}</h4>
-            <h1><a href="{{ job.url | absolute_url }}">{{ job.title }}</a></h1>
-          </div>
-          <div>
-            <a href="{{ job.url | absolute_url }}">
-              <img src="../images/ic_arrow_right_blue.svg"/>
-            </a>
-          </div>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    -->
   </div>
 </section>
 <section class="role" style="padding-top: 40px;">
