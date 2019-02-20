@@ -1,15 +1,13 @@
 ---
 layout: job
 title: 'Software Engineer'
-location: 'Buenos Aires / Remote'
+location: 'Buenos Aires - Global'
 navigation_weight: 1
 tags:
 - engineering
 date: 2018-02-25 19:07:50 +0000
 sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
-description: 'You have vision, innovation, passion, technical ability, a drive to deliver, as well as collaboration and execution. You are not risk averse and want to build products that will change the world.
-
-Get a first hand view of what it takes to build and deliver software in the blockchain technical security space and help us build and protect the infrastructure of a new economy.'
+description: 'Zeppelin builds the industry security standard for architecting and deploying smart contract systems in public blockchains. We proudly build the most widely used open source infrastructure tools: the OpenZeppelin smart contracts library powers 3000 public projects and has over 6500 Github stars, while the ZeppelinOS development toolset is leading the way in upgradeability and secure code reuse. We also conduct in-depth system security audits to high-impact smart contract systems, such as Augur, the RCN token, or the Solidity compiler. Learn more about us!'
 slug: ''
 ---
 
@@ -17,19 +15,16 @@ slug: ''
   <h3 class="left-aligned job-title">What you'll do</h3>
   <ul>
     <li>
-      <p class="small left-aligned">Grow and energize the Asian community of OpenZeppelin & ZeppelinOS advocates.</p>
+      <p class="small left-aligned">Design and implement open source developer tools for building Ethereum applications as well as reusable smart contracts packages.</p>
     </li>
     <li>
-      <p class="small left-aligned">Motivate leaders in the community to contribute code, content, evangelize and act as references.</p>
+      <p class="small left-aligned">Create decentralized web applications to support the Ethereum developer community.</p>
     </li>
     <li>
-      <p class="small left-aligned">Partner with the rest of the marketing organization to make community an extension of our marketing team through contributed content, references, and more.</p>
+      <p class="small left-aligned">Design and implement cryptoeconomic systems.</p>
     </li>
     <li>
-      <p class="small left-aligned">Track metrics around the success of the OpenZeppelin & ZeppelinOS community, including overall community participation and downstream impact on our project.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Plan, coordinate, organize and cover meetups, hackathons and other events in Asia, with a focus in China and Hong Kong.</p>
+      <p class="small left-aligned">Help coordinate the open source community around the tools that we build.</p>
     </li>
   </ul>
 </div>
@@ -37,36 +32,31 @@ slug: ''
   <h3 class="left-aligned job-title">Who we're looking for</h3>
   <ul>
     <li>
-      <p class="small left-aligned">An excellent communicator, with proficient written and spoken communication skills in English and Mandarin.</p>
+      <p class="small left-aligned">You are a self-starter that works independently, with minimal supervision.</p>
     </li>
     <li>
-      <p class="small left-aligned">An individual experienced in working remotely with international teams.</p>
+      <p class="small left-aligned">You have the desire to learn a new technology.</p>
     </li>
     <li>
-      <p class="small left-aligned">An active member or contributor to different local events, meetups and/or community channels.</p>
+      <p class="small left-aligned">You posses active interest in blockchain technology, decentralization and cryptography.</p>
     </li>
     <li>
-      <p class="small left-aligned">A passionate relationship-builder with strong networking and organizational skills.</p>
+      <p class="small left-aligned">You have a security oriented mindset - we are creating tools that will power applications worth millions of dollars and attractive to hackers.</p>
     </li>
     <li>
-      <p class="small left-aligned">An organized, data-driven professional with a love for self time management.</p>
+      <p class="small left-aligned">You are interested in working in a collaborative environment.</p>
     </li>
     <li>
-      <p class="small left-aligned">Extroverted personality - you should get energy from interacting with others.</p>
-    </li>
-  </ul>
-</div>
-<div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">Nice-to-haves</h3>
-  <ul>
-    <li>
-      <p class="small left-aligned">Previous experience contributing or managing crypto or open source projects.</p>
+      <p class="small left-aligned">You possess good communication skills.</p>
     </li>
     <li>
-      <p class="small left-aligned">Lives or lived in China for some time during the past 3 years.</p>
+      <p class="small left-aligned">You possess the skills that will enable you to work successfully in a team.</p>
     </li>
     <li>
-      <p class="small left-aligned">Spent 2+ years living or studying in the US or other Western countries, or working with a project based in the US or other Western countries.</p>
+      <p class="small left-aligned">You have advanced english communication skills- most of our internal and external communication is in english.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">You have experience with the following technologies: Node.js, Typescript, Javascript, React and Web3.js.</p>
     </li>
   </ul>
 </div>
