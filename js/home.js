@@ -41,11 +41,11 @@ $( document ).ready(function(){
     $('#operations-box').removeClass('hidden');
 	});
 
-  $('#marketing-btn').on( "click", function() {
+  $('#communications-btn').on( "click", function() {
 	  $('.opening-btn').removeClass('active');
-    $('#marketing-btn').addClass('active');
+    $('#communications-btn').addClass('active');
     $('.opening-box').addClass('hidden');
-    $('#marketing-box').removeClass('hidden');
+    $('#communications-box').removeClass('hidden');
 	});
 
   $('#international-btn').on( "click", function() {
