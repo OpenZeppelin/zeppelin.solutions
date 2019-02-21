@@ -1,7 +1,7 @@
 ---
 layout: job
 title: 'Frontend Engineer'
-location: 'Buenos Aires - Global'
+location: 'Global'
 navigation_weight: 1
 tags:
 - engineering

@@ -1,7 +1,7 @@
 ---
 layout: job
 title: 'Security Researcher'
-location: 'Buenos Aires - Global'
+location: 'Global'
 navigation_weight: 1
 tags:
 - engineering
