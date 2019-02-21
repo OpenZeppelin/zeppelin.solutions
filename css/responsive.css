@@ -25,6 +25,7 @@
 	#build .col { padding: 0 15px; }
 	#build .mobile-column { flex-direction: column; }
 	.team-subtitle { max-width: 100% !important;}
+	p.long, h1.long, .long {max-width: 100% !important;}
 }
 
 @media (max-width: 600px) { /*Para monitores small*/
