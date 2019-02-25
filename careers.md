@@ -1,4 +1,0 @@
----
-layout: careers
-title: Careers
----
