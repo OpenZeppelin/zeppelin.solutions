@@ -26,8 +26,8 @@ collections:
     output: true
   jobs:
     output: true
-    permalink: "/careers/:path/"
-    
+    permalink: "/jobs/:path/"
+
 # Build settings
 markdown: kramdown
 theme: minima
