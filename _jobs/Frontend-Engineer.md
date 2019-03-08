@@ -18,10 +18,10 @@ slug: ''
   <h3 class="left-aligned job-title">What you'll do</h3>
   <ul>
     <li>
-      <p class="small left-aligned">Research, build and test user facing interfaces for <a href="https://openzeppelin.org" target="_blank">Open Zeppelin</a> and <a href="https://zeppelinos.org" target="_blank">Zeppelin OS</a>.</p>
+      <p class="small left-aligned">Research, build and test user facing interfaces for <a href="https://openzeppelin.org" target="_blank">OpenZeppelin</a> and <a href="https://zeppelinos.org" target="_blank">ZeppelinOS</a>.</p>
     </li>
     <li>
-      <p class="small left-aligned">Experiment and develop user interfaces for sample and experimental apps built on top of Open Zeppelin and Zeppelin OS.</p>
+      <p class="small left-aligned">Experiment and develop user interfaces for sample and experimental apps built on top of OpenZeppelin and ZeppelinOS.</p>
     </li>
     <li>
       <p class="small left-aligned">Work closely with the product and engineering teams to define and implement new product features.</p>
