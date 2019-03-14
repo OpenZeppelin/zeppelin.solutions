@@ -12,6 +12,7 @@ layout: default
     background-image: linear-gradient(247deg, #0a2a5a, #000e1d)!important;
     margin: 70px 0;
     padding-top: 115px;
+    padding-bottom: 100px;
   }
   .landing-hero {
     background-image: linear-gradient(247deg, #0a2a5a, #000e1d)!important;
@@ -44,7 +45,17 @@ layout: default
   }
   .blueprint {
     padding-bottom: 0;
+    margin-bottom: -80px !important;
+  }
+  .quote {
+    padding-bottom: 0;
+    margin-top: 4rem;
     margin-bottom: -100px !important;
+  }
+  .quote-grey {
+    height: 140px;
+    margin-top: -140px;
+    background-color: #f7f7f8 !important;
   }
   @media (max-width: 900px) {
     .standards { padding-top: 100px; }
@@ -78,21 +89,29 @@ layout: default
     {% include product-card.html %}
   </div>
 </section>
-<section class="standards hero-background">
-  <div class="container">
-    <h4>We set ever-higher standards for the industry</h4>
-    <div class="flex xs-column">
-      <div class="standard-box">
-        <p class="standard-title">$1.5+ Billion</p>
-        <p class="middle">economy of digital assets powered by our tools</p>
+<section class="standards">
+    <div class="container">
+      <h4>We set ever-higher standards for the industry</h4>
+      <div class="flex xs-column">
+        <div class="standard-box">
+          <p class="standard-title">$1.5+ Billion</p>
+          <p class="middle">economy of digital assets powered by our tools</p>
+        </div>
+        <div class="standard-box">
+          <p class="standard-title">$600+ Million</p>
+          <p class="middle">collected by projects using our audited systems</p>
+        </div>
       </div>
-      <div class="standard-box">
-        <p class="standard-title">$600+ Million</p>
-        <p class="middle">collected by projects using our audited systems</p>
-      </div>
+  </div>
+
+  <div class="quote row" id="leading-projects">
+    <div class="container centered">
+      {% include landing-quote.html %}
     </div>
+    <div class="quote-grey"></div>
   </div>
 </section>
+
 <section class="depth grey">
   <div class="container request-audit-container xs-column">
     <div class="img-box hide-on-med-and-up">
