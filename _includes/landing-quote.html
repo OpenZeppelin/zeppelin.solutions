@@ -1,0 +1,73 @@
+<style type="text/css">
+  .landing-quote .card {
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0px 5px 30px 2px rgba(175, 175, 175, 0.4);
+    background-repeat: no-repeat;
+    background-position: 120% 65%;
+    background-size: 32% 54%;
+  }
+
+  @media (max-width: 900px) {
+    .flex-box.mobile-column.container.v-quote { width: 100%; }
+    .landing-quote .card h3 img { height: 66px !important; }
+    .landing-quote .card .name { padding: 0 0 0 10px; }
+  }
+
+  .landing-quote .card h6 {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 1.6em;
+    font-weight: 300;
+    font-style: oblique;
+    line-height: 1.67;
+    color: #3c3c3c;
+    text-align: left;
+  }
+  .landing-quote .card h3 {
+    opacity: 0.8;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 2.14;
+    color: #3c3c3c;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .landing-quote .card h3 .strong{
+    font-weight: 800;
+  }
+  .landing-quote .card .name {
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+  .landing-quote .card .name p {
+    line-height: 1.2;
+  }
+  .landing-quote .card h3 img{
+    height: 56px;
+  }
+  .landing-quote .card-margin {
+    margin: 25px 0 0 0;
+  }
+  .landing-quote .card-content{
+    padding: 2rem;
+  }
+</style>
+
+
+<div class="flex-box mobile-column container landing-quote" style="justify-content: center;">
+  <div class="card darken-1">
+    <div class="card-content">
+      <div>
+        <h6>“I have a very high opinion of the Zeppelin team”</h6>
+        <h3 class="card-margin">
+          <img class="circle responsive-img" src="../images/brendan.jpg" alt="Brendan Eich">
+          <div class="name">
+            <span class="strong">Brendan Eich</span><p><span>Founder of Mozilla and Brave, creator of Javascript. </br> Security audit client</span></p>
+          </div>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
