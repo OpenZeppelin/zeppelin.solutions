@@ -1,4 +1,0 @@
----
-layout: security
-title: Security
----
