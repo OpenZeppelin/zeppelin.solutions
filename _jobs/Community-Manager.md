@@ -17,6 +17,9 @@ slug: ''
   <br/>
   <ul>
     <li>
+      <p class="small left-aligned">Moderate and act as a first line of support in our channels, helping users with technical issues. </p>
+    </li>
+    <li>
       <p class="small left-aligned">Grow and energize the worldwide community of OpenZeppelin & ZeppelinOS advocates.</p>
     </li>
     <li>
