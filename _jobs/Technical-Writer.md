@@ -18,9 +18,6 @@ slug: ''
   <br/>
   <ul>
     <li>
-      <p class="small left-aligned">Work with Product & Engineering to craft the words that define the benefits, features, and value of Zeppelin technology to multiple audiences.</p>
-    </li>
-    <li>
     <p class="small left-aligned">Write technical documentation for our products including "how to" guides, reference manuals, technical overviews, and more. Clearly communicate complex and technical features by taking a user-centric approach.</p>
     </li>
     <li>
