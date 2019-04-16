@@ -1,7 +1,7 @@
 ---
 layout: job
 title: 'Community Manager'
-location: 'Global'
+location: 'Global  |  Full Time'
 navigation_weight: 1
 tags:
 - communications

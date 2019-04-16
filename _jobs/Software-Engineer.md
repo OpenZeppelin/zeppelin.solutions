@@ -1,7 +1,7 @@
 ---
 layout: job
 title: 'Software Engineer'
-location: 'Global'
+location: 'Global  |  Full Time'
 navigation_weight: 1
 tags:
 - engineering
