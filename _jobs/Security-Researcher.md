@@ -1,7 +1,7 @@
 ---
 layout: job
 title: 'Security Researcher'
-location: 'Global'
+location: 'Global  |  Full Time'
 navigation_weight: 1
 tags:
 - engineering
