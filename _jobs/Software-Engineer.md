@@ -15,13 +15,14 @@ slug: ''
   <h3 class="left-aligned job-title">What you'll do</h3>
   <ul>
     <li>
-      <p class="small left-aligned">Design and implement open source developer tools for building Ethereum applications as well as reusable smart contracts packages.</p>
+      <p class="small left-aligned">
+      Design and implement open source developer tools for building Ethereum applications as well as reusable smart contracts packages.
+      </p>
     </li>
     <li>
-      <p class="small left-aligned">Create decentralized web applications to support the Ethereum developer community.</p>
-    </li>
-    <li>
-      <p class="small left-aligned">Design and implement cryptoeconomic systems.</p>
+      <p class="small left-aligned">
+      Create decentralized web applications to support the Ethereum developer community.
+      </p>
     </li>
     <li>
       <p class="small left-aligned">Help coordinate the open source community around the tools that we build.</p>
