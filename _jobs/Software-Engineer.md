@@ -1,6 +1,6 @@
 ---
 layout: job
-title: 'Software Engineer'
+title: 'Software Engineer,Product'
 location: 'Global  |  Full Time'
 navigation_weight: 1
 tags:
@@ -15,13 +15,13 @@ slug: ''
   <h3 class="left-aligned job-title">What you'll do</h3>
   <ul>
     <li>
-      <p class="small left-aligned">Design and implement open source developer tools for building Ethereum applications as well as reusable smart contracts packages.</p>
-    </li>
-    <li>
       <p class="small left-aligned">Create decentralized web applications to support the Ethereum developer community.</p>
     </li>
     <li>
-      <p class="small left-aligned">Design and implement cryptoeconomic systems.</p>
+      <p class="small left-aligned">Own products end-to-end, leading the design and implementation efforts across different layers of the stack.</p>
+    </li>
+    <li>
+      <p class="small left-aligned">Work with the Product team to measure, iterate and run experiments to help our products gain traction amongst the developer community.</p>
     </li>
     <li>
       <p class="small left-aligned">Help coordinate the open source community around the tools that we build.</p>
@@ -32,22 +32,22 @@ slug: ''
   <h3 class="left-aligned job-title">Who we're looking for</h3>
   <ul>
     <li>
-      <p class="small left-aligned">You are a self-starter that works independently, with minimal supervision.</p>
+      <p class="small left-aligned">You have experience designing, building, and shipping products from beginning to end with minimal supervision.</p>
     </li>
     <li>
-      <p class="small left-aligned">You have the desire to learn a new technology.</p>
+      <p class="small left-aligned">You enjoy being a generalist, working on both the frontend, backend, and everything in between to solve problems and delight users.</p>
     </li>
     <li>
-      <p class="small left-aligned">You posses active interest in blockchain technology, decentralization and cryptography.</p>
+      <p class="small left-aligned">You are actively interested in blockchain technology, decentralization, and cryptography.</p>
     </li>
     <li>
-      <p class="small left-aligned">You have a security oriented mindset - we are creating tools that will power applications worth millions of dollars and attractive to hackers.</p>
+      <p class="small left-aligned">You can communicate complex ideas clearly to both technical and non-technical audiences.</p>
     </li>
     <li>
-      <p class="small left-aligned">You are interested in working in a collaborative environment.</p>
+      <p class="small left-aligned">You have the skills that will enable you to work successfully in a remote team.</p>
     </li>
     <li>
-      <p class="small left-aligned">You possess good communication skills.</p>
+      <p class="small left-aligned">You have advanced English communication skills- all of our internal and external communication is in English.</p>
     </li>
     <li>
       <p class="small left-aligned">You possess the skills that will enable you to work successfully in a team.</p>
@@ -56,7 +56,7 @@ slug: ''
       <p class="small left-aligned">You have advanced english communication skills- most of our internal and external communication is in english.</p>
     </li>
     <li>
-      <p class="small left-aligned">You have experience with the following technologies: Node.js, Typescript, Javascript, React and Web3.js.</p>
+      <p class="small left-aligned">You may have experience with the following technologies: Node.js, Typescript, Javascript, React.</p>
     </li>
   </ul>
 </div>
