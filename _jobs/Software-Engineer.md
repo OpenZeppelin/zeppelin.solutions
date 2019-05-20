@@ -54,7 +54,7 @@ slug: ''
       <p class="small left-aligned">You possess the skills that will enable you to work successfully in a team.</p>
     </li>
     <li>
-      <p class="small left-aligned"You may have experience with the following technologies: Node.js, Typescript, Javascript, React..</p>
+      <p class="small left-aligned">You may have experience with the following technologies: Node.js, Typescript, Javascript, React.</p>
     </li>
   </ul>
 </div>
