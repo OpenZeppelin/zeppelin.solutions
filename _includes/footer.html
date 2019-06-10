@@ -5,6 +5,7 @@
     padding: 25px 0 60px;
     margin-bottom: 0;
   }
+
   #footer a {
     display: block;
     font-family: Helvetica;
@@ -31,63 +32,77 @@
     margin-bottom: 10px;
     text-align: left;
   }
+
   #footer a:hover {
     opacity: 1;
   }
-  .footer-box, .flex-box, .link-box {
+
+  .footer-box,
+  .flex-box,
+  .link-box {
     display: flex;
     justify-content: space-between;
   }
-  .link-box, .footer-box {
+
+  .link-box,
+  .footer-box {
     flex-wrap: wrap;
   }
-  .link-box div{
+
+  .link-box div {
     width: 130px;
   }
+
   @media (max-width: 900px) {
-    footer img { margin-bottom: 30px; }
-  }
-  .no-opacity {
-    opacity: 1!important;
+    footer img {
+      margin-bottom: 30px;
+    }
   }
 
+  .no-opacity {
+    opacity: 1 !important;
+  }
 </style>
 
 <footer class="row" id="footer">
   <div class="footer-box container mobile-column">
     <div>
-      <a href="/" class="no-opacity"><img src="/images/zeppelin_logo_footer.svg"/></a>
-    </div>
-    <div class="link-box">
-      <div>
-        <h3>Projects</h3>
-        <a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a>
-        <a href="https://zeppelinos.org/" target="_blank">ZeppelinOS</a>
-      </div>
-      <div>
-        <h3>Services</h3>
-        <a href="/security-audits/">Security Audits</a>
-      </div>
-      <div>
-        <h3>Company</h3>
-        <a href="/about/">About Us</a>
-        <a href="/jobs/">Jobs</a>
-      </div>
-      <div>
-        <h3>Community</h3>
-        <a href="https://forum.zeppelin.solutions" target="_blank">
-          Forum
-        </a>
-        <a href="https://blog.zeppelin.solutions/" target="_blank">
-          Blog
-        </a>
-        <a href="https://twitter.com/ZeppelinOrg" target="_blank">
-          Twitter
-        </a>
-      </div>
+      <a href="/" class="no-opacity"><img src="/images/zeppelin_logo_footer.svg" /></a>
     </div>
     <div>
-
+      <h3>Products</h3>
+      <a href="https://openzeppelin.org/" target="_blank">Contracts</a>
+      <a href="https://zeppelinos.org/" target="_blank">SDK</a>
+      <a href="https://zeppelinos.org/" target="_blank">Starter Kit</a>
     </div>
+    <div>
+      <h3>Security</h3>
+      <a href="/security-audits/">Security Audits</a>
+    </div>
+    <div>
+      <h3>Learn</h3>
+      <a href="/about/">Documentation</a>
+      <a href="/jobs/">Forum</a>
+      <a href="/jobs/">Ethernaut</a>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <a href="https://forum.zeppelin.solutions" target="_blank">
+        About Us
+      </a>
+      <a href="https://blog.zeppelin.solutions/" target="_blank">
+        Github
+      </a>
+      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+        Blog
+      </a>
+      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+        Twitter
+      </a>
+      <a href="https://twitter.com/ZeppelinOrg" target="_blank">
+        Telegram
+      </a>
+    </div>
+  </div>
   </div>
 </footer>
