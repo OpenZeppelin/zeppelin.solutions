@@ -8,3 +8,30 @@ body {
   background-color: white;
   font-size: 15px;
 }
+
+/** Common Shared Styles **/
+
+.container {
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.btn {
+  background: #4e5ee4;
+  box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.81);
+  border-radius: 6px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
