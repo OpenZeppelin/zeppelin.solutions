@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'silkamedium';
+  src: url('../fonts/silka-medium-webfont.eot');
+  src: url('../fonts/silka-medium-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/silka-medium-webfont.woff2') format('woff2'),
+    url('../fonts/silka-medium-webfont.woff') format('woff'),
+    url('../fonts/silka-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'silkaregular';
+  src: url('../fonts/silka-regular-webfont.eot');
+  src: url('../fonts/silka-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/silka-regular-webfont.woff2') format('woff2'),
+    url('../fonts/silka-regular-webfont.woff') format('woff'),
+    url('../fonts/silka-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -5,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', 'Helvetica', -apple-system, BlinkMacSystemFont,
+  font-family: 'silkaregular', 'Helvetica', -apple-system, BlinkMacSystemFont,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
