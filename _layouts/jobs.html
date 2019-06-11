@@ -80,133 +80,154 @@ layout: default
 		</div>
 	</section>
 
+	<section class="section section-job-promo">
+		<div class="bg">
+			<div class="grid photo-wall">
+				<div class="row">
+					<div class="col">
+						<img class="photo-wall-img" src="../images/photo_01.png">
+					</div>
+					<div class="col">
+						<img class="photo-wall-img" src="../images/photo_02.png">
+					</div>
+					<div class="col">
+						<img class="photo-wall-img" src="../images/photo_03.png">
+					</div>
+					<div class="col">
+						<img class="photo-wall-img" src="../images/photo_04.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="job-wall-grid">
+			<div class="container grid">
+				<div class="row">
+					<div class="col">
+						<div class="box">
+							<h3 class="box-title">Flexible schedules</h3>
+							<p class="box-description">We focus on achievements, not working hours. Find the rhythm that works best for you.</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<h3 class="box-title">Flexible paid time off</h3>
+							<p class="box-description">We believe in the importance of breaks to lead a balanced life. You decide when to take your vacations.</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<h3 class="box-title">Buenos Aires Office</h3>
+							<p class="box-description">You’re welcome to work from our  office whenever you want. We’re pet friendly, have green spaces, healthy food, and yoga classes.</p>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-jobs-openings">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">
+					Current openings
+				</h2>
+				<p class="section-subtitle">Find the best place for you in Zeppelin</p>
+			</div>
+
+			<div class="section-content">
+				<div class="positions-list-container">
+					<ul class="positions-list">
+						<li class="positions-list-item active" id="all-positions-btn">All Positions</li>
+						<li class="positions-list-item" id="engineering-btn">Engineering</li>
+						<li class="positions-list-item" id="communications-btn">Communications</li>
+					</ul>
+				</div>
+
+				<div class="opening-box-listing" id="all-positions-box">
+					<ul class="job-card-list">
+						{% for job in site.jobs %}
+							<li class="job-card">
+								<div class="job-card-content">
+									<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
+									<a class="job-card-title" href="{{ job.url }}">{{ job.title }}</a>
+								</div>
+								<div class="job-card-action">
+									<a href="{{ job.url }}">
+										<img src="../images/ic_arrow_right_blue.svg"/>
+									</a>
+								</div>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+
+				<div class="opening-box-listing hidden" id="engineering-box">
+					<ul class="job-card-list">
+					{% for job in site.jobs %}
+					{% if job.tags contains 'engineering' %}
+							<li class="job-card">
+								<div class="job-card-content">
+									<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
+									<a class="job-card-title" href="{{ job.url }}">{{ job.title }}</a>
+								</div>
+								<div class="job-card-action">
+									<a href="{{ job.url }}">
+										<img src="../images/ic_arrow_right_blue.svg"/>
+									</a>
+								</div>
+							</li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				</div>
+
+				<div class="opening-box-listing hidden" id="communications-box">
+					<ul class="job-card-list">
+					{% for job in site.jobs %}
+					{% if job.tags contains 'communications' %}
+							<li class="job-card">
+								<div class="job-card-content">
+									<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
+									<a class="job-card-title" href="{{ job.url }}">{{ job.title }}</a>
+								</div>
+								<div class="job-card-action">
+									<a href="{{ job.url }}">
+										<img src="../images/ic_arrow_right_blue.svg"/>
+									</a>
+								</div>
+							</li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section job-opening-role">
+		<div class="container">
+			<h2 class="section-title">Don’t see your role here?</h2>
+			<p class="section-subtitle">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
+		</div>
+	</section>
+
+
+
+
 </main>
 
-<section class="section section-job-promo">
-
-	<div class="bg">
-		<div class="grid photo-wall">
-			<div class="row">
-				<div class="col">
-					<img class="photo-wall-img" src="../images/photo_01.png">
-				</div>
-				<div class="col">
-					<img class="photo-wall-img" src="../images/photo_02.png">
-				</div>
-				<div class="col">
-					<img class="photo-wall-img" src="../images/photo_03.png">
-				</div>
-				<div class="col">
-					<img class="photo-wall-img" src="../images/photo_04.png">
-				</div>
-			</div>
-		</div>
-	</div>
 
 
-	<div class="job-wall-grid">
-		<div class="container grid">
-			<div class="row">
-				<div class="col">
-					<div class="box">
-						<h3 class="box-title">Flexible schedules</h3>
-						<p class="box-description">We focus on achievements, not working hours. Find the rhythm that works best for you.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="box">
-						<h3 class="box-title">Flexible paid time off</h3>
-						<p class="box-description">We believe in the importance of breaks to lead a balanced life. You decide when to take your vacations.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="box">
-						<h3 class="box-title">Buenos Aires Office</h3>
-						<p class="box-description">You’re welcome to work from our  office whenever you want. We’re pet friendly, have green spaces, healthy food, and yoga classes.</p>
-					</div>
-			</div>
-			</div>
-		</div>
-	</div>
 
-</section>
-
-
-<section class="no-padding-bottom" id="openings">
-  <div class="container centered">
-    <h2 style="margin-bottom: 0;">Current openings</h2>
-    <p class="small" style="margin-top: 5px;">Find the best place for you in Zeppelin</p>
-  </div>
-  <div class="container jobs-container">
-    <div class="job-menu hide-on-small-only">
-      <!-- <button class="location-btn">All locations</button> -->
-      <button class="opening-btn active" id="all-positions-btn">All positions</button>
-      <button class="opening-btn" id="engineering-btn">Engineering</button>
-      <button class="opening-btn" id="communications-btn">Communications</button>
-    </div>
-    <div class="opening-box" style="width: 100%;" id="all-positions-box">
-      {% for job in site.jobs %}
-        <div class="job-card">
-          <div>
-            <h4>{{ job.location | slice: 0, 80 }}</h4>
-            <h1><a href="{{ job.url }}">{{ job.title }}</a></h1>
-          </div>
-          <div>
-            <a href="{{ job.url }}">
-              <img src="../images/ic_arrow_right_blue.svg"/>
-            </a>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="hidden opening-box" style="width: 100%;" id="engineering-box">
-      {% for job in site.jobs %}
-       {% if job.tags contains 'engineering' %}
-        <div class="job-card">
-          <div>
-            <h4>{{ job.location | slice: 0, 80 }}</h4>
-            <h1><a href="{{ job.url }}">{{ job.title }}</a></h1>
-          </div>
-          <div>
-            <a href="{{ job.url }}">
-              <img src="../images/ic_arrow_right_blue.svg"/>
-            </a>
-          </div>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    <div class="hidden opening-box" style="width: 100%;" id="communications-box">
-      {% for job in site.jobs %}
-       {% if job.tags contains 'communications' %}
-        <div class="job-card">
-          <div>
-            <h4>{{ job.location | slice: 0, 80 }}</h4>
-            <h1><a href="{{ job.url }}">{{ job.title }}</a></h1>
-          </div>
-          <div>
-            <a href="{{ job.url }}">
-              <img src="../images/ic_arrow_right_blue.svg"/>
-            </a>
-          </div>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-<section class="role" style="padding-top: 40px;">
-  <div class="container centered">
-    <h2 class="small" style="margin-bottom: 0;">Don’t see your role here?</h2>
-    <p class="small" style="margin-top: 5px;">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
-  </div>
-</section>
-<section class="grey hiring">
-  <div class="container centered">
-    <h2>Hiring process</h2>
-    {% include hiring-process.html %}
-  </div>
+<section class="section section-hiring">
   <div class="container">
+    <h2 class="section-title">Hiring process</h2>
+
+    {% include hiring-process.html %}
+
     <ul class="collapsible">
       <li>
         <h3 class="collapsible-header">How long does the hiring process take?</h3>
@@ -238,10 +259,8 @@ layout: default
       </li>
     </ul>
   </div>
-  <div class="container centered">
-    <br/>
-    <br/>
-    <a class="rounded-button empty-button btn-long" href="/jobs#openings">see openings</a>
+  <div class="container center">
+    <a class="btn" href="/jobs#openings">see openings</a>
   </div>
 </section>
 
@@ -315,7 +334,8 @@ layout: default
 	.section.section-content .map {
 		max-height: 200px;
 		flex-grow: 0;
-    flex-basis: auto
+    flex-basis: auto;
+		padding-left: 60px;
 	}
 
 	/* section: section-core-values */
@@ -438,224 +458,170 @@ layout: default
 		line-height: 24px;
   }
 
+	/* section: section-jobs-openings */
 
-
-
-
-
-
-
-
-
-
-  .how-we-work h4, #values h4{
-    opacity: 0.6;
+	.section.section-jobs-openings {
+		background: white;
   }
 
-  #values h3 {
-    opacity: 0.8;
-    font-family: Helvetica;
-    font-size: 20px;
-    line-height: 1.25;
-    color: #4a4a4a;
-    text-align: left;
-    margin-bottom: 0;
-  }
-  #values p {
-    margin-top: 7px;
-  }
-  .value-box {
-    padding: 15px 30px;
-    width: 33%;
-  }
-  #values .flex-box {
-    margin: 0 -30px!important;
-  }
-  .how-we-work {
-    padding-bottom: 2.5rem;
-  }
-  .how-we-work-title {
-    opacity: 0.9;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #4a4a4a;
-    margin-top: 5px;
-  }
-  .role {
-    min-height: auto;
-  }
-  .role h2 {
-    margin-top: 0;
-  }
-  .no-padding-bottom {
-    padding-bottom: 0;
-  }
-  .remote-box {
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px 0 rgba(224, 224, 224, 0.5);
-    text-align: center;
-    padding: 30px 20px 20px 20px;
-    margin: 15px;
-    width: 300px;
-    text-align: left;
-  }
-  .remote-box h3 {
-    text-align: left;
-  }
-  .jobs-photos {
-    display: flex;
-    flex-wrap: nowrap;
-    position: static !important;
-    margin-bottom: -157px!important;
-    padding-bottom: 0;
-    justify-content: center;
-    padding-top: 0;
-  }
-  .jobs-photos img {
-    padding: 2px;
-    max-height: 480px;
-  }
-  #remote-by-default .line {
-    margin-top: 15px;
-    width: 19px;
-    height: 2px;
-    opacity: 0.3;
-    border: solid 1px #3c3c3c;
-  }
-  @media (max-width: 900px) {
-    .how-we-work.true {
-      padding-bottom: 25px;
-    }
-    .how-we-work.first img {
-      margin-top: 20px;
-    }
-    #jobs .flex-box div {
-      margin: 0 !important;
-      width: 100%!important
-    }
-    #jobs .mobile-column {
-      flex-direction: column;
-    }
-    #values h4 {
-      margin-top: 0;
-    }
-    .value-box {
-      width: 100%;
-    }
-    .jobs-photos {
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .jobs-photos img {
-      width: 50%;
-      height: auto;
-    }
-    #remote-by-default .flex-box {
-      align-items: center !important;
-    }
-    .jobs-photos {
-      margin-bottom: -107px!important;
-    }
-    .job-card {
-      margin: 0 0 -1px 0 !important;
-      padding: 1.5rem 0 !important;
-      border-left-color: white !important;
-      border-right-color: white !important;
-      border-top: none !important;
-      border-bottom: solid 2px #d5d5d5 !important;
-    }
+	.section.section-jobs-openings .section-header .section-title {
+		opacity: 0.9;
+		font-size: 1.8rem;
+		color: #282846;
+		text-align: center;
+		line-height: 40px;
+		margin-bottom: 10px;
   }
 
-  .jobs-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .job-menu {
-    width: 223px;
-    margin: 20px 0;
-    padding-right: 20px;
-  }
-  .job-menu button {
-    opacity: 0.6;
-    font-family: Helvetica;
-    font-size: 15px;
-    line-height: 1.67;
-    color: #3c3c3c;
-    display: block;
-    padding: 5px 10px;
-    background: transparent;
-    border: unset;
-  }
-  .job-menu button:hover {
-    opacity: 1;
-    font-weight: 500;
-    color: #000000;
-  }
-  .job-menu button.location-btn {
-    opacity: 1;
-    font-weight: 500;
-    color: #000000;
-    border-bottom: solid 2px blacK;
-    width: 100%;
-    text-align: left;
-    margin-left: 10px;
-    padding-left: 0;
-    margin-bottom: 10px;
+	.section.section-jobs-openings .section-header .section-subtitle {
+		opacity: 0.8;
+		font-size: 1.1rem;
+		color: #282846;
+		text-align: center;
+		line-height: 28px;
+		margin-bottom: 25px;
   }
 
-  .job-menu button.active {
-    opacity: 1;
-    font-weight: 500;
-    color: #000000;
+	.section.section-jobs-openings .section-content {
+		padding: 60px 0;
+		display: flex;
   }
 
-  .job-card {
-    background-color: #ffffff;
-    border: solid 1px #d5d5d5;
-    padding: 1.5rem 1.5rem;
-    text-align: left;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	.section.section-jobs-openings .positions-list .positions-list-item {
+		margin: 20px 0;
+		font-size: 1rem;
+		letter-spacing: 0.54px;
+		opacity: 0.8;
+		color: #282846;
   }
-  .job-card h1 {
-    margin: 0;
-    line-height: 1;
+
+	.section.section-jobs-openings .positions-list .positions-list-item.active {
+		color: #4E5EE4;
   }
-  .job-card h1 a {
-    font-family: Helvetica;
-    font-size: .6em;
-    font-weight: 400;
-    color: #4a4a4a;
-  }
-  .job-card h4 {
-    text-align: left;
-    color: #3c3c3c;
-    margin: 0;
-    opacity: 0.8;
-    font-family: Helvetica;
-    font-size: .75em;
-    letter-spacing: 1.1px;
-  }
-  .how-we-work .flex div {
-    width: 100%;
-  }
-  .how-we-work  img {
-    padding-top: 1rem;
-  }
-  .last-li {
-    border-bottom: solid 0px transparent!important;
-  }
-  .hiring .collapsible-body {
-    margin-top: -16px;
-    margin-bottom: 23px;
-  }
-  .conditions-box {
-    max-width: 940px;
-    margin: auto;
-  }
+
+	.section.section-jobs-openings .section-content .positions-list-container {
+		flex: 0;
+	}
+
+	.section.section-jobs-openings .section-content .opening-box-listing {
+		flex: 1;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card-list {
+		display: flex;
+    align-items: flex-end;
+		flex-direction: column;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card {
+		background: #FFFFFF;
+		border: 1px solid #D5D5D5;
+		height: 100px;
+		padding-left: 28px;
+		padding-right: 28px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		max-width: 800px;
+		flex-grow: 1;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card .job-card-content {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card .job-card-action > a {
+		padding: 10px;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card-location {
+		display: block;
+		opacity: 0.8;
+		font-size: 0.8rem;
+		color: #3C3C3C;
+		letter-spacing: 1.07px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card-title {
+		display: block;
+		font-size: 1.3rem;
+		color: #282846;
+		font-weight: 500;
+		text-decoration: none;
+	}
+
+	/** **/
+
+	.section.job-opening-role {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+	}
+
+	.section.job-opening-role .section-title{
+		opacity: 0.9;
+		font-size: 1.8rem;
+		color: #282846;
+		text-align: center;
+		line-height: 40px;
+
+	}
+
+	.section.job-opening-role .section-subtitle {
+		opacity: 0.8;
+		font-size: 1.1rem;
+		color: #282846;
+		text-align: center;
+		line-height: 28px;
+		margin-bottom: 25px;
+	}
+
+	.section.job-opening-role .section-subtitle > a {
+		color: #4E5EE4;
+		text-decoration: none;
+	}
+
+	/** **/
+
+	.section.section-hiring {
+		background-color: #F8F8FA;
+		padding: 70px 0;
+	}
+
+	.section.section-hiring .section-title{
+		opacity: 0.9;
+		font-size: 1.8rem;
+		color: #282846;
+		text-align: center;
+		line-height: 40px;
+		font-weight: 600;
+	}
+
+	.section.section-hiring .collapsible {
+		width: 700px;
+		margin: 0 auto;
+	}
+
+	.section.section-hiring .collapsible li {
+		height: 80px;
+		border: solid 1px #D5D5D5;
+		padding-left: 28px;
+		padding-right: 28px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-grow: 1;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
 </style>

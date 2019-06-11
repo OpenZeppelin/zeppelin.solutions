@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: 'silka';
-  src: url('silka-bold-webfont.eot');
-  src: url('silka-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('silka-bold-webfont.woff2') format('woff2'),
-    url('silka-bold-webfont.woff') format('woff'),
-    url('silka-bold-webfont.ttf') format('truetype');
+  src: url('../fonts/silka-bold-webfont.eot');
+  src: url('../fonts/silka-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/silka-bold-webfont.woff2') format('woff2'),
+    url('../fonts/silka-bold-webfont.woff') format('woff'),
+    url('../fonts/silka-bold-webfont.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -98,6 +98,14 @@ p {
 }
 
 /** Common Shared Styles **/
+
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
 
 .container {
   width: 1080px;
