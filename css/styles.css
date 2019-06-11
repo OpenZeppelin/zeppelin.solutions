@@ -1,3 +1,8 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Helvetica Neue', 'Helvetica', -apple-system, BlinkMacSystemFont,
@@ -9,6 +14,65 @@ body {
   font-size: 15px;
 }
 
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+html,
+body,
+div,
+article,
+aside,
+section,
+main,
+nav,
+footer,
+header,
+form,
+fieldset,
+legend,
+pre,
+code,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figcaption,
+figure,
+textarea,
+table,
+td,
+th,
+tr,
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='tel'],
+input[type='text'],
+input[type='url'] {
+  box-sizing: border-box;
+}
+
+p {
+  word-break: break-all;
+}
+
 /** Common Shared Styles **/
 
 .container {
@@ -18,17 +82,45 @@ body {
   height: 100%;
 }
 
+/** Grid **/
+
 .grid {
   display: flex;
+  flex-direction: column;
 }
 
-.grid .col {
+.grid > * {
   flex-grow: 1;
 }
 
-.grid .col.no-grow {
+.grid > .row {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.col {
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 1;
+}
+
+.grid .no-grow {
   flex-grow: 0;
 }
+
+/** UI Components **/
 
 .btn {
   background: #4e5ee4;
@@ -46,4 +138,10 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 0.9rem;
+}
+
+/** Sections **/
+
+section.section .title {
+  color: #282846;
 }
