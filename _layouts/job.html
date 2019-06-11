@@ -3,11 +3,6 @@ layout: default
 ---
 
 <style type="text/css">
-  .full {
-    display: flex;
-    flex-direction: row;
-  }
-
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -20,12 +15,14 @@ layout: default
   }
 
   .sidebar li {
-    margin-top: 15px;
+    margin-top: 18px;
+    opacity: 0.8;
   }
 
   .back {
     color: #505cda;
     font-size: 15px;
+    text-decoration: none;
   }
 
   .job {
@@ -35,17 +32,12 @@ layout: default
   }
 
   .job-description {
-    display: flex;
-    flex-direction: column;
     margin-left: 55px;
+    max-width: 100%;
   }
 
   .apply {
     margin-top: 15px;
-  }
-
-  .job-description {
-    max-width: 600px;
   }
 
   .company-description>p {
@@ -54,7 +46,6 @@ layout: default
   }
 
   .job-title-main {
-    font-family: Helvetica;
     font-size: 26px;
     line-height: 1.25;
     color: #3e3a58;
@@ -63,7 +54,6 @@ layout: default
   }
 
   .job-description-title {
-    font-family: Helvetica;
     font-size: 20px;
     line-height: 1.25;
     color: #3e3a58;
@@ -93,8 +83,8 @@ layout: default
 
   .application-information {
     padding: 50px 0;
-    max-width: 600px;
-    margin: auto auto auto auto;
+    max-width: 715px;
+    margin: auto auto;
     line-height: 1.25;
   }
 </style>
@@ -110,25 +100,23 @@ layout: default
         </ul>
         <a class="btn apply" href="/jobs#openings">APPLY</a>
   </section>
-  <div>
-    <section class="job-description">
-      <h1 class="job-title-main">{{ page.title }}</h1>
-      <div class="company-description">
-        <p>OpenZeppelin builds developer tools and performs security audits for distributed
-          systems that power multimillion-dollar
-          economies. Founded in 2015, OpenZeppelin has developed the industry security standards for architecting and
-          deploying
-          distributed systems in public blockchains.</p>
-        <p>You are the type of person who loves to motivate and encourage others. You are passionate about technology,
-          and
-          love
-          staying up to date on the latest developments. You are detail-oriented and love getting things done.</p>
-      </div>
-      {{page.content}}
-    </section>
-  </div>
+  <section class="col job-description">
+    <h1 class="job-title-main">{{ page.title }}</h1>
+    <div class="company-description">
+      <p>OpenZeppelin builds developer tools and performs security audits for distributed
+        systems that power multimillion-dollar
+        economies. Founded in 2015, OpenZeppelin has developed the industry security standards for architecting and
+        deploying
+        distributed systems in public blockchains.</p>
+      <p>You are the type of person who loves to motivate and encourage others. You are passionate about technology,
+        and
+        love
+        staying up to date on the latest developments. You are detail-oriented and love getting things done.</p>
+    </div>
+    {{page.content}}
+  </section>
 </div>
-<div class="application-greybox">
+<div class="col application-greybox">
   <div class="application-information">
     <h3 class="job-description-title">Apply</h3>
     <p>Complete the following <a href=" https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application

@@ -11,50 +11,50 @@ description: 'Zeppelin builds the industry security standard for architecting an
 slug: ''
 ---
 
-<div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">What you'll do</h3>
+<div class="requirements">
+  <h3 class="job-description-title">What you'll do</h3>
   <ul>
     <li>
-      <p class="small left-aligned">
+      <p>
         Create <a href="https://ethernaut.zeppelin.solutions/">decentralized web applications</a> to support the Ethereum developer             community.</p>
     </li>
     <li>
-      <p class="small left-aligned">Own products end-to-end, leading the design and implementation efforts across different layers of the stack.</p>
+      <p>Own products end-to-end, leading the design and implementation efforts across different layers of the stack.</p>
     </li>
     <li>
-      <p class="small left-aligned">Work with the Product team to measure, iterate and run experiments to help our products gain traction amongst the developer community.</p>
+      <p>Work with the Product team to measure, iterate and run experiments to help our products gain traction amongst the developer community.</p>
     </li>
     <li>
-      <p class="small left-aligned">Help coordinate the <a href="https://forum.zeppelin.solutions/">open source community</a> around the tools that we build.</p>
+      <p>Help coordinate the <a href="https://forum.zeppelin.solutions/">open source community</a> around the tools that we build.</p>
     </li>
   </ul>
 </div>
-<div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">Who we're looking for</h3>
+<div class="requirements">
+  <h3 class="job-description-title">Who we're looking for</h3>
   <ul>
     <li>
-      <p class="small left-aligned">You have experience designing, building, and shipping products from beginning to end with minimal supervision.</p>
+      <p>You have experience designing, building, and shipping products from beginning to end with minimal supervision.</p>
     </li>
     <li>
-      <p class="small left-aligned">You enjoy being a generalist, working on both the frontend, backend, and everything in between to solve problems and delight users.</p>
+      <p>You enjoy being a generalist, working on both the frontend, backend, and everything in between to solve problems and delight users.</p>
     </li>
     <li>
-      <p class="small left-aligned">You are actively interested in blockchain technology, decentralization, and cryptography.</p>
+      <p>You are actively interested in blockchain technology, decentralization, and cryptography.</p>
     </li>
     <li>
-      <p class="small left-aligned">You can communicate complex ideas clearly to both technical and non-technical audiences.</p>
+      <p>You can communicate complex ideas clearly to both technical and non-technical audiences.</p>
     </li>
     <li>
-      <p class="small left-aligned">You have the skills that will enable you to work successfully in a remote team.</p>
+      <p>You have the skills that will enable you to work successfully in a remote team.</p>
     </li>
     <li>
-      <p class="small left-aligned">You have advanced English communication skills- all of our internal and external communication is in English.</p>
+      <p>You have advanced English communication skills- all of our internal and external communication is in English.</p>
     </li>
     <li>
-      <p class="small left-aligned">You possess the skills that will enable you to work successfully in a team.</p>
+      <p>You possess the skills that will enable you to work successfully in a team.</p>
     </li>
     <li>
-      <p class="small left-aligned">You may have experience with the following technologies: Node.js, Typescript, Javascript, React.</p>
+      <p>You may have experience with the following technologies: Node.js, Typescript, Javascript, React.</p>
     </li>
   </ul>
 </div>
