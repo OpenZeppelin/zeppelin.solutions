@@ -70,7 +70,7 @@ input[type='url'] {
 }
 
 p {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 /** Common Shared Styles **/
@@ -100,7 +100,7 @@ p {
   display: flex;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
-  flex: 1;
+  flex: 0 1 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -110,9 +110,6 @@ p {
 }
 
 .col {
-  box-sizing: border-box;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
   flex: 1;
 }
 
