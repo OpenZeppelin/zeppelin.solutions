@@ -134,11 +134,13 @@ p {
 }
 
 .col {
-  flex: 1;
-}
-
-.grid .no-grow {
-  flex-grow: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: auto;
+  flex-basis: 0%;
+  max-width: 100%;
+  flex-shrink: 1;
 }
 
 /** UI Components **/
