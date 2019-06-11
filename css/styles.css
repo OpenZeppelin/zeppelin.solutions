@@ -18,6 +18,18 @@ body {
   height: 100%;
 }
 
+.grid {
+  display: flex;
+}
+
+.grid .col {
+  flex-grow: 1;
+}
+
+.grid .col.no-grow {
+  flex-grow: 0;
+}
+
 .btn {
   background: #4e5ee4;
   box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.81);
