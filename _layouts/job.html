@@ -81,25 +81,28 @@ layout: default
   p.small.check {
     line-height: 2;
   }
+
+  .full {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
 </style>
 
-<section class="full">
-  {% include new-nav.html %}
-  <section id="home">
-    <div class="sidebar">
-      <ul>
-        <li>Global</li>
-        <li>Full Time</li>
-        <li>Communications</li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="container margin-auto">
-        <p class="middle"><a class="apply-btn" href="https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">APPLY</a>
-        </p>
-      </div>
-    </div>
-  </section>
+{% include new-nav.html %}
+<section class="container full">
+  <div class="sidebar">
+    <ul>
+      <li>Global</li>
+      <li>Full Time</li>
+      <li>Communications</li>
+    </ul>
+    <a class="btn cta" href="/jobs#openings">SEE CURRENT OPENINGS</a>
+  </div>
 </section>
 <section class="job-description">
   <h1 class="home-title">{{ page.title }}</h1>
