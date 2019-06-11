@@ -91,36 +91,53 @@ layout: default
     display: flex;
     flex-direction: column;
   }
+
+  .back {
+    color: #6271d6;
+  }
+
+  .job {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+
+  }
+
+  .job-description {
+    display: flex;
+    flex-direction: column;
+  }
 </style>
 
 {% include new-nav.html %}
-<section class="container full">
-  <div class="sidebar">
+<section class="job container">
+  <section class="sidebar">
+    <a class="back" href="/jobs#openings">BACK</a>
     <ul>
       <li>Global</li>
       <li>Full Time</li>
       <li>Communications</li>
     </ul>
-    <a class="btn cta" href="/jobs#openings">SEE CURRENT OPENINGS</a>
-  </div>
-</section>
-<section class="job-description">
-  <h1 class="home-title">{{ page.title }}</h1>
-  <div class="requirements container margin-auto">
-    <p class="small left-aligned">Zeppelin leads the industry in developing standards for architecting and deploying
-      smart contract systems in public blockchains. We build open source infrastructure and conduct in-depth security
-      audits on high-impact smart contract systems.</p>
-    <br />
-    <p class="left-align small">{{page.description}}</p>
-  </div>
-  {{page.content}}
-  <div class="container margin-auto">
-    <div class="grey apply-container">
-      <h3 class="left-aligned apply-title">Apply</h3>
-      <p class="small short">Complete the following <a href="https://airtable.com/shrqTXBRIBFCnXD3i"
-          target="_blank">application form</a> or send an email to <a
-          href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the phrase "{{ page.title }},
-        {{ page.location }}" on the subject line.</p>
+    <a class="btn apply" href="/jobs#openings">APPLY</a>
+  </section>
+  <section class="job-description">
+    <h1 class="home-title">{{ page.title }}</h1>
+    <div class="requirements container margin-auto">
+      <p class="small left-aligned">Zeppelin leads the industry in developing standards for architecting and deploying
+        smart contract systems in public blockchains. We build open source infrastructure and conduct in-depth security
+        audits on high-impact smart contract systems.</p>
+      <br />
+      <p class="left-align small">{{page.description}}</p>
     </div>
-  </div>
+    {{page.content}}
+    <div class="container margin-auto">
+      <div class="grey apply-container">
+        <h3 class="left-aligned apply-title">Apply</h3>
+        <p class="small short">Complete the following <a href="https://airtable.com/shrqTXBRIBFCnXD3i"
+            target="_blank">application form</a> or send an email to <a
+            href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the phrase "{{ page.title }},
+          {{ page.location }}" on the subject line.</p>
+      </div>
+    </div>
+  </section>
 </section>
