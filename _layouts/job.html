@@ -3,137 +3,138 @@ layout: default
 ---
 
 <style type="text/css">
-  .job-opening {
-    background-image: linear-gradient(290deg, #1e7dd7, #2b2dbf) !important;
-    height: 20vh;
-    padding: 0;
-    border-bottom: solid 7px #2a38c2 !important;
+  .full {
+    display: flex;
+    flex-direction: row;
   }
-  .job-description h1, .job-description h3, .job-description p, .job-description ul, .job-description h4 {
-    margin: auto;
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    margin-top: 25px;
+  }
+
+  .sidebar ul {
+    padding: 15px 0;
+  }
+
+  .sidebar li {
+    margin-top: 15px;
+  }
+
+  .back {
+    color: #505cda;
+    font-size: 15px;
+  }
+
+  .job {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+  }
+
+  .job-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+  }
+
+  .apply {
+    margin-top: 15px;
+  }
+
+  .job-description {
     max-width: 600px;
   }
-  .job-description h3, .job-description h4 {
-    margin: 40px auto 15px auto
+
+  .company-description>p {
+    line-height: 1.3em;
+    margin-top: 15px;
   }
-  .job-description li p {
-    margin-left: 0;
-  }
-  .section-auto {
-    min-height: auto !important;
-  }
-  .requirements {
-    margin: .5rem auto;
-  }
-  .requirements h3 {
-    text-align: left!important;
+
+  .job-title-main {
+    font-family: Helvetica;
+    font-size: 26px;
+    line-height: 1.25;
+    color: #3e3a58;
     font-weight: bold;
+
   }
-  .margin-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .job-title {
-    opacity: 0.8;
+
+  .job-description-title {
     font-family: Helvetica;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.25;
-    color: #4a4a4a;
-    margin-top: 50px;
+    color: #3e3a58;
+    font-weight: bold;
+    margin: 20px 0;
   }
-  .job-description ul li::before {
-    color: #6e6e6e;
-    content: "\2022";
-    font-size: 1.5em;
-    height: auto;
-    padding-right: 9px;
-    position: relative;
-    top: 0em;
-    display: inline;
+
+  .requirements ul {
+    list-style: disc;
+    padding-left: 15px;
+
   }
-  .job-description ul li {
-    display: flex;
-    align-items: flex-start;
+
+  .requirements li {
+    padding: 10px 0 10px 0;
   }
-  .job-description ul p {
-    margin-top: 0;
+
+  .application-greybox {
+    background-color: #f8f8fa;
+    margin-top: 35px;
   }
-  .apply-container {
-    padding: 30px;
-    max-width: 660px;
-    margin: 30px auto 0 auto;
+
+  .application-greybox a {
+    display: inline-block;
+    color: #949cdf;
   }
-  .apply-container h3{
-    margin-top: 0;
-  }
-  .apply-title {
-    opacity: 0.8;
-    font-family: Helvetica;
-    font-size: 18px;
+
+  .application-information {
+    padding: 50px 0;
+    max-width: 600px;
+    margin: auto auto auto auto;
     line-height: 1.25;
-    color: #4a4a4a;
-    margin-top: 0;
-    text-align: left;
-  }
-  .job-description h4 {
-    opacity: 0.6;
-    font-family: Helvetica;
-    font-size: 12px;
-    letter-spacing: 1.3px;
-    text-align: center;
-    color: #3c3c3c;
-  }
-  .job-opening h1 {
-    margin: auto;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .job-opening p {
-    margin: auto;
-    align-items: center;
-    text-align: center;
-  }
-  .job-opening a.apply-btn {
-    border-radius: 100px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px 0 rgba(203, 203, 203, 0.5);
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    text-align: center;
-    color: #003ccb!important;
-    padding: 7px 25px;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  p.small.check {
-    line-height: 2;
   }
 </style>
 
-<section class="job-opening hero-background">
-  {% include new-nav.html %}
-  <section id="home">
-    <div class="row">
-      <div class="container margin-auto">
-        <p class="middle"><span>{{ page.location }}</span></p>
-        <h1 class="home-title" >{{ page.title }}</h1>
-        <p class="middle"><a class="apply-btn" href="https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">APPLY</a></p>
-      </div>
-    </div>
+{% include new-nav.html %}
+<div class="job container">
+  <section class="sidebar">
+    <a class="back" href="/jobs#openings">
+      < BACK</a> <ul>
+        <li>Global</li>
+        <li>Full Time</li>
+        <li>Communications</li>
+        </ul>
+        <a class="btn apply" href="/jobs#openings">APPLY</a>
   </section>
-</section>
-<section class="job-description">
-  <div class="requirements container margin-auto">
-    <p class="small left-aligned">Zeppelin leads the industry in developing standards for architecting and deploying smart contract systems in public blockchains. We build open source infrastructure and conduct in-depth security audits on high-impact smart contract systems.</p>
-    <br/>
-    <p class="left-align small">{{page.description}}</p>
+  <div>
+    <section class="job-description">
+      <h1 class="job-title-main">{{ page.title }}</h1>
+      <div class="company-description">
+        <p>OpenZeppelin builds developer tools and performs security audits for distributed
+          systems that power multimillion-dollar
+          economies. Founded in 2015, OpenZeppelin has developed the industry security standards for architecting and
+          deploying
+          distributed systems in public blockchains.</p>
+        <p>You are the type of person who loves to motivate and encourage others. You are passionate about technology,
+          and
+          love
+          staying up to date on the latest developments. You are detail-oriented and love getting things done.</p>
+      </div>
+      {{page.content}}
+    </section>
   </div>
-  {{page.content}}
-  <div class="container margin-auto">
-    <div class="grey apply-container">
-      <h3 class="left-aligned apply-title">Apply</h3>
-      <p class="small short">Complete the following <a href="https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application form</a> or send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the phrase "{{ page.title }}, {{ page.location }}" on the subject line.</p>
-    </div>
+</div>
+<div class="application-greybox">
+  <div class="application-information">
+    <h3 class="job-description-title">Apply</h3>
+    <p>Complete the following <a href=" https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application
+        form</a> or send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the
+      phrase "{{ page.title }},
+      {{ page.location }}" on the subject line.</p>
   </div>
-</section>
+
+</div>

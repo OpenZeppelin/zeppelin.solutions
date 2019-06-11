@@ -11,46 +11,46 @@ description: "In the Research team, we are in charge of carrying out code audits
 slug: ''
 ---
 
-<div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">What you'll do</h3>
+<div class="requirements">
+  <h3 class="job-description-title">What you'll do</h3>
   <ul>
     <li>
-      <p class="small left-aligned">Analyze the security of smart contracts and decentralized applications.</p>
+      <p>Analyze the security of smart contracts and decentralized applications.</p>
     </li>
     <li>
-      <p class="small left-aligned">Write detailed, engaging reports on the vulnerabilities of those systems.</p>
+      <p>Write detailed, engaging reports on the vulnerabilities of those systems.</p>
     </li>
     <li>
-      <p class="small left-aligned">Conduct open-ended research around cutting edge blockchain technologies.</p>
+      <p>Conduct open-ended research around cutting edge blockchain technologies.</p>
     </li>
   </ul>
 </div>
-<div class="requirements container margin-auto">
-  <h3 class="left-aligned job-title">Who we're looking for</h3>
+<div class="requirements">
+  <h3 class="job-description-title">Who we're looking for</h3>
   <ul>
     <li>
-      <p class="small left-aligned">You are extremely detail oriented.</p>
+      <p>You are extremely detail oriented.</p>
     </li>
     <li>
-      <p class="small left-aligned">You are a self-starter that works independently, with minimal supervision.</p>
+      <p>You are a self-starter that works independently, with minimal supervision.</p>
     </li>
     <li>
-      <p class="small left-aligned">You possess an advanced english level and great communication skills (oral and written).</p>
+      <p>You possess an advanced english level and great communication skills (oral and written).</p>
     </li>
     <li>
-      <p class="small left-aligned">You are passionate about the blockchain space and decentralization.</p>
+      <p>You are passionate about the blockchain space and decentralization.</p>
     </li>
     <li>
-      <p class="small left-aligned">You are comfortable working with a remote team.</p>
+      <p>You are comfortable working with a remote team.</p>
     </li>
     <li>
-      <p class="small left-aligned">You may have prior experience in computer security.</p>
+      <p>You may have prior experience in computer security.</p>
     </li>
     <li>
-      <p class="small left-aligned">You may have experience in blockchain technologies.</p>
+      <p>You may have experience in blockchain technologies.</p>
     </li>
     <li>
-      <p class="small left-aligned">You may have some knowledge in the Solidity programming language.</p>
+      <p>You may have some knowledge in the Solidity programming language.</p>
     </li>
   </ul>
 </div>
