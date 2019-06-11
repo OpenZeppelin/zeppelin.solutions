@@ -82,41 +82,56 @@ layout: default
 
 </main>
 
+<section class="section section-job-promo">
+
+	<div class="bg">
+		<div class="grid photo-wall">
+			<div class="row">
+				<div class="col">
+					<img class="photo-wall-img" src="../images/photo_01.png">
+				</div>
+				<div class="col">
+					<img class="photo-wall-img" src="../images/photo_02.png">
+				</div>
+				<div class="col">
+					<img class="photo-wall-img" src="../images/photo_03.png">
+				</div>
+				<div class="col">
+					<img class="photo-wall-img" src="../images/photo_04.png">
+				</div>
+			</div>
+		</div>
+	</div>
 
 
+	<div class="job-wall-grid">
+		<div class="container grid">
+			<div class="row">
+				<div class="col">
+					<div class="box">
+						<h3 class="box-title">Flexible schedules</h3>
+						<p class="box-description">We focus on achievements, not working hours. Find the rhythm that works best for you.</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="box">
+						<h3 class="box-title">Flexible paid time off</h3>
+						<p class="box-description">We believe in the importance of breaks to lead a balanced life. You decide when to take your vacations.</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="box">
+						<h3 class="box-title">Buenos Aires Office</h3>
+						<p class="box-description">You’re welcome to work from our  office whenever you want. We’re pet friendly, have green spaces, healthy food, and yoga classes.</p>
+					</div>
+			</div>
+			</div>
+		</div>
+	</div>
 
-
-
-
-
-
-<section class="jobs-photos flex no-grow bg-grey bold">
-  <img src="../images/photo_01.png">
-  <img src="../images/photo_02.png">
-  <img src="../images/photo_03.png">
-  <img src="../images/photo_04.png">
 </section>
-<section class="row no-padding-bottom" id="remote-by-default">
-  <div class="container">
-    <div class="flex-box mobile-column conditions-box">
-      <div class="remote-box">
-        <div class="line"></div>
-        <h3>Flexible schedules</h3>
-        <p class="small">We focus on achievements, not working hours. Find the rhythm that works best for you.</p>
-      </div>
-      <div class="remote-box">
-        <div class="line"></div>
-        <h3>Flexible paid time off</h3>
-        <p class="small">We believe in the importance of breaks to lead a balanced life. You decide when to take your vacations.</p>
-      </div>
-      <div class="remote-box">
-        <div class="line"></div>
-        <h3>Buenos Aires Office</h3>
-        <p class="small">You’re welcome to work from our  office whenever you want. We’re pet friendly, have green spaces, healthy food, and yoga classes.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
+
 <section class="no-padding-bottom" id="openings">
   <div class="container centered">
     <h2 style="margin-bottom: 0;">Current openings</h2>
@@ -303,7 +318,7 @@ layout: default
     flex-basis: auto
 	}
 
-	/* Section: section-content */
+	/* section: section-core-values */
 
 	.section.section-core-values {
 		padding: 70px 0;
@@ -356,7 +371,80 @@ layout: default
 		line-height: 24px;
 	}
 
-	/* Section: section-content */
+	/* section: section-job-promo */
+
+	.section.section-job-promo {
+    background-color transparent;
+		position: relative;
+		margin-bottom: 200px;
+  }
+
+	.section.section-job-promo .photo-wall {
+		overflow: hidden;
+		height: 400px;
+		max-height: 400px;
+  }
+
+	.section.section-job-promo .row {
+		justify-content: center;
+  }
+
+	.section.section-job-promo .photo-wall .col {
+		background: green;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+		flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
+  }
+
+	.section.section-job-promo .photo-wall .photo-wall-img {
+		min-width: 100%;
+  }
+
+	.section.section-job-promo .job-wall-grid {
+		position: absolute;
+		bottom: -100px;
+		left: 0;
+		right: 0;
+  }
+
+	.section.section-job-promo .job-wall-grid .box {
+		background: #FFFFFF;
+		box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
+		border-radius: 4px;
+		padding: 35px 45px;
+		height: 210px;
+		margin-right: 20px;
+  }
+
+	.section.section-job-promo .job-wall-grid .col:last-child > .box{
+		margin-right: 0;
+  }
+
+	.section.section-job-promo .job-wall-grid .box-title {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 20px;
+		text-align: center;
+  }
+
+	.section.section-job-promo .job-wall-grid .box-description {
+		opacity: 0.8;
+		font-size: 1rem;
+		color: #282846;
+		text-align: center;
+		line-height: 24px;
+  }
+
+
+
+
+
+
+
+
 
 
 

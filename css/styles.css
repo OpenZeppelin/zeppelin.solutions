@@ -100,8 +100,8 @@ p {
 /** Common Shared Styles **/
 
 .container {
-  width: 1280px;
-  min-width: 1280px;
+  width: 1080px;
+  min-width: 1080px;
   margin: 0 auto;
   height: 100%;
 }
