@@ -13,7 +13,7 @@ slug: ''
 ---
 
 <div class="requirements">
-  <h3 class="job-title-description">What you'll do</h3>
+  <h3 class="job-description-title">What you'll do</h3>
   <p>As the technical writer, you will be developing technical documentation, guides and much more for our community. Specifically, you will: </p>
   <br/>
   <ul>
@@ -35,7 +35,7 @@ slug: ''
   </ul>
 </div>
 <div class="requirements">
-  <h3 class="job-title-description">Who we're looking for</h3>
+  <h3 class="job-description-title">Who we're looking for</h3>
   <ul>
     <li>
       <p >You possess 2+ years of experience writing technical documentation.</p>
