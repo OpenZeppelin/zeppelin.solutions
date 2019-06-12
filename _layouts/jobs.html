@@ -2,6 +2,20 @@
 layout: default
 ---
 
+<script>
+(function($) {
+		$(document).ready(function(){
+		var $el = $('.section-hiring-process .hp-card');
+
+		$el.click(function() {
+			$(this).find('.hp-description').toggleClass('show');
+			$(this).find('.plus-icon').toggleClass('active');
+		});
+
+	})
+})(jQuery);
+</script>
+
 {% include new-nav.html %}
 
 <main class="page-jobs">
@@ -233,87 +247,72 @@ layout: default
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">How long does the hiring process take?</h3>
-						<p class="hp-description hidden">It usually takes 4-6 weeks from the time you submit your application to an offer. The exact timing depends on matching your availability to schedule the work test. We try our best to ensure a swift process while also committing plenty of time to getting to know each other.</p>
+						<p class="hp-description animated animated fadeIn">It usually takes 4-6 weeks from the time you submit your application to an offer. The exact timing depends on matching your availability to schedule the work test. We try our best to ensure a swift process while also committing plenty of time to getting to know each other.</p>
 					</div>
 					<div class="hp-card-action">
-						<span class="icon">
-							+
-						</span>
+						<div class="plus-icon"></div>
 					</div>
 				</li>
 
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">Who will I be talking to during the hiring process?</h3>
-						<p class="hp-description hidden">You’ll talk to our hiring manager, your prospective teammates, your assigned work test coach and one (or both) of the founders. Each candidate usually interacts with at least four Zeppelin members.</p>
+						<p class="hp-description animated fadeIn">You’ll talk to our hiring manager, your prospective teammates, your assigned work test coach and one (or both) of the founders. Each candidate usually interacts with at least four Zeppelin members.</p>
 					</div>
 					<div class="hp-card-action">
-						<span class="icon">
-							+
-						</span>
+						<div class="plus-icon"></div>
 					</div>
 				</li>
 
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">What’s the work test like?</h3>
-						<p class="hp-description hidden">The work test is a custom challenge guided by a coach from Zeppelin. You can think about it as an audition. Work tests should require an effort of roughly 10 hours per week, spanning no more than three weeks. Your time is paid regardless of the output.</p>
+						<p class="hp-description animated fadeIn">The work test is a custom challenge guided by a coach from Zeppelin. You can think about it as an audition. Work tests should require an effort of roughly 10 hours per week, spanning no more than three weeks. Your time is paid regardless of the output.</p>
 					</div>
 					<div class="hp-card-action">
-						<span class="icon">
-							+
-						</span>
+						<div class="plus-icon"></div>
 					</div>
 				</li>
 
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">How can I contact Zeppelin if I have questions about my application?</h3>
-						<p class="hp-description hidden">Please send us an email at jobs@zeppelin.solutions.</p>
+						<p class="hp-description animated fadeIn">Please send us an email at jobs@zeppelin.solutions.</p>
 					</div>
 					<div class="hp-card-action">
-						<span class="icon">
-							+
-						</span>
+						<div class="plus-icon"></div>
 					</div>
 				</li>
 
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">I’ve applied in the past. Can I reapply?</h3>
-						<p class="hp-description hidden">Yes! Our needs are constantly evolving. If you’d like to reapply for the same or a different position, feel free to do so.</p>
+						<p class="hp-description animated fadeIn">Yes! Our needs are constantly evolving. If you’d like to reapply for the same or a different position, feel free to do so.</p>
 					</div>
 					<div class="hp-card-action">
-						<span class="icon">
-							+
-						</span>
+						<div class="plus-icon"></div>
 					</div>
 				</li>
 
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">Does Zeppelin offer internship programs?</h3>
-						<p class="hp-description hidden">At our current stage, we’re not ready to offer internship programs that would add value to both ends. If we ever offer internship programs, they’ll be up on our Jobs page.</p>
+						<p class="hp-description animated fadeIn">At our current stage, we’re not ready to offer internship programs that would add value to both ends. If we ever offer internship programs, they’ll be up on our Jobs page.</p>
 					</div>
 					<div class="hp-card-action">
-						<span class="icon">
-							+
-						</span>
+						<div class="plus-icon"></div>
 					</div>
 				</li>
 
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">Do you follow up with candidates you’ve decided not to move forward with?</h3>
-						<p class="hp-description hidden">We try to make sure everyone is kept up-to-date with their application status. Whether we see a match or not, we will reach out to you within two weeks.</p>
+						<p class="hp-description animated fadeIn">We try to make sure everyone is kept up-to-date with their application status. Whether we see a match or not, we will reach out to you within two weeks.</p>
 					</div>
 					<div class="hp-card-action">
-						<span class="icon">
-							+
-						</span>
+						<div class="plus-icon"></div>
 					</div>
 				</li>
-
 			</ul>
 		</div>
 
@@ -693,7 +692,7 @@ layout: default
 		padding: 70px 0;
 	}
 
-	.section.section-hiring-process .section-title{
+	.section.section-hiring-process .section-title {
 		opacity: 0.9;
 		font-size: 1.8rem;
 		color: #282846;
@@ -721,6 +720,13 @@ layout: default
 		flex-grow: 1;
 		width: 100%;
 		margin-bottom: 20px;
+		transition: border 0.3s ease, color 0.3s ease;
+		color: #282846;
+	}
+
+	.section.section-hiring-process .hp-list .hp-card:hover {
+		cursor: pointer;
+		color: #4e5ee4;
 	}
 
 	.section.section-hiring-process .hp-card .hp-title {
@@ -728,20 +734,32 @@ layout: default
 		max-width: 560px;
 		display: block;
 		font-size: 1.3rem;
-		color: #282846;
 		text-decoration: none;
     line-height: 1.8;
     font-weight: 500;
 		margin: 0;
+		margin-bottom: 15px;
+		color: inherit;
 	}
 
 	.section.section-hiring-process .hp-card .hp-description {
-		opacity: 0.8;
-		font-size: 1rem;
 		color: #282846;
-		letter-spacing: 0.54px;
 		line-height: 24px;
-		max-width: 580px;
+		max-width: 600px;
+		transition: height 0.8s ease;
+		overflow: hidden;
+		opacity: 0;
+		display: none;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
+	}
+
+	.section.section-hiring-process .hp-list .hp-description.show {
+		opacity: 0.8;
+		display: block;
 	}
 
 	.section.section-hiring-process .hp-content {
@@ -750,7 +768,6 @@ layout: default
 
 	.section.section-hiring-process .hp-card-action {
 		flex-grow: 0;
-		min-width: 200px;
 		text-align: right;
 		font-size: 1.2rem;
 		vertical-align: middle;
@@ -774,5 +791,41 @@ layout: default
 	.section.section-hiring-process .section-footer .btn {
 		width: 200px;
 	}
+
+	.plus-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+		transform: scale(0.9)
+	}
+
+	.plus-icon:before,
+	.plus-icon:after {
+			content: "";
+			position: absolute;
+			background-color: #000;
+			transition: transform 0.25s ease-out;
+	}
+
+	.plus-icon:before {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    margin-left: -2px;
+    border-radius: 3px;
+	}
+
+	.plus-icon:after {
+		top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    margin-top: -2px;
+    border-radius: 3px;
+	}
+	.plus-icon.active:before { transform: rotate(90deg); }
+	.plus-icon.active:after { transform: rotate(180deg); }
+}
 
 </style>
