@@ -89,6 +89,11 @@
 		opacity: 0;
 	}
 
+	.new-nav .item .sub-nav .sub-nav-item-container:hover {
+		color: #4e5ee4;
+		cursor: pointer;
+	}
+
 	.new-nav .sub-nav::after {
 		background-color: white;
     content: "";
@@ -135,11 +140,15 @@
 		padding-bottom: 0;
 	}
 
-	.new-nav .sub-nav-list .sub-nav-item-container:hover {
+	.new-nav .sub-nav-list a.sub-nav-item-container {
+			color: #282846;
+	}
+
+	.new-nav .box-menu-list .sub-nav-list a.sub-nav-item-container:hover {
 		color: #4E5EE4;
 	}
 
-	.new-nav .sub-nav-list .sub-nav-icon {
+	.new-nav .box-menu-list .sub-nav-list .sub-nav-icon {
 		padding-right: 20px;
 	}
 
@@ -147,7 +156,7 @@
 		display: block;
 		opacity: 0.8;
 		font-size: 1.1rem;
-		color: #282846;
+		color: inherit;
 		margin-bottom: 5px;
 	}
 
@@ -318,7 +327,7 @@
 						<div class="sub-nav" id="sub-nav-company">
 							<ul class="sub-nav-list">
 								<li class="sub-nav-item">
-									<a class="sub-nav-item-container" href="#">
+									<a class="sub-nav-item-container" href="/about">
 										<div class="sub-nav-item-content">
 											<span class="sub-nav-item-title">About us</span>
 										</div>
