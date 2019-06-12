@@ -168,23 +168,14 @@
 
 <script>
 	(function($) {
-		function onEnter(el) {
-			return function(evt) {
-				evt.stopPropagation();
-				var $el = $(this).parent().find('.sub-nav');
-				$el.addClass('open');
-				$el.on('mouseleave', onLeave)
-			}
-		}
-
-		function onLeave(evt) {
-			evt.stopPropagation();
-			$(this).removeClass('open');
-		}
-
 		$(document).ready(function() {
 			var $items = $('.box-menu .item');
-			$items.find('> a').on('mouseenter', onEnter('asd'));
+
+			$items.hover(function handler(evt) {
+				evt.stopPropagation();
+				var $el = $(this).find('.sub-nav');
+				$el.toggleClass('open');
+			});
 		});
 
 	})(jQuery);
@@ -282,14 +273,73 @@
 						</div>
 					</li>
 					<li class="item"><a href="#">Security Audits</a></li>
-					<li class="item"><a href="#">Learn
-						<i class="material-icons arrow-down">expand_more</i>
-					</a>
+					<li class="item">
+						<a href="#">Learn
+							<i class="material-icons arrow-down">expand_more</i>
+						</a>
+						<div class="sub-nav">
+							<ul class="sub-nav-list">
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Community Forum</span>
+										</div>
+									</a>
+								</li>
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Docs</span>
+										</div>
+									</a>
+								</li>
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Ethernaut</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li class="item">
 						<a href="#">Company
 							<i class="material-icons arrow-down">expand_more</i>
 						</a>
+						<div class="sub-nav">
+							<ul class="sub-nav-list">
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">About us</span>
+										</div>
+									</a>
+								</li>
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Jobs</span>
+										</div>
+									</a>
+								</li>
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Github</span>
+										</div>
+									</a>
+								</li>
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Blog</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 					</li>
 				</ul>
 			</div>
