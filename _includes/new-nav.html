@@ -104,7 +104,6 @@
 		z-index: -1;
 	}
 
-
 	.new-nav .sub-nav.open {
 		margin-top: 30px;
 		pointer-events: auto;
@@ -179,14 +178,12 @@
 	(function($) {
 		$(document).ready(function() {
 			var $items = $('.box-menu .item');
-
 			$items.hover(function handler(evt) {
 				evt.stopPropagation();
 				var $el = $(this).find('.sub-nav');
 				$el.toggleClass('open');
 			});
 		});
-
 	})(jQuery);
 </script>
 
@@ -194,6 +191,7 @@
   <div class="container grid">
 		<div class="row">
 			<div class="box-logo">
+				<a href="/">
 				<h1>
 					<svg width="172px" height="27px" viewBox="0 0 172 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<defs></defs>
@@ -209,7 +207,8 @@
 											</g>
 									</g>
 							</g>
-					</svg>
+						</svg>
+					</a>
 				</h1>
 				<span class="label">We're hiring!</span>
 			</div>

@@ -2,99 +2,47 @@
 layout: default
 ---
 <style type="text/css">
-  .gray {
-    background-color: #f6f6f7;
-  }
-  .logos-container{
-    width: 100%;
-  }
-  .pagefold.h4{
-    margin: 1rem 0 0 0;
-  }
-  .standards {
-    background-image: linear-gradient(247deg, #0a2a5a, #000e1d)!important;
-    margin: 70px 0;
-    padding-top: 115px;
-    padding-bottom: 100px;
-  }
-  .landing-hero {
-    background-image: linear-gradient(247deg, #0a2a5a, #000e1d)!important;
-  }
-  .standards h4 {
-    color: white;
-  }
-  .standard-box {
-    margin: 40px 40px 0 40px;
-  }
-  @media (max-width: 900px) {
-    .standard-box { margin: 40px 0 0 0;}
-    .request-audit-container img { margin: 0 0 34px 0; width: 80px;}
-    .standards .standard-box .standard-title { font-size: 40px; }
-  }
-  .standards .standard-title {
-    font-family: Helvetica;
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 1;
-    text-align: center;
-    color: #ffffff;
-    margin: 0;
-  }
-  .standards .middle {
-    font-size: 16px;
-    text-align: center;
-    line-height: 1;
-    font-weight: 200;
-  }
-  .blueprint {
-    padding-bottom: 0;
-    margin-bottom: -80px !important;
-  }
-  .quote {
-    padding-bottom: 0;
-    margin-top: 4rem;
-    margin-bottom: -100px !important;
-  }
-  .quote-grey {
-    height: 140px;
-    margin-top: -140px;
-    background-color: #f7f7f8 !important;
-  }
-  @media (max-width: 900px) {
-    .standards { padding-top: 100px; }
-    .pagefold.h4 { margin: 1rem 0 .8rem 0; }
-  }
-</style>
 
-<section class="landing-hero" id="principal">
-  {% include new-nav.html %}
-  <section id="home">
-    <div class="row">
-      <div class="container">
-        <h1 class="home-title">The standard for secure decentralized systems</h1>
-        <p class="middle short">Zeppelin builds tools for the secure development, deployment and operation of decentralized systems. We also help companies secure their systems by performing security audits.</p>
-      </div>
-    </div>
-  </section>
-</section>
-<section class="grey" style="padding-bottom: 20px; padding-top: 20px;">
-  <div class="container pagefold">
+</style>
+{% include new-nav.html %}
+
+<main class="page-landing">
+
+	<section class="section landing-hero">
+		<div class="hero">
+			<div class="container">
+				<div class="wrapper">
+					<h1 class="heading fIu">The standard for secure decentralized systems</h1>
+					<p class="description fIu">
+						Zeppelin builds tools for the secure development, deployment and operation of decentralized systems. We also help companies secure their systems by performing security audits.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<section class="section">
+	<div class="container">
+	  <div class="container">
     <h4>THE WORLD’S LEADING PROJECTS TRUST ZEPPELIN</h4>
   </div>
   <div class="logos-container">
     {% include partners-landing.html %}
   </div>
 </section>
+
 {% include landing-challenges.html %}
-<section class="blueprint grey">
+
+<section class="section blueprint">
   <div class="container">
     <h2>Your blueprint for decentralized systems</h2>
     <p class="small short">Reduce the barriers of entry to securely implement blockchain-based technologies, using standard developer tools and platforms.</p>
     {% include product-card.html %}
   </div>
 </section>
-<section class="standards">
-    <div class="container">
+
+<section class="section standards">
+	<div class="container">
       <h4>We set ever-higher standards for the industry</h4>
       <div class="flex xs-column">
         <div class="standard-box">
@@ -106,7 +54,7 @@ layout: default
           <p class="middle">collected by projects using our audited systems</p>
         </div>
       </div>
-  </div>
+
 
   <div class="quote row" id="leading-projects">
     <div class="container centered">
@@ -114,7 +62,9 @@ layout: default
     </div>
     <div class="quote-grey"></div>
   </div>
+	  </div>
 </section>
+
 <section class="depth grey">
   <div class="container request-audit-container xs-column">
     <div class="img-box hide-on-med-and-up">
