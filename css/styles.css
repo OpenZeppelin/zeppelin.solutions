@@ -160,7 +160,33 @@ a {
   background-color: #4351c5;
 }
 
+.btn--bordered {
+  border: solid 1px #4351c5;
+  background-color: transparent;
+  color: #4351c5;
+  box-shadow: none;
+}
+
+.btn--bordered:hover {
+  border: solid 1px #4351c5;
+  background-color: #4351c5;
+  color: white;
+}
+
 /** Sections **/
+
+.section.gray {
+  background-color: #f8f8fa;
+}
+
+.section {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.hero .wrapper {
+  margin: 0 auto;
+}
 
 section.section .title {
   color: #282846;
@@ -173,11 +199,18 @@ section.section .title {
   background-color: #f8f8fa;
 }
 
-.section .hero {
+.section.hero,
+.hero {
   height: 400px;
+  text-align: center;
 }
 
-.section .hero .container {
+.section.hero.gray,
+.hero.gray {
+  background-color: #f8f8fa;
+}
+
+.section.hero .container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -185,13 +218,21 @@ section.section .title {
   align-items: center;
 }
 
-.section .hero .cta {
+.section.hero .cta {
   width: 250px;
   animation-delay: 1000ms;
 }
 
-.section .hero .wrapper {
+.section .wrapper {
   max-width: 700px;
+}
+
+.section .wrapper--centered {
+  margin: 0 auto;
+}
+
+.section .wrapper--sm {
+  max-width: 500px;
 }
 
 .section .hero .heading {
@@ -285,18 +326,24 @@ section.section .title {
 /** Typography **/
 
 .heading {
-  text-align: center;
+  margin: 0 auto;
+  text-align: inherit;
   font-weight: bold;
   font-size: 1.9rem;
   margin-bottom: 30px;
+  line-height: 1.3;
 }
 
 .description {
   font-size: 1.1rem;
   color: #2a2a47;
-  text-align: center;
+  text-align: inherit;
   margin-bottom: 30px;
   line-height: 1.8;
   font-weight: 300;
   letter-spacing: 0px;
+}
+
+.center {
+  text-align: center;
 }
