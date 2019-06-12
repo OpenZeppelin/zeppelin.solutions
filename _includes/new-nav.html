@@ -2,6 +2,7 @@
   .new-nav {
     height: 70px;
     width: 100%;
+		background-color: #FEFEFE;
   }
 
 	.new-nav .box-logo, .new-nav .box-menu {
@@ -29,7 +30,12 @@
 		flex-grow: 1;
 	}
 
-  .new-nav .box-menu ul {
+	.new-nav .box-menu {
+		line-height: 70px;
+    height: 70px;
+	}
+
+  .new-nav .box-menu .box-menu-list {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,14 +43,152 @@
     width: 100%;
   }
 
-  .new-nav .box-menu ul li {
+  .new-nav .box-menu .box-menu-list .item {
     margin-right: 40px;
+		position: relative;
   }
 
-  .new-nav .box-menu ul li:last-child {
+	.new-nav .box-menu .box-menu-list .item > a {
+		cursor: pointer;
+		transition: color 0.4s ease;
+		color: #282846;
+		display: inline-block;
+		height: 100%;
+  }
+
+	.new-nav .box-menu .box-menu-list .item a:hover {
+		cursor: pointer;
+		color: #6d6d79;
+  }
+
+  .new-nav .box-menu .box-menu-list .item:last-child {
     margin-right: none;
   }
+
+	.new-nav .sub-nav {
+		position: absolute;
+		transform: translateX(-50%);
+		top: 0;
+		left: 50%;
+		color: rgba(0,0,0,.86);
+    border-radius: 3px;
+    margin-top: 0;
+    position: absolute;
+    top: 30px;
+    transition: visibility 0s .2s, opacity .2s, margin-top .2s;
+    min-width: 150px;
+    pointer-events: none;
+		padding: 30px;
+    z-index: 3;
+		background: #FFFFFF;
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.20);
+		width: 320px;
+		line-height: normal;
+
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.new-nav .sub-nav::after {
+		background-color: white;
+    content: "";
+    opacity: 1;
+    transform: rotate(45deg);
+    transition: visibility 0s .2s,opacity .2s;
+    visibility: visible;
+    width: 12px;
+		height: 12px;
+		top: -6px;
+    left: 50%;
+    position: absolute;
+		z-index: -1;
+	}
+
+
+	.new-nav .sub-nav.open {
+		margin-top: 30px;
+		pointer-events: auto;
+		visibility: visible;
+		opacity: 1;
+		transition-delay: 0s;
+	}
+
+	.nav-tab .sub-nav-list {
+		content: " ";
+    display: table;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-item-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border-bottom: 1px solid #E5E5E5;
+		padding: 15px 0;
+		transition: color 0.2s ease;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-item:first-child .sub-nav-item-container {
+		padding-top: 0;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-item:last-child .sub-nav-item-container {
+		border: none;
+		padding-bottom: 0;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-item-container:hover {
+		color: #4E5EE4;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-icon {
+		padding-right: 20px;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-item .sub-nav-item-title {
+		display: block;
+		opacity: 0.8;
+		font-size: 1.1rem;
+		color: #282846;
+		margin-bottom: 5px;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-item .sub-nav-item-description {
+		opacity: 0.6;
+		font-size: 0.96rem;
+		color: #333333;
+		line-height: 1.3rem;
+	}
+
+	.new-nav .box-menu .box-menu-list .item .arrow-down {
+		vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+	}
 </style>
+
+<script>
+	(function($) {
+		function onEnter(el) {
+			return function(evt) {
+				evt.stopPropagation();
+				var $el = $(this).parent().find('.sub-nav');
+				$el.addClass('open');
+				$el.on('mouseleave', onLeave)
+			}
+		}
+
+		function onLeave(evt) {
+			evt.stopPropagation();
+			$(this).removeClass('open');
+		}
+
+		$(document).ready(function() {
+			var $items = $('.box-menu .item');
+			$items.find('> a').on('mouseenter', onEnter('asd'));
+		});
+
+	})(jQuery);
+</script>
 
 <nav class="new-nav">
   <div class="container grid">
@@ -70,11 +214,83 @@
 				<span class="label">We're hiring!</span>
 			</div>
 			<div class="box-menu">
-				<ul>
-					<li>Products</li>
-					<li>Security Audits</li>
-					<li>Learn</li>
-					<li>Company</li>
+				<ul class="box-menu-list">
+					<li class="item">
+						<a href="#">Products
+							<i class="arrow-down material-icons">expand_more</i>
+						</a>
+						<div class="sub-nav">
+							<ul class="sub-nav-list">
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<figure class="sub-nav-icon">
+											<svg width="35px" height="35px" viewBox="0 0 35 35">
+													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<g transform="translate(-672.000000, -88.000000)" fill="#282846">
+																	<path d="M698.040136,117.827158 L707,123.000758 L707,93.1732207 L698.040136,88 L698.040136,117.827158 Z M685.020258,117.827158 L693.980121,123.000758 L693.980121,93.1732207 L685.020258,88 L685.020258,117.827158 Z M672,117.827158 L680.959864,123.000758 L680.959864,93.1732207 L672,88 L672,117.827158 Z" id="Fill-1-Copy-4"></path>
+															</g>
+													</g>
+											</svg>
+										</figure>
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Contracts</span>
+											<p class="sub-nav-item-description">
+												A Solidity framework of reusable and secure smart contracts
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<figure class="sub-nav-icon">
+											<svg width="35px" height="35px" viewBox="0 0 35 35">
+													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<g transform="translate(-672.000000, -88.000000)" fill="#282846">
+																	<path d="M698.040136,117.827158 L707,123.000758 L707,93.1732207 L698.040136,88 L698.040136,117.827158 Z M685.020258,117.827158 L693.980121,123.000758 L693.980121,93.1732207 L685.020258,88 L685.020258,117.827158 Z M672,117.827158 L680.959864,123.000758 L680.959864,93.1732207 L672,88 L672,117.827158 Z" id="Fill-1-Copy-4"></path>
+															</g>
+													</g>
+											</svg>
+										</figure>
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">SDK</span>
+											<p class="sub-nav-item-description">
+												A suite of tools to help you develop, compile, upgrade & deploy smart contracts
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="sub-nav-item">
+									<a class="sub-nav-item-container" href="#">
+										<figure class="sub-nav-icon">
+											<svg width="35px" height="35px" viewBox="0 0 35 35">
+													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<g transform="translate(-672.000000, -88.000000)" fill="#282846">
+																	<path d="M698.040136,117.827158 L707,123.000758 L707,93.1732207 L698.040136,88 L698.040136,117.827158 Z M685.020258,117.827158 L693.980121,123.000758 L693.980121,93.1732207 L685.020258,88 L685.020258,117.827158 Z M672,117.827158 L680.959864,123.000758 L680.959864,93.1732207 L672,88 L672,117.827158 Z" id="Fill-1-Copy-4"></path>
+															</g>
+													</g>
+											</svg>
+										</figure>
+										<div class="sub-nav-item-content">
+											<span class="sub-nav-item-title">Starter Kit</span>
+											<p class="sub-nav-item-description">
+												The easiest way to build a Web3 application
+											</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item"><a href="#">Security Audits</a></li>
+					<li class="item"><a href="#">Learn
+						<i class="material-icons arrow-down">expand_more</i>
+					</a>
+					</li>
+					<li class="item">
+						<a href="#">Company
+							<i class="material-icons arrow-down">expand_more</i>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
