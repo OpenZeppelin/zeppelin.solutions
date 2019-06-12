@@ -97,6 +97,15 @@ p {
   word-break: break-word;
 }
 
+body,
+button,
+input,
+select,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /** Common Shared Styles **/
 
 .hidden {
@@ -154,7 +163,7 @@ p {
 /** UI Components **/
 
 .btn {
-  background: #4e5ee4;
+  background-color: #4e5ee4;
   box-shadow: 0 4px 5px 0 rgba(203, 203, 203, 0.81);
   border-radius: 6px;
   text-align: center;
@@ -170,6 +179,12 @@ p {
   letter-spacing: 1px;
   font-size: 0.9rem;
   min-width: 190px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #4351c5;
 }
 
 /** Sections **/

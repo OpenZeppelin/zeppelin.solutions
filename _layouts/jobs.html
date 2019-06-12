@@ -230,6 +230,7 @@ layout: default
 					</div>
 					<div class="hp-card-action">
 						<span class="icon">
+							+
 						</span>
 					</div>
 				</li>
@@ -309,7 +310,7 @@ layout: default
 			</ul>
 		</div>
 
-		<div class="container center">
+		<div class="section-footer container center">
 			<a class="btn" href="/jobs#openings">see openings</a>
 		</div>
 
@@ -335,6 +336,10 @@ layout: default
 		align-items: center;
   }
 
+	.section.section-hero-jobs .hero .cta {
+    width: 250px;
+  }
+
   .section.section-hero-jobs .hero .wrapper {
     max-width: 700px;
   }
@@ -349,10 +354,12 @@ layout: default
   .section.section-hero-jobs .hero .description {
     opacity: 0.8;
     font-size: 1.1rem;
-		line-height: 1.8;
     color: #282846;
     text-align: center;
     margin-bottom: 30px;
+		line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
   }
 
 	/* Section: section-content */
@@ -377,11 +384,13 @@ layout: default
 
   .section.section-content .description {
     opacity: 0.8;
-    font-size: 1rem;
     color: #282846;
-    letter-spacing: 0.54px;
-    line-height: 24px;
     margin-bottom: 25px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+		line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
   }
 
 	.section.section-content .map {
@@ -438,10 +447,13 @@ layout: default
 
 	.section-core-values .grid .col > .description {
 		opacity: 0.8;
-		font-size: 15px;
 		color: #282846;
-		letter-spacing: 0.54px;
-		line-height: 24px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+		line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
 	}
 
 	/* section: section-job-promo */
@@ -499,16 +511,20 @@ layout: default
 	.section.section-job-promo .job-wall-grid .box-title {
 		font-size: 1.2rem;
 		font-weight: 600;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		text-align: center;
   }
 
 	.section.section-job-promo .job-wall-grid .box-description {
-		opacity: 0.8;
-		font-size: 1rem;
-		color: #282846;
 		text-align: center;
-		line-height: 24px;
+		opacity: 0.8;
+		color: #282846;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+		line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
   }
 
 	/* section: section-jobs-openings */
@@ -522,16 +538,20 @@ layout: default
 		font-size: 1.8rem;
 		color: #282846;
 		text-align: center;
-		line-height: 40px;
-		margin-bottom: 10px;
+		line-height: 1.8;
+		margin-bottom: 5px;
   }
 
 	.section.section-jobs-openings .section-header .section-subtitle {
-		opacity: 0.8;
-		font-size: 1.1rem;
-		color: #282846;
 		text-align: center;
-		line-height: 28px;
+		opacity: 0.8;
+		color: #282846;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+		line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
 		margin-bottom: 25px;
   }
 
@@ -541,11 +561,13 @@ layout: default
   }
 
 	.section.section-jobs-openings .positions-list .positions-list-item {
-		margin: 20px 0;
-		font-size: 1rem;
-		letter-spacing: 0.54px;
+		margin: 0 0 10px;
 		opacity: 0.8;
 		color: #282846;
+    font-size: 1.1rem;
+		line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
   }
 
 	.section.section-jobs-openings .positions-list .positions-list-item.active {
@@ -613,22 +635,22 @@ layout: default
 
 	/** **/
 
-	.section.job-opening-role {
+	.section.job-opening-role .container {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-		height: 300px;
+		height: 200px;
 	}
 
-	.section.job-opening-role .section-title{
+	.section.job-opening-role .section-title {
 		opacity: 0.9;
 		font-size: 1.8rem;
 		color: #282846;
 		text-align: center;
-		line-height: 40px;
-
+		line-height: 1.8;
+		margin-bottom: 5px;
 	}
 
 	.section.job-opening-role .section-subtitle {
@@ -636,7 +658,7 @@ layout: default
 		font-size: 1.1rem;
 		color: #282846;
 		text-align: center;
-		line-height: 28px;
+		line-height: 1.8;
 		margin-bottom: 25px;
 	}
 
@@ -689,8 +711,9 @@ layout: default
 		font-size: 1.3rem;
 		color: #282846;
 		text-decoration: none;
-    line-height: 1.7;
+    line-height: 1.8;
     font-weight: 500;
+		margin: 0;
 	}
 
 	.section.section-hiring-process .hp-card .hp-description {
@@ -702,14 +725,35 @@ layout: default
 		max-width: 580px;
 	}
 
-	.section.section-hiring-process .hp-card .hp-description .icon {
-		opacity: 0.8;
-		font-size: 1rem;
-		color: #282846;
-		letter-spacing: 0.54px;
-		line-height: 24px;
-		max-width: 580px;
+	.section.section-hiring-process .hp-content {
+		flex-grow: 1;
 	}
 
+	.section.section-hiring-process .hp-card-action {
+		flex-grow: 0;
+		min-width: 200px;
+		text-align: right;
+		font-size: 1.2rem;
+		vertical-align: middle;
+	}
+
+	.section.section-hiring-process .hp-card-action .icon {
+		font-size: 28px;
+		transition: color 0.25s ease-in 0s;
+		cursor: pointer;
+	}
+
+	.section.section-hiring-process .hp-card-action .icon:hover {
+		font-size: 28px;
+		color: #4E5EE4;
+	}
+
+	.section.section-hiring-process .section-footer {
+		padding: 40px 0;
+	}
+
+	.section.section-hiring-process .section-footer .btn {
+		width: 200px;
+	}
 
 </style>
