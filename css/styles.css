@@ -169,6 +169,7 @@ p {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 0.9rem;
+  min-width: 190px;
 }
 
 /** Sections **/
