@@ -10,14 +10,14 @@ layout: default
 		<div class="hero">
 			<div class="container">
 				<div class="wrapper">
-					<h1 class="heading">Build the foundations of an open economy</h1>
-					<p class="description">
+					<h1 class="heading fIu">Build the foundations of an open economy</h1>
+					<p class="description fIu">
 						Zeppelin is looking for skillful developers and professionals who
 						are committed to facilitating the creation of shared infrastructure
 						to close the gap between our vision and the reality of how decentralized
 						networks work today.
 					</p>
-					<a class="btn cta" href="/jobs#openings">SEE CURRENT OPENINGS</a>
+					<a class="btn cta fId" href="/jobs#openings">SEE CURRENT OPENINGS</a>
 				</div>
 			</div>
 		</div>
@@ -149,15 +149,17 @@ layout: default
 					<ul class="job-card-list">
 						{% for job in site.jobs %}
 							<li class="job-card">
-								<div class="job-card-content">
-									<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
-									<a class="job-card-title" href="{{ job.url }}">{{ job.title }}</a>
-								</div>
-								<div class="job-card-action">
-									<a href="{{ job.url }}">
-										<img src="../images/ic_arrow_right_blue.svg"/>
-									</a>
-								</div>
+								<a class="job-card-link" href="{{ job.url }}">
+									<div class="job-card-content">
+										<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
+										<h3 class="job-card-title">{{ job.title }}</h3>
+									</div>
+									<div class="job-card-action">
+										<span class="arrow">
+											<img src="../images/ic_arrow_right_blue.svg"/>
+										</span>
+									</div>
+								</a>
 							</li>
 						{% endfor %}
 					</ul>
@@ -168,15 +170,17 @@ layout: default
 					{% for job in site.jobs %}
 					{% if job.tags contains 'engineering' %}
 							<li class="job-card">
-								<div class="job-card-content">
-									<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
-									<a class="job-card-title" href="{{ job.url }}">{{ job.title }}</a>
-								</div>
-								<div class="job-card-action">
-									<a href="{{ job.url }}">
-										<img src="../images/ic_arrow_right_blue.svg"/>
-									</a>
-								</div>
+								<a class="job-card-link" href="{{ job.url }}">
+									<div class="job-card-content">
+										<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
+										<h3 class="job-card-title">{{ job.title }}</h3>
+									</div>
+									<div class="job-card-action">
+										<span class="arrow">
+											<img src="../images/ic_arrow_right_blue.svg"/>
+										</span>
+									</div>
+								</a>
 							</li>
 						{% endif %}
 					{% endfor %}
@@ -188,15 +192,17 @@ layout: default
 					{% for job in site.jobs %}
 					{% if job.tags contains 'communications' %}
 							<li class="job-card">
-								<div class="job-card-content">
-									<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
-									<a class="job-card-title" href="{{ job.url }}">{{ job.title }}</a>
-								</div>
-								<div class="job-card-action">
-									<a href="{{ job.url }}">
-										<img src="../images/ic_arrow_right_blue.svg"/>
-									</a>
-								</div>
+								<a class="job-card-link" href="{{ job.url }}">
+									<div class="job-card-content">
+										<small class="job-card-location">{{ job.location | slice: 0, 80 }}</small>
+										<h3 class="job-card-title">{{ job.title }}</h3>
+									</div>
+									<div class="job-card-action">
+										<span class="arrow">
+											<img src="../images/ic_arrow_right_blue.svg"/>
+										</span>
+									</div>
+								</a>
 							</li>
 						{% endif %}
 					{% endfor %}
@@ -338,6 +344,7 @@ layout: default
 
 	.section.section-hero-jobs .hero .cta {
     width: 250px;
+		animation-delay: 1000ms;
   }
 
   .section.section-hero-jobs .hero .wrapper {
@@ -352,14 +359,14 @@ layout: default
   }
 
   .section.section-hero-jobs .hero .description {
-    opacity: 0.8;
     font-size: 1.1rem;
-    color: #282846;
+    color: #2a2a47;
     text-align: center;
     margin-bottom: 30px;
 		line-height: 1.8;
     font-weight: 300;
     letter-spacing: 0px;
+		animation-delay: 700ms;
   }
 
 	/* Section: section-content */
@@ -521,7 +528,6 @@ layout: default
 		color: #282846;
     margin-bottom: 25px;
     font-size: 1rem;
-    margin-bottom: 30px;
 		line-height: 1.8;
     font-weight: 300;
     letter-spacing: 0px;
@@ -592,8 +598,6 @@ layout: default
 		background: #FFFFFF;
 		border: 1px solid #D5D5D5;
 		height: 100px;
-		padding-left: 28px;
-		padding-right: 28px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -601,6 +605,21 @@ layout: default
 		flex-grow: 1;
 		width: 100%;
 		margin-bottom: 20px;
+		border-radius: 4px;
+		transition: box-shadow 0.25s ease;
+		cursor:pointer;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card-link {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		padding-left: 28px;
+		padding-right: 28px;
+	}
+
+	.section.section-jobs-openings .opening-box-listing .job-card:hover {
+    box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
 	}
 
 	.section.section-jobs-openings .opening-box-listing .job-card .job-card-content {
@@ -609,7 +628,7 @@ layout: default
 		flex-grow: 1;
 	}
 
-	.section.section-jobs-openings .opening-box-listing .job-card .job-card-action > a {
+	.section.section-jobs-openings .opening-box-listing .job-card .job-card-action > .arrow {
 		padding: 10px;
 	}
 

@@ -43,58 +43,14 @@ h1 {
   margin: 0.67em 0;
 }
 
-a {
-  background-color: transparent;
-}
-
-html,
-body,
-div,
-article,
-aside,
-section,
-main,
-nav,
-footer,
-header,
-form,
-fieldset,
-legend,
-pre,
-code,
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figcaption,
-figure,
-textarea,
-table,
-td,
-th,
-tr,
-input[type='email'],
-input[type='number'],
-input[type='password'],
-input[type='tel'],
-input[type='text'],
-input[type='url'] {
-  box-sizing: border-box;
-}
-
 p {
   word-break: break-word;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
 }
 
 body,
@@ -102,6 +58,22 @@ button,
 input,
 select,
 textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #4e5ee4;
+  text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -179,7 +151,7 @@ textarea {
   letter-spacing: 1px;
   font-size: 0.9rem;
   min-width: 190px;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.4s ease;
 }
 
 .btn:hover {
@@ -191,4 +163,74 @@ textarea {
 
 section.section .title {
   color: #282846;
+}
+
+/** **/
+
+@keyframes fId {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fIu {
+  opacity: 0;
+  animation-name: fIu;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes fIu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fId {
+  opacity: 0;
+  animation-name: fId;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes fId {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -25px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
