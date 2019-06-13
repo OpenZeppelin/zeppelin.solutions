@@ -7,6 +7,7 @@ layout: default
 		padding-top: 0;
 		color: white;
 		background-color: #282846;
+		height: 700px;
 	}
 
 	.sub-bar {
@@ -32,6 +33,7 @@ layout: default
 		letter-spacing: 1px;
 		text-align: right;
 		font-size: 0.9rem;
+		position: relative;
 	}
 
 	.sub-bar .request-audit-link {
@@ -45,6 +47,79 @@ layout: default
 	.page-security .timeline {
 		margin-top: 100px;
 	}
+
+	.security-audits-hero .container {
+		position: relative;
+	}
+
+	.page-security .audit-reports {
+		text-align: center;
+		position: absolute;
+		bottom: -190px;
+		z-index: 1;
+	}
+
+	.page-security .audit-reports .grid {
+		margin-bottom: 15px;
+	}
+
+	.page-security .audit-reports .grid .col {
+		box-shadow: 0 4px 9px 0 rgba(0,0,0,0.32);
+		border-radius: 6px;
+		height: 150px;
+		overflow: hidden;
+		margin-left: 15px;
+		max-weight: 310px;
+	}
+
+	.page-security .audit-reports .heading {
+		margin-bottom: 20px;
+	}
+
+	.sa-faqs {
+		padding-top: 180px;
+		position: relative;
+	}
+
+	.sa-faqs .heading {
+		text-align: center;
+	}
+
+	.sa-faqs .faq-list {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.question {
+		padding: 34px 0;
+		border-bottom: solid 1px #E1E1E2;
+	}
+
+	.question .faqs-title {
+		margin-bottom: 25px;
+    max-width: 560px;
+    display: block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    line-height: 1.8;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 15px;
+    color: inherit;
+	}
+
+	.question .faqs-description {
+		color: #56566E;
+    line-height: 24px;
+    max-width: 600px;
+    transition: height 0.8s ease;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0px;
+	}
+
 </style>
 
 {% include new-nav.html %}
@@ -52,6 +127,7 @@ layout: default
 <main class="page-security">
 	<section class="section security-audits-hero">
 		<div class="container">
+
 			<div class="sub-bar">
 				<div class="sa-logo">
 					<svg width="114px" height="28px" viewBox="0 0 114 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -71,98 +147,82 @@ layout: default
 					<a href="" class="request-audit-link">Request an audit</a>
 				</div>
 			</div>
+
 			<div class="wrapper">
 				<h1 class="heading">Security audits for distributed systems</h1>
 				<p class="description">
 					Zeppelin verifies that your distributed systems work as intended by performing an audit. Our engineers fully review your system’s architecture and codebase, then write a thorough report with actionable feedback for every issue found.
 				</p>
 			</div>
+
 			<div class="timeline">
 				{% include timeline.html %}
 			</div>
+
+			<div class="audit-reports">
+				<h3 class="heading typography--mutted">Our most popular audit reports</h3>
+				<div class="grid">
+					<div class="row">
+						<div class="col">
+							<a target="_blank" href="https://blog.zeppelin.solutions/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
+						</div>
+						<div class="col">
+							<a target="_blank" href="https://blog.zeppelin.solutions/solidity-compiler-audit-8cfc0316a420"><img src="../images/security-audits/audit-2.png"/></a>
+						</div>
+						<div class="col">
+						  <a target="_blank" href="https://blog.zeppelin.solutions/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-3.png"/></a>
+						</div>
+					</div>
+				</div>
+				<a class="btn btn--mutted" href="https://blog.zeppelin.solutions/tagged/security" target="_blank">SEE ALL ></a>
+			</div>
+
 		</div>
 	</section>
-	<section class="section sa-faqs">
+
+	<div class="section sa-faqs gray">
 		<div class="container">
 			<div class="heading">
 				FAQ
 			</div>
 			<ul class="faq-list">
 				<li class="question">
-					<h3 class="short">What will I find in the audit report?</h3>
-					<p class="small short">The report outlines potential problems in the code with actionable recommendations to guard against potential attack vectors, together with a general analysis of the systems’ dynamics reflecting both state-of-the-art security patterns and opportunities for improvement regarding the project's overall quality and maturity.</p>
+					<h3 class="faqs-title">What will I find in the audit report?</h3>
+					<p class="faqs-description">The report outlines potential problems in the code with actionable recommendations to guard against potential attack vectors, together with a general analysis of the systems’ dynamics reflecting both state-of-the-art security patterns and opportunities for improvement regarding the project's overall quality and maturity.</p>
 				</li>
 				<li class="question">
-					<h3 class="short">Is the report private?</h3>
-					<p class="small short">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
+					<h3 class="faqs-title">Is the report private?</h3>
+					<p class="faqs-description">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
 				</li>
 				<li class="question">
-					<h3 class="short">Which technologies do you work with?</h3>
-					<p class="small short last-p">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
+					<h3 class="faqs-title">Which technologies do you work with?</h3>
+					<p class="faqs-description">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
 				</li>
 				<li class="question">
-					<h3 class="short">Which technologies do you work with?</h3>
-					<p class="small short last-p">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
+					<h3 class="faqs-title">Which technologies do you work with?</h3>
+					<p class="faqs-description">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
 				</li>
 			</ul>
+
+			<div class="sa-comments">
+				<div class="container">
+					<h3 class="heading typography--mutted">The world’s leading projects work with Zeppelin</h3>
+					{% include security-quote.html %}
+				</div>
+			</div>
+
 		</div>
 	</section>
 
-	<section class="section sa-comments">
-		<div class="container">
-			<h4>The world’s leading projects work with Zeppelin</h4>
-			{% include security-quote.html %}
-		</div>
-	</section>
+
 
 	<section class="section sa-partners">
 		{% include partners.html %}
 	</section>
 </main>
 
-<section class="audits-principal hero-background" id="principal">
 
-  <section class="security-home" id="home">
-    <div class="container">
-      <h1 class="home-title">Security audits for distributed systems</h1>
-      <p class="middle long about-hero-subtitle">Zeppelin verifies that your distributed systems work as intended by performing an audit. Our engineers fully review your system’s architecture and codebase, then write a thorough report with actionable feedback for every issue found.</p>
-    </div>
-    <div class="row triangle-row-padding">
-
-    </div>
-    <div class="row reports blog-box">
-    	<p class="middle centered line-fix">Our most popular audit reports</p>
-    	<br/>
-      <div class="flex-box mobile-column container">
-        <div class="centered">
-            <a target="_blank" href="https://blog.zeppelin.solutions/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
-        </div>
-        <div class="centered">
-            <a target="_blank" href="https://blog.zeppelin.solutions/solidity-compiler-audit-8cfc0316a420"><img src="../images/security-audits/audit-2.png"/></a>
-        </div>
-        <div class="centered">
-            <a target="_blank" href="https://blog.zeppelin.solutions/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-3.png"/></a>
-        </div>
-      </div>
-      <div class="centered">
-      	<br/>
-	      <a class="see-all-btn" href="https://blog.zeppelin.solutions/tagged/security" target="_blank">SEE ALL ></a>
-	    </div>
-    </div>
-    </section>
-</section>
-<section class="row grey faq">
-  <div class="container centered">
-    <h2>FAQ</h2>
-  </div>
-</section>
-<section class="row" id="leading-projects" style="padding-top: 30px">
-
-</section>
-<section class="no-padding icon-partners">
-
-</section>
-<section class="security-cards-section">
+<!-- <section class="security-cards-section">
   <div class="container">
     <h2>Make your code more secure from day 1</h2>
     <p class="small short">Accelerate your development process by using fully-audited projects, trusted by the best decentralized applications. Make use of the ZeppelinOS framework and the OpenZeppelin package for standard functions in your applications.</p>
@@ -183,4 +243,4 @@ layout: default
       <img src="../images/badge_audit.svg"/>
     </div>
   </div>
-</section>
+</section> -->
