@@ -28,6 +28,7 @@ html {
 }
 
 body {
+  color: #2a2a47;
   margin: 0;
   font-family: 'silka', 'Helvetica', -apple-system, BlinkMacSystemFont,
     sans-serif;
@@ -336,7 +337,7 @@ section.section .title {
 
 .description {
   font-size: 1.1rem;
-  color: #2a2a47;
+  color: inherit;
   text-align: inherit;
   margin-bottom: 30px;
   line-height: 1.8;

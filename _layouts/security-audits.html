@@ -3,97 +3,132 @@ layout: default
 ---
 
 <style type="text/css">
-	.audits-principal {
-	  background-image: linear-gradient(297deg, #1b374a, #052431)!important;
-	  height: auto!important;
-		border-bottom: solid 0px transparent !important;
+	.security-audits-hero {
+		padding-top: 0;
+		color: white;
+		background-color: #282846;
 	}
-	.see-all-btn {
-	  opacity: 0.6;
-	  font-family: Helvetica;
-	  font-size: 11px;
-	  letter-spacing: 1.5px;
-	  text-align: center;
-	  color: #3c3c3c;
+
+	.sub-bar {
+		display: flex;
+		height: 80px;
+		line-height: 80px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 80px;
 	}
-	.security-home {
-		padding-bottom: 0 !important;
+
+	.sub-bar > div {
+		flex: 1;
 	}
-	.blog-box {
-		margin-bottom: -1px;
-	  background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 40%, #052431 40%, #052431 44%, transparent 44%,transparent 100%)!important;
+
+	.sa-logo > svg {
+		vertical-align: middle;
 	}
-	section.icon-partners {
-		 min-height: 227px;
+
+	.sub-bar .request-audit-container {
+		text-transform: uppercase;
+		color: #FFFFFF;
+		letter-spacing: 1px;
+		text-align: right;
+		font-size: 0.9rem;
 	}
-  @media (max-width: 900px) {
-    .blog-box img { margin: 10px 0; }
-		.blog-box {background: linear-gradient(to top, #f6f6f7 0%, #f6f6f7 74%,transparent 74%,transparent 100%)!important;}
-		#process div.last { margin-bottom: -80px; }
-		.line-fix { padding-top: 3rem; }
-		#process div p { font-size: 14px; }
-		.request-audit-container img { margin: 0 0 34px 0; }
-		.faq .last-p { padding-bottom: 0; }
-		.faq h3 { font-size: 1.75em !important; }
-		.icon-partners.no-padding { padding-bottom: 40px !important}
-  }
-	.reports img {
-	  width: 95%;
+
+	.sub-bar .request-audit-link {
+		color: white;
 		border-radius: 6px;
-	  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.14), 0 0px 6px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-	}
-	.faq {
-		padding-bottom: 0;
-	}
-	.faq p {
-		margin: auto;
-		padding-bottom: 35px;
-    border-bottom: solid 1.5px #d5d5d5;
-	}
-	.faq p.last-p {
-    border-bottom: solid 0px transparent;
-	}
-	.faq h3 {
-	  font-family: Helvetica;
-	  font-size: 1.5em;
-	  line-height: 1.25;
-	  color: #4a4a4a;
-	  text-align: left;
-	  margin: 35px auto 10px auto;
+		height: 40px;
+  	line-height: 40px;
+		display: inline-block;
 	}
 
-	.triangle-row-padding {
-	  padding: 20px 15px;
+	.page-security .timeline {
+		margin-top: 100px;
 	}
-	#leading-projects {
-	  background: linear-gradient(to top, #fff 0%,#fff 50%, #f7f7f8 50%, #f7f7f8 100%)!important;
-	}
-
-	.security-cards-section {
-		background: linear-gradient(to top, white 0%,white 20%,#f7f7f8 10%,#f7f7f8 100%)!important;
-	}
-	.about-hero-subtitle {
-		margin-bottom: 50px;
-	}
-	@media (max-width: 900px) {
-		.about-hero-subtitle {
-			margin-bottom: 25px;
-		}
-	}
-
 </style>
 
+{% include new-nav.html %}
+
+<main class="page-security">
+	<section class="section security-audits-hero">
+		<div class="container">
+			<div class="sub-bar">
+				<div class="sa-logo">
+					<svg width="114px" height="28px" viewBox="0 0 114 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g transform="translate(-215.000000, -84.000000)" fill="#FFFFFF">
+											<g transform="translate(213.000000, 84.000000)">
+													<path d="M44.4531903,21.3982222 C41.4676676,21.3982222 39.4897587,19.6248889 39.4897587,17.0302222 L41.8968365,17.0302222 C41.915496,18.2062222 42.8857909,19.1208889 44.5278284,19.1208889 C45.9272922,19.1208889 46.8229491,18.5235556 46.8229491,17.5342222 C46.8229491,14.5475556 39.8816086,16.9555556 39.8816086,11.6168889 C39.8816086,9.54488889 41.5236461,7.84622222 44.3972118,7.84622222 C46.8789276,7.84622222 48.9874531,9.15288889 49.0620912,11.8782222 L46.5803753,11.8782222 C46.5617158,10.7955556 45.7966756,10.0675556 44.3972118,10.0675556 C43.0164075,10.0675556 42.3446649,10.7582222 42.3446649,11.5795556 C42.3446649,14.3048889 49.3793029,12.0648889 49.3793029,17.3475556 C49.3793029,19.6622222 47.5879893,21.3982222 44.4531903,21.3982222 Z M55.8168365,21.3982222 C52.9246113,21.3982222 50.8720643,19.2328889 50.8720643,16.3022222 C50.8720643,13.2035556 52.9432708,11.0942222 55.8168365,11.0942222 C58.9702949,11.0942222 60.6869705,13.4275556 60.6869705,16.1902222 L60.6869705,16.9555556 L53.2231635,16.9555556 C53.2978016,18.4488889 54.3240751,19.4568889 55.8914745,19.4568889 C57.0856836,19.4568889 58,18.8968889 58.3358713,18.0942222 L60.5936729,18.0942222 C60.1085255,20.0915556 58.3545308,21.3982222 55.8168365,21.3982222 Z M53.2604826,15.2382222 L58.3731903,15.2382222 C58.2612332,13.9128889 57.2349598,13.0355556 55.8168365,13.0355556 C54.4546917,13.0355556 53.4097587,14.0062222 53.2604826,15.2382222 Z M67.3484182,21.3982222 C64.2695979,21.3982222 62.2170509,19.1395556 62.2170509,16.2462222 C62.2170509,13.3528889 64.2695979,11.0942222 67.3484182,11.0942222 C69.8674531,11.0942222 71.8267024,12.6435556 72.1998928,14.9582222 L69.7181769,14.9582222 C69.4196247,13.9875556 68.5053083,13.2968889 67.3670777,13.2968889 C65.7250402,13.2968889 64.6801072,14.6035556 64.6801072,16.2462222 C64.6801072,17.9448889 65.7810188,19.1955556 67.3857373,19.1955556 C68.5053083,19.1955556 69.4196247,18.5608889 69.6995174,17.6088889 L72.1812332,17.6088889 C71.8080429,19.8862222 69.8674531,21.3982222 67.3484182,21.3982222 Z M77.797748,21.3982222 C75.5959249,21.3982222 74.2337802,19.8488889 74.2337802,17.7582222 L74.2337802,11.3368889 L76.6595174,11.3368889 L76.6595174,17.1422222 C76.6595174,18.3368889 77.4432172,19.1582222 78.5627882,19.1582222 C79.7383378,19.1582222 80.5780161,18.2062222 80.5780161,16.9742222 L80.5780161,11.3368889 L83.0037534,11.3368889 L83.0037534,21.1555556 L80.6899732,21.1555556 L80.6899732,19.9608889 L80.5406971,19.9608889 C80.1488472,20.6888889 79.1785523,21.3982222 77.797748,21.3982222 Z M85.5787668,21.1555556 L85.5787668,11.3368889 L87.8738874,11.3368889 L87.8738874,12.9422222 L88.0231635,12.9422222 C88.3403753,12.1768889 89.2360322,11.2995556 90.5981769,11.2995556 L91.4938338,11.2995556 L91.4938338,13.6142222 L90.4862198,13.6142222 C88.9374799,13.6142222 88.004504,14.7528889 88.004504,16.5075556 L88.004504,21.1555556 L85.5787668,21.1555556 Z M94.7965684,10.0302222 C93.919571,10.0302222 93.303807,9.48888889 93.303807,8.61155556 C93.303807,7.77155556 93.919571,7.21155556 94.7965684,7.21155556 C95.6735657,7.21155556 96.2893298,7.77155556 96.2893298,8.61155556 C96.2893298,9.48888889 95.6735657,10.0302222 94.7965684,10.0302222 Z M93.5836997,21.1555556 L93.5836997,11.3368889 L96.009437,11.3368889 L96.009437,21.1555556 L93.5836997,21.1555556 Z M102.745523,21.1555556 C100.711635,21.1555556 99.4801072,19.9982222 99.4801072,17.8888889 L99.4801072,13.2782222 L97.8194102,13.2782222 L97.8194102,11.3555556 L98.9203217,11.3555556 C99.3494906,11.3555556 99.6293834,11.0755556 99.6293834,10.6088889 L99.6293834,8.63022222 L101.905845,8.63022222 L101.905845,11.3368889 L104.611475,11.3368889 L104.611475,13.2782222 L101.905845,13.2782222 L101.905845,17.7955556 C101.905845,18.6168889 102.316354,19.1395556 103.24933,19.1395556 L104.555496,19.1395556 L104.555496,21.1555556 L102.745523,21.1555556 Z M106.887936,25.4488889 L106.887936,23.2835556 L107.89555,23.2835556 C108.735228,23.2835556 109.201716,22.8728889 109.481609,22.1448889 L109.742842,21.4542222 L105.843003,11.3368889 L108.399357,11.3368889 L110.843753,18.2435556 L110.993029,18.2435556 L113.362788,11.3368889 L115.956461,11.3368889 L111.627453,22.8355556 C111.011689,24.4968889 110.004075,25.4488889 108.100804,25.4488889 L106.887936,25.4488889 Z" id="Security" fill-rule="nonzero"></path>
+													<g>
+															<path d="M24.08,7.28 L25.2,22.4 L14,28 L2.8,22.4 L3.92,7.28 L14,8.397312 L24.08,7.28 Z M24.08,3.64 L14,4.757312 L3.92,3.64 L3.92,1.13686838e-13 L14,1.117312 L24.08,1.13686838e-13 L24.08,3.64 Z" id="Combined-Shape"></path>
+													</g>
+											</g>
+									</g>
+							</g>
+					</svg>
+				</div>
+				<div class="request-audit-container">
+					<a href="" class="request-audit-link">Request an audit</a>
+				</div>
+			</div>
+			<div class="wrapper">
+				<h1 class="heading">Security audits for distributed systems</h1>
+				<p class="description">
+					Zeppelin verifies that your distributed systems work as intended by performing an audit. Our engineers fully review your system’s architecture and codebase, then write a thorough report with actionable feedback for every issue found.
+				</p>
+			</div>
+			<div class="timeline">
+				{% include timeline.html %}
+			</div>
+		</div>
+	</section>
+	<section class="section sa-faqs">
+		<div class="container">
+			<div class="heading">
+				FAQ
+			</div>
+			<ul class="faq-list">
+				<li class="question">
+					<h3 class="short">What will I find in the audit report?</h3>
+					<p class="small short">The report outlines potential problems in the code with actionable recommendations to guard against potential attack vectors, together with a general analysis of the systems’ dynamics reflecting both state-of-the-art security patterns and opportunities for improvement regarding the project's overall quality and maturity.</p>
+				</li>
+				<li class="question">
+					<h3 class="short">Is the report private?</h3>
+					<p class="small short">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
+				</li>
+				<li class="question">
+					<h3 class="short">Which technologies do you work with?</h3>
+					<p class="small short last-p">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
+				</li>
+				<li class="question">
+					<h3 class="short">Which technologies do you work with?</h3>
+					<p class="small short last-p">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section sa-comments">
+		<div class="container">
+			<h4>The world’s leading projects work with Zeppelin</h4>
+			{% include security-quote.html %}
+		</div>
+	</section>
+
+	<section class="section sa-partners">
+		{% include partners.html %}
+	</section>
+</main>
+
 <section class="audits-principal hero-background" id="principal">
-  {% include new-nav.html %}
+
   <section class="security-home" id="home">
     <div class="container">
       <h1 class="home-title">Security audits for distributed systems</h1>
       <p class="middle long about-hero-subtitle">Zeppelin verifies that your distributed systems work as intended by performing an audit. Our engineers fully review your system’s architecture and codebase, then write a thorough report with actionable feedback for every issue found.</p>
     </div>
     <div class="row triangle-row-padding">
-      <div class="container" id="process">
-        {% include timeline.html%}
-      </div>
+
     </div>
     <div class="row reports blog-box">
     	<p class="middle centered line-fix">Our most popular audit reports</p>
@@ -120,25 +155,12 @@ layout: default
   <div class="container centered">
     <h2>FAQ</h2>
   </div>
-  <div class="container">
-    <h3 class="short">What will I find in the audit report?</h3>
-    <p class="small short">The report outlines potential problems in the code with actionable recommendations to guard against potential attack vectors, together with a general analysis of the systems’ dynamics reflecting both state-of-the-art security patterns and opportunities for improvement regarding the project's overall quality and maturity.</p>
-
-    <h3 class="short">Is the report private?</h3>
-    <p class="small short">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
-
-    <h3 class="short">Which technologies do you work with?</h3>
-    <p class="small short last-p">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
-  </div>
 </section>
 <section class="row" id="leading-projects" style="padding-top: 30px">
-  <div class="container centered">
-    <h4>The world’s leading projects work with Zeppelin</h4>
-  </div>
-  {% include security-quote.html %}
+
 </section>
 <section class="no-padding icon-partners">
-	{% include partners.html %}
+
 </section>
 <section class="security-cards-section">
   <div class="container">
