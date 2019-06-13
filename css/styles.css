@@ -161,6 +161,28 @@ a {
   background-color: #4351c5;
 }
 
+.btn--secondary {
+  background-color: #282846;
+  color: white;
+  min-width: auto;
+}
+
+.btn--secondary:hover {
+  background-color: #282846;
+  color: white;
+}
+
+.btn--secondary-ghost {
+  background-color: transparent;
+  color: #282846;
+  min-width: auto;
+}
+
+.btn--secondary-ghost:hover {
+  background-color: #282846;
+  color: white;
+}
+
 .btn--bordered {
   border: solid 1px #4351c5;
   background-color: transparent;
