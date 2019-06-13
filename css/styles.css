@@ -151,9 +151,12 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 0.9rem;
-  min-width: 190px;
   transition: background-color 0.4s ease;
   font-weight: 600;
+}
+
+.btn.fixed {
+  min-width: 190px;
 }
 
 .btn:hover {
@@ -193,6 +196,19 @@ a {
 .btn--bordered:hover {
   border: solid 1px #4351c5;
   background-color: #4351c5;
+  color: white;
+}
+
+.btn--bordered-secondary {
+  border: solid 1px #282846;
+  background-color: transparent;
+  color: #282846;
+  box-shadow: none;
+}
+
+.btn--bordered-secondary:hover {
+  border: solid 1px #282846;
+  background-color: #282846;
   color: white;
 }
 
