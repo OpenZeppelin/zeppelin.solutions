@@ -369,10 +369,18 @@ section.section .title {
 .typography--mutted {
   opacity: 0.9;
   font-size: 1rem;
-  color: #ffffff;
+  color: #282846;
   letter-spacing: 1.4px;
   text-align: center;
   line-height: 32px;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.typography--primary {
+  color: #282846;
+}
+
+.typography--white {
+  color: #ffffff;
 }
