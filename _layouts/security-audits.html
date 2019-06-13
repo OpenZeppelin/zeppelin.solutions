@@ -59,6 +59,10 @@ layout: default
 		z-index: 1;
 	}
 
+	.page-security .audit-reports .heading {
+		color: white;
+	}
+
 	.page-security .sa-comments {
 		text-align: center;
 		position: absolute;
@@ -77,6 +81,19 @@ layout: default
 		overflow: hidden;
 		margin-left: 15px;
 		max-weight: 310px;
+		overflow: hidden;
+    transform: translateZ(0px);
+    will-change: transform;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.25s ease-out 0s;
+	}
+
+	.page-security .audit-reports .grid .col:hover {
+		transform: translateZ(0px) scale(1.05);
+    backface-visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0px, rgba(0, 0, 0, 0.05) 0px 0.2rem 0.6rem, rgba(0, 0, 0, 0.05) 0px 1rem 2rem;
+    transition: all 0.25s ease-in 0s;
 	}
 
 	.page-security .audit-reports .heading {
@@ -144,6 +161,18 @@ layout: default
 		border-radius: 6px;
 		margin-right: 20px;
 		overflow: hidden;
+    transform: translateZ(0px);
+    will-change: transform;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.25s ease-out 0s;
+	}
+
+	.project-card:hover {
+		transform: translateZ(0px) scale(1.05);
+    backface-visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0px, rgba(0, 0, 0, 0.05) 0px 0.2rem 0.6rem, rgba(0, 0, 0, 0.05) 0px 1rem 2rem;
+    transition: all 0.25s ease-in 0s;
 	}
 
 	.project-card .project-card-header {
@@ -214,6 +243,11 @@ layout: default
 	.page-security .sa-request-audit .section-header {
 		max-width: 700px;
 		padding-top: 200px;
+		margin: 0 auto;
+	}
+
+	.page-security .sa-projects .section-header {
+		max-width: 700px;
 		margin: 0 auto;
 	}
 

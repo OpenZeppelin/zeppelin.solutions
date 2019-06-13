@@ -1,8 +1,9 @@
 ---
 ---
 
-#jobs #principal, .job-opening {
-  background: linear-gradient(to bottom right,#2F99D8, #3EBBE5)!important;
+#jobs #principal,
+.job-opening {
+  background: linear-gradient(to bottom right, #2f99d8, #3ebbe5) !important;
   height: 50vh;
 }
 #jobs .flex-box div {
@@ -17,7 +18,8 @@ h2.row.values {
   margin: 0 0 5px 0;
   font-size: 1.1em;
 }
-#values h3, #remote-by-default h3 {
+#values h3,
+#remote-by-default h3 {
   font-size: 1.8em;
 }
 #values .flex-box div {
@@ -27,7 +29,7 @@ h2.row.values {
 /*how we work*/
 #how-we-work {
   padding: 0 !important;
-  height: 420px!important;
+  height: 420px !important;
 }
 #how-we-work .img-box {
   margin-right: 0;
@@ -37,10 +39,10 @@ h2.row.values {
   height: 420px;
 }
 #how-we-work .text-box {
-  height: 100%!important;
+  height: 100% !important;
   display: flex;
   flex-direction: column;
-  justify-content: center!important;
+  justify-content: center !important;
 }
 
 /*current openings*/
@@ -60,31 +62,36 @@ h2.row.values {
 }
 #jobs .card .card-content {
   padding: 24px 24px 0 24px;
-} 
+}
 #jobs .card.darken-1 {
   margin: 1rem 0 1.5rem 0;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.05),
+    0 3px 1px -2px rgba(0, 0, 0, 0);
 }
-#jobs .card h6 {/*card subtitle*/
+#jobs .card h6 {
+  /*card subtitle*/
   font-family: 'DINPro-bold';
   font-size: 0.8em;
   line-height: 2em;
   color: #283850;
   letter-spacing: 2px;
 }
-#jobs .card h3 {/*titulos card*/
-  font-family: 'DINPro-regular'; 
+#jobs .card h3 {
+  /*titulos card*/
+  font-family: 'DINPro-regular';
   font-size: 2.4em;
   margin: 2px 0;
   color: #283850;
   letter-spacing: 0 !important;
 }
-#jobs .card h4 {/*card text*/
+#jobs .card h4 {
+  /*card text*/
   font-size: 1.5em;
   margin: 10px 0 0 0;
   color: #485568;
 }
-#jobs .card h5 {/*card text*/
+#jobs .card h5 {
+  /*card text*/
   font-size: 1.1em;
   font-family: 'SourceRegular';
   font-style: italic;
@@ -106,8 +113,8 @@ h2.row.values {
 }
 
 .job-opening {
-  min-height: 300px!important;
-  height: auto!important;
+  min-height: 300px !important;
+  height: auto !important;
 }
 #job-openings {
   background: white;
@@ -134,7 +141,7 @@ h2.row.values {
   padding: 0 22px 0;
 }
 #job-openings li:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 8px;
   height: 8px;
@@ -157,7 +164,7 @@ span.openings {
   display: inline-flex;
   align-items: center;
 }
-span.openings h5{
+span.openings h5 {
   padding-left: 7px;
 }
 
