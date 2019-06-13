@@ -151,8 +151,25 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 0.9rem;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
   font-weight: 600;
+}
+
+.btn.btn--ghost {
+  border: none;
+  background-color: transparent;
+  color: #4351c5;
+  box-shadow: none;
+  text-align: inherit;
+  padding: 0;
+}
+
+.btn.btn--ghost:hover {
+  border: none;
+  background-color: transparent;
+  color: #333ea0;
+  box-shadow: none;
+  text-align: inherit;
 }
 
 .btn.fixed {
