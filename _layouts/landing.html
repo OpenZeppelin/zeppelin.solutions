@@ -2,13 +2,116 @@
 layout: default
 ---
 <style type="text/css">
+	.l-projects {
+		padding: 50px;
+	}
+
+	.l-projects .sub-heading {
+		margin-bottom: 40px;
+	}
+
+	.l-projects .projects-grid { margin-bottom: 120px; }
+
+	.l-projects .projects-grid .item {
+		background-color: gray;
+		height: 54px;
+		margin-right: 54px;
+		opacity: 0.3;
+	}
+
+	.l-projects .projects-grid .item:last-child {
+		margin-right: 0;
+	}
+
+	.l-projects .heading {
+		margin: 60px 0;
+		text-align: center;
+	}
+
+	.l-hero-quote {
+		padding-bottom: 200px;
+	}
+
+	.l-hero-quote .container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.l-hero-quote .quote {
+		padding-top: 180px;
+		font-family: Silka;
+		font-size: 1.5rem;
+		color: #FFFFFF;
+		letter-spacing: 0;
+		text-align: center;
+		line-height: 32px;
+		max-width: 600px;
+	}
+
+	.l-hero-quote .quote .quote-description {
+		margin-bottom: 30px;
+	}
+
+	.l-hero-quote .quote .quote-footer {
+		display: flex;
+		height: 48px;
+		align-items: center;
+	}
+
+	.l-hero-quote .quote .quote-footer .quote-author {
+		margin-left: 20px;
+		opacity: 0.8;
+		font-family: HelveticaNeue;
+		font-size: 1rem;
+		color: #FFFFFF;
+		letter-spacing: 0.54px;
+		line-height: 24px;
+	}
+
+	.l-hero-quote .quote .quote-footer figure, .l-hero-quote .quote .quote-footer img {
+		height: 100%;
+	}
+
+	.l-blueprint > .container {
+		position: relative;
+	}
+
+	.l-blueprint .projects-grid {
+		margin-bottom: -200px;
+	}
+
+	.l-cta .main-box {
+		margin-top: -200px;
+		display: flex;
+	}
+
+	.l-cta .box .box-side {
+		text-align: center;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
+	.l-cta .box-description {
+		max-width: 700px;
+	}
+
+	.l-cta .building-grid .box {
+		height: 220px;
+		margin-right: 20px;
+	}
+
 
 </style>
+
 {% include new-nav.html %}
 
 <main class="page-landing">
 
-	<section class="section hero landing-hero gray">
+	<section class="l-hero section hero section--gray">
 		<div class="container">
 			<div class="wrapper">
 				<h1 class="heading fIu">Professional development platform for decentralized applications</h1>
@@ -19,16 +122,121 @@ layout: default
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="l-projects">
 		<div class="container">
-			WIP
+			<h3 class="sub-heading">The world’s leading projects trust OpenZeppelin</h3>
+			<div class="grid projects-grid">
+				<div class="row">
+					<div class="col item"></div>
+					<div class="col item"></div>
+					<div class="col item"></div>
+					<div class="col item"></div>
+					<div class="col item"></div>
+					<div class="col item"></div>
+				</div>
+			</div>
+			<h2 class="heading">The challenges of building decentralized applications</h2>
+			<div class="grid">
+				<div class="row">
+					<div class="col box box--primary">
+						<h4 class="box-heading">Security</h4>
+						<p class="box-description">
+							Economies in which software powers real money are exposed to hacks and attacks.
+						</p>
+					</div>
+					<div class="col box box--primary">
+						<h4 class="box-heading">Developer Experience</h4>
+						<p class="box-description">
+							Lack of proper development and testing tools increases margin of errors exponentially.
+						</p>
+					</div>
+					<div class="col box box--primary">
+						<h4 class="box-heading">Operations</h4>
+						<p class="box-description">
+							It’s difficult to manage and fix problems in decentralized systems once deployed.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<section class="section gray">
+	<section class="l-blueprint section section--gray">
 		<div class="container">
-			<h2 class="heading">Your blueprint for decentralized systems</h2>
-			<p class="description">Reduce barriers to entry by securely implementing blockchain-based technologies, using standard developer tools and platforms.</p>
+			<div class="section-header">
+				<h2 class="heading">Your blueprint for decentralized systems</h2>
+				<p class="description">Reduce barriers to entry by securely implementing blockchain-based technologies, using standard developer tools and platforms.</p>
+			</div>
 			{% include projects-grid.html %}
+		</div>
+	</section>
+	<section class="l-hero-quote section section--violet ">
+		<div class="container">
+			<blockquote class="quote">
+				<p class="quote-description">“I have a very high opinion of the OpenZeppelin team and their work”</p>
+				<footer class="quote-footer">
+					<figure>
+						<img class="img" src="../images/brendan.jpg" alt="Brendan Eich">
+					</figure>
+					<span class="quote-author">
+						<strong>Brendan Eich </strong> |  <cite>Founder of Mozilla and Brave, Javascript creator.</cite>
+					<span>
+				</footer>
+			</blockquote>
+		</div>
+	</section>
+	<section class="section l-cta section--gray">
+		<div class="container">
+			<div class="main-box box box--secondary">
+				<div class="box-main">
+					<h2 class="box-heading">In-depth security audits</h2>
+					<p class="box-description">
+					In an economy where software code powers real money, security is a top priority.
+					We specialize in auditing high-impact decentralized systems.
+					</p>
+					<a href="" class="btn btn--bordered btn--fixed">
+						Learn More
+					</a>
+				</div>
+				<div class="box-side">
+					<svg width="77px" height="96px" viewBox="0 0 77 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Zeppelin-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g id="Homepage_V1" transform="translate(-1008.000000, -2314.000000)" fill="#4E5EE4">
+											<g id="Group-9" transform="translate(244.000000, 2217.000000)">
+													<path d="M837.15,97 L802.5,100.830933 L767.85,97 L767.85,109.48 L802.5,113.310933 L837.15,109.48 L837.15,97 Z M802.5,125.790933 L767.85,121.96 L764,173.8 L802.5,193 L841,173.8 L837.15,121.96 L802.5,125.790933 Z" id="Fill-16"></path>
+											</g>
+									</g>
+							</g>
+					</svg>
+				</div>
+			</div>
+			<div class="section-header">
+				<h2 class="heading">Start building</h2>
+				<p class="description">
+					Check out our resources for beginner and experienced
+					smart contracts and blockchain developers
+				</p>
+			</div>
+			<div class="grid building-grid">
+				<div class="row">
+					<div class="col box box--secondary">
+						<h3 class="box-heading">Docs</h3>
+						<p class="box-description">
+							Check out our resources for beginner and experienced
+							smart contracts and blockchain developers
+						</p>
+					</div>
+					<div class="col box box--secondary">
+						<h3 class="box-heading">Forum</h3>
+						<p class="box-description">Connect with experts, beginners and enthusiasts and discuss about blockchain development, security, design patterns and best practices.</p>
+					</div>
+					<div class="col box box--secondary">
+						<h3 class="box-heading">Ethernaut</h3>
+						<p class="box-description">
+							A Web3/Solidity based wargame played in Ethereum where each level is a smart contract that needs to be hacked.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>
