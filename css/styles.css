@@ -267,23 +267,17 @@ section.section .title {
 
 /** Hero **/
 
-/* Section: section-hero-jobs */
-.section.section-hero-jobs {
-  background-color: #f8f8fa;
-}
-
-.section.hero,
 .hero {
   height: 400px;
   text-align: center;
 }
 
-.section.hero.gray,
+.hero.gray,
 .hero.gray {
   background-color: #f8f8fa;
 }
 
-.section.hero .container {
+.hero .container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -291,7 +285,7 @@ section.section .title {
   align-items: center;
 }
 
-.section.hero .cta {
+.hero .cta {
   width: 250px;
   animation-delay: 1000ms;
 }
