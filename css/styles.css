@@ -22,7 +22,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -37,11 +37,6 @@ body {
   color: #282846;
   background-color: white;
   font-size: 15px;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 p {
@@ -133,6 +128,10 @@ a {
   flex-shrink: 1;
 }
 
+.col:last-child {
+	margin-right: 0;
+}
+
 /** UI Components **/
 
 .btn {
@@ -150,9 +149,10 @@ a {
   padding-left: 15px;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   transition: background-color 0.4s ease, color 0.4s ease;
-  font-weight: 600;
+	font-weight: 600;
+	overflow: hidden;
 }
 
 .btn--fixed {
@@ -308,7 +308,7 @@ section.section .title {
 }
 
 .section .wrapper {
-  max-width: 700px;
+  max-width: 660px;
 }
 
 .section .wrapper--centered {
@@ -322,7 +322,7 @@ section.section .title {
 .section .hero .heading {
   text-align: center;
   font-weight: bold;
-  font-size: 1.9rem;
+  font-size: inherit;
 	margin-bottom: 30px;
 	color: #3C3C57;
 }
@@ -410,18 +410,24 @@ section.section .title {
 
 /** Typography **/
 
+h1 { font-size: 2.15rem; }  /** Checked **/
+h2 { font-size: 1.78rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; } /** Checked **/
+p { font-size: 1.1rem; }
+
 .heading {
   margin: 0 auto;
   text-align: inherit;
   font-weight: 600;
-  font-size: 2rem;
   margin-bottom: 20px;
 	line-height: 1.4;
 	color: #3C3C57;
 }
 
 .sub-heading {
-  font-size: 1rem;
   color: #3d3d58;
   letter-spacing: 1.4px;
   text-align: center;
@@ -430,7 +436,6 @@ section.section .title {
 
 .description {
 	font-family: HelveticaNeue, Helvetica, sans-serif;
-  font-size: 1.1rem;
   color: #51516A;
   text-align: inherit;
   margin-bottom: 30px;
@@ -475,8 +480,7 @@ section.section .title {
 
 .box--secondary .box-heading {
 	opacity: 0.9;
-	font-family: Silka;
-	font-size: 1.2rem;
+	font-family: 'silka';
 	color: #282846;
 	line-height: 30px;
 	margin-bottom: 20px;
@@ -513,10 +517,16 @@ section.section .title {
 
 .box--primary .box-heading {
 	opacity: 0.9;
-	font-size: 1.2rem;
 	color: #4e5ee4;
 	line-height: 27px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	text-align: left;
+	width: 100%;
+}
+
+.box--primary .box-description {
+	text-align: left;
+	width: 100%;
 }
 
 .box .box-description {
@@ -524,11 +534,19 @@ section.section .title {
 	opacity: 0.8;
 	color: #282846;
 	margin-bottom: 25px;
-	font-size: 1rem;
+	font-size: 0.975rem;
 	margin-bottom: 30px;
-	line-height: 1.8;
+	line-height: 1.6;
 	font-weight: 300;
 	letter-spacing: 0px;
+}
+
+.box .box-container {
+	max-width: 86%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
 
 .section .section-header {
