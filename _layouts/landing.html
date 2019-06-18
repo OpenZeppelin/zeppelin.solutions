@@ -73,6 +73,7 @@ layout: default
 
 	.l-hero-quote .quote .quote-footer figure, .l-hero-quote .quote .quote-footer img {
 		height: 100%;
+		border-radius: 4px;
 	}
 
 	.l-blueprint > .container {
@@ -84,8 +85,24 @@ layout: default
 	}
 
 	.l-cta .main-box {
+		width: 88%;
+		margin: 0 auto;
 		margin-top: -200px;
 		display: flex;
+    justify-content: center;
+    align-items: center;
+		height: 288px;
+	}
+
+	.l-cta .main-box .box-heading {
+		margin-bottom: 10px;
+	}
+
+	.l-cta .box .box-wrapper {
+		max-width: 775px;
+		display: flex;
+    justify-items: center;
+    align-items: center;
 	}
 
 	.l-cta .box .box-side {
@@ -99,9 +116,21 @@ layout: default
 		max-width: 700px;
 	}
 
+	.l-cta .building-grid .row {
+		justify-content: space-between;
+	}
+
 	.l-cta .building-grid .box {
-		height: 220px;
-		margin-right: 20px;
+		height: 210px;
+		margin-right: 10px;
+		position: relative;
+		max-width: 310px;
+	}
+
+	.l-cta .building-grid .box .placed-icon {
+		position: absolute;
+    right: 33px;
+    top: 33px;
 	}
 
 
@@ -193,6 +222,7 @@ layout: default
 	<section class="section l-cta section--gray">
 		<div class="container">
 			<div class="main-box box box--secondary">
+				<div class="box-wrapper">
 				<div class="box-main">
 					<h2 class="box-heading">In-depth security audits</h2>
 					<p class="box-description">
@@ -214,6 +244,7 @@ layout: default
 							</g>
 					</svg>
 				</div>
+				</div>
 			</div>
 			<div class="section-header">
 				<h2 class="heading">Start building</h2>
@@ -223,8 +254,19 @@ layout: default
 				</p>
 			</div>
 			<div class="grid building-grid">
-				<div class="row">
+				<div class="row row--fixed">
 					<div class="col box box--secondary">
+						<span class="placed-icon">
+							<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
+											<g id="Card-community" transform="translate(-253.000000, -43.000000)" fill="#282846">
+													<g id="ic_docs_gray" transform="translate(251.000000, 43.000000)">
+															<path d="M22,15.5 L14,23.5 L2,23.5 L2,0.5 L22,0.5 L22,15.5 Z M14,21.5 L20,15.5 L14,15.5 L14,21.5 Z" id="Combined-Shape" transform="translate(12.000000, 12.000000) scale(1, -1) translate(-12.000000, -12.000000) "></path>
+													</g>
+											</g>
+									</g>
+							</svg>
+						</span>
 						<h3 class="box-heading">Docs</h3>
 						<p class="box-description">
 							Check out our resources for beginner and experienced
@@ -232,10 +274,28 @@ layout: default
 						</p>
 					</div>
 					<div class="col box box--secondary">
+						<span class="placed-icon">
+							<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.4">
+											<g id="ic_forum_gray" fill="#282846" fill-rule="nonzero">
+													<path d="M12,6.39488462e-14 C18.627408,6.39488462e-14 24,5.36186826 24,11.9760479 L24,11.9760958 C24,18.5902754 18.627408,23.9521437 12,23.9521437 L0,23.9521437 L0,11.9760479 C0,5.36186826 5.372544,6.39488462e-14 11.999952,6.39488462e-14 L12,6.39488462e-14 Z M5.568,10.5953533 L18.528,10.5953533 L18.528,6.85882635 L5.568,6.85882635 L5.568,10.5953533 Z M5.568,17.1264192 L14.928,17.1264192 L14.928,13.3898922 L5.568,13.3898922 L5.568,17.1264192 Z" id="Fill-1"></path>
+											</g>
+									</g>
+							</svg>
+						</span>
 						<h3 class="box-heading">Forum</h3>
 						<p class="box-description">Connect with experts, beginners and enthusiasts and discuss about blockchain development, security, design patterns and best practices.</p>
 					</div>
 					<div class="col box box--secondary">
+						<span class="placed-icon">
+							<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
+											<g id="ic_ethernaut_gray" fill="#282846">
+													<polygon id="Triangle" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) " points="12 0 24 24 0 24"></polygon>
+											</g>
+									</g>
+							</svg>
+						</span>
 						<h3 class="box-heading">Ethernaut</h3>
 						<p class="box-description">
 							A Web3/Solidity based wargame played in Ethereum where each level is a smart contract that needs to be hacked.

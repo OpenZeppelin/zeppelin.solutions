@@ -118,6 +118,11 @@ a {
   flex-wrap: wrap;
 }
 
+.grid > .row.row--fixed {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
 .col {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -156,7 +161,7 @@ a {
 }
 
 .btn--fixed {
-	width: 200px;
+	width: 165px;
 }
 
 .btn.btn--ghost {
@@ -174,10 +179,6 @@ a {
   color: #333ea0;
   box-shadow: none;
   text-align: inherit;
-}
-
-.btn.fixed {
-  min-width: 190px;
 }
 
 .btn:hover {
@@ -472,7 +473,7 @@ p { font-size: 1.1rem; }
 }
 
 .box--secondary {
-	padding: 2.5em 2em;
+	padding: 35px 30px;
 	background: #FFFFFF;
 	border: 1px solid #EDEDED;
 	box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
@@ -483,7 +484,7 @@ p { font-size: 1.1rem; }
 	font-family: 'silka';
 	color: #282846;
 	line-height: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 }
 
 .box--secondary .box-side {
