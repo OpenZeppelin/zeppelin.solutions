@@ -1,10 +1,28 @@
 <style type="text/css">
   .new-nav {
+		position: absolute;
     height: 70px;
     width: 100%;
-		background-color: #FEFEFE;
-		box-sizing: border-box;
+    background-color: #FEFEFE;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: all 0.4s ease 0s;
+		box-shadow: 0;
   }
+
+	.new-nav.new-nav--fixed {
+    top: 0px;
+		position: fixed;
+    box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
+	}
+
+	.new-nav.new-nav--fixed > .container {
+		border-bottom: 0;
+	}
+
 
 	.new-nav > .container {
 		border-bottom: 1px solid rgba(0,0,0,.1);
@@ -203,20 +221,7 @@
 
 </style>
 
-<script>
-	(function($) {
-		$(document).ready(function() {
-			var $items = $('.box-menu .item');
-			$items.hover(function handler(evt) {
-				evt.stopPropagation();
-				var $el = $(this).find('.sub-nav');
-				$el.toggleClass('open');
-			});
-		});
-	})(jQuery);
-</script>
-
-<nav class="new-nav">
+<nav class="new-nav" id="new-nav">
   <div class="container grid">
 		<div class="row">
 			<div class="box-logo">
