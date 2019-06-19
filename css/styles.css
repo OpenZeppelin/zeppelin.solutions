@@ -493,7 +493,7 @@ p { font-size: 1.1rem; }
 
 .box--secondary .box-heading {
 	opacity: 0.9;
-	font-family: Silka;
+	font-family: 'silka';
 	font-size: 1.2rem;
 	color: #282846;
 	line-height: 30px;
