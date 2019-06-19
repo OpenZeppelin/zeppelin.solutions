@@ -12,11 +12,22 @@ layout: default
 
 	.l-projects .projects-grid { margin-bottom: 120px; }
 
+
+	.l-projects .projects-grid .row {
+		justify-content: space-between;
+		max-width: 980px;
+		margin: 0 auto;
+	}
+
 	.l-projects .projects-grid .item {
-		background-color: gray;
 		height: 54px;
 		margin-right: 54px;
-		opacity: 0.3;
+		text-align: center;
+		max-width: 100px;
+	}
+
+	.l-projects .projects-grid .item img {
+		width: 100%;
 	}
 
 	.l-projects .projects-grid .item:last-child {
@@ -148,8 +159,7 @@ layout: default
 			<div class="wrapper">
 				<h1 class="heading fIu">Professional development platform for decentralized applications</h1>
 				<p class="description fIu">
-					OpenZeppelin helps you develop, deploy, and operate decentralized systems.
-					We also help leading organizations secure their systems by performing security audits.
+					OpenZeppelin helps developers write, deploy, and operate decentralized systems. We also help leading organizations secure their systems by performing security audits
 				</p>
 			</div>
 		</div>
@@ -159,12 +169,24 @@ layout: default
 			<h6 class="sub-heading">The world’s leading projects trust OpenZeppelin</h6>
 			<div class="grid projects-grid">
 				<div class="row">
-					<div class="col item"></div>
-					<div class="col item"></div>
-					<div class="col item"></div>
-					<div class="col item"></div>
-					<div class="col item"></div>
-					<div class="col item"></div>
+					<div class="col item">
+						<img src="../images/logos/brave.png">
+					</div>
+					<div class="col item">
+						<img src="../images/logos/augur.png">
+					</div>
+					<div class="col item">
+						<img src="../images/logos/ethereum.png">
+					</div>
+					<div class="col item">
+						<img src="../images/logos/coinbase.svg">
+					</div>
+					<div class="col item">
+						<img src="../images/logos/dfinity.png">
+					</div>
+					<div class="col item">
+						<img class="bitgo" src="../images/logos/bitgo.png">
+					</div>
 				</div>
 			</div>
 			<h2 class="heading">The challenges of building decentralized applications</h2>
