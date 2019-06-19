@@ -1,0 +1,4 @@
+---
+layout: privacy
+title: Privacy
+---
