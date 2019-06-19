@@ -71,7 +71,8 @@ a {
   color: #4e5ee4;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	transition: all 0.2s ease;
 }
 
 /** Common Shared Styles **/
