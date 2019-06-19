@@ -560,3 +560,31 @@ p { font-size: 1.1rem; }
 	max-width: 600px;
 	margin: 0 auto;
 }
+
+
+/** Sub Nav Bar **/
+
+.p-nav {
+	transition: all 0.5s ease;
+}
+
+.p-nav.new-sub-nav--fixed {
+	position: fixed;
+	top: 0px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 101;
+	box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
+}
+
+/** Page **/
+
+.page {
+	transition: all 0.2s ease;
+}
+
+.page.fixed-sub-nav {
+	/* padding-top: 170px; */
+}
+
