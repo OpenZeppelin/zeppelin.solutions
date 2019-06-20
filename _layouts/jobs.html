@@ -25,10 +25,7 @@ layout: default
 			<div class="wrapper">
 				<h1 class="heading fIu">Build the foundations of an open economy</h1>
 				<p class="description fIu">
-					Zeppelin is looking for skillful developers and professionals who
-					are committed to facilitating the creation of shared infrastructure
-					to close the gap between our vision and the reality of how decentralized
-					networks work today.
+					OpenZeppelin is looking for skilled developers and professionals who are committed to facilitating the creation of shared infrastructure to close the gap between our vision and the reality of how distributed networks work today.
 				</p>
 				<a class="btn cta fId" href="/jobs#openings">SEE CURRENT OPENINGS</a>
 			</div>
@@ -39,14 +36,14 @@ layout: default
 		<div class="container grid">
 				<div class="box-text">
 					<h2 class="heading">What we do</h2>
-					<p class="description">We believe in the power of technology to change the world by enabling new ways for individuals and businesses to communicate, create and transact value. However, some old traditions, institutions and ideas are being carried over from the days before we invented the Internet.</p>
-					<p class="description">We empower creative people all over the world to build new software-based, global systems and communities, no matter where they live. We do this by driving technological innovation, open-source collaboration and great user experience design.</p>
+					<p class="description">We believe in the power of technology to change the world by enabling new ways for individuals and businesses to communicate, create, and transact value. However, some old traditions, institutions, and ideas are being carried over from the days before we invented the Internet.</p>
+					<p class="description">We empower creative people all over the world to build new software-based global systems and communities, no matter where they live. We do this by driving technological innovation, open-source collaboration, and great user experience design.</p>
 				</div>
 				<div class="box-text row">
 					<div class="col">
 						<h2 class="heading">How we work</h2>
-						<p class="description">We’re focused on creating a collaborative work environment where people are happy and productive.</p>
-						<p class="description">We don’t let geography or borders define us — we are a distributed team with members spread all over the world. We apply remote and organizational practices so you’ll always be in sync with the team.</p>
+						<p class="description">We’re focused on creating a collaborative work environment where people are happy and productive. We don’t let geography or borders define us: we are a distributed team with members all over the world. We apply proven remote and organizational practices ensure that you’ll always be in sync with the team.</p>
+						<p class="description">We apply proven remote and organizational practices ensure that you’ll always be in sync with the team.</p>
 					</div>
 					<div class="col map">
 						<img class="map-img" src="../images/map.svg"/>
@@ -125,13 +122,13 @@ layout: default
 					<div class="col">
 						<div class="box">
 							<h3 class="box-title">Flexible paid time off</h3>
-							<p class="box-description">We believe in the importance of breaks to lead a balanced life. You decide when to take your vacations.</p>
+							<p class="box-description">We believe in the importance of breaks so you can lead a balanced life. You decide when to take your vacations.</p>
 						</div>
 					</div>
 					<div class="col">
 						<div class="box">
 							<h3 class="box-title">Buenos Aires Office</h3>
-							<p class="box-description">You’re welcome to work from our  office whenever you want. We’re pet friendly, have green spaces, healthy food, and yoga classes.</p>
+							<p class="box-description">You’re welcome to work from our office whenever you want. We’re pet friendly and have green spaces, healthy food, and yoga classes.</p>
 						</div>
 				</div>
 				</div>
@@ -139,7 +136,7 @@ layout: default
 		</div>
 	</section>
 
-	<section class="section section-jobs-openings">
+	<section class="section section-jobs-openings" id="openings-box">
 		<div class="container">
 			<div class="section-header">
 				<h2 class="section-title">
@@ -151,13 +148,13 @@ layout: default
 			<div class="section-content">
 				<div class="positions-list-container">
 					<ul class="positions-list">
-						<li class="positions-list-item active" id="all-positions-btn">All Positions</li>
-						<li class="positions-list-item" id="engineering-btn">Engineering</li>
-						<li class="positions-list-item" id="communications-btn">Communications</li>
+						<li class="positions-list-item active" data-id="all-positions">All Positions</li>
+						<li class="positions-list-item" data-id="engineering">Engineering</li>
+						<li class="positions-list-item" data-id="communications">Communications</li>
 					</ul>
 				</div>
 
-				<div class="opening-box-listing" id="all-positions-box">
+				<div class="opening-box-listing" id="all-positions">
 					<ul class="job-card-list">
 						{% for job in site.jobs %}
 							<li class="job-card">
@@ -177,7 +174,7 @@ layout: default
 					</ul>
 				</div>
 
-				<div class="opening-box-listing hidden" id="engineering-box">
+				<div class="opening-box-listing" id="engineering">
 					<ul class="job-card-list">
 					{% for job in site.jobs %}
 					{% if job.tags contains 'engineering' %}
@@ -199,7 +196,7 @@ layout: default
 					</ul>
 				</div>
 
-				<div class="opening-box-listing hidden" id="communications-box">
+				<div class="opening-box-listing" id="communications">
 					<ul class="job-card-list">
 					{% for job in site.jobs %}
 					{% if job.tags contains 'communications' %}
@@ -572,6 +569,13 @@ layout: default
 		line-height: 1.8;
     font-weight: 300;
     letter-spacing: 0px;
+		transition: all 0.2s ease;
+		cursor: pointer;
+  }
+
+	.section.section-jobs-openings .positions-list .positions-list-item:hover {
+		color: #4E5EE4;
+		opacity: 0.8;
   }
 
 	.section.section-jobs-openings .positions-list .positions-list-item.active {
@@ -583,7 +587,15 @@ layout: default
 	}
 
 	.section.section-jobs-openings .section-content .opening-box-listing {
+		opacity: 0;
+		display: none;
 		flex: 1;
+		transition: all 0.8s ease;
+	}
+
+	.section.section-jobs-openings .section-content .opening-box-listing.active {
+		display: block;
+		opacity: 1;
 	}
 
 	.section.section-jobs-openings .opening-box-listing .job-card-list {
@@ -830,3 +842,4 @@ layout: default
 </style>
 
 <script src="/js/fixedMenu.js"></script>
+<script src="/js/jobs.js"></script>
