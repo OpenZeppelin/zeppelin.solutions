@@ -1,0 +1,209 @@
+<style type="text/css">
+
+	.modal-sr {
+		position: fixed;
+		z-index: 200;
+		background-color: rgba(0, 0, 0, 0.28);
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.modal-sr.active .container {
+		opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+    transform: translateY(0%) scale(1);
+	}
+
+	.modal-sr .container {
+		overflow: hidden;
+		height: 80%;
+		width: 600px;
+		background-color: white;
+		margin: 0 auto;
+		padding: 60px 100px;
+		border-radius: 4px;
+		opacity: 0;
+    -webkit-transform: translateY(100%) scale(0.8);
+    transform: translateY(100%) scale(0.8);
+    transition-timing-function: cubic-bezier(0.3, 0, 0, 1.4);
+		box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem;
+	}
+
+	.modal-sr .heading {
+		margin: 0;
+	}
+
+	.modal-sr .modal-header {
+		margin: 0 0 40px;
+	}
+
+	.modal-sr .description {
+		font-size: 0.98rem;
+	}
+
+	.msr-form-field {
+		height: 70px;
+		box-sizing: border-box;
+		position:relative;
+  	margin-bottom:45px;
+		opacity: 0.2;
+		transition: opacity 0.4s cubic-bezier(0.3, 0, 0, 1.4);
+	}
+
+	.msr-form-field.active{
+		opacity: 1;
+	}
+
+ .msr-form-field input {
+  font-size: 1rem;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #A9A9B5;
+}
+
+	.msr-form-field input:focus { outline:none; }
+
+	.msr-form-field label {
+		color:#999;
+		font-size: 1rem;
+		font-weight: normal;
+		position: absolute;
+		pointer-events: none;
+		left: 5px;
+		top: 10px;
+		transition:0.2s ease all;
+		-moz-transition:0.2s ease all;
+		-webkit-transition:0.2s ease all;
+	}
+
+	.msr-form-field input:focus ~ label, .msr-form-field input:valid ~ label 		{
+		top:-20px;
+		font-size:14px;
+		color:#5060E5;
+	}
+
+	.msr-form-field.bar {
+		position:relative;
+		display:block;
+		width:300px;
+	}
+
+.msr-form-field.bar:before, .msr-form-field.bar:after {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background: #282846;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+.msr-form-field .bar:before {
+  left:50%;
+}
+.msr-form-field .bar:after {
+  right:50%;
+}
+
+.msr-form-fieldinput:focus ~ .msr-form-field.bar:before, .msr-form-fieldinput:focus ~ .msr-form-field.bar:after {
+  width:50%;
+}
+
+.msr-form-field.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+.msr-form-fieldinput:focus ~ .msr-form-field.highlight {
+  -webkit-animation:iHL 0.3s ease;
+  -moz-animation:iHL 0.3s ease;
+  animation:iHL 0.3s ease;
+}
+
+@-webkit-keyframes iHL {
+	from { background:#282846; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes iHL {
+	from { background:#282846; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes iHL {
+	from { background:#282846; }
+  to 	{ width:0; background:transparent; }
+}
+
+.modal-sr .icon-close {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	transition:0.2s ease all;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.modal-sr .icon-close:hover {
+	opacity: 1;
+}
+
+</style>
+
+<div class="modal modal-sr">
+	<div class="container">
+		<i class="material-icons icon-close">close</i>
+		<header class="modal-header">
+			<h2 class="heading">Request a Security Audit</h2>
+			<p class="description">You can request an audit by filling this form or by sending a mai to <a href="mailto:audits@openzeppelin.com">audits@openzeppelin.com</a></p>
+		</header>
+		<div class="msr-form-field active">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Project Name</label>
+		</div>
+		<div class="msr-form-field">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Project Website</label>
+		</div>
+		<div class="msr-form-field">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Contact Name</label>
+		</div>
+		<div class="msr-form-field">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Short description of audit scope</label>
+		</div>
+		<div class="msr-form-field">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Is your codebase finalized and audit-ready? *</label>
+		</div>
+		<div class="msr-form-field">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Estimated date for finalization</label>
+		</div>
+	</div>
+</div>

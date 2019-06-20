@@ -607,6 +607,10 @@ html, body, .root {
 	min-height: calc(100% - 300px);
 }
 
+body.modal-open {
+	margin: 0; height: 100%; overflow: hidden;
+}
+
 /** Terminal **/
 
 .terminal-title {
@@ -882,3 +886,4 @@ html, body, .root {
 	transform: translateZ(0px) scale(1.1);
 	transition: transform 0.25s ease-out 0s;
 }
+

@@ -3,6 +3,9 @@ layout: default
 ---
 
 <style type="text/css">
+	.page-security {
+		position: relative;
+	}
 
 	.page-security.fixed-sub-nav section.security-audits-hero {
 		padding-top: 160px;
@@ -198,12 +201,23 @@ layout: default
 		z-index: 1;
 	}
 
+	.page-security .s-form#security-audit-form {
+		display: none;
+	}
 
+	.page-security .s-form.active#security-audit-form {
+		display: block;
+	}
 </style>
 
 
 
 <main class="page page-security">
+
+	<div class="s-form" id="security-audit-form">
+	{% include security-request.html %}
+	</div>
+
 	<section class="section security-audits-hero">
 		<div class="container">
 
@@ -224,7 +238,7 @@ layout: default
 						</svg>
 					</div>
 					<div class="request-audit-container">
-						<a href="/form" class="btn btn--secondary-mutted request-audit-link">Request an audit</a>
+						<a href="#" class="btn btn--secondary-mutted request-audit-link request-audit-btn">Request an audit</a>
 					</div>
 				</div>
 			</div>
@@ -320,7 +334,7 @@ layout: default
 				Our quotes and turnaround times vary according to the codebase’s length and complexity.
 				We prioritize clients that leverage OpenZeppelin Contracts and OpenZeppelin SDK, fully-audited projects, already trusted by leading companies in the ecosystem.
 				</p>
-				<a href="/form" class="btn cta">
+				<a href="#" class="btn cta request-audit-btn">
 					Request an Audit
 				</a>
 			</div>
@@ -329,3 +343,4 @@ layout: default
 </main>
 
 <script src="/js/fixedSubMenu.js"></script>
+<script src="/js/securityAudits.js"></script>
