@@ -3,49 +3,57 @@ layout: default
 ---
 
 <style type="text/css">
+	.page-job {
+		padding-top: 50px;
+	}
 
-  .sidebar {
+  .page-job .sidebar {
     display: flex;
     flex-direction: column;
 		flex: 0;
-		flex-basis: 200px;
+		min-width: 140px;
   }
 
-  .sidebar ul {
+  .page-job .sidebar ul {
     padding: 15px 0;
   }
 
-  .sidebar li {
+  .page-job .sidebar li {
     margin-top: 18px;
     opacity: 0.8;
   }
 
-  .job {
+  .page-job .j-content > .container {
     display: flex;
     flex-direction: row;
     margin-top: 35px;
+		flex-basis: 140px;
   }
 
-  .job-description {
-    padding-left: 55px;
+  .page-job .job-description {
+    padding-left: 68px;
     max-width: 100%;
   }
 
-  .apply {
+  .page-job .apply {
     margin-top: 15px;
   }
 
-  .company-description > p {
-		font-size: 1.1rem;
-		color: inherit;
+  .page-job .company-description > p, .page-job .requirements p {
+		color: #51516A;
 		text-align: inherit;
-		margin-bottom: 30px;
 		line-height: 1.8;
 		font-weight: 300;
-		letter-spacing: 0px;
+		letter-spacing: 0.2px;
+		font-size: 1rem;
+		font-family: HelveticaNeue, Helvetica, sans-serif;
   }
 
-  .job-title-main {
+	.page-job .company-description > p {
+		margin-bottom: 30px;
+	}
+
+  .page-job .job-title-main {
     font-size: 26px;
     line-height: 1.25;
     color: #3D3D58;
@@ -53,7 +61,7 @@ layout: default
 
   }
 
-  .job-description-title {
+  .page-job .job-description-title {
     margin: 25px 0 20px;
 		text-align: inherit;
 		font-weight: bold;
@@ -63,37 +71,27 @@ layout: default
 		color: #3D3D58;
   }
 
-  .requirements ul {
+ 	.page-job .requirements ul {
     list-style: disc;
     padding-left: 15px;
   }
 
-  .requirements li {
+  .page-job .requirements li {
     padding: 10px 0 10px 0;
   }
 
-	.requirements li p {
-		font-size: 1.1rem;
-		color: inherit;
-		text-align: inherit;
-		line-height: 1.8;
-		font-weight: 300;
-		letter-spacing: 0px;
-		padding-left: 15px;
-  }
-
-  .application-greybox {
+  .page-job .application-greybox {
     background-color: #f8f8fa;
     margin-top: 35px;
 		height: 300px;
   }
 
-  .application-greybox a {
+  .page-job .application-greybox a {
     display: inline-block;
     color: #4351c5;
   }
 
-  .application-information {
+  .page-job .application-information {
     padding: 50px 0;
     max-width: 715px;
     margin: auto auto;
@@ -102,48 +100,45 @@ layout: default
 </style>
 
 
-<div class="job container row">
+<main class="page page-job">
+	<section class="j-content">
+		<div class="container">
+			<div class="sidebar">
+				<a class="btn btn--ghost" href="/jobs#openings">< BACK</a>
+				<ul>
+					<li>Global</li>
+					<li>Full Time</li>
+					<li>Communications</li>
+				</ul>
+				<a class="btn apply" href="/jobs#openings">APPLY</a>
+			</div>
 
-  <div class="col sidebar">
-    <a class="btn btn--ghost" href="/jobs#openings">< BACK</a>
-		<ul>
-			<li>Global</li>
-			<li>Full Time</li>
-			<li>Communications</li>
-		</ul>
-		<a class="btn apply" href="/jobs#openings">APPLY</a>
-  </div>
+			<div class="job-description">
+				<h1 class="job-title heading">{{ page.title }}</h1>
+				<div class="company-description">
+					<p>
+						OpenZeppelin builds developer tools and performs security audits for distributed systems that power multimillion-dollar economies. Founded in 2015, OpenZeppelin has developed the industry security standards for architecting and deploying distributed systems in public blockchains.
+					</p>
+					<p>
+						You are the type of person who loves to motivate and encourage others. You are passionate about technology, and love staying up to date on the latest developments. You are detail-oriented and love getting things done.
+					</p>
+				</div>
+				{{page.content}}
+			</div>
+		</div>
+	</section>
 
-  <div class="col job-description">
-    <h1 class="job-title heading">{{ page.title }}</h1>
-    <div class="company-description">
-      <p>
-				OpenZeppelin builds developer tools and performs security audits for distributed
-        systems that power multimillion-dollar
-        economies. Founded in 2015, OpenZeppelin has developed the industry security standards for architecting and
-        deploying
-        distributed systems in public blockchains.
+
+	<section class="application-greybox">
+		<div class="application-information">
+			<h3 class="job-description-title">Apply</h3>
+			<p class="description">Complete the following <a href=" https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application
+					form</a> or send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the
+				phrase "{{ page.title }},
+				{{ page.location }}" on the subject line.
 			</p>
-      <p>
-				You are the type of person who loves to motivate and encourage others. You are passionate about technology,
-        and
-        love
-        staying up to date on the latest developments. You are detail-oriented and love getting things done.
-			</p>
-    </div>
-    {{page.content}}
-  </div>
-</div>
-
-<div class="col application-greybox">
-  <div class="application-information">
-    <h3 class="job-description-title">Apply</h3>
-    <p class="description">Complete the following <a href=" https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application
-        form</a> or send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a> with the
-      phrase "{{ page.title }},
-      {{ page.location }}" on the subject line.
-		</p>
-  </div>
-</div>
+		</div>
+	</section>
+</main>
 
 <script src="/js/fixedMenu.js"></script>
