@@ -4,10 +4,6 @@ layout: default
 
 <style type="text/css">
 
-	.page-security {
-		background-color: #282846;
-	}
-
 	.page-security.fixed-sub-nav section.security-audits-hero {
 		padding-top: 160px;
 	}
@@ -16,7 +12,11 @@ layout: default
 		padding-top: 0;
 		color: white;
 		background-color: #282846;
-		height: 700px;
+		height: 760px;
+	}
+
+	.security-audits-hero h1.heading {
+		font-size: 1.8rem;
 	}
 
 	.p-nav {
@@ -42,12 +42,13 @@ layout: default
 	}
 
 	.p-nav .request-audit-container {
-		text-transform: uppercase;
-		color: #FFFFFF;
-		letter-spacing: 1px;
-		text-align: right;
-		font-size: 0.9rem;
-		position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+	}
+
+	.p-nav .request-audit-container > a {
+    padding-right: 0;
 	}
 
 	.p-nav .request-audit-link {
@@ -83,6 +84,7 @@ layout: default
 
 	.audit-reports .audit-grid img {
 		width: 100%;
+		transform: translateY(-7%);
 	}
 
 	.audit-reports .col {
@@ -108,12 +110,16 @@ layout: default
 		z-index: 1;
 	}
 
+	.page-security .sa-comments .heading {
+    margin-bottom: 40px;
+	}
+
 	.page-security .audit-reports .heading {
 		margin-bottom: 20px;
 	}
 
 	.sa-faqs {
-		padding-top: 180px;
+		padding-top: 160px;
 		padding-bottom: 260px;
 		position: relative;
 	}
@@ -153,7 +159,6 @@ layout: default
 	.question .faqs-description {
 		color: #56566E;
     line-height: 24px;
-    max-width: 600px;
     transition: height 0.8s ease;
     overflow: hidden;
     font-size: 1rem;
@@ -196,7 +201,7 @@ layout: default
 
 </style>
 
-{% include new-nav.html %}
+
 
 <main class="page page-security">
 	<section class="section security-audits-hero">
@@ -219,7 +224,7 @@ layout: default
 						</svg>
 					</div>
 					<div class="request-audit-container">
-						<a href="" class="request-audit-link">Request an audit</a>
+						<a href="/form" class="btn btn--secondary-mutted request-audit-link">Request an audit</a>
 					</div>
 				</div>
 			</div>
@@ -227,7 +232,7 @@ layout: default
 			<div class="wrapper">
 				<h1 class="heading">Security audits for distributed systems</h1>
 				<p class="description">
-					Zeppelin verifies that your distributed systems work as intended by performing an audit. Our engineers fully review your system’s architecture and codebase, then write a thorough report with actionable feedback for every issue found.
+					OpenZeppelin verifies that your distributed systems work as intended by performing an audit. Our engineers fully review your system’s architecture and codebase, and then write a thorough report that includes actionable feedback for every issue found.
 				</p>
 			</div>
 
@@ -236,7 +241,7 @@ layout: default
 			</div>
 
 			<div class="audit-reports">
-				<h3 class="heading typography--mutted">Our most popular audit reports</h3>
+				<h4 class="heading typography--mutted">Our most popular audit reports</h4>
 				<div class="grid audit-grid">
 					<div class="row">
 						<div class="col">
@@ -258,25 +263,25 @@ layout: default
 
 	<section class="section section--gray sa-faqs">
 		<div class="container">
-			<div class="heading">
+			<h2 class="heading">
 				FAQ
-			</div>
+			</h2>
 			<ul class="faq-list">
 				<li class="question">
 					<h3 class="faqs-title">What will I find in the audit report?</h3>
-					<p class="faqs-description">The report outlines potential problems in the code with actionable recommendations to guard against potential attack vectors, together with a general analysis of the systems’ dynamics reflecting both state-of-the-art security patterns and opportunities for improvement regarding the project's overall quality and maturity.</p>
+					<p class="faqs-description">The report outlines potential problems in the code with actionable recommendations to guard against potential attack vectors, together with a general analysis of the system dynamics, reflecting both state-of-the-art security patterns and opportunities for improvement regarding the project's overall quality and maturity.</p>
 				</li>
 				<li class="question">
 					<h3 class="faqs-title">Is the report private?</h3>
-					<p class="faqs-description">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional, but strongly recommended as a way of to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
+					<p class="faqs-description">Yes. We privately send the report to your team so they can address the issues we found. Publishing the report after your team fixes the issues is optional but strongly recommended as a way to contribute to the ecosystem’s security. We can work with you on a disclosure strategy.</p>
 				</li>
 				<li class="question">
 					<h3 class="faqs-title">Which technologies do you work with?</h3>
-					<p class="faqs-description">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
+					<p class="faqs-description">We have expertise across the whole stack: from languages and compilers to smart contract systems, protocols, and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
 				</li>
 				<li class="question">
 					<h3 class="faqs-title">Which technologies do you work with?</h3>
-					<p class="faqs-description">We have expertise across the whole stack: from languages and compilers, to smart contract systems, protocols and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
+					<p class="faqs-description">We have audited systems in different stages of development and production, but we have found that the best outcomes, and most interesting findings happen when the code has been tested and documented and is ready for deployment. <a href="https://blog.zeppelin.solutions/follow-this-quality-checklist-before-an-audit-8cc6a0e44845" target="_blank"> This checklist</a> lists a few basic quality measures that you should consider before you hand your next  project over for an external audit.</p>
 				</li>
 			</ul>
 
@@ -315,7 +320,7 @@ layout: default
 				Our quotes and turnaround times vary according to the codebase’s length and complexity.
 				We prioritize clients that leverage OpenZeppelin Contracts and OpenZeppelin SDK, fully-audited projects, already trusted by leading companies in the ecosystem.
 				</p>
-				<a href="" class="btn cta">
+				<a href="/form" class="btn cta">
 					Request an Audit
 				</a>
 			</div>

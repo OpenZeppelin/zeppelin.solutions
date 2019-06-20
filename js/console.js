@@ -2,8 +2,8 @@
   setTimeout(function() {
     $('#typed').typed({
       strings: ['[~] $ npm install openzeppelin-solidity'],
-      typeSpeed: 5,
-      backDelay: 500,
+      typespeed: 800,
+      backdelay: 0,
       loop: false,
       contentType: 'html',
       loopCount: false,
@@ -22,10 +22,10 @@ function installing() {
   setTimeout(function() {
     $('#typed-installing').typed({
       strings: [
-        '<span style="color:#ccc"> [==^300===^100==^50==^200===] 100%</span>',
+        '<span style="color:#BDBADB"> [==^300===^100==^50==^200===] 100%</span>',
       ],
-      typeSpeed: 5,
-      backDelay: 500,
+      typespeed: 800,
+      backDelay: 0,
       loop: false,
       contentType: 'html',
       loopCount: false,
@@ -48,11 +48,10 @@ function fixedText1and2() {
   setTimeout(function() {
     $('#typed2').typed({
       strings: ['[~] $ vim ExampleToken.sol^500'],
-      typeSpeed: 5,
-      backDelay: 500,
+      typespeed: 800,
+      backdelay: 0,
       loop: false,
-      contentType: 'html', // or text
-      // defaults to false for infinite loop
+      contentType: 'html',
       loopCount: false,
       callback: function() {
         typeVim();
@@ -78,21 +77,22 @@ function typeVim() {
     $('#typed-vim').typed({
       strings: [
         [
-          '<span style="color: #FC1E70;">pragma</span> solidity <span style="color: #FC1E70;">^^</span><span style="color: #AF7DFF;">0.5.0</span>;',
-          '<div style="height:8px"></div><span style="color: #FC1E70;">import</span> <span style="color:#E6DC6D;">"openzeppelin-solidity/contracts/token/<br><span class="mobile-br">&nbsp;</span>ERC20/ERC20.sol"</span>;',
-          '<span style="color: #FC1E70;">import</span> <span style="color:#E6DC6D;">"openzeppelin-solidity/contracts/token/<br><span class="mobile-br">&nbsp;</span>ERC20/ERC20Detailed.sol"</span>;',
-          '<div style="height:8px"></div><span style="color: #FC1E70;">contract</span> <span style="color:#A5D3F9">ExampleToken</span> is <span style="color:#A5D3F9">ERC20</span>, <span style="color:#A5D3F9">ERC20Detailed</span> {',
-          '<span class="terminal-padding"><span style="color:#A5D3F9">uint</span> <span style="color:#FC1E70">private</span> INITIAL_SUPPLY <span style="color: #FC1E70;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;"> 10000e18</span></span>;</span>',
-          '<div style="height:8px"></div><span class="terminal-padding"><span style="color: #FC1E70;">constructor</span> () <span style="color: #FC1E70;">public</span>',
-          '<span class="terminal-padding2"><span style="color:#A5D3F9">ERC20Detailed</span>(<span style="color:#E6DC6D;">"ExampleToken"</span>, <span style="color:#E6DC6D;">"EGT"</span>, 18)</span>',
-          '<span class="terminal-padding">{</span>',
-          '<span class="terminal-padding2">_mint(msg.sender, INITIAL_SUPPLY);</span>',
+          '<span style="color: #D26696;">pragma</span> solidity <span style="color: #D26696;">^^</span><span style="color: #AF7DFF;">0.5.0</span>;',
+          '<div style="height:8px"></div><span style="color: #D26696;">import</span> <span style="color:#F6D8A0;">"openzeppelin-solidity/contracts/token/<br><span class="mobile-br">&nbsp;</span>StandardToken.sol"</span>;',
+          '<div style="height:8px"></div><span style="color: #D26696;">contract</span> <span style="color:#788DD1">ExampleToken</span> is <span style="color:#788DD1">StandardToken</span> {',
+          '<span class="terminal-padding"><span style="color:#788DD1">string</span> <span style="color:#D26696">public</span> NAME <span style="color: #D26696;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;">&nbsp;"ExampleToken"</span></span>;</span>',
+          '<span class="terminal-padding"><span style="color:#788DD1">string</span> <span style="color:#D26696">public</span> SYMBOL <span style="color: #D26696;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;">&nbsp;"EGT"</span></span>;</span>',
+          '<span class="terminal-padding"><span style="color:#788DD1">uint</span> <span style="color:#D26696">public</span> DECIMALS <span style="color: #D26696;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;">&nbsp;18</span></span>;</span>',
+          '<span class="terminal-padding"><span style="color:#788DD1">uint</span> <span style="color:#D26696">public</span> INITIAL_SUPPLY <span style="color: #D26696;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;">&nbsp;10000</span></span>;</span>',
+          '<div style="height:8px"></div><span class="terminal-padding"><span style="color: #788DD1;">function</span><span style="color: #D26696;">&nbsp;ExampleToken&nbsp;</span>{',
+          '<span class="terminal-padding2"><span style="color:#ccc;">totalSupply</span><span style="color:#eee;"><span style="color: #D26696;">&nbsp;=&nbsp;</span>INITIAL_SUPPLY</span>;</span>',
+          '<span class="terminal-padding2"><span style="color:#ccc;">balances[msg.sender]</span><span style="color:#eee;"><span style="color: #D26696;">&nbsp;=&nbsp;</span>INITIAL_SUPPLY</span>;</span>',
           '<span class="terminal-padding">}^500',
           '}',
         ].join('<br>'),
       ],
-      typeSpeed: 0,
-      backDelay: 500,
+      typespeed: 800,
+      backdelay: 0,
       loop: false,
       contentType: 'html',
       loopCount: false,
@@ -110,8 +110,8 @@ function typeThree() {
       strings: [
         '<br>[~] $ truffle console^500</br>> const myToken = await ExampleToken.new();^500</br>> myToken.totalSupply()',
       ],
-      typeSpeed: 5,
-      backDelay: 500,
+      typespeed: 800,
+      backdelay: 0,
       loop: false,
       contentType: 'html',
       loopCount: false,
@@ -131,8 +131,8 @@ function fixedText3() {
   setTimeout(function() {
     $('#typed4').typed({
       strings: ['</br>> myToken.transfer(...)'],
-      typeSpeed: 5,
-      backDelay: 500,
+      typespeed: 800,
+      backdelay: 0,
       loop: false,
       contentType: 'html',
       loopCount: false,
@@ -147,6 +147,6 @@ function fixedText4() {
   $('.terminal .typed-cursor').css('color', 'black');
   setTimeout(function() {
     document.getElementById('fixed-text4').innerHTML =
-      '</br>true<span style="color: #A5DEF2;">|</span>';
+      '</br>true<span style="color: #5FD9F0;">|</span>';
   }, 500);
 }
