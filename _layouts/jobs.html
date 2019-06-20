@@ -557,9 +557,13 @@ layout: default
   }
 
 	.section.section-jobs-openings .section-content {
-		padding: 60px 0;
+		padding: 60px 0 0;
 		display: flex;
   }
+
+	.section.section-jobs-openings {
+		padding-bottom: 40px;
+	}
 
 	.section.section-jobs-openings .positions-list .positions-list-item {
 		margin: 0 0 10px;
@@ -662,7 +666,9 @@ layout: default
     font-weight: 500;
 	}
 
-	/** **/
+	.section.job-opening-role {
+		padding-top: 0;
+	}
 
 	.section.job-opening-role .container {
 		display: flex;
@@ -733,6 +739,7 @@ layout: default
 		margin-bottom: 20px;
 		transition: border 0.3s ease, color 0.3s ease;
 		color: #282846;
+		align-items: flex-start;
 	}
 
 	.section.section-hiring-process .hp-list .hp-card:hover {
@@ -805,9 +812,9 @@ layout: default
 
 	.plus-icon {
     position: relative;
-    width: 20px;
-    height: 20px;
-		transform: scale(0.9)
+    width: 15px;
+    height: 15px;
+		opacity: 0.8;
 	}
 
 	.plus-icon:before,
@@ -821,19 +828,19 @@ layout: default
 	.plus-icon:before {
     top: 0;
     left: 50%;
-    width: 4px;
+    width: 3px;
     height: 100%;
-    margin-left: -2px;
-    border-radius: 3px;
+    border-radius: 4px;
+		margin-left: -1.5px;
 	}
 
 	.plus-icon:after {
-		top: 50%;
+		margin-top: -1.5px;
+    top: 50%;
     left: 0;
     width: 100%;
-    height: 4px;
-    margin-top: -2px;
-    border-radius: 3px;
+    height: 3px;
+    border-radius: 4px;
 	}
 	.plus-icon.active:before { transform: rotate(90deg); }
 	.plus-icon.active:after { transform: rotate(180deg); }
