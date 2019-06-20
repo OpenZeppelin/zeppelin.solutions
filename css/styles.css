@@ -610,27 +610,31 @@ html, body, .root {
 /** Terminal **/
 
 .terminal-title {
-  color: black;
+  color: whitesmoke;
   font-size: 14px;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   position: absolute;
-  top: 6px;
+	top: 8px;
+	font-size: 13.5px;
   left: 0;
   right: 0;
   text-align: center;
 }
+
 .terminal-section {
   margin-bottom: 30px;
   position: relative;
   height: 400px;
 }
+
 .expanded-terminal-section {
   margin-bottom: 30px;
   position: relative;
   height: 800px;
 }
+
 .terminal {
-  border: 0px solid #4a4a4a;
+  border: 1px solid #4a4a4a;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 5px;
@@ -638,31 +642,34 @@ html, body, .root {
   width: 448px;
   height: 340px;
   position: relative;
-  background: black;
+  background-color: black;
   margin: auto;
   position: absolute;
   top: 0px;
 	box-shadow: 0 20px 50px 0 rgba(0,0,0,0.2);
 }
+
 .mobile-br {
   display: none;
 }
 
 @media (max-width: 960px) {
+
   .terminal-center {
     transition: top .40s;
     -webkit-transition: top .40s;
-  }
-  .terminal-left {
-  }
+	}
+
   .terminal-right {
     top: 360px!important;
     transition: top .40s!important;
     -webkit-transition: top .40s!important;
-  }
+	}
+
   .terminal-section {height: 400px;}
   .expanded-terminal-section {height: 740px!important;}
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   #terminal {
     z-index: 30;
@@ -675,6 +682,7 @@ html, body, .root {
     left: calc(50% - 224px);
   }
 }
+
 @media (max-width: 767px) {
   .mobile-br {
     display: inline;
@@ -725,22 +733,25 @@ html, body, .root {
   }
 
 }
+
 .top-terminal {
   z-index: 2;
   width: calc(100% + 2px);
-  height: 29px;
+	height: 29px;
   position: absolute;
   top: -2px;
-  left: -1px;
-  background: #f6f6f6;
+	left: -1px;
+	text-align: left;
+	padding-left: 7px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  border: solid 0px transparent;
-  border-right: solid 1px white;
-  border-left: solid 1px white;
-  text-align: left;
-  padding-left: 7px;
+	background: linear-gradient(90deg, rgb(34, 37, 39), rgb(45, 49, 51));
+	border-bottom: 1px solid rgb(57, 66, 73);
+	box-sizing: border-box;
+	border-right: 0;
+	color: white;
 }
+
 .terminal-control {
   content: '';
   width: 12px;
@@ -748,16 +759,20 @@ html, body, .root {
   display: inline-block;
   border-radius: 100%;
   margin-left: 5px;
-  margin-top: 9px;
+	margin-top: 9px;
+	border: solid 1px;
 }
 .red {
-  background-color: #ef3d33;
+	background-color: rgb(225, 89, 84);
+	border-color: rgb(225, 89, 84);
 }
 .yellow {
-  background-color: #f5b50d;
+	background-color: rgb(253, 189, 46);
+	border-color: rgb(224, 169, 61);
 }
 .green {
-  background-color: #3ccc02;
+	background-color: rgb(40, 202, 64);
+	border-color: rgb(58, 181, 75);
 }
 .bottom-terminal {
   width: 100%;
