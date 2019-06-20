@@ -855,3 +855,30 @@ html, body, .root {
     background-size: contain;
   }
 }
+
+
+/** Animation **/
+
+.a-scale-inv {
+	position: relative;
+	filter: invert(0.5);
+	transform: translateZ(0px);
+	transition: filter 0.25s ease-out 0s, transform 0.25s ease-out 0s;
+}
+
+.a-scale-inv:hover, .a-scale-inv:active, .a-scale-inv:focus {
+	filter: none;
+	transform: translateZ(0px) scale(1.1);
+	transition: filter 0.25s ease-out 0s, transform 0.25s ease-out 0s;
+}
+
+.a-scale {
+	position: relative;
+	transform: translateZ(0px);
+	transition: transform 0.25s ease-out 0s;
+}
+
+.a-scale:hover, .a-scale:active, .a-scale:focus {
+	transform: translateZ(0px) scale(1.1);
+	transition: transform 0.25s ease-out 0s;
+}
