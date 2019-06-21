@@ -277,7 +277,7 @@ a {
 }
 
 .section {
-  padding-top: 85px;
+  padding-top: 75px;
   padding-bottom: 85px;
 }
 
@@ -532,6 +532,7 @@ p { font-size: 1rem; }
 	border-right: solid 1px #D8D8D8;
 	padding-right: 35px;
 	padding-left: 35px;
+	padding-top: 14px;
 }
 
 .box--primary:last-child {
@@ -580,7 +581,7 @@ p { font-size: 1rem; }
 }
 
 .section .section-header {
-	margin: 60px 0;
+	margin: 0 0 60px;
 	text-align: center;
 }
 
