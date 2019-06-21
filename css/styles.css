@@ -151,8 +151,8 @@ a {
   text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 0.9375rem;
@@ -310,7 +310,9 @@ section.section .title {
 }
 
 .hero .cta {
-  width: 190px;
+	min-width: 190px;
+	padding-right: 25px;
+	padding-left: 25px;
   animation-delay: 1000ms;
 }
 
