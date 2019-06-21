@@ -13,6 +13,8 @@
 		box-shadow: 0;
   }
 
+	.new-nav .container
+
 	.new-nav.new-nav--fixed {
     top: 0px;
 		position: fixed;
@@ -21,12 +23,20 @@
 
 	.new-nav.new-nav--fixed > .container {
 		border-bottom: 0;
+		height: 100%;
 	}
 
 
 	.new-nav > .container {
 		border-bottom: 1px solid rgba(0,0,0,.1);
 		box-shadow: 0 -12px -40px rgba(0, 0, 0, .12);
+		height: 100%;
+	}
+
+	.new-nav .box-logo > a {
+		height: 100%;
+    display: flex;
+    align-items: center;
 	}
 
 	.new-nav .box-logo, .new-nav .box-menu {
@@ -34,11 +44,12 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		height: 100%;
 	}
 
   .new-nav .box-logo .label {
 		display: inline-block;
-    background: #EBEBEF;
+    background-color: #EBEBEF;
     border-radius: 100px;
     height: 26px;
     line-height: 26px;
@@ -49,6 +60,10 @@
     text-align: center;
     margin: 0 16px;
 		color: inherit;
+  }
+
+	.new-nav .box-logo .label:hover {
+    background-color: #e2e2e2;
   }
 
 	.new-nav .box-menu {
@@ -243,8 +258,8 @@
 									</g>
 							</g>
 						</svg>
+						</h1>
 					</a>
-				</h1>
 				<a class="label" href="/jobs">We're hiring!</a>
 			</div>
 			<div class="box-menu">
@@ -308,7 +323,7 @@
 											</svg>
 										</figure>
 										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">Starter Kit</span>
+											<span class="sub-nav-item-title">Starter Kits</span>
 											<p class="sub-nav-item-description">
 												The easiest way to build a Web3 application
 											</p>

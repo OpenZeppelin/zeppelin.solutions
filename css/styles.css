@@ -292,8 +292,10 @@ section.section .title {
 /** Hero **/
 
 .hero {
-  height: 400px;
-  text-align: center;
+  height: 381px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 .hero.gray,
@@ -306,7 +308,24 @@ section.section .title {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center;
+	align-items: center;
+	padding-top: 17px;
+}
+
+.hero h1.heading {
+	max-width: 620px;
+	margin-bottom: 25px;
+}
+
+.hero .description {
+	font-size: 1.0825rem;
+	color: #2a2a47;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0px;
+	animation-delay: 700ms;
+	max-width: 663px;
 }
 
 .hero .cta {
@@ -330,7 +349,7 @@ section.section .title {
 }
 
 .section .wrapper {
-  max-width: 660px;
+  max-width: 700px;
 }
 
 .section .wrapper--centered {
@@ -347,17 +366,6 @@ section.section .title {
   font-size: inherit;
 	margin-bottom: 30px;
 	color: #3C3C57;
-}
-
-.section .hero .description {
-  font-size: 1.1rem;
-  color: #2a2a47;
-  text-align: center;
-  margin-bottom: 30px;
-  line-height: 1.8;
-  font-weight: 300;
-  letter-spacing: 0px;
-  animation-delay: 700ms;
 }
 
 /** **/

@@ -1,4 +1,4 @@
 ---
 layout: start
-title: Starter Kit
+title: Starter Kits
 ---
