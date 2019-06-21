@@ -96,6 +96,9 @@ layout: default
 	.page-contracts .c-explained .box {
 		flex: 1;
 		margin-left: 2.0625rem;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 	}
 
 	.page-contracts .c-explained .box .icon {
@@ -111,10 +114,6 @@ layout: default
 		font-weight: 600;
 	}
 
-	.page-contracts .c-explained .box-description {
-		width: 80%;
-	}
-
 	.page-contracts .c-explained .description {
 		opacity: 0.8;
 		font-size: 0.875rem;
@@ -125,12 +124,13 @@ layout: default
 	}
 
 	.page-contracts .c-explained .box .link {
-		font-size: 0.9125rem;
-		color: #4E5EE4;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
-		font-weight: bold;
-		opacity: 1;
+    font-size: 0.9125rem;
+    color: #4E5EE4;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 1;
+    margin-right: -1rem;
 	}
 
 	.page-contracts .c-explained .box .link:hover {
@@ -147,7 +147,7 @@ layout: default
 		padding: 90px 0;
 	}
 
-	.page-contracts .c-projects .heading, .page-contracts .c-what-else .heading{
+	.page-contracts .c-projects .heading, .page-contracts .c-what-else .heading {
 		opacity: 0.9;
 		font-size: 0.875rem;
 		color: #3D3D58;
@@ -229,6 +229,8 @@ layout: default
 		font-size: 1.2rem;
 		color: #282846;
 		margin-bottom: 19px;
+		font-weight: bold;
+    font-family: 'silka';
 	}
 
 	.page-contracts .c-what-else .box .box-heading .material-icons {

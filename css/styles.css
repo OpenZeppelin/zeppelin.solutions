@@ -292,7 +292,7 @@ section.section .title {
 /** Hero **/
 
 .hero {
-  height: 381px;
+  height: 384px;
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -893,7 +893,7 @@ body.modal-open {
 }
 
 .a-scale:hover, .a-scale:active, .a-scale:focus {
-	transform: translateZ(0px) scale(1.1);
+	transform: translateZ(0px) scale(1.051);
 	transition: transform 0.25s ease-out 0s;
 }
 
