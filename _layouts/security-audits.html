@@ -15,7 +15,7 @@ layout: default
 		padding-top: 0;
 		color: white;
 		background-color: #282846;
-		height: 760px;
+		height: 715px;
 	}
 
 	.security-audits-hero h1.heading {
@@ -23,12 +23,13 @@ layout: default
 	}
 
 	.p-nav {
-		height: 80px;
-		line-height: 80px;
+		height: 64px;
+		line-height: 64px;
 		display: flex;
 		justify-content: center;
 		margin-bottom: 80px;
 		background-color: #282846;
+		transition: all 0.2s ease;
 	}
 
 	.p-nav > .container {
@@ -147,6 +148,7 @@ layout: default
 	}
 
 	.question .faqs-title {
+		font-family: 'silka';
 		margin-bottom: 25px;
     max-width: 560px;
     display: block;
@@ -160,13 +162,14 @@ layout: default
 	}
 
 	.question .faqs-description {
+		font-family: Helvetica;
 		color: #56566E;
     line-height: 24px;
     transition: height 0.8s ease;
     overflow: hidden;
     font-size: 1rem;
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0px;
 	}
 
@@ -258,18 +261,18 @@ layout: default
 				<h4 class="heading typography--mutted">Our most popular audit reports</h4>
 				<div class="grid audit-grid">
 					<div class="row">
-						<div class="col">
-							<a target="_blank" href="https://blog.zeppelin.solutions/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
+						<div class="col a-scale">
+							<a target="_blank" href="https://blog.openzeppelin.com/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
 						</div>
-						<div class="col">
-							<a target="_blank" href="https://blog.zeppelin.solutions/solidity-compiler-audit-8cfc0316a420"><img src="../images/security-audits/audit-2.png"/></a>
+						<div class="col a-scale">
+							<a target="_blank" href="https://blog.openzeppelin.com/solidity-compiler-audit-8cfc0316a420"><img src="../images/security-audits/audit-2.png"/></a>
 						</div>
-						<div class="col">
-						  <a target="_blank" href="https://blog.zeppelin.solutions/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-3.png"/></a>
+						<div class="col a-scale">
+						  <a target="_blank" href="https://blog.openzeppelin.com/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-3.png"/></a>
 						</div>
 					</div>
 				</div>
-				<a class="btn btn--mutted" href="https://blog.zeppelin.solutions/tagged/security" target="_blank">SEE ALL ></a>
+				<a class="btn btn--mutted" href="https://openzeppelin.com/security-audits/" target="_blank">SEE ALL ></a>
 			</div>
 
 		</div>
@@ -294,7 +297,7 @@ layout: default
 					<p class="faqs-description">We have expertise across the whole stack: from languages and compilers to smart contract systems, protocols, and applications. Our audit portfolio spans distributed payment networks, financial structures, and governance systems.</p>
 				</li>
 				<li class="question">
-					<h3 class="faqs-title">Which technologies do you work with?</h3>
+					<h3 class="faqs-title">How do I know when I'm ready for an external audit?</h3>
 					<p class="faqs-description">We have audited systems in different stages of development and production, but we have found that the best outcomes, and most interesting findings happen when the code has been tested and documented and is ready for deployment. <a href="https://blog.zeppelin.solutions/follow-this-quality-checklist-before-an-audit-8cc6a0e44845" target="_blank"> This checklist</a> lists a few basic quality measures that you should consider before you hand your next  project over for an external audit.</p>
 				</li>
 			</ul>
@@ -331,8 +334,7 @@ layout: default
 			<div class="wrapper">
 				<h2 class="heading">Request a Security Audit</h2>
 				<p class="description">
-				Our quotes and turnaround times vary according to the codebase’s length and complexity.
-				We prioritize clients that leverage OpenZeppelin Contracts and OpenZeppelin SDK, fully-audited projects, already trusted by leading companies in the ecosystem.
+				Our quotes and turnaround times vary according to the codebase's length and complexity.
 				</p>
 				<a href="#" class="btn cta request-audit-btn">
 					Request an Audit
