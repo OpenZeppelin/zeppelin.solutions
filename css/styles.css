@@ -155,7 +155,7 @@ a {
   padding-left: 15px;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  font-size: 0.9375rem;
   transition: background-color 0.4s ease, color 0.4s ease;
 	font-weight: 600;
 	overflow: hidden;
@@ -310,7 +310,7 @@ section.section .title {
 }
 
 .hero .cta {
-  width: 250px;
+  width: 190px;
   animation-delay: 1000ms;
 }
 
