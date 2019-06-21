@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1864px" height="460px" viewBox="0 0 1864 460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="51.2858103%" cy="55.9388843%" fx="51.2858103%" fy="55.9388843%" r="167.844107%" id="radialGradient-1">
+            <stop stop-color="#589EFD" offset="0%"></stop>
+            <stop stop-color="#8670F3" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(0.000000, -64.000000)">
+            <g id="logo" transform="translate(0.000000, 64.000000)" fill-rule="nonzero">
+                <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="460" height="460" rx="230"></rect>
+                <g id="Group-6" transform="translate(61.000000, 62.000000)">
+                    <g id="Group-7">
+                        <g id="Group-5">
+                            <g id="Group-3">
+                                <g id="Group-4">
+                                    <g id="Group" transform="translate(168.101008, 168.699452) rotate(45.000000) translate(-168.101008, -168.699452) translate(49.601008, 49.699452)">
+                                        <g id="Group-2">
+                                            <path d="M39.5958749,42.4276405 L196.031302,42.4276405 L196.031302,0.994697665 L196.031302,42.4276405 L236.377736,42.4276405 L196.031302,42.4276405 L196.031302,198.778368 L236.377736,198.778368 L196.031302,198.778368 L196.031302,237.018281 L196.031302,198.778368 L39.5958749,198.778368 L39.5958749,42.4276405 L0.22629251,42.4276405 L39.5958749,42.4276405 L39.5958749,198.778368 L196.031302,198.778368 L196.031302,42.4276405 L39.5958749,42.4276405 L39.5958749,0.473528573 L39.5958749,42.4276405 Z M39.5958749,198.778368 L0.22629251,198.778368 L39.5958749,198.778368 L39.5958749,237.018281 L39.5958749,198.778368 L39.5958749,198.778368 Z" id="Shape" stroke="#FFFFFF" stroke-width="23.506561" fill="#278AF2" stroke-linecap="square"></path>
+                                            <polygon id="Rectangle-Copy" fill="#FFFFFF" points="70.1048162 73.19796 165.530426 73.19796 165.530426 168.571904 70.1048162 168.571904"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <text id="AZTEC" font-family="GillSans, Gill Sans" font-size="365" font-weight="normal" line-spacing="424" letter-spacing="50" fill="#6096FC">
+                <tspan x="539.1875" y="335">AZTEC</tspan>
+            </text>
+            <text id="PROTOCOL" font-family="GillSans, Gill Sans" font-size="153" font-weight="normal" letter-spacing="77.05462" fill="#90A1C1">
+                <tspan x="530.80276" y="513">PROTOCOL</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
