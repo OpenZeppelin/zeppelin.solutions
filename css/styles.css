@@ -822,15 +822,15 @@ body.modal-open {
   margin-left: 13px;
   padding-top: 35px;
 }
-.terminal-padding{
+.terminal-padding {
   margin-left: 10px;
   padding-left: 10px;
 }
-.terminal-padding2{
+.terminal-padding2 {
   margin-left: 20px;
   padding-left: 20px;
 }
-.typed-cursor{
+.typed-cursor {
   opacity: 1;
   color: #A5DEF2;
   font-weight: bold!important;
