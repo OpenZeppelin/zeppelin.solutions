@@ -514,6 +514,7 @@ p { font-size: 1rem; }
 	color: #282846;
 	line-height: 30px;
 	margin-bottom: 14px;
+	font-weight: bold;
 }
 
 .box--secondary .box-side {
