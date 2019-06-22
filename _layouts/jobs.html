@@ -109,13 +109,13 @@ layout: default
 						<img class="photo-wall-img" src="../images/photo_01.png">
 					</div>
 					<div class="col">
+						<img class="photo-wall-img" src="../images/image_05.jpg">
+					</div>
+					<div class="col">
 						<img class="photo-wall-img" src="../images/photo_02.png">
 					</div>
 					<div class="col">
 						<img class="photo-wall-img" src="../images/photo_03.png">
-					</div>
-					<div class="col">
-						<img class="photo-wall-img" src="../images/photo_04.png">
 					</div>
 				</div>
 			</div>
@@ -154,7 +154,7 @@ layout: default
 				<h2 class="section-title">
 					Current openings
 				</h2>
-				<p class="section-subtitle">Find the best place for you in Zeppelin</p>
+				<p class="section-subtitle">Find the best place for you in OpenZeppelin</p>
 			</div>
 
 			<div class="section-content">
@@ -237,7 +237,7 @@ layout: default
 	<section class="section job-opening-role">
 		<div class="container">
 			<h2 class="section-title">Don’t see your role here?</h2>
-			<p class="section-subtitle">Send an email to <a href="mailto:jobs@zeppelin.solutions">jobs@zeppelin.solutions</a>.</p>
+			<p class="section-subtitle">Send an email to <a href="mailto:jobs@openzeppelin.solutions">jobs@openzeppelin.solutions</a>.</p>
 		</div>
 	</section>
 
@@ -263,7 +263,7 @@ layout: default
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">Who will I be talking to during the hiring process?</h3>
-						<p class="hp-description animated fadeIn">You’ll talk to our hiring manager, your prospective teammates, your assigned work test coach and one (or both) of the founders. Each candidate usually interacts with at least four Zeppelin members.</p>
+						<p class="hp-description animated fadeIn">You’ll talk to our hiring manager, your prospective teammates, your assigned work test coach and one (or both) of the founders. Each candidate usually interacts with at least four OpenZeppelin members.</p>
 					</div>
 					<div class="hp-card-action">
 						<div class="plus-icon"></div>
@@ -273,7 +273,7 @@ layout: default
 				<li class="hp-card">
 					<div class="hp-content">
 						<h3 class="hp-title">What’s the work test like?</h3>
-						<p class="hp-description animated fadeIn">The work test is a custom challenge guided by a coach from Zeppelin. You can think about it as an audition. Work tests should require an effort of roughly 10 hours per week, spanning no more than three weeks. Your time is paid regardless of the output.</p>
+						<p class="hp-description animated fadeIn">The work test is a custom challenge guided by a coach from OpenZeppelin. You can think about it as an audition. Work tests should require an effort of roughly 10 hours per week, spanning no more than three weeks. Your time is paid regardless of the output.</p>
 					</div>
 					<div class="hp-card-action">
 						<div class="plus-icon"></div>
@@ -282,8 +282,8 @@ layout: default
 
 				<li class="hp-card">
 					<div class="hp-content">
-						<h3 class="hp-title">How can I contact Zeppelin if I have questions about my application?</h3>
-						<p class="hp-description animated fadeIn">Please send us an email at jobs@zeppelin.solutions.</p>
+						<h3 class="hp-title">How can I contact OpenZeppelin if I have questions about my application?</h3>
+						<p class="hp-description animated fadeIn">Please send us an email at jobs@openzeppelin.solutions.</p>
 					</div>
 					<div class="hp-card-action">
 						<div class="plus-icon"></div>
@@ -501,13 +501,11 @@ layout: default
     margin-bottom: 8px;
     position: relative;
     overflow: hidden;
-		flex-grow: 1;
-    flex-basis: auto;
-    flex-shrink: 1;
+		flex: 1;
   }
 
 	.section.section-job-promo .photo-wall .photo-wall-img {
-		min-width: 100%;
+		width: 100%;
   }
 
 	.section.section-job-promo .job-wall-grid {
@@ -576,13 +574,17 @@ layout: default
 		margin-bottom: 25px;
   }
 
-	.section.section-jobs-openings .section-content {
-		padding: 60px 0 0;
+	.section.section-jobs-openings .section-header {
+		margin-bottom: 0px;
+	}
+
+	.section.section-jobs-openings .section-content, .section.job-opening-role {
+		padding: 20px 0 0;
 		display: flex;
   }
 
 	.section.section-jobs-openings {
-		padding-bottom: 40px;
+		padding-bottom: 0px;
 	}
 
 	.section.section-jobs-openings .positions-list .positions-list-item {
@@ -750,7 +752,7 @@ layout: default
 
 	.section.section-hiring-process .hp-list .hp-card {
 		border-bottom: solid 1px #D5D5D5;
-		padding: 28px 0;
+		padding: 10px 0;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -808,7 +810,7 @@ layout: default
 		flex-grow: 0;
 		text-align: right;
 		font-size: 1.2rem;
-		vertical-align: middle;
+		padding-top: 12px;
 	}
 
 	.section.section-hiring-process .hp-card-action .icon {
