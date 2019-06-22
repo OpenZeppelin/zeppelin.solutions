@@ -42,7 +42,7 @@ layout: default
 				<div class="box-text row">
 					<div class="col">
 						<h2 class="heading">How we work</h2>
-						<p class="description">We’re focused on creating a collaborative work environment where people are happy and productive. We don’t let geography or borders define us: we are a distributed team with members all over the world. We apply proven remote and organizational practices ensure that you’ll always be in sync with the team.</p>
+						<p class="description">We’re focused on creating a collaborative work environment where people are happy and productive. We don’t let geography or borders define us: we are a distributed team with members all over the world.</p>
 						<p class="description">We apply proven remote and organizational practices ensure that you’ll always be in sync with the team.</p>
 					</div>
 					<div class="col map">
@@ -59,30 +59,42 @@ layout: default
 			<div class="grid">
 				<div class="row">
 					<div class="col">
+						<div class="box-container">
 						<h3 class="heading">Ability to ship</h3>
 						<p class="description">We take ownership of our responsibilities, set goals, and manage expectations to achieve them.</p>
+						</div>
 					</div>
 					<div class="col">
+						<div class="box-container">
 						<h3 class="heading">Intellectual curiosity</h3>
 						<p class="description">We are driven by a passionate and constant desire to learn. We encourage a curious attitude toward the unknown and toward life in general.</p>
+						</div>
 					</div>
 					<div class="col">
+					<div class="box-container">
 						<h3 class="heading">Commitment to excellence</h3>
 						<p class="description">We care a great deal about our work being of high quality. We want our products to be polished and our communication to be precise.</p>
+					</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
+					<div class="box-container">
 						<h3 class="heading">Strong sense of purpose</h3>
 						<p class="description">We care about the mission and work to positively impact the community. We think big and build with the long-term in mind.</p>
 					</div>
+					</div>
 					<div class="col">
+					<div class="box-container">
 						<h3 class="heading">Team spirit</h3>
 						<p class="description">We trust and rely on other team members, while being mindful of our differences. We have honest and direct communication and contribute to each other’s success.</p>
 					</div>
+					</div>
 					<div class="col">
+					<div class="box-container">
 						<h3 class="heading">Healthy workstyle</h3>
 						<p class="description">We are conscious of our individual work styles and achieve our goals calmly, while enjoying the journey.</p>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -136,7 +148,7 @@ layout: default
 		</div>
 	</section>
 
-	<section class="section section-jobs-openings" id="openings-box">
+	<section class="section section-jobs-openings" id="openings">
 		<div class="container">
 			<div class="section-header">
 				<h2 class="section-title">
@@ -417,7 +429,7 @@ layout: default
 		letter-spacing: 0;
 		text-align: center;
 		line-height: 40px;
-		margin-bottom: 60px;
+		margin-bottom: 42px;
 		font-weight: bold;
 	}
 
@@ -427,8 +439,15 @@ layout: default
 
 	.section.section-core-values .grid .col {
 		border-right: solid 1px #D8D8D8;
-		padding-right: 35px;
-		padding-left: 35px;
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section.section-core-values .grid .col .box-container {
+		width: 80%;
+		height: 80%;
 	}
 
 	.section.section-core-values .grid .col:first-child {
@@ -440,21 +459,22 @@ layout: default
 		padding-right: 0;
 	}
 
-	.section-core-values .grid .col > .heading {
+	.section-core-values .grid .col .heading {
 		opacity: 0.9;
 		font-size: 1.2rem;
 		color: #4e5ee4;
 		line-height: 27px;
-		margin-bottom: 20px;
+		margin-bottom: 16px;
+		font-weight: normal;
 	}
 
-	.section-core-values .grid .col > .description {
-		opacity: 0.8;
-		color: #282846;
+	.section-core-values .grid .col .description {
+    opacity: 0.8;
+    color: #282846;
     margin-bottom: 25px;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     margin-bottom: 30px;
-		line-height: 1.8;
+    line-height: 1.7;
     font-weight: 300;
     letter-spacing: 0px;
 	}
