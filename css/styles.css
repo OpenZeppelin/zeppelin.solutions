@@ -134,7 +134,7 @@ a {
   flex-shrink: 1;
 }
 
-.col:last-child {
+.grid > .row > .col:last-child, .col:last-child {
 	margin-right: 0;
 }
 
