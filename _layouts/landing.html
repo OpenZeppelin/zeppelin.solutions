@@ -128,6 +128,8 @@ layout: default
 		display: flex;
     justify-items: center;
     align-items: center;
+		text-align: center;
+		flex-direction: column-reverse;
 	}
 
 	.l-cta .box .box-side {
@@ -135,6 +137,7 @@ layout: default
 		display: flex;
     justify-content: center;
     align-items: center;
+		margin-bottom: 50px;
 	}
 
 	.l-cta .main-box .box-description {
@@ -182,6 +185,15 @@ layout: default
 
 		.l-cta .main-box .box-description {
 			padding-right: 117px;
+		}
+
+		.l-cta .box .box-wrapper {
+			flex-direction: row;
+			text-align: left;
+		}
+
+		.l-cta .box .box-side {
+			margin-bottom: 0px;
 		}
 	}
 
