@@ -1,4 +1,5 @@
 <style type="text/css">
+
   .new-nav {
 		position: absolute;
     height: 70px;
@@ -48,7 +49,7 @@
 	}
 
   .new-nav .box-logo .label {
-		display: inline-block;
+		display: none;
     background-color: #EBEBEF;
     border-radius: 100px;
     height: 26px;
@@ -67,6 +68,7 @@
   }
 
 	.new-nav .box-menu {
+		display: none;
 		flex-grow: 1;
 	}
 
@@ -125,6 +127,7 @@
 		visibility: hidden;
 		opacity: 0;
 	}
+
 
 	.new-nav .item .sub-nav .sub-nav-item-container:hover > a {
 		color: inherit;
@@ -233,6 +236,15 @@
 
 	.new-nav #sub-nav-company {
 		width: 160px;
+	}
+
+	@media (min-width: 900px) {
+		.new-nav .box-logo .label {
+			display: inline-block;
+		}
+		.new-nav .box-menu {
+			display: block;
+		}
 	}
 
 </style>
