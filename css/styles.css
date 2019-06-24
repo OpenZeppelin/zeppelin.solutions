@@ -928,4 +928,9 @@ body.modal-open {
 		border-right: solid 1px #D8D8D8;
 		border-bottom: 0;
 	}
+
+	.box .box-container {
+		max-width: 225px;
+		margin: 0 auto;
+	}
 }
