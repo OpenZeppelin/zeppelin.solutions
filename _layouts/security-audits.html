@@ -211,6 +211,12 @@ layout: default
 	.page-security .s-form.active#security-audit-form {
 		display: block;
 	}
+
+	.page-security .checklist {
+		text-decoration:underline;
+    color:inherit;
+		cursor: pointer;
+	}
 </style>
 
 
@@ -298,13 +304,13 @@ layout: default
 				</li>
 				<li class="question">
 					<h3 class="faqs-title">How do I know when I'm ready for an external audit?</h3>
-					<p class="faqs-description">We have audited systems in different stages of development and production, but we have found that the best outcomes, and most interesting findings happen when the code has been tested and documented and is ready for deployment. <a href="https://blog.zeppelin.solutions/follow-this-quality-checklist-before-an-audit-8cc6a0e44845" target="_blank"> This checklist</a> lists a few basic quality measures that you should consider before you hand your next  project over for an external audit.</p>
+					<p class="faqs-description">We have audited systems in different stages of development and production, but we have found that the best outcomes, and most interesting findings happen when the code has been tested and documented and is ready for deployment. This <a href="https://blog.zeppelin.solutions/follow-this-quality-checklist-before-an-audit-8cc6a0e44845" target="_blank" class="checklist"> checklist</a> lists a few basic quality measures that you should consider before you hand your next  project over for an external audit.</p>
 				</li>
 			</ul>
 
 			<div class="sa-comments">
 				<div class="container">
-					<h3 class="heading typography--mutted">The world’s leading projects work with Zeppelin</h3>
+					<h3 class="heading typography--mutted">The world’s leading projects work with OpenZeppelin</h3>
 					{% include security-quote.html %}
 				</div>
 			</div>
@@ -319,10 +325,9 @@ layout: default
 	<section class="section section--gray sa-projects ">
 		<div class="container">
 			<div class="section-header">
-				<h2 class="heading">Request a Security Audit</h2>
+				<h2 class="heading">Secure your code from Day One</h2>
 				<p class="description">
-				Our quotes and turnaround times vary according to the codebase’s length and complexity.
-				We prioritize clients that leverage OpenZeppelin Contracts and OpenZeppelin SDK, fully-audited projects, already trusted by leading companies in the ecosystem.
+					Accelerate your development process by leveraging OpenZeppelin Contracts and OpenZeppelin SDK. Contracts gives you a secure library of Solidity smart contracts to build upon. SDK provides you with a Swiss army knife toolset for Ethereum development, to meet all your needs.
 				</p>
 			</div>
 			{% include projects-grid.html %}
