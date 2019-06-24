@@ -102,21 +102,19 @@ layout: default
 	</section>
 
 	<section class="section section-job-promo">
-		<div class="bg">
-			<div class="grid photo-wall">
-				<div class="row">
-					<div class="col">
-						<img class="photo-wall-img" src="../images/photo_01.png">
-					</div>
-					<div class="col">
-						<img class="photo-wall-img" src="../images/image_05.jpg">
-					</div>
-					<div class="col">
-						<img class="photo-wall-img" src="../images/photo_02.png">
-					</div>
-					<div class="col">
-						<img class="photo-wall-img" src="../images/photo_03.png">
-					</div>
+		<div class="grid photo-wall">
+			<div class="row">
+				<div class="col">
+					<img class="photo-wall-img" src="../images/photo_01.png">
+				</div>
+				<div class="col">
+					<img class="photo-wall-img" src="../images/image_05.jpg">
+				</div>
+				<div class="col">
+					<img class="photo-wall-img" src="../images/photo_02.png">
+				</div>
+				<div class="col">
+					<img class="photo-wall-img" src="../images/photo_03.png">
 				</div>
 			</div>
 		</div>
@@ -415,6 +413,10 @@ layout: default
 		padding-left: 60px;
 	}
 
+	.section.section-content .map .map-img {
+		padding-top: 20px;
+	}
+
 	/* section: section-core-values */
 
 	.section.section-core-values {
@@ -490,7 +492,7 @@ layout: default
 	.section.section-job-promo .photo-wall {
 		overflow: hidden;
 		height: 400px;
-		max-height: 400px;
+		overflow: hidden;
   }
 
 	.section.section-job-promo .row {
@@ -498,10 +500,15 @@ layout: default
   }
 
 	.section.section-job-promo .photo-wall .col {
+		margin: 0;
     margin-bottom: 8px;
     position: relative;
     overflow: hidden;
 		flex: 1;
+  }
+
+	.section.section-job-promo .photo-wall .col:nth-child(2) .photo-wall-img {
+		width: 130%;
   }
 
 	.section.section-job-promo .photo-wall .photo-wall-img {
@@ -748,6 +755,7 @@ layout: default
 	.section.section-hiring-process .hp-list {
 		max-width: 700px;
 		margin: 0 auto;
+		margin-top: 40px;
 	}
 
 	.section.section-hiring-process .hp-list .hp-card {
@@ -773,7 +781,7 @@ layout: default
 		margin-bottom: 25px;
 		max-width: 560px;
 		display: block;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		text-decoration: none;
     line-height: 1.8;
     font-weight: 500;

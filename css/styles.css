@@ -27,7 +27,7 @@
   box-sizing: border-box;
 }
 
-html.debug * {
+body.debug * {
 	outline: 1px solid red;
 }
 
@@ -182,7 +182,7 @@ a {
 .btn.btn--ghost {
   border: none;
   background-color: transparent;
-  color: #4351c5;
+  color: #3c3c3c;
   box-shadow: none;
   text-align: inherit;
   padding: 0;
