@@ -39,6 +39,10 @@ body {
   font-size: 15px;
 }
 
+html, body, .root {
+	width: 100%;
+}
+
 p {
   word-break: break-word;
 }
@@ -89,7 +93,15 @@ a {
   width: 1080px;
   min-width: 1080px;
   margin: 0 auto;
-  height: 100%;
+	height: 100%;
+	padding: 2rem;
+}
+
+
+@media (min-width: 900px) {
+	.container {
+		padding: 0;
+	}
 }
 
 /** Grid **/

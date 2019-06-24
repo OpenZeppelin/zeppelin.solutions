@@ -35,6 +35,8 @@
 		height: 100%;
     display: flex;
     align-items: center;
+		height: 100%;
+    line-height: 100%;
 	}
 
 	.new-nav .box-logo, .new-nav .box-menu {
@@ -114,20 +116,18 @@
     position: absolute;
     top: 30px;
     transition: visibility 0s .2s, opacity .2s, margin-top .2s;
-    min-width: 150px;
     pointer-events: none;
 		padding: 25px 20px;
     z-index: 3;
 		background: #FFFFFF;
 		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.20);
-		width: 320px;
 		line-height: normal;
 		visibility: hidden;
 		opacity: 0;
 	}
 
-	.new-nav .item .sub-nav .sub-nav-item-container:hover {
-		color: #4e5ee4;
+	.new-nav .item .sub-nav .sub-nav-item-container:hover > a {
+		color: inherit;
 		cursor: pointer;
 	}
 
@@ -168,8 +168,9 @@
 		flex-direction: row;
 		align-items: center;
 		border-bottom: 1px solid #E5E5E5;
-		padding: 15px 0;
+		padding: 18px 0;
 		transition: color 0.2s ease;
+
 	}
 
 	.new-nav .sub-nav-list .sub-nav-item:first-child .sub-nav-item-container {
@@ -185,13 +186,9 @@
 		color: #282846;
 	}
 
-	.new-nav .sub-nav-list .sub-nav-item-content {
+	.new-nav .sub-nav-list .sub-nav-icon + .sub-nav-item-content {
 		flex: 1;
-		padding-left: 10px;
-	}
-
-	.new-nav .box-menu-list .sub-nav-list a.sub-nav-item-container:hover {
-		color: #4E5EE4;
+		padding-left: 17px;
 	}
 
 	.new-nav .box-menu-list .sub-nav-list .sub-nav-icon {
@@ -204,19 +201,24 @@
 		vertical-align: middle;
 	}
 
-	.new-nav .sub-nav-list .sub-nav-item .sub-nav-item-title {
+	.new-nav .sub-nav-list .sub-nav-item .sub-nav-item-title, .new-nav .sub-nav-list .sub-nav-item .sub-nav-item-stand-title{
 		display: block;
 		opacity: 0.8;
 		font-size: 1.1rem;
 		color: inherit;
+	}
+
+	.new-nav .sub-nav-list .sub-nav-item .sub-nav-item-title {
 		margin-bottom: 5px;
 	}
 
 	.new-nav .sub-nav-list .sub-nav-item .sub-nav-item-description {
-		opacity: 0.6;
-		font-size: 0.96rem;
-		color: #333333;
-		line-height: 1.3rem;
+    opacity: 0.6;
+    font-size: 0.94rem;
+    color: #333333;
+    line-height: 1.3rem;
+    min-width: 250px;
+    word-break: break-word;
 	}
 
 	.new-nav .box-menu .box-menu-list .item .arrow-down {
@@ -226,7 +228,7 @@
 	}
 
 	.new-nav #sub-nav-learn {
-		width: 260px;
+		width: 210px;
 	}
 
 	.new-nav #sub-nav-company {
@@ -282,7 +284,7 @@
 										<div class="sub-nav-item-content">
 											<span class="sub-nav-item-title">Contracts</span>
 											<p class="sub-nav-item-description">
-												A Solidity framework of reusable and secure smart contracts
+												A Solidity library of reusable and secure smart contracts
 											</p>
 										</div>
 									</a>
@@ -301,7 +303,7 @@
 										<div class="sub-nav-item-content">
 											<span class="sub-nav-item-title">SDK</span>
 											<p class="sub-nav-item-description">
-												A suite of tools to help you develop, compile, upgrade & deploy smart contracts
+												A suite of tools to compile, upgrade, and deploy smart contracts
 											</p>
 										</div>
 									</a>
@@ -323,7 +325,7 @@
 										<div class="sub-nav-item-content">
 											<span class="sub-nav-item-title">Starter Kits</span>
 											<p class="sub-nav-item-description">
-												The easiest way to build a Web3 application
+												Bundles to easily kickstart your decentralized application
 											</p>
 										</div>
 									</a>
@@ -339,24 +341,18 @@
 						<div class="sub-nav" id="sub-nav-learn">
 							<ul class="sub-nav-list">
 								<li class="sub-nav-item">
-									<a class="sub-nav-item-container" href="https://forum.openzeppelin.com" target="_blank">
-										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">Community Forum</span>
-										</div>
+									<a class="sub-nav-item-container" href="https://docs.openzeppelin.com" target="_blank">
+										<span class="sub-nav-item-stand-title">Docs</span>
 									</a>
 								</li>
 								<li class="sub-nav-item">
-									<a class="sub-nav-item-container" href="https://docs.openzeppelin.com" target="_blank">
-										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">Docs</span>
-										</div>
+									<a class="sub-nav-item-container" href="https://forum.openzeppelin.com" target="_blank">
+										<span class="sub-nav-item-stand-title">Community Forum</span>
 									</a>
 								</li>
 								<li class="sub-nav-item">
 									<a class="sub-nav-item-container" href="https://ethernaut.openzeppelin.com">
-										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">Ethernaut</span>
-										</div>
+										<span class="sub-nav-item-stand-title">Ethernaut</span>
 									</a>
 								</li>
 							</ul>
@@ -370,30 +366,22 @@
 							<ul class="sub-nav-list">
 								<li class="sub-nav-item">
 									<a class="sub-nav-item-container" href="/about">
-										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">About us</span>
-										</div>
+										<span class="sub-nav-item-stand-title">About us</span>
 									</a>
 								</li>
 								<li class="sub-nav-item">
 									<a class="sub-nav-item-container" href="/jobs">
-										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">Jobs</span>
-										</div>
+										<span class="sub-nav-item-stand-title">Jobs</span>
 									</a>
 								</li>
 								<li class="sub-nav-item">
 									<a class="sub-nav-item-container" href="#">
-										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">Github</span>
-										</div>
+										<span class="sub-nav-item-stand-title">Github</span>
 									</a>
 								</li>
 								<li class="sub-nav-item">
 									<a class="sub-nav-item-container" href="https://blog.openzeppelin.com">
-										<div class="sub-nav-item-content">
-											<span class="sub-nav-item-title">Blog</span>
-										</div>
+										<span class="sub-nav-item-stand-title">Blog</span>
 									</a>
 								</li>
 							</ul>
