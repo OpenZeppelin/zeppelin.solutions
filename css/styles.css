@@ -306,7 +306,6 @@ section.section .title {
 /** Hero **/
 
 .hero {
-  height: 384px;
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -544,7 +543,7 @@ p { font-size: 1rem; }
 }
 
 .box--primary {
-	border-right: solid 1px #D8D8D8;
+	border-bottom: solid 1px #D8D8D8;
 	padding-top: 14px;
 }
 
@@ -552,12 +551,10 @@ p { font-size: 1rem; }
 	padding-right: 0;
 }
 
-
 .box--primary:last-child {
-	border-right: none;
+	border: none;
 	padding-right: 0;
 }
-
 
 .box--primary .box-heading {
 	opacity: 0.9;
@@ -921,5 +918,14 @@ body.modal-open {
 	.row .col {
 		margin-right: 15px;
 		margin-bottom: 0px;
+	}
+
+	.hero {
+		height: 384px;
+	}
+
+	.box--primary {
+		border-right: solid 1px #D8D8D8;
+		border-bottom: 0;
 	}
 }
