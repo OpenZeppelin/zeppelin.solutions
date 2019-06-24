@@ -29,47 +29,48 @@
     opacity: 1;
   }
 
-  .footer-box {
+  .footer .footer-box {
 		position: relative;
     display: flex;
     justify-content: space-between;
 		flex-direction: column;
   }
 
-  .link-box {
+  .footer .link-box {
     display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-content: space-around;
   }
 
-  .link-box div {
+  .footer .link-box div {
     margin-right: 45px;
 		margin-bottom: 45px;
   }
 
-  .link-box a {
+  .footer .link-box a {
     line-height: 1.9rem;
   }
-  .company {
+
+  .footer .company {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .logo {
+  .footer .logo {
     display: flex;
 		margin-bottom: 45px;
   }
 
-  .rights a, .rights span {
+  .footer .rights a, .footer .rights span {
 		flex-direction: row;
     bottom: 0;
     font-size: 0.675rem;
     color: #9a9cac;
   }
 
-  .rights a {
+  .footer .rights a {
     display: inline;
     color: #c7c8d1;
     margin-left: 7px;
@@ -80,16 +81,16 @@
   }
 
 	@media (min-width: 900px) {
-		.footer-box {
+		.footer .footer-box {
 			display: flex;
 			flex-direction: row;
   	}
 
-		.link-box {
+		.footer .link-box {
 			flex-direction: row;
 		}
 
-		.rights {
+		.footer .rights {
 			position: absolute;
 			bottom: 0;
 			left: 0;
