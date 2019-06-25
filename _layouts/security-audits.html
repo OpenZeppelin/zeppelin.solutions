@@ -15,7 +15,6 @@ layout: default
 		padding-top: 0;
 		color: white;
 		background-color: #282846;
-		height: 715px;
 	}
 
 	.security-audits-hero h1.heading {
@@ -77,8 +76,6 @@ layout: default
 
 	.page-security .audit-reports {
 		text-align: center;
-		position: absolute;
-		bottom: -190px;
 		z-index: 1;
 	}
 
@@ -88,15 +85,18 @@ layout: default
 
 	.audit-reports .audit-grid img {
 		width: 100%;
-		transform: translateY(-7%);
 	}
 
 	.audit-reports .col {
 		box-shadow: 0 4px 9px 0 rgba(0,0,0,0.32);
 		border-radius: 6px;
-		margin-right: 15px;
-		height: 150px;
 		overflow: hidden;
+	}
+
+	.audit-reports .col > a{
+		display: block;
+		overflow: hidden;
+		height: 130px;
 	}
 
 	.audit-reports .col:last-child {
@@ -216,6 +216,26 @@ layout: default
 		text-decoration:underline;
     color:inherit;
 		cursor: pointer;
+	}
+
+	@media (min-width: 900px) {
+		.page-security.fixed-sub-nav section.security-audits-hero {
+			height: 715px;
+		}
+
+		.page-security .audit-reports {
+    	position: absolute;
+  		bottom: -190px;
+		}
+
+		.audit-reports .col {
+			margin-right: 15px;
+		}
+
+		.audit-reports .col img {
+			width: 100%;
+			transform: translateY(-7%);
+		}
 	}
 </style>
 
