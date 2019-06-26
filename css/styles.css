@@ -28,7 +28,7 @@
 }
 
 body.debug * {
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 html, body {
@@ -824,7 +824,7 @@ body.modal-open {
 /** Desktop  **/
 @media (min-width: 1080px) {
 	.btn {
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 
 	.p-nav .p-menu {
