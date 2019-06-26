@@ -308,7 +308,7 @@ a {
 }
 
 .section.section--cutted + section.section {
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 .hero .wrapper {
