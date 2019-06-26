@@ -804,7 +804,7 @@ body.modal-open {
 
 /** Product Page **/
 
-.product-page .p-logo > svg {
+.product-page .p-logo > svg,.product-page .p-logo > img {
 	vertical-align: middle;
 	transform: scale(0.9);
 }

@@ -4,89 +4,35 @@ layout: default
 
 <style type="text/css">
 	.page-contracts .c-hero {
-		position: relative;
-		background-color: white;
-		padding-bottom: 180px;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		text-align: center;
 	}
 
-	.page-contracts .c-hero .hero {
-		height: 300px;
-	}
-
-	.page-contracts .c-hero .hero .heading, .page-contracts .c-hero .hero .description  {
+	.page-contracts .c-hero .heading, .page-contracts .c-hero .description {
 		max-width: 100%;
 	}
 
-	.page-contracts .c-hero .hero .description  {
-		font-size: 1rem;
+	.page-contracts .c-hero .container:nth-child(1) {
+		height: 300px;
 	}
 
-	.page-contracts .p-nav.new-sub-nav--fixed {
-		position: fixed;
-		top: 0px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		z-index: 101;
-		box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
-	}
-
-	.page-contracts .p-nav {
-		background-color: white;
-		transition: all 0.2s ease;
-	}
-
-	.page-contracts .p-nav > .container {
-		position: relative;
-		display: flex;
-		padding: 18px 0;
-	}
-
-	.page-contracts .p-nav .container > div {
-		flex: 1;
-	}
-
-	.page-contracts .p-nav .menu {
-		display: flex;
-		flex-direction: flex-end;
-	}
-
-	.page-contracts .p-nav .menu .item {
-		margin-left: 36px;
-		text-transform: uppercase;
-		color: #282846;
-	}
-
-	.page-contracts .p-nav .menu .item > a {
-		color: inherit;
-		opacity: 0.8;
-		font-weight: 600;
-		font-size: 0.8rem;
-		letter-spacing: 1px;
-		display: flex;
-		align-items: center;
-		height: 100%;
-	}
-
-	.page-contracts .p-nav .menu .item > a:hover {
-		color: #4E5EE4;
+	.page-contracts .c-hero .container.term-container {
+		padding: 0;
 	}
 
 	/** Explained Section **/
 
 	.page-contracts .c-explained {
 		position: relative;
-		padding-top: 300px;
+		padding-top: 40px;
 		background-color: #F8F8FA;
 		padding-bottom: 100px;
 	}
 
-	.page-contracts .c-explained .terminals {
-		position: absolute;
-		top: -150px;
-		left: 0;
-		text-align: center;
-		width: 100%;
+	.page-contracts .p-animated.expanded {
+		height: 730px;
 	}
 
 	.page-contracts .c-explained .heading {
@@ -102,7 +48,6 @@ layout: default
 
 	.page-contracts .c-explained .box {
 		flex: 1;
-		margin-left: 2.0625rem;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -169,6 +114,7 @@ layout: default
 	}
 
 	.page-contracts .c-projects .row {
+		flex-direction: row;
 		justify-content: space-around;
 		margin-bottom: 60px;
 	}
@@ -178,6 +124,7 @@ layout: default
 	}
 
 	.page-contracts .c-projects .col {
+		flex: 1;
 		text-align: center;
 		max-width: 120px;
 		display: flex;
@@ -211,6 +158,7 @@ layout: default
 		opacity: 0.9;
 		color: #282846;
 		align-items: center;
+		width: 100%;
 	}
 
 	.page-contracts .c-what-else .box {
@@ -258,98 +206,98 @@ layout: default
 		max-width: 500px;
 	}
 
+	@media (min-width: 700px) {
+		.page-contracts .c-explained .box {
+			margin-right: 2.0625rem;
+		}
+		.page-contracts .c-explained .box:last-child {
+			margin-right: 0;
+		}
+	}
 
+	@media (min-width: 900px) {
+		.page-contracts .c-hero {
+			min-height: 660px;
+		}
+	}
+
+	.product-page .p-logo#sdk-logo > img {
+		margin-left: -31px;
+	}
 </style>
 
 
-
-<main class="page page-contracts">
-	<header class="c-hero">
+<main class="page page-contracts product-page">
+	<nav class="p-nav p-nav--white" id="new-sub-nav">
 		<div class="container">
-			<nav class="p-nav row" id="new-sub-nav">
-				<div class="container">
-					<div class="logo">
-						<svg width="134px" height="28px" viewBox="0 0 134 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g id="Zeppelin-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										<g id="Subsite_Contracts_full" transform="translate(-215.000000, -84.000000)" fill="#282846">
-												<g id="contracts_dark" transform="translate(215.000000, 84.000000)">
-														<path d="M46.6584971,21.3982222 C42.6506358,21.3982222 39.822659,18.5048889 39.822659,14.6222222 C39.822659,10.7768889 42.6693642,7.84622222 46.6772254,7.84622222 C50.0483237,7.84622222 52.4080925,9.91822222 53.0823121,12.7182222 L50.3854335,12.7182222 C49.8984971,11.2062222 48.4751445,10.2168889 46.6772254,10.2168889 C44.2050867,10.2168889 42.4071676,12.1022222 42.4071676,14.6222222 C42.4071676,17.1795556 44.2050867,19.0275556 46.6772254,19.0275556 C48.4564162,19.0275556 49.8984971,18.0568889 50.4228902,16.5635556 L53.1572254,16.5635556 C52.5204624,19.3822222 50.0295954,21.3982222 46.6584971,21.3982222 Z M59.9743353,21.3982222 C56.8841618,21.3982222 54.7304046,19.1768889 54.7304046,16.2462222 C54.7304046,13.3342222 56.8654335,11.0942222 59.9743353,11.0942222 C63.0645087,11.0942222 65.2182659,13.3342222 65.2182659,16.2462222 C65.2182659,19.1582222 63.0457803,21.3982222 59.9743353,21.3982222 Z M59.9743353,19.1955556 C61.5849711,19.1955556 62.7461272,17.9635556 62.7461272,16.2462222 C62.7461272,14.5475556 61.5849711,13.2968889 59.9743353,13.2968889 C58.3449711,13.2968889 57.2025434,14.5475556 57.2025434,16.2462222 C57.2025434,17.9822222 58.3636994,19.1955556 59.9743353,19.1955556 Z M67.3720231,21.1555556 L67.3720231,11.3368889 L69.6943353,11.3368889 L69.6943353,12.5315556 L69.8254335,12.5315556 C70.2187283,11.8035556 71.1926012,11.0942222 72.5972254,11.0942222 C74.8071676,11.0942222 76.1556069,12.6435556 76.1556069,14.7342222 L76.1556069,21.1555556 L73.7209249,21.1555556 L73.7209249,15.3688889 C73.7209249,14.1742222 72.9530636,13.3715556 71.8293642,13.3715556 C70.6494798,13.3715556 69.8067052,14.3048889 69.8067052,15.5368889 L69.8067052,21.1555556 L67.3720231,21.1555556 Z M82.9165318,21.1555556 C80.8751445,21.1555556 79.6390751,19.9982222 79.6390751,17.8888889 L79.6390751,13.2782222 L77.9722543,13.2782222 L77.9722543,11.3555556 L79.0772254,11.3555556 C79.5079769,11.3555556 79.7889017,11.0755556 79.7889017,10.6088889 L79.7889017,8.63022222 L82.0737572,8.63022222 L82.0737572,11.3368889 L84.7893642,11.3368889 L84.7893642,13.2782222 L82.0737572,13.2782222 L82.0737572,17.7955556 C82.0737572,18.6168889 82.4857803,19.1395556 83.4221965,19.1395556 L84.7331792,19.1395556 L84.7331792,21.1555556 L82.9165318,21.1555556 Z M86.8494798,21.1555556 L86.8494798,11.3368889 L89.1530636,11.3368889 L89.1530636,12.9422222 L89.3028902,12.9422222 C89.6212717,12.1768889 90.5202312,11.2995556 91.8873988,11.2995556 L92.7863584,11.2995556 L92.7863584,13.6142222 L91.7750289,13.6142222 C90.220578,13.6142222 89.2841618,14.7528889 89.2841618,16.5075556 L89.2841618,21.1555556 L86.8494798,21.1555556 Z M98.5734104,21.3982222 C95.8203468,21.3982222 93.9287861,19.3448889 93.9287861,16.3022222 C93.9287861,13.2222222 95.8016185,11.0942222 98.4984971,11.0942222 C100.202775,11.0942222 101.157919,12.1022222 101.495029,12.6062222 L101.626127,12.6062222 L101.626127,11.3368889 L104.060809,11.3368889 L104.060809,21.1555556 L101.663584,21.1555556 L101.663584,19.9048889 L101.532486,19.9048889 C101.251561,20.3155556 100.371329,21.3982222 98.5734104,21.3982222 Z M99.0416185,19.2142222 C100.670983,19.2142222 101.682312,17.9075556 101.682312,16.2648889 C101.682312,14.4168889 100.558613,13.2968889 99.0228902,13.2968889 C97.4684393,13.2968889 96.4009249,14.5288889 96.4009249,16.2648889 C96.4009249,18.0382222 97.4684393,19.2142222 99.0416185,19.2142222 Z M111.083931,21.3982222 C107.993757,21.3982222 105.933642,19.1395556 105.933642,16.2462222 C105.933642,13.3528889 107.993757,11.0942222 111.083931,11.0942222 C113.612254,11.0942222 115.578728,12.6435556 115.953295,14.9582222 L113.462428,14.9582222 C113.162775,13.9875556 112.245087,13.2968889 111.102659,13.2968889 C109.454566,13.2968889 108.40578,14.6035556 108.40578,16.2462222 C108.40578,17.9448889 109.510751,19.1955556 111.121387,19.1955556 C112.245087,19.1955556 113.162775,18.5608889 113.443699,17.6088889 L115.934566,17.6088889 C115.56,19.8862222 113.612254,21.3982222 111.083931,21.3982222 Z M122.37711,21.1555556 C120.335723,21.1555556 119.099653,19.9982222 119.099653,17.8888889 L119.099653,13.2782222 L117.432832,13.2782222 L117.432832,11.3555556 L118.537803,11.3555556 C118.968555,11.3555556 119.24948,11.0755556 119.24948,10.6088889 L119.24948,8.63022222 L121.534335,8.63022222 L121.534335,11.3368889 L124.249942,11.3368889 L124.249942,13.2782222 L121.534335,13.2782222 L121.534335,17.7955556 C121.534335,18.6168889 121.946358,19.1395556 122.882775,19.1395556 L124.193757,19.1395556 L124.193757,21.1555556 L122.37711,21.1555556 Z M129.830983,21.3982222 C127.171561,21.3982222 125.84185,20.1475556 125.748208,18.2062222 L127.995607,18.2062222 C128.089249,19.0462222 128.763468,19.4942222 129.868439,19.4942222 C130.992139,19.4942222 131.628902,19.0088889 131.628902,18.3182222 C131.628902,16.2275556 125.972948,18.2062222 125.972948,14.0995556 C125.972948,12.4382222 127.415029,11.0942222 129.849711,11.0942222 C131.98474,11.0942222 133.576647,12.1768889 133.726474,14.1368889 L131.572717,14.1368889 C131.460347,13.4275556 130.898497,12.9608889 129.830983,12.9608889 C128.838382,12.9608889 128.201618,13.3902222 128.201618,14.0248889 C128.201618,15.8915556 133.988671,13.9315556 133.988671,18.1875556 C133.988671,20.0542222 132.471676,21.3982222 129.830983,21.3982222 Z" id="Contracts" fill-rule="nonzero"></path>
-														<g id="OZ_subbrand_ic_contracts">
-																<path d="M17.584,28 L10.416,23.861544 L10.416,0 L17.584,4.1384 L17.584,28 Z M7.168,28 L0,23.861544 L0,0 L7.168,4.1384 L7.168,28 Z M28,28 L20.832,23.861544 L20.832,0 L28,4.1384 L28,28 Z" id="Combined-Shape"></path>
-														</g>
-												</g>
-										</g>
-								</g>
-						</svg>
-					</div>
-					<ul class="menu">
-						<li class="item">
-							<a href="#">Docs</a>
-						</li>
-						<li class="item">
-							<a href=" https://github.com/openzeppelin/openzeppelin-contracts" target="_blank">Github</a>
-						</li>
-						<li class="item">
-							<a href="https://forum.openzeppelin.com">Community Forum</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<div class="hero">
-				<div class="container">
-					<h1 class="heading">SDK</h1>
-					<p class="description">OpenZeppelin Contracts is a battle-tested library of reusable smart contracts for Ethereum and other blockchains.</p>
-					<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="btn cta">Get Started</a>
-				</div>
-			<div>
+			<div class="p-logo" id="sdk-logo">
+				<img src="/images/sdk.svg" width="134px" height="28px" alt="">
+			</div>
+			<ul class="p-menu">
+				<li class="item">
+					<a href="#">Docs</a>
+				</li>
+				<li class="item">
+					<a href=" https://github.com/openzeppelin/openzeppelin-contracts" target="_blank">Github</a>
+				</li>
+				<li class="item">
+					<a href="https://forum.openzeppelin.com">Community Forum</a>
+				</li>
+			</ul>
 		</div>
-	</header>
+	</nav>
+	<section class="section hero c-hero section--cutted">
+		<div class="container">
+			<h1 class="heading">Build Secure Smart Contracts in Solidity</h1>
+			<p class="description">OpenZeppelin Contracts is a battle-tested library of reusable smart contracts for Ethereum and other blockchains.</p>
+			<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="btn cta">Get Started</a>
+		</div>
+		<div class="container term-container">
+		<section class="terminal-section p-animated" id="terminal-section">
+			<div class="terminal terminal-up" id="terminal">
+				<div class="wrap">
+					<div class="type-wrap">
+							<span id="typed"></span>
+							<span id="installing" style="color:#ccc"></span>
+							<span id="typed-installing" ></span>
+							<span id="fixed-text" style="color:#ccc"></span>
+							<span id="fixed-text2" style="color:#ccc"></span>
+							<span id="typed2"></span>
+							<span id="typed3"></span>
+							<span id="fixed-text3" style="color:#ccc"></span>
+							<span id="typed4"></span>
+							<span id="fixed-text4" style="color:#ccc"></span>
+							<span id="typed5"></span>
+					</div>
+				</div>
+				<div class="top-terminal">
+					<span class="terminal-control red"></span>
+					<span class="terminal-control yellow"></span>
+					<span class="terminal-control green"></span>
+					<div class="terminal-title" id="bash-title">bash</div>
+				</div>
+				<div class="bottom-terminal " id="terminal-bottom"></div>
+			</div>
+			<div class="terminal terminal-up" id="terminal2">
+				<div class="wrap">
+					<div class="type-wrap">
+						<span id="typed-vim"></span>
+					</div>
+				</div>
+				<div class="top-terminal">
+					<span class="terminal-control red"></span>
+					<span class="terminal-control yellow"></span>
+					<span class="terminal-control green"></span>
+					<div class="terminal-title" id="vim-title">vim ExampleToken.sol</div>
+				</div>
+				<div class="bottom-terminal vim-bottom-terminal" id="terminal-bottom"></div>
+			</div>
+		</section>
+		</div>
+		<div class="fake-bg fake-bg--gray"></div>
+	</section>
 	<section class="c-explained">
 		<div class="container">
-			<div class="terminals">
-				<section class="centered terminal-section" id="terminal-section">
-					<div class="terminal terminal-up" id="terminal">
-						<div class="wrap">
-							<div class="type-wrap">
-									<span id="typed"></span>
-									<span id="installing" style="color:#ccc"></span>
-									<span id="typed-installing" ></span>
-									<span id="fixed-text" style="color:#ccc"></span>
-									<span id="fixed-text2" style="color:#ccc"></span>
-									<span id="typed2"></span>
-									<span id="typed3"></span>
-									<span id="fixed-text3" style="color:#ccc"></span>
-									<span id="typed4"></span>
-									<span id="fixed-text4" style="color:#ccc"></span>
-									<span id="typed5"></span>
-							</div>
-						</div>
-						<div class="top-terminal">
-							<span class="terminal-control red"></span>
-							<span class="terminal-control yellow"></span>
-							<span class="terminal-control green"></span>
-							<div class="terminal-title" id="bash-title">bash</div>
-						</div>
-						<div class="bottom-terminal " id="terminal-bottom">
-
-						</div>
-					</div>
-					<div class="terminal terminal-up" id="terminal2">
-						<div class="wrap">
-							<div class="type-wrap">
-								<span id="typed-vim"></span>
-							</div>
-						</div>
-						<div class="top-terminal">
-							<span class="terminal-control red"></span>
-							<span class="terminal-control yellow"></span>
-							<span class="terminal-control green"></span>
-							<div class="terminal-title" id="vim-title">vim ExampleToken.sol</div>
-						</div>
-						<div class="bottom-terminal vim-bottom-terminal" id="terminal-bottom"></div>
-					</div>
-				</section>
-			</div>
 			<h2 class="heading">
 				Reduce the risk of vulnerabilities in your applications by using standard, tested, community-reviewed code.
 			</h2>
