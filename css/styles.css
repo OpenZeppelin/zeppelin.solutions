@@ -688,16 +688,6 @@ p { font-size: 1rem; }
 	border: none;
 }
 
-.p-nav.new-sub-nav--fixed {
-	position: fixed;
-	top: 0px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	z-index: 101;
-	box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
-}
-
 .p-nav .container {
 	display: flex;
 	background-color: transparent;
