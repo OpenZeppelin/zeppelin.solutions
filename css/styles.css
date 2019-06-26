@@ -28,7 +28,7 @@
 }
 
 body.debug * {
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 
 html, body {
@@ -175,11 +175,12 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 0.9375rem;
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
 	font-weight: 600;
 	overflow: hidden;
 	white-space: nowrap;
 	font-size: 0.785rem;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 
 .btn--fixed {
@@ -205,7 +206,13 @@ a {
 
 .btn:hover {
   cursor: pointer;
-  background-color: #4351c5;
+	background-color: #4351c5;
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	-webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+	box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+	-webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
 .btn--secondary {
@@ -694,6 +701,11 @@ p { font-size: 1rem; }
 .p-nav .container {
 	display: flex;
 	background-color: transparent;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	text-transform: uppercase;
 }
 
 .p-nav .container > div {
@@ -703,10 +715,19 @@ p { font-size: 1rem; }
 .p-nav .p-menu {
 	display: flex;
 	flex-direction: flex-end;
+
+	webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	overflow: hidden;
+	-webkit-mask-image: linear-gradient(90deg,transparent,#000 20px,#000 calc(100% - 20px),transparent);
 }
 
 .p-nav .p-menu .item {
-	margin-left: 36px;
+	margin-left: 20px;
 	text-transform: uppercase;
 	color: #282846;
 }
@@ -720,6 +741,11 @@ p { font-size: 1rem; }
 	display: flex;
 	align-items: center;
 	height: 100%;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-transition: color .1s;
+	transition: color .1s;
+	white-space: nowrap;
 }
 
 .p-nav .p-menu .item > a:hover {
@@ -797,6 +823,10 @@ body.modal-open {
 
 /** Desktop  **/
 @media (min-width: 1080px) {
+	.p-nav .p-menu {
+		-webkit-mask-image: none;
+	}
+
 	.container {
 		width: 1080px;
 		margin: 0 auto;

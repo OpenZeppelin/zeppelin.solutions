@@ -14,12 +14,12 @@ layout: default
 		max-width: 100%;
 	}
 
-	.page-contracts .c-hero .fake-bg {
+	.page-contracts .c-hero .container:nth-child(1) {
 		height: 300px;
 	}
 
-	.page-contracts .c-hero .container:nth-child(1) {
-		height: 300px;
+	.page-contracts .c-hero .container.term-container {
+		padding: 0;
 	}
 
 	/** Explained Section **/
@@ -214,8 +214,8 @@ layout: default
 	}
 
 	@media (min-width: 900px) {
-		.p-animated.expanded {
-			height: 300px;
+		.page-contracts .c-hero {
+			min-height: 660px;
 		}
 	}
 </style>
@@ -257,7 +257,7 @@ layout: default
 			<p class="description">OpenZeppelin Contracts is a battle-tested library of reusable smart contracts for Ethereum and other blockchains.</p>
 			<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="btn cta">Get Started</a>
 		</div>
-		<div class="container">
+		<div class="container term-container">
 		<section class="terminal-section p-animated" id="terminal-section">
 			<div class="terminal terminal-up" id="terminal">
 				<div class="wrap">
