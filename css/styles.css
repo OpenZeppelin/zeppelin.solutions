@@ -28,7 +28,7 @@
 }
 
 body.debug * {
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 html, body {
@@ -366,7 +366,7 @@ section.hero {
   text-align: center;
   justify-content: center;
 	align-items: center;
-	padding-top: 17px;
+	padding: 25px 0;
 }
 
 .hero h1.heading {
@@ -678,6 +678,7 @@ p { font-size: 1rem; }
 
 .p-nav.p-nav--white{
 	background-color: white;
+	border: none;
 }
 
 .p-nav.new-sub-nav--fixed {

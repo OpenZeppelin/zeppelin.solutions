@@ -16,13 +16,12 @@
 .terminal-section {
   margin-bottom: 30px;
   position: relative;
-  min-height: 200px;
+  height: 400px;
 }
 
 .expanded-terminal-section {
   margin-bottom: 30px;
   position: relative;
-  height: 350px;
 }
 
 .terminal {
@@ -32,19 +31,105 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   width: 448px;
-  height: 340px;
+  height: 400px;
   position: relative;
   background-color: black;
   margin: auto;
   position: absolute;
   top: 0px;
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2);
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .mobile-br {
   display: none;
+}
+
+@media (max-width: 960px) {
+  .terminal-center {
+    transition: top 0.4s;
+    -webkit-transition: top 0.4s;
+  }
+
+  .terminal-right {
+    top: 410px !important;
+    transition: top 0.4s !important;
+    -webkit-transition: top 0.4s !important;
+  }
+
+  .terminal-section {
+    height: 400px;
+  }
+  .expanded-terminal-section {
+    height: 740px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #terminal {
+    z-index: 30;
+    top: 0px;
+    left: calc(50% - 224px);
+  }
+  #terminal2 {
+    z-index: 1;
+    top: 0px;
+    left: calc(50% - 224px);
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-br {
+    display: inline;
+  }
+  .desktop-br {
+    display: none;
+  }
+  #terminal {
+    z-index: 30;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #terminal2 {
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 960px) {
+  #terminal {
+    z-index: 30;
+    left: calc(50% - 225px);
+  }
+  #terminal2 {
+    z-index: 1;
+    right: calc(50% - 480px) !important;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in !important;
+    transition: opacity 0.4s ease-in !important;
+  }
+  .terminal-center {
+    transition: left 0.4s;
+    -webkit-transition: left 0.4s;
+    transition: right 0.4s;
+    -webkit-transition: right 0.4s;
+  }
+  .terminal-left {
+    left: calc(50% - 480px) !important;
+    transition: left 0.4s !important;
+    -webkit-transition: left 0.4s !important;
+  }
+  .terminal-right {
+    opacity: 1 !important;
+    transition: right 0.4s !important;
+    -webkit-transition: right 0.4s !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .terminal {
+    height: 360px;
+  }
 }
 
 .top-terminal {
@@ -87,7 +172,6 @@
   background-color: rgb(40, 202, 64);
   border-color: rgb(58, 181, 75);
 }
-
 .bottom-terminal {
   width: 100%;
   height: 100%;
@@ -95,7 +179,6 @@
   position: absolute;
   overflow: auto;
 }
-
 .vim-bottom-terminal {
   background-repeat: no-repeat;
   background-position: center;
@@ -104,11 +187,9 @@
   -o-background-size: contain;
   background-size: contain;
 }
-
 .centered {
   text-align: center;
 }
-
 .wrap {
   width: 100%;
   text-align: left;
@@ -134,12 +215,10 @@
   margin-left: 13px;
   padding-top: 35px;
 }
-
 .terminal-padding {
   margin-left: 10px;
   padding-left: 10px;
 }
-
 .terminal-padding2 {
   margin-left: 20px;
   padding-left: 20px;
@@ -179,65 +258,5 @@
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-  }
-}
-
-@media (max-width: 960px) {
-  .terminal-center {
-    transition: top 0.4s;
-    -webkit-transition: top 0.4s;
-  }
-
-  .terminal-right {
-    top: 360px !important;
-    transition: top 0.4s !important;
-    -webkit-transition: top 0.4s !important;
-  }
-
-  .terminal-section {
-    height: 400px;
-  }
-
-  .mobile-br {
-    display: inline;
-  }
-  .desktop-br {
-    display: none;
-  }
-  #terminal {
-    z-index: 30;
-  }
-  #terminal2 {
-    z-index: 1;
-  }
-}
-
-@media (min-width: 960px) {
-  #terminal {
-    z-index: 30;
-    left: calc(50% - 225px);
-  }
-  #terminal2 {
-    z-index: 1;
-    right: calc(50% - 480px) !important;
-    opacity: 0;
-    -webkit-transition: opacity 0.4s ease-in !important;
-    transition: opacity 0.4s ease-in !important;
-  }
-  .terminal-center {
-    transition: left 0.4s;
-    -webkit-transition: left 0.4s;
-    transition: right 0.4s;
-    -webkit-transition: right 0.4s;
-  }
-  .terminal-left {
-    left: calc(50% - 480px) !important;
-    transition: left 0.4s !important;
-    -webkit-transition: left 0.4s !important;
-  }
-  .terminal-right {
-    opacity: 1 !important;
-    transition: right 0.4s !important;
-    -webkit-transition: right 0.4s !important;
   }
 }

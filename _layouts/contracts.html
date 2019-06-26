@@ -7,9 +7,18 @@ layout: default
 		display: flex;
 		flex-direction: column;
 		height: auto;
+		text-align: center;
+	}
+
+	.page-contracts .c-hero .heading, .page-contracts .c-hero .description {
+		max-width: 100%;
 	}
 
 	.page-contracts .c-hero .fake-bg {
+		height: 300px;
+	}
+
+	.page-contracts .c-hero .container:nth-child(1) {
 		height: 300px;
 	}
 
@@ -22,9 +31,8 @@ layout: default
 		padding-bottom: 100px;
 	}
 
-	.page-contracts .terminals {
-		text-align: center;
-		margin: 40px 0;
+	.page-contracts .p-animated.expanded {
+		height: 700px;
 	}
 
 	.page-contracts .c-explained .heading {
@@ -204,6 +212,12 @@ layout: default
 			margin-right: 0;
 		}
 	}
+
+	@media (min-width: 900px) {
+		.p-animated.expanded {
+			height: 300px;
+		}
+	}
 </style>
 
 
@@ -244,7 +258,7 @@ layout: default
 			<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="btn cta">Get Started</a>
 		</div>
 		<div class="container">
-				<section class="terminal-section" id="terminal-section">
+		<section class="terminal-section p-animated" id="terminal-section">
 			<div class="terminal terminal-up" id="terminal">
 				<div class="wrap">
 					<div class="type-wrap">
@@ -285,7 +299,7 @@ layout: default
 			</div>
 		</section>
 		</div>
-		<div class="fake-bg fake-bg--white"></div>
+		<div class="fake-bg fake-bg--gray"></div>
 	</section>
 	<section class="c-explained">
 		<div class="container">
