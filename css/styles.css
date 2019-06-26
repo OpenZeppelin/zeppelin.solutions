@@ -91,17 +91,8 @@ a {
 }
 
 .container {
+	width: 100%;
 	padding: 0 2rem;
-}
-
-
-@media (min-width: 900px) {
-	.container {
-		width: 1080px;
-		margin: 0 auto;
-		height: 100%;
-		padding: 0;
-	}
 }
 
 /** Grid **/
@@ -605,7 +596,22 @@ p { font-size: 1rem; }
 /** Sub Nav Bar **/
 
 .p-nav {
-	transition: all 0.5s ease;
+	height: 64px;
+	line-height: 64px;
+	display: flex;
+	justify-content: center;
+	background-color: #282846;w
+	border-bottom: solid 1px #414168;
+	-webkit-transform: translateZ(0);
+}
+
+.p-nav .container {
+	display: flex;
+	background-color: transparent;
+}
+
+.p-nav .container > div {
+	flex: 1;
 }
 
 /** Page **/
@@ -621,6 +627,10 @@ html, body, .root {
 
 body.modal-open {
 	margin: 0; height: 100%; overflow: hidden;
+}
+
+.container {
+	width: 100%;
 }
 
 /** Terminal **/
@@ -901,6 +911,13 @@ body.modal-open {
 
 /** Desktop  **/
 @media (min-width: 900px) {
+	.container {
+		width: 1080px;
+		margin: 0 auto;
+		height: 100%;
+		padding: 0;
+	}
+
 	.grid > .row {
 	 flex-direction: row;
 	 margin-bottom: 0px;
