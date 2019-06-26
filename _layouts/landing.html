@@ -2,10 +2,6 @@
 layout: default
 ---
 <style type="text/css">
-	.l-projects {
-		padding: 66px 0;
-	}
-
 	.l-projects .sub-heading {
 		margin-bottom: 60px;
 	}
@@ -13,25 +9,34 @@ layout: default
 	.l-projects .projects-grid {
 		margin-top: 20px;
 		margin-bottom: 111px;
-		padding: 0 10rem;
+		padding: 0rem;
 	}
 
 	.l-projects .projects-grid .row {
 		justify-content: space-between;
 		max-width: 980px;
 		margin: 0 auto;
+		flex-direction: row;
+		justify-items: center;
+		align-items: center;
 	}
 
 	.l-projects .projects-grid .item {
 		height: 54px;
 		text-align: center;
-		max-width: 100px;
-		line-height: 54px;
+		border-radius: 6px;
+		overflow: hidden;
+		min-width: 100px;
 	}
 
 	.l-projects .projects-grid .item img {
 		width: 100%;
 		vertical-align: middle;
+		object-fit: scale-down;
+    object-position: 50% 50%;
+    height: 100%;
+		flex: 1;
+		width: 80%;
 	}
 
 	.l-projects .projects-grid .item:last-child {
@@ -43,10 +48,6 @@ layout: default
 		text-align: center;
 	}
 
-	.l-hero-quote {
-		padding-bottom: 200px;
-	}
-
 	.l-hero-quote .container {
 		display: flex;
 		flex-direction: column;
@@ -55,9 +56,15 @@ layout: default
 		align-items: center;
 	}
 
+	section.section.l-hero-quote .quote {
+		padding: 80px 0;
+	}
+
+	section.section.l-hero-quote {
+		padding-bottom: 100px;
+	}
+
 	.l-hero-quote .quote {
-		padding-top: 142px;
-		padding-bottom: 30px;
 		font-family: Silka;
 		font-size: 1.5rem;
 		color: #FFFFFF;
@@ -71,6 +78,7 @@ layout: default
 		margin-bottom: 30px;
 		font-size: 1.39rem;
 		max-width: 530px;
+		margin: 0 auto;
 	}
 
 	.l-hero-quote .quote .quote-footer {
@@ -83,10 +91,9 @@ layout: default
 		margin-left: 20px;
 		opacity: 0.8;
 		font-family: HelveticaNeue;
-		font-size: 1rem;
+		font-size: 0.875rem;
 		color: #FFFFFF;
 		letter-spacing: 0.54px;
-		line-height: 24px;
 	}
 
 	.l-hero-quote .quote .quote-footer figure, .l-hero-quote .quote .quote-footer img {
@@ -94,20 +101,12 @@ layout: default
 		border-radius: 4px;
 	}
 
-	.l-blueprint > .container {
-		position: relative;
-	}
-
 	.l-blueprint .section-header .description {
 		font-size: 1.0625rem;
 	}
 
-	.l-blueprint .projects-grid {
-		margin-bottom: -200px;
-	}
-
 	.l-cta .main-box {
-		margin-top: -200px;
+		margin-top: -190px;
 		display: flex;
     justify-content: center;
     align-items: center;
@@ -181,12 +180,6 @@ layout: default
 		.l-projects .projects-grid .item {
 			margin-right: 54px;
 		}
-		.l-cta .main-box {
-			width: 88%;
-			margin: 0 auto;
-			margin-top: -200px;
-			height: 288px;
-		}
 
 		.l-cta .main-box .box-description {
 			padding-right: 117px;
@@ -201,8 +194,8 @@ layout: default
 			margin-bottom: 0px;
 		}
 
-		.l-projects .projects-grid {
-			padding: 0;
+		.l-hero-quote .quote .quote-footer .quote-author {
+			font-size: 1rem;
 		}
 	}
 
@@ -220,7 +213,7 @@ layout: default
 			</div>
 		</div>
 	</section>
-	<section class="l-projects">
+	<section class="section l-projects">
 		<div class="container">
 			<h6 class="sub-heading">The world’s leading projects trust OpenZeppelin</h6>
 			<div class="grid projects-grid">
@@ -276,18 +269,19 @@ layout: default
 			</div>
 		</div>
 	</section>
-	<section class="l-blueprint section section--gray">
+	<section class="section l-blueprint section section--gray section--cutted">
 		<div class="container">
 			<div class="section-header">
 				<h2 class="heading">Your blueprint for decentralized systems</h2>
 				<p class="description">Reduce barriers to entry by securely implementing blockchain-based technologies, using standard developer tools and platforms.</p>
 			</div>
+			{% include projects-grid.html %}
 		</div>
-		{% include projects-grid.html %}
+		<div class="fake-bg fake-bg--violet"></div>
 	</section>
-	<section class="l-hero-quote section section--violet ">
+	<section class="l-hero-quote section section--violet">
 		<div class="container">
-			<blockquote class="quote">
+			<blockquote class="quote center">
 				<p class="quote-description">“I have a very high opinion of the OpenZeppelin team and their work”</p>
 				<footer class="quote-footer">
 					<figure>
