@@ -70,6 +70,7 @@ function typeVim() {
   $('#terminal').removeClass('terminal-center');
   $('#terminal-section').removeClass('terminal-section');
   $('#terminal-section').addClass('expanded-terminal-section');
+  $('.p-animated').addClass('expanded');
   $('#terminal').addClass('terminal-left');
   $('#terminal2').removeClass('terminal-center');
   $('#terminal2').addClass('terminal-right');

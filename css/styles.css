@@ -495,6 +495,22 @@ section.hero {
   }
 }
 
+.visible {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	visibility: visible;
+}
+
+.hidden {
+	-webkit-transform: translate3d(0,-20px,0);
+	-ms-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+	-webkit-transition: all ease 0.25s;
+	visibility: hidden;
+}
+
 /** Typography **/
 
 h1 { font-size: 2.15rem; }  /** Checked **/
@@ -523,7 +539,7 @@ p { font-size: 1rem; }
 }
 
 .description {
-	font-family: HelveticaNeue, Helvetica, sans-serif;
+	font-family: Helvetica, Helvetica, sans-serif;
   color: #51516A;
   text-align: inherit;
   margin-bottom: 30px;
@@ -616,7 +632,7 @@ p { font-size: 1rem; }
 }
 
 .box .box-description {
-	font-family: HelveticaNeue, sans-serif;
+	font-family: Helvetica, sans-serif;
 	opacity: 0.8;
 	color: #282846;
 	margin-bottom: 25px;
@@ -654,9 +670,24 @@ p { font-size: 1rem; }
 	line-height: 64px;
 	display: flex;
 	justify-content: center;
-	background-color: #282846;w
+	background-color: #282846;
 	border-bottom: solid 1px #414168;
 	-webkit-transform: translateZ(0);
+	transition: all ease 0.25s;
+}
+
+.p-nav.p-nav--white{
+	background-color: white;
+}
+
+.p-nav.new-sub-nav--fixed {
+	position: fixed;
+	top: 0px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 101;
+	box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
 }
 
 .p-nav .container {
@@ -666,6 +697,37 @@ p { font-size: 1rem; }
 
 .p-nav .container > div {
 	flex: 1;
+}
+
+.p-nav .p-menu {
+	display: flex;
+	flex-direction: flex-end;
+}
+
+.p-nav .p-menu .item {
+	margin-left: 36px;
+	text-transform: uppercase;
+	color: #282846;
+}
+
+.p-nav .p-menu .item > a {
+	color: inherit;
+	opacity: 0.8;
+	font-weight: 600;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.p-nav .p-menu .item > a:hover {
+	color: #4E5EE4;
+}
+
+/** **/
+.p-animated .extended {
+
 }
 
 /** Page **/
@@ -712,6 +774,15 @@ body.modal-open {
 	transform: translateZ(0px) scale(1.051);
 	transition: transform 0.25s ease-out 0s;
 }
+
+/** Product Page **/
+
+.product-page .p-logo > svg {
+	vertical-align: middle;
+	transform: scale(0.9);
+}
+
+/** **/
 
 @media (min-width: 700px) {
 	html, body {

@@ -232,9 +232,10 @@ layout: default
 
 <main class="page page-security">
 
-	<div class="p-nav" id="new-sub-nav">
+	<nav class="p-nav" id="new-sub-nav">
 		<div class="container">
-			<div class="sa-logo">
+
+			<div class="p-logo sa-logo">
 				<svg width="114px" height="28px" viewBox="0 0 114 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 								<g transform="translate(-215.000000, -84.000000)" fill="#FFFFFF">
@@ -248,11 +249,13 @@ layout: default
 						</g>
 				</svg>
 			</div>
-			<div class="request-audit-container">
+
+			<div class="p-menu request-audit-container">
 				<a href="#" class="btn btn--secondary-mutted request-audit-link request-audit-btn">Request an audit</a>
 			</div>
+
 		</div>
-	</div>
+	</nav>
 
 	<div class="s-form" id="security-audit-form">
 	{% include security-request.html %}
