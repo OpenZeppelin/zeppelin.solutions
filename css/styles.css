@@ -608,16 +608,6 @@ p { font-size: 1rem; }
 	transition: all 0.5s ease;
 }
 
-.p-nav.new-sub-nav--fixed {
-	position: fixed;
-	top: 0px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	z-index: 101;
-	box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
-}
-
 /** Page **/
 
 html, body, .root {
@@ -909,6 +899,7 @@ body.modal-open {
 	transition: transform 0.25s ease-out 0s;
 }
 
+/** Desktop  **/
 @media (min-width: 900px) {
 	.grid > .row {
 	 flex-direction: row;
@@ -933,4 +924,19 @@ body.modal-open {
 		max-width: 225px;
 		margin: 0 auto;
 	}
+
+	.p-nav.new-sub-nav--fixed {
+		position: fixed;
+    z-index: 1100;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 1px;
+		box-shadow: rgba(0,0,0,0.1) 0px 0px 15px 0px;
+		box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
+	}
+}
+
+html {
+  scroll-behavior: smooth;
 }
