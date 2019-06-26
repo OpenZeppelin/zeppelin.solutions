@@ -373,7 +373,7 @@ section.hero {
   text-align: center;
   justify-content: center;
 	align-items: center;
-	padding: 25px 0;
+	padding: 25px 2rem;
 }
 
 .hero h1.heading {
