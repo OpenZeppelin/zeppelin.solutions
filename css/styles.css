@@ -823,6 +823,10 @@ body.modal-open {
 
 /** Desktop  **/
 @media (min-width: 1080px) {
+	.btn {
+		font-size: 1rem;
+	}
+
 	.p-nav .p-menu {
 		-webkit-mask-image: none;
 	}
