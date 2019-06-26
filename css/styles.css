@@ -136,7 +136,7 @@ a {
   flex-basis: 0%;
   max-width: 100%;
 	flex-shrink: 1;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .grid > .row > .col:last-child, .col:last-child {
@@ -297,7 +297,18 @@ a {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 60px 0;
+}
+
+/** Sections that contain fakeBgs at the end **/
+.section.section--cutted {
+	padding-bottom: 0;
+	position: relative;
+	z-index: 1;
+}
+
+.section.section--cutted + section.section {
+  padding-top: 0;
 }
 
 .hero .wrapper {
@@ -308,12 +319,35 @@ section.section .title {
   color: #282846;
 }
 
+.fake-bg {
+	position: absolute;
+	z-index: -1;
+	height: 130px;
+	width: 100%;
+	background-color: red;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.fake-bg.fake-bg--gray {
+	background-color: #f8f8fa;
+}
+
+.fake-bg.fake-bg--white {
+	background-color: white;
+}
+
 /** Hero **/
+
+section.hero {
+	padding: 0;
+	min-height: 340px;
+	display: flex;
+}
 
 .hero {
 	text-align: center;
-	padding: 0;
-	margin: 0;
 }
 
 .hero.gray,
@@ -673,7 +707,6 @@ body.modal-open {
 	transition: transform 0.25s ease-out 0s;
 }
 
-* Wide *
 @media (min-width: 700px) {
 	html, body {
 		font-size: 15px;
@@ -681,7 +714,6 @@ body.modal-open {
 
 	.section {
 		padding-top: 75px;
-		padding-bottom: 85px;
 	}
 }
 
@@ -699,8 +731,8 @@ body.modal-open {
 	}
 
 	.row .col {
-		margin-right: 15px;
-		margin-bottom: 0px;
+		margin-right: 1rem;
+		margin-bottom: 0;
 	}
 
 	.hero {

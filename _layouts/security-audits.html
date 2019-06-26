@@ -12,8 +12,6 @@ layout: default
 		transition: padding-top 0.4s ease;
 		color: #FFF;
 		background-color: #282846;
-		padding-bottom: 150px;
-		margin-bottom: 460px;
 	}
 
 	.security-audits-hero h1.heading {
@@ -44,7 +42,7 @@ layout: default
 	}
 
 	.page-security .timeline {
-		margin-top: 20px;
+		margin: 40px 0;
 		padding-left: 20px;
 	}
 
@@ -59,40 +57,43 @@ layout: default
 	.page-security .audit-reports {
 		text-align: center;
 		z-index: 1;
-    position: absolute;
-    bottom: -560px;
-    left: 0;
-    right: 0;
 	}
 
-	.audit-reports .audit-grid {
-		margin-bottom: 20px;
+	.page-security .audit-reports > .container {
+		padding: 3rem;
 	}
 
 	.audit-reports .audit-grid .row {
+		flex-direction: row;
 		justify-items: center;
 		align-items: center;
 	}
 
-	.audit-reports .audit-grid .col {
-		max-width: 400px;
+	.audit-reports .audit-grid {
+		width: 100%;
 	}
 
 	.audit-reports .audit-grid img {
-		width: 100%;
-		transform: translateY(-10%);
+    object-fit: scale-down;
+    object-position: 50% 50%;
+    min-width: 200px;
+    width: 200px;
+    height: 100%;
+		flex: 1;
 	}
 
 	.audit-reports .col {
 		box-shadow: 0 4px 9px 0 rgba(0,0,0,0.32);
 		border-radius: 6px;
 		overflow: hidden;
+		margin-right: 1rem;
+		min-width: 200px;
+		margin-right: 0;
 	}
 
-	.audit-reports .col > a{
-		display: block;
+	.audit-reports .col > a {
 		overflow: hidden;
-		height: 130px;
+		display: flex;
 	}
 
 	.audit-reports .col:last-child {
@@ -110,11 +111,7 @@ layout: default
 
 	.page-security .sa-comments .security-quote {
 		text-align: center;
-		position: absolute;
 		z-index: 1;
-		bottom: -400px;
-		left: 0;
-    right: 0;
 	}
 
 	.page-security .sa-comments .heading {
@@ -127,7 +124,6 @@ layout: default
 
 	.sa-faqs {
 		position: relative;
-		padding-bottom: 320px;
 	}
 
 	.sa-faqs .heading {
@@ -175,43 +171,6 @@ layout: default
     letter-spacing: 0px;
 	}
 
-	.sa-partners {
-		position: relative;
-		padding-top: 120px;
-	}
-
-	.page-security .sa-request-audit {
-		padding: 300px 0 200px;
-	}
-
-	.page-security .sa-request-audit .section-header {
-		max-width: 700px;
-		padding-top: 200px;
-		margin: 0 auto;
-	}
-
-	.page-security .sa-projects {
-		padding-bottom: 400px;
-	}
-
-	.page-security .sa-projects .section-header {
-		max-width: 700px;
-		margin: 0 auto;
-		padding-bottom: 20px;
-	}
-
-	.page-security .sa-projects, .page-security .sa-projects > .container {
-		position: relative;
-	}
-
-	.page-security .projects-grid {
-		position: absolute;
-		bottom: -1000px;
-		left: 0;
-		right: 0;
-		z-index: 1;
-	}
-
 	.page-security .s-form#security-audit-form {
 		display: none;
 	}
@@ -226,68 +185,49 @@ layout: default
 		cursor: pointer;
 	}
 
-	.page-security .sa-comments .security-quote {
-		bottom: -400px;
-	}
-
 	.page-security .partners-grid .row {
 		flex-direction: row;
 	}
 
+	.page-security .audit-reports .audit-grid {
+		padding: 1.2rem;
+	}
+
+	.page-security .projects-grid {
+		align-items: center;
+		justify-items: center;
+	}
+
+	.page-security .projects-grid .col{
+		max-width: 500px;
+	}
+
+	@media (min-width: 500px) {
+		.audit-reports .col {
+			margin-right: 1rem;
+		}
+
+	}
+
 	@media (min-width: 900px) {
-
-		.audit-reports .audit-grid .col {
-			max-width: 100%;
-		}
-
-		.security-audits-hero {
-    	padding: 120px 0 160px;
-			margin-bottom: 20px;
-		}
-
 		.page-security .timeline {
-			margin-top: 100px;
-			padding: 0;
+			padding-left: 0;
 		}
 
 		.page-security.fixed-sub-nav {
 			margin-top: 121px;
 		}
 
-		.page-security .audit-reports {
-    	position: absolute;
-			bottom: -300px;
-			left: 0;
-			right: 0;
-		}
-
-		.audit-reports .col {
-			margin-right: 15px;
-		}
-
-		.audit-reports .col img {
-			transform: translateY(-7%);
-		}
-
-		.sa-faqs {
-			padding: 160px 0;
+		.page-security .audit-reports .audit-grid {
+			padding: 0;
+			padding-bottom: 30px;
 		}
 
 		.sa-logo > svg {
 			transform: scale(1);
 		}
-
-		.page-security .projects-grid {
-			bottom: -550px;
-			padding-top: 20px;
-		}
-
-		.page-security .sa-comments .security-quote {
-			bottom: -280px;
-		}
 	}
 </style>
-
 
 
 <main class="page page-security">
@@ -318,7 +258,7 @@ layout: default
 	{% include security-request.html %}
 	</div>
 
-	<section class="section security-audits-hero">
+	<section class="section section--cutted security-audits-hero">
 		<div class="container">
 			<div class="wrapper">
 				<h1 class="heading">Security audits for distributed systems</h1>
@@ -332,7 +272,6 @@ layout: default
 			</div>
 
 			<div class="audit-reports">
-				<div class="container">
 					<h4 class="heading typography--mutted">Our most popular audit reports</h4>
 					<div class="grid audit-grid">
 						<div class="row">
@@ -348,13 +287,12 @@ layout: default
 						</div>
 					</div>
 					<a class="btn btn--mutted" href="https://openzeppelin.com/security-audits/" target="_blank">SEE ALL ></a>
-				</div>
 			</div>
-
 		</div>
+		<div class="fake-bg fake-bg--gray"></div>
 	</section>
 
-	<section class="section section--gray sa-faqs">
+	<section class="section section--cutted section--gray sa-faqs">
 		<div class="container">
 			<h2 class="heading">
 				FAQ
@@ -382,15 +320,15 @@ layout: default
 				<h3 class="heading typography--mutted">The world’s leading projects work with OpenZeppelin</h3>
 				{% include security-quote.html %}
 			</div>
-
 		</div>
+		<div class="fake-bg fake-bg--white"></div>
 	</section>
 
 	<section class="section sa-partners">
 		{% include partners.html %}
 	</section>
 
-	<section class="section section--gray sa-projects ">
+	<section class="section section--gray sa-projects section--cutted">
 		<div class="container">
 			<div class="section-header">
 				<h2 class="heading">Secure your code from Day One</h2>
@@ -400,6 +338,7 @@ layout: default
 			</div>
 			{% include projects-grid.html %}
 		</div>
+		<div class="fake-bg fake-bg--white"></div>
 	</section>
 
 	<section class="section hero sa-request-audit">
