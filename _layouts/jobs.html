@@ -1,23 +1,6 @@
 ---
 layout: default
 ---
-
-<script>
-(function($) {
-		$(document).ready(function(){
-		var $el = $('.section-hiring-process .hp-card');
-
-		$el.click(function() {
-			$(this).find('.hp-description').toggleClass('show');
-			$(this).find('.plus-icon').toggleClass('active');
-		});
-
-	})
-})(jQuery);
-</script>
-
-
-
 <main class="page page-jobs">
 
 	<section class="section hero section-hero-jobs">
@@ -49,7 +32,6 @@ layout: default
 						<img class="map-img" src="../images/map.svg"/>
 					</div>
 				</div>
-			</div>
 		</div>
 	</section>
 
@@ -385,7 +367,7 @@ layout: default
 
   .section.section-content .heading {
     font-size: 1.9rem;
-    opacity: 0.9;
+    opacity: 0.88;
     color: #282846;
     letter-spacing: 0;
     line-height: 40px;
@@ -410,11 +392,12 @@ layout: default
 		max-height: 200px;
 		flex-grow: 0;
     flex-basis: auto;
-		padding-left: 60px;
 	}
 
 	.section.section-content .map .map-img {
 		padding-top: 20px;
+		object-fit: cover;
+    width: 100%;
 	}
 
 	/* section: section-core-values */
@@ -436,11 +419,11 @@ layout: default
 	}
 
 	.section.section-core-values .grid .row {
-		margin-bottom: 70px;
+		margin-bottom: 10px;
 	}
 
 	.section.section-core-values .grid .col {
-		border-right: solid 1px #D8D8D8;
+		border-bottom: solid 1px #D8D8D8;
 		display: flex;
 		flex: 1;
 		justify-content: center;
@@ -448,8 +431,9 @@ layout: default
 	}
 
 	.section.section-core-values .grid .col .box-container {
-		width: 80%;
+		width: 100%;
 		height: 80%;
+		padding: 0.5rem;
 	}
 
 	.section.section-core-values .grid .col:first-child {
@@ -457,7 +441,7 @@ layout: default
 	}
 
 	.section.section-core-values .grid .col:last-child {
-		border-right: none;
+		border: none;
 		padding-right: 0;
 	}
 
@@ -485,13 +469,15 @@ layout: default
 
 	.section.section-job-promo {
 		padding-top: 0px;
-    background-color transparent;
+    background-color: transparent;
 		position: relative;
+		height: 700px;
+		overflow: hidden;
   }
 
 	.section.section-job-promo .photo-wall {
 		overflow: hidden;
-		height: 400px;
+		height: 800px;
 		overflow: hidden;
   }
 
@@ -527,8 +513,9 @@ layout: default
 		box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
 		border-radius: 4px;
 		padding: 35px 45px;
-		height: 210px;
+		height: 190px;
 		margin-right: 20px;
+		width: 100%;
   }
 
 	.section.section-job-promo .job-wall-grid .col:last-child > .box{
@@ -585,9 +572,16 @@ layout: default
 		margin-bottom: 0px;
 	}
 
+	.section.section-jobs-openings .positions-list {
+		flex-direction: row;
+    display: flex;
+		justify-content: space-around;
+	}
+
 	.section.section-jobs-openings .section-content, .section.job-opening-role {
 		padding: 20px 0 0;
 		display: flex;
+		flex-direction: column;
   }
 
 	.section.section-jobs-openings {
@@ -595,15 +589,18 @@ layout: default
 	}
 
 	.section.section-jobs-openings .positions-list .positions-list-item {
-		margin: 0 0 10px;
+		margin: 0 0 20px;
 		opacity: 0.8;
 		color: #282846;
-    font-size: 1.1rem;
+    font-size: 0.98rem;
 		line-height: 1.8;
     font-weight: 300;
     letter-spacing: 0px;
 		transition: all 0.2s ease;
 		cursor: pointer;
+		margin-right: 5px;
+		text-align: center;
+		line-height: 1.1rem;
   }
 
 	.section.section-jobs-openings .positions-list .positions-list-item:hover {
@@ -780,6 +777,7 @@ layout: default
 	.section.section-hiring-process .hp-card .hp-title {
 		margin-bottom: 25px;
 		max-width: 560px;
+		max-width: 300px;
 		display: block;
 		font-size: 1.1rem;
 		text-decoration: none;
@@ -818,7 +816,8 @@ layout: default
 		flex-grow: 0;
 		text-align: right;
 		font-size: 1.2rem;
-		padding-top: 12px;
+		padding-top: 6px;
+		opacity: 0.8;
 	}
 
 	.section.section-hiring-process .hp-card-action .icon {
@@ -872,11 +871,74 @@ layout: default
     height: 3px;
     border-radius: 4px;
 	}
+
 	.plus-icon.active:before { transform: rotate(90deg); }
 	.plus-icon.active:after { transform: rotate(180deg); }
-}
+
+	@media (min-width: 900px) {
+		.section.section-core-values .grid .col {
+			border-bottom: 0;
+			border-right: solid 1px #D8D8D8;
+		}
+		.section.section-content .map {
+			padding-left: 60px;
+		}
+		.section.section-job-promo .job-wall-grid .box  {
+			height: 210px;
+		}
+		.section.section-core-values .grid .col .box-container {
+			width: 80%;
+    	height: 80%;
+			padding: 0;
+		}
+		.section.section-core-values .grid .row {
+    	margin-bottom: 70px;
+		}
+		.section.section-job-promo, .section.section-job-promo .photo-wall {
+			height: auto;
+  	}
+
+		.section.section-job-promo .photo-wall {
+			height: 400px;
+		}
+
+		.section.section-jobs-openings .section-content, .section.job-opening-role {
+			flex-direction: row;
+		}
+
+		.section.section-hiring-process .hp-card-action {
+			padding-top: 12px;
+		}
+
+		.section.section-jobs-openings .positions-list {
+			flex-direction: column;
+		}
+
+		.section.section-jobs-openings .positions-list .positions-list-item {
+			font-size: 1.1rem;
+			text-align: left;
+		}
+
+		.section.section-hiring-process .hp-card .hp-title {
+			max-width: 560px;
+		}
+
+	}
 
 </style>
 
 <script src="/js/fixedMenu.js"></script>
 <script src="/js/jobs.js"></script>
+<script>
+(function($) {
+		$(document).ready(function(){
+		var $el = $('.section-hiring-process .hp-card');
+
+		$el.click(function() {
+			$(this).find('.hp-description').toggleClass('show');
+			$(this).find('.plus-icon').toggleClass('active');
+		});
+
+	})
+})(jQuery);
+</script>

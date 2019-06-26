@@ -520,7 +520,7 @@ section.hero {
 
 /** Typography **/
 
-h1 { font-size: 2.15rem; }  /** Checked **/
+h1 { font-size: 2rem; }  /** Checked **/
 h2 { font-size: 1.78rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
@@ -875,4 +875,9 @@ body.modal-open {
 
 html {
   scroll-behavior: smooth;
+}
+
+/** **/
+.page-jobs .section .container {
+	padding: 0 2rem;
 }
