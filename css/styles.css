@@ -32,9 +32,9 @@ body.debug * {
 }
 
 html, body {
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 400;
-	line-height: 1.35;
+	line-height: 1.1;
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
@@ -282,8 +282,7 @@ a {
 }
 
 .section {
-  padding-top: 75px;
-  padding-bottom: 85px;
+  padding: 40px 0;
 }
 
 .hero .wrapper {
@@ -659,12 +658,17 @@ body.modal-open {
 	transition: transform 0.25s ease-out 0s;
 }
 
-/* * Wide *
-@media (min-width: 1080px) {
-	.container {
-		padding: 0;
+* Wide *
+@media (min-width: 700px) {
+	html, body {
+		font-size: 15px;
 	}
-} */
+
+	.section {
+		padding-top: 75px;
+		padding-bottom: 85px;
+	}
+}
 
 /** Desktop  **/
 @media (min-width: 1080px) {

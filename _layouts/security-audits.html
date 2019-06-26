@@ -10,9 +10,10 @@ layout: default
 
 	.security-audits-hero {
 		transition: padding-top 0.4s ease;
-    padding: 120px 0 160px;
 		color: #FFF;
 		background-color: #282846;
+		padding-bottom: 150px;
+		margin-bottom: 600px;
 	}
 
 	.security-audits-hero h1.heading {
@@ -43,7 +44,8 @@ layout: default
 	}
 
 	.page-security .timeline {
-		margin-top: 100px;
+		margin-top: 20px;
+		padding-left: 20px;
 	}
 
 	.security-audits-hero .container {
@@ -57,6 +59,11 @@ layout: default
 	.page-security .audit-reports {
 		text-align: center;
 		z-index: 1;
+    position: absolute;
+    bottom: -560px;
+    left: 0;
+    right: 0;
+}
 
 	}
 
@@ -208,6 +215,16 @@ layout: default
 	}
 
 	@media (min-width: 900px) {
+
+		.security-audits-hero {
+    	padding: 120px 0 160px;
+		}
+
+		.page-security .timeline {
+			margin-top: 100px;
+			padding: 0;
+		}
+
 		.page-security.fixed-sub-nav {
 			margin-top: 121px;
 		}
@@ -274,21 +291,23 @@ layout: default
 			</div>
 
 			<div class="audit-reports">
-				<h4 class="heading typography--mutted">Our most popular audit reports</h4>
-				<div class="grid audit-grid">
-					<div class="row">
-						<div class="col a-scale">
-							<a target="_blank" href="https://blog.openzeppelin.com/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
-						</div>
-						<div class="col a-scale">
-							<a target="_blank" href="https://blog.openzeppelin.com/solidity-compiler-audit-8cfc0316a420"><img src="../images/security-audits/audit-2.png"/></a>
-						</div>
-						<div class="col a-scale">
-						  <a target="_blank" href="https://blog.openzeppelin.com/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-3.png"/></a>
+				<div class="container">
+					<h4 class="heading typography--mutted">Our most popular audit reports</h4>
+					<div class="grid audit-grid">
+						<div class="row">
+							<div class="col a-scale">
+								<a target="_blank" href="https://blog.openzeppelin.com/augur-core-audit-244160d77c09"><img src="../images/security-audits/audit-1.png"/></a>
+							</div>
+							<div class="col a-scale">
+								<a target="_blank" href="https://blog.openzeppelin.com/solidity-compiler-audit-8cfc0316a420"><img src="../images/security-audits/audit-2.png"/></a>
+							</div>
+							<div class="col a-scale">
+								<a target="_blank" href="https://blog.openzeppelin.com/basic-attention-token-bat-audit-88bf196df64b"><img src="../images/security-audits/audit-3.png"/></a>
+							</div>
 						</div>
 					</div>
+					<a class="btn btn--mutted" href="https://openzeppelin.com/security-audits/" target="_blank">SEE ALL ></a>
 				</div>
-				<a class="btn btn--mutted" href="https://openzeppelin.com/security-audits/" target="_blank">SEE ALL ></a>
 			</div>
 
 		</div>
