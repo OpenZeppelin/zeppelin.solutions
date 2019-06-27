@@ -742,22 +742,6 @@ p { font-size: 1rem; }
 	color: #4E5EE4;
 }
 
-.p-main-nav-mobile {
-	position: absolute;
-	left: 10px;
-	top: 5px;
-	right: 10px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
-	pointer-events: none;
-	-webkit-perspective: 2000px;
-	perspective: 2000px;
-}
-
 /** Page **/
 
 html, body, .root {

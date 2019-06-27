@@ -182,7 +182,6 @@
 		border-bottom: 1px solid #E5E5E5;
 		padding: 18px 0;
 		transition: color 0.2s ease;
-
 	}
 
 	.new-nav .sub-nav-list .sub-nav-item:first-child .sub-nav-item-container {
@@ -247,11 +246,12 @@
 		width: 160px;
 	}
 
-	.new-nav .p-main-nav-mobile.open {
+	.new-nav .p-main-nav-mobile.open .p-main-nav-mobile-list{
 		display: block;
 	}
 
-	.new-nav .p-main-nav-mobile {
+	.new-nav .p-main-nav-mobile .p-main-nav-mobile-list {
+		display: none;
 		background-color: white;
     flex: 1;
     position: fixed;
@@ -272,11 +272,11 @@
 		padding: 0;
 		margin: 0;
 		width: 100%;
-		border-top: solid 1px #D8D8D8;
+		padding: 0 1.5rem;
 	}
 
 	.new-nav .p-main-nav-mobile .p-main-nav-item {
-		border-bottom: solid 1px #D8D8D8;
+		border-top: solid 1px #D8D8D8;
 		padding: 1.5rem 0;
 	}
 
@@ -295,6 +295,68 @@
 
 	.new-nav .p-main-nav-mobile .p-main-submenu#products {
 		margin-left: -12px;
+	}
+
+	.h-icon {
+		position: absolute;
+    top: 10px;
+    right: 0px;
+	}
+
+	.h-icon-cont {
+		width: 60px;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+    transform: scale(0.4);
+    transition: all 0.5s ease-in-out 0s;
+	}
+
+	.h-icon-cont span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    opacity: 1;
+    left: 0px;
+    transform: rotate(0deg);
+    background: rgb(81, 81, 106);
+    border-radius: 9px;
+    transition: all 0.25s ease-in-out 0s;
+		overflow: hidden;
+	}
+
+	.h-icon-cont > span:nth-child(1) {
+    top: 0px;
+  }
+
+  .h-icon-cont span:nth-child(2),
+  .h-icon-cont span:nth-child(3) {
+    top: 18px;
+  }
+
+  .h-icon-cont span:nth-child(4) {
+    top: 36px;
+  }
+
+	.h-icon.open span:nth-child(1) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+
+	.h-icon.open span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+
+	.h-icon.open span:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+
+	.h-icon.open span:nth-child(4) {
+		width: 0%;
+		top: 18px;
+		left: 50%;
 	}
 
 	@media (min-width: 769px) {
@@ -475,6 +537,14 @@
 				</ul>
 			</div>
 			<nav class="p-main-nav-mobile">
+				<div class="h-icon">
+					<div class="h-icon-cont">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
 				<ul class="p-main-nav-mobile-list">
 					<li class="p-main-nav-item">
 						<span class="p-main-nav-item-text">Products</span>
