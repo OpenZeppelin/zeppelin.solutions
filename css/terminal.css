@@ -44,6 +44,12 @@
   display: none;
 }
 
+#terminal-sdk {
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (max-width: 960px) {
   .terminal-center {
     transition: top 0.4s;
@@ -84,11 +90,13 @@
   .desktop-br {
     display: none;
   }
+
   #terminal {
     z-index: 30;
     left: 50%;
     transform: translateX(-50%) scale(0.8);
   }
+
   #terminal2 {
     z-index: 1;
     left: 50%;

@@ -47,11 +47,13 @@ body {
   font-family: 'silka', 'Helvetica', -apple-system, BlinkMacSystemFont, Arial,
     sans-serif;
   color: #282846;
-  background-color: white;
+	background-color: white;
+	font-weight: 400;
 }
 
 p {
-  word-break: break-word;
+	word-break: break-word;
+	font-weight: 400;
 }
 
 body,
@@ -386,7 +388,7 @@ section.hero {
 	color: #2a2a47;
   text-align: center;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0px;
 	animation-delay: 700ms;
 	max-width: 663px;
@@ -525,7 +527,7 @@ h2 { font-size: 1.78rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1rem; }
-h6 { font-size: 0.875rem; } /** Checked **/
+h6 { font-size: 0.98rem; } /** Checked **/
 p { font-size: 1rem; }
 
 .heading {
@@ -551,7 +553,7 @@ p { font-size: 1rem; }
   text-align: inherit;
   margin-bottom: 30px;
   line-height: 1.8;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.2px;
 }
 
@@ -646,7 +648,7 @@ p { font-size: 1rem; }
 	font-size: 0.975rem;
 	margin-bottom: 30px;
 	line-height: 1.6;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 0px;
 }
 
@@ -796,7 +798,7 @@ body.modal-open, body.overlay {
 
 /** Product Page **/
 
-.product-page .p-logo > svg,.product-page .p-logo > img {
+.page-product .p-logo > svg,.page-product .p-logo > img {
 	vertical-align: middle;
 	transform: scale(0.9);
 }
@@ -872,4 +874,226 @@ html {
 /** **/
 .page-jobs .section .container {
 	padding: 0 2rem;
+}
+
+/** **/
+.page-product .c-hero {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	text-align: center;
+}
+
+.page-product .c-hero .heading, .page-product .c-hero .description {
+	max-width: 100%;
+}
+
+.page-product .c-hero .container:nth-child(1) {
+	height: 300px;
+}
+
+.page-product .c-hero .container.term-container {
+	padding: 0;
+}
+
+/** Explained Section **/
+
+.page-product .c-explained {
+	position: relative;
+	padding-top: 40px;
+	background-color: #F8F8FA;
+	padding-bottom: 100px;
+}
+
+.page-product .p-animated.expanded {
+	height: 730px;
+}
+
+.page-product .c-explained .heading {
+	font-family: Helvetica;
+	font-size: 1.125rem;
+	color: #282846;
+	text-align: center;
+	line-height: 28px;
+	max-width: 600px;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.page-product .c-explained .box {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.page-product .c-explained .box .icon {
+	margin-bottom: 30px;
+}
+
+.page-product .c-explained .box-heading {
+	opacity: 0.9;
+	font-size: 1.25rem;
+	letter-spacing: 0.2px;
+	color: #282846;
+	margin-bottom: 18px;
+	font-weight: 600;
+}
+
+.page-product .c-explained .description {
+	opacity: 0.8;
+	font-size: 0.98rem;
+	color: #282846;
+	letter-spacing: 0.54px;
+	line-height: 24px;
+	width: 88%;
+	margin: 0 auto;
+	font-weight: 400;
+	margin-bottom: 0.875rem;
+}
+
+.page-product .c-explained .box .link {
+	font-size: 0.9125rem;
+	color: #4E5EE4;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: 1;
+	margin-right: -1rem;
+}
+
+.page-product .c-explained .box .link:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.page-product .c-explained .box .link .material-icons {
+	font-size: 1rem;
+	vertical-align: sub;
+}
+
+.page-product .c-projects, .page-product .c-what-else {
+	padding: 90px 0;
+}
+
+.page-product .c-projects .heading, .page-product .c-what-else .heading {
+	opacity: 0.9;
+	font-size: 0.98rem;
+	color: #3D3D58;
+	letter-spacing: 1.4px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.page-product .c-projects .grid {
+	padding-top: 35px;
+}
+
+.page-product .c-projects .row {
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+
+.page-product .c-projects .row:last-child {
+	margin: 0;
+}
+
+.page-product .c-projects .col {
+	flex: 1;
+	text-align: center;
+	max-width: 120px;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.page-product .c-projects .col img {
+	width: 100%;
+	text-align: center;
+	max-height: 60px;
+}
+
+.page-product .c-what-else {
+	background-color: #F8F8FA;
+}
+
+.page-product .c-what-else .heading {
+	margin-bottom: 70px;
+}
+
+.page-product .c-what-else .box {
+	background: #FFFFFF;
+	box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
+	border-radius: 4px;
+	opacity: 0.8;
+	font-family: Helvetica;
+	font-size: 15px;
+	color: #282846;
+	letter-spacing: 0.54px;
+	opacity: 0.9;
+	color: #282846;
+	align-items: center;
+	width: 100%;
+}
+
+.page-product .c-what-else .box {
+	display: flex;
+	padding: 36px 40px;
+	margin-right: 37px;
+}
+
+.page-product .c-what-else .box:last-child {
+	margin-right: 0;
+}
+
+.page-product .c-what-else .box .box-side {
+	flex: 1;
+	flex-basis: 70px;
+	text-align: center;
+	padding-right: 40px;
+	display: flex;
+}
+
+.page-product .c-what-else .box .box-heading {
+	opacity: 0.9;
+	font-size: 1.2rem;
+	color: #282846;
+	margin-bottom: 19px;
+	font-weight: bold;
+	font-family: 'silka';
+}
+
+.page-product .c-what-else .box .box-heading .material-icons {
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.page-product .c-what-else .box .box-description {
+	opacity: 0.8;
+	font-size: 0.98rem;
+	color: #282846;
+	letter-spacing: 0.54px;
+	line-height: 24px;
+	margin: 0;
+}
+
+.page-product .c-join .description {
+	max-width: 500px;
+}
+
+@media (min-width: 700px) {
+	.page-product .c-explained .box {
+		margin-right: 2.0625rem;
+	}
+	.page-product .c-explained .box:last-child {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 900px) {
+	.page-product .c-hero {
+		min-height: 660px;
+	}
 }

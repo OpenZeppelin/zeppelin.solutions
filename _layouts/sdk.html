@@ -3,231 +3,13 @@ layout: default
 ---
 
 <style type="text/css">
-	.page-contracts .c-hero {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		text-align: center;
-	}
-
-	.page-contracts .c-hero .heading, .page-contracts .c-hero .description {
-		max-width: 100%;
-	}
-
-	.page-contracts .c-hero .container:nth-child(1) {
-		height: 300px;
-	}
-
-	.page-contracts .c-hero .container.term-container {
-		padding: 0;
-	}
-
-	/** Explained Section **/
-
-	.page-contracts .c-explained {
-		position: relative;
-		padding-top: 40px;
-		background-color: #F8F8FA;
-		padding-bottom: 100px;
-	}
-
-	.page-contracts .p-animated.expanded {
-		height: 730px;
-	}
-
-	.page-contracts .c-explained .heading {
-		font-family: Helvetica;
-		font-size: 1.125rem;
-		color: #282846;
-		text-align: center;
-		line-height: 28px;
-		max-width: 600px;
-		margin-top: 40px;
-		margin-bottom: 80px;
-	}
-
-	.page-contracts .c-explained .box {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.page-contracts .c-explained .box .icon {
-		margin-bottom: 30px;
-	}
-
-	.page-contracts .c-explained .box-heading {
-		opacity: 0.9;
-		font-size: 1.25rem;
-		letter-spacing: 0.2px;
-		color: #282846;
-		margin-bottom: 18px;
-		font-weight: 600;
-	}
-
-	.page-contracts .c-explained .description {
-		opacity: 0.8;
-		font-size: 0.875rem;
-		color: #282846;
-		letter-spacing: 0.54px;
-		line-height: 24px;
-		margin-bottom: 0.875rem;
-	}
-
-	.page-contracts .c-explained .box .link {
-    font-size: 0.9125rem;
-    color: #4E5EE4;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    opacity: 1;
-    margin-right: -1rem;
-	}
-
-	.page-contracts .c-explained .box .link:hover {
-		cursor: pointer;
-		opacity: 0.8;
-	}
-
-	.page-contracts .c-explained .box .link .material-icons {
-		font-size: 1rem;
-		vertical-align: sub;
-	}
-
-	.page-contracts .c-projects, .page-contracts .c-what-else {
-		padding: 90px 0;
-	}
-
-	.page-contracts .c-projects .heading, .page-contracts .c-what-else .heading {
-		opacity: 0.9;
-		font-size: 0.875rem;
-		color: #3D3D58;
-		letter-spacing: 1.4px;
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: normal;
-	}
-
-	.page-contracts .c-projects .grid {
-		padding-top: 35px;
-	}
-
-	.page-contracts .c-projects .row {
-		flex-direction: row;
-		justify-content: space-around;
-		margin-bottom: 60px;
-	}
-
-	.page-contracts .c-projects .row:last-child {
-		margin: 0;
-	}
-
-	.page-contracts .c-projects .col {
-		flex: 1;
-		text-align: center;
-		max-width: 120px;
-		display: flex;
-		align-items: center;
-		justify-items: center;
-	}
-
-	.page-contracts .c-projects .col img {
-    width: 100%;
-    text-align: center;
-		max-height: 60px;
-	}
-
-	.page-contracts .c-what-else {
-		background-color: #F8F8FA;
-	}
-
-	.page-contracts .c-what-else .heading {
-		margin-bottom: 70px;
-	}
-
-	.page-contracts .c-what-else .box {
-		background: #FFFFFF;
-		box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
-		border-radius: 4px;
-		opacity: 0.8;
-		font-family: Helvetica;
-		font-size: 15px;
-		color: #282846;
-		letter-spacing: 0.54px;
-		opacity: 0.9;
-		color: #282846;
-		align-items: center;
-		width: 100%;
-	}
-
-	.page-contracts .c-what-else .box {
-		display: flex;
-		padding: 36px 40px;
-		margin-right: 37px;
-	}
-
-	.page-contracts .c-what-else .box:last-child {
-		margin-right: 0;
-	}
-
-	.page-contracts .c-what-else .box .box-side {
-		flex: 1;
-		flex-basis: 70px;
-		text-align: center;
-		padding-right: 40px;
-		display: flex;
-	}
-
-	.page-contracts .c-what-else .box .box-heading {
-		opacity: 0.9;
-		font-size: 1.2rem;
-		color: #282846;
-		margin-bottom: 19px;
-		font-weight: bold;
-    font-family: 'silka';
-	}
-
-	.page-contracts .c-what-else .box .box-heading .material-icons {
-		font-size: 20px;
-		vertical-align: middle;
-	}
-
-	.page-contracts .c-what-else .box .box-description {
-		opacity: 0.8;
-		font-size: 0.875rem;
-		color: #282846;
-		letter-spacing: 0.54px;
-		line-height: 24px;
-		margin: 0;
-	}
-
-	.page-contracts .c-join .description {
-		max-width: 500px;
-	}
-
-	@media (min-width: 700px) {
-		.page-contracts .c-explained .box {
-			margin-right: 2.0625rem;
-		}
-		.page-contracts .c-explained .box:last-child {
-			margin-right: 0;
-		}
-	}
-
-	@media (min-width: 900px) {
-		.page-contracts .c-hero {
-			min-height: 660px;
-		}
-	}
-
-	.product-page .p-logo#sdk-logo > img {
+	.page-product .p-logo#sdk-logo > img {
 		margin-left: -31px;
 	}
 </style>
 
 
-<main class="page page-contracts product-page">
+<main class="page page-contracts page-product">
 	<nav class="p-nav p-nav--white" id="new-sub-nav">
 		<div class="container">
 			<div class="p-logo" id="sdk-logo">
@@ -248,13 +30,13 @@ layout: default
 	</nav>
 	<section class="section hero c-hero section--cutted">
 		<div class="container">
-			<h1 class="heading">Build Secure Smart Contracts in Solidity</h1>
-			<p class="description">OpenZeppelin Contracts is a battle-tested library of reusable smart contracts for Ethereum and other blockchains.</p>
+			<h1 class="heading">The Smart Contract Toolkit</h1>
+			<p class="description">OpenZeppelin SDK makes smart contract development easy. Save hours of development time by compiling, upgrading, and deploying smart contracts with our CLI.</p>
 			<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="btn cta">Get Started</a>
 		</div>
 		<div class="container term-container">
 		<section class="terminal-section p-animated" id="terminal-section">
-			<div class="terminal terminal-up" id="terminal">
+			<div class="terminal terminal-up" id="terminal-sdk">
 				<div class="wrap">
 					<div class="type-wrap">
 							<span id="typed"></span>
@@ -278,20 +60,6 @@ layout: default
 				</div>
 				<div class="bottom-terminal " id="terminal-bottom"></div>
 			</div>
-			<div class="terminal terminal-up" id="terminal2">
-				<div class="wrap">
-					<div class="type-wrap">
-						<span id="typed-vim"></span>
-					</div>
-				</div>
-				<div class="top-terminal">
-					<span class="terminal-control red"></span>
-					<span class="terminal-control yellow"></span>
-					<span class="terminal-control green"></span>
-					<div class="terminal-title" id="vim-title">vim ExampleToken.sol</div>
-				</div>
-				<div class="bottom-terminal vim-bottom-terminal" id="terminal-bottom"></div>
-			</div>
 		</section>
 		</div>
 		<div class="fake-bg fake-bg--gray"></div>
@@ -299,7 +67,7 @@ layout: default
 	<section class="c-explained">
 		<div class="container">
 			<h2 class="heading">
-				Reduce the risk of vulnerabilities in your applications by using standard, tested, community-reviewed code.
+				No more time spent configuring and plugging many tools together. OpenZeppelin SDK is your Swiss Army knife for smart contract development
 			</h2>
 			<div class="grid">
 				<div class="row">
@@ -316,13 +84,13 @@ layout: default
 									</g>
 							</svg>
 						</div>
-						<h3 class="box-heading">Focused on security</h3>
+						<h3 class="box-heading">Upgrade your contracts</h3>
 						<div class="box-description">
 							<p class="description">
-								Using industry-standard contract security patterns and best practices.
+								By leveraging our proxy pattern, you can develop your smart contracts iteratively. Locally, it speeds up your development. On production, it makes it easier to squash bugs and extend your functionality.
 							</p>
-							<a href="https://blog.openzeppelin.com/onward-with-ethereum-smart-contract-security-97a827e47702" class="link">
-								Learn More <i class="material-icons">keyboard_arrow_right</i>
+							<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="link">
+								UPGRADE DRIVEN DEVELOPMENT <i class="material-icons">keyboard_arrow_right</i>
 							</a>
 						</div>
 					</div>
@@ -340,13 +108,13 @@ layout: default
 									</g>
 							</svg>
 						</div>
-						<h3 class="box-heading">Modular approach</h3>
+						<h3 class="box-heading">Interactive commands</h3>
 						<div class="box-description">
 							<p class="description">
-								Simple code, only the basics. Easy collaboration and auditing.
+							Need to call a smart contract function? We've got you covered. Need to send some ether? Just type a quick command. Our interactive commands help you call and debug your smart contracts.
 							</p>
 							<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="link">
-								Explore Code <i class="material-icons">keyboard_arrow_right</i>
+								SEE THEM IN ACTION <i class="material-icons">keyboard_arrow_right</i>
 							</a>
 						</div>
 					</div>
@@ -362,13 +130,13 @@ layout: default
 									</g>
 							</svg>
 						</div>
-						<h3 class="box-heading">Open Source</h3>
+						<h3 class="box-heading">Modularity first</h3>
 						<div class="box-description">
 							<p class="description">
-								Community-driven. Used by multiple organizations and individuals.
+								Want to create a React dapp? Just type a command. Need to upgrade your contract? There's a command for that. Want to reserve predetermined addresses with CREATE2? We've got that too.
 							</p>
 							<a href="https://forum.openzeppelin.com" class="link">
-								Join the community <i class="material-icons">keyboard_arrow_right</i>
+								SHOW ME HOW <i class="material-icons">keyboard_arrow_right</i>
 							</a>
 						</div>
 					</div>
