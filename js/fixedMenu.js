@@ -12,7 +12,12 @@
   }
 
   function init() {
-    fixedMenu();
+    var isMobile = window.matchMedia('only screen and (max-width: 900px)')
+      .matches;
+
+    if (!isMobile) {
+      fixedMenu();
+    }
   }
 
   $(document).ready(function() {

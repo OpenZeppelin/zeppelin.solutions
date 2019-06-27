@@ -22,8 +22,14 @@
   }
 
   function init() {
-    dropdownMenu();
-    mobileMenu();
+    var isMobile = window.matchMedia('only screen and (max-width: 900px)')
+      .matches;
+
+    if (isMobile) {
+      mobileMenu();
+    } else {
+      dropdownMenu();
+    }
   }
 
   $(document).ready(function() {
