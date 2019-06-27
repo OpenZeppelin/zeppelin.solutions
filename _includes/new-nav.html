@@ -55,6 +55,7 @@
 		transition: transform 0.4s ease, margin 0.4s ease;
 		transform: scale(0.8);
 		margin-left: -10px;
+		margin-top: 2px;
 	}
 
   .new-nav .box-logo .label {
@@ -255,17 +256,17 @@
 		background-color: white;
     flex: 1;
     position: fixed;
-    top: 70px;
     left: 0;
     right: 0;
     bottom: 0;
     padding: 0 20px;
-    max-height: calc(100vh - 80px);
     overflow-y: scroll;
     margin-bottom: 0;
     -webkit-overflow-scrolling: touch;
     box-shadow: #fff 0 -15px, rgba(0,0,0,0.1) 0 0 15px;
 		z-index: 100;
+		top: 65px;
+    height: 100vh;
 	}
 
 	.new-nav .p-main-nav-mobile .p-main-nav-mobile-list {
@@ -277,7 +278,7 @@
 
 	.new-nav .p-main-nav-mobile .p-main-nav-item {
 		border-top: solid 1px #D8D8D8;
-		padding: 1.5rem 0;
+		padding: 1.6rem 0;
 	}
 
 	.new-nav .p-main-nav-mobile .p-main-submenu-item {
@@ -359,6 +360,10 @@
 		left: 50%;
 	}
 
+	.p-main-nav-item-text {
+		color: #C0C0C8
+	}
+
 	@media (min-width: 769px) {
 		.new-nav .p-main-nav-mobile {
 			display: none;
@@ -377,7 +382,7 @@
 		}
 		.new-nav .box-logo svg {
 			transform: scale(1);
-			margin-left: 0;
+			margin: 0;
 		}
 	}
 

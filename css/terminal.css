@@ -87,12 +87,12 @@
   #terminal {
     z-index: 30;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0.8);
   }
   #terminal2 {
     z-index: 1;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0.8);
   }
 }
 
