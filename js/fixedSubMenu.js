@@ -1,7 +1,8 @@
 (function($) {
   function subFixedMenu() {
     return (function() {
-      $(window).scroll(function() {
+      $(window).scroll(function(evt) {
+        evt.preventDefault();
         if ($(window).scrollTop() >= 69) {
           $('#new-sub-nav').addClass('new-sub-nav--fixed');
           $('.page').addClass('fixed-sub-nav');
@@ -20,8 +21,8 @@
   $(document).ready(function() {
     init();
 
-    document.querySelector('#new-sub-nav').scrollIntoView({
-      behavior: 'smooth',
-    });
+    // document.querySelector('#new-sub-nav').scrollIntoView({
+    //   behavior: 'smooth',
+    // });
   });
 })(jQuery);

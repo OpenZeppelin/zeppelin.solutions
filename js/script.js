@@ -10,8 +10,20 @@
     })();
   }
 
+  function mobileMenu() {
+    return (function() {
+      var $cont = $('.p-main-nav-mobile');
+      var $icon = $('.p-main-nav-mobile .h-icon');
+      $icon.click(function handler(evt) {
+        $cont.toggleClass('open');
+        $icon.toggleClass('open');
+      });
+    })();
+  }
+
   function init() {
     dropdownMenu();
+    mobileMenu();
   }
 
   $(document).ready(function() {
