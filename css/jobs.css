@@ -49,7 +49,7 @@ h2.row.values {
 #jobs .card a {
   font-family: 'SourceBlack';
   font-size: 1.07em;
-  letter-spacing: 3px;
+
   display: flex;
   border-radius: 6px;
 }
@@ -74,7 +74,6 @@ h2.row.values {
   font-size: 0.8em;
   line-height: 2em;
   color: #283850;
-  letter-spacing: 2px;
 }
 #jobs .card h3 {
   /*titulos card*/
@@ -82,7 +81,6 @@ h2.row.values {
   font-size: 2.4em;
   margin: 2px 0;
   color: #283850;
-  letter-spacing: 0 !important;
 }
 #jobs .card h4 {
   /*card text*/
@@ -101,7 +99,7 @@ h2.row.values {
 #jobs .card-action a {
   font-family: 'DINPro-bold';
   font-size: 1em;
-  letter-spacing: 0.15em;
+
   color: #283850 !important;
 }
 #jobs .card-action i {
@@ -124,7 +122,7 @@ h2.row.values {
 #job-openings .back-link {
   font-family: 'DINPro-bold';
   font-size: 1em;
-  letter-spacing: 0.15em;
+
   color: #283850 !important;
   text-transform: uppercase;
   display: flex;
@@ -169,7 +167,6 @@ span.openings h5 {
 }
 
 .pagefold-link {
-  letter-spacing: 0.1em;
   color: white;
   text-transform: uppercase;
   font-family: 'SourceBold';
