@@ -44,8 +44,7 @@ body {
 	overflow-x: hidden;
   color: #2a2a47;
   margin: 0;
-  font-family: 'silka', 'Helvetica', -apple-system, BlinkMacSystemFont, Arial,
-    sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   color: #282846;
 	background-color: white;
 	font-weight: 400;
@@ -381,6 +380,7 @@ section.hero {
 .hero h1.heading {
 	max-width: 620px;
 	margin-bottom: 25px;
+	font-family: 'silka';
 }
 
 .hero .description {
@@ -548,7 +548,7 @@ p { font-size: 1rem; }
 }
 
 .description {
-	font-family: Helvetica, Helvetica, sans-serif;
+	
   color: #51516A;
   text-align: inherit;
   margin-bottom: 30px;
@@ -641,7 +641,7 @@ p { font-size: 1rem; }
 }
 
 .box .box-description {
-	font-family: Helvetica, sans-serif;
+	
 	opacity: 0.8;
 	color: #282846;
 	margin-bottom: 25px;
@@ -707,7 +707,7 @@ p { font-size: 1rem; }
 .p-nav .p-menu {
 	display: flex;
 	flex-direction: flex-end;
-
+	font-family: 'silka';
 	webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
@@ -729,7 +729,7 @@ p { font-size: 1rem; }
 	opacity: 0.8;
 	font-weight: 600;
 	font-size: 0.8rem;
-	letter-spacing: 1px;
+	letter-spacing: 1.6px;
 	display: flex;
 	align-items: center;
 	height: 100%;
@@ -910,7 +910,7 @@ html {
 }
 
 .page-product .c-explained .heading {
-	font-family: Helvetica;
+	
 	font-size: 1.125rem;
 	color: #282846;
 	text-align: center;
@@ -944,12 +944,11 @@ html {
 	opacity: 0.8;
 	font-size: 0.98rem;
 	color: #282846;
-	letter-spacing: 0.54px;
 	line-height: 24px;
 	width: 88%;
 	margin: 0 auto;
 	font-weight: 400;
-	margin-bottom: 0.875rem;
+	margin-bottom: 20px;
 }
 
 .page-product .c-explained .box .link {
@@ -983,7 +982,6 @@ html {
 	letter-spacing: 1.4px;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: normal;
 }
 
 .page-product .c-projects .grid {
@@ -1028,7 +1026,7 @@ html {
 	box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
 	border-radius: 4px;
 	opacity: 0.8;
-	font-family: Helvetica;
+	
 	font-size: 15px;
 	color: #282846;
 	letter-spacing: 0.54px;

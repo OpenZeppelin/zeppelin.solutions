@@ -46,11 +46,14 @@
 }
 
 .terminal.browser .top-terminal {
-  background: linear-gradient(180deg, rgb(244, 244, 244), rgb(255, 255, 255));
+  background: #f8f8fa;
   border-bottom: 1px solid rgb(238, 238, 238);
   box-sizing: border-box;
   border-right: 0;
   color: rgb(29, 29, 29);
+}
+
+.terminal.browser .terminal-title {
 }
 
 .terminal.browser .terminal-box {
