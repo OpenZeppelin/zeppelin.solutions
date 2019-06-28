@@ -1,5 +1,20 @@
 /** Terminal **/
 
+.type-wrap span {
+  word-break: break-all;
+}
+.tc-green {
+  color: #87cc37;
+}
+
+.tc-violet {
+  color: #9ba7ff;
+}
+
+.tc-strong {
+  font-weight: 600;
+}
+
 .terminal-title {
   color: whitesmoke;
   font-size: 14px;
@@ -239,6 +254,8 @@
 }
 
 .type-wrap {
+  /* display: flex;
+  flex-direction: column; */
   overflow: hidden;
   background-color: black;
   font-size: 14px;
