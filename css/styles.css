@@ -359,7 +359,7 @@ section.section .title {
 
 section.hero {
 	padding: 0;
-	min-height: 340px;
+	min-height: 380px;
 	display: flex;
 }
 
@@ -608,6 +608,7 @@ h1, h2, h3, h4, h5 {
 	line-height: 30px;
 	margin-bottom: 14px;
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 .box--secondary .box-side {
@@ -620,6 +621,7 @@ h1, h2, h3, h4, h5 {
 	font-size: 1.2rem;
 	color: #282846;
 	line-height: 30px;
+	white-space: nowrap;
 }
 
 .box--primary {
@@ -644,6 +646,7 @@ h1, h2, h3, h4, h5 {
 	text-align: left;
 	width: 100%;
 	font-family: 'silka';
+	white-space: nowrap;
 }
 
 .box--primary .box-description {
@@ -944,7 +947,6 @@ html {
 .page-product .c-explained .box-heading {
 	opacity: 0.9;
 	font-size: 1.25rem;
-	
 	color: #282846;
 	margin-bottom: 18px;
 	font-weight: 600;
@@ -1016,16 +1018,19 @@ html {
 	filter: invert(0.5);
 	transform: translateZ(0px);
 	transition: filter 0.25s ease-out 0s, transform 0.25s ease-out 0s;
+	justify-content: center;
+	align-items: center;
 }
 
 .page-product .c-projects .col img {
 	width: 100%;
 	text-align: center;
 	width: 150px;
-  height: 150px;
 	line-height: 150px;
 	object-fit: scale-down;
 	object-position: 50% 50%;
+	height: 30px;
+	margin-bottom: 20px;
 }
 
 .page-product .c-projects .col:hover, .page-product .c-projects .col:active{
@@ -1082,6 +1087,7 @@ html {
 	margin-bottom: 19px;
 	font-weight: bold;
 	font-family: 'silka';
+	white-space: nowrap;
 }
 
 .page-product .c-what-else .box .box-heading .material-icons {
@@ -1111,10 +1117,14 @@ html {
 }
 
 @media (min-width: 900px) {
+	section.hero {
+		min-height: 340px;
+	}
+
 	.page-product .c-hero {
 		min-height: 660px;
 	}
 	.page-product .c-projects .col img {
-		width: 170px;
+		height: 60px;
 	}
 }

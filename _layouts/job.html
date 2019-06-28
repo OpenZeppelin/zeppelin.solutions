@@ -3,15 +3,13 @@ layout: default
 ---
 
 <style type="text/css">
-	.page-job {
-		padding-top: 50px;
-	}
 
   .page-job .sidebar {
     display: flex;
     flex-direction: column;
 		flex: 0;
 		min-width: 140px;
+		margin-bottom: 40px;
   }
 
   .page-job .sidebar ul {
@@ -25,18 +23,19 @@ layout: default
 
   .page-job .j-content > .container {
     display: flex;
-    flex-direction: row;
+		flex-direction: column;
     margin-top: 35px;
 		flex-basis: 140px;
   }
 
   .page-job .job-description {
-    padding-left: 68px;
     max-width: 100%;
   }
 
   .page-job .apply {
     margin-top: 15px;
+		max-width: 120px;
+		width: 100%;
   }
 
   .page-job .company-description > p, .page-job .requirements p {
@@ -97,6 +96,29 @@ layout: default
     margin: auto auto;
     line-height: 1.25;
   }
+
+
+@media (min-width: 900px) {
+	.page-job .j-content > .container {
+		flex-direction: row;
+	}
+	.page-job .job-description{
+		padding-left: 68px;
+    max-width: 100%;
+	}
+	.page-job {
+		padding-top: 50px;
+	}
+	.page-job .sidebar {
+		margin-bottom: 0px;
+  }
+	.page-job .apply {
+		max-width: 100%;
+  }
+	.page-job .application-information {
+		padding-left: 50px;
+	}
+}
 </style>
 
 
@@ -130,13 +152,15 @@ layout: default
 
 
 	<section class="application-greybox">
-		<div class="application-information">
-			<h3 class="job-description-title">Apply</h3>
-			<p class="description">Complete the following <a href=" https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application
-					form</a> or send an email to <a href="mailto:jobs@openzeppelin.solutions">jobs@openzeppelin.solutions</a> with the
-				phrase "{{ page.title }},
-				{{ page.location }}" on the subject line.
-			</p>
+		<div class="container">
+			<div class="application-information">
+				<h3 class="job-description-title">Apply</h3>
+				<p class="description">Complete the following <a href=" https://airtable.com/shrqTXBRIBFCnXD3i" target="_blank">application
+						form</a> or send an email to <a href="mailto:jobs@openzeppelin.solutions">jobs@openzeppelin.solutions</a> with the
+					phrase "{{ page.title }},
+					{{ page.location }}" on the subject line.
+				</p>
+			</div>
 		</div>
 	</section>
 </main>
