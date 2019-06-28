@@ -40,6 +40,39 @@
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
+.terminal.browser {
+  border: 1px solid #f8f8fa;
+  background-color: #f8f8fa;
+}
+
+.terminal.browser .top-terminal {
+  background: linear-gradient(180deg, rgb(244, 244, 244), rgb(255, 255, 255));
+  border-bottom: 1px solid rgb(238, 238, 238);
+  box-sizing: border-box;
+  border-right: 0;
+  color: rgb(29, 29, 29);
+}
+
+.terminal.browser .terminal-box {
+  background-color: #f8f8fa;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  border-radius: 6px;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal.browser .terminal-box svg {
+  transform: scale(1.4);
+}
+
 .mobile-br {
   display: none;
 }
