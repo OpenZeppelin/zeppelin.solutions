@@ -8,21 +8,38 @@
 
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         $('#security-audit-form').removeClass('active');
-        $('body').removeClass('modal-open');
+        $('body').removeClass('overlay');
         $('.modal-sr').removeClass('active');
       }
     }
 
+    function modalFunc() {
+      var $cont = $('#security-request');
+      var $aY = $('#action-yes');
+      var $aN = $('#action-no');
+
+      $aY.click(function() {
+        $cont.find('.msr-form-path--yes').removeClass('hidden');
+        $cont.find('.msr-form-path--no').addClass('hidden');
+      });
+
+      $aN.click(function() {
+        $cont.find('.msr-form-path--no').removeClass('hidden');
+        $cont.find('.msr-form-path--yes').addClass('hidden');
+      });
+    }
+
     function openModalContainer() {
       $('#security-audit-form').addClass('active');
-      $('body').addClass('modal-open');
+      $('body').addClass('overlay');
       $('.modal-sr').addClass('active');
+      modalFunc();
     }
 
     return (function() {
       $closeBtn.click(function(e) {
         $('#security-audit-form').removeClass('active');
-        $('body').removeClass('modal-open');
+        $('body').removeClass('overlay');
         $('.modal-sr').removeClass('active');
       });
 

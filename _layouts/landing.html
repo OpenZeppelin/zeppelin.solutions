@@ -57,7 +57,7 @@ layout: default
 	}
 
 	section.section.l-hero-quote .quote {
-		padding: 80px 0;
+		padding: 40px 0 80px;
 	}
 
 	section.section.l-hero-quote {
@@ -68,7 +68,6 @@ layout: default
 		font-family: Silka;
 		font-size: 1.5rem;
 		color: #FFFFFF;
-		
 		text-align: center;
 		line-height: 32px;
 		max-width: 600px;
@@ -178,7 +177,14 @@ layout: default
 		transition: all 0.25s linear;
 	}
 
+	.grid--challenges .col {
+		margin: 0;
+	}
+
 	@media (min-width: 900px) {
+		section.section.l-hero-quote .quote {
+			padding: 80px 0;
+		}
 		.l-projects .projects-grid .item {
 			margin-right: 54px;
 		}
@@ -245,7 +251,7 @@ layout: default
 				</div>
 			</div>
 			<h2 class="heading">The challenges of building decentralized applications</h2>
-			<div class="grid">
+			<div class="grid grid--challenges">
 				<div class="row">
 					<div class="col box box--primary">
 						<div class="box-container">

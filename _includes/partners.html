@@ -1,37 +1,18 @@
 <style type="text/css">
-  .leading-projects {
-    height: 80px;
-    width: 150px;
-    display: inline-block;
-    vertical-align: middle;
+  .partners-grid .col {
+    overflow: hidden;
   }
 
-  .leading-projects img {
-		max-width: 230px;
+  .partners-grid img, .partners-grid svg {
 		width: 100%;
-		margin: 20px auto;
 		display: block;
-		text-align: center;
-		vertical-align: middle;
 		object-fit: scale-down;
 		object-position: 50% 50%;
 		height: 100px;
   }
 
-  .leading-projects .cosmos {
-    margin: 24px auto;
-  }
-  .leading-projects .bitgo {
-    margin: 22px auto;
-  }
-  .leading-projects .shapeshift, .leading-projects .status {
-    margin: 18px auto;
-  }
-  .leading-projects .dfinity, .leading-projects {
-    margin: 13px auto;
-  }
-
 	.partners-grid {
+		margin-top: 35px;
 		display: flex;
 	}
 
@@ -41,43 +22,43 @@
 <div class="container">
   <div class="grid partners-grid">
 		<div class="row">
-			<span class="leading-projects">
+			<span class="col">
 				<img src="../images/logos/ethereum.svg" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img src="../images/logos/augur.png" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img src="../images/logos/brave.png" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img src="../images/logos/golem.svg" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img src="../images/logos/omise.svg" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
       	<img class="cosmos" src="../images/logos/cosmos.svg" />
     	</span>
 		</div>
 
 		<div class="row">
-			<span class="leading-projects">
+			<span class="col">
 				<img class="shapeshift" src="../images/logos/shapeshift.png" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img class="dfinity" src="../images/logos/dfinity.png" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img class="status" src="../images/logos/status.svg" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img src="../images/logos/decentraland.svg" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img class="bitgo" src="../images/logos/bitgo.png" />
 			</span>
-			<span class="leading-projects">
+			<span class="col">
 				<img src="../images/logos/storj.png" />
 			</span>
 		</div>

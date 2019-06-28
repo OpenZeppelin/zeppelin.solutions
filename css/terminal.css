@@ -283,6 +283,9 @@
   .terminal {
     width: 400px !important;
   }
+  .terminal#terminal-sdk {
+    transform: translateX(-50%) scale(0.8);
+  }
   .terminal span {
     max-width: 400px !important;
   }

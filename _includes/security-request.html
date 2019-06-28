@@ -1,6 +1,7 @@
 <style type="text/css">
 
 	.modal-sr {
+		display: block;
 		visibility: hidden;
 		position: fixed;
 		z-index: 200;
@@ -12,6 +13,11 @@
 		height: 100vh;
 		display: flex;
 		align-items: center;
+		overflow-y: initial;
+	}
+
+	.modal-sr.active {
+		visibility: visible;
 	}
 
 	.modal-sr.active .container {
@@ -22,21 +28,24 @@
 
 	.modal-sr .container {
 		overflow: hidden;
-		height: 80%;
-		width: 600px;
+    height: 90%;
+    width: 90%;
 		background-color: white;
 		margin: 0 auto;
-		padding: 60px 100px;
+		padding: 2rem;
 		border-radius: 4px;
 		opacity: 0;
     -webkit-transform: translateY(100%) scale(0.8);
     transform: translateY(100%) scale(0.8);
     transition-timing-function: cubic-bezier(0.3, 0, 0, 1.4);
 		box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem;
+		overflow-y: auto;
 	}
 
 	.modal-sr .heading {
+		font-size: 1.8rem;
 		margin: 0;
+		margin-bottom: 15px;
 	}
 
 	.modal-sr .modal-header {
@@ -52,19 +61,16 @@
 		box-sizing: border-box;
 		position:relative;
   	margin-bottom:45px;
-		opacity: 0.2;
-		transition: opacity 0.4s cubic-bezier(0.3, 0, 0, 1.4);
-	}
-
-	.msr-form-field.active{
 		opacity: 1;
+		transition: opacity 0.4s cubic-bezier(0.3, 0, 0, 1.4);
 	}
 
  .msr-form-field input {
   font-size: 1rem;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 300px;
+  max-width: 300px;
+	width: 100%;
   border: none;
   border-bottom: 1px solid #A9A9B5;
 }
@@ -150,8 +156,8 @@
 
 .modal-sr .icon-close {
 	position: absolute;
-	top: 40px;
-	right: 40px;
+	top: 20px;
+	right: 20px;
 	transition:0.2s ease all;
 	opacity: 0.8;
 	cursor: pointer;
@@ -161,9 +167,31 @@
 	opacity: 1;
 }
 
+.modal-sr .btn {
+	min-width: 120px;
+}
+
+@media (min-width: 900px) {
+	.modal-sr .container {
+		padding: 60px 100px;
+	}
+
+	.modal-sr .container {
+		max-width: 880px;
+	}
+
+	.modal-sr .icon-close {
+		top: 40px;
+		right: 40px;
+	}
+	.modal-sr .heading {
+		font-size: 2rem;
+	}
+}
+
 </style>
 
-<div class="modal modal-sr">
+<div class="modal modal-sr" id="security-request">
 	<div class="container">
 		<i class="material-icons icon-close">close</i>
 		<header class="modal-header">
@@ -188,6 +216,12 @@
       <span class="bar"></span>
       <label>Contact Name</label>
 		</div>
+			<div class="msr-form-field">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Contact email*</label>
+		</div>
 		<div class="msr-form-field">
       <input type="text" required>
       <span class="highlight"></span>
@@ -195,16 +229,81 @@
       <label>Short description of audit scope</label>
 		</div>
 		<div class="msr-form-field">
-      <input type="text" required>
+			<input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Is your codebase finalized and audit-ready? *</label>
 		</div>
 		<div class="msr-form-field">
-      <input type="text" required>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Estimated date for finalization</label>
+			<button class="btn" id="action-yes">YES</button>
+			<button class="btn" id="action-no">NO</button>
+		</div>
+		<div class="msr-form-path msr-form-path--yes hidden">
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Link to repository</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Audit Commit*</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Estimated audit scope</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Target launch day</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Documentation - optional</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Other comments - optionals</label>
+			</div>
+		</div>
+		<div class="msr-form-path msr-form-path--no hidden">
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Estimated date for finalization</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Estimated audit scope*</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Documentation - optional</label>
+			</div>
+			<div class="msr-form-field">
+				<input type="text" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Other comments - optionals</label>
+			</div>
+		</div>
+		<div class="msr-form-field">
+			<button class="btn">Send Request</button>
 		</div>
 	</div>
 </div>

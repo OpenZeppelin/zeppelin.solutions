@@ -48,6 +48,9 @@ body {
   color: #282846;
 	background-color: white;
 	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -869,8 +872,11 @@ body.modal-open, body.overlay {
     right: 0;
     padding-bottom: 1px;
 		box-shadow: rgba(0,0,0,0.1) 0px 0px 15px 0px;
-		box-shadow: rgb(255, 255, 255) 0px -15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
 	}
+}
+
+.new-sub-nav--fixed {
+	box-shadow: rgba(0,0,0,0.1) 0px 0px 15px 0px;
 }
 
 html {
@@ -882,7 +888,7 @@ html {
 	padding: 0 2rem;
 }
 
-/** **/
+/** Products **/
 .page-product .c-hero {
 	display: flex;
 	flex-direction: column;
@@ -895,14 +901,12 @@ html {
 }
 
 .page-product .c-hero .container:nth-child(1) {
-	height: 300px;
+	height: 330px;
 }
 
 .page-product .c-hero .container.term-container {
 	padding: 0;
 }
-
-/** Explained Section **/
 
 .page-product .c-explained {
 	position: relative;
@@ -1008,11 +1012,7 @@ html {
 
 .page-product .c-projects .col {
 	flex: 1;
-	text-align: center;
-	max-width: 120px;
 	display: flex;
-	align-items: center;
-	justify-items: center;
 	filter: invert(0.5);
 	transform: translateZ(0px);
 	transition: filter 0.25s ease-out 0s, transform 0.25s ease-out 0s;
@@ -1021,7 +1021,11 @@ html {
 .page-product .c-projects .col img {
 	width: 100%;
 	text-align: center;
-	max-height: 60px;
+	width: 150px;
+  height: 150px;
+	line-height: 150px;
+	object-fit: scale-down;
+	object-position: 50% 50%;
 }
 
 .page-product .c-projects .col:hover, .page-product .c-projects .col:active{
@@ -1109,5 +1113,8 @@ html {
 @media (min-width: 900px) {
 	.page-product .c-hero {
 		min-height: 660px;
+	}
+	.page-product .c-projects .col img {
+		width: 170px;
 	}
 }
