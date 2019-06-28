@@ -1,18 +1,67 @@
-(function($) {
-  setTimeout(function() {
-    $('#typed').typed({
-      strings: ['[~] $ npm install openzeppelin-solidity'],
-      typespeed: 800,
-      backdelay: 0,
-      loop: false,
-      contentType: 'html',
-      loopCount: false,
-      callback: function() {
-        installing();
-      },
-    });
-  }, 1000);
-})(jQuery);
+var comands = ['zos create'](
+  // ✓ Compiled contracts with solc 0.5.9 (commit.e560f70d)
+  // ? Pick a contract to instantiate Counter
+  // ? Pick a network development
+  // ✓ Added contract Counter
+  // ✓ Contract Counter deployed
+  // All contracts have been deployed
+  // ? Do you want to call a function on the instance after creating it? No
+  // ✓ Setting everything up to create contract instances
+  // ✓ Instance created at 0xCfEB869F69431e42cdB54A4F4f105C19C080A601
+  // 0xCfEB869F69431e42cdB54A4F4f105C19C080A601
+
+  // $:contracts rrecuero$ zos send-tx
+  // ? Pick a network development
+  // ? Pick an instance Counter at 0xCfEB869F69431e42cdB54A4F4f105C19C080A601
+  // ? Select which function increase()
+  // ✓ Transaction successful. Transaction hash: 0xd203b6e16f3b6e4922bb19251bd3b90958a7d14c1e21a133631b934e20820d04
+
+  // $:contracts rrecuero$ zos call
+  // ? Pick a network development
+  // ? Pick an instance Counter at 0xCfEB869F69431e42cdB54A4F4f105C19C080A601
+  // ? Select which function value()
+  // ✓ Method 'value()' returned: 1
+  // 1
+  // $:contracts rrecuero$ zos upgrade
+  // ? Pick a network development
+  // ✓ Compiled contracts with solc 0.5.9 (commit.e560f70d)
+  // ✓ Contract Counter deployed
+  // All contracts have been deployed
+  // ? Which instances would you like to upgrade? All instances
+  // ✓ Instance upgraded at 0xCfEB869F69431e42cdB54A4F4f105C19C080A601. Transaction receipt: 0x56363451719e42a4dab366f450c4130387aa341bd068925de49705a621ab4053
+
+  function($) {
+    (function($) {
+      setTimeout(function() {
+        $('#sdk-typed').typed({
+          strings: ['zos create'],
+          typespeed: 800,
+          backdelay: 0,
+          loop: false,
+          contentType: 'html',
+          loopCount: false,
+          callback: function() {
+            installing();
+          },
+        });
+      }, 1000);
+    })(jQuery);
+
+    setTimeout(function() {
+      $('#typed').typed({
+        strings: ['[~] $ npm install openzeppelin-solidity'],
+        typespeed: 800,
+        backdelay: 0,
+        loop: false,
+        contentType: 'html',
+        loopCount: false,
+        callback: function() {
+          installing();
+        },
+      });
+    }, 1000);
+  }
+)(jQuery);
 
 function installing() {
   $('.terminal .typed-cursor').css('color', 'black');
