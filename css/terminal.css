@@ -11,8 +11,16 @@
   color: #9ba7ff;
 }
 
+.tc-rose {
+  color: #b991b2;
+}
+
 .tc-strong {
   font-weight: 600;
+}
+
+.tc-gray {
+  color: rgb(204, 204, 204);
 }
 
 .terminal-title {
@@ -69,6 +77,7 @@
 }
 
 .terminal.browser .terminal-title {
+  color: #616161;
 }
 
 .terminal.browser .terminal-box {
@@ -321,7 +330,7 @@
 
 @media (min-width: 700px) {
   .terminal {
-    height: 360px;
+    height: 365px;
   }
 
   .term-container {

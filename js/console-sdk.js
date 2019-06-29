@@ -142,6 +142,7 @@ function f3(done) {
                       '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Transaction successful. Transaction hash: </br> 0xd203b6e16f3b6e4922bb19251bd3b90958a7d14c1e</br>1a133631b934e20820d04</span>',
                       '.type-wrap'
                     );
+                    done();
                   }, 1500);
                 }
               );
@@ -153,11 +154,131 @@ function f3(done) {
   }, 1000);
 }
 
+function f4(done) {
+  type('$ zos call</br>');
+  setTimeout(function() {
+    setTimeout(function() {
+      createElement(
+        'span',
+        '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
+        '.type-wrap'
+      );
+      type('<span style="color:#4de4e3">development</span></br>', function() {
+        setTimeout(function() {
+          createElement(
+            'span',
+            '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
+            '.type-wrap'
+          );
+          type('<span style="color:#4de4e3">Counter at</span>', function() {
+            setTimeout(function() {
+              createElement(
+                'div',
+                '<span style="color:#4de4e3">0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
+                '.type-wrap'
+              );
+            }, 800);
+            setTimeout(function() {
+              createElement(
+                'div',
+                '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
+                '.type-wrap'
+              );
+              type(
+                '<span style="color:#4de4e3">increase()</span></br>',
+                function() {
+                  setTimeout(function() {
+                    createElement(
+                      'span',
+                      '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Method \'value()\' returned: 1</span>',
+                      '.type-wrap'
+                    );
+                    done();
+                  }, 1500);
+                }
+              );
+            }, 1500);
+          });
+        }, 800);
+      });
+    }, 700);
+  }, 1000);
+}
+
+function f5(done) {
+  type('$ zos upgrade</br>');
+  $('.typed-cursor').css('color', 'black');
+  setTimeout(function() {
+    setTimeout(function() {
+      createElement(
+        'span',
+        '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
+        '.type-wrap'
+      );
+      type('<span style="color:#4de4e3">development</span>', function() {
+        setTimeout(function() {
+          createElement(
+            'div',
+            '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Compiled contracts with solc 0.5.9 </br> (commit.e560f70d)</span>',
+            '.type-wrap'
+          );
+          createElement(
+            'div',
+            '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Contract Counter deployed</span>',
+            '.type-wrap'
+          );
+          setTimeout(function() {
+            createElement(
+              'div',
+              '<strong>All contracts have been deployed</strong>',
+              '.type-wrap'
+            );
+            setTimeout(function() {
+              createElement(
+                'span',
+                '<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Which instances would you like to upgrade?&nbsp;</span></br>',
+                '.type-wrap'
+              );
+              setTimeout(function() {
+                type(
+                  '<span style="color: white">All instances</span>',
+                  function() {
+                    setTimeout(function() {
+                      setTimeout(function() {
+                        createElement(
+                          'div',
+                          '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Instance upgraded at </br>0xCfEB869F69431e42cdB54A4F4f105C19C080A601.</br> Transaction receipt: </br>0x56363451719e42a4dab366f450c4130387aa3413.</span>',
+                          '.type-wrap'
+                        );
+                        done();
+                      }, 500);
+                    }, 500);
+                  }
+                );
+              }, 1400);
+            }, 1200);
+          }, 1000);
+        }, 900);
+      });
+    }, 1000);
+  }, 1000);
+}
+
 (function($) {
   f2(function() {
     setTimeout(function() {
       $('.type-wrap').empty();
-      f3();
+      f3(function() {
+        setTimeout(function() {
+          $('.type-wrap').empty();
+          f4(function() {
+            $('.type-wrap').empty();
+            f5(function() {
+              console.log('Animation done');
+            });
+          });
+        }, 2000);
+      });
     }, 2000);
   });
 })(jQuery);
