@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="70px" viewBox="0 0 180 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>aztec</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="51.2858103%" cy="55.9388843%" fx="51.2858103%" fy="55.9388843%" r="167.844107%" id="radialGradient-1">
+            <stop stop-color="#589EFD" offset="0%"></stop>
+            <stop stop-color="#8670F3" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Zeppelin-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-26" fill="#F8F8FA" opacity="0" x="0" y="0" width="180" height="70"></rect>
+        <g id="AZTEC-[horizontal]-logo-(4)-Copy" transform="translate(25.000000, 14.000000)">
+            <g id="logo" transform="translate(0.000000, 4.914332)" fill-rule="nonzero">
+                <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="35.3217647" height="35.3217647" rx="17.6608824"></rect>
+                <g id="Group-6" transform="translate(4.683973, 4.760760)">
+                    <g id="Group-7">
+                        <g id="Group-5">
+                            <g id="Group-3">
+                                <g id="Group-4">
+                                    <g id="Group" transform="translate(12.907879, 12.953831) rotate(45.000000) translate(-12.907879, -12.953831) translate(3.808685, 3.816244)">
+                                        <g id="Group-2">
+                                            <path d="M3.04042647,3.25786769 L15.0525468,3.25786769 L15.0525468,0.0763792976 L15.0525468,3.25786769 L18.150606,3.25786769 L15.0525468,3.25786769 L15.0525468,15.2634842 L18.150606,15.2634842 L15.0525468,15.2634842 L15.0525468,18.1997912 L15.0525468,15.2634842 L3.04042647,15.2634842 L3.04042647,3.25786769 L0.0173761974,3.25786769 L3.04042647,3.25786769 L3.04042647,15.2634842 L15.0525468,15.2634842 L15.0525468,3.25786769 L3.04042647,3.25786769 L3.04042647,0.0363605758 L3.04042647,3.25786769 Z M3.04042647,15.2634842 L0.0173761974,15.2634842 L3.04042647,15.2634842 L3.04042647,18.1997912 L3.04042647,15.2634842 L3.04042647,15.2634842 Z" id="Shape" stroke="#FFFFFF" stroke-width="1.80498526" fill="#278AF2" stroke-linecap="square"></path>
+                                            <polygon id="Rectangle-Copy" fill="#FFFFFF" points="5.38309962 5.62061114 12.710493 5.62061114 12.710493 12.9440372 5.38309962 12.9440372"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="AZTEC" transform="translate(41.387894, 0.000000)" fill="#6096FC" font-family="GillSans, Gill Sans" font-size="28.0270525" font-weight="normal">
+                <text>
+                    <tspan x="0.0143974585" y="26">AZTEC</tspan>
+                </text>
+            </g>
+            <g id="PROTOCOL" transform="translate(40.696816, 28.641344)" fill="#90A1C1" font-family="GillSans, Gill Sans" font-size="11.7483261" font-weight="normal">
+                <text>
+                    <tspan x="0.0616410867" y="11">PROTOCOL</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
