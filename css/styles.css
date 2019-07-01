@@ -276,7 +276,7 @@ a {
   font-weight: 600;
   font-size: 0.8rem;
   color: #3c3c3c;
-  
+
   text-align: center;
   transition: opacity 0.4s ease;
 }
@@ -293,7 +293,7 @@ a {
   font-weight: 600;
   font-size: 1rem;
   color: #3c3c3c;
-  
+
   text-align: center;
   transition: opacity 0.4s ease;
 }
@@ -393,7 +393,7 @@ section.hero {
   text-align: center;
   line-height: 1.6;
   font-weight: 400;
-  
+
 	animation-delay: 700ms;
 	max-width: 663px;
 }
@@ -558,13 +558,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .description {
-	
+
   color: #51516A;
   text-align: inherit;
   margin-bottom: 30px;
   line-height: 1.8;
   font-weight: 400;
-  
+
 }
 
 .center {
@@ -575,7 +575,7 @@ h1, h2, h3, h4, h5 {
   opacity: 0.9;
   font-size: 1rem;
   color: #282846;
-  
+
   text-align: center;
   line-height: 32px;
   text-transform: uppercase;
@@ -843,6 +843,10 @@ body.modal-open, body.overlay {
 		height: 100%;
 	}
 
+	.container--lg {
+		width: 1280px;
+	}
+
 	.grid > .row {
 	 flex-direction: row;
 	 margin-bottom: 0px;
@@ -923,7 +927,7 @@ html {
 }
 
 .page-product .c-explained .heading {
-	
+
 	font-size: 1.125rem;
 	color: #282846;
 	text-align: center;
@@ -966,7 +970,7 @@ html {
 .page-product .c-explained .box .link {
 	font-size: 0.9125rem;
 	color: #4E5EE4;
-	
+
 	text-transform: uppercase;
 	font-weight: bold;
 	opacity: 1;
@@ -991,7 +995,7 @@ html {
 	opacity: 0.9;
 	font-size: 0.98rem;
 	color: #3D3D58;
-	
+
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1.4px;
@@ -1052,10 +1056,10 @@ html {
 	box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
 	border-radius: 4px;
 	opacity: 0.8;
-	
+
 	font-size: 15px;
 	color: #282846;
-	
+
 	opacity: 0.9;
 	color: #282846;
 	align-items: center;

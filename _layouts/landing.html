@@ -13,30 +13,27 @@ layout: default
 	}
 
 	.l-projects .projects-grid .row {
-		justify-content: space-between;
-		max-width: 980px;
-		margin: 0 auto;
-		flex-direction: row;
-		justify-items: center;
-		align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+		flex-wrap: wrap;
 	}
 
-	.l-projects .projects-grid .item {
-		height: 54px;
-		text-align: center;
-		border-radius: 6px;
-		overflow: hidden;
-		min-width: 100px;
+	.l-projects .projects-grid .col {
+		flex-basis: 100px;
 	}
 
-	.l-projects .projects-grid .item img {
-		width: 100%;
+	.l-projects .projects-grid .col img {
 		vertical-align: middle;
-		object-fit: scale-down;
+		object-fit: fill;
     object-position: 50% 50%;
     height: 100%;
 		flex: 1;
-		width: 80%;
+		width: 100%;
 	}
 
 	.l-projects .projects-grid .item:last-child {
@@ -90,10 +87,10 @@ layout: default
 	.l-hero-quote .quote .quote-footer .quote-author {
 		margin-left: 20px;
 		opacity: 0.8;
-		
+
 		font-size: 0.98rem;
 		color: #FFFFFF;
-		
+
 		line-height: initial;
 	}
 
@@ -182,6 +179,19 @@ layout: default
 	}
 
 	@media (min-width: 900px) {
+
+	.l-projects .projects-grid .row {
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    left: -13px;
+    position: relative;
+    transform: scale(0.99);
+	}
+
 		section.section.l-hero-quote .quote {
 			padding: 80px 0;
 		}
@@ -226,28 +236,28 @@ layout: default
 		</div>
 	</section>
 	<section class="section l-projects">
-		<div class="container">
+		<div class="container container--lg">
 			<h6 class="sub-heading">The world’s leading projects trust OpenZeppelin</h6>
 			<div class="grid projects-grid">
 				<div class="row">
-					<div class="col item a-scale">
-						<img src="../images/logos/brave-logotype-dark.svg">
-					</div>
-					<div class="col item a-scale">
-						<img src="../images/logos/augur.svg">
-					</div>
-					<div class="col item a-scale">
-						<img src="../images/logos/ethereum.svg">
-					</div>
-					<div class="col item a-scale">
-						<img src="../images/logos/coinbase.svg">
-					</div>
-					<div class="col item a-scale">
-						<img src="../images/logos/Dfinity.svg">
-					</div>
-					<div class="col item a-scale">
-						<img class="bitgo" src="../images/logos/BitGo_Color_Large.svg">
-					</div>
+					<span class="col">
+						<img src="../images/new-logos/brave.svg" />
+					</span>
+					<span class="col">
+						<img src="../images/new-logos/augur.svg" />
+					</span>
+					<span class="col">
+						<img src="../images/new-logos/dfinity.svg" />
+					</span>
+					<span class="col">
+						<img src="../images/new-logos/bitgo.svg" />
+					</span>
+					<span class="col">
+						<img src="../images/new-logos/golem.svg" />
+					</span>
+					<span class="col">
+						<img src="../images/new-logos/decentraland.svg" />
+					</span>
 				</div>
 			</div>
 			<h2 class="heading">The challenges of building decentralized applications</h2>
