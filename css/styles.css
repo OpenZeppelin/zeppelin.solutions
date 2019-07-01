@@ -127,6 +127,13 @@ a {
 	margin-bottom: 5px;
 }
 
+.grid > .row.row--centered {
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+	justify-content: center;
+}
+
 .grid > .row.row--fixed {
 	max-width: 1000px;
 	margin: 0 auto;
