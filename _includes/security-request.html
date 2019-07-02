@@ -91,12 +91,19 @@
 		color: #5060E5;
 	}
 
-	.msr-form-field input:valid ~ highlight, .msr-form-field input:valid ~ label, .msr-form-field input:valid {
+	.msr-form-field input:valid ~ label, .msr-form-field input:valid {
 		opacity: 0.3;
 	}
 
-	.msr-form-field input:focus ~ label, .msr-form-field input:focus {
-		font-weight: 600;
+	.msr-form-field input:focus {
+		border-bottom: 1px solid #A9A9B5!important;
+	}
+
+	.msr-form-field input:valid {
+		border-bottom: none;
+	}
+
+	.msr-form-field input:focus ~ label, .msr-form-field input:focus, .msr-form-field input:valid ~ highlight {
 		opacity: 1;
 	}
 
