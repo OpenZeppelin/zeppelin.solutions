@@ -2,8 +2,9 @@
   function securityAudits() {
     var $btn = $('.request-audit-btn');
     var $closeBtn = $('.icon-close');
+    var validForm = false;
 
-    // Validates given an input type
+    // Validators map - validates given an input type
     var validate = {
       email: (email) => /^.+@.+\..+$/.test(email),
       text: (t) => true,
@@ -19,21 +20,14 @@
       }
     }
 
-    function toggleSubmit(value) {
-      var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
-      $submitBtn.setAttribute('disabled', value);
-    }
-
-    function checkValues(values) {
-      // var invalidForm = values.filter((i) => i.value === '');
-      // if (invalidForm) {
-      //   updateState('canSubmit', false);
-      //   toggleSubmit(false);
-      //   addError(invalidForm);
-      // } else {
-      //   updateState('canSubmit', true);
-      //   toggleSubmit(true);
-      // }
+    function checkValues() {
+      var values = $('.sr-form').serializeArray();
+      validForm = !values.filter((i) => i.value === '');
+      console.log('check values', validForm, values);
+      if (validForm) {
+        var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
+        $submitBtn.attr('disabled', value);
+      }
     }
 
     function validateForm() {
@@ -41,10 +35,9 @@
       $form.addClass('sr-form--validate');
     }
 
-    function blurInput(i, e) {
+    function blurInput() {
       var $input = this;
       var $formField = $(this).parent();
-      console.log(this.type);
       $formField.addClass('msr-form-field--touched');
       if (!$input.value) {
         addErrorInline($formField);
@@ -52,6 +45,7 @@
         addErrorInline($formField);
       } else {
         removeErrorInline($formField);
+        // checkValues();
       }
     }
 
@@ -80,6 +74,7 @@
         $cont.find('.msr-form-path--no').addClass('hidden');
         $aN.removeClass('btn--active');
         $(this).addClass('btn--active');
+        // clean the other path
       });
 
       $aN.click(function() {
@@ -87,6 +82,7 @@
         $cont.find('.msr-form-path--yes').addClass('hidden');
         $aY.removeClass('btn--active');
         $(this).addClass('btn--active');
+        // clean the other path
       });
 
       // Cheking changes on blur
@@ -98,7 +94,8 @@
         e.preventDefault();
         validateForm();
         var values = $(this).serializeArray();
-        console.log(values);
+        // console.log(values);
+        // Send values
       });
     }
 
