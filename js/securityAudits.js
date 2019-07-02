@@ -33,8 +33,7 @@
       });
     }
 
-    function openModalContainer(e) {
-      e.preventDefault();
+    function openModalContainer() {
       $('#security-audit-form').addClass('active');
       $('body').addClass('overlay');
       $('.modal-sr').addClass('active');
@@ -42,7 +41,6 @@
     }
 
     return (function() {
-      openModalContainer();
       $closeBtn.click(function(e) {
         $('#security-audit-form').removeClass('active');
         $('body').removeClass('overlay');
@@ -51,6 +49,7 @@
 
       $btn.click(function(e) {
         e.preventDefault();
+        e.stopPropagation();
         openModalContainer();
       });
 
