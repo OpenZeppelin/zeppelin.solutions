@@ -3,6 +3,12 @@
     var $btn = $('.request-audit-btn');
     var $closeBtn = $('.icon-close');
 
+    // Validates given an input type
+    var validate = {
+      email: (email) => /^.+@.+\..+$/.test(email),
+      text: (t) => true,
+    };
+
     function closeModalContainer(e) {
       var container = $('#security-audit-form .container');
 
@@ -11,6 +17,57 @@
         $('body').removeClass('overlay');
         $('.modal-sr').removeClass('active');
       }
+    }
+
+    function toggleSubmit(value) {
+      var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
+      $submitBtn.setAttribute('disabled', value);
+    }
+
+    function checkValues(values) {
+      // var invalidForm = values.filter((i) => i.value === '');
+      // if (invalidForm) {
+      //   updateState('canSubmit', false);
+      //   toggleSubmit(false);
+      //   addError(invalidForm);
+      // } else {
+      //   updateState('canSubmit', true);
+      //   toggleSubmit(true);
+      // }
+    }
+
+    function validateForm() {
+      var $form = $('.sr-form');
+      $form.addClass('sr-form--validate');
+    }
+
+    function blurInput(i, e) {
+      var $input = this;
+      var $formField = $(this).parent();
+      console.log(this.type);
+      $formField.addClass('msr-form-field--touched');
+      if (!$input.value) {
+        addErrorInline($formField);
+      } else if (!validate[$input.type]($input.value)) {
+        addErrorInline($formField);
+      } else {
+        removeErrorInline($formField);
+      }
+    }
+
+    function addErrorInline(el) {
+      if (!el.find('.error').length) {
+        var $error = document.createElement('span');
+        $error.setAttribute('class', 'error');
+        $error.innerHTML = '<i class="material-icons error-icon">warning</i>';
+        $(el).append($error);
+      }
+    }
+
+    function removeErrorInline(el) {
+      $(el)
+        .find('.error')
+        .remove();
     }
 
     function modalFunc() {
@@ -30,6 +87,18 @@
         $cont.find('.msr-form-path--yes').addClass('hidden');
         $aY.removeClass('btn--active');
         $(this).addClass('btn--active');
+      });
+
+      // Cheking changes on blur
+      $('.sr-form')
+        .find('.msr-form-field input')
+        .on('blur', blurInput);
+
+      $('.sr-form').on('submit', function(e) {
+        e.preventDefault();
+        validateForm();
+        var values = $(this).serializeArray();
+        console.log(values);
       });
     }
 

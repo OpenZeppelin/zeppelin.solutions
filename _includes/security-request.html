@@ -5,7 +5,7 @@
 		visibility: hidden;
 		position: fixed;
 		z-index: 200;
-		background-color: rgba(0, 0, 0, 0.28);
+		background-color: rgba(40, 40, 70, 0.7);
 		top: 0;
 		left: 0;
 		right: 0;
@@ -13,7 +13,7 @@
 		height: 100vh;
 		display: flex;
 		align-items: center;
-		overflow-y: initial;
+		overflow-y: initial !important
 	}
 
 	.modal-sr.active {
@@ -24,6 +24,7 @@
 		opacity: 1;
     -webkit-transform: translateY(0%) scale(1);
     transform: translateY(0%) scale(1);
+		overflow-y: initial !important
 	}
 
 	.modal-sr .container {
@@ -39,7 +40,14 @@
     transform: translateY(100%) scale(0.8);
     transition-timing-function: cubic-bezier(0.3, 0, 0, 1.4);
 		box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem;
+		overflow: hidden;
+	}
+
+	.modal-sr .sub-container {
+		position: fixed;
 		overflow-y: auto;
+		height: calc(100% - 100px);
+    width: 700px;
 	}
 
 	.modal-sr .heading {
@@ -56,12 +64,27 @@
 	}
 
 	.msr-form-field {
+		width: 300px;
 		height: 70px;
 		box-sizing: border-box;
-		position:relative;
+		position: relative;
   	margin-bottom:45px;
 		opacity: 1;
 		transition: opacity 0.4s cubic-bezier(0.3, 0, 0, 1.4);
+	}
+
+	.msr-form-field .error {
+    color: #cd3d64;
+    position: absolute;
+    right: 6px;
+    transform: translateX(50%);
+    top: 0;
+	}
+
+	.msr-form-field .error .error-icon {
+		vertical-align: middle;
+    font-size: 15px;
+    margin-right: 5px;
 	}
 
  .msr-form-field input {
@@ -116,6 +139,10 @@
 
 	.msr-form-field input:valid {
 		border-bottom: none;
+	}
+
+	.msr-form-field.msr-form-field--touched input:invalid {
+		border-bottom: 1px solid #cd3d64!important;
 	}
 
 	.msr-form-field input:focus ~ label, .msr-form-field input:focus, .msr-form-field input:valid ~ highlight {
@@ -233,11 +260,12 @@
 <div class="modal modal-sr" id="security-request">
 	<div class="container">
 		<i class="material-icons icon-close">close</i>
+		<div class="sub-container">
 		<header class="modal-header">
 			<h2 class="heading">Request a Security Audit</h2>
 			<p class="description">You can request an audit by filling this form or by sending a mai to <a href="mailto:audits@openzeppelin.com">audits@openzeppelin.com</a></p>
 		</header>
-		<form name="s-request">
+		<form name="sr-form" class="sr-form" novalidate>
 		<div class="msr-form-field">
       <input type="text" required name="project_name">
       <span class="highlight"></span>
@@ -343,8 +371,9 @@
 			</div>
 		</div>
 		<div class="msr-form-field">
-			<button class="btn btn--fixed" disabled type="submit">Send Request</button>
+			<button class="btn btn--fixed" type="submit">Send Request</button>
 		</div>
 		</form>
+	</div>
 	</div>
 </div>
