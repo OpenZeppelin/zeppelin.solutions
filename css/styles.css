@@ -33,10 +33,10 @@ input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizi
 .cf         { *zoom: 1; }
 
 html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
-body { margin: 0; }
+body { margin: 0; position: relative; }
 
 body.debug * {
-	outline: 1px solid gold;
+	/* outline: 1px solid gold; */
 }
 
 html, body {
@@ -859,7 +859,6 @@ body.modal-open, body.overlay {
 	}
 
 	.container {
-		width: 1040px;
 		margin: 0 auto;
 		height: 100%;
 	}
@@ -1136,6 +1135,7 @@ html {
 	transform: translateZ(0px);
 	transition: filter 0.25s ease-out 0s, transform 0.25s ease-out 0s;
 	text-align: center;
+	flex-basis: 100px;
 }
 
 .grid--logos .col:hover, .grid--logos .col:active {
@@ -1151,8 +1151,7 @@ html {
 	object-fit: fill;
 	object-position: 50% 50%;
 	flex: 1;
-	max-width: 172px;
-	/* width: 150px; */
+	max-width: 140px;
 	height: 70px;
 }
 
@@ -1168,7 +1167,8 @@ html {
 		margin-right: 0;
 	}
 	.grid--logos .col img.logo {
-		width: 180px;
+		max-width: 172px;
+		width: 172px;
 		height: 70px;
 	}
 }
@@ -1180,16 +1180,6 @@ html {
 
 	.page-product .c-hero {
 		min-height: 660px;
-	}
-
-	.grid--logos .col img, .grid--logos .col img.logo {
-		vertical-align: middle;
-		object-fit: fill;
-		object-position: 50% 50%;
-		flex: 1;
-		/* width: 180px; */
-		width: 100%;
-		height: 70px;
 	}
 }
 
