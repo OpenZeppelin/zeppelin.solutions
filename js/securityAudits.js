@@ -33,7 +33,8 @@
       });
     }
 
-    function openModalContainer() {
+    function openModalContainer(e) {
+      e.preventDefault();
       $('#security-audit-form').addClass('active');
       $('body').addClass('overlay');
       $('.modal-sr').addClass('active');
