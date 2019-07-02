@@ -358,7 +358,7 @@ layout: default
 	/* Section: section-content */
 
   .section.section-content {
-    padding: 60px 0;
+    padding: 73px 0;
   }
 
   .section.section-content .box-text {
@@ -426,9 +426,20 @@ layout: default
 		border-bottom: solid 1px #D8D8D8;
 		display: flex;
 		flex: 1;
-		justify-content: center;
 		align-items: center;
-		margin-right: 20px;
+		justify-content: center;
+	}
+
+	.section.section-core-values .grid .col .heading {
+		display: inline-block;
+	}
+
+	.section.section-core-values .grid .col:first-child {
+		justify-content: flex-start;
+	}
+
+	.section.section-core-values .grid .col:last-child {
+		justify-content: flex-end;
 	}
 
 	.section.section-core-values .grid .col .box-container {
@@ -447,11 +458,10 @@ layout: default
 
 	.section-core-values .grid .col .heading {
 		opacity: 0.9;
-		font-size: 1.2rem;
-		color: #4e5ee4;
-		line-height: 27px;
-		margin-bottom: 16px;
-		font-weight: normal;
+    font-size: 1.34rem;
+    color: #4e5ee4;
+    margin-bottom: 1rem;
+    font-weight: normal;
 	}
 
 	.section-core-values .grid .col .description {
@@ -909,30 +919,54 @@ layout: default
 
 		.section.section-core-values .grid .col {
 			border-bottom: 0;
+			margin: 0;
+		}
+
+		.section.section-core-values .grid .col:nth-child(2) {
+    	margin-right: 50px;
+			margin-left: 50px;
+		}
+
+		.section.section-core-values .grid .col > .box-container {
 			border-right: solid 1px #D8D8D8;
 		}
 
-		.section.section-core-values .grid .col:last-child {
+		.section.section-core-values .grid .col:last-child > .box-container {
 			border: none;
-			margin: 0;
+		}
+
+		.section.section-core-values .grid .col:last-child > .box-container {
+			border: none;
 		}
 
 		.section.section-content .map {
 			padding-left: 60px;
 		}
+
 		.section.section-job-promo .job-wall-grid .box  {
 			height: 210px;
 			width: 100%;
 			max-width: 100%;
 		}
+
+		.section.section-core-values .grid .col .box-container > .description {
+			max-width: calc(100% - 50px);
+		}
+
 		.section.section-core-values .grid .col .box-container {
-			width: 80%;
-    	height: 80%;
 			padding: 0;
+			width: 100%;
 		}
+
 		.section.section-core-values .grid .row {
-    	margin-bottom: 70px;
+			margin: -5px;
+			margin-bottom: 34px;
 		}
+
+		.section.section-core-values .grid .row:last-child {
+    	margin-bottom: 0;
+		}
+
 		.section.section-job-promo, .section.section-job-promo .photo-wall {
 			height: auto;
   	}

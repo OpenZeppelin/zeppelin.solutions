@@ -402,18 +402,17 @@ section.hero {
 }
 
 .hero h1.heading {
-	max-width: 620px;
-	margin-bottom: 25px;
 	font-family: 'silka';
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 .hero .description {
 	font-size: 1.0825rem;
 	color: #2a2a47;
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.8;
   font-weight: 400;
-
 	animation-delay: 700ms;
 	max-width: 663px;
 }
@@ -422,7 +421,9 @@ section.hero {
 	min-width: 190px;
 	padding-right: 25px;
 	padding-left: 25px;
-  animation-delay: 1000ms;
+	animation-delay: 1000ms;
+	font-size: 1rem;
+	margin-top: 20px;
 }
 
 .section--gray {
@@ -924,7 +925,7 @@ html {
 
 /** **/
 .page-jobs .section .container {
-	padding: 0 2rem;
+	/* padding: 0 2rem; */
 }
 
 /** Products **/
@@ -1193,7 +1194,7 @@ html {
 
 @media (min-width: 980px) {
 	section.hero {
-		min-height: 340px;
+		min-height: 400px;
 	}
 
 	.page-product .c-hero {
