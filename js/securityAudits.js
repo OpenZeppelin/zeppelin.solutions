@@ -37,6 +37,7 @@
     }
 
     return (function() {
+      openModalContainer();
       $closeBtn.click(function(e) {
         $('#security-audit-form').removeClass('active');
         $('body').removeClass('overlay');

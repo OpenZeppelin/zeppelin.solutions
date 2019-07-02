@@ -45,11 +45,10 @@
 	.modal-sr .heading {
 		font-size: 1.8rem;
 		margin: 0;
-		margin-bottom: 15px;
 	}
 
 	.modal-sr .modal-header {
-		margin: 0 0 40px;
+		margin: 0 0 80px;
 	}
 
 	.modal-sr .description {
@@ -84,16 +83,21 @@
 		position: absolute;
 		pointer-events: none;
 		left: 5px;
-		top: 10px;
-		transition:0.2s ease all;
-		-moz-transition:0.2s ease all;
-		-webkit-transition:0.2s ease all;
+		top: -20px;
+		transition: 0.4s ease color;
 	}
 
-	.msr-form-field input:focus ~ label, .msr-form-field input:valid ~ label 		{
-		top:-20px;
-		font-size:14px;
-		color:#5060E5;
+	.msr-form-field input:focus ~ label, .msr-form-field input:valid ~ label {
+		color: #5060E5;
+	}
+
+	.msr-form-field input:valid ~ highlight, .msr-form-field input:valid ~ label, .msr-form-field input:valid {
+		opacity: 0.3;
+	}
+
+	.msr-form-field input:focus ~ label, .msr-form-field input:focus {
+		font-weight: 600;
+		opacity: 1;
 	}
 
 	.msr-form-field.bar {
@@ -198,7 +202,7 @@
 			<h2 class="heading">Request a Security Audit</h2>
 			<p class="description">You can request an audit by filling this form or by sending a mai to <a href="mailto:audits@openzeppelin.com">audits@openzeppelin.com</a></p>
 		</header>
-		<div class="msr-form-field active">
+		<div class="msr-form-field">
       <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
