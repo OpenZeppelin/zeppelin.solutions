@@ -87,8 +87,23 @@
 		transition: 0.4s ease color;
 	}
 
+	.msr-form-field label.label--lg {
+		top: -40px
+	}
+
+	.msr-form-field label > small {
+		display: block;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		transition: 0.4s ease color;
+	}
+
 	.msr-form-field input:focus ~ label, .msr-form-field input:valid ~ label {
 		color: #5060E5;
+	}
+
+	.msr-form-field input:focus ~ label small, .msr-form-field input:valid ~ label > small {
+		color: #282846;
 	}
 
 	.msr-form-field input:valid ~ label, .msr-form-field input:valid {
@@ -113,6 +128,14 @@
 		width:300px;
 	}
 
+	.msr-form-field.msr-form-field--actions > .btn {
+		margin-right: 15px;
+	}
+
+	.msr-form-field.msr-form-field--actions > .btn {
+		margin-right: 15px;
+	}
+
 .msr-form-field.bar:before, .msr-form-field.bar:after {
   content:'';
   height:2px;
@@ -123,6 +146,11 @@
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
+}
+
+.msr-form-field input::placeholder {
+	color: #7E7E90
+	opacity: 0.6;
 }
 
 .msr-form-field .bar:before {
@@ -209,73 +237,74 @@
 			<h2 class="heading">Request a Security Audit</h2>
 			<p class="description">You can request an audit by filling this form or by sending a mai to <a href="mailto:audits@openzeppelin.com">audits@openzeppelin.com</a></p>
 		</header>
+		<form name="s-request">
 		<div class="msr-form-field">
       <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Project Name</label>
+      <label>Project Name *</label>
 		</div>
 		<div class="msr-form-field">
       <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Project Website</label>
+      <label>Project Website *</label>
 		</div>
 		<div class="msr-form-field">
       <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Contact Name</label>
+      <label>Contact Name *</label>
 		</div>
 			<div class="msr-form-field">
       <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Contact email*</label>
+      <label>Contact email *</label>
 		</div>
 		<div class="msr-form-field">
       <input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Short description of audit scope</label>
+      <label>Short description of audit scope *</label>
 		</div>
 		<div class="msr-form-field">
 			<input type="text" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Is your codebase finalized and audit-ready? *</label>
+      <label class="label--lg">Is your codebase finalized and audit-ready? *<small>You can check out our guidelines on how to prepare for a third-party audit here</small></label>
 		</div>
-		<div class="msr-form-field">
-			<button class="btn" id="action-yes">YES</button>
-			<button class="btn" id="action-no">NO</button>
+		<div class="msr-form-field msr-form-field--actions">
+			<button type="button" class="btn btn--bordered" id="action-yes">YES</button>
+			<button type="button" class="btn btn--bordered" id="action-no">NO</button>
 		</div>
 		<div class="msr-form-path msr-form-path--yes hidden">
 			<div class="msr-form-field">
 				<input type="text" required>
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Link to repository</label>
+				<label class="label--lg">Link to repository *<small>If private please reach out to contact@zeppelin.solutions</small></label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required>
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Audit Commit*</label>
+				<label>Audit Commit *</label>
 			</div>
 			<div class="msr-form-field">
-				<input type="text" required>
+				<input type="text" required placeholder="Docs link">
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Estimated audit scope</label>
+				<label class="label--lg">Estimated audit scope * <small>Total lines of code including inline comments</small></label>
 			</div>
 			<div class="msr-form-field">
-				<input type="text" required>
+				<input type="text" required placeholder="MM/DD/YY">
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Target launch day</label>
+				<label>Target launch day - optional</label>
 			</div>
 			<div class="msr-form-field">
-				<input type="text" required>
+				<input type="text" required placeholder="https://docs.openzeppelin.org">
 				<span class="highlight"></span>
 				<span class="bar"></span>
 				<label>Documentation - optional</label>
@@ -284,21 +313,21 @@
 				<input type="text" required>
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Other comments - optionals</label>
+				<label>Other comments - optional</label>
 			</div>
 		</div>
 		<div class="msr-form-path msr-form-path--no hidden">
 			<div class="msr-form-field">
-				<input type="text" required>
+				<input type="text" required placeholder="MM/DD/YY">
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Estimated date for finalization</label>
+				<label>Estimated date for finalization *</label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required>
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Estimated audit scope*</label>
+				<label class="label--lg">Estimated audit scope * <small>Total lines of code including inline comments</small></label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required>
@@ -307,14 +336,15 @@
 				<label>Documentation - optional</label>
 			</div>
 			<div class="msr-form-field">
-				<input type="text" required>
+				<input type="text" required placeholder="Any other relavant information">
 				<span class="highlight"></span>
 				<span class="bar"></span>
 				<label>Other comments - optionals</label>
 			</div>
 		</div>
 		<div class="msr-form-field">
-			<button class="btn">Send Request</button>
+			<button class="btn btn--fixed" disabled type="submit">Send Request</button>
 		</div>
+		</form>
 	</div>
 </div>

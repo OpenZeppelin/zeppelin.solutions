@@ -207,6 +207,16 @@ a {
 	font-family: 'silka';
 }
 
+.btn:disabled {
+	background-color: #494a4d;
+	opacity: 0.9;
+}
+
+.btn:disabled:hover {
+	background-color: #494a4d;
+	cursor: not-allowed;
+}
+
 .btn--fixed {
 	width: 165px;
 }
@@ -269,7 +279,7 @@ a {
   box-shadow: none;
 }
 
-.btn--bordered:hover {
+.btn--bordered:hover, .btn--bordered:focus, .btn--bordered.btn--active {
   border: solid 1px #4351c5;
   background-color: #4351c5;
   color: white;

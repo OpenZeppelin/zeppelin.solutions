@@ -21,11 +21,15 @@
       $aY.click(function() {
         $cont.find('.msr-form-path--yes').removeClass('hidden');
         $cont.find('.msr-form-path--no').addClass('hidden');
+        $aN.removeClass('btn--active');
+        $(this).addClass('btn--active');
       });
 
       $aN.click(function() {
         $cont.find('.msr-form-path--no').removeClass('hidden');
         $cont.find('.msr-form-path--yes').addClass('hidden');
+        $aY.removeClass('btn--active');
+        $(this).addClass('btn--active');
       });
     }
 
