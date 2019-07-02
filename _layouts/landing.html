@@ -7,11 +7,9 @@ layout: default
 	}
 
 	.l-projects .projects-grid {
-		margin-top: 20px;
-		margin-bottom: 111px;
 		padding: 0rem;
-		margin: -19px;
-    margin-right: -23px;
+    margin: -23px;
+    margin-bottom: 100px;
 	}
 
 	.l-projects .projects-grid .item:last-child {
@@ -124,11 +122,13 @@ layout: default
 		justify-content: space-between;
 	}
 
-	.l-cta .building-grid .box {
-		height: 210px;
-		position: relative;
-		max-width: 310px;
-	}
+.l-cta .building-grid .box {
+	position: relative;
+	min-width: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
 
 	.l-cta .building-grid .box:hover .box-heading {
 		color: #4e5ee4;
@@ -154,8 +154,15 @@ layout: default
 		margin: 0;
 	}
 
-	@media (min-width: 980px) {
+	@media (min-width: 979px) {
+		.l-cta .building-grid .box {
+			height: 210px;
+			position: relative;
+			max-width: 310px;
+		}
+	}
 
+	@media (min-width: 980px) {
 	.l-projects .projects-grid .row {
     justify-content: space-between;
     margin: 0 auto;

@@ -477,12 +477,11 @@ layout: default
 
 	.section.section-job-promo .photo-wall {
 		overflow: hidden;
-		height: 800px;
-		overflow: hidden;
   }
 
 	.section.section-job-promo .row {
 		justify-content: center;
+		flex-direction: column;
   }
 
 	.section.section-job-promo .photo-wall .col {
@@ -491,14 +490,17 @@ layout: default
     position: relative;
     overflow: hidden;
 		flex: 1;
-  }
-
-	.section.section-job-promo .photo-wall .col:nth-child(2) .photo-wall-img {
-		width: 130%;
+		justify-content: center;
+    display: flex;
   }
 
 	.section.section-job-promo .photo-wall .photo-wall-img {
-		width: 100%;
+		min-width: 100%;
+		object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+		max-height: 200px;
   }
 
 	.section.section-job-promo .job-wall-grid {
@@ -509,24 +511,26 @@ layout: default
 		bottom: 25px;
   }
 
+	.section.section-job-promo .job-wall-grid .col {
+		justify-content: center;
+    display: flex;
+	}
+
 	.section.section-job-promo .job-wall-grid .box {
 		background: #FFFFFF;
 		box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
 		border-radius: 4px;
 		padding: 35px 45px;
-		height: 190px;
-		margin-right: 20px;
 		width: 100%;
-  }
-
-	.section.section-job-promo .job-wall-grid .col:last-child > .box{
-		margin-right: 0;
+		max-width: 80%;
+		margin: 0;
+		max-height: 210px;
   }
 
 	.section.section-job-promo .job-wall-grid .box-title {
 		font-size: 1.2rem;
 		font-weight: 600;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		text-align: center;
   }
 
@@ -876,6 +880,24 @@ layout: default
 	.plus-icon.active:after { transform: rotate(180deg); }
 
 	@media (min-width: 980px) {
+		.section.section-job-promo .job-wall-grid .box {
+			height: 190px;
+			margin-right: 20px;
+		}
+
+		.section.section-job-promo .job-wall-grid .col:last-child > .box{
+			margin-right: 0;
+		}
+
+		.section.section-job-promo .photo-wall .photo-wall-img {
+			height: 100%;
+			max-height: 100%;
+		}
+
+		.section.section-job-promo .row {
+			flex-direction: row;
+		}
+
 		.section.section-core-values .grid .col {
 			border-bottom: 0;
 			border-right: solid 1px #D8D8D8;
@@ -885,6 +907,8 @@ layout: default
 		}
 		.section.section-job-promo .job-wall-grid .box  {
 			height: 210px;
+			width: 100%;
+			max-width: 100%;
 		}
 		.section.section-core-values .grid .col .box-container {
 			width: 80%;

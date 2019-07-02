@@ -107,7 +107,6 @@ a {
 .container {
 	width: 100%;
 	padding: 0 1.2rem;
-	transition: padding 0.4s ease;
 }
 
 /** Grid **/
@@ -132,8 +131,8 @@ a {
   flex: 0 1 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-bottom: 5px;
@@ -160,6 +159,8 @@ a {
   max-width: 100%;
 	flex-shrink: 1;
 	margin-bottom: 1rem;
+	flex-basis: 100px;
+	min-width: 200px;
 }
 
 .grid > .row > .col:last-child, .col:last-child {
@@ -724,7 +725,7 @@ h1, h2, h3, h4, h5 {
 .p-nav .container {
 	display: flex;
 	background-color: transparent;
-
+	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	position: absolute;
@@ -928,7 +929,7 @@ html {
 }
 
 .page-product .c-hero .container:nth-child(1) {
-	height: 330px;
+	min-height: 330px;
 }
 
 .page-product .c-hero .container.term-container {
