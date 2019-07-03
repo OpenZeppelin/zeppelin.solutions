@@ -1,7 +1,6 @@
 (function($) {
   function securityAudits() {
     var $btn = $('.request-audit-btn');
-    var $closeBtn = $('.icon-close');
     var validForm = false;
 
     // Validators map - validates given an input type
@@ -64,6 +63,14 @@
         .remove();
     }
 
+    function showSuccess() {
+      $('.modal-sr')
+        .find('.view-2')
+        .removeClass('hidden');
+
+      $('.modal-sr').addClass('modal-sr--sm');
+    }
+
     function modalFunc() {
       var $cont = $('#security-request');
       var $aY = $('#action-yes');
@@ -96,6 +103,8 @@
         var values = $(this).serializeArray();
         // console.log(values);
         // Send values
+        $('.modal-sr .sub-container').remove();
+        showSuccess();
       });
     }
 
@@ -107,7 +116,7 @@
     }
 
     return (function() {
-      $closeBtn.click(function(e) {
+      $('.close-action').click(function(e) {
         $('#security-audit-form').removeClass('active');
         $('body').removeClass('overlay');
         $('.modal-sr').removeClass('active');
