@@ -91,15 +91,16 @@
 
  .msr-form-field input {
   font-size: 1rem;
-  padding: 10px 10px 10px 5px;
+  padding: 10px 0;
   display: block;
   max-width: 300px;
 	width: 100%;
-  border: none;
+	border: none;
   border-bottom: 1px solid #A9A9B5;
+	transition: 0.1s ease all;
 }
 
-	.msr-form-field input:focus { outline:none; }
+	.msr-form-field input:focus { outline:none; padding: 10px; }
 
 	.msr-form-field label {
 		color:#999;
@@ -107,15 +108,14 @@
 		font-weight: normal;
 		pointer-events: none;
 		transition: 0.4s ease all;
-	}
-
-	.msr-form-field.msr-form-field--sm label {
-		top: -40px
+		padding: 0;
+		margin-bottom: 5px;
 	}
 
 	.msr-form-field.msr-form-field--lg {
 		width: 500px;
 	}
+
 	.msr-form-field.msr-form-field--lg input {
 		width: 100%;
 		max-width: 100%;

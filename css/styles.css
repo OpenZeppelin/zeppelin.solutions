@@ -809,6 +809,7 @@ body.modal-open, body.overlay {
 	z-index: 2;
 	top: 0;
 	left: 0;
+	overflow: visible;
 }
 
 .container {
