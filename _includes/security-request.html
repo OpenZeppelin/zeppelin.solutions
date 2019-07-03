@@ -71,6 +71,8 @@
   	margin-bottom:45px;
 		opacity: 1;
 		transition: opacity 0.4s cubic-bezier(0.3, 0, 0, 1.4);
+		display: flex;
+    flex-direction: column-reverse;
 	}
 
 	.msr-form-field .error {
@@ -78,7 +80,7 @@
     position: absolute;
     right: 6px;
     transform: translateX(50%);
-    top: 0;
+    bottom: 20px;
 	}
 
 	.msr-form-field .error .error-icon {
@@ -101,17 +103,22 @@
 
 	.msr-form-field label {
 		color:#999;
-		font-size: 1rem;
+		font-size: 0.96rem;
 		font-weight: normal;
-		position: absolute;
 		pointer-events: none;
-		left: 5px;
-		top: -20px;
 		transition: 0.4s ease all;
 	}
 
-	.msr-form-field label.label--lg {
+	.msr-form-field.msr-form-field--sm label {
 		top: -40px
+	}
+
+	.msr-form-field.msr-form-field--lg {
+		width: 500px;
+	}
+	.msr-form-field.msr-form-field--lg input {
+		width: 100%;
+		max-width: 100%;
 	}
 
 	.msr-form-field label > small {
@@ -121,103 +128,49 @@
 		transition: 0.4s ease color;
 	}
 
-	.msr-form-field input:focus ~ label, .msr-form-field input:valid ~ label {
-		color: #5060E5;
-	}
+.msr-form-field input:focus ~ label, .msr-form-field input:valid ~ label {
+	color: #5060E5;
+}
 
-	.msr-form-field input:focus ~ label small, .msr-form-field input:valid ~ label > small {
-		color: #282846;
-	}
+.msr-form-field input:focus ~ label small, .msr-form-field input:valid ~ label > small {
+	color: #282846;
+}
 
-	.msr-form-field input:valid ~ label, .msr-form-field input:valid {
-		opacity: 0.3;
-	}
+.msr-form-field input:valid ~ label, .msr-form-field input:valid {
+	opacity: 0.3;
+}
 
-	.msr-form-field input:focus {
-		border-bottom: 1px solid #A9A9B5!important;
-	}
+.msr-form-field input:focus {
+	border-bottom: 1px solid #A9A9B5!important;
+}
 
-	.msr-form-field input:valid {
-		border-bottom: none;
-	}
+.msr-form-field input:valid {
+	border-bottom: none;
+}
 
-	.msr-form-field.msr-form-field--touched input:invalid {
-		border-bottom: 1px solid #cd3d64!important;
-	}
+.msr-form-field.msr-form-field--touched input:invalid {
+	border-bottom: 1px solid #cd3d64!important;
+}
 
-	.msr-form-field input:focus ~ label, .msr-form-field input:focus, .msr-form-field input:valid ~ highlight {
-		opacity: 1;
-	}
+.msr-form-field input:focus ~ label, .msr-form-field input:focus, .msr-form-field input:valid ~ highlight {
+	opacity: 1;
+}
 
-	.msr-form-field.bar {
-		position:relative;
-		display:block;
-		width:300px;
-	}
+.msr-form-field--actions {
+	flex-direction: row;
+}
 
-	.msr-form-field.msr-form-field--actions > .btn {
-		margin-right: 15px;
-	}
+.msr-form-field.msr-form-field--actions > .btn {
+	margin-right: 15px;
+}
 
-	.msr-form-field.msr-form-field--actions > .btn {
-		margin-right: 15px;
-	}
-
-.msr-form-field.bar:before, .msr-form-field.bar:after {
-  content:'';
-  height:2px;
-  width:0;
-  bottom:1px;
-  position:absolute;
-  background: #282846;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
+.msr-form-field.msr-form-field--actions > .btn {
+	margin-right: 15px;
 }
 
 .msr-form-field input::placeholder {
 	color: #7E7E90
 	opacity: 0.6;
-}
-
-.msr-form-field .bar:before {
-  left:50%;
-}
-.msr-form-field .bar:after {
-  right:50%;
-}
-
-.msr-form-fieldinput:focus ~ .msr-form-field.bar:before, .msr-form-fieldinput:focus ~ .msr-form-field.bar:after {
-  width:50%;
-}
-
-.msr-form-field.highlight {
-  position:absolute;
-  height:60%;
-  width:100px;
-  top:25%;
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
-}
-
-.msr-form-fieldinput:focus ~ .msr-form-field.highlight {
-  -webkit-animation:iHL 0.3s ease;
-  -moz-animation:iHL 0.3s ease;
-  animation:iHL 0.3s ease;
-}
-
-@-webkit-keyframes iHL {
-	from { background:#282846; }
-  to 	{ width:0; background:transparent; }
-}
-@-moz-keyframes iHL {
-	from { background:#282846; }
-  to 	{ width:0; background:transparent; }
-}
-@keyframes iHL {
-	from { background:#282846; }
-  to 	{ width:0; background:transparent; }
 }
 
 .modal-sr .icon-close {
@@ -268,105 +221,105 @@
 		<form name="sr-form" class="sr-form" novalidate>
 		<div class="msr-form-field">
       <input type="text" required name="project_name">
-      <span class="highlight"></span>
-      <span class="bar"></span>
+
+
       <label>Project Name *</label>
 		</div>
 		<div class="msr-form-field">
       <input type="text" required name="project_website">
-      <span class="highlight"></span>
-      <span class="bar"></span>
+
+
       <label>Project Website *</label>
 		</div>
 		<div class="msr-form-field">
       <input type="text" required name="contact_name">
-      <span class="highlight"></span>
-      <span class="bar"></span>
+
+
       <label>Contact Name *</label>
 		</div>
 			<div class="msr-form-field">
       <input type="email" required name="email">
-      <span class="highlight"></span>
-      <span class="bar"></span>
+
+
       <label>Contact email *</label>
 		</div>
 		<div class="msr-form-field">
       <input type="text" required name="project_scope">
-      <span class="highlight"></span>
-      <span class="bar"></span>
+
+
       <label>Short description of audit scope *</label>
 		</div>
-		<div class="msr-form-field">
+		<div class="msr-form-field msr-form-field--lg">
 			<input type="text" required name="project_codebase_finished">
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label class="label--lg">Is your codebase finalized and audit-ready? *<small>You can check out our guidelines on how to prepare for a third-party audit here</small></label>
+
+
+      <label>Is your codebase finalized and audit-ready? *<small>You can check out our guidelines on how to prepare for a third-party audit here</small></label>
 		</div>
 		<div class="msr-form-field msr-form-field--actions">
 			<button type="button" class="btn btn--bordered" id="action-yes">YES</button>
 			<button type="button" class="btn btn--bordered" id="action-no">NO</button>
 		</div>
 		<div class="msr-form-path msr-form-path--yes hidden">
-			<div class="msr-form-field">
+			<div class="msr-form-field msr-form-field--sm">
 				<input type="text" required name="project_repository">
-				<span class="highlight"></span>
-				<span class="bar"></span>
-				<label class="label--lg">Link to repository *<small>If private please reach out to contact@zeppelin.solutions</small></label>
+
+
+				<label>Link to repository *<small>If private please reach out to contact@zeppelin.solutions</small></label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required name="project_audit_commit">
-				<span class="highlight"></span>
-				<span class="bar"></span>
+
+
 				<label>Audit Commit *</label>
 			</div>
-			<div class="msr-form-field">
+			<div class="msr-form-field msr-form-field--sm">
 				<input type="text" required placeholder="Docs link" name="project_audit_scope">
-				<span class="highlight"></span>
-				<span class="bar"></span>
-				<label class="label--lg">Estimated audit scope * <small>Total lines of code including inline comments</small></label>
+
+
+				<label>Estimated audit scope * <small>Total lines of code including inline comments</small></label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required placeholder="MM/DD/YY" name="project_launch_date">
-				<span class="highlight"></span>
-				<span class="bar"></span>
+
+
 				<label>Target launch day - optional</label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required placeholder="https://docs.openzeppelin.org">
-				<span class="highlight"></span>
-				<span class="bar"></span>
+
+
 				<label>Documentation - optional</label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required name="project_comments">
-				<span class="highlight"></span>
-				<span class="bar"></span>
+
+
 				<label>Other comments - optional</label>
 			</div>
 		</div>
 		<div class="msr-form-path msr-form-path--no hidden">
 			<div class="msr-form-field">
 				<input type="text" required placeholder="MM/DD/YY" name="project_date_finalization">
-				<span class="highlight"></span>
-				<span class="bar"></span>
+
+
 				<label>Estimated date for finalization *</label>
 			</div>
-			<div class="msr-form-field">
+			<div class="msr-form-field msr-form-field--sm">
 				<input type="text" required  name="project_estimated_audit_scope">
-				<span class="highlight"></span>
-				<span class="bar"></span>
-				<label class="label--lg">Estimated audit scope * <small>Total lines of code including inline comments</small></label>
+
+
+				<label>Estimated audit scope * <small>Total lines of code including inline comments</small></label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required name="project_documentation_link">
-				<span class="highlight"></span>
-				<span class="bar"></span>
+
+
 				<label>Documentation - optional</label>
 			</div>
 			<div class="msr-form-field">
 				<input type="text" required placeholder="Any other relavant information" name="project_comments">
-				<span class="highlight"></span>
-				<span class="bar"></span>
+
+
 				<label>Other comments - optionals</label>
 			</div>
 		</div>
