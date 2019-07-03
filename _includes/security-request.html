@@ -53,7 +53,7 @@
 		position: fixed;
 		overflow-y: auto;
 		height: calc(100% - 100px);
-    width: 700px;
+		width: calc(100% - 4rem);
 	}
 
 	.modal-sr .heading {
@@ -62,14 +62,16 @@
 	}
 
 	.modal-sr .modal-header {
-		margin: 0 0 80px;
+		margin: 0 0 20px;
 	}
 
 	.modal-sr .description {
 		font-size: 0.98rem;
+		max-width: 400px;
 	}
 
 	.msr-form-field {
+		max-width: 100%;
 		width: 300px;
 		height: 70px;
 		box-sizing: border-box;
@@ -93,6 +95,7 @@
 		vertical-align: middle;
     font-size: 15px;
     margin-right: 5px;
+		z-index: 100;
 	}
 
  .msr-form-field input {
@@ -220,6 +223,9 @@
 	}
 	.modal-sr .heading {
 		font-size: 2rem;
+	}
+	.modal-sr .description {
+		max-width: 100%;
 	}
 }
 
