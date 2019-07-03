@@ -36,7 +36,7 @@ html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 body { margin: 0; position: relative; }
 
 body.debug * {
-	/* outline: 1px solid gold; */
+	outline: 1px solid gold;
 }
 
 html, body {
@@ -1136,46 +1136,50 @@ html {
 
 /** Logos **/
 
-.grid--logos .row {
-	justify-content: space-between;
+.grid-logos .grid-logos__row {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
-	justify-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
-	position: relative;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
+	margin: 0 auto;
 	justify-content: center;
-	align-content: center;
 }
 
-.grid--logos .col {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	object-fit: scale-down;
-	object-position: 50% 50%;
-	/**filter: invert(0.5);**/
+.grid-logos .grid-logos__col {
 	transform: translateZ(0px);
-	transition: filter 0.25s ease-out 0s, transform 0.25s ease-out 0s;
+	transition: transform 0.25s ease-out 0s;
+	display: inline-block;
+	/** Mobile should be half **/
+	width: 50%;
 	text-align: center;
-	flex-basis: 100px;
 }
 
-.grid--logos .col:hover, .grid--logos .col:active {
-	filter: none;
-	transform: translateZ(0px) scale(1.1);
-	transition: filter 0.25s ease-out 0s, transform 0.25s ease-out 0s;
-}
-
-.grid--logos .col img.logo {
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
-	object-fit: fill;
-	object-position: 50% 50%;
-	flex: 1;
-	max-width: 140px;
+.grid-logos .grid-logos__col {
 	height: 70px;
+	line-height: 70px;
+}
+
+.grid-logos .grid-logos__col:hover, .grid-logos .grid-logos__col:active {
+	transform: translateZ(0px) scale(1.1);
+	transition: transform 0.25s ease-out 0s;
+}
+
+.grid-logos .grid-logos__logo {
+	width: 80%;
+	height: auto;
+	object-fit: contain;
+	vertical-align: middle;
 }
 
 .page.fixed-sub-nav nav + section > .container:nth-child(1) {
@@ -1195,10 +1199,20 @@ html {
 	.page-product .c-explained .box:last-child {
 		margin-right: 0;
 	}
-	.grid--logos .col img.logo {
-		max-width: 172px;
-		width: 172px;
+
+	.grid-logos .grid-logos__row {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	.grid-logos .grid-logos__col {
+		width: auto;
+		max-width: 180px;
 		height: 70px;
+	}
+
+	.grid-logos .grid-logos__logo {
+		width: 100%;
 	}
 }
 
