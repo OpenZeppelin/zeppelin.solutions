@@ -221,6 +221,11 @@ a {
 	width: 165px;
 }
 
+.btn--lg {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
 .btn.btn--ghost {
   border: none;
   background-color: transparent;
