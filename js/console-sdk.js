@@ -1,12 +1,31 @@
-function createElement(type = 'span', str, parent) {
+var typeWrap = $('.type-wrap.running-animation');
+
+function createElement(type = 'span', props, str, parent) {
+  var parent = parent || typeWrap;
   var el = document.createElement(type);
+
+  if (props && 'object' === typeof props) {
+    Object.keys(props).forEach((p) => {
+      // Adding attributes
+      if (attrs.includes(p)) {
+        el.setAttribute(p, props[p]);
+      }
+    });
+  }
+
   el.innerHTML = str;
-  $('.type-wrap').append(el);
+
+  if (parent) {
+    $(parent).append(el);
+  }
+
   return el;
 }
 
+function implementProps(props, e) {}
+
 function type(text, cb = () => {}, opts = {}) {
-  var el = createElement('span', '', '.type-wrap');
+  var el = createElement('span', null, '', '.type-wrap');
   $(el).typed({
     strings: ['<span style="color:white">' + text + '</span>'],
     loop: false,
@@ -28,6 +47,7 @@ function f2(done) {
     setTimeout(function() {
       createElement(
         'div',
+        null,
         '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Compiled contracts with solc 0.5.9 </br> (commit.e560f70d)</span>',
         '.type-wrap'
       );
@@ -35,6 +55,7 @@ function f2(done) {
     setTimeout(function() {
       createElement(
         'span',
+        null,
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a contract to instantiate&nbsp;</span>',
         '.type-wrap'
       );
@@ -42,6 +63,7 @@ function f2(done) {
         setTimeout(function() {
           createElement(
             'span',
+            null,
             '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
             '.type-wrap'
           );
@@ -49,24 +71,28 @@ function f2(done) {
             setTimeout(function() {
               createElement(
                 'div',
+                null,
                 '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Added contract Counter</span>',
                 '.type-wrap'
               );
               setTimeout(function() {
                 createElement(
                   'div',
+                  null,
                   '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Contract Counter deployed</span>',
                   '.type-wrap'
                 );
                 setTimeout(function() {
                   createElement(
                     'div',
+                    null,
                     '<strong>All contracts have been deployed</strong>',
                     '.type-wrap'
                   );
                   setTimeout(function() {
                     createElement(
                       'span',
+                      null,
                       '<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Do you want to call a function on </br> the instance after creating it?&nbsp;</span>',
                       '.type-wrap'
                     );
@@ -77,12 +103,14 @@ function f2(done) {
                           setTimeout(function() {
                             createElement(
                               'div',
+                              null,
                               '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Setting everything up to </br> create contract instances</span>',
                               '.type-wrap'
                             );
                             setTimeout(function() {
                               createElement(
                                 'div',
+                                null,
                                 '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Instance created at </br>0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
                                 '.type-wrap'
                               );
@@ -109,6 +137,7 @@ function f3(done) {
     setTimeout(function() {
       createElement(
         'span',
+        null,
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         '.type-wrap'
       );
@@ -116,6 +145,7 @@ function f3(done) {
         setTimeout(function() {
           createElement(
             'span',
+            null,
             '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
             '.type-wrap'
           );
@@ -123,6 +153,7 @@ function f3(done) {
             setTimeout(function() {
               createElement(
                 'div',
+                null,
                 '<span style="color:#4de4e3">0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
                 '.type-wrap'
               );
@@ -130,6 +161,7 @@ function f3(done) {
             setTimeout(function() {
               createElement(
                 'div',
+                null,
                 '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
                 '.type-wrap'
               );
@@ -139,6 +171,7 @@ function f3(done) {
                   setTimeout(function() {
                     createElement(
                       'span',
+                      null,
                       '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Transaction successful. Transaction hash: </br> 0xd203b6e16f3b6e4922bb19251bd3b90958a7d14c1e</br>1a133631b934e20820d04</span>',
                       '.type-wrap'
                     );
@@ -160,6 +193,7 @@ function f4(done) {
     setTimeout(function() {
       createElement(
         'span',
+        null,
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         '.type-wrap'
       );
@@ -167,6 +201,7 @@ function f4(done) {
         setTimeout(function() {
           createElement(
             'span',
+            null,
             '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
             '.type-wrap'
           );
@@ -174,6 +209,7 @@ function f4(done) {
             setTimeout(function() {
               createElement(
                 'div',
+                null,
                 '<span style="color:#4de4e3">0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
                 '.type-wrap'
               );
@@ -181,6 +217,7 @@ function f4(done) {
             setTimeout(function() {
               createElement(
                 'div',
+                null,
                 '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
                 '.type-wrap'
               );
@@ -190,6 +227,7 @@ function f4(done) {
                   setTimeout(function() {
                     createElement(
                       'span',
+                      null,
                       '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Method \'value()\' returned: 1</span>',
                       '.type-wrap'
                     );
@@ -212,6 +250,7 @@ function f5(done) {
     setTimeout(function() {
       createElement(
         'span',
+        null,
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         '.type-wrap'
       );
@@ -219,23 +258,27 @@ function f5(done) {
         setTimeout(function() {
           createElement(
             'div',
+            null,
             '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Compiled contracts with solc 0.5.9 </br> (commit.e560f70d)</span>',
             '.type-wrap'
           );
           createElement(
             'div',
+            null,
             '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Contract Counter deployed</span>',
             '.type-wrap'
           );
           setTimeout(function() {
             createElement(
               'div',
+              null,
               '<strong>All contracts have been deployed</strong>',
               '.type-wrap'
             );
             setTimeout(function() {
               createElement(
                 'span',
+                null,
                 '<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Which instances would you like to upgrade?&nbsp;</span></br>',
                 '.type-wrap'
               );
@@ -247,6 +290,7 @@ function f5(done) {
                       setTimeout(function() {
                         createElement(
                           'div',
+                          null,
                           '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Instance upgraded at </br>0xCfEB869F69431e42cdB54A4F4f105C19C080A601.</br> Transaction receipt: </br>0x56363451719e42a4dab366f450c4130387aa3413.</span>',
                           '.type-wrap'
                         );
@@ -265,20 +309,38 @@ function f5(done) {
 }
 
 (function($) {
-  f2(function() {
-    setTimeout(function() {
-      $('.type-wrap').empty();
-      f3(function() {
+  var animation = null;
+
+  function initAnimation() {
+    return setTimeout(function() {
+      f2(function() {
         setTimeout(function() {
-          $('.type-wrap').empty();
-          f4(function() {
-            $('.type-wrap').empty();
-            f5(function() {
-              console.log('Animation done');
-            });
+          typeWrap.empty();
+          f3(function() {
+            setTimeout(function() {
+              typeWrap.empty();
+              f4(function() {
+                typeWrap.empty();
+                f5(function() {
+                  console.log('Animation done');
+                });
+              });
+            }, 2000);
           });
         }, 2000);
       });
-    }, 2000);
-  });
+    }, 0);
+  }
+
+  function init() {
+    $('.term__menu-list__item').click(function() {
+      clearTimeout(animation);
+      $('.type-wrap').remove();
+      $('.wrap').append(createElement('div'));
+    });
+  }
+
+  //
+  init();
+  animation = initAnimation();
 })(jQuery);
