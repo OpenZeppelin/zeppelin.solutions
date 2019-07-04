@@ -9,6 +9,68 @@ layout: default
 	.page-sdk .c-hero .description {
 		max-width: 770px;
 	}
+
+	.section__bg {
+    position: absolute;
+		width: 100%;
+		height: 0;
+		padding: 0;
+		padding-bottom: calc(100% * 3 / 4);
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+		background-position: top center;
+	}
+
+	.page-sdk .term-container {
+    height: 430px;
+	}
+
+	.page-sdk .term-container .term__menu-list {
+		display: flex;
+    flex-direction: row;
+	}
+
+	.page-sdk .term-container .term__menu-list {
+		display: flex;
+    flex-direction: row;
+		justify-content: center;
+		padding: 25px 0;
+	}
+
+	.page-sdk .term-container .term__menu-list .term__menu-list__item {
+		margin-right: 34px;
+	}
+
+	.page-sdk .term-container .term__menu-list .term__menu-list__item:last-child {
+		margin-right: 0;
+	}
+
+	.page-sdk .term-container .term__menu-list .term__menu-list__link {
+		text-transform: uppercase;
+		opacity: 0.6;
+		font-size: 1rem;
+		color: #3C3C57;
+		letter-spacing: 0.5px;
+		font-weight: bold;
+		font-family: Menlo, sans-serif;
+		cursor: pointer;
+	}
+
+	.page-sdk .term-container .term__menu-list .term__menu-list__item.term__menu-list__link--active, .page-sdk .term-container .term__menu-list .term__menu-list__link:hover {
+		color: #4e5ee4;
+	}
+
+	@media (min-width: 900px) {
+		.page-sdk .term-container {
+			margin-top: 45px;
+		}
+
+		.section__bg {
+			background-size: contain;
+		}
+	}
+
 </style>
 
 <main class="page page-sdk page-product">
@@ -31,28 +93,45 @@ layout: default
 		</div>
 	</nav>
 	<section class="section hero c-hero section--cutted">
+		<div class="section__bg" style="background-image:url('/images/bg/bg_sdk.svg')">
+		</div>
 		<div class="container">
 			<h1 class="heading">The Ultimate Smart Contract Toolkit</h1>
 			<p class="description">OpenZeppelin SDK makes smart contract development easy. Save hours of development time by compiling, upgrading, and deploying smart contracts with our CLI.</p>
 			<a href="https://github.com/openzeppelin/openzeppelin-contracts" class="btn cta">Get Started</a>
 		</div>
 		<div class="container term-container">
-		<section class="terminal-section p-animated" id="terminal-section">
-			<div class="terminal terminal-up" id="terminal-sdk">
-				<div class="wrap">
-					<div class="type-wrap"></div>
+			<section class="terminal-section p-animated" id="terminal-section">
+				<div class="terminal terminal-up" id="terminal-sdk">
+					<div class="wrap">
+						<div class="type-wrap"></div>
+					</div>
+					<div class="top-terminal">
+						<span class="terminal-control red"></span>
+						<span class="terminal-control yellow"></span>
+						<span class="terminal-control green"></span>
+						<div class="terminal-title" id="bash-title">bash</div>
+					</div>
+					<div class="bottom-terminal " id="terminal-bottom"></div>
 				</div>
-				<div class="top-terminal">
-					<span class="terminal-control red"></span>
-					<span class="terminal-control yellow"></span>
-					<span class="terminal-control green"></span>
-					<div class="terminal-title" id="bash-title">bash</div>
-				</div>
-				<div class="bottom-terminal " id="terminal-bottom"></div>
-			</div>
-		</section>
+			</section>
+			<nav class="term__menu">
+				<ul class="term__menu-list">
+					<li class="term__menu-list__item">
+						<a class="term__menu-list__link">create</a>
+					</li>
+					<li class="term__menu-list__item">
+						<a class="term__menu-list__link">send-tx</a>
+					</li>
+					<li class="term__menu-list__item term__menu-list__item--active">
+						<a class="term__menu-list__link">upgrade</a>
+					</li>
+					<li class="term__menu-list__item term__menu-list__item--active">
+						<a class="term__menu-list__link">call</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<div class="fake-bg fake-bg--gray"></div>
 	</section>
 	<section class="c-explained">
 		<div class="container">
@@ -63,8 +142,8 @@ layout: default
 				<div class="row">
 					<div class="box">
 						<div class="icon">
-							<svg width="42px" height="45px" viewBox="0 0 42 45">
-									<g id="Zeppelin-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<svg>
+									<g id="Zeppelin-Desktop"  fill="none" fill-rule="evenodd">
 											<g id="Subsite_Contracts_full" transform="translate(-214.000000, -1000.000000)" fill="#282846" fill-rule="nonzero">
 													<g id="lock" transform="translate(214.000000, 1000.000000)">
 															<path d="M25.372,23.0376411 C25.2168182,23.2028528 25.0616364,23.357631 24.8858182,23.5021573 C24.741,23.6054032 24.6272727,23.729244 24.5238182,23.8530847 L24.2134545,24.1317036 L24.2549091,24.2556351 L24.2549091,24.4517843 C24.2341818,24.6685282 24.2341818,24.792369 24.2445455,24.9265524 L24.2445455,26.2271069 C24.2445455,26.805121 24.2445455,27.3934778 24.2341818,27.9818347 C24.2238182,28.3225101 24.1720909,28.652752 24.0790909,28.9933367 C24.0583636,29.0655544 24.0273636,29.1482056 23.9963636,29.2410181 C23.8826364,29.5300706 23.7585455,29.7674093 23.624,29.9739012 C23.5722727,30.0358669 23.5205455,30.1080847 23.4584545,30.1700504 C23.2309091,30.4487601 23.0137273,30.6449093 22.7759091,30.7996875 C22.4345455,31.0061794 22.145,31.1300202 21.8037273,31.2331754 L21.5761818,31.2847984 C21.4003636,31.3260786 21.1935455,31.3260786 21.0487273,31.3260786 C20.8109091,31.3260786 20.604,31.3260786 20.3661818,31.2744556 L20.2420909,31.2434274 C19.8594545,31.1299294 19.5594545,31.0060887 19.3009091,30.840877 L19.1871818,30.7686593 C18.9906364,30.6448185 18.7735455,30.4486694 18.5562727,30.2008972 C18.4839091,30.107994 18.4218182,30.0357762 18.3804545,29.9635585 C18.2356364,29.7674093 18.1219091,29.5300706 18.0184545,29.2617036 C17.9770909,29.1482056 17.9357273,29.0655544 17.9150909,28.9726512 C17.822,28.6424093 17.7702727,28.3120766 17.7702727,27.9714919 C17.7599091,27.3934778 17.7599091,26.805121 17.7599091,26.2271069 L17.7599091,24.9987702 C17.7702727,24.7922782 17.7702727,24.6580948 17.7599091,24.534254 L17.7081818,24.0594859 L17.4806364,23.852994 C17.3771818,23.7291532 17.2634545,23.6053125 17.1186364,23.4917238 C16.9428182,23.3575403 16.7876364,23.2027621 16.6429091,23.0478931 L16.5498182,22.9447379 C15.4018182,21.51 14.9984545,19.7552722 15.4431818,18.0108871 C15.5155455,17.7219254 15.6087273,17.4432157 15.7120909,17.1748488 L15.7638182,17.0613508 C15.9913636,16.5453024 16.3016364,16.0704435 16.6636364,15.6472984 L16.736,15.5647379 C16.8290909,15.4512399 17.0049091,15.296371 17.1807273,15.1415927 L17.3566364,14.9867238 C17.5220909,14.8421976 17.6772727,14.7390423 17.8427273,14.6254536 C17.9358182,14.5634879 17.9979091,14.5222077 18.0702727,14.4809274 C19.9035455,13.436129 22.1115455,13.3745262 23.9345455,14.4809274 C24.0069091,14.5222077 24.0586364,14.5634879 24.1207273,14.6047681 C24.3172727,14.7286089 24.4827273,14.8421069 24.6275455,14.9660383 L24.7930909,15.1104738 C24.9999091,15.2962802 25.1654545,15.4511492 25.3205455,15.6265222 L25.3929091,15.7090827 C25.7031818,16.0703528 26.0031818,16.545121 26.2306364,17.0509173 L26.2823636,17.1747581 C26.3961818,17.443125 26.4892727,17.7218347 26.5616364,18.0107964 C26.9957273,19.7552722 26.6028182,21.51 25.4547273,22.9447379 L25.372,23.0376411 Z" id="Shape"></path>
