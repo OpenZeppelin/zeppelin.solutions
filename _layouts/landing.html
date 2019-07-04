@@ -6,12 +6,6 @@ layout: default
 		margin-bottom: 60px;
 	}
 
-	.l-projects .projects-grid {
-		padding: 0rem;
-    margin: -23px;
-    margin-bottom: 100px;
-	}
-
 	.l-projects .projects-grid .item:last-child {
 		margin-right: 0;
 	}
@@ -132,40 +126,45 @@ layout: default
 	margin-bottom: 20px;
 }
 
+.l-cta .building-grid .box:hover .box-heading {
+	color: #4e5ee4;
+}
 
-	.l-cta .building-grid .box:hover .box-heading {
-		color: #4e5ee4;
+.l-cta .building-grid .box:hover .placed-icon #icon {
+	fill: #4e5ee4;
+}
+
+.l-cta .building-grid .box:hover .placed-icon {
+	opacity: 1;
+}
+
+.l-cta .building-grid .box .placed-icon {
+	position: absolute;
+	right: 33px;
+	top: 33px;
+	opacity: 0.4;
+	transition: all 0.25s linear;
+}
+
+.grid--challenges .col {
+	margin: 0;
+}
+
+@media (min-width: 769px) {
+	.l-cta .building-grid .box {
+		height: 210px;
+		position: relative;
+		max-width: 310px;
+	}
+}
+
+@media (min-width: 980px) {
+
+	.l-projects .grid-logos {
+		margin: -20px -4px -20px -25px;
+		margin-bottom: 100px;
 	}
 
-	.l-cta .building-grid .box:hover .placed-icon #icon {
-		fill: #4e5ee4;
-	}
-
-	.l-cta .building-grid .box:hover .placed-icon {
-		opacity: 1;
-	}
-
-	.l-cta .building-grid .box .placed-icon {
-		position: absolute;
-    right: 33px;
-    top: 33px;
-		opacity: 0.4;
-		transition: all 0.25s linear;
-	}
-
-	.grid--challenges .col {
-		margin: 0;
-	}
-
-	@media (min-width: 979px) {
-		.l-cta .building-grid .box {
-			height: 210px;
-			position: relative;
-			max-width: 310px;
-		}
-	}
-
-	@media (min-width: 980px) {
 	.l-projects .projects-grid .row {
     justify-content: space-between;
     margin: 0 auto;
@@ -222,25 +221,25 @@ layout: default
 	<section class="section l-projects">
 		<div class="container container--lg">
 			<h6 class="sub-heading">The world’s leading projects trust OpenZeppelin</h6>
-			<div class="grid projects-grid grid--logos">
-				<div class="row">
-					<span class="col">
-						<img class="logo" src="../images/new-logos/brave.svg" />
+			<div class="grid-logos">
+				<div class="grid-logos__row">
+					<span class="grid-logos__col">
+						<img class="grid-logos__logo" src="../images/new-logos/brave.svg" />
 					</span>
-					<span class="col">
-						<img class="logo" src="../images/new-logos/augur.svg" />
+					<span class="grid-logos__col">
+						<img class="grid-logos__logo" src="../images/new-logos/augur.svg" />
 					</span>
-					<span class="col">
-						<img class="logo" src="../images/new-logos/dfinity.svg" />
+					<span class="grid-logos__col">
+						<img class="grid-logos__logo" src="../images/new-logos/dfinity.svg" />
 					</span>
-					<span class="col">
-						<img class="logo" src="../images/new-logos/bitgo.svg" />
+					<span class="grid-logos__col">
+						<img class="grid-logos__logo" src="../images/new-logos/bitgo.svg" />
 					</span>
-					<span class="col">
-						<img class="logo" src="../images/new-logos/golem.svg" />
+					<span class="grid-logos__col">
+						<img class="grid-logos__logo" src="../images/new-logos/golem.svg" />
 					</span>
-					<span class="col">
-						<img class="logo" src="../images/new-logos/decentraland.svg" />
+					<span class="grid-logos__col">
+						<img class="grid-logos__logo" src="../images/new-logos/decentraland.svg" />
 					</span>
 				</div>
 			</div>

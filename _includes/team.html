@@ -1,6 +1,7 @@
 <style type="text/css">
 
   .team-box {
+		padding-top: 20px;
     height: 255px;
     width: 19%;
     min-width: 150px;
@@ -35,7 +36,7 @@
   }
 
   .team-box p.small {
-		
+
     opacity: 0.9;
     font-size: 0.9rem;
     font-weight: 400;
@@ -43,6 +44,16 @@
     text-align: center;
     color: #4a4a4a;
 		margin-bottom: 5px;
+  }
+
+	.team-container {
+		margin: 20px -20px 60px;
+	}
+
+	@media (min-width: 900px) {
+		.team-container {
+			margin: 20px -20px 40px;
+		}
   }
 
   @media (max-width: 900px) {
@@ -54,9 +65,6 @@
     .team-img {
       height: 80px !important;
       width: 80px !important;
-    }
-    .team-container {
-      margin: 0 -20px;
     }
   }
 </style>
