@@ -1259,6 +1259,7 @@ html {
 	}
 
 	.page-product .c-what-else .box .box-side {
+		margin: 0;
 		margin-right: 30px;
 	}
 
