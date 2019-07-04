@@ -800,7 +800,7 @@ html, body, .root {
 }
 
 .page {
-	transition: all 0.2s ease;
+	/* transition: all 0.2s ease; */
 	min-height: calc(100% - 300px);
 }
 
@@ -975,7 +975,7 @@ html {
 	position: relative;
 	padding-top: 10px;
 	background-color: #F8F8FA;
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 }
 
 .page-product .p-animated.expanded {
@@ -1002,7 +1002,12 @@ html {
 	flex-direction: column;
 	text-align: center;
 	border-bottom: solid 1px #D8D8D8;
-	margin-bottom: 20px;
+	margin: 20px auto;
+	width: 80%;
+}
+
+.page-product .c-explained .box:last-child {
+	border-bottom: none;
 }
 
 .page-product .c-explained .box .icon {
@@ -1035,12 +1040,14 @@ html {
 }
 
 .page-product .c-explained .box .link {
+	display: inline-block;
 	font-size: 0.9125rem;
 	color: #4E5EE4;
-
 	text-transform: uppercase;
 	font-weight: bold;
 	opacity: 1;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	margin-right: -1rem;
 }
 
@@ -1201,7 +1208,11 @@ html {
 }
 
 .page.fixed-sub-nav nav + section > .container:nth-child(1) {
-	margin-top: 55px;
+	/* margin-top: 55px; */
+}
+
+.page.fixed-sub-nav nav + section {
+	padding-top: 55px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1214,7 +1225,9 @@ html {
 	.page-product .c-explained .box {
 		margin-right: 2.0625rem;
 		border: none;
+		width: 100%;
 	}
+
 	.page-product .c-explained .box:last-child {
 		margin-right: 0;
 	}
@@ -1240,8 +1253,8 @@ html {
 }
 
 @media (min-width: 980px) {
-	.page-product .c-what-else .box {
-
+	.page-product .c-hero .container:nth-child(1) {
+		min-height: auto;
 	}
 
 	section.hero {
@@ -1254,7 +1267,7 @@ html {
 	}
 
 	.page-product .c-explained {
-		padding-top: 70px;
+		padding-top: 120px;
 		padding-bottom: 70px;
 	}
 
