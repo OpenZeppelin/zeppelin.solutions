@@ -978,8 +978,8 @@ html {
 	padding-bottom: 40px;
 }
 
-.page-product .p-animated.expanded {
-	height: 730px;
+.page-product .p-animated.expanded, .page-product .p-animated.expanded .terminal-section {
+	height: 780px;
 }
 
 .page-product .c-explained .heading {
@@ -1291,11 +1291,6 @@ html {
 		min-height: 400px;
 	}
 
-	.page-product .c-hero {
-		min-height: 600px;
-		height: 643px;
-	}
-
 	.page-product .c-explained {
 		padding-top: 120px;
 		padding-bottom: 70px;
@@ -1309,6 +1304,16 @@ html {
 	.page-product .c-what-else .box {
 		flex-direction: row;
 		text-align: left;
+	}
+
+	.page-product .c-hero {
+		min-height: 660px;
+		height: 660px;
+	}
+
+	.page-product.fixed-sub-nav .c-hero {
+		min-height: 715px;
+		height: 715px;
 	}
 }
 
