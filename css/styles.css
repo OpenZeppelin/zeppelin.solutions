@@ -1158,6 +1158,29 @@ html {
 	max-width: 500px;
 }
 
+.page-product .p-logo#sdk-logo > img {
+	margin-left: -31px;
+}
+.page-product .c-hero .description {
+	max-width: 770px;
+}
+
+.section__bg {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	padding: 0;
+	padding-bottom: calc(100% * 3 / 4);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	background-position: top center;
+}
+
+.page-product .term-container {
+	height: 430px;
+}
+
 
 /** Logos **/
 
@@ -1253,6 +1276,13 @@ html {
 }
 
 @media (min-width: 980px) {
+	.page-product .term-container {
+		margin-top: 45px;
+	}
+
+	.section__bg {
+		background-size: contain;
+	}
 	.page-product .c-hero .container:nth-child(1) {
 		min-height: auto;
 	}
