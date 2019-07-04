@@ -43,99 +43,98 @@ function type(text, cb = () => {}, opts = {}) {
 }
 
 function f2(el, done) {
-	type('$ zos create');
-	$('.typed-cursor').css('color', 'black');
-	setTimeout(function() {
-		setTimeout(function() {
-			createElement(
-				'div',
-				null,
-				'<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Compiled contracts with solc 0.5.9 </br> (commit.e560f70d)</span>',
-				el
-			);
-		}, 500);
-		setTimeout(function() {
-			createElement(
-				'span',
-				null,
-				'<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a contract to instantiate&nbsp;</span>',
-				el
-			);
-			type('<span style="color:#4de4e3">Counter</span></br>', function() {
-				setTimeout(function() {
-					createElement(
-						'span',
-						null,
-						'<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
-						el
-					);
-					type('<span style="color:#4de4e3">development</span>', function() {
-						setTimeout(function() {
-							createElement(
-								'div',
-								null,
-								'<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Added contract Counter</span>',
-								el
-							);
-							setTimeout(function() {
-								createElement(
-									'div',
-									null,
-									'<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Contract Counter deployed</span>',
-									el
-								);
-								setTimeout(function() {
-									createElement(
-										'div',
-										null,
-										'<strong>All contracts have been deployed</strong>',
-										el
-									);
-									setTimeout(function() {
-										createElement(
-											'span',
-											null,
-											'<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Do you want to call a function on </br> the instance after creating it?&nbsp;</span>',
-											el
-										);
-										setTimeout(function() {
-											type(
-												'<span style="color: white">No</span>',
-												function f4() {
-													setTimeout(function() {
-														createElement(
-															'div',
-															null,
-															'<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Setting everything up to </br> create contract instances</span>',
-															el
-														);
-														setTimeout(function() {
-															createElement(
-																'div',
-																null,
-																'<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Instance created at </br>0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
-																el
-															);
-															done();
-															break;
-														}, 500);
-													}, 500);
-												}
-											);
-										}, 1400);
-									}, 1300);
-								}, 1200);
-							}, 1000);
-						}, 900);
-					});
-				}, 1000);
-			});
-		}, 1000);
-	}, 1000);
+  type('$ openzeppelin create');
+  $('.typed-cursor').css('color', 'black');
+  setTimeout(function() {
+    setTimeout(function() {
+      createElement(
+        'div',
+        null,
+        '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Compiled contracts with solc 0.5.9 </br> (commit.e560f70d)</span>',
+        el
+      );
+    }, 500);
+    setTimeout(function() {
+      createElement(
+        'span',
+        null,
+        '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a contract to instantiate&nbsp;</span>',
+        el
+      );
+      type('<span style="color:#4de4e3">Counter</span></br>', function() {
+        setTimeout(function() {
+          createElement(
+            'span',
+            null,
+            '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
+            el
+          );
+          type('<span style="color:#4de4e3">development</span>', function() {
+            setTimeout(function() {
+              createElement(
+                'div',
+                null,
+                '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Added contract Counter</span>',
+                el
+              );
+              setTimeout(function() {
+                createElement(
+                  'div',
+                  null,
+                  '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Contract Counter deployed</span>',
+                  el
+                );
+                setTimeout(function() {
+                  createElement(
+                    'div',
+                    null,
+                    '<strong>All contracts have been deployed</strong>',
+                    el
+                  );
+                  setTimeout(function() {
+                    createElement(
+                      'span',
+                      null,
+                      '<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Do you want to call a function on </br> the instance after creating it?&nbsp;</span>',
+                      el
+                    );
+                    setTimeout(function() {
+                      type(
+                        '<span style="color: white">No</span>',
+                        function f4() {
+                          setTimeout(function() {
+                            createElement(
+                              'div',
+                              null,
+                              '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Setting everything up to </br> create contract instances</span>',
+                              el
+                            );
+                            setTimeout(function() {
+                              createElement(
+                                'div',
+                                null,
+                                '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Instance created at </br>0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
+                                el
+                              );
+                              done();
+                            }, 500);
+                          }, 500);
+                        }
+                      );
+                    }, 1400);
+                  }, 1300);
+                }, 1200);
+              }, 1000);
+            }, 900);
+          });
+        }, 1000);
+      });
+    }, 1000);
+  }, 1000);
 }
 
 function f3(el, done) {
-  type('$ zos send-tx</br>');
+  type('$ openzeppelin send-tx</br>');
   setTimeout(function() {
     setTimeout(function() {
       createElement(
@@ -191,7 +190,7 @@ function f3(el, done) {
 }
 
 function f4(el, done) {
-  type('$ zos call</br>');
+  type('$ openzeppelin call</br>');
   setTimeout(function() {
     setTimeout(function() {
       createElement(
@@ -247,7 +246,7 @@ function f4(el, done) {
 }
 
 function f5(el, done) {
-  type('$ zos upgrade</br>');
+  type('$ openzeppelin upgrade</br>');
   $('.typed-cursor').css('color', 'black');
   setTimeout(function() {
     setTimeout(function() {
@@ -340,13 +339,14 @@ var animations = {
 
   function init() {
     $('.term__menu-list__link').click(function() {
-			isRunning = false;
-
-			var animname = $(this).data('anim-name');
+      isRunning = false;
+      $('.term__menu-list__link').removeClass('term__menu-list__link--active');
+      $(this).addClass('term__menu-list__link--active');
+      var animname = $(this).data('anim-name');
       // Killing node
       wrap.empty();
-			// Recreating wrap type container
-			var key = Math.floor(Math.random() * Math.floor(100));
+      // Recreating wrap type container
+      var key = Math.floor(Math.random() * Math.floor(100));
 
       typeWrap = createElement('div', { class: 'type-wrap', id: key }, '');
       wrap.append(typeWrap);
