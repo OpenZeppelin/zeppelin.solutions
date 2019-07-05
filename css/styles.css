@@ -1092,14 +1092,14 @@ html {
 }
 
 .page-product .c-projects, .page-product .c-what-else {
-	padding: 90px 0;
+	padding: 70px 0;
 }
 
 .page-product .c-projects .heading, .page-product .c-what-else .heading {
 	opacity: 0.9;
 	font-size: 0.98rem;
 	color: #3D3D58;
-
+	line-height: 1.8;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1.4px;
@@ -1169,6 +1169,7 @@ html {
 	font-weight: bold;
 	font-family: 'silka';
 	white-space: nowrap;
+	margin-left: 20px;
 }
 
 .page-product .c-what-else .box .box-heading .material-icons {
@@ -1214,7 +1215,7 @@ html {
 
 .section__bg-final {
 	height: 100%;
-	bottom: 0;
+	bottom: -1px;
 	width: 100%;
 	left: 0;
 	right: 0;
@@ -1308,14 +1309,22 @@ html {
 		width: auto;
 		max-width: 180px;
 		height: 70px;
+		margin-bottom: 40px;
 	}
 
 	.grid-logos .grid-logos__logo {
 		width: 100%;
 	}
+	.page-product .c-projects, .page-product .c-what-else {
+		padding: 90px 0;
+	}
 }
 
 @media (min-width: 980px) {
+	.page-product .c-what-else .box .box-heading {
+		margin-left: 0;
+	}
+
 	.page-product .term-container {
 		margin-top: 45px;
 	}
