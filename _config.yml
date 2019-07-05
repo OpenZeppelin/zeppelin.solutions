@@ -5,8 +5,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Zeppelin
-url: https://zeppelin.solutions
-email: contact@openzeppelin.org
+url: https://openzeppelin.com
+email: contact@openzeppelin.com
 description: Zeppelin - Infrastructure for decentralized systems
 permalink: "/:path/"
 defaults:

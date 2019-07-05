@@ -4,7 +4,7 @@ title: 'Software Engineer, Product'
 location: 'Global  |  Full Time'
 navigation_weight: 1
 tags:
-- engineering
+  - engineering
 date: 2018-02-25 19:07:50 +0000
 sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
 description: 'Zeppelin builds the industry security standard for architecting and deploying smart contract systems in public blockchains. We proudly build the most widely used open source infrastructure tools: the OpenZeppelin smart contracts library powers 3000 public projects and has over 6500 Github stars, while the ZeppelinOS development toolset is leading the way in upgradeability and secure code reuse. We also conduct in-depth system security audits to high-impact smart contract systems, such as Augur, the RCN token, or the Solidity compiler. Learn more about us!'
@@ -16,7 +16,7 @@ slug: ''
   <ul>
     <li>
       <p>
-        Create <a href="https://ethernaut.zeppelin.solutions/">decentralized web applications</a> to support the Ethereum developer             community.</p>
+        Create <a href="https://ethernaut.openzeppelin.com/">decentralized web applications</a> to support the Ethereum developer             community.</p>
     </li>
     <li>
       <p>Own products end-to-end, leading the design and implementation efforts across different layers of the stack.</p>
@@ -25,7 +25,7 @@ slug: ''
       <p>Work with the Product team to measure, iterate and run experiments to help our products gain traction amongst the developer community.</p>
     </li>
     <li>
-      <p>Help coordinate the <a href="https://forum.zeppelin.solutions/">open source community</a> around the tools that we build.</p>
+      <p>Help coordinate the <a href="https://forum.openzeppelin.com/">open source community</a> around the tools that we build.</p>
     </li>
   </ul>
 </div>
