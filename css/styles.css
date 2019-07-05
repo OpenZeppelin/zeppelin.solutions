@@ -731,6 +731,14 @@ h1, h2, h3, h4, h5 {
 	transition: all ease 0.25s;
 }
 
+.p-nav-placeholder {
+	height: 64px;
+	line-height: 64px;
+	background: white;
+	visibility: hidden;
+	display: none;
+}
+
 .p-nav.p-nav--white{
 	background-color: white;
 	border: none;
@@ -943,6 +951,11 @@ body .overlay--active {
     padding-bottom: 1px;
 		box-shadow: rgba(0,0,0,0.1) 0px 0px 15px 0px;
 	}
+
+	.fixed-sub-nav .p-nav-placeholder {
+		visibility: hidden;
+		display: block;
+	}
 }
 
 .new-sub-nav--fixed {
@@ -964,6 +977,7 @@ html {
 	flex-direction: column;
 	height: auto;
 	text-align: center;
+	position: relative;
 }
 
 .page-product .c-hero .heading, .page-product .c-hero > .container {
@@ -1191,6 +1205,24 @@ html {
 	background-size: cover;
 	z-index: -1;
 	background-position: top center;
+	right: 0;
+	left: 0;
+	z-index: -1;
+	background-position: bottom;
+	bottom: 150px;
+}
+
+.section__bg-final {
+	height: 100%;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	z-index: 0;
 }
 
 .page-product .term-container {
@@ -1246,14 +1278,6 @@ html {
 	vertical-align: middle;
 }
 
-.page.fixed-sub-nav nav + section > .container:nth-child(1) {
-	/* margin-top: 55px; */
-}
-
-.page.fixed-sub-nav nav + section {
-	padding-top: 55px;
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
 	.grid--challenges > .row {
 		flex-direction: column;
@@ -1299,9 +1323,9 @@ html {
 	.section__bg {
 		background-size: contain;
 	}
-	.page-product .c-hero .container:nth-child(1) {
+	/* .page-product .c-hero .container:nth-child(1) {
 		min-height: auto;
-	}
+	} */
 
 	section.hero {
 		min-height: 400px;
@@ -1323,13 +1347,11 @@ html {
 	}
 
 	.page-product .c-hero {
-		min-height: 660px;
-		height: 660px;
+		height: 640px;
 	}
 
-	.page-product.fixed-sub-nav .c-hero {
-		min-height: 715px;
-		height: 715px;
+	.page-product .term-container {
+		max-height: 450px;
 	}
 }
 
