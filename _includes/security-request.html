@@ -1,6 +1,7 @@
 <style type="text/css">
 
 	.modal-sr {
+		transition: 0.5s ease-out height;
 		position: fixed;
     top: 50%;
     left: 50%;
@@ -20,8 +21,8 @@
 		display: none;
 	}
 
-	.modal-sr.modal-sr--sm > .modal-sr__container {
-		height: 500px;
+	.modal-sr.modal-sr--sm {
+		height: 400px;
 	}
 
 	.modal-sr.active {
@@ -29,7 +30,6 @@
 	}
 
 	.modal-sr .modal-sr__container {
-		transition: 0.5s ease-out height;
 		background-color: transparent;
 		margin: 0 auto;
 		overflow: hidden;
@@ -203,11 +203,16 @@
 	height: 100%;
 }
 
+.modal-sr .view-2 .btn {
+	min-width: 120px;
+}
+
 @media (min-width: 980px) {
 	.modal-sr {
 		max-width: 700px;
 		max-height: 700px;
 	}
+
 	.modal-sr .icon-close {
 		top: 40px;
 		right: 40px;

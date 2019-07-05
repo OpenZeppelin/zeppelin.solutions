@@ -107,7 +107,7 @@
         var values = $(this).serializeArray();
         // console.log(values);
         // Send values
-        $('.modal-sr .sub-container').remove();
+        $('.modal-sr .modal-sr__sub-container').remove();
         showSuccess();
       });
     }
