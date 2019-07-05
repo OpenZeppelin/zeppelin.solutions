@@ -70,6 +70,10 @@
     flex-direction: column-reverse;
 	}
 
+	.msr-form-field a {
+		cursor: pointer;
+	}
+
 	.msr-form-field .error {
     color: #cd3d64;
     position: absolute;
@@ -96,13 +100,25 @@
 	transition: 0.1s ease all;
 }
 
+ .msr-form-field .msr-form-field__textfield {
+  font-size: 1rem;
+  padding: 10px 0;
+  display: block;
+  max-width: 300px;
+	width: 100%;
+	border: none;
+  border-bottom: 1px solid #A9A9B5;
+	transition: 0.1s ease all;
+	outline: none;
+	overflow: auto;
+}
+
 	.msr-form-field .msr-form-field__input:focus { outline:none; padding: 10px; }
 
 	.msr-form-field label {
 		color:#999;
 		font-size: 0.96rem;
 		font-weight: normal;
-		pointer-events: none;
 		transition: 0.4s ease all;
 		padding: 0;
 		margin-bottom: 5px;
@@ -269,69 +285,55 @@
 						<input type="button" class="btn btn--bordered" id="action-yes" value="YES"/>
 						<input type="button" class="btn btn--bordered" id="action-no" value="NO"/>
 					</div>
-					<label>Is your codebase finalized and audit-ready? *<small>You can check out our guidelines on how to prepare for a third-party audit <a href=" https://blog.openzeppelin.com/follow-this-quality-checklist-before-an-audit-8cc6a0e44845">here</a></small></label>
+					<label>
+						Is your codebase finalized and audit-ready? *<small>You can check out our guidelines on how to prepare for a third-party audit						<a href="https://blog.openzeppelin/follow-this-quality-checklist-before-an-audit-8cc6a0e44845" target="_blank">here</a></small>
+					</label>
 				</div>
 				<div class="msr-form-path msr-form-path--yes hidden">
 					<div class="msr-form-field msr-form-field--lg">
-						<input class="msr-form-field__input" type="text" required name="project_repository">
-
-
-						<label>Link to repository *<small>If private please reach out to contact@openzeppelin.com</small></label>
+						<textarea class="msr-form-field__textfield" type="text" required name="project_repository" cols="30" rows="5"></textarea>
+						<label>Link to repository *<small>If private please reach out to audits@openzeppelin.com</small></label>
 					</div>
 					<div class="msr-form-field">
 						<input class="msr-form-field__input" type="text" required name="project_audit_commit">
-
-
 						<label>Audit Commit *</label>
 					</div>
 					<div class="msr-form-field msr-form-field--sm">
-						<input class="msr-form-field__input" type="text" required placeholder="Docs link" name="project_audit_scope">
-
-
-						<label>Estimated audit scope * <small>Total lines of code including inline comments</small></label>
+						<input class="msr-form-field__input" type="text" required placeholder="" name="project_audit_scope">
+						<label>Estimated audit scope * <small>Estimated total lines of code including inline comments</small></label>
 					</div>
 					<div class="msr-form-field">
 						<input class="msr-form-field__input" type="text" required placeholder="MM/DD/YY" name="project_launch_date">
-
-
 						<label>Target launch day - optional</label>
 					</div>
 					<div class="msr-form-field">
 						<input class="msr-form-field__input" type="text" required placeholder="https://docs.openzeppelin.com">
-
-
 						<label>Documentation - optional</label>
 					</div>
 					<div class="msr-form-field">
 						<input class="msr-form-field__input" type="text" required name="project_comments">
-
-
 						<label>Other comments - optional</label>
 					</div>
 				</div>
 				<div class="msr-form-path msr-form-path--no hidden">
 					<div class="msr-form-field">
 						<input class="msr-form-field__input" type="text" required placeholder="MM/DD/YY" name="project_date_finalization">
-
-
 						<label>Estimated date for finalization *</label>
+					</div>
+					<div class="msr-form-field msr-form-field--lg">
+						<textarea class="msr-form-field__textfield" type="text" required name="project_repository" cols="30" rows="5"></textarea>
+						<label>Link to repository *<small>If private please reach out to audits@openzeppelin.com</small></label>
 					</div>
 					<div class="msr-form-field msr-form-field--sm">
 						<input class="msr-form-field__input" type="text" required  name="project_estimated_audit_scope">
-
-
 						<label>Estimated audit scope * <small>Total lines of code including inline comments</small></label>
 					</div>
 					<div class="msr-form-field">
 						<input class="msr-form-field__input" type="text" required name="project_documentation_link">
-
-
 						<label>Documentation - optional</label>
 					</div>
 					<div class="msr-form-field">
 						<input class="msr-form-field__input" type="text" required placeholder="Any other relavant information" name="project_comments">
-
-
 						<label>Other comments - optionals</label>
 					</div>
 				</div>

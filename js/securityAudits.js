@@ -31,6 +31,9 @@
     }
 
     function blurInput() {
+      if (!$input || $input.type === 'button') {
+        return false;
+      }
       var $input = this;
       var $formField = $(this).parent();
       $formField.addClass('msr-form-field--touched');
@@ -86,10 +89,13 @@
       });
 
       // Cheking changes on blur
-      $('.sr-form .msr-form-field input').on('blur', blurInput);
+      $('.sr-form .msr-form-field .msr-form-field__input').on(
+        'blur',
+        blurInput
+      );
 
       // Catch enter
-      $('.sr-form .msr-form-field input').keydown(function(e) {
+      $('.sr-form .msr-form-field .msr-form-field__input').keydown(function(e) {
         var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
         if (key == 13) {
           e.preventDefault();
@@ -142,6 +148,8 @@
       });
 
       $btn.click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         openModalContainer();
       });
 
