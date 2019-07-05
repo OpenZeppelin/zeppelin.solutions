@@ -116,5 +116,5 @@ function f2() {
 }
 
 (function($) {
-  type('$ zos create', f2());
+  type('$ openzeppelin create', f2());
 })(jQuery);
