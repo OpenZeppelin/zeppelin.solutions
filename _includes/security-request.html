@@ -7,9 +7,9 @@
     transform: translate(-50%, -50%);
     z-index: 201;
     display: block;
-    width: 800px;
+    width: 90%;
     max-width: 100%;
-    height: 70%;
+    height: 90%;
     max-height: 100%;
     transform: translate(-50%, -50%);
     background: white;
@@ -39,6 +39,7 @@
 
 	.modal-sr .modal-sr__sub-container {
 		overflow-y: auto;
+		overflow-x: hidden;
 		height: 100%;
 		width: 100%;
 	}
@@ -157,6 +158,13 @@
 	flex-direction: row;
 }
 
+.msr-form-field__actions > input {
+	flex: 1;
+	display: inline-block;
+	width: 40%;
+	max-width: 120px;
+}
+
 .msr-form-field.msr-form-field__actions > .btn {
 	margin-right: 15px;
 }
@@ -183,8 +191,8 @@
 	opacity: 1;
 }
 
-.modal-sr .btn {
-	min-width: 120px;
+.modal-sr .btn[type="submit"] {
+	min-width: 130px;
 }
 
 .modal-sr .view-2 {
@@ -196,6 +204,10 @@
 }
 
 @media (min-width: 980px) {
+	.modal-sr {
+		max-width: 700px;
+		max-height: 700px;
+	}
 	.modal-sr .icon-close {
 		top: 40px;
 		right: 40px;
