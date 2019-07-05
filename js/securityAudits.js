@@ -3,7 +3,7 @@
     var $btn = $('.request-audit-btn');
     var validForm = false;
 
-    // Validators map - validates given an input type
+    // Validators Map - Validates given an input type
     var validate = {
       email: (email) => /^.+@.+\..+$/.test(email),
       text: (t) => true,
@@ -11,19 +11,14 @@
 
     function closeModalContainer(e) {
       var container = $('#security-audit-form .modal-sr');
-
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        $('#security-audit-form').removeClass('active');
-        $('html').removeClass('overlay-visible');
-        $('body .overlay').removeClass('overlay--active');
-        $('.modal-sr').removeClass('active');
+        setModal(false);
       }
     }
 
     function checkValues() {
       var values = $('.sr-form').serializeArray();
       validForm = !values.filter((i) => i.value === '');
-      console.log('check values', validForm, values);
       if (validForm) {
         var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
         $submitBtn.attr('disabled', value);
@@ -65,15 +60,12 @@
     }
 
     function showSuccess() {
-      $('.modal-sr')
-        .find('.view-2')
-        .removeClass('hidden');
-
+      $('.modal-sr .view-2').removeClass('hidden');
       $('.modal-sr').addClass('modal-sr--sm');
     }
 
     function modalFunc() {
-      var $cont = $('#security-request');
+      var $cont = $('#security-request .sr-form');
       var $aY = $('#action-yes');
       var $aN = $('#action-no');
 
@@ -94,13 +86,10 @@
       });
 
       // Cheking changes on blur
-      $('.sr-form')
-        .find('.msr-form-field input')
-        .on('blur', blurInput);
+      $('.sr-form .msr-form-field input').on('blur', blurInput);
 
       // Catch enter
-
-      $('.msr-form-field input').keydown(function(e) {
+      $('.sr-form .msr-form-field input').keydown(function(e) {
         var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
         if (key == 13) {
           e.preventDefault();
@@ -111,6 +100,7 @@
         }
       });
 
+      // Submiting the form
       $('.sr-form').on('submit', function(e) {
         e.preventDefault();
         validateForm();
@@ -123,6 +113,20 @@
     }
 
     function openModalContainer() {
+      // Loading functionality
+      modalFunc();
+      setModal();
+    }
+
+    function setModal(value = true) {
+      if (!value) {
+        $('#security-audit-form').removeClass('active');
+        $('html').removeClass('overlay-visible');
+        $('body .overlay').removeClass('overlay--active');
+        $('.modal-sr').removeClass('active');
+        return;
+      }
+
       $('#security-audit-form').addClass('active');
       $('html').addClass('overlay-visible');
       $('body .overlay').addClass('overlay--active');
