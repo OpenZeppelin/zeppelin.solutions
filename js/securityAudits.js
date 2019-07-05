@@ -10,11 +10,12 @@
     };
 
     function closeModalContainer(e) {
-      var container = $('#security-audit-form .container');
+      var container = $('#security-audit-form .modal-sr');
 
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         $('#security-audit-form').removeClass('active');
-        $('body').removeClass('overlay');
+        $('html').removeClass('overlay-visible');
+        $('body .overlay').removeClass('overlay--active');
         $('.modal-sr').removeClass('active');
       }
     }
@@ -123,21 +124,20 @@
 
     function openModalContainer() {
       $('#security-audit-form').addClass('active');
-      $('body').addClass('overlay');
+      $('html').addClass('overlay-visible');
+      $('body .overlay').addClass('overlay--active');
       $('.modal-sr').addClass('active');
-      modalFunc();
     }
 
     return (function() {
       $('.close-action').click(function(e) {
         $('#security-audit-form').removeClass('active');
-        $('body').removeClass('overlay');
+        $('html').removeClass('overlay-visible');
+        $('body .overlay').removeClass('overlay--active');
         $('.modal-sr').removeClass('active');
       });
 
       $btn.click(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
         openModalContainer();
       });
 

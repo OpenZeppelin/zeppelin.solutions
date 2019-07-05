@@ -39,6 +39,10 @@ body.debug * {
 	/* outline: 1px solid gold; */
 }
 
+html {
+	overflow: auto;
+}
+
 html, body {
 	font-size: 13.5px;
 	font-weight: 400;
@@ -49,7 +53,6 @@ html, body {
 }
 
 body {
-	overflow-x: hidden;
   color: #2a2a47;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
@@ -804,16 +807,29 @@ html, body, .root {
 	min-height: calc(100% - 300px);
 }
 
-body.modal-open, body.overlay {
-	margin: 0; height: 100%; overflow: hidden;
-	position: fixed;
-	width: 100%;
+html.overlay-visible {
+	/* width: 100%; */
+	/* height: 100%; */
+	overflow: hidden;
+	/* position: fixed; */
+}
+
+body .overlay {
 	height: 100%;
-	background: rgba(0, 0, 0, .7);
-	z-index: 2;
-	top: 0;
-	left: 0;
-	overflow: visible;
+	background: rgba(38, 43, 90, 0.8705882352941177);
+	position: absolute;
+	width: 100%;
+	z-index: 200;
+	visibility: hidden;
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body .overlay--active {
+	visibility: visible;
 }
 
 .container {
@@ -920,7 +936,7 @@ body.modal-open, body.overlay {
 
 	.p-nav.new-sub-nav--fixed {
 		position: fixed;
-    z-index: 1100;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
