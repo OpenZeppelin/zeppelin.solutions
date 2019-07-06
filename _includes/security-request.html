@@ -1,59 +1,47 @@
 <style type="text/css">
 
 	.modal-sr {
-		display: block;
-		visibility: hidden;
+		transition: 0.5s ease-out height;
 		position: fixed;
-		z-index: 200;
-		background-color: rgba(40, 40, 70, 0.7);
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		height: 100vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		overflow-y: initial !important
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 201;
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    height: 90%;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 3px;
+    transition-timing-function: cubic-bezier(0.3, 0, 0, 1.4);
+		box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem;
+		padding: 3rem 4rem;
+		display: none;
 	}
 
-	.modal-sr.modal-sr--sm > .container {
-		height: 500px;
+	.modal-sr.modal-sr--sm {
+		height: 400px;
 	}
 
 	.modal-sr.active {
-		visibility: visible;
+		display: block;
 	}
 
-	.modal-sr.active .container {
-		opacity: 1;
-    -webkit-transform: translateY(0%) scale(1);
-    transform: translateY(0%) scale(1);
-		overflow-y: initial !important
-	}
-
-	.modal-sr .container {
-		transition: 0.5s ease-out height;
-		overflow: hidden;
-    height: 90%;
-    width: 90%;
-		background-color: white;
+	.modal-sr .modal-sr__container {
+		background-color: transparent;
 		margin: 0 auto;
-		padding: 2rem;
-		border-radius: 4px;
-		opacity: 0;
-    -webkit-transform: translateY(100%) scale(0.8);
-    transform: translateY(100%) scale(0.8);
-    transition-timing-function: cubic-bezier(0.3, 0, 0, 1.4);
-		box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem;
 		overflow: hidden;
+		width: 100%;
+		height: 100%;
 	}
 
-	.modal-sr .sub-container {
-		position: fixed;
+	.modal-sr .modal-sr__sub-container {
 		overflow-y: auto;
-		height: calc(100% - 100px);
-		width: calc(100% - 4rem);
+		overflow-x: hidden;
+		height: 100%;
+		width: 100%;
 	}
 
 	.modal-sr .heading {
@@ -73,14 +61,17 @@
 	.msr-form-field {
 		max-width: 100%;
 		width: 300px;
-		height: 70px;
 		box-sizing: border-box;
 		position: relative;
-  	margin-bottom:45px;
+  	margin-bottom: 25px;
 		opacity: 1;
 		transition: opacity 0.4s cubic-bezier(0.3, 0, 0, 1.4);
 		display: flex;
     flex-direction: column-reverse;
+	}
+
+	.msr-form-field a {
+		cursor: pointer;
 	}
 
 	.msr-form-field .error {
@@ -98,7 +89,7 @@
 		z-index: 100;
 	}
 
- .msr-form-field input {
+ .msr-form-field .msr-form-field__input {
   font-size: 1rem;
   padding: 10px 0;
   display: block;
@@ -109,13 +100,25 @@
 	transition: 0.1s ease all;
 }
 
-	.msr-form-field input:focus { outline:none; padding: 10px; }
+ .msr-form-field .msr-form-field__textfield {
+  font-size: 1rem;
+  padding: 10px 0;
+  display: block;
+  max-width: 300px;
+	width: 100%;
+	border: none;
+  border-bottom: 1px solid #A9A9B5;
+	transition: 0.1s ease all;
+	outline: none;
+	overflow: auto;
+}
+
+	.msr-form-field .msr-form-field__input:focus { outline:none; padding: 10px; }
 
 	.msr-form-field label {
 		color:#999;
 		font-size: 0.96rem;
 		font-weight: normal;
-		pointer-events: none;
 		transition: 0.4s ease all;
 		padding: 0;
 		margin-bottom: 5px;
@@ -126,7 +129,7 @@
 		width: 500px;
 	}
 
-	.msr-form-field.msr-form-field--lg input {
+	.msr-form-field.msr-form-field--lg > .msr-form-field__input {
 		width: 100%;
 		max-width: 100%;
 	}
@@ -138,47 +141,55 @@
 		transition: 0.4s ease color;
 	}
 
-.msr-form-field input:focus ~ label, .msr-form-field input:valid ~ label {
+.msr-form-field .msr-form-field__input:focus ~ label, .msr-form-field .msr-form-field__input:valid ~ label {
 	color: #5060E5;
 }
 
-.msr-form-field input:focus ~ label small, .msr-form-field input:valid ~ label > small {
+.msr-form-field .msr-form-field__input:focus ~ label small, .msr-form-field .msr-form-field__input:valid ~ label > small {
 	color: #282846;
 }
 
-.msr-form-field input:valid ~ label, .msr-form-field input:valid {
+.msr-form-field .msr-form-field__input:valid ~ label, .msr-form-field .msr-form-field__input:valid {
 	opacity: 0.3;
 }
 
-.msr-form-field input:focus {
+.msr-form-field .msr-form-field__input:focus {
 	border-bottom: 1px solid #A9A9B5!important;
 }
 
-.msr-form-field input:valid {
+.msr-form-field .msr-form-field__input:valid {
 	border-bottom: none;
 }
 
-.msr-form-field.msr-form-field--touched input:invalid {
+.msr-form-field.msr-form-field--touched .msr-form-field__input:invalid {
 	border-bottom: 1px solid #cd3d64!important;
 }
 
-.msr-form-field input:focus ~ label, .msr-form-field input:focus, .msr-form-field input:valid ~ highlight {
+.msr-form-field .msr-form-field__input:focus ~ label, .msr-form-field .msr-form-field__input:focus, .msr-form-field .msr-form-field__input:valid ~ highlight {
 	opacity: 1;
 }
 
-.msr-form-field--actions {
+.msr-form-field__actions {
+	margin-top: 15px;
 	flex-direction: row;
 }
 
-.msr-form-field.msr-form-field--actions > .btn {
+.msr-form-field__actions > input {
+	flex: 1;
+	display: inline-block;
+	width: 40%;
+	max-width: 120px;
+}
+
+.msr-form-field.msr-form-field__actions > .btn {
 	margin-right: 15px;
 }
 
-.msr-form-field.msr-form-field--actions > .btn {
+.msr-form-field.msr-form-field__actions > .btn {
 	margin-right: 15px;
 }
 
-.msr-form-field input::placeholder {
+.msr-form-field .msr-form-field__input::placeholder {
 	color: #7E7E90
 	opacity: 0.6;
 }
@@ -196,8 +207,8 @@
 	opacity: 1;
 }
 
-.modal-sr .btn {
-	min-width: 120px;
+.modal-sr .btn[type="submit"] {
+	min-width: 130px;
 }
 
 .modal-sr .view-2 {
@@ -208,13 +219,14 @@
 	height: 100%;
 }
 
-@media (min-width: 980px) {
-	.modal-sr .container {
-		padding: 60px 100px;
-	}
+.modal-sr .view-2 .btn {
+	min-width: 120px;
+}
 
-	.modal-sr .container {
-		max-width: 880px;
+@media (min-width: 980px) {
+	.modal-sr {
+		max-width: 700px;
+		max-height: 700px;
 	}
 
 	.modal-sr .icon-close {
@@ -232,113 +244,96 @@
 </style>
 
 <div class="modal modal-sr" id="security-request">
-	<div class="container">
+	<div class="modal-sr__container">
 		<i class="material-icons icon-close close-action">close</i>
-		<div class="sub-container view-1">
+		<div class="modal-sr__sub-container view-1">
 			<header class="modal-header">
 				<h2 class="heading">Request a Security Audit</h2>
 				<p class="description">You can request an audit by filling this form or by sending an email to <a href="mailto:audits@openzeppelin.com">audits@openzeppelin.com</a></p>
 			</header>
 			<form name="sr-form" class="sr-form" novalidate>
 				<div class="msr-form-field">
-					<input type="text" required name="project_name">
+					<input class="msr-form-field__input" type="text" required name="project_name">
 
 
 					<label>Project Name *</label>
 				</div>
 				<div class="msr-form-field">
-					<input type="text" required name="project_website">
+					<input class="msr-form-field__input" type="text" required name="project_website">
 					<label>Project Website *</label>
 				</div>
 				<div class="msr-form-field">
-					<input type="text" required name="contact_name">
+					<input class="msr-form-field__input" type="text" required name="contact_name">
 
 
 					<label>Contact Name *</label>
 				</div>
 					<div class="msr-form-field">
-					<input type="email" required name="email">
+					<input class="msr-form-field__input" type="email" required name="email">
 
 
 					<label>Contact email *</label>
 				</div>
 				<div class="msr-form-field">
-					<input type="text" required name="project_scope">
+					<input class="msr-form-field__input" type="text" required name="project_scope">
 
 
 					<label>Short description of audit scope *</label>
 				</div>
 				<div class="msr-form-field msr-form-field--lg">
-					<input type="text" required name="project_codebase_finished">
-
-
-					<label>Is your codebase finalized and audit-ready? *<small>You can check out our guidelines on how to prepare for a third-party audit <a href=" https://blog.openzeppelin.com/follow-this-quality-checklist-before-an-audit-8cc6a0e44845">here</a></small></label>
-				</div>
-				<div class="msr-form-field msr-form-field--actions">
-					<button type="button" class="btn btn--bordered" id="action-yes">YES</button>
-					<button type="button" class="btn btn--bordered" id="action-no">NO</button>
+					<div class="msr-form-field__actions">
+						<input type="button" class="btn btn--bordered" id="action-yes" value="YES"/>
+						<input type="button" class="btn btn--bordered" id="action-no" value="NO"/>
+					</div>
+					<label>
+						Is your codebase finalized and audit-ready? *<small>You can check out our guidelines on how to prepare for a third-party audit						<a href="https://blog.openzeppelin/follow-this-quality-checklist-before-an-audit-8cc6a0e44845" target="_blank">here</a></small>
+					</label>
 				</div>
 				<div class="msr-form-path msr-form-path--yes hidden">
-					<div class="msr-form-field msr-form-field--sm">
-						<input type="text" required name="project_repository">
-
-
-						<label>Link to repository *<small>If private please reach out to contact@zeppelin.solutions</small></label>
+					<div class="msr-form-field msr-form-field--lg">
+						<textarea class="msr-form-field__textfield" type="text" required name="project_repository" cols="30" rows="5"></textarea>
+						<label>Link to repository *<small>If private please reach out to audits@openzeppelin.com</small></label>
 					</div>
 					<div class="msr-form-field">
-						<input type="text" required name="project_audit_commit">
-
-
+						<input class="msr-form-field__input" type="text" required name="project_audit_commit">
 						<label>Audit Commit *</label>
 					</div>
 					<div class="msr-form-field msr-form-field--sm">
-						<input type="text" required placeholder="Docs link" name="project_audit_scope">
-
-
-						<label>Estimated audit scope * <small>Total lines of code including inline comments</small></label>
+						<input class="msr-form-field__input" type="text" required placeholder="" name="project_audit_scope">
+						<label>Estimated audit scope * <small>Estimated total lines of code including inline comments</small></label>
 					</div>
 					<div class="msr-form-field">
-						<input type="text" required placeholder="MM/DD/YY" name="project_launch_date">
-
-
+						<input class="msr-form-field__input" type="text" required placeholder="MM/DD/YY" name="project_launch_date">
 						<label>Target launch day - optional</label>
 					</div>
 					<div class="msr-form-field">
-						<input type="text" required placeholder="https://docs.openzeppelin.org">
-
-
+						<input class="msr-form-field__input" type="text" required placeholder="https://docs.openzeppelin.com">
 						<label>Documentation - optional</label>
 					</div>
 					<div class="msr-form-field">
-						<input type="text" required name="project_comments">
-
-
+						<input class="msr-form-field__input" type="text" required name="project_comments">
 						<label>Other comments - optional</label>
 					</div>
 				</div>
 				<div class="msr-form-path msr-form-path--no hidden">
 					<div class="msr-form-field">
-						<input type="text" required placeholder="MM/DD/YY" name="project_date_finalization">
-
-
+						<input class="msr-form-field__input" type="text" required placeholder="MM/DD/YY" name="project_date_finalization">
 						<label>Estimated date for finalization *</label>
 					</div>
+					<div class="msr-form-field msr-form-field--lg">
+						<textarea class="msr-form-field__textfield" type="text" required name="project_repository" cols="30" rows="5"></textarea>
+						<label>Link to repository *<small>If private please reach out to audits@openzeppelin.com</small></label>
+					</div>
 					<div class="msr-form-field msr-form-field--sm">
-						<input type="text" required  name="project_estimated_audit_scope">
-
-
+						<input class="msr-form-field__input" type="text" required  name="project_estimated_audit_scope">
 						<label>Estimated audit scope * <small>Total lines of code including inline comments</small></label>
 					</div>
 					<div class="msr-form-field">
-						<input type="text" required name="project_documentation_link">
-
-
+						<input class="msr-form-field__input" type="text" required name="project_documentation_link">
 						<label>Documentation - optional</label>
 					</div>
 					<div class="msr-form-field">
-						<input type="text" required placeholder="Any other relavant information" name="project_comments">
-
-
+						<input class="msr-form-field__input" type="text" required placeholder="Any other relavant information" name="project_comments">
 						<label>Other comments - optionals</label>
 					</div>
 				</div>

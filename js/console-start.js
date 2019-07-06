@@ -30,13 +30,12 @@ var lines = [
   'Run your local blockchain:',
   '<span class="tc-green">></span> ganache-cli --secure -u 0 -u 1 -u 2 </br>--deterministic',
   'Initialize the ZeppelinOS project:',
-  '<span class="tc-green">></span> zos init zepkit',
+  '<span class="tc-green">></span> openzeppelin init starter-kit',
   'Go to the client directory:',
   '<span class="tc-green">></span> cd client',
   'Run the React app:',
   '<span class="tc-green">></span> npm run start',
   'Continue in your browser!',
-  '<span class="tc-green">More at </span><span class="tc-green">https://github.com/</br>zeppelinos/zepkit/tree/stable</span>',
 ];
 
 function f2(done) {
@@ -57,7 +56,7 @@ function f2(done) {
         '<span class="tc-gray">mac:dev$&nbsp;</span>',
         '.type-wrap'
       );
-      type('zos unpack zepkit', function() {
+      type('openzeppelin unpack starter-kit', function() {
         createElement(
           'div',
           '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Kit downloaded and unpacked</span>',
@@ -89,7 +88,7 @@ function f3(done) {
     '<span class="tc-gray">mac:dev$&nbsp;</span>',
     '.type-wrap'
   );
-  type('zos init zepkit </br>', function() {
+  type('openzeppelin init starter-kit </br>', function() {
     createElement(
       'span',
       '<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Initial project version&nbsp;</span>',
@@ -99,7 +98,7 @@ function f3(done) {
       type('v1', function() {
         createElement(
           'div',
-          'Project initialized. Write a new contract in the </br> contracts folder and run zos create to deploy it. </br>',
+          'Project initialized. Write a new contract in the </br> contracts folder and run openzeppelin create to deploy it. </br>',
           '.type-wrap'
         );
 
