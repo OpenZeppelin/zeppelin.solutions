@@ -1204,11 +1204,10 @@ html {
 	padding-bottom: calc(100% * 3 / 4);
 	background-repeat: no-repeat;
 	background-size: cover;
-	z-index: -1;
 	background-position: top center;
 	right: 0;
 	left: 0;
-	z-index: -1;
+	z-index: -2;
 	background-position: bottom;
 	bottom: 150px;
 }
@@ -1223,7 +1222,7 @@ html {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: bottom;
-	z-index: 0;
+	z-index: -1;
 }
 
 .page-product .term-container {
