@@ -236,7 +236,17 @@ layout: default
 						<p class="hp-description animated animated fadeIn">It usually takes 4-6 weeks from the time you submit your application to an offer. The exact timing depends on matching your availability to schedule the work test. We try our best to ensure a swift process while also committing plenty of time to getting to know each other.</p>
 					</div>
 					<div class="hp-card-action">
-						<div class="plus-icon"></div>
+						<div class="j-icon j-icon-plus">
+							<svg width="15" height="15" fill="none" aria-label="open" viewBox="0 0 15 15">
+								<line x1="7.5" y1="2.18557e-08" x2="7.5" y2="15"  stroke-linecap="round"></line>
+								<line x1="15" y1="7.5" x2="-4.37114e-08" y2="7.5" stroke-linecap="round"></line>
+							</svg>
+						</div>
+						<div class="j-icon j-icon-minus">
+							<svg width="15" height="15" fill="none" aria-label="open" viewBox="0 0 15 15">
+								<line x1="15" y1="7.5" x2="-4.37114e-08" y2="7.5" stroke-linecap="round"></line>
+							</svg>
+						</div>
 					</div>
 				</li>
 
@@ -768,16 +778,12 @@ layout: default
 
 	.section.section-hiring-process .hp-list .hp-card {
 		border-bottom: solid 1px #D5D5D5;
-		padding: 10px 0;
+		padding: 1.6rem 0;
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-		flex-grow: 1;
 		width: 100%;
-		margin-bottom: 20px;
 		transition: border 0.3s ease, color 0.3s ease;
 		color: #282846;
-		align-items: flex-start;
 	}
 
 	.section.section-hiring-process .hp-list .hp-card:hover {
@@ -786,7 +792,6 @@ layout: default
 	}
 
 	.section.section-hiring-process .hp-card .hp-title {
-		margin-bottom: 25px;
 		max-width: 280px;
 		display: block;
 		font-size: 1.1rem;
@@ -794,11 +799,11 @@ layout: default
     line-height: 1.8;
     font-weight: 500;
 		margin: 0;
-		margin-bottom: 15px;
 		color: inherit;
 	}
 
 	.section.section-hiring-process .hp-card .hp-description {
+		margin-top: 10px;
 		color: #282846;
 		line-height: 24px;
 		max-width: 600px;
@@ -807,10 +812,8 @@ layout: default
 		opacity: 0;
 		display: none;
     font-size: 1rem;
-    margin-bottom: 30px;
     line-height: 1.8;
     font-weight: 400;
-
 	}
 
 	.section.section-hiring-process .hp-list .hp-description.show {
@@ -824,10 +827,8 @@ layout: default
 
 	.section.section-hiring-process .hp-card-action {
 		flex-grow: 0;
-		text-align: right;
-		font-size: 1.2rem;
-		padding-top: 6px;
 		opacity: 0.8;
+		flex-basis: 15px;
 	}
 
 	.section.section-hiring-process .hp-card-action .icon {
@@ -849,41 +850,41 @@ layout: default
 		width: 200px;
 	}
 
-	.plus-icon {
-    position: relative;
-    width: 15px;
-    height: 15px;
-		opacity: 0.8;
+	.hp-card-action {
+		position: relative;
 	}
 
-	.plus-icon:before,
-	.plus-icon:after {
-			content: "";
-			position: absolute;
-			background-color: #000;
-			transition: transform 0.25s ease-out;
+	.j-icon {
+		transition: opacity 0.25s ease, transform 0.25s ease;
+		position: absolute;
+		top: 8px;
+		right: 0;
 	}
 
-	.plus-icon:before {
-    top: 0;
-    left: 50%;
-    width: 3px;
-    height: 100%;
-    border-radius: 4px;
-		margin-left: -1.5px;
+	.j-icon > svg {
+		stroke: #282846;
+		stroke-width: 1.3px;
 	}
 
-	.plus-icon:after {
-		margin-top: -1.5px;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    border-radius: 4px;
+	.hp-card-action .j-icon-plus, .hp-card-action.hp-card-action--open .j-icon-minus {
+		opacity: 1;
 	}
 
-	.plus-icon.active:before { transform: rotate(90deg); }
-	.plus-icon.active:after { transform: rotate(180deg); }
+	.hp-card-action .j-icon-minus, .hp-card-action.hp-card-action--open .j-icon-plus {
+		opacity: 0;
+	}
+
+	.hp-card-action.hp-card-action--open .j-icon-plus {
+		transform: rotate(90deg);
+	}
+
+	.hp-card-action.hp-card-action--open .j-icon-minus {
+		transform: rotate(180deg);
+	}
+
+	.hp-card-action .j-icon-minus {
+		transform: rotate(-180deg);
+	}
 
 	@media (min-width: 980px) {
 
@@ -1004,7 +1005,7 @@ layout: default
 
 		$el.click(function() {
 			$(this).find('.hp-description').toggleClass('show');
-			$(this).find('.plus-icon').toggleClass('active');
+			$(this).find('.hp-card-action').toggleClass('hp-card-action--open');
 		});
 
 	})
