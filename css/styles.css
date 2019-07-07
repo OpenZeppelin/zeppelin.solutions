@@ -1318,15 +1318,21 @@ section .heading + .grid-logos {
 	.grid-logos .grid-logos__logo {
 		width: 100%;
 	}
+
 	.page-product .c-projects, .page-product .c-what-else {
 		padding: 90px 0;
 	}
 }
 
 @media (min-width: 980px) {
+	.page-product .c-what-else .box.box--moved {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+	}
+
 	.page-product .c-what-else .box:hover ~ .box {
     -webkit-transform: translateX(30px);
-    transform: translateX(30px)
+    transform: translateX(30px);
 	}
 
 	.page-product .c-what-else .box .box-heading {
