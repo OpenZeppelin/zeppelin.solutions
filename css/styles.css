@@ -1232,6 +1232,10 @@ html {
 
 /** Logos **/
 
+section .heading + .grid-logos {
+	padding-top: 15px;
+}
+
 .grid-logos .grid-logos__row {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
