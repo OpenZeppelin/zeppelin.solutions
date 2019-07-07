@@ -1328,6 +1328,10 @@ section .heading + .grid-logos {
 		margin-left: 0;
 	}
 
+	.page-product .c-what-else .box .box-main {
+		align-self: flex-start;
+	}
+
 	.page-product .term-container {
 		margin-top: 45px;
 	}
