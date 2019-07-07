@@ -728,7 +728,9 @@ h1, h2, h3, h4, h5 {
 	background-color: #282846;
 	border-bottom: solid 1px #414168;
 	-webkit-transform: translateZ(0);
-	transition: all ease 0.25s;
+	transition: transform ease 0.25s, box-shadow ease 0.25s;
+	position: relative;
+	z-index: 5;
 }
 
 .p-nav-placeholder {
@@ -764,7 +766,7 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
 }
 
-.p-nav .p-menu {
+.p-nav .p-menu__list {
 	display: flex;
 	flex-direction: flex-end;
 	font-family: 'silka';
@@ -901,7 +903,7 @@ body .overlay--active {
 		font-size: 0.9rem;
 	}
 
-	.p-nav .p-menu {
+	.p-nav .p-menu__list {
 		-webkit-mask-image: none;
 	}
 

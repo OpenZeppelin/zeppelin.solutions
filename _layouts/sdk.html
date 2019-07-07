@@ -246,19 +246,7 @@ layout: default
 	</section>
 </main>
 
-<script>
-	(function($){
-		$(document).ready(function() {
-			$('.page-product .c-what-else .box').hover(function() {
-				var $prevItem = $(this).prev();
-				$prevItem.addClass('box--moved');
-			}, function() {
-				var $prevItem = $(this).prev();
-				$prevItem.removeClass('box--moved');
-			});
-		});
-	})(jQuery);
-</script>
 <script src="/js/typed.min.js"></script>
 <script src="/js/fixedSubMenu.js"></script>
 <script src="/js/console-sdk.js"></script>
+<script src="/js/product-page.js"></script>
