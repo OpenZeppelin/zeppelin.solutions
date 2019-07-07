@@ -2,6 +2,24 @@
 layout: default
 ---
 <style type="text/css">
+	.page-landing .l-hero {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		position: relative;
+		height: auto;
+	}
+
+	.page-landing .l-hero .section__bg {
+		background-position: top;
+		bottom: auto;
+		top: 0;
+	}
+
+	.page-landing .l-hero .section__bg {
+		background-color: #F8F8FA;
+	}
+
 	.l-projects .sub-heading {
 		margin-bottom: 60px;
 	}
@@ -175,39 +193,44 @@ layout: default
     position: relative;
 	}
 
-		section.section.l-hero-quote .quote {
-			padding: 80px 0;
-		}
-		.l-projects .projects-grid .item {
-			margin-right: 54px;
-		}
-
-		.l-cta .main-box .box-description {
-			padding-right: 117px;
-		}
-
-		.l-cta .box .box-wrapper {
-			flex-direction: row;
-			text-align: left;
-		}
-
-		.l-cta .box .box-side {
-			margin-bottom: 0px;
-		}
-
-		.l-hero-quote .quote .quote-footer .quote-author {
-			font-size: 1rem;
-		}
-
-		.l-cta .main-box {
-			min-height: 270px;
-		}
+	section.section.l-hero-quote .quote {
+		padding: 80px 0;
 	}
+	.l-projects .projects-grid .item {
+		margin-right: 54px;
+	}
+
+	.l-cta .main-box .box-description {
+		padding-right: 117px;
+	}
+
+	.l-cta .box .box-wrapper {
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.l-cta .box .box-side {
+		margin-bottom: 0px;
+	}
+
+	.l-hero-quote .quote .quote-footer .quote-author {
+		font-size: 1rem;
+	}
+
+	.l-cta .main-box {
+		min-height: 270px;
+	}
+
+	.page-landing .l-hero {
+		height: 500px;
+	}
+
+}
 
 </style>
 
 <main class="page page-landing">
-	<section class="l-hero section hero section--gray">
+	<section class="l-hero section hero">
 		<div class="container">
 			<div class="wrapper">
 				<h1 class="heading fIu">Professional development platform for decentralized applications</h1>
@@ -217,8 +240,10 @@ layout: default
 				</p>
 			</div>
 		</div>
+		<div class="section__bg" style="background-image:url('/images/bg/bg_home_full.svg')"></div>
+		<div class="section__bg-final" style="background-image:url('/images/bg/final_tg_white.svg')"></div>
 	</section>
-	<section class="section l-projects">
+	<section class="section l-projects section--white">
 		<div class="container container--lg">
 			<h6 class="sub-heading">The world’s leading projects trust OpenZeppelin</h6>
 			<div class="grid-logos">
@@ -330,7 +355,7 @@ layout: default
 				<h2 class="heading">Start building</h2>
 				<p class="description">
 					Check out our resources for beginner and experienced
-					smart contracts and blockchain developers
+					smart contracts and blockchain developers.
 				</p>
 			</div>
 			<div class="grid building-grid">
@@ -349,7 +374,7 @@ layout: default
 						</span>
 						<h3 class="box-heading">Docs</h3>
 						<p class="box-description">
-							Learn everything you need to develop blockchain applications through a complete set of guides and tutorials
+							Learn everything you need to develop blockchain applications through a complete set of guides and tutorials.
 						</p>
 					</a>
 					<a class="col box box--secondary a-scale" href="http://forum.openzeppelin.com">
