@@ -1324,6 +1324,11 @@ section .heading + .grid-logos {
 }
 
 @media (min-width: 980px) {
+	.page-product .c-what-else .box:hover ~ .box {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px)
+	}
+
 	.page-product .c-what-else .box .box-heading {
 		margin-left: 0;
 	}
@@ -1339,9 +1344,6 @@ section .heading + .grid-logos {
 	.section__bg {
 		background-size: contain;
 	}
-	/* .page-product .c-hero .container:nth-child(1) {
-		min-height: auto;
-	} */
 
 	section.hero {
 		min-height: 400px;
