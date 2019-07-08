@@ -4,10 +4,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Zeppelin
+title: OpenZeppelin
 url: https://openzeppelin.com
 email: contact@openzeppelin.com
-description: Zeppelin - Infrastructure for decentralized systems
+description: OpenZeppelin - Infrastructure for decentralized systems
 permalink: "/:path/"
 defaults:
   - scope:

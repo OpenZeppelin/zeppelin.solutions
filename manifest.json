@@ -1,0 +1,14 @@
+{
+  "name": "OpenZeppelin",
+  "short_name": "OpenZeppelin",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "browser",
+  "orientation": "any",
+  "theme_color": "#282846",
+  "icons": [
+    {
+      "src": "images/icons/icon-192x192.png"
+    }
+  ]
+}
