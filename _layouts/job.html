@@ -13,13 +13,32 @@ layout: default
   }
 
   .page-job .sidebar ul {
-    padding: 15px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+		flex-wrap: wrap;
   }
 
+	.page-job .sidebar .apply {
+		max-width: 180px;
+		margin: 20px auto;
+	}
+
   .page-job .sidebar li {
-    margin-top: 18px;
     opacity: 0.8;
+		position: relative;
+		border-right: 1px solid #4a4a4a;
+		flex: 1;
+		justify-content: center;
+		display: flex;
+		padding: 0 10px;
+		margin-top: 18px;
   }
+
+	.page-job .sidebar li:last-child {
+    border-right: none;
+	}
 
   .page-job .j-content > .container {
     display: flex;
@@ -98,8 +117,23 @@ layout: default
     line-height: 1.25;
   }
 
-
 @media (min-width: 980px) {
+
+  .page-job .sidebar li {
+    opacity: 0.8;
+		border: none;
+		justify-content: flex-start;
+		padding: 0;
+  }
+  .page-job .sidebar ul {
+    flex-direction: column;
+		padding: 15px 0;
+  }
+
+	.page-job .sidebar .btn {
+    width: 100%;
+  }
+
 	.page-job .j-content > .container {
 		flex-direction: row;
 	}
@@ -140,9 +174,9 @@ layout: default
 				<h1 class="job-title heading">{{ page.title }}</h1>
 				<div class="company-description">
 					<p>
-						At OpenZeppelin, we have built the world’s leading Open Source library for smart contract development. 
+						At OpenZeppelin, we have built the world’s leading Open Source library for smart contract development.
 						OpenZeppelin Contracts powers over 3,000 public projects, with over 7,000 stars on Github and maintained by a community of 180+ contributors.
-						We also conduct security audits for the Ethereum Foundation, Coinbase, and other leading organizations in the space. 
+						We also conduct security audits for the Ethereum Foundation, Coinbase, and other leading organizations in the space.
 						With the success of our product, our security audits work, and our educational efforts, we have set industry standards for building secure systems in a fast-growing industry, which presents new programming paradigms.
 						We are now excited to offer a development platform  that will help the growing number of developers working on top of decentralized protocols build the applications that will reach mass adoption.
 					</p>
