@@ -110,6 +110,11 @@ layout: default
 	.l-cta .main-box .box-heading {
 		font-size: 26px;
 		margin-bottom: 10px;
+		white-space: initial;
+	}
+
+	.l-cta .box .box-main {
+		width: 100%;
 	}
 
 	.l-cta .box .box-wrapper {
@@ -119,6 +124,7 @@ layout: default
     align-items: center;
 		text-align: center;
 		flex-direction: column-reverse;
+		width: 100%;
 	}
 
 	.l-cta .box .box-side {
@@ -135,6 +141,7 @@ layout: default
 
 	.l-cta .building-grid .row {
 		justify-content: space-between;
+		flex-direction: column;
 	}
 
 .l-cta .building-grid .box {
@@ -170,13 +177,20 @@ layout: default
 
 @media (min-width: 769px) {
 	.l-cta .building-grid .box {
-		height: 210px;
-		position: relative;
-		max-width: 310px;
+		max-width: 70%;
 	}
 }
 
 @media (min-width: 980px) {
+	.l-cta .building-grid .row {
+		flex-direction: row;
+	}
+
+	.l-cta .building-grid .box {
+		height: 210px;
+		position: relative;
+		max-width: 320px;
+	}
 
 	.l-cta .building-grid {
 		margin-left: -20px;

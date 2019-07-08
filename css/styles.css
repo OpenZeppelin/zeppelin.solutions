@@ -166,10 +166,6 @@ a {
 	min-width: 200px;
 }
 
-.grid > .row > .col:last-child, .col:last-child {
-	margin-right: 0;
-}
-
 .cf:before,
 .cf:after {
   content: " "; /* 1 */
@@ -899,6 +895,10 @@ body .overlay--active {
 
 /** Desktop  **/
 @media (min-width: 980px) {
+	.grid > .row > .col:last-child, .col:last-child {
+		margin-right: 0;
+	}
+
 	.btn {
 		font-size: 0.9rem;
 	}
