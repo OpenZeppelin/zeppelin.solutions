@@ -6,10 +6,15 @@
     background: #FFFFFF;
     box-shadow: 0 8px 14px 0 rgba(60,60,60,0.09);
     border-radius: 4px;
-    height: 220px;
+    min-height: 220px;
     width: 100%;
     justify-content: center;
     align-items: center;
+		overflow: hidden;
+  }
+
+	.security-quote > .row {
+		flex-direction: column;
   }
 
 	.security-quote .card:last-child {
@@ -67,14 +72,26 @@
 	}
 
 @media (min-width: 700px) {
+	.security-quote > .row {
+		flex-direction: row;
+  }
+
   .security-quote .card .quote .text {
 		font-size: 1.2rem;
   }
+
 	.security-quote .card {
 		margin-right: 40px;
 		height: auto;
 		min-height: 220px;
   }
+
+	.partners-grid .grid-logos__row {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    min-height: 220px;
+    justify-content: center;
+	}
 }
 
 @media (min-width: 900px) {

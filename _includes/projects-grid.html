@@ -1,4 +1,8 @@
 <style type="text/css">
+	.grid.p-products-grid > .row {
+		flex-direction: column;
+	}
+
 	.p-products-grid .grid .col {
 		box-shadow: 0 4px 9px 0 rgba(0,0,0,0.32);
 		border-radius: 6px;
@@ -25,6 +29,9 @@
     flex-direction: column;
 		padding: 2rem;
 		padding-top: 0;
+		min-height: 500px;
+		max-width: 450px;
+		align-self: center;
 	}
 
 
@@ -97,6 +104,15 @@
 
 	.p-product-card .p-product-card-footer > .btn:last-child {
 		margin-right: 0;
+	}
+
+	@media (min-width: 1080px) {
+		.grid.p-products-grid > .row {
+			flex-direction: row;
+		}
+		.p-product-card {
+			height: 550px;
+		}
 	}
 
 </style>
