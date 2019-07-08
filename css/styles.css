@@ -730,7 +730,7 @@ h1, h2, h3, h4, h5 {
 	-webkit-transform: translateZ(0);
 	transition: transform ease 0.25s, box-shadow ease 0.25s;
 	position: relative;
-	z-index: 5;
+	z-index: 3;
 }
 
 .p-nav-placeholder {
