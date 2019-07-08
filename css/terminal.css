@@ -139,6 +139,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .terminal-right {
+    top: 390px !important;
+    transition: top 0.4s !important;
+    -webkit-transition: top 0.4s !important;
+  }
   #terminal {
     z-index: 30;
     top: 0px;
