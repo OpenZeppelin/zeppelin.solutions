@@ -251,11 +251,9 @@
 				<h2 class="heading">Request a Security Audit</h2>
 				<p class="description">You can request an audit by filling this form or by sending an email to <a href="mailto:audits@openzeppelin.com">audits@openzeppelin.com</a></p>
 			</header>
-			<form name="sr-form" class="sr-form" novalidate>
+			<form name="sr-form" class="sr-form" method="POST" data-netlify="true" novalidate>
 				<div class="msr-form-field">
 					<input class="msr-form-field__input" type="text" required name="project_name">
-
-
 					<label>Project Name *</label>
 				</div>
 				<div class="msr-form-field">
@@ -264,20 +262,14 @@
 				</div>
 				<div class="msr-form-field">
 					<input class="msr-form-field__input" type="text" required name="contact_name">
-
-
 					<label>Contact Name *</label>
 				</div>
 					<div class="msr-form-field">
 					<input class="msr-form-field__input" type="email" required name="email">
-
-
 					<label>Contact email *</label>
 				</div>
 				<div class="msr-form-field">
 					<input class="msr-form-field__input" type="text" required name="project_scope">
-
-
 					<label>Short description of audit scope *</label>
 				</div>
 				<div class="msr-form-field msr-form-field--lg">
