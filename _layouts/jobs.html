@@ -852,7 +852,6 @@ layout: default
 	}
 
 	.section.section-hiring-process .hp-card .hp-title {
-		max-width: 280px;
 		display: block;
 		font-size: 1.1rem;
 		text-decoration: none;
@@ -860,6 +859,7 @@ layout: default
     font-weight: 500;
 		margin: 0;
 		color: inherit;
+		max-width: calc(100% - 30px);
 	}
 
 	.section.section-hiring-process .hp-card .hp-description {
@@ -944,6 +944,24 @@ layout: default
 
 	.hp-card-action .j-icon-minus {
 		transform: rotate(-180deg);
+	}
+
+	@media (min-width: 700px) {
+		.section.section-job-promo .job-wall-grid {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 100px;
+		}
+
+		.section.section-job-promo .photo-wall .photo-wall-img {
+			object-position: 50% 38%;
+		}
+
+		.section.section-job-promo .job-wall-grid .box {
+			max-width: 50%;
+		}
 	}
 
 	@media (min-width: 980px) {
@@ -1039,10 +1057,6 @@ layout: default
 		.section.section-jobs-openings .positions-list .positions-list-item {
 			font-size: 1.1rem;
 			text-align: left;
-		}
-
-		.section.section-hiring-process .hp-card .hp-title {
-			max-width: 560px;
 		}
 
 		.section.section-jobs-openings {
