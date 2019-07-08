@@ -1284,9 +1284,13 @@ section .heading + .grid-logos {
 	vertical-align: middle;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-	.grid--challenges > .row {
+@media (min-width: 420px) and (max-width: 1024px) {
+	/* .grid--challenges > .row {
 		flex-direction: column;
+	} */
+
+	.grid--challenges > .row .box--primary {
+		border-bottom: none;
 	}
 }
 
