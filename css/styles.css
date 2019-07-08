@@ -1331,16 +1331,6 @@ section .heading + .grid-logos {
 }
 
 @media (min-width: 980px) {
-	.page-product .c-what-else .box.box--moved {
-    -webkit-transform: translateX(-30px);
-    transform: translateX(-30px);
-	}
-
-	.page-product .c-what-else .box:hover ~ .box {
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-	}
-
 	.page-product .c-what-else .box .box-heading {
 		margin-left: 0;
 	}
