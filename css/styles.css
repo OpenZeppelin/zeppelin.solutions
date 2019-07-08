@@ -1073,7 +1073,7 @@ html {
 
 .page-product .c-explained .box .link {
 	display: inline-block;
-	font-size: 0.9125rem;
+	font-size: 1rem;
 	color: #4E5EE4;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -1291,6 +1291,14 @@ section .heading + .grid-logos {
 }
 
 @media (min-width: 700px) {
+	.page-product .c-explained .description {
+		height: 180px;
+	}
+
+	.page-product .c-explained .box-heading {
+		height: 35px;
+	}
+
 	.page-product .c-explained .box {
 		margin-right: 2.0625rem;
 		border: none;
@@ -1328,11 +1336,23 @@ section .heading + .grid-logos {
 	.page-product .c-projects, .page-product .c-what-else {
 		padding: 90px 0;
 	}
+
+	.page-product .c-explained .box .link {
+		font-size: 0.8rem;
+	}
 }
 
 @media (min-width: 980px) {
+	.page-product .c-explained .box .link {
+		font-size: 1rem;
+	}
+
 	.page-product .c-what-else .box .box-heading {
 		margin-left: 0;
+	}
+
+	.page-product .c-explained .description {
+		height: 150px;
 	}
 
 	.page-product .c-what-else .box .box-main {
