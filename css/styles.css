@@ -766,7 +766,7 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
 }
 
-.p-nav .p-menu__list {
+.p-nav .p-menu, .page-product .p-menu {
 	display: flex;
 	flex-direction: flex-end;
 	font-family: 'silka';
@@ -903,7 +903,7 @@ body .overlay--active {
 		font-size: 0.9rem;
 	}
 
-	.p-nav .p-menu__list {
+	.p-nav .p-menu {
 		-webkit-mask-image: none;
 	}
 
@@ -1319,6 +1319,10 @@ section .heading + .grid-logos {
 
 	.grid-logos .grid-logos__logo {
 		width: 100%;
+	}
+
+	.grid-logos .grid-logos__logo {
+		width: 90%;
 	}
 
 	.page-product .c-projects, .page-product .c-what-else {
