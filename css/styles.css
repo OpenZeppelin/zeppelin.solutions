@@ -591,13 +591,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .description {
-
   color: #51516A;
   text-align: inherit;
   margin-bottom: 30px;
   line-height: 1.8;
   font-weight: 400;
-
 }
 
 .center {
@@ -1058,6 +1056,7 @@ html {
 	width: 88%;
 	margin: 0 auto;
 	font-weight: 400;
+	overflow: hidden;
 }
 
 .page-product .c-explained .box .link {
@@ -1070,6 +1069,10 @@ html {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	margin-right: -1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
 }
 
 .page-product .c-explained .box .link:hover {
@@ -1078,7 +1081,7 @@ html {
 }
 
 .page-product .c-explained .box .link .material-icons {
-	font-size: 1rem;
+	font-size: 1.3rem;
 	vertical-align: sub;
 }
 
@@ -1297,8 +1300,8 @@ section .heading + .grid-logos {
 	}
 
 	.page-product.page-sdk .c-explained .description {
-		height: 155px;
-    max-height: 155px;
+		height: 165px;
+    max-height: 165px;
 	}
 
 	.page-product .c-explained .box-heading {
@@ -1349,6 +1352,11 @@ section .heading + .grid-logos {
 }
 
 @media (min-width: 980px) {
+	.page-product.page-sdk .c-explained .description {
+		height: 155px;
+    max-height: 155px;
+	}
+
 	.page-product .c-what-else .grid > .row {
 		flex-direction: row;
 	}
@@ -1366,7 +1374,7 @@ section .heading + .grid-logos {
 	}
 
 	.page-product .c-explained .description {
-		min-height: 60px;
+		min-height: 50px;
 	}
 
 	.page-product .c-what-else .box .box-main {
