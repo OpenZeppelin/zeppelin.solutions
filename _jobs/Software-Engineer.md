@@ -7,7 +7,7 @@ tags:
 - engineering
 date: 2018-02-25 19:07:50 +0000
 sub_heading: 'Build the technologies underlying the new economies of smart contracts.'
-description: 'Zeppelin builds the industry security standard for architecting and deploying smart contract systems in public blockchains. We proudly build the most widely used open source infrastructure tools: the OpenZeppelin smart contracts library powers 3000 public projects and has over 6500 Github stars, while the ZeppelinOS development toolset is leading the way in upgradeability and secure code reuse. We also conduct in-depth system security audits to high-impact smart contract systems, such as Augur, the RCN token, or the Solidity compiler. Learn more about us!'
+description: 'The OpenZeppelin smart contracts library powers 3000 public projects and has over 6500 Github stars, while the ZeppelinOS development toolset is leading the way in upgradeability and secure code reuse.'
 slug: ''
 ---
 
@@ -36,7 +36,7 @@ slug: ''
       <p class="small left-aligned">You have experience designing, building, and shipping products from beginning to end with minimal supervision.</p>
     </li>
     <li>
-      <p class="small left-aligned">You enjoy being a generalist, working on both the frontend, backend, and everything in between to solve problems and delight users.</p>
+      <p class="small left-aligned">You enjoy being a generalist, working on anything needed to create a delightful experience for your users. You have a keen eye for design and a basic understanding of basic UI & UX principles.</p>
     </li>
     <li>
       <p class="small left-aligned">You are actively interested in blockchain technology, decentralization, and cryptography.</p>
