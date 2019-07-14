@@ -108,9 +108,14 @@
 	width: 100%;
 	border: none;
   border-bottom: 1px solid #A9A9B5;
-	transition: 0.1s ease all;
+	transition: 0.25s ease all;
 	outline: none;
 	overflow: auto;
+	height: 30px;
+}
+
+ .msr-form-field .msr-form-field__textfield:focus, .msr-form-field .msr-form-field__textfield:active  {
+  height: 100px;
 }
 
 	.msr-form-field .msr-form-field__input:focus { outline:none; padding: 10px; }
@@ -172,6 +177,11 @@
 .msr-form-field__actions {
 	margin-top: 15px;
 	flex-direction: row;
+	margin-left: -6px;
+}
+
+.msr-form-field__submit {
+	margin-left: -1px;
 }
 
 .msr-form-field__actions > input {
@@ -179,6 +189,11 @@
 	display: inline-block;
 	width: 40%;
 	max-width: 120px;
+	transform: scale(0.9);
+}
+
+.msr-form-field__actions > input:hover {
+	transform: scale(0.9);
 }
 
 .msr-form-field.msr-form-field__actions > .btn {
@@ -329,7 +344,7 @@
 						<label>Other comments - optionals</label>
 					</div>
 				</div>
-				<div class="msr-form-field">
+				<div class="msr-form-field msr-form-field__submit">
 					<button class="btn btn--fixed" type="submit">Send Request</button>
 				</div>
 			</form>
