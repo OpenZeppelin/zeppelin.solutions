@@ -40,7 +40,7 @@ layout: default
 	}
 
 	.page-tos ul {
-		list-style: disc;
+		list-style: none;
 		padding-left: 45px;
 		margin-bottom: 40px;
 	}
@@ -51,6 +51,16 @@ layout: default
 		color: #282846;
 		line-height: 1.8;
 		margin-bottom: 10px;
+	}
+
+	.page-tos ul li::before {
+		content: "\2022";
+		color: #282846;
+		opacity: 0.8;
+		font-weight: bold;
+		display: inline-block;
+		width: 1em;
+		margin-left: -1em;
 	}
 </style>
 
