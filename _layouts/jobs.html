@@ -966,12 +966,16 @@ layout: default
 
 	@media (min-width: 980px) {
 
-		.section.section-job-promo .job-wall-grid {
+		.section.section-job-promo .photo-wall {
+			top: 0;
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			right: 0;
-			bottom: -50px;
+		}
+
+		.section.section-job-promo .job-wall-grid {
+			position: relative;
 		}
 
 		.section.section-job-promo .job-wall-grid .box {
@@ -1039,12 +1043,13 @@ layout: default
 		}
 
 		.section.section-job-promo, .section.section-job-promo .photo-wall {
-			height: auto;
+			height: 400px;
   	}
 
-		.section.section-job-promo .photo-wall {
-			height: 400px;
-		}
+		.section.section-job-promo .job-wall-grid {
+			margin-top: 160px;
+			position: absolute;
+  	}
 
 		.section.section-jobs-openings .section-content, .section.job-opening-role {
 			flex-direction: row;
