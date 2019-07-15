@@ -1,7 +1,9 @@
 ---
 layout: job
 title: 'Software Engineer, Product'
-location: 'Global  |  Full Time'
+location: 'Global'
+type: 'Full Time'
+team: Engineering
 navigation_weight: 1
 tags:
   - engineering

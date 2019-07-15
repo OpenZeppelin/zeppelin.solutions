@@ -1,7 +1,9 @@
 ---
 layout: job
 title: 'Technical Writer'
-location: 'Global  |  Part Time'
+location: 'Global'
+type: 'Part Time'
+team: Communications
 navigation_weight: 1
 tags:
   - communications

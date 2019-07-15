@@ -1,13 +1,15 @@
 ---
 layout: job
 title: 'Security Researcher'
-location: 'Global  |  Full Time'
+location: 'Global'
+type: 'Full Time'
+team: Engineering
 navigation_weight: 1
 tags:
-- engineering
+  - engineering
 date: 2018-02-25 19:07:50 +0000
-sub_heading: "Secure the highest profile projects in the new decentralized economy."
-description: "In the Research team, we are in charge of carrying out code audits for high-profile projects (Coinbase, Augur, the Solidity compiler), who trust us for security advice. We also perform more open-ended research on automated smart contract analysis and other bleeding edge topics such as frontrunning, formal verification, and layer 2 solutions."
+sub_heading: 'Secure the highest profile projects in the new decentralized economy.'
+description: 'In the Research team, we are in charge of carrying out code audits for high-profile projects (Coinbase, Augur, the Solidity compiler), who trust us for security advice. We also perform more open-ended research on automated smart contract analysis and other bleeding edge topics such as frontrunning, formal verification, and layer 2 solutions.'
 slug: ''
 ---
 
