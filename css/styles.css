@@ -1286,13 +1286,6 @@ section .heading + .grid-logos {
 	margin-right: auto;
 }
 
-/* Custom Requirements */
-@media (min-width: 420px) and (max-width: 1024px) {
-	.grid--challenges > .row .box--primary {
-		border-bottom: none;
-	}
-}
-
 @media (min-width: 700px) {
 
 	.page-product .c-explained .description {
@@ -1417,4 +1410,20 @@ section .heading + .grid-logos {
 	}
 }
 
+/* Custom Requirements */
+@media (min-width: 420px) and (max-width: 1024px) {
+	.grid--challenges > .row .box--primary {
+		border-bottom: none;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+	.p-products-grid .p-product-card {
+		margin-bottom: 20px;
+	}
+
+	.p-products-grid > .row > .col:last-child, .p-product-card:last-child {
+		margin-right: 1rem;
+	}
+}
 
