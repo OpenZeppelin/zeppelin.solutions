@@ -2,6 +2,7 @@
   function securityAudits() {
     var $btn = $('.request-audit-btn');
     var validForm = false;
+    var classPathToDetach = null;
 
     // Validators Map - Validates given an input type
     var validate = {
@@ -17,11 +18,25 @@
     }
 
     function checkValues() {
-      var values = $('.sr-form').serializeArray();
-      validForm = !values.filter((i) => i.value === '');
-      if (validForm) {
-        var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
-        $submitBtn.attr('disabled', value);
+      // A path must be selected
+      if (classPathToDetach) {
+        var values = $(
+          '.sr-form .msr-form-fiexld__input:not(.msr-form-field__input--path-' +
+            classPathToDetach +
+            ')'
+        ).serializeArray();
+        console.log(values),
+          $(
+            '.sr-form .msr-form-fiexld__input:not(.msr-form-field__input--path-' +
+              classPathToDetach +
+              ')'
+          ),
+          classPathToDetach;
+        validForm = !values.filter((i) => i.value === '');
+        if (validForm) {
+          var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
+          $submitBtn.attr('disabled', validForm);
+        }
       }
     }
 
@@ -31,10 +46,13 @@
     }
 
     function blurInput() {
+      console.log('blured');
+      var $input = this;
+
       if (!$input || $input.type === 'button') {
         return false;
       }
-      var $input = this;
+
       var $formField = $(this).parent();
       $formField.addClass('msr-form-field--touched');
       if (!$input.value) {
@@ -43,7 +61,7 @@
         addErrorInline($formField);
       } else {
         removeErrorInline($formField);
-        // checkValues();
+        checkValues();
       }
     }
 
@@ -77,7 +95,7 @@
         $cont.find('.msr-form-path--no').addClass('hidden');
         $aN.removeClass('btn--active');
         $(this).addClass('btn--active');
-        // clean the other path
+        classPathToDetach = 'no';
       });
 
       $aN.click(function() {
@@ -85,7 +103,7 @@
         $cont.find('.msr-form-path--yes').addClass('hidden');
         $aY.removeClass('btn--active');
         $(this).addClass('btn--active');
-        // clean the other path
+        classPathToDetach = 'yes';
       });
 
       // Cheking changes on blur
@@ -110,7 +128,7 @@
       $('.sr-form').on('submit', function(e) {
         e.preventDefault();
         validateForm();
-        var values = $(this).serializeArray();
+
         // console.log(values);
         // Send values
         $('.modal-sr .modal-sr__sub-container').remove();
