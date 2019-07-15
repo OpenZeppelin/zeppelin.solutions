@@ -1284,7 +1284,15 @@ section .heading + .grid-logos {
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	height: 350px;
 	min-height: 350px;
+}
+
+@media (min-width: 500px) {
+	.page-product .c-what-else .grid > .row .box {
+		height: auto;
+		min-height: auto;
+	}
 }
 
 @media (min-width: 700px) {
