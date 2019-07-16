@@ -1420,6 +1420,19 @@ section .heading + .grid-logos {
 }
 
 /* Custom Requirements */
+
+@media (min-width: 300px) and (max-width: 720px) {
+	.page-product.page-start .grid-logos .grid-logos__logo {
+		width: 90%;
+		height: 100%;
+	}
+
+	.page-product.page-start .grid-logos .grid-logos__col:not(:last-child) {
+		margin-bottom: 50px
+	}
+}
+
+
 @media (min-width: 420px) and (max-width: 1024px) {
 	.grid--challenges > .row .box--primary {
 		border-bottom: none;
