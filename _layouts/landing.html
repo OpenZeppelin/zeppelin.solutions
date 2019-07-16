@@ -264,6 +264,47 @@ layout: default
 	@media (min-width: 1440px) {
 		height: 500px;
 	}
+
+	#background path {
+		animation: pulse 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+
+		transform-origin: 50% 50%;
+		transform-box: fill-box;
+	}
+
+	@keyframes pulse {
+		/* Rotating it along with the scale makes it a little bit more fancy */
+		0%, 100% { transform: scale(0) rotate(33deg); }
+		35%, 65% { transform: scale(1) rotate(0deg); }
+	}
+}
+
+.page-landing .hero {
+	background-color: #F8F8FA;
+}
+
+.page-landing .hero .section__bg--left {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	left: 0;
+	top: 0;
+	background-size: contain;
+	width: 50%;
+	background-position: top left;
+}
+
+.page-landing .hero .section__bg--right {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	right: 0;
+	top: 0;
+	background-size: contain;
+	width: 50%;
+	background-position: top right;
 }
 
 </style>
@@ -279,8 +320,8 @@ layout: default
 				</p>
 			</div>
 		</div>
-		<div class="section__bg" style="background-image:url('/images/bg/bg_home_full.svg')"></div>
-		<div class="section__bg-final" style="background-image:url('/images/bg/final_tg_white.svg')"></div>
+		<div class="section__bg--left" style="background-image:url('/images/bg/hero/half/svg/bg_home_left.svg')"></div>
+		<div class="section__bg--right" style="background-image:url('/images/bg/hero/half/svg/bg_home_right.svg')"></div>
 	</section>
 	<section class="section l-projects section--white">
 		<div class="container container--lg">
