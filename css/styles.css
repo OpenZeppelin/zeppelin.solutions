@@ -1284,8 +1284,8 @@ section .heading + .grid-logos {
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 350px;
-	min-height: 350px;
+	height: 320px;
+	min-height: 320px;
 }
 
 @media (min-width: 500px) {
