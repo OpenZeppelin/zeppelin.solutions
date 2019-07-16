@@ -3,11 +3,33 @@
     var $btn = $('.request-audit-btn');
     var validForm = false;
     var classPathToDetach = null;
+    var emailData = {
+      email: 'audits@openzeppelin.com',
+      subject: 'Security Audit',
+    };
+
+    var mapRef = {
+      project_name: 'Project Name',
+      project_website: 'Project Website',
+      project_name: 'Contact Name',
+      contact_name: 'Project Name',
+      email: 'Contact email',
+      project_scope: 'Short description of audit scope',
+      project_repository: 'Link to repository',
+      project_audit_scope:
+        'Estimated total lines of code including inline comments',
+      project_launch_date: 'Target launch day',
+      project_documentation: 'Documentation',
+      project_comments: 'Other comments',
+      project_date_finalization: 'Estimated date for finalization',
+      project_estimated_audit_scope: 'Estimated audit scope',
+    };
 
     // Validators Map - Validates given an input type
     var validate = {
       email: (email) => /^.+@.+\..+$/.test(email),
       text: (t) => true,
+      textarea: (t) => true,
     };
 
     function closeModalContainer(e) {
@@ -17,36 +39,79 @@
       }
     }
 
+    var serialize = function(inputs) {
+      var serialized = [];
+      var serializedArrMap = [];
+      var serializedBody = [];
+
+      for (var i = 0; i < inputs.length; i++) {
+        var field = inputs[i];
+        // Don't serialize fields without a name, submits, buttons, file and reset inputs, and disabled fields
+        if (
+          !field.name ||
+          field.disabled ||
+          field.type === 'file' ||
+          field.type === 'reset' ||
+          field.type === 'submit' ||
+          field.type === 'button'
+        )
+          continue;
+
+        serializedArrMap.push({
+          name: field.name,
+          required: field.required,
+          value: field.value,
+        });
+
+        serialized.push(
+          encodeURIComponent(field.name) + '=' + encodeURIComponent(field.value)
+        );
+
+        serializedBody.push(mapRef[field.name] + ' ' + field.value);
+      }
+
+      return {
+        str: serialized.join('&'),
+        mapArr: serializedArrMap,
+        body: serializedBody.join('\n'),
+      };
+    };
+
+    function setMailTo() {
+      var jhref =
+        'mailto:' +
+        emailData.email +
+        '?subject=' +
+        emailData.subject +
+        '&body=' +
+        encodeURIComponent(emailData.body);
+
+      location.href = jhref;
+    }
+
     function checkValues() {
-      // A path must be selected
       if (classPathToDetach) {
-        var values = $(
-          '.sr-form .msr-form-fiexld__input:not(.msr-form-field__input--path-' +
-            classPathToDetach +
-            ')'
-        ).serializeArray();
-        console.log(values),
-          $(
-            '.sr-form .msr-form-fiexld__input:not(.msr-form-field__input--path-' +
-              classPathToDetach +
-              ')'
-          ),
-          classPathToDetach;
-        validForm = !values.filter((i) => i.value === '');
-        if (validForm) {
-          var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
-          $submitBtn.attr('disabled', validForm);
+        var $submitBtn = $('.sr-form').find('.btn[type="submit"]');
+        var inputClass =
+          '.sr-form .msr-form-field__input:not(.msr-form-field__input--path-' +
+          classPathToDetach +
+          ')';
+        var inputs = $(inputClass);
+        var res = serialize(inputs);
+        emailData.body = res.body;
+        // To be valid all required must be completed
+        validForm = res.mapArr.filter((i) => i.value === '' && i.required);
+        if (validForm.length === 0) {
+          // Enable form submit
+          $submitBtn.attr('disabled', false);
+        } else {
+          $submitBtn.attr('disabled', true);
         }
       }
     }
 
-    function validateForm() {
-      var $form = $('.sr-form');
-      $form.addClass('sr-form--validate');
-    }
-
     function blurInput() {
-      console.log('blured');
+      checkValues();
       var $input = this;
 
       if (!$input || $input.type === 'button') {
@@ -127,10 +192,7 @@
       // Submiting the form
       $('.sr-form').on('submit', function(e) {
         e.preventDefault();
-        validateForm();
-
-        // console.log(values);
-        // Send values
+        setMailTo();
         $('.modal-sr .modal-sr__sub-container').remove();
         showSuccess();
       });
