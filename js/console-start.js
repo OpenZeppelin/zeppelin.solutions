@@ -29,7 +29,7 @@ var lines = [
   'Quick Start',
   'Run your local blockchain:',
   '<span class="tc-green">></span> ganache-cli --secure -u 0 -u 1 -u 2 </br>--deterministic',
-  'Initialize the ZeppelinOS project:',
+  'Initialize the OpenZeppelin Starter-Kits Project:',
   '<span class="tc-green">></span> openzeppelin init starter-kit',
   'Go to the client directory:',
   '<span class="tc-green">></span> cd client',
