@@ -10,6 +10,10 @@
   white-space: normal;
 }
 
+.tc-strong {
+  font-weight: bold;
+}
+
 .tc-green {
   color: #87cc37;
 }

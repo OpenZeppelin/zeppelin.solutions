@@ -4,7 +4,6 @@ var isRunning = true;
 
 function createElement(type = 'span', props, str, parent) {
   var attrs = ['class', 'id'];
-
   var parent = parent || typeWrap;
   var el = document.createElement(type);
 
@@ -26,8 +25,8 @@ function createElement(type = 'span', props, str, parent) {
   return el;
 }
 
-function type(text, cb = () => {}, opts = {}) {
-  var el = createElement('span', null, '', el);
+function type(parent, text, cb = () => {}, opts = {}) {
+  var el = createElement('span', null, '', parent);
   $(el).typed({
     strings: ['<span style="color:white">' + text + '</span>'],
     loop: false,
@@ -43,7 +42,7 @@ function type(text, cb = () => {}, opts = {}) {
 }
 
 function f2(el, done) {
-  type('$ openzeppelin create');
+  type(el, '$ openzeppelin create');
   $('.typed-cursor').css('color', 'black');
   setTimeout(function() {
     setTimeout(function() {
@@ -61,7 +60,7 @@ function f2(el, done) {
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a contract to instantiate&nbsp;</span>',
         el
       );
-      type('<span style="color:#4de4e3">Counter</span></br>', function() {
+      type(el, '<span style="color:#4de4e3">Counter</span></br>', function() {
         setTimeout(function() {
           createElement(
             'span',
@@ -69,7 +68,7 @@ function f2(el, done) {
             '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
             el
           );
-          type('<span style="color:#4de4e3">development</span>', function() {
+          type(el, '<span style="color:#4de4e3">development</span>', function() {
             setTimeout(function() {
               createElement(
                 'div',
@@ -88,7 +87,7 @@ function f2(el, done) {
                   createElement(
                     'div',
                     null,
-                    '<strong>All contracts have been deployed</strong>',
+                    '<span class="tc-strong">All contracts have been deployed</span>',
                     el
                   );
                   setTimeout(function() {
@@ -99,7 +98,7 @@ function f2(el, done) {
                       el
                     );
                     setTimeout(function() {
-                      type(
+                      type(el, 
                         '<span style="color: white">No</span>',
                         function f4() {
                           setTimeout(function() {
@@ -134,7 +133,7 @@ function f2(el, done) {
 }
 
 function f3(el, done) {
-  type('$ openzeppelin send-tx</br>');
+  type(el, '$ openzeppelin send-tx</br>');
   setTimeout(function() {
     setTimeout(function() {
       createElement(
@@ -143,7 +142,7 @@ function f3(el, done) {
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         el
       );
-      type('<span style="color:#4de4e3">development</span></br>', function() {
+      type(el, '<span style="color:#4de4e3">development</span></br>', function() {
         setTimeout(function() {
           createElement(
             'span',
@@ -151,7 +150,7 @@ function f3(el, done) {
             '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
             el
           );
-          type('<span style="color:#4de4e3">Counter at</span>', function() {
+          type(el, '<span style="color:#4de4e3">Counter at</span>', function() {
             setTimeout(function() {
               createElement(
                 'div',
@@ -167,7 +166,7 @@ function f3(el, done) {
                 '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
                 el
               );
-              type(
+              type(el, 
                 '<span style="color:#4de4e3">increase()</span></br>',
                 function() {
                   setTimeout(function() {
@@ -190,7 +189,7 @@ function f3(el, done) {
 }
 
 function f4(el, done) {
-  type('$ openzeppelin call</br>');
+  type(el, '$ openzeppelin call</br>');
   setTimeout(function() {
     setTimeout(function() {
       createElement(
@@ -199,7 +198,7 @@ function f4(el, done) {
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         el
       );
-      type('<span style="color:#4de4e3">development</span></br>', function() {
+      type(el, '<span style="color:#4de4e3">development</span></br>', function() {
         setTimeout(function() {
           createElement(
             'span',
@@ -207,7 +206,7 @@ function f4(el, done) {
             '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
             el
           );
-          type('<span style="color:#4de4e3">Counter at</span>', function() {
+          type(el, '<span style="color:#4de4e3">Counter at</span>', function() {
             setTimeout(function() {
               createElement(
                 'div',
@@ -223,7 +222,7 @@ function f4(el, done) {
                 '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
                 el
               );
-              type(
+              type(el, 
                 '<span style="color:#4de4e3">increase()</span></br>',
                 function() {
                   setTimeout(function() {
@@ -246,7 +245,7 @@ function f4(el, done) {
 }
 
 function f5(el, done) {
-  type('$ openzeppelin upgrade</br>');
+  type(el, '$ openzeppelin upgrade</br>');
   $('.typed-cursor').css('color', 'black');
   setTimeout(function() {
     setTimeout(function() {
@@ -256,7 +255,7 @@ function f5(el, done) {
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         el
       );
-      type('<span style="color:#4de4e3">development</span>', function() {
+      type(el, '<span style="color:#4de4e3">development</span>', function() {
         setTimeout(function() {
           createElement(
             'div',
@@ -274,7 +273,7 @@ function f5(el, done) {
             createElement(
               'div',
               null,
-              '<strong>All contracts have been deployed</strong>',
+              '<span class="tc-strong">All contracts have been deployed</span>',
               el
             );
             setTimeout(function() {
@@ -285,7 +284,7 @@ function f5(el, done) {
                 el
               );
               setTimeout(function() {
-                type(
+                type(el, 
                   '<span style="color: white">All instances</span>',
                   function() {
                     setTimeout(function() {
@@ -346,10 +345,9 @@ var animations = {
       // Killing node
       wrap.empty();
       // Recreating wrap type container
-      var key = Math.floor(Math.random() * Math.floor(100));
+      var key = Math.floor(Math.random() * Math.floor(1000000));
 
-      typeWrap = createElement('div', { class: 'type-wrap', id: key }, '');
-      wrap.append(typeWrap);
+      typeWrap = createElement('div', { class: 'type-wrap', id: key }, '', wrap);
       var animname = $(this).data('anim-name');
       animations[animname](typeWrap, function() {
         console.log('Anim Once - Done');
