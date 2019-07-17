@@ -349,12 +349,14 @@ var animations = {
           setTimeout(function() {
             typeWrap.empty();
             f4(typeWrap, function() {
-              typeWrap.empty();
-              f5(typeWrap, function() {
-                console.log('Animation done');
-              });
+              setTimeout(function() {
+                typeWrap.empty();
+                f5(typeWrap, function() {
+                  console.log('Animation done');
+                });
+              }, 2500);
             });
-          }, 2000);
+          }, 2500);
         });
       }, 2000);
     });
