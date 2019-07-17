@@ -32,7 +32,7 @@ function type(parent, text, cb = () => {}, opts = {}) {
     loop: false,
     contentType: 'html',
     loopCount: false,
-    callback: cb(),
+    onComplete: cb,
     showCursor: false,
     typeSpeed: opts.typespeed | 0,
     backSpeed: 0,
