@@ -68,64 +68,69 @@ function f2(el, done) {
             '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
             el
           );
-          type(el, '<span style="color:#4de4e3">development</span>', function() {
-            setTimeout(function() {
-              createElement(
-                'div',
-                null,
-                '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Added contract Counter</span>',
-                el
-              );
+          type(
+            el,
+            '<span style="color:#4de4e3">development</span>',
+            function() {
               setTimeout(function() {
                 createElement(
                   'div',
                   null,
-                  '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Contract Counter deployed</span>',
+                  '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Added contract Counter</span>',
                   el
                 );
                 setTimeout(function() {
                   createElement(
                     'div',
                     null,
-                    '<span class="tc-strong">All contracts have been deployed</span>',
+                    '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Contract Counter deployed</span>',
                     el
                   );
                   setTimeout(function() {
                     createElement(
-                      'span',
+                      'div',
                       null,
-                      '<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Do you want to call a function on </br> the instance after creating it?&nbsp;</span>',
+                      '<span class="tc-strong">All contracts have been deployed</span>',
                       el
                     );
                     setTimeout(function() {
-                      type(el, 
-                        '<span style="color: white">No</span>',
-                        function f4() {
-                          setTimeout(function() {
-                            createElement(
-                              'div',
-                              null,
-                              '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Setting everything up to </br> create contract instances</span>',
-                              el
-                            );
+                      createElement(
+                        'span',
+                        null,
+                        '<span class="tc-green">?</span>&nbsp;<span class="tc-strong">Do you want to call a function on </br> the instance after creating it?&nbsp;</span>',
+                        el
+                      );
+                      setTimeout(function() {
+                        type(
+                          el,
+                          '<span style="color: white">No</span>',
+                          function f4() {
                             setTimeout(function() {
                               createElement(
                                 'div',
                                 null,
-                                '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Instance created at </br>0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
+                                '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Setting everything up to </br> create contract instances</span>',
                                 el
                               );
-                              done();
+                              setTimeout(function() {
+                                createElement(
+                                  'div',
+                                  null,
+                                  '<span class="tc-green">✓</span>&nbsp;<span class="tc-violet">Instance created at </br>0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
+                                  el
+                                );
+                                done();
+                              }, 500);
                             }, 500);
-                          }, 500);
-                        }
-                      );
-                    }, 1400);
-                  }, 1300);
-                }, 1200);
-              }, 1000);
-            }, 900);
-          });
+                          }
+                        );
+                      }, 1400);
+                    }, 1300);
+                  }, 1200);
+                }, 1000);
+              }, 900);
+            }
+          );
         }, 1000);
       });
     }, 1000);
@@ -142,48 +147,57 @@ function f3(el, done) {
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         el
       );
-      type(el, '<span style="color:#4de4e3">development</span></br>', function() {
-        setTimeout(function() {
-          createElement(
-            'span',
-            null,
-            '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
-            el
-          );
-          type(el, '<span style="color:#4de4e3">Counter at</span>', function() {
-            setTimeout(function() {
-              createElement(
-                'div',
-                null,
-                '<span style="color:#4de4e3">0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
-                el
-              );
-            }, 800);
-            setTimeout(function() {
-              createElement(
-                'div',
-                null,
-                '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
-                el
-              );
-              type(el, 
-                '<span style="color:#4de4e3">increase()</span></br>',
-                function() {
-                  setTimeout(function() {
-                    createElement(
-                      'span',
-                      null,
-                      '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Transaction successful. Transaction hash: </br> 0xd203b6e16f3b6e4922bb19251bd3b90958a7d14c1e</br>1a133631b934e20820d04</span>',
-                      el
-                    );
-                    done();
-                  }, 1500);
-                }
-              );
-            }, 1500);
-          });
-        }, 800);
-      });
+      type(
+        el,
+        '<span style="color:#4de4e3">development</span></br>',
+        function() {
+          setTimeout(function() {
+            createElement(
+              'span',
+              null,
+              '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
+              el
+            );
+            type(
+              el,
+              '<span style="color:#4de4e3">Counter at</span>',
+              function() {
+                setTimeout(function() {
+                  createElement(
+                    'div',
+                    null,
+                    '<span style="color:#4de4e3">0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
+                    el
+                  );
+                }, 800);
+                setTimeout(function() {
+                  createElement(
+                    'div',
+                    null,
+                    '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
+                    el
+                  );
+                  type(
+                    el,
+                    '<span style="color:#4de4e3">increase()</span></br>',
+                    function() {
+                      setTimeout(function() {
+                        createElement(
+                          'span',
+                          null,
+                          '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Transaction successful. Transaction hash: </br> 0xd203b6e16f3b6e4922bb19251bd3b90958a7d14c1e</br>1a133631b934e20820d04</span>',
+                          el
+                        );
+                        done();
+                      }, 1500);
+                    }
+                  );
+                }, 1500);
+              }
+            );
+          }, 800);
+        }
+      );
     }, 700);
   }, 1000);
 }
@@ -198,48 +212,57 @@ function f4(el, done) {
         '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick a network&nbsp;</span>',
         el
       );
-      type(el, '<span style="color:#4de4e3">development</span></br>', function() {
-        setTimeout(function() {
-          createElement(
-            'span',
-            null,
-            '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
-            el
-          );
-          type(el, '<span style="color:#4de4e3">Counter at</span>', function() {
-            setTimeout(function() {
-              createElement(
-                'div',
-                null,
-                '<span style="color:#4de4e3">0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
-                el
-              );
-            }, 800);
-            setTimeout(function() {
-              createElement(
-                'div',
-                null,
-                '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
-                el
-              );
-              type(el, 
-                '<span style="color:#4de4e3">increase()</span></br>',
-                function() {
-                  setTimeout(function() {
-                    createElement(
-                      'span',
-                      null,
-                      '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Method \'value()\' returned: 1</span>',
-                      el
-                    );
-                    done();
-                  }, 1500);
-                }
-              );
-            }, 1500);
-          });
-        }, 800);
-      });
+      type(
+        el,
+        '<span style="color:#4de4e3">development</span></br>',
+        function() {
+          setTimeout(function() {
+            createElement(
+              'span',
+              null,
+              '<span style="color:#87cc37">✓</span>&nbsp;<span style="color:white">Pick an instance&nbsp;</span>',
+              el
+            );
+            type(
+              el,
+              '<span style="color:#4de4e3">Counter at</span>',
+              function() {
+                setTimeout(function() {
+                  createElement(
+                    'div',
+                    null,
+                    '<span style="color:#4de4e3">0xCfEB869F69431e42cdB54A4F4f105C19C080A601</span>',
+                    el
+                  );
+                }, 800);
+                setTimeout(function() {
+                  createElement(
+                    'div',
+                    null,
+                    '<span style="color:#87cc37">?</span>&nbsp;<span class="strong">Select which function</span>',
+                    el
+                  );
+                  type(
+                    el,
+                    '<span style="color:#4de4e3">value()</span></br>',
+                    function() {
+                      setTimeout(function() {
+                        createElement(
+                          'span',
+                          null,
+                          '<span style="color:#87cc37">✓</span>&nbsp;<span class="strong">Method \'value()\' returned: 1</span>',
+                          el
+                        );
+                        done();
+                      }, 1500);
+                    }
+                  );
+                }, 1500);
+              }
+            );
+          }, 800);
+        }
+      );
     }, 700);
   }, 1000);
 }
@@ -284,7 +307,8 @@ function f5(el, done) {
                 el
               );
               setTimeout(function() {
-                type(el, 
+                type(
+                  el,
                   '<span style="color: white">All instances</span>',
                   function() {
                     setTimeout(function() {
@@ -347,7 +371,12 @@ var animations = {
       // Recreating wrap type container
       var key = Math.floor(Math.random() * Math.floor(1000000));
 
-      typeWrap = createElement('div', { class: 'type-wrap', id: key }, '', wrap);
+      typeWrap = createElement(
+        'div',
+        { class: 'type-wrap', id: key },
+        '',
+        wrap
+      );
       var animname = $(this).data('anim-name');
       animations[animname](typeWrap, function() {
         console.log('Anim Once - Done');
