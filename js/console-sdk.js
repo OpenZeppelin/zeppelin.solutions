@@ -41,7 +41,16 @@ function type(parent, text, cb = () => {}, opts = {}) {
   });
 }
 
+function setActive(id) {
+  console.log('active', id);
+  $('.term__menu .term__menu-list__item#item-' + id).addClass('active');
+  $('.term__menu .term__menu-list__item:not(#item-' + id + ')').removeClass(
+    'active'
+  );
+}
+
 function f2(el, done) {
+  setActive('f2');
   type(el, '$ openzeppelin create');
   $('.typed-cursor').css('color', 'black');
   setTimeout(function() {
@@ -138,6 +147,7 @@ function f2(el, done) {
 }
 
 function f3(el, done) {
+  setActive('f3');
   type(el, '$ openzeppelin send-tx</br>');
   setTimeout(function() {
     setTimeout(function() {
@@ -203,6 +213,7 @@ function f3(el, done) {
 }
 
 function f4(el, done) {
+  setActive('f4');
   type(el, '$ openzeppelin call</br>');
   setTimeout(function() {
     setTimeout(function() {
@@ -268,6 +279,7 @@ function f4(el, done) {
 }
 
 function f5(el, done) {
+  setActive('f5');
   type(el, '$ openzeppelin upgrade</br>');
   $('.typed-cursor').css('color', 'black');
   setTimeout(function() {
