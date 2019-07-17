@@ -17,6 +17,17 @@
     url('../fonts/silka-bold-webfont.woff2') format('woff2'),
     url('../fonts/silka-bold-webfont.woff') format('woff'),
     url('../fonts/silka-bold-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'silka';
+  src: url('../fonts/silka-bold-webfont.eot');
+  src: url('../fonts/silka-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/silka-bold-webfont.woff2') format('woff2'),
+    url('../fonts/silka-bold-webfont.woff') format('woff'),
+    url('../fonts/silka-bold-webfont.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -72,6 +83,12 @@ strong, p {
 p {
 	word-break: break-word;
 	font-weight: 400;
+	line-height: 1.4;
+}
+
+strong {
+	word-break: break-word;
+	font-weight: 600;
 	line-height: 1.4;
 }
 
@@ -423,6 +440,7 @@ section.hero {
 	font-family: 'silka';
 	margin-bottom: 15px;
 	margin-top: 15px;
+	-webkit-line-clamp: 3;
 }
 
 .hero .description {
