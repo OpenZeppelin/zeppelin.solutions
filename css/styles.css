@@ -1444,6 +1444,18 @@ section .heading + .grid-logos {
 
 /* Custom Requirements */
 
+@media (max-width: 321px) {
+	.page-landing .hero h1.heading {
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 325px) and (max-width: 425px) {
+	.page-landing .hero h1.heading {
+		font-size: 24px;
+	}
+}
+
 @media (min-width: 300px) and (max-width: 720px) {
 	.page-product.page-start .grid-logos .grid-logos__logo {
 		width: 90%;
