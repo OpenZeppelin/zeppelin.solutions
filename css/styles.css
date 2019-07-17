@@ -65,6 +65,10 @@ body {
 	width: 100%;
 }
 
+strong, p {
+	font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif
+}
+
 p {
 	word-break: break-word;
 	font-weight: 400;
