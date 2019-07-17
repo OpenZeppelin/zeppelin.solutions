@@ -32,7 +32,7 @@ function type(parent, text, cb = () => {}, opts = {}) {
     loop: false,
     contentType: 'html',
     loopCount: false,
-    onComplete: cb,
+    onComplete: cb(),
     showCursor: false,
     typeSpeed: opts.typespeed | 0,
     backSpeed: 0,
@@ -140,7 +140,7 @@ function f2(el, done) {
               }, 900);
             }
           );
-        }, 1000);
+        }, 1200);
       });
     }, 1000);
   }, 1000);
@@ -366,9 +366,9 @@ var animations = {
                 f5(typeWrap, function() {
                   console.log('Animation done');
                 });
-              }, 2500);
+              }, 2100);
             });
-          }, 2500);
+          }, 2100);
         });
       }, 2000);
     });
