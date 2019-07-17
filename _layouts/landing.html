@@ -10,12 +10,13 @@ layout: default
 		height: auto;
 	}
 
-	.page-landing .l-hero .section__bg {
-		background-color: #F8F8FA;
-		background-position: top;
-		bottom: auto;
-		top: 0;
-		min-height:400px;
+	.page-landing .l-hero {
+		min-height: 290px;
+	}
+
+	.page-landing .l-hero .section__bg-landing {
+		display: none;
+		z-index: 0;
 	}
 
 	.l-projects .sub-heading {
@@ -174,6 +175,12 @@ layout: default
 }
 
 @media (min-width: 769px) {
+	.page-landing .l-hero {
+		min-height: 380px;
+	}
+	.page-landing .l-hero .section__bg-landing {
+		display: block;
+	}
 	.l-cta .building-grid .box {
 		max-width: 70%;
 	}
@@ -320,8 +327,8 @@ layout: default
 				</p>
 			</div>
 		</div>
-		<div class="section__bg--left" style="background-image:url('/images/bg/hero/half/svg/bg_home_left.svg')"></div>
-		<div class="section__bg--right" style="background-image:url('/images/bg/hero/half/svg/bg_home_right.svg')"></div>
+		<div class="section__bg-landing section__bg--left" style="background-image:url('/images/bg/hero/half/svg/bg_home_left.svg')"></div>
+		<div class="section__bg-landing section__bg--right" style="background-image:url('/images/bg/hero/half/svg/bg_home_right.svg')"></div>
 	</section>
 	<section class="section l-projects section--white">
 		<div class="container container--lg">

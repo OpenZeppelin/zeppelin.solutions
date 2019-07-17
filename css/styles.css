@@ -416,6 +416,7 @@ section.hero {
   justify-content: center;
 	align-items: center;
 	padding: 25px 2rem;
+	z-index: 1;
 }
 
 .hero h1.heading {
