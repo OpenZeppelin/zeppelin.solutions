@@ -1,4 +1,0 @@
----
-layout: jobs
-title: Jobs
----
