@@ -1,9 +1,4 @@
 [[redirects]]
-  from = "/*"
-  to = "https://openzeppelin.com"
-  status = 301
-
-[[redirects]]
   from = "/about"
   to = "https://openzeppelin.com/about"
   status = 301
@@ -16,4 +11,9 @@
 [[redirects]]
   from = "/security-audits"
   to = "https://openzeppelin.com/security-audits"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "https://openzeppelin.com"
   status = 301
